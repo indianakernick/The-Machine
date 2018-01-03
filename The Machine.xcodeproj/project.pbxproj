@@ -7,18 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		450759901FFC77E20009B360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507598F1FFC77E20009B360 /* AppDelegate.swift */; };
 		450759921FFC77E30009B360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450759911FFC77E20009B360 /* Assets.xcassets */; };
-		450759951FFC77E30009B360 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 450759931FFC77E30009B360 /* MainMenu.xib */; };
+		4507599E1FFC795D0009B360 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4507599D1FFC795D0009B360 /* main.cpp */; };
+		450759A11FFC7A9E0009B360 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450759A01FFC7A9E0009B360 /* SDL2.framework */; };
+		450759A31FFC7AAA0009B360 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450759A21FFC7AAA0009B360 /* CoreVideo.framework */; };
+		450759A51FFC7B1C0009B360 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450759A41FFC7B1C0009B360 /* Cocoa.framework */; };
+		450759A71FFC7B240009B360 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450759A61FFC7B240009B360 /* IOKit.framework */; };
+		450759A91FFC7B2A0009B360 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450759A81FFC7B2A0009B360 /* OpenGL.framework */; };
+		450759AB1FFC7B530009B360 /* SDL2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 450759A01FFC7A9E0009B360 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		450759AA1FFC7B450009B360 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				450759AB1FFC7B530009B360 /* SDL2.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4507598C1FFC77E20009B360 /* The Machine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Machine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4507598F1FFC77E20009B360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		450759911FFC77E20009B360 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		450759941FFC77E30009B360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		450759961FFC77E30009B360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		450759971FFC77E30009B360 /* The_Machine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = The_Machine.entitlements; sourceTree = "<group>"; };
+		4507599D1FFC795D0009B360 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		450759A01FFC7A9E0009B360 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		450759A21FFC7AAA0009B360 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		450759A41FFC7B1C0009B360 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		450759A61FFC7B240009B360 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		450759A81FFC7B2A0009B360 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +47,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				450759A91FFC7B2A0009B360 /* OpenGL.framework in Frameworks */,
+				450759A71FFC7B240009B360 /* IOKit.framework in Frameworks */,
+				450759A51FFC7B1C0009B360 /* Cocoa.framework in Frameworks */,
+				450759A31FFC7AAA0009B360 /* CoreVideo.framework in Frameworks */,
+				450759A11FFC7A9E0009B360 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +63,7 @@
 			children = (
 				4507598E1FFC77E20009B360 /* The Machine */,
 				4507598D1FFC77E20009B360 /* Products */,
+				4507599F1FFC7A9C0009B360 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,13 +78,23 @@
 		4507598E1FFC77E20009B360 /* The Machine */ = {
 			isa = PBXGroup;
 			children = (
-				4507598F1FFC77E20009B360 /* AppDelegate.swift */,
 				450759911FFC77E20009B360 /* Assets.xcassets */,
-				450759931FFC77E30009B360 /* MainMenu.xib */,
 				450759961FFC77E30009B360 /* Info.plist */,
-				450759971FFC77E30009B360 /* The_Machine.entitlements */,
+				4507599D1FFC795D0009B360 /* main.cpp */,
 			);
 			path = "The Machine";
+			sourceTree = "<group>";
+		};
+		4507599F1FFC7A9C0009B360 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				450759A81FFC7B2A0009B360 /* OpenGL.framework */,
+				450759A61FFC7B240009B360 /* IOKit.framework */,
+				450759A41FFC7B1C0009B360 /* Cocoa.framework */,
+				450759A21FFC7AAA0009B360 /* CoreVideo.framework */,
+				450759A01FFC7A9E0009B360 /* SDL2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -67,6 +104,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4507599A1FFC77E30009B360 /* Build configuration list for PBXNativeTarget "The Machine" */;
 			buildPhases = (
+				450759AA1FFC7B450009B360 /* CopyFiles */,
 				450759881FFC77E20009B360 /* Sources */,
 				450759891FFC77E20009B360 /* Frameworks */,
 				4507598A1FFC77E20009B360 /* Resources */,
@@ -93,6 +131,11 @@
 					4507598B1FFC77E20009B360 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -120,7 +163,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				450759921FFC77E30009B360 /* Assets.xcassets in Resources */,
-				450759951FFC77E30009B360 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,22 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				450759901FFC77E20009B360 /* AppDelegate.swift in Sources */,
+				4507599E1FFC795D0009B360 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		450759931FFC77E30009B360 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				450759941FFC77E30009B360 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		450759981FFC77E30009B360 /* Debug */ = {
@@ -259,12 +290,33 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "The Machine/The_Machine.entitlements";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QY44MADGVC;
+				FRAMEWORK_SEARCH_PATHS = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/Cellar/nlohmann_json/3.0.0/include,
+				);
 				INFOPLIST_FILE = "The Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wall",
+					"-Wextra",
+					"-Weffc++",
+					"-Wpedantic",
+					"-Wno-documentation",
+				);
+				OTHER_LDFLAGS = (
+					/usr/local/lib/libSurface.a,
+					/usr/local/lib/libUnpacker.a,
+					/usr/local/Cellar/glew/2.1.0/lib/libGLEW.a,
+					"/usr/local/lib/libSimpleton\\ Engine.a",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Indi-Kernick.The-Machine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -275,12 +327,34 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "The Machine/The_Machine.entitlements";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QY44MADGVC;
+				FRAMEWORK_SEARCH_PATHS = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/Cellar/nlohmann_json/3.0.0/include,
+				);
 				INFOPLIST_FILE = "The Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wall",
+					"-Wextra",
+					"-Weffc++",
+					"-Wpedantic",
+					"-Wno-documentation",
+				);
+				OTHER_LDFLAGS = (
+					/usr/local/lib/libSurface.a,
+					/usr/local/lib/libUnpacker.a,
+					/usr/local/Cellar/glew/2.1.0/lib/libGLEW.a,
+					"/usr/local/lib/libSimpleton\\ Engine.a",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Indi-Kernick.The-Machine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
