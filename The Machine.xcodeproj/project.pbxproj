@@ -78,6 +78,8 @@
 		4507598E1FFC77E20009B360 /* The Machine */ = {
 			isa = PBXGroup;
 			children = (
+				450759AE1FFC98AC0009B360 /* Resources */,
+				450759AD1FFC98A50009B360 /* Game */,
 				450759911FFC77E20009B360 /* Assets.xcassets */,
 				450759961FFC77E30009B360 /* Info.plist */,
 				4507599D1FFC795D0009B360 /* main.cpp */,
@@ -95,6 +97,20 @@
 				450759A01FFC7A9E0009B360 /* SDL2.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		450759AD1FFC98A50009B360 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		450759AE1FFC98AC0009B360 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
