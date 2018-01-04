@@ -21,6 +21,7 @@
 		455AFD971FFDBADF00739358 /* entity grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD951FFDBADF00739358 /* entity grid.cpp */; };
 		455AFDA11FFDC42C00739358 /* static collision init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD9F1FFDC42C00739358 /* static collision init.cpp */; };
 		455AFDB11FFDD77000739358 /* dynamic collision init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDAF1FFDD77000739358 /* dynamic collision init.cpp */; };
+		455AFDBB1FFDE84D00739358 /* player input system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDB91FFDE84D00739358 /* player input system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +69,9 @@
 		455AFDB01FFDD77000739358 /* dynamic collision init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "dynamic collision init.hpp"; sourceTree = "<group>"; };
 		455AFDB31FFDE0B800739358 /* movement component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "movement component.hpp"; sourceTree = "<group>"; };
 		455AFDB81FFDE6A900739358 /* player action component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "player action component.hpp"; sourceTree = "<group>"; };
+		455AFDB91FFDE84D00739358 /* player input system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "player input system.cpp"; sourceTree = "<group>"; };
+		455AFDBA1FFDE84D00739358 /* player input system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "player input system.hpp"; sourceTree = "<group>"; };
+		455AFDBC1FFDEBD700739358 /* systems.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = systems.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,9 @@
 		455AFD931FFDBA8300739358 /* Systems */ = {
 			isa = PBXGroup;
 			children = (
+				455AFDBC1FFDEBD700739358 /* systems.hpp */,
+				455AFDB91FFDE84D00739358 /* player input system.cpp */,
+				455AFDBA1FFDE84D00739358 /* player input system.hpp */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -323,6 +330,7 @@
 			files = (
 				455AFD971FFDBADF00739358 /* entity grid.cpp in Sources */,
 				455AFDA11FFDC42C00739358 /* static collision init.cpp in Sources */,
+				455AFDBB1FFDE84D00739358 /* player input system.cpp in Sources */,
 				4507599E1FFC795D0009B360 /* main.cpp in Sources */,
 				455AFDB11FFDD77000739358 /* dynamic collision init.cpp in Sources */,
 				455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */,

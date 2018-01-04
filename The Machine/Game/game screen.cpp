@@ -8,6 +8,7 @@
 
 #include "game screen.hpp"
 
+#include "systems.hpp"
 #include "component inits.hpp"
 #include <Simpleton/SDL/paths.hpp>
 
@@ -32,8 +33,8 @@ void GameScreen::quit() {
   compInits.destroyAll();
 }
 
-void GameScreen::input(const SDL_Event &) {
-  
+void GameScreen::input(const SDL_Event &e) {
+  playerInputSystem(registry, e);
 }
 
 void GameScreen::update(const float ) {
