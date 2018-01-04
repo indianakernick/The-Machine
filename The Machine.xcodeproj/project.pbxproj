@@ -66,6 +66,7 @@
 		455AFDAE1FFDD67F00739358 /* dynamic collision component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "dynamic collision component.hpp"; sourceTree = "<group>"; };
 		455AFDAF1FFDD77000739358 /* dynamic collision init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "dynamic collision init.cpp"; sourceTree = "<group>"; };
 		455AFDB01FFDD77000739358 /* dynamic collision init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "dynamic collision init.hpp"; sourceTree = "<group>"; };
+		455AFDB31FFDE0B800739358 /* movement component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "movement component.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +156,7 @@
 				455AFD901FFDB88300739358 /* component list.hpp */,
 				455AFDA31FFDC46E00739358 /* static collision component.hpp */,
 				455AFDAE1FFDD67F00739358 /* dynamic collision component.hpp */,
+				455AFDB31FFDE0B800739358 /* movement component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
