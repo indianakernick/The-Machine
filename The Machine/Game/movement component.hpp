@@ -12,8 +12,8 @@
 #include <Simpleton/Math/dir.hpp>
 
 struct Movement {
-  Math::Dir desiredDir;
-  Math::Dir realDir;
+  Math::Dir desiredDir = Math::Dir::NONE;
+  Math::Dir realDir = Math::Dir::NONE;
 };
 
 #endif

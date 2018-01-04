@@ -10,12 +10,14 @@
 #define component_list_hpp
 
 #include "movement component.hpp"
+#include "player action component.hpp"
 #include <Simpleton/Utils/type list.hpp>
 #include "static collision component.hpp"
 #include "dynamic collision component.hpp"
 
 using CompList = Utils::TypeList<
   Movement,
+  PlayerAction,
   StaticCollision,
   DynamicCollision
 >;

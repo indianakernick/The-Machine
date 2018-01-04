@@ -67,6 +67,7 @@
 		455AFDAF1FFDD77000739358 /* dynamic collision init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "dynamic collision init.cpp"; sourceTree = "<group>"; };
 		455AFDB01FFDD77000739358 /* dynamic collision init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "dynamic collision init.hpp"; sourceTree = "<group>"; };
 		455AFDB31FFDE0B800739358 /* movement component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "movement component.hpp"; sourceTree = "<group>"; };
+		455AFDB81FFDE6A900739358 /* player action component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "player action component.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +158,7 @@
 				455AFDA31FFDC46E00739358 /* static collision component.hpp */,
 				455AFDAE1FFDD67F00739358 /* dynamic collision component.hpp */,
 				455AFDB31FFDE0B800739358 /* movement component.hpp */,
+				455AFDB81FFDE6A900739358 /* player action component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -310,7 +312,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" |   # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  echo \"Compiling $name\"\n  jsonnet \"$PROJECT_RES/$name.jsonnet\" |           # compile jsonnet\n  jq -cM . > \"$PRODUCT_RES/$name.json\"             # minify json\ndone";
+			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  echo \"Compiling $name\"\n  jsonnet \"$PROJECT_RES/$name.jsonnet\" |           # compile jsonnet\n  jq -cM . > \"$PRODUCT_RES/$name.json\"             # minify json\ndone";
 		};
 /* End PBXShellScriptBuildPhase section */
 
