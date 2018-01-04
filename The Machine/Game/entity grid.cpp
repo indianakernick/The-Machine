@@ -8,6 +8,9 @@
 
 #include "entity grid.hpp"
 
+EntityGrid::EntityGrid()
+  : mSize(0, 0) {}
+
 EntityGrid::EntityGrid(const Pos size)
   : mTiles(size.x * size.y, NULL_TILE), mSize(size) {}
 

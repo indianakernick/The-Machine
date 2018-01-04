@@ -23,6 +23,7 @@ using Tiles = std::vector<Tile>;
 
 class EntityGrid {
 public:
+  EntityGrid();
   explicit EntityGrid(Pos);
 
   // using an object instead of an index in `operator[]` is a little strange

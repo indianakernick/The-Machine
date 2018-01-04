@@ -25,6 +25,9 @@ void GameScreen::init() {
     const std::string levelStr = level == ECS::FINAL_LEVEL ? "final" : std::to_string(level);
     return SDL::getResDir() + "level " + levelStr + ".json";
   });
+  
+  grid = EntityGrid({32, 18});
+  initGridSystem(registry, grid);
 }
 
 void GameScreen::quit() {

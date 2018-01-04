@@ -9,6 +9,7 @@
 #ifndef game_screen_hpp
 #define game_screen_hpp
 
+#include "entity grid.hpp"
 #include "component list.hpp"
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/ECS/comp inits.hpp>
@@ -32,6 +33,7 @@ private:
   ECS::LevelManager<CompList> levels;
   ECS::ProgressManager progress;
   Cam2D::Camera camera;
+  EntityGrid grid;
 };
 
 #endif
