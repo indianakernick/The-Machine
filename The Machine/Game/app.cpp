@@ -28,12 +28,17 @@ void App::mainloop() {
 }
 
 void App::init() {
+  #pragma clang diagnostic push
+  #pragma clang diagnostic ignored "-Wc99-extensions"
+
   const SDL::Window::Desc WINDOW_DESC = {
     .title = "The Machine",
     .size = {1280, 720},
     .resizable = true,
     .openGL = true
   };
+  
+  #pragma clang diagnostic pop
 
   windowLibrary = SDL::makeLibrary(SDL_INIT_EVENTS);
   window = SDL::makeWindow(WINDOW_DESC);

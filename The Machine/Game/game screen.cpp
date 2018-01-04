@@ -12,7 +12,8 @@
 #include <Simpleton/SDL/paths.hpp>
 
 void GameScreen::init() {
-  compInits.construct<CollisionInit>();
+  compInits.construct<StaticCollisionInit>();
+  compInits.construct<DynamicCollisionInit>();
   compInits.constructDefaults();
 
   progress.setFilePath(SDL::getSaveDir("Indi Kernick", "The Machine") + "progress.txt");
@@ -31,15 +32,16 @@ void GameScreen::quit() {
   compInits.destroyAll();
 }
 
-void GameScreen::input(const SDL_Event &e) {
+void GameScreen::input(const SDL_Event &) {
   
 }
 
-void GameScreen::update(const float delta) {
+void GameScreen::update(const float ) {
   
 }
 
 void GameScreen::render(const float aspect, const float delta) {
   camera.update(aspect, delta);
   const glm::mat3 viewProj = camera.transform.toPixels();
+  static_cast<void>(viewProj);
 }
