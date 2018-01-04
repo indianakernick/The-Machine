@@ -49,6 +49,7 @@
 		455AFD881FFDB3E000739358 /* rendering context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "rendering context.cpp"; sourceTree = "<group>"; };
 		455AFD8A1FFDB5E800739358 /* game screen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "game screen.cpp"; sourceTree = "<group>"; };
 		455AFD8B1FFDB5E800739358 /* game screen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "game screen.hpp"; sourceTree = "<group>"; };
+		455AFD901FFDB88300739358 /* component list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "component list.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,12 +112,11 @@
 		450759AD1FFC98A50009B360 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				455AFD881FFDB3E000739358 /* rendering context.cpp */,
-				455AFD871FFDB3E000739358 /* rendering context.hpp */,
+				455AFD8F1FFDB86300739358 /* Components */,
+				455AFD921FFDB9C500739358 /* Rendering */,
+				455AFD911FFDB9BB00739358 /* UI */,
 				455AFD841FFDB34400739358 /* app.cpp */,
 				455AFD851FFDB34400739358 /* app.hpp */,
-				455AFD8A1FFDB5E800739358 /* game screen.cpp */,
-				455AFD8B1FFDB5E800739358 /* game screen.hpp */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -126,6 +126,32 @@
 			children = (
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		455AFD8F1FFDB86300739358 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				455AFD901FFDB88300739358 /* component list.hpp */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		455AFD911FFDB9BB00739358 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				455AFD8A1FFDB5E800739358 /* game screen.cpp */,
+				455AFD8B1FFDB5E800739358 /* game screen.hpp */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		455AFD921FFDB9C500739358 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				455AFD881FFDB3E000739358 /* rendering context.cpp */,
+				455AFD871FFDB3E000739358 /* rendering context.hpp */,
+			);
+			name = Rendering;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

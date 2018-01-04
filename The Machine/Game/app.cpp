@@ -52,20 +52,20 @@ bool App::input() {
     if (e.type == SDL_QUIT) {
       return false;
     } else {
-      // pass input event to game screen
+      game.input(e);
     }
   }
   return true;
 }
 
 void App::update(const float delta) {
-  // update game
+  game.update(delta);
 }
 
 void App::render(const float delta) {
   renderingContext.preRender();
   const glm::ivec2 windowSize = window.size();
   const float aspect = static_cast<float>(windowSize.x) / windowSize.y;
-  // render game
+  game.render(aspect, delta);
   renderingContext.postRender();
 }
