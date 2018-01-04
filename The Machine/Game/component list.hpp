@@ -9,6 +9,7 @@
 #ifndef component_list_hpp
 #define component_list_hpp
 
+#include "position component.hpp"
 #include "movement component.hpp"
 #include "player action component.hpp"
 #include <Simpleton/Utils/type list.hpp>
@@ -16,6 +17,7 @@
 #include "dynamic collision component.hpp"
 
 using CompList = Utils::TypeList<
+  Position,
   Movement,
   PlayerAction,
   StaticCollision,

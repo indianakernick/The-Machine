@@ -22,6 +22,7 @@
 		455AFDA11FFDC42C00739358 /* static collision init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD9F1FFDC42C00739358 /* static collision init.cpp */; };
 		455AFDB11FFDD77000739358 /* dynamic collision init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDAF1FFDD77000739358 /* dynamic collision init.cpp */; };
 		455AFDBB1FFDE84D00739358 /* player input system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDB91FFDE84D00739358 /* player input system.cpp */; };
+		455AFDC31FFDEE5B00739358 /* position init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDC11FFDEE5B00739358 /* position init.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -72,6 +73,9 @@
 		455AFDB91FFDE84D00739358 /* player input system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "player input system.cpp"; sourceTree = "<group>"; };
 		455AFDBA1FFDE84D00739358 /* player input system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "player input system.hpp"; sourceTree = "<group>"; };
 		455AFDBC1FFDEBD700739358 /* systems.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = systems.hpp; sourceTree = "<group>"; };
+		455AFDC01FFDEE1900739358 /* position component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "position component.hpp"; sourceTree = "<group>"; };
+		455AFDC11FFDEE5B00739358 /* position init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "position init.cpp"; sourceTree = "<group>"; };
+		455AFDC21FFDEE5B00739358 /* position init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "position init.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,7 @@
 				455AFDAE1FFDD67F00739358 /* dynamic collision component.hpp */,
 				455AFDB31FFDE0B800739358 /* movement component.hpp */,
 				455AFDB81FFDE6A900739358 /* player action component.hpp */,
+				455AFDC01FFDEE1900739358 /* position component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -213,6 +218,8 @@
 				455AFDA01FFDC42C00739358 /* static collision init.hpp */,
 				455AFDAF1FFDD77000739358 /* dynamic collision init.cpp */,
 				455AFDB01FFDD77000739358 /* dynamic collision init.hpp */,
+				455AFDC11FFDEE5B00739358 /* position init.cpp */,
+				455AFDC21FFDEE5B00739358 /* position init.hpp */,
 			);
 			name = "Component initializers";
 			sourceTree = "<group>";
@@ -334,6 +341,7 @@
 				4507599E1FFC795D0009B360 /* main.cpp in Sources */,
 				455AFDB11FFDD77000739358 /* dynamic collision init.cpp in Sources */,
 				455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */,
+				455AFDC31FFDEE5B00739358 /* position init.cpp in Sources */,
 				455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */,
 				455AFD861FFDB34400739358 /* app.cpp in Sources */,
 			);

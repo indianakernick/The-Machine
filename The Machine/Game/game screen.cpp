@@ -13,6 +13,7 @@
 #include <Simpleton/SDL/paths.hpp>
 
 void GameScreen::init() {
+  compInits.construct<PositionInit>();
   compInits.construct<StaticCollisionInit>();
   compInits.construct<DynamicCollisionInit>();
   compInits.constructDefaults();

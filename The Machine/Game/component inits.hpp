@@ -9,6 +9,7 @@
 #ifndef component_inits_hpp
 #define component_inits_hpp
 
+#include "position init.hpp"
 #include "static collision init.hpp"
 #include "dynamic collision init.hpp"
 
