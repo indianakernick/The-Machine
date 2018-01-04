@@ -6,9 +6,10 @@
 //  Copyright © 2018 Indi Kernick. All rights reserved.
 //
 
-#include <iostream>
+#include "app.hpp"
 
 int main(int, char **) {
-  std::cout << "Hello world\n";
+  App app;
+  app.mainloop();
   return 0;
 }
