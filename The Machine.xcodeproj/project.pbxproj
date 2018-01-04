@@ -61,6 +61,9 @@
 		455AFDA01FFDC42C00739358 /* collision init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "collision init.hpp"; sourceTree = "<group>"; };
 		455AFDA21FFDC46E00739358 /* collision component.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "collision component.cpp"; sourceTree = "<group>"; };
 		455AFDA31FFDC46E00739358 /* collision component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "collision component.hpp"; sourceTree = "<group>"; };
+		455AFDA81FFDC8A200739358 /* level 0.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 0.jsonnet"; sourceTree = "<group>"; };
+		455AFDAA1FFDC91900739358 /* common.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = common.libsonnet; sourceTree = "<group>"; };
+		455AFDAC1FFDC93500739358 /* entities.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = entities.libsonnet; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,8 @@
 		450759AE1FFC98AC0009B360 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				455AFDA71FFDC85C00739358 /* Entities */,
+				455AFDA61FFDC85500739358 /* Levels */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -195,6 +200,23 @@
 				455AFDA01FFDC42C00739358 /* collision init.hpp */,
 			);
 			name = "Component initializers";
+			sourceTree = "<group>";
+		};
+		455AFDA61FFDC85500739358 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				455AFDA81FFDC8A200739358 /* level 0.jsonnet */,
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
+		455AFDA71FFDC85C00739358 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				455AFDAA1FFDC91900739358 /* common.libsonnet */,
+				455AFDAC1FFDC93500739358 /* entities.libsonnet */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +304,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind $PROJECT_RES -name \"level $LEVEL.jsonnet\" |   # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  jsonnet \"$PROJECT_RES/$name.jsonnet\" |           # compile jsonnet\n  jq -cM . > \"$PRODUCT_RES/$name.json\"             # minify json\ndone";
+			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" |   # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  echo \"Compiling $name\"\n  jsonnet \"$PROJECT_RES/$name.jsonnet\" |           # compile jsonnet\n  jq -cM . > \"$PRODUCT_RES/$name.json\"             # minify json\ndone";
 		};
 /* End PBXShellScriptBuildPhase section */
 
