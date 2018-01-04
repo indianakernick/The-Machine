@@ -207,6 +207,7 @@
 				450759AA1FFC7B450009B360 /* CopyFiles */,
 				450759881FFC77E20009B360 /* Sources */,
 				450759891FFC77E20009B360 /* Frameworks */,
+				455AFDA51FFDC5F000739358 /* Compile Levels */,
 				4507598A1FFC77E20009B360 /* Resources */,
 			);
 			buildRules = (
@@ -267,6 +268,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		455AFDA51FFDC5F000739358 /* Compile Levels */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Levels";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind $PROJECT_RES -name \"level $LEVEL.jsonnet\" |   # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  jsonnet \"$PROJECT_RES/$name.jsonnet\" |           # compile jsonnet\n  jq -cM . > \"$PRODUCT_RES/$name.json\"             # minify json\ndone";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		450759881FFC77E20009B360 /* Sources */ = {
