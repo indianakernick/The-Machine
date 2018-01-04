@@ -8,9 +8,11 @@
 
 #include "game screen.hpp"
 
+#include "component inits.hpp"
 #include <Simpleton/SDL/paths.hpp>
 
 void GameScreen::init() {
+  compInits.construct<CollisionInit>();
   compInits.constructDefaults();
 
   progress.setFilePath(SDL::getSaveDir("Indi Kernick", "The Machine") + "progress.txt");

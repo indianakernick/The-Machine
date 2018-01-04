@@ -19,6 +19,8 @@
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
 		455AFD971FFDBADF00739358 /* entity grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD951FFDBADF00739358 /* entity grid.cpp */; };
+		455AFDA11FFDC42C00739358 /* collision init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD9F1FFDC42C00739358 /* collision init.cpp */; };
+		455AFDA41FFDC46E00739358 /* collision component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDA21FFDC46E00739358 /* collision component.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +56,11 @@
 		455AFD951FFDBADF00739358 /* entity grid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "entity grid.cpp"; sourceTree = "<group>"; };
 		455AFD961FFDBADF00739358 /* entity grid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "entity grid.hpp"; sourceTree = "<group>"; };
 		455AFD991FFDBB7F00739358 /* types.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = types.hpp; sourceTree = "<group>"; };
+		455AFD9E1FFDC41300739358 /* component inits.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "component inits.hpp"; sourceTree = "<group>"; };
+		455AFD9F1FFDC42C00739358 /* collision init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "collision init.cpp"; sourceTree = "<group>"; };
+		455AFDA01FFDC42C00739358 /* collision init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "collision init.hpp"; sourceTree = "<group>"; };
+		455AFDA21FFDC46E00739358 /* collision component.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "collision component.cpp"; sourceTree = "<group>"; };
+		455AFDA31FFDC46E00739358 /* collision component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "collision component.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +124,10 @@
 			isa = PBXGroup;
 			children = (
 				455AFD941FFDBA9A00739358 /* Utils */,
+				455AFD921FFDB9C500739358 /* Rendering */,
 				455AFD931FFDBA8300739358 /* Systems */,
 				455AFD8F1FFDB86300739358 /* Components */,
-				455AFD921FFDB9C500739358 /* Rendering */,
+				455AFD9D1FFDC3CA00739358 /* Component initializers */,
 				455AFD911FFDB9BB00739358 /* UI */,
 				455AFD841FFDB34400739358 /* app.cpp */,
 				455AFD851FFDB34400739358 /* app.hpp */,
@@ -138,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				455AFD901FFDB88300739358 /* component list.hpp */,
+				455AFDA21FFDC46E00739358 /* collision component.cpp */,
+				455AFDA31FFDC46E00739358 /* collision component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -175,6 +185,16 @@
 				455AFD961FFDBADF00739358 /* entity grid.hpp */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		455AFD9D1FFDC3CA00739358 /* Component initializers */ = {
+			isa = PBXGroup;
+			children = (
+				455AFD9E1FFDC41300739358 /* component inits.hpp */,
+				455AFD9F1FFDC42C00739358 /* collision init.cpp */,
+				455AFDA01FFDC42C00739358 /* collision init.hpp */,
+			);
+			name = "Component initializers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				455AFD971FFDBADF00739358 /* entity grid.cpp in Sources */,
+				455AFDA11FFDC42C00739358 /* collision init.cpp in Sources */,
 				4507599E1FFC795D0009B360 /* main.cpp in Sources */,
+				455AFDA41FFDC46E00739358 /* collision component.cpp in Sources */,
 				455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */,
 				455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */,
 				455AFD861FFDB34400739358 /* app.cpp in Sources */,

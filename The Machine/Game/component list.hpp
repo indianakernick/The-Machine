@@ -9,10 +9,11 @@
 #ifndef component_list_hpp
 #define component_list_hpp
 
+#include "collision component.hpp"
 #include <Simpleton/Utils/type list.hpp>
 
 using CompList = Utils::TypeList<
-
+  Collision
 >;
 
 #endif
