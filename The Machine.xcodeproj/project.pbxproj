@@ -18,6 +18,7 @@
 		455AFD861FFDB34400739358 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD841FFDB34400739358 /* app.cpp */; };
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
+		455AFD971FFDBADF00739358 /* entity grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD951FFDBADF00739358 /* entity grid.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,9 @@
 		455AFD8A1FFDB5E800739358 /* game screen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "game screen.cpp"; sourceTree = "<group>"; };
 		455AFD8B1FFDB5E800739358 /* game screen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "game screen.hpp"; sourceTree = "<group>"; };
 		455AFD901FFDB88300739358 /* component list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "component list.hpp"; sourceTree = "<group>"; };
+		455AFD951FFDBADF00739358 /* entity grid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "entity grid.cpp"; sourceTree = "<group>"; };
+		455AFD961FFDBADF00739358 /* entity grid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "entity grid.hpp"; sourceTree = "<group>"; };
+		455AFD991FFDBB7F00739358 /* types.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = types.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 		450759AD1FFC98A50009B360 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				455AFD941FFDBA9A00739358 /* Utils */,
+				455AFD931FFDBA8300739358 /* Systems */,
 				455AFD8F1FFDB86300739358 /* Components */,
 				455AFD921FFDB9C500739358 /* Rendering */,
 				455AFD911FFDB9BB00739358 /* UI */,
@@ -152,6 +158,23 @@
 				455AFD871FFDB3E000739358 /* rendering context.hpp */,
 			);
 			name = Rendering;
+			sourceTree = "<group>";
+		};
+		455AFD931FFDBA8300739358 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Systems;
+			sourceTree = "<group>";
+		};
+		455AFD941FFDBA9A00739358 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				455AFD991FFDBB7F00739358 /* types.hpp */,
+				455AFD951FFDBADF00739358 /* entity grid.cpp */,
+				455AFD961FFDBADF00739358 /* entity grid.hpp */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455AFD971FFDBADF00739358 /* entity grid.cpp in Sources */,
 				4507599E1FFC795D0009B360 /* main.cpp in Sources */,
 				455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */,
 				455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */,
