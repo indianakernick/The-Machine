@@ -12,6 +12,7 @@
 #include "entity grid.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
+// Put all of the entities in to the grid
 void initGridSystem(ECS::Registry &, EntityGrid &);
 
 #endif

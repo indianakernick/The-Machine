@@ -8,13 +8,12 @@
 
 #include "move dir system.hpp"
 
+#include "dir to vec.hpp"
 #include "movement component.hpp"
 #include "static collision component.hpp"
 #include "dynamic collision component.hpp"
 
 namespace {
-  using ToVec = Math::ToVec<Coord, Math::Dir::RIGHT, Math::Dir::UP>;
-
   ECS::EntityID getDynamic(const EntityGrid &grid, const Pos pos) {
     return grid.outOfRange(pos) ? ECS::NULL_ENTITY : grid[pos].dynamicID;
   }

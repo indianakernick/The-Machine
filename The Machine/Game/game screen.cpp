@@ -45,6 +45,7 @@ void GameScreen::update(const float ) {
   clearRealDirSystem(registry);
   moveDirSystem(registry, grid);
   clearDesiredDirSystem(registry);
+  updatePosSystem(registry, grid);
 }
 
 void GameScreen::render(const float aspect, const float delta) {

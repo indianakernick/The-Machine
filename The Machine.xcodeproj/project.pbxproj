@@ -27,6 +27,7 @@
 		455AFDC91FFDF71100739358 /* move dir system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDC71FFDF71100739358 /* move dir system.cpp */; };
 		455AFDCC1FFF044900739358 /* clear real dir system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDCA1FFF044900739358 /* clear real dir system.cpp */; };
 		455AFDCF1FFF06EB00739358 /* clear desired dir system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDCD1FFF06EB00739358 /* clear desired dir system.cpp */; };
+		455AFDD21FFF0B9200739358 /* update pos system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDD01FFF0B9200739358 /* update pos system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,6 +89,9 @@
 		455AFDCB1FFF044900739358 /* clear real dir system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "clear real dir system.hpp"; sourceTree = "<group>"; };
 		455AFDCD1FFF06EB00739358 /* clear desired dir system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "clear desired dir system.cpp"; sourceTree = "<group>"; };
 		455AFDCE1FFF06EB00739358 /* clear desired dir system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "clear desired dir system.hpp"; sourceTree = "<group>"; };
+		455AFDD01FFF0B9200739358 /* update pos system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "update pos system.cpp"; sourceTree = "<group>"; };
+		455AFDD11FFF0B9200739358 /* update pos system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "update pos system.hpp"; sourceTree = "<group>"; };
+		455AFDD31FFF0F1B00739358 /* dir to vec.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "dir to vec.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +220,8 @@
 				455AFDCB1FFF044900739358 /* clear real dir system.hpp */,
 				455AFDCD1FFF06EB00739358 /* clear desired dir system.cpp */,
 				455AFDCE1FFF06EB00739358 /* clear desired dir system.hpp */,
+				455AFDD01FFF0B9200739358 /* update pos system.cpp */,
+				455AFDD11FFF0B9200739358 /* update pos system.hpp */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -224,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				455AFD991FFDBB7F00739358 /* types.hpp */,
+				455AFDD31FFF0F1B00739358 /* dir to vec.hpp */,
 				455AFD951FFDBADF00739358 /* entity grid.cpp */,
 				455AFD961FFDBADF00739358 /* entity grid.hpp */,
 			);
@@ -365,6 +372,7 @@
 				455AFDC91FFDF71100739358 /* move dir system.cpp in Sources */,
 				455AFDB11FFDD77000739358 /* dynamic collision init.cpp in Sources */,
 				455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */,
+				455AFDD21FFF0B9200739358 /* update pos system.cpp in Sources */,
 				455AFDC31FFDEE5B00739358 /* position init.cpp in Sources */,
 				455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */,
 				455AFD861FFDB34400739358 /* app.cpp in Sources */,

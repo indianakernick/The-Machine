@@ -25,6 +25,10 @@ class EntityGrid {
 public:
   EntityGrid();
   explicit EntityGrid(Pos);
+  EntityGrid(EntityGrid &&) = default;
+  EntityGrid &operator=(EntityGrid &&) = default;
+
+  void resize(Pos);
 
   // using an object instead of an index in `operator[]` is a little strange
   // but it makes it obvious to the caller that `operator[]` doesn't do range
@@ -33,15 +37,24 @@ public:
   Tile operator[](Pos) const;
   Tile &at(Pos);
   Tile at(Pos) const;
-
+  
   Pos size() const;
   bool outOfRange(Pos) const;
+  
+  Tile &operator[](size_t);
+  Tile operator[](size_t) const;
+  Tile &at(size_t);
+  Tile at(size_t) const;
+  
+  size_t length() const;
+  bool outOfRange(size_t) const;
   
 private:
   Tiles mTiles;
   Pos mSize;
   
-  void checkPosRange(Pos) const;
+  void checkRange(Pos) const;
+  void checkRange(size_t) const;
 };
 
 #endif

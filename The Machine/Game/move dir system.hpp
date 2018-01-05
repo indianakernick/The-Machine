@@ -12,6 +12,7 @@
 #include "entity grid.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
+// calculate Movement::realDir from Movement::desiredDir and collisions
 void moveDirSystem(ECS::Registry &, const EntityGrid &);
 
 #endif
