@@ -25,6 +25,8 @@
 		455AFDC31FFDEE5B00739358 /* position init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDC11FFDEE5B00739358 /* position init.cpp */; };
 		455AFDC61FFDF34800739358 /* init grid system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDC41FFDF34800739358 /* init grid system.cpp */; };
 		455AFDC91FFDF71100739358 /* move dir system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDC71FFDF71100739358 /* move dir system.cpp */; };
+		455AFDCC1FFF044900739358 /* clear real dir system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDCA1FFF044900739358 /* clear real dir system.cpp */; };
+		455AFDCF1FFF06EB00739358 /* clear desired dir system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDCD1FFF06EB00739358 /* clear desired dir system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,6 +84,10 @@
 		455AFDC51FFDF34800739358 /* init grid system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "init grid system.hpp"; sourceTree = "<group>"; };
 		455AFDC71FFDF71100739358 /* move dir system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "move dir system.cpp"; sourceTree = "<group>"; };
 		455AFDC81FFDF71100739358 /* move dir system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "move dir system.hpp"; sourceTree = "<group>"; };
+		455AFDCA1FFF044900739358 /* clear real dir system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "clear real dir system.cpp"; sourceTree = "<group>"; };
+		455AFDCB1FFF044900739358 /* clear real dir system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "clear real dir system.hpp"; sourceTree = "<group>"; };
+		455AFDCD1FFF06EB00739358 /* clear desired dir system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "clear desired dir system.cpp"; sourceTree = "<group>"; };
+		455AFDCE1FFF06EB00739358 /* clear desired dir system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "clear desired dir system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +212,10 @@
 				455AFDC51FFDF34800739358 /* init grid system.hpp */,
 				455AFDC71FFDF71100739358 /* move dir system.cpp */,
 				455AFDC81FFDF71100739358 /* move dir system.hpp */,
+				455AFDCA1FFF044900739358 /* clear real dir system.cpp */,
+				455AFDCB1FFF044900739358 /* clear real dir system.hpp */,
+				455AFDCD1FFF06EB00739358 /* clear desired dir system.cpp */,
+				455AFDCE1FFF06EB00739358 /* clear desired dir system.hpp */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -346,6 +356,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				455AFD971FFDBADF00739358 /* entity grid.cpp in Sources */,
+				455AFDCF1FFF06EB00739358 /* clear desired dir system.cpp in Sources */,
+				455AFDCC1FFF044900739358 /* clear real dir system.cpp in Sources */,
 				455AFDA11FFDC42C00739358 /* static collision init.cpp in Sources */,
 				455AFDBB1FFDE84D00739358 /* player input system.cpp in Sources */,
 				4507599E1FFC795D0009B360 /* main.cpp in Sources */,

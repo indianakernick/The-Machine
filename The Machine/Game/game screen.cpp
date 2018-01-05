@@ -42,7 +42,9 @@ void GameScreen::input(const SDL_Event &e) {
 }
 
 void GameScreen::update(const float ) {
-  
+  clearRealDirSystem(registry);
+  moveDirSystem(registry, grid);
+  clearDesiredDirSystem(registry);
 }
 
 void GameScreen::render(const float aspect, const float delta) {

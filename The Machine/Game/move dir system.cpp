@@ -13,13 +13,6 @@
 #include "dynamic collision component.hpp"
 
 namespace {
-  void clearRealDir(ECS::Registry &registry) {
-    auto view = registry.view<Movement>();
-    for (const ECS::EntityID entity : view) {
-      view.get(entity).realDir = Math::Dir::NONE;
-    }
-  }
-  
   using ToVec = Math::ToVec<Coord, Math::Dir::RIGHT, Math::Dir::UP>;
 
   ECS::EntityID getDynamic(const EntityGrid &grid, const Pos pos) {
@@ -102,8 +95,6 @@ namespace {
 }
 
 void moveDirSystem(ECS::Registry &registry, const EntityGrid &grid) {
-  clearRealDir(registry);
-  
   const auto movementView = registry.view<Movement>();
   const Pos size = grid.size();
   Pos pos;
