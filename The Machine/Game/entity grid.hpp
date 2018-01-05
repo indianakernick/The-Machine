@@ -35,6 +35,7 @@ public:
   Tile at(Pos) const;
 
   Pos size() const;
+  bool outOfRange(Pos) const;
   
 private:
   Tiles mTiles;

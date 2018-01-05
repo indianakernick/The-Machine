@@ -36,8 +36,12 @@ Pos EntityGrid::size() const {
   return mSize;
 }
 
+bool EntityGrid::outOfRange(const Pos pos) const {
+  return pos.x >= mSize.x || pos.y >= mSize.y;
+}
+
 void EntityGrid::checkPosRange(const Pos pos) const {
-  if (pos.x > mSize.x || pos.y > mSize.y) {
+  if (outOfRange(pos)) {
     throw std::range_error("Pos out of range");
   }
 }

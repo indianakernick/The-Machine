@@ -22,35 +22,89 @@ namespace {
   
   using ToVec = Math::ToVec<Coord, Math::Dir::RIGHT, Math::Dir::UP>;
 
+  ECS::EntityID getDynamic(const EntityGrid &grid, const Pos pos) {
+    return grid.outOfRange(pos) ? ECS::NULL_ENTITY : grid[pos].dynamicID;
+  }
+
   bool isMovingToPosFromSide(
+    ECS::Registry &registry,
     const EntityGrid &grid,
-    const entt::View<ECS::EntityID, Movement> movementView,
     const Pos pos,
     const Math::Dir side
   ) {
-    const Pos sideVec = ToVec::conv(side);
-    if (pos.x == 0 && sideVec.x == Coord(-1)) {
-      return false;
-    } else if (pos.y == 0 && sideVec.y == Coord(-1)) {
+    const auto movementView = registry.view<Movement>();
+    const ECS::EntityID fromID = getDynamic(grid, pos + ToVec::conv(side));
+    if (fromID == ECS::NULL_ENTITY) {
       return false;
     } else {
-      const Pos fromPos = pos + sideVec;
-      const ECS::EntityID fromID = grid[fromPos].dynamicID;
-      if (fromID == ECS::NULL_ENTITY) {
+      return (movementView.get(fromID).realDir == Math::opposite(side));
+    }
+  }
+  
+  bool moveInDir(
+    ECS::Registry &registry,
+    const EntityGrid &grid,
+    const ECS::EntityID entity,
+    const Pos pos,
+    const Math::Dir dir
+  ) {
+    auto movementView = registry.view<Movement>();
+    const auto staticView = registry.view<StaticCollision>();
+    const auto dynamicView = registry.view<DynamicCollision>();
+    
+    const uint32_t type = dynamicView.get(entity).type;
+    const Pos targetPos = pos + ToVec::conv(dir);
+    
+    // can't move past the edge of the map
+    if (grid.outOfRange(targetPos)) {
+      return false;
+    }
+    
+    const Tile targetTile = grid[targetPos];;
+    
+    // static entity in target tile must accept this type of dynamic entity
+    if (targetTile.staticID != ECS::NULL_ENTITY) {
+      const uint32_t accepts = staticView.get(targetTile.staticID).accepts;
+      if (!(accepts & type)) {
         return false;
-      } else {
-        return (movementView.get(fromID).realDir != Math::opposite(side));
       }
     }
-  };
+    
+    // there can't be any dynamic entities moving into the target tile from the left
+    if (isMovingToPosFromSide(registry, grid, targetPos, Math::Dir::LEFT)) {
+      return false;
+    }
+    // there can't be any dynamic entities moving into the target tile from below
+    if (isMovingToPosFromSide(registry, grid, targetPos, Math::Dir::DOWN)) {
+      return false;
+    }
+    
+    // if the target tile has a dynamic entity
+    if (targetTile.dynamicID != ECS::NULL_ENTITY) {
+      // the dynamic entity must allow this entity to push it
+      const uint32_t pushedBy = dynamicView.get(targetTile.dynamicID).pushedBy;
+      if (!(pushedBy & type)) {
+        return false;
+      }
+      // the dynamic entity must be able to move in the direction of this entity
+      if (moveInDir(registry, grid, targetTile.dynamicID, targetPos, dir)) {
+        movementView.get(entity).realDir = dir;
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      // there aren't any dynamic entities in the way
+      movementView.get(entity).realDir = dir;
+      return true;
+    }
+  }
 }
 
 void moveDirSystem(ECS::Registry &registry, const EntityGrid &grid) {
   clearRealDir(registry);
   
-  auto movementView = registry.view<Movement>();
-  const auto staticView = registry.view<StaticCollision>();
-  const auto dynamicView = registry.view<DynamicCollision>();
+  const auto movementView = registry.view<Movement>();
   const Pos size = grid.size();
   Pos pos;
   
@@ -60,21 +114,15 @@ void moveDirSystem(ECS::Registry &registry, const EntityGrid &grid) {
       if (entity == ECS::NULL_ENTITY) {
         continue;
       }
-      Movement &movement = movementView.get(entity);
+      const Movement movement = movementView.get(entity);
       if (movement.desiredDir == Math::Dir::NONE) {
         continue;
       }
       if (movement.realDir != Math::Dir::NONE) {
         continue;
       }
-      const Pos desiredPos = pos + ToVec::conv(movement.desiredDir);
-      const Tile desiredTile = grid[desiredPos];
       
-      const auto desiredAccepts = staticView.get(desiredTile.staticID).accepts;
-      const bool staticOK = desiredAccepts & dynamicView.get(entity).type;
-      
-      const bool leftOK = !isMovingToPosFromSide(grid, movementView, desiredPos, Math::Dir::LEFT);
-      const bool downOK = !isMovingToPosFromSide(grid, movementView, desiredPos, Math::Dir::DOWN);
+      moveInDir(registry, grid, entity, pos, movement.desiredDir);
     }
   }
 }
