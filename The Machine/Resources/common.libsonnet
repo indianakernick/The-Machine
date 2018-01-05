@@ -67,8 +67,8 @@
   ],
   dir_bitset_size: 4,
 
-  getDirBitsetComp(params):: {
-    sides: $.getNamedBitset($.dir_names, $.dir_bitset_size, params.sides)
+  getDirBitsetComp(sides):: {
+    "sides": $.getNamedBitset($.dir_names, $.dir_bitset_size, sides)
   },
 
   gate_names: [
@@ -82,7 +82,19 @@
     "identity"
   ],
 
+  length(arrayOrScalar)::
+    if std.type(arrayOrScalar) == "array" then
+      std.length(arrayOrScalar)
+    else
+      1
+  ,
+
   getGateComp(params):: {
+    [if (params.fun == "not" || params.fun == "identity") && $.length(params.inputSides) != 1 then
+      error "NOT and IDENTITY gate functions can only have 1 input"
+    else
+      null
+    ]: null,
     fun: $.indexOf($.gate_names, params.fun)
   }
 }

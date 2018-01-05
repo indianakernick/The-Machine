@@ -9,6 +9,7 @@
 #ifndef systems_hpp
 #define systems_hpp
 
+#include "gate system.hpp"
 #include "move dir system.hpp"
 #include "init grid system.hpp"
 #include "update pos system.hpp"
