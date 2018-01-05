@@ -15,7 +15,11 @@
       else
         {found: info.found, index: info.index + 1}
     ;
-    std.foldl(find, array, {found: -1, index: 0}).found
+    local found = std.foldl(find, array, {found: -1, index: 0}).found;
+    if found == -1 then
+      error "Item not found in array"
+    else
+      found
   ,
 
   getNamedBit(allNames, size, name)::
@@ -65,5 +69,20 @@
 
   getDirBitsetComp(params):: {
     sides: $.getNamedBitset($.dir_names, $.dir_bitset_size, params.sides)
+  },
+
+  gate_names: [
+    "and",
+    "or",
+    "xor",
+    "not",
+    "nand",
+    "nor",
+    "xnor",
+    "identity"
+  ],
+
+  getGateComp(params):: {
+    fun: $.indexOf($.gate_names, params.fun)
   }
 }

@@ -14,7 +14,7 @@
 
 class PowerInputInit final : public ECS::CompInit<PowerInput> {
 public:
-  void init(PowerInput &, const json &);
+  void init(PowerInput &, const json &) override;
 };
 
 #endif

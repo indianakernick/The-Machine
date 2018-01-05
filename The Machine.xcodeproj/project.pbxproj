@@ -30,6 +30,8 @@
 		455AFDD21FFF0B9200739358 /* update pos system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDD01FFF0B9200739358 /* update pos system.cpp */; };
 		455AFDD91FFF1B9A00739358 /* power input init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDD71FFF1B9A00739358 /* power input init.cpp */; };
 		455AFDDC1FFF1D2000739358 /* power output init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDDA1FFF1D2000739358 /* power output init.cpp */; };
+		455AFDE11FFF3E8800739358 /* gate init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDDF1FFF3E8800739358 /* gate init.cpp */; };
+		455AFDE41FFF3F4200739358 /* wire init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDE21FFF3F4200739358 /* wire init.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -101,6 +103,12 @@
 		455AFDD81FFF1B9A00739358 /* power input init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power input init.hpp"; sourceTree = "<group>"; };
 		455AFDDA1FFF1D2000739358 /* power output init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "power output init.cpp"; sourceTree = "<group>"; };
 		455AFDDB1FFF1D2000739358 /* power output init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power output init.hpp"; sourceTree = "<group>"; };
+		455AFDDD1FFF3DDD00739358 /* gate component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "gate component.hpp"; sourceTree = "<group>"; };
+		455AFDDE1FFF3E2F00739358 /* wire component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "wire component.hpp"; sourceTree = "<group>"; };
+		455AFDDF1FFF3E8800739358 /* gate init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "gate init.cpp"; sourceTree = "<group>"; };
+		455AFDE01FFF3E8800739358 /* gate init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "gate init.hpp"; sourceTree = "<group>"; };
+		455AFDE21FFF3F4200739358 /* wire init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "wire init.cpp"; sourceTree = "<group>"; };
+		455AFDE31FFF3F4200739358 /* wire init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "wire init.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +204,8 @@
 				455AFDD41FFF191F00739358 /* power component.hpp */,
 				455AFDD51FFF19A300739358 /* power input component.hpp */,
 				455AFDD61FFF19AD00739358 /* power output component.hpp */,
+				455AFDDD1FFF3DDD00739358 /* gate component.hpp */,
+				455AFDDE1FFF3E2F00739358 /* wire component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -263,6 +273,10 @@
 				455AFDD81FFF1B9A00739358 /* power input init.hpp */,
 				455AFDDA1FFF1D2000739358 /* power output init.cpp */,
 				455AFDDB1FFF1D2000739358 /* power output init.hpp */,
+				455AFDDF1FFF3E8800739358 /* gate init.cpp */,
+				455AFDE01FFF3E8800739358 /* gate init.hpp */,
+				455AFDE21FFF3F4200739358 /* wire init.cpp */,
+				455AFDE31FFF3F4200739358 /* wire init.hpp */,
 			);
 			name = "Component initializers";
 			sourceTree = "<group>";
@@ -387,6 +401,7 @@
 				455AFDC61FFDF34800739358 /* init grid system.cpp in Sources */,
 				455AFDC91FFDF71100739358 /* move dir system.cpp in Sources */,
 				455AFDDC1FFF1D2000739358 /* power output init.cpp in Sources */,
+				455AFDE41FFF3F4200739358 /* wire init.cpp in Sources */,
 				455AFDB11FFDD77000739358 /* dynamic collision init.cpp in Sources */,
 				455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */,
 				455AFDD21FFF0B9200739358 /* update pos system.cpp in Sources */,
@@ -394,6 +409,7 @@
 				455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */,
 				455AFD861FFDB34400739358 /* app.cpp in Sources */,
 				455AFDD91FFF1B9A00739358 /* power input init.cpp in Sources */,
+				455AFDE11FFF3E8800739358 /* gate init.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

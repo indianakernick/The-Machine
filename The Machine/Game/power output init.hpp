@@ -14,7 +14,7 @@
 
 class PowerOutputInit final : public ECS::CompInit<PowerOutput> {
 public:
-  void init(PowerOutput &, const json &);
+  void init(PowerOutput &, const json &) override;
 };
 
 #endif
