@@ -8,6 +8,9 @@ local common = import "common.libsonnet";
         type: "air",
         pushed_by: "none",
         accepts: "all"
+      }),
+      PowerInput: common.getDirBitsetComp({
+        sides: ["right", "left"]
       })
     }
   }

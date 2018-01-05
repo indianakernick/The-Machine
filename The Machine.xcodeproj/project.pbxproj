@@ -28,6 +28,8 @@
 		455AFDCC1FFF044900739358 /* clear real dir system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDCA1FFF044900739358 /* clear real dir system.cpp */; };
 		455AFDCF1FFF06EB00739358 /* clear desired dir system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDCD1FFF06EB00739358 /* clear desired dir system.cpp */; };
 		455AFDD21FFF0B9200739358 /* update pos system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDD01FFF0B9200739358 /* update pos system.cpp */; };
+		455AFDD91FFF1B9A00739358 /* power input init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDD71FFF1B9A00739358 /* power input init.cpp */; };
+		455AFDDC1FFF1D2000739358 /* power output init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDDA1FFF1D2000739358 /* power output init.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -93,6 +95,12 @@
 		455AFDD11FFF0B9200739358 /* update pos system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "update pos system.hpp"; sourceTree = "<group>"; };
 		455AFDD31FFF0F1B00739358 /* dir to vec.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "dir to vec.hpp"; sourceTree = "<group>"; };
 		455AFDD41FFF191F00739358 /* power component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power component.hpp"; sourceTree = "<group>"; };
+		455AFDD51FFF19A300739358 /* power input component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power input component.hpp"; sourceTree = "<group>"; };
+		455AFDD61FFF19AD00739358 /* power output component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power output component.hpp"; sourceTree = "<group>"; };
+		455AFDD71FFF1B9A00739358 /* power input init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "power input init.cpp"; sourceTree = "<group>"; };
+		455AFDD81FFF1B9A00739358 /* power input init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power input init.hpp"; sourceTree = "<group>"; };
+		455AFDDA1FFF1D2000739358 /* power output init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "power output init.cpp"; sourceTree = "<group>"; };
+		455AFDDB1FFF1D2000739358 /* power output init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power output init.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +194,8 @@
 				455AFDB81FFDE6A900739358 /* player action component.hpp */,
 				455AFDC01FFDEE1900739358 /* position component.hpp */,
 				455AFDD41FFF191F00739358 /* power component.hpp */,
+				455AFDD51FFF19A300739358 /* power input component.hpp */,
+				455AFDD61FFF19AD00739358 /* power output component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -249,6 +259,10 @@
 				455AFDB01FFDD77000739358 /* dynamic collision init.hpp */,
 				455AFDC11FFDEE5B00739358 /* position init.cpp */,
 				455AFDC21FFDEE5B00739358 /* position init.hpp */,
+				455AFDD71FFF1B9A00739358 /* power input init.cpp */,
+				455AFDD81FFF1B9A00739358 /* power input init.hpp */,
+				455AFDDA1FFF1D2000739358 /* power output init.cpp */,
+				455AFDDB1FFF1D2000739358 /* power output init.hpp */,
 			);
 			name = "Component initializers";
 			sourceTree = "<group>";
@@ -280,8 +294,8 @@
 				450759AA1FFC7B450009B360 /* CopyFiles */,
 				450759881FFC77E20009B360 /* Sources */,
 				450759891FFC77E20009B360 /* Frameworks */,
-				455AFDA51FFDC5F000739358 /* Compile Levels */,
 				4507598A1FFC77E20009B360 /* Resources */,
+				455AFDA51FFDC5F000739358 /* Compile Levels */,
 			);
 			buildRules = (
 			);
@@ -355,7 +369,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  echo \"Compiling $name\"\n  jsonnet \"$PROJECT_RES/$name.jsonnet\" |           # compile jsonnet\n  jq -cM . > \"$PRODUCT_RES/$name.json\"             # minify json\ndone";
+			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  jsonnet \"$PROJECT_RES/$name.jsonnet\" |           # compile jsonnet\n  jq -cM . > \"$PRODUCT_RES/$name.json\"             # minify json\n  # exit if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -372,12 +386,14 @@
 				4507599E1FFC795D0009B360 /* main.cpp in Sources */,
 				455AFDC61FFDF34800739358 /* init grid system.cpp in Sources */,
 				455AFDC91FFDF71100739358 /* move dir system.cpp in Sources */,
+				455AFDDC1FFF1D2000739358 /* power output init.cpp in Sources */,
 				455AFDB11FFDD77000739358 /* dynamic collision init.cpp in Sources */,
 				455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */,
 				455AFDD21FFF0B9200739358 /* update pos system.cpp in Sources */,
 				455AFDC31FFDEE5B00739358 /* position init.cpp in Sources */,
 				455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */,
 				455AFD861FFDB34400739358 /* app.cpp in Sources */,
+				455AFDD91FFF1B9A00739358 /* power input init.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
