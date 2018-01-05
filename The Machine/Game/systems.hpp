@@ -12,6 +12,7 @@
 #include "move dir system.hpp"
 #include "init grid system.hpp"
 #include "update pos system.hpp"
+#include "shift power system.hpp"
 #include "player input system.hpp"
 #include "clear real dir system.hpp"
 #include "clear desired dir system.hpp"

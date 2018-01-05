@@ -32,6 +32,7 @@
 		455AFDDC1FFF1D2000739358 /* power output init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDDA1FFF1D2000739358 /* power output init.cpp */; };
 		455AFDE11FFF3E8800739358 /* gate init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDDF1FFF3E8800739358 /* gate init.cpp */; };
 		455AFDE41FFF3F4200739358 /* wire init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDE21FFF3F4200739358 /* wire init.cpp */; };
+		455AFDE71FFF42CF00739358 /* shift power system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDE51FFF42CF00739358 /* shift power system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -109,6 +110,8 @@
 		455AFDE01FFF3E8800739358 /* gate init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "gate init.hpp"; sourceTree = "<group>"; };
 		455AFDE21FFF3F4200739358 /* wire init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "wire init.cpp"; sourceTree = "<group>"; };
 		455AFDE31FFF3F4200739358 /* wire init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "wire init.hpp"; sourceTree = "<group>"; };
+		455AFDE51FFF42CF00739358 /* shift power system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "shift power system.cpp"; sourceTree = "<group>"; };
+		455AFDE61FFF42CF00739358 /* shift power system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "shift power system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +247,8 @@
 				455AFDCE1FFF06EB00739358 /* clear desired dir system.hpp */,
 				455AFDD01FFF0B9200739358 /* update pos system.cpp */,
 				455AFDD11FFF0B9200739358 /* update pos system.hpp */,
+				455AFDE51FFF42CF00739358 /* shift power system.cpp */,
+				455AFDE61FFF42CF00739358 /* shift power system.hpp */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -409,6 +414,7 @@
 				455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */,
 				455AFD861FFDB34400739358 /* app.cpp in Sources */,
 				455AFDD91FFF1B9A00739358 /* power input init.cpp in Sources */,
+				455AFDE71FFF42CF00739358 /* shift power system.cpp in Sources */,
 				455AFDE11FFF3E8800739358 /* gate init.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
