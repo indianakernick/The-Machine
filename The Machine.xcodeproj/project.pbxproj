@@ -92,6 +92,7 @@
 		455AFDD01FFF0B9200739358 /* update pos system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "update pos system.cpp"; sourceTree = "<group>"; };
 		455AFDD11FFF0B9200739358 /* update pos system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "update pos system.hpp"; sourceTree = "<group>"; };
 		455AFDD31FFF0F1B00739358 /* dir to vec.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "dir to vec.hpp"; sourceTree = "<group>"; };
+		455AFDD41FFF191F00739358 /* power component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power component.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +185,7 @@
 				455AFDB31FFDE0B800739358 /* movement component.hpp */,
 				455AFDB81FFDE6A900739358 /* player action component.hpp */,
 				455AFDC01FFDEE1900739358 /* position component.hpp */,
+				455AFDD41FFF191F00739358 /* power component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
