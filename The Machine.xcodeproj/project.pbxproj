@@ -50,6 +50,7 @@
 		455AFE262000881A00739358 /* piston init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE242000881A00739358 /* piston init.cpp */; };
 		455AFE29200089BA00739358 /* piston system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE27200089BA00739358 /* piston system.cpp */; };
 		455AFE2C200090D100739358 /* shift player action system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE2A200090D100739358 /* shift player action system.cpp */; };
+		455AFE312000982B00739358 /* lever system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE2F2000982B00739358 /* lever system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -174,6 +175,8 @@
 		455AFE2B200090D100739358 /* shift player action system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "shift player action system.hpp"; sourceTree = "<group>"; };
 		455AFE2D2000946A00739358 /* lever component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "lever component.hpp"; sourceTree = "<group>"; };
 		455AFE2E200094B500739358 /* button component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "button component.hpp"; sourceTree = "<group>"; };
+		455AFE2F2000982B00739358 /* lever system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "lever system.cpp"; sourceTree = "<group>"; };
+		455AFE302000982B00739358 /* lever system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "lever system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +342,8 @@
 				455AFE28200089BA00739358 /* piston system.hpp */,
 				455AFE2A200090D100739358 /* shift player action system.cpp */,
 				455AFE2B200090D100739358 /* shift player action system.hpp */,
+				455AFE2F2000982B00739358 /* lever system.cpp */,
+				455AFE302000982B00739358 /* lever system.hpp */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -526,6 +531,7 @@
 				455AFE10200075C300739358 /* signal receiver init.cpp in Sources */,
 				455AFDD21FFF0B9200739358 /* update pos system.cpp in Sources */,
 				455AFDC31FFDEE5B00739358 /* position init.cpp in Sources */,
+				455AFE312000982B00739358 /* lever system.cpp in Sources */,
 				455AFDEA1FFF449000739358 /* gate system.cpp in Sources */,
 				455AFDF72000578100739358 /* radioactivity init.cpp in Sources */,
 				455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */,

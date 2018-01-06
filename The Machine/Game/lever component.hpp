@@ -9,6 +9,8 @@
 #ifndef lever_component_hpp
 #define lever_component_hpp
 
-struct Lever {};
+struct Lever {
+  bool enabled = false;
+};
 
 #endif
