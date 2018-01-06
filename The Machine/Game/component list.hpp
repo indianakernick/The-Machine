@@ -21,6 +21,7 @@
 #include <Simpleton/Utils/type list.hpp>
 #include "static collision component.hpp"
 #include "dynamic collision component.hpp"
+#include "radioactivity detector component.hpp"
 
 using CompList = Utils::TypeList<
   Gate,
@@ -33,7 +34,8 @@ using CompList = Utils::TypeList<
   PlayerAction,
   Radioactivity,
   StaticCollision,
-  DynamicCollision
+  DynamicCollision,
+  RadioactivityDetector
 >;
 
 #endif

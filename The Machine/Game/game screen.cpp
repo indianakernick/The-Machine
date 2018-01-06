@@ -21,6 +21,7 @@ void GameScreen::init() {
   compInits.construct<RadioactivityInit>();
   compInits.construct<StaticCollisionInit>();
   compInits.construct<DynamicCollisionInit>();
+  compInits.construct<RadioactivityDetectorInit>();
   compInits.constructDefaults();
 
   progress.setFilePath(SDL::getSaveDir("Indi Kernick", "The Machine") + "progress.txt");
@@ -48,6 +49,7 @@ void GameScreen::input(const SDL_Event &e) {
 
 void GameScreen::update(const float ) {
   updatePosSystem(registry, grid);
+  shiftPowerSystem(registry);
   
   //signal receiver
   //radioactivity detector
@@ -55,7 +57,6 @@ void GameScreen::update(const float ) {
   //lever
   //button
   
-  shiftPowerSystem(registry);
   gateSystem(registry, grid);
   wireSystem(registry, grid);
   

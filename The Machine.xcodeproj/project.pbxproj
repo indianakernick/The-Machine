@@ -36,6 +36,7 @@
 		455AFDEA1FFF449000739358 /* gate system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDE81FFF449000739358 /* gate system.cpp */; };
 		455AFDED200042F200739358 /* wire system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDEB200042F200739358 /* wire system.cpp */; };
 		455AFDF72000578100739358 /* radioactivity init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDF52000578100739358 /* radioactivity init.cpp */; };
+		455AFDFB20005A2400739358 /* radioactivity detector init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDF920005A2400739358 /* radioactivity detector init.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -122,6 +123,9 @@
 		455AFDF4200056D600739358 /* radioactivity component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity component.hpp"; sourceTree = "<group>"; };
 		455AFDF52000578100739358 /* radioactivity init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "radioactivity init.cpp"; sourceTree = "<group>"; };
 		455AFDF62000578100739358 /* radioactivity init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity init.hpp"; sourceTree = "<group>"; };
+		455AFDF8200059AB00739358 /* radioactivity detector component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity detector component.hpp"; sourceTree = "<group>"; };
+		455AFDF920005A2400739358 /* radioactivity detector init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "radioactivity detector init.cpp"; sourceTree = "<group>"; };
+		455AFDFA20005A2400739358 /* radioactivity detector init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity detector init.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +224,7 @@
 				455AFDDD1FFF3DDD00739358 /* gate component.hpp */,
 				455AFDDE1FFF3E2F00739358 /* wire component.hpp */,
 				455AFDF4200056D600739358 /* radioactivity component.hpp */,
+				455AFDF8200059AB00739358 /* radioactivity detector component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -299,6 +304,8 @@
 				455AFDE31FFF3F4200739358 /* wire init.hpp */,
 				455AFDF52000578100739358 /* radioactivity init.cpp */,
 				455AFDF62000578100739358 /* radioactivity init.hpp */,
+				455AFDF920005A2400739358 /* radioactivity detector init.cpp */,
+				455AFDFA20005A2400739358 /* radioactivity detector init.hpp */,
 			);
 			name = "Component initializers";
 			sourceTree = "<group>";
@@ -425,6 +432,7 @@
 				455AFDDC1FFF1D2000739358 /* power output init.cpp in Sources */,
 				455AFDE41FFF3F4200739358 /* wire init.cpp in Sources */,
 				455AFDB11FFDD77000739358 /* dynamic collision init.cpp in Sources */,
+				455AFDFB20005A2400739358 /* radioactivity detector init.cpp in Sources */,
 				455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */,
 				455AFDD21FFF0B9200739358 /* update pos system.cpp in Sources */,
 				455AFDC31FFDEE5B00739358 /* position init.cpp in Sources */,
