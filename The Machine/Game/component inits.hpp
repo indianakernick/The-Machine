@@ -14,6 +14,7 @@
 #include "position init.hpp"
 #include "power input init.hpp"
 #include "power output init.hpp"
+#include "radioactivity init.hpp"
 #include "static collision init.hpp"
 #include "dynamic collision init.hpp"
 

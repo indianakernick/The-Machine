@@ -18,6 +18,7 @@ void GameScreen::init() {
   compInits.construct<PositionInit>();
   compInits.construct<PowerInputInit>();
   compInits.construct<PowerOutputInit>();
+  compInits.construct<RadioactivityInit>();
   compInits.construct<StaticCollisionInit>();
   compInits.construct<DynamicCollisionInit>();
   compInits.constructDefaults();
@@ -48,9 +49,18 @@ void GameScreen::input(const SDL_Event &e) {
 void GameScreen::update(const float ) {
   updatePosSystem(registry, grid);
   
+  //signal receiver
+  //radioactivity detector
+  //pressure plate
+  //lever
+  //button
+  
   shiftPowerSystem(registry);
   gateSystem(registry, grid);
   wireSystem(registry, grid);
+  
+  //radioactive toggle
+  //piston
   
   clearRealDirSystem(registry);
   moveDirSystem(registry, grid);
