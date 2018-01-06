@@ -51,6 +51,7 @@ void GameScreen::input(const SDL_Event &e) {
 void GameScreen::update(const float ) {
   updatePosSystem(registry, grid);
   shiftPowerSystem(registry);
+  shiftRadioactivitySystem(registry);
   
   radioactivityDetectorSystem(registry, grid);
   //signal receiver
