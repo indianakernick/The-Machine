@@ -9,9 +9,10 @@
 #ifndef piston_system_hpp
 #define piston_system_hpp
 
+#include "entity grid.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
-// move a piston head if it is being powered
-void pistonSystem(ECS::Registry &);
+// move a piston head if the piston base is being powered
+void pistonSystem(ECS::Registry &, const EntityGrid &);
 
 #endif

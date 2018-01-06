@@ -69,7 +69,7 @@ void GameScreen::update(const float ) {
   wireSystem(registry, grid);
   
   radioactiveToggleSystem(registry, grid);
-  pistonSystem(registry);
+  pistonSystem(registry, grid);
   
   clearRealDirSystem(registry);
   moveDirSystem(registry, grid);
