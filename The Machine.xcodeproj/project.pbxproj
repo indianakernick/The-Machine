@@ -42,6 +42,7 @@
 		455AFE052000691D00739358 /* radioactive toggle system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE032000691D00739358 /* radioactive toggle system.cpp */; };
 		455AFE0820006D0100739358 /* shift radioactivity system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE0620006D0100739358 /* shift radioactivity system.cpp */; };
 		455AFE0C2000733100739358 /* signal transmitter init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE0A2000733100739358 /* signal transmitter init.cpp */; };
+		455AFE10200075C300739358 /* signal receiver init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE0E200075C300739358 /* signal receiver init.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -143,6 +144,9 @@
 		455AFE09200072EF00739358 /* signal transmitter component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal transmitter component.hpp"; sourceTree = "<group>"; };
 		455AFE0A2000733100739358 /* signal transmitter init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "signal transmitter init.cpp"; sourceTree = "<group>"; };
 		455AFE0B2000733100739358 /* signal transmitter init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal transmitter init.hpp"; sourceTree = "<group>"; };
+		455AFE0D2000751100739358 /* signal receiver component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal receiver component.hpp"; sourceTree = "<group>"; };
+		455AFE0E200075C300739358 /* signal receiver init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "signal receiver init.cpp"; sourceTree = "<group>"; };
+		455AFE0F200075C300739358 /* signal receiver init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal receiver init.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +248,7 @@
 				455AFDF8200059AB00739358 /* radioactivity detector component.hpp */,
 				455AFDFC20005D5600739358 /* radioactive toggle component.hpp */,
 				455AFE09200072EF00739358 /* signal transmitter component.hpp */,
+				455AFE0D2000751100739358 /* signal receiver component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -335,6 +340,8 @@
 				455AFDFE20005DE300739358 /* radioactive toggle init.hpp */,
 				455AFE0A2000733100739358 /* signal transmitter init.cpp */,
 				455AFE0B2000733100739358 /* signal transmitter init.hpp */,
+				455AFE0E200075C300739358 /* signal receiver init.cpp */,
+				455AFE0F200075C300739358 /* signal receiver init.hpp */,
 			);
 			name = "Component initializers";
 			sourceTree = "<group>";
@@ -466,6 +473,7 @@
 				455AFDFB20005A2400739358 /* radioactivity detector init.cpp in Sources */,
 				455AFE0820006D0100739358 /* shift radioactivity system.cpp in Sources */,
 				455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */,
+				455AFE10200075C300739358 /* signal receiver init.cpp in Sources */,
 				455AFDD21FFF0B9200739358 /* update pos system.cpp in Sources */,
 				455AFDC31FFDEE5B00739358 /* position init.cpp in Sources */,
 				455AFDEA1FFF449000739358 /* gate system.cpp in Sources */,
