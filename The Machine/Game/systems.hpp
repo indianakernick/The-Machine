@@ -17,6 +17,7 @@
 #include "shift power system.hpp"
 #include "player input system.hpp"
 #include "clear real dir system.hpp"
+#include "pressure plate system.hpp"
 #include "signal receiver system.hpp"
 #include "clear desired dir system.hpp"
 #include "radioactive toggle system.hpp"

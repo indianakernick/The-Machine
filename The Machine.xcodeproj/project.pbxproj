@@ -46,6 +46,7 @@
 		455AFE13200076A200739358 /* signal receiver system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE11200076A200739358 /* signal receiver system.cpp */; };
 		455AFE1820007F1500739358 /* pressure plate init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE1620007F1500739358 /* pressure plate init.cpp */; };
 		455AFE1F2000824200739358 /* weight init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE1D2000824200739358 /* weight init.cpp */; };
+		455AFE222000839000739358 /* pressure plate system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE202000839000739358 /* pressure plate system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -159,6 +160,8 @@
 		455AFE1C2000821800739358 /* weight component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "weight component.hpp"; sourceTree = "<group>"; };
 		455AFE1D2000824200739358 /* weight init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "weight init.cpp"; sourceTree = "<group>"; };
 		455AFE1E2000824200739358 /* weight init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "weight init.hpp"; sourceTree = "<group>"; };
+		455AFE202000839000739358 /* pressure plate system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "pressure plate system.cpp"; sourceTree = "<group>"; };
+		455AFE212000839000739358 /* pressure plate system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "pressure plate system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +318,8 @@
 				455AFE0720006D0100739358 /* shift radioactivity system.hpp */,
 				455AFE11200076A200739358 /* signal receiver system.cpp */,
 				455AFE12200076A200739358 /* signal receiver system.hpp */,
+				455AFE202000839000739358 /* pressure plate system.cpp */,
+				455AFE212000839000739358 /* pressure plate system.hpp */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -505,6 +510,7 @@
 				455AFE1820007F1500739358 /* pressure plate init.cpp in Sources */,
 				455AFDED200042F200739358 /* wire system.cpp in Sources */,
 				455AFD861FFDB34400739358 /* app.cpp in Sources */,
+				455AFE222000839000739358 /* pressure plate system.cpp in Sources */,
 				455AFDD91FFF1B9A00739358 /* power input init.cpp in Sources */,
 				455AFDFF20005DE300739358 /* radioactive toggle init.cpp in Sources */,
 				455AFDE71FFF42CF00739358 /* shift power system.cpp in Sources */,
