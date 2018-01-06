@@ -10,7 +10,8 @@
 #define player_action_component_hpp
 
 struct PlayerAction {
-  bool enabled = false;
+  bool prev = false;
+  bool curr = false;
 };
 
 #endif

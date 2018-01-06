@@ -15,7 +15,7 @@
 namespace {
   void setActionState(ECS::Registry &registry, const bool enabled) {
     registry.view<PlayerAction>().each([enabled] (ECS::EntityID, PlayerAction &comp) {
-      comp.enabled = enabled;
+      comp.curr = enabled;
     });
   }
   

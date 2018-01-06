@@ -54,6 +54,7 @@ void GameScreen::input(const SDL_Event &e) {
 }
 
 void GameScreen::update(const float ) {
+  shiftPlayerActionSystem(registry);
   updatePosSystem(registry, grid);
   shiftPowerSystem(registry);
   shiftRadioactivitySystem(registry);

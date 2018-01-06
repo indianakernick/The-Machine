@@ -12,6 +12,7 @@
 #include "entity grid.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
+// outputs power if there is a dynamic entity in the same tile
 void pressurePlateSystem(ECS::Registry &, const EntityGrid &);
 
 #endif

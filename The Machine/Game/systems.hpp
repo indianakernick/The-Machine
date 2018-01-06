@@ -22,6 +22,7 @@
 #include "signal receiver system.hpp"
 #include "clear desired dir system.hpp"
 #include "radioactive toggle system.hpp"
+#include "shift player action system.hpp"
 #include "shift radioactivity system.hpp"
 #include "radioactivity detector system.hpp"
 

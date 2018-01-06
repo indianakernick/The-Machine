@@ -11,6 +11,7 @@
 
 #include <Simpleton/ECS/registry.hpp>
 
+// move a piston head if it is being powered
 void pistonSystem(ECS::Registry &);
 
 #endif
