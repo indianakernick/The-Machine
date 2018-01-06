@@ -9,7 +9,7 @@
 #ifndef dir_to_vec_hpp
 #define dir_to_vec_hpp
 
-#include "types.hpp"
+#include "position type.hpp"
 #include <Simpleton/Math/dir.hpp>
 
 using ToVec = Math::ToVec<Coord, Math::Dir::UP, Math::Dir::RIGHT>;

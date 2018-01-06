@@ -9,10 +9,10 @@
 #ifndef signal_receiver_component_hpp
 #define signal_receiver_component_hpp
 
-#include <cstdint>
+#include "signal channels.hpp"
 
 struct SignalReceiver {
-  uint8_t channel;
+  SignalChannel channel;
 };
 
 #endif

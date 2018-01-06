@@ -9,7 +9,7 @@
 #ifndef entity_grid_hpp
 #define entity_grid_hpp
 
-#include "types.hpp"
+#include "position type.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
 struct Tile {

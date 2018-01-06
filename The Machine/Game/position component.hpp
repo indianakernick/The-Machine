@@ -9,7 +9,7 @@
 #ifndef position_component_hpp
 #define position_component_hpp
 
-#include "types.hpp"
+#include "position type.hpp"
 
 struct Position {
   Pos pos;

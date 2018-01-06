@@ -9,10 +9,10 @@
 #ifndef signal_transmitter_component_hpp
 #define signal_transmitter_component_hpp
 
-#include <cstdint>
+#include "signal channels.hpp"
 
 struct SignalTransmitter {
-  uint8_t channel;
+  SignalChannel channel;
 };
 
 #endif

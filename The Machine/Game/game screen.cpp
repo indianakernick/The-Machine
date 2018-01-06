@@ -56,7 +56,7 @@ void GameScreen::update(const float ) {
   shiftRadioactivitySystem(registry);
   
   radioactivityDetectorSystem(registry, grid);
-  //signal receiver
+  signalReceiverSystem(registry);
   //pressure plate
   //lever
   //button

@@ -9,5 +9,5 @@
 #include "signal transmitter init.hpp"
 
 void SignalTransmitterInit::init(SignalTransmitter &comp, const json &node) {
-  comp.channel = node.at("channel").get<uint8_t>();
+  comp.channel = node.at("channel").get<SignalChannel>();
 }

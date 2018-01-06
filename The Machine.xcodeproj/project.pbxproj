@@ -43,6 +43,7 @@
 		455AFE0820006D0100739358 /* shift radioactivity system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE0620006D0100739358 /* shift radioactivity system.cpp */; };
 		455AFE0C2000733100739358 /* signal transmitter init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE0A2000733100739358 /* signal transmitter init.cpp */; };
 		455AFE10200075C300739358 /* signal receiver init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE0E200075C300739358 /* signal receiver init.cpp */; };
+		455AFE13200076A200739358 /* signal receiver system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE11200076A200739358 /* signal receiver system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,7 +78,7 @@
 		455AFD901FFDB88300739358 /* component list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "component list.hpp"; sourceTree = "<group>"; };
 		455AFD951FFDBADF00739358 /* entity grid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "entity grid.cpp"; sourceTree = "<group>"; };
 		455AFD961FFDBADF00739358 /* entity grid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "entity grid.hpp"; sourceTree = "<group>"; };
-		455AFD991FFDBB7F00739358 /* types.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = types.hpp; sourceTree = "<group>"; };
+		455AFD991FFDBB7F00739358 /* position type.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "position type.hpp"; sourceTree = "<group>"; };
 		455AFD9E1FFDC41300739358 /* component inits.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "component inits.hpp"; sourceTree = "<group>"; };
 		455AFD9F1FFDC42C00739358 /* static collision init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "static collision init.cpp"; sourceTree = "<group>"; };
 		455AFDA01FFDC42C00739358 /* static collision init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "static collision init.hpp"; sourceTree = "<group>"; };
@@ -147,6 +148,9 @@
 		455AFE0D2000751100739358 /* signal receiver component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal receiver component.hpp"; sourceTree = "<group>"; };
 		455AFE0E200075C300739358 /* signal receiver init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "signal receiver init.cpp"; sourceTree = "<group>"; };
 		455AFE0F200075C300739358 /* signal receiver init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal receiver init.hpp"; sourceTree = "<group>"; };
+		455AFE11200076A200739358 /* signal receiver system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "signal receiver system.cpp"; sourceTree = "<group>"; };
+		455AFE12200076A200739358 /* signal receiver system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal receiver system.hpp"; sourceTree = "<group>"; };
+		455AFE1420007A7200739358 /* signal channels.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal channels.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +303,8 @@
 				455AFE042000691D00739358 /* radioactive toggle system.hpp */,
 				455AFE0620006D0100739358 /* shift radioactivity system.cpp */,
 				455AFE0720006D0100739358 /* shift radioactivity system.hpp */,
+				455AFE11200076A200739358 /* signal receiver system.cpp */,
+				455AFE12200076A200739358 /* signal receiver system.hpp */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -306,7 +312,8 @@
 		455AFD941FFDBA9A00739358 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				455AFD991FFDBB7F00739358 /* types.hpp */,
+				455AFD991FFDBB7F00739358 /* position type.hpp */,
+				455AFE1420007A7200739358 /* signal channels.hpp */,
 				455AFDD31FFF0F1B00739358 /* dir to vec.hpp */,
 				455AFD951FFDBADF00739358 /* entity grid.cpp */,
 				455AFD961FFDBADF00739358 /* entity grid.hpp */,
@@ -460,6 +467,7 @@
 				455AFD971FFDBADF00739358 /* entity grid.cpp in Sources */,
 				455AFDCF1FFF06EB00739358 /* clear desired dir system.cpp in Sources */,
 				455AFDCC1FFF044900739358 /* clear real dir system.cpp in Sources */,
+				455AFE13200076A200739358 /* signal receiver system.cpp in Sources */,
 				455AFDA11FFDC42C00739358 /* static collision init.cpp in Sources */,
 				455AFDBB1FFDE84D00739358 /* player input system.cpp in Sources */,
 				455AFE02200064D200739358 /* radioactivity detector system.cpp in Sources */,

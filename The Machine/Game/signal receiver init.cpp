@@ -9,5 +9,5 @@
 #include "signal receiver init.hpp"
 
 void SignalReceiverInit::init(SignalReceiver &comp, const json &node) {
-  comp.channel = node.at("channel").get<uint8_t>();
+  comp.channel = node.at("channel").get<SignalChannel>();
 }
