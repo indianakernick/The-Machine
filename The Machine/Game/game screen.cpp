@@ -21,6 +21,7 @@ void GameScreen::init() {
   compInits.construct<RadioactivityInit>();
   compInits.construct<StaticCollisionInit>();
   compInits.construct<DynamicCollisionInit>();
+  compInits.construct<SignalTransmitterInit>();
   compInits.construct<RadioactiveToggleInit>();
   compInits.construct<RadioactivityDetectorInit>();
   compInits.constructDefaults();

@@ -21,6 +21,7 @@
 #include <Simpleton/Utils/type list.hpp>
 #include "static collision component.hpp"
 #include "dynamic collision component.hpp"
+#include "signal transmitter component.hpp"
 #include "radioactive toggle component.hpp"
 #include "radioactivity detector component.hpp"
 
@@ -36,6 +37,7 @@ using CompList = Utils::TypeList<
   Radioactivity,
   StaticCollision,
   DynamicCollision,
+  SignalTransmitter,
   RadioactiveToggle,
   RadioactivityDetector
 >;

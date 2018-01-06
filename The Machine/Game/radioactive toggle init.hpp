@@ -14,7 +14,7 @@
 
 class RadioactiveToggleInit final : public ECS::CompInit<RadioactiveToggle> {
 public:
-  void init(RadioactiveToggle &, const json &);
+  void init(RadioactiveToggle &, const json &) override;
 };
 
 #endif
