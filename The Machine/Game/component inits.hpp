@@ -12,6 +12,7 @@
 #include "gate init.hpp"
 #include "wire init.hpp"
 #include "weight init.hpp"
+#include "piston init.hpp"
 #include "position init.hpp"
 #include "power input init.hpp"
 #include "power output init.hpp"
