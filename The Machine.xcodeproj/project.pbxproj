@@ -34,6 +34,7 @@
 		455AFDE41FFF3F4200739358 /* wire init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDE21FFF3F4200739358 /* wire init.cpp */; };
 		455AFDE71FFF42CF00739358 /* shift power system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDE51FFF42CF00739358 /* shift power system.cpp */; };
 		455AFDEA1FFF449000739358 /* gate system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDE81FFF449000739358 /* gate system.cpp */; };
+		455AFDED200042F200739358 /* wire system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDEB200042F200739358 /* wire system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -115,6 +116,8 @@
 		455AFDE61FFF42CF00739358 /* shift power system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "shift power system.hpp"; sourceTree = "<group>"; };
 		455AFDE81FFF449000739358 /* gate system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "gate system.cpp"; sourceTree = "<group>"; };
 		455AFDE91FFF449000739358 /* gate system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "gate system.hpp"; sourceTree = "<group>"; };
+		455AFDEB200042F200739358 /* wire system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "wire system.cpp"; sourceTree = "<group>"; };
+		455AFDEC200042F200739358 /* wire system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "wire system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +257,8 @@
 				455AFDE61FFF42CF00739358 /* shift power system.hpp */,
 				455AFDE81FFF449000739358 /* gate system.cpp */,
 				455AFDE91FFF449000739358 /* gate system.hpp */,
+				455AFDEB200042F200739358 /* wire system.cpp */,
+				455AFDEC200042F200739358 /* wire system.hpp */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -418,6 +423,7 @@
 				455AFDC31FFDEE5B00739358 /* position init.cpp in Sources */,
 				455AFDEA1FFF449000739358 /* gate system.cpp in Sources */,
 				455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */,
+				455AFDED200042F200739358 /* wire system.cpp in Sources */,
 				455AFD861FFDB34400739358 /* app.cpp in Sources */,
 				455AFDD91FFF1B9A00739358 /* power input init.cpp in Sources */,
 				455AFDE71FFF42CF00739358 /* shift power system.cpp in Sources */,

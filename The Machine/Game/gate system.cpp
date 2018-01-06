@@ -66,7 +66,8 @@ void gateSystem(ECS::Registry &registry, const EntityGrid &grid) {
     
     inputStates.clear();
     
-    for (Math::Dir dir = Math::Dir::BEGIN; dir != Math::Dir::END; ++dir) {
+    // for each neighbor
+    for (const Math::Dir dir : Math::DIR_RANGE) {
       // this side must be an input
       if (!Math::test(inputSides, dir)) {
         continue;

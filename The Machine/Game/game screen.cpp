@@ -48,6 +48,7 @@ void GameScreen::input(const SDL_Event &e) {
 void GameScreen::update(const float ) {
   shiftPowerSystem(registry);
   gateSystem(registry, grid);
+  wireSystem(registry, grid);
   updatePosSystem(registry, grid);
   clearRealDirSystem(registry);
   moveDirSystem(registry, grid);
