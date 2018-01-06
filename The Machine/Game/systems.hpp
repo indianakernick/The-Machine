@@ -18,5 +18,6 @@
 #include "player input system.hpp"
 #include "clear real dir system.hpp"
 #include "clear desired dir system.hpp"
+#include "radioactivity detector system.hpp"
 
 #endif
