@@ -14,6 +14,7 @@
 #include "power component.hpp"
 #include "lever component.hpp"
 #include "piston component.hpp"
+#include "button component.hpp"
 #include "weight component.hpp"
 #include "position component.hpp"
 #include "movement component.hpp"
@@ -36,6 +37,7 @@ using CompList = Utils::TypeList<
   Power,
   Lever,
   Piston,
+  Button,
   Weight,
   Position,
   Movement,

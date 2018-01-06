@@ -173,6 +173,7 @@
 		455AFE2A200090D100739358 /* shift player action system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "shift player action system.cpp"; sourceTree = "<group>"; };
 		455AFE2B200090D100739358 /* shift player action system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "shift player action system.hpp"; sourceTree = "<group>"; };
 		455AFE2D2000946A00739358 /* lever component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "lever component.hpp"; sourceTree = "<group>"; };
+		455AFE2E200094B500739358 /* button component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "button component.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +280,7 @@
 				455AFE1C2000821800739358 /* weight component.hpp */,
 				455AFE232000869D00739358 /* piston component.hpp */,
 				455AFE2D2000946A00739358 /* lever component.hpp */,
+				455AFE2E200094B500739358 /* button component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
