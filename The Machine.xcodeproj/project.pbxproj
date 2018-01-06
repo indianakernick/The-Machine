@@ -52,6 +52,8 @@
 		455AFE2C200090D100739358 /* shift player action system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE2A200090D100739358 /* shift player action system.cpp */; };
 		455AFE312000982B00739358 /* lever system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE2F2000982B00739358 /* lever system.cpp */; };
 		455AFE3420009C6C00739358 /* button system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE3220009C6C00739358 /* button system.cpp */; };
+		455AFE462000A57800739358 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 455AFE442000A57700739358 /* sprites.atlas */; };
+		455AFE472000A57800739358 /* sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = 455AFE452000A57700739358 /* sprites.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -180,6 +182,18 @@
 		455AFE302000982B00739358 /* lever system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "lever system.hpp"; sourceTree = "<group>"; };
 		455AFE3220009C6C00739358 /* button system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "button system.cpp"; sourceTree = "<group>"; };
 		455AFE3320009C6C00739358 /* button system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "button system.hpp"; sourceTree = "<group>"; };
+		455AFE372000A35A00739358 /* sprite config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "sprite config.json"; sourceTree = "<group>"; };
+		455AFE3B2000A41D00739358 /* gates.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = gates.anim; sourceTree = "<group>"; };
+		455AFE3C2000A55D00739358 /* gate 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 3.png"; sourceTree = "<group>"; };
+		455AFE3D2000A55D00739358 /* gate 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 7.png"; sourceTree = "<group>"; };
+		455AFE3E2000A55E00739358 /* gate 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 6.png"; sourceTree = "<group>"; };
+		455AFE3F2000A55E00739358 /* gate 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 0.png"; sourceTree = "<group>"; };
+		455AFE402000A55F00739358 /* gate 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 1.png"; sourceTree = "<group>"; };
+		455AFE412000A55F00739358 /* gate 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 5.png"; sourceTree = "<group>"; };
+		455AFE422000A55F00739358 /* gate 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 4.png"; sourceTree = "<group>"; };
+		455AFE432000A55F00739358 /* gate 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 2.png"; sourceTree = "<group>"; };
+		455AFE442000A57700739358 /* sprites.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sprites.atlas; sourceTree = "<group>"; };
+		455AFE452000A57700739358 /* sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprites.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +271,11 @@
 		450759AE1FFC98AC0009B360 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				455AFE372000A35A00739358 /* sprite config.json */,
+				455AFE442000A57700739358 /* sprites.atlas */,
+				455AFE452000A57700739358 /* sprites.png */,
+				455AFE362000A32600739358 /* Sprites */,
+				455AFE352000A31D00739358 /* Animations */,
 				455AFDA71FFDC85C00739358 /* Entities */,
 				455AFDA61FFDC85500739358 /* Levels */,
 			);
@@ -420,6 +439,29 @@
 			name = Entities;
 			sourceTree = "<group>";
 		};
+		455AFE352000A31D00739358 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				455AFE3B2000A41D00739358 /* gates.anim */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		455AFE362000A32600739358 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				455AFE3F2000A55E00739358 /* gate 0.png */,
+				455AFE402000A55F00739358 /* gate 1.png */,
+				455AFE432000A55F00739358 /* gate 2.png */,
+				455AFE3C2000A55D00739358 /* gate 3.png */,
+				455AFE422000A55F00739358 /* gate 4.png */,
+				455AFE412000A55F00739358 /* gate 5.png */,
+				455AFE3E2000A55E00739358 /* gate 6.png */,
+				455AFE3D2000A55D00739358 /* gate 7.png */,
+			);
+			path = Sprites;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -430,6 +472,7 @@
 				450759AA1FFC7B450009B360 /* CopyFiles */,
 				450759881FFC77E20009B360 /* Sources */,
 				450759891FFC77E20009B360 /* Frameworks */,
+				455AFE392000A39900739358 /* Pack Sprites */,
 				4507598A1FFC77E20009B360 /* Resources */,
 				455AFDA51FFDC5F000739358 /* Compile Levels */,
 			);
@@ -486,6 +529,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455AFE462000A57800739358 /* sprites.atlas in Resources */,
+				455AFE472000A57800739358 /* sprites.png in Resources */,
 				450759921FFC77E30009B360 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +551,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  jsonnet \"$PROJECT_RES/$name.jsonnet\" |           # compile jsonnet\n  jq -cM . > \"$PRODUCT_RES/$name.json\"             # minify json\n  # exit if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone";
+		};
+		455AFE392000A39900739358 /* Pack Sprites */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Pack Sprites";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources\"\n\npacker --silent sprite\\ config.json";
 		};
 /* End PBXShellScriptBuildPhase section */
 
