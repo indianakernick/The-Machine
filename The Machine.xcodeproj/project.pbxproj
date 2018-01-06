@@ -239,6 +239,14 @@
 		455AFE722000AD7600739358 /* wire 3 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wire 3 2.png"; sourceTree = "<group>"; };
 		455AFE732000AEC500739358 /* player.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = player.anim; sourceTree = "<group>"; };
 		455AFE742000AED300739358 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		455AFE7C2000B3E200739358 /* box.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = box.anim; sourceTree = "<group>"; };
+		455AFE7D2000B40A00739358 /* box 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box 1.png"; sourceTree = "<group>"; };
+		455AFE7E2000B40A00739358 /* box 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box 5.png"; sourceTree = "<group>"; };
+		455AFE7F2000B40B00739358 /* box 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box 2.png"; sourceTree = "<group>"; };
+		455AFE802000B40B00739358 /* box 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box 6.png"; sourceTree = "<group>"; };
+		455AFE812000B40B00739358 /* box 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box 3.png"; sourceTree = "<group>"; };
+		455AFE822000B40B00739358 /* box 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box 4.png"; sourceTree = "<group>"; };
+		455AFE832000B40C00739358 /* box 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box 0.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -487,6 +495,7 @@
 		455AFE352000A31D00739358 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				455AFE7C2000B3E200739358 /* box.anim */,
 				455AFE732000AEC500739358 /* player.anim */,
 				455AFE3B2000A41D00739358 /* gates.anim */,
 				455AFE482000AD5100739358 /* wire.anim */,
@@ -497,6 +506,13 @@
 		455AFE362000A32600739358 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				455AFE832000B40C00739358 /* box 0.png */,
+				455AFE7F2000B40B00739358 /* box 2.png */,
+				455AFE812000B40B00739358 /* box 3.png */,
+				455AFE822000B40B00739358 /* box 4.png */,
+				455AFE7D2000B40A00739358 /* box 1.png */,
+				455AFE7E2000B40A00739358 /* box 5.png */,
+				455AFE802000B40B00739358 /* box 6.png */,
 				455AFE3F2000A55E00739358 /* gate 0.png */,
 				455AFE402000A55F00739358 /* gate 1.png */,
 				455AFE432000A55F00739358 /* gate 2.png */,
