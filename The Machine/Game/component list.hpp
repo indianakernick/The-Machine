@@ -9,6 +9,7 @@
 #ifndef component_list_hpp
 #define component_list_hpp
 
+#include "exit component.hpp"
 #include "gate component.hpp"
 #include "wire component.hpp"
 #include "power component.hpp"
@@ -32,6 +33,7 @@
 #include "radioactivity detector component.hpp"
 
 using CompList = Utils::TypeList<
+  Exit,
   Gate,
   Wire,
   Power,

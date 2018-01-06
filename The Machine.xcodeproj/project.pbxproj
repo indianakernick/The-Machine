@@ -255,6 +255,7 @@
 		455AFE892000B6D900739358 /* lever 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lever 4.png"; sourceTree = "<group>"; };
 		455AFE8A2000B6DA00739358 /* lever 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lever 6.png"; sourceTree = "<group>"; };
 		455AFE8B2000B6EB00739358 /* lever.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = lever.anim; sourceTree = "<group>"; };
+		455AFE8C2000B7D800739358 /* exit component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "exit component.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,6 +368,7 @@
 				455AFE232000869D00739358 /* piston component.hpp */,
 				455AFE2D2000946A00739358 /* lever component.hpp */,
 				455AFE2E200094B500739358 /* button component.hpp */,
+				455AFE8C2000B7D800739358 /* exit component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
