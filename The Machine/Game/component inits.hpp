@@ -17,6 +17,7 @@
 #include "radioactivity init.hpp"
 #include "static collision init.hpp"
 #include "dynamic collision init.hpp"
+#include "radioactive toggle init.hpp"
 #include "radioactivity detector init.hpp"
 
 #endif
