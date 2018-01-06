@@ -237,6 +237,8 @@
 		455AFE702000AD7500739358 /* wire 1 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wire 1 4.png"; sourceTree = "<group>"; };
 		455AFE712000AD7500739358 /* wire 4 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wire 4 5.png"; sourceTree = "<group>"; };
 		455AFE722000AD7600739358 /* wire 3 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wire 3 2.png"; sourceTree = "<group>"; };
+		455AFE732000AEC500739358 /* player.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = player.anim; sourceTree = "<group>"; };
+		455AFE742000AED300739358 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -485,6 +487,7 @@
 		455AFE352000A31D00739358 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				455AFE732000AEC500739358 /* player.anim */,
 				455AFE3B2000A41D00739358 /* gates.anim */,
 				455AFE482000AD5100739358 /* wire.anim */,
 			);
@@ -502,6 +505,7 @@
 				455AFE412000A55F00739358 /* gate 5.png */,
 				455AFE3E2000A55E00739358 /* gate 6.png */,
 				455AFE3D2000A55D00739358 /* gate 7.png */,
+				455AFE742000AED300739358 /* player.png */,
 				455AFE6A2000AD7100739358 /* wire 0 0.png */,
 				455AFE692000AD7100739358 /* wire 0 1.png */,
 				455AFE552000AD6900739358 /* wire 0 2.png */,
