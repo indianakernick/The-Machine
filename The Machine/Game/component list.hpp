@@ -12,6 +12,7 @@
 #include "gate component.hpp"
 #include "wire component.hpp"
 #include "power component.hpp"
+#include "lever component.hpp"
 #include "piston component.hpp"
 #include "weight component.hpp"
 #include "position component.hpp"
@@ -33,6 +34,7 @@ using CompList = Utils::TypeList<
   Gate,
   Wire,
   Power,
+  Lever,
   Piston,
   Weight,
   Position,
