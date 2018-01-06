@@ -39,6 +39,7 @@
 		455AFDFB20005A2400739358 /* radioactivity detector init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDF920005A2400739358 /* radioactivity detector init.cpp */; };
 		455AFDFF20005DE300739358 /* radioactive toggle init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDFD20005DE300739358 /* radioactive toggle init.cpp */; };
 		455AFE02200064D200739358 /* radioactivity detector system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE00200064D200739358 /* radioactivity detector system.cpp */; };
+		455AFE052000691D00739358 /* radioactive toggle system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE032000691D00739358 /* radioactive toggle system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -133,6 +134,8 @@
 		455AFDFE20005DE300739358 /* radioactive toggle init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactive toggle init.hpp"; sourceTree = "<group>"; };
 		455AFE00200064D200739358 /* radioactivity detector system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "radioactivity detector system.cpp"; sourceTree = "<group>"; };
 		455AFE01200064D200739358 /* radioactivity detector system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity detector system.hpp"; sourceTree = "<group>"; };
+		455AFE032000691D00739358 /* radioactive toggle system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "radioactive toggle system.cpp"; sourceTree = "<group>"; };
+		455AFE042000691D00739358 /* radioactive toggle system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactive toggle system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +282,8 @@
 				455AFDEC200042F200739358 /* wire system.hpp */,
 				455AFE00200064D200739358 /* radioactivity detector system.cpp */,
 				455AFE01200064D200739358 /* radioactivity detector system.hpp */,
+				455AFE032000691D00739358 /* radioactive toggle system.cpp */,
+				455AFE042000691D00739358 /* radioactive toggle system.hpp */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -457,6 +462,7 @@
 				455AFDD91FFF1B9A00739358 /* power input init.cpp in Sources */,
 				455AFDFF20005DE300739358 /* radioactive toggle init.cpp in Sources */,
 				455AFDE71FFF42CF00739358 /* shift power system.cpp in Sources */,
+				455AFE052000691D00739358 /* radioactive toggle system.cpp in Sources */,
 				455AFDE11FFF3E8800739358 /* gate init.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,10 +15,10 @@
 #include "radioactivity detector component.hpp"
 
 void radioactivityDetectorSystem(ECS::Registry &registry, const EntityGrid &grid) {
-  auto detectorView = registry.view<Power, Position, RadioactivityDetector>();
-  for (const ECS::EntityID entity : detectorView) {
-    const Pos pos = detectorView.get<Position>(entity).pos;
-    const Math::Dir side = detectorView.get<RadioactivityDetector>(entity).side;
+  auto view = registry.view<Power, Position, RadioactivityDetector>();
+  for (const ECS::EntityID entity : view) {
+    const Pos pos = view.get<Position>(entity).pos;
+    const Math::Dir side = view.get<RadioactivityDetector>(entity).side;
     const Pos targetPos = pos + ToVec::conv(side);
     
     if (grid.outOfRange(targetPos)) {
@@ -35,6 +35,6 @@ void radioactivityDetectorSystem(ECS::Registry &registry, const EntityGrid &grid
     }
     
     const bool radioactive = registry.get<Radioactivity>(targetID).prev;
-    detectorView.get<Power>(entity).curr = radioactive;
+    view.get<Power>(entity).curr = radioactive;
   }
 }

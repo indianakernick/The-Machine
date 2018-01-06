@@ -12,6 +12,7 @@
 #include "entity grid.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
+// output power is there is a radioactive dynamic entity in front of the detector
 void radioactivityDetectorSystem(ECS::Registry &, const EntityGrid &);
 
 #endif
