@@ -54,6 +54,7 @@
 		455AFE3420009C6C00739358 /* button system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE3220009C6C00739358 /* button system.cpp */; };
 		455AFE462000A57800739358 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 455AFE442000A57700739358 /* sprites.atlas */; };
 		455AFE472000A57800739358 /* sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = 455AFE452000A57700739358 /* sprites.png */; };
+		455AFE8F2000B8A200739358 /* exit system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE8D2000B8A200739358 /* exit system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -256,6 +257,8 @@
 		455AFE8A2000B6DA00739358 /* lever 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lever 6.png"; sourceTree = "<group>"; };
 		455AFE8B2000B6EB00739358 /* lever.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = lever.anim; sourceTree = "<group>"; };
 		455AFE8C2000B7D800739358 /* exit component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "exit component.hpp"; sourceTree = "<group>"; };
+		455AFE8D2000B8A200739358 /* exit system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "exit system.cpp"; sourceTree = "<group>"; };
+		455AFE8E2000B8A200739358 /* exit system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "exit system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -431,6 +434,8 @@
 				455AFE302000982B00739358 /* lever system.hpp */,
 				455AFE3220009C6C00739358 /* button system.cpp */,
 				455AFE3320009C6C00739358 /* button system.hpp */,
+				455AFE8D2000B8A200739358 /* exit system.cpp */,
+				455AFE8E2000B8A200739358 /* exit system.hpp */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -700,6 +705,7 @@
 				455AFD971FFDBADF00739358 /* entity grid.cpp in Sources */,
 				455AFDCF1FFF06EB00739358 /* clear desired dir system.cpp in Sources */,
 				455AFDCC1FFF044900739358 /* clear real dir system.cpp in Sources */,
+				455AFE8F2000B8A200739358 /* exit system.cpp in Sources */,
 				455AFE13200076A200739358 /* signal receiver system.cpp in Sources */,
 				455AFDA11FFDC42C00739358 /* static collision init.cpp in Sources */,
 				455AFDBB1FFDE84D00739358 /* player input system.cpp in Sources */,

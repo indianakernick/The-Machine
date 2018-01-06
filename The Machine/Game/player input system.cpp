@@ -14,13 +14,15 @@
 
 namespace {
   void setActionState(ECS::Registry &registry, const bool enabled) {
-    registry.view<PlayerAction>().each([enabled] (ECS::EntityID, PlayerAction &comp) {
+    auto view = registry.view<PlayerAction>();
+    view.each([enabled] (ECS::EntityID, PlayerAction &comp) {
       comp.curr = enabled;
     });
   }
   
   void setDesiredDir(ECS::Registry &registry, const Math::Dir dir) {
-    registry.view<Movement>().each([dir] (ECS::EntityID, Movement &comp) {
+    auto view = registry.view<PlayerAction, Movement>();
+    view.each([dir] (ECS::EntityID, PlayerAction &, Movement &comp) {
       comp.desiredDir = dir;
     });
   }
