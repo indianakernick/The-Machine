@@ -15,6 +15,7 @@
 #include "power input init.hpp"
 #include "power output init.hpp"
 #include "radioactivity init.hpp"
+#include "pressure plate init.hpp"
 #include "signal receiver init.hpp"
 #include "static collision init.hpp"
 #include "dynamic collision init.hpp"

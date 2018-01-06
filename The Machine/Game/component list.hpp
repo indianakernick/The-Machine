@@ -18,6 +18,7 @@
 #include "power output component.hpp"
 #include "radioactivity component.hpp"
 #include "player action component.hpp"
+#include "pressure plate component.hpp"
 #include <Simpleton/Utils/type list.hpp>
 #include "signal receiver component.hpp"
 #include "static collision component.hpp"
@@ -35,6 +36,7 @@ using CompList = Utils::TypeList<
   PowerInput,
   PowerOutput,
   PlayerAction,
+  PressurePlate,
   Radioactivity,
   SignalReceiver,
   StaticCollision,
