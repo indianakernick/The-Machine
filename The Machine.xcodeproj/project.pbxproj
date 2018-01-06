@@ -48,6 +48,7 @@
 		455AFE1F2000824200739358 /* weight init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE1D2000824200739358 /* weight init.cpp */; };
 		455AFE222000839000739358 /* pressure plate system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE202000839000739358 /* pressure plate system.cpp */; };
 		455AFE262000881A00739358 /* piston init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE242000881A00739358 /* piston init.cpp */; };
+		455AFE29200089BA00739358 /* piston system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE27200089BA00739358 /* piston system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -166,6 +167,8 @@
 		455AFE232000869D00739358 /* piston component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "piston component.hpp"; sourceTree = "<group>"; };
 		455AFE242000881A00739358 /* piston init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "piston init.cpp"; sourceTree = "<group>"; };
 		455AFE252000881A00739358 /* piston init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "piston init.hpp"; sourceTree = "<group>"; };
+		455AFE27200089BA00739358 /* piston system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "piston system.cpp"; sourceTree = "<group>"; };
+		455AFE28200089BA00739358 /* piston system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "piston system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +328,8 @@
 				455AFE12200076A200739358 /* signal receiver system.hpp */,
 				455AFE202000839000739358 /* pressure plate system.cpp */,
 				455AFE212000839000739358 /* pressure plate system.hpp */,
+				455AFE27200089BA00739358 /* piston system.cpp */,
+				455AFE28200089BA00739358 /* piston system.hpp */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -522,6 +527,7 @@
 				455AFE262000881A00739358 /* piston init.cpp in Sources */,
 				455AFDFF20005DE300739358 /* radioactive toggle init.cpp in Sources */,
 				455AFDE71FFF42CF00739358 /* shift power system.cpp in Sources */,
+				455AFE29200089BA00739358 /* piston system.cpp in Sources */,
 				455AFE052000691D00739358 /* radioactive toggle system.cpp in Sources */,
 				455AFDE11FFF3E8800739358 /* gate init.cpp in Sources */,
 			);

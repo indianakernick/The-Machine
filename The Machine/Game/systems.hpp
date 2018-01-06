@@ -11,6 +11,7 @@
 
 #include "wire system.hpp"
 #include "gate system.hpp"
+#include "piston system.hpp"
 #include "move dir system.hpp"
 #include "init grid system.hpp"
 #include "update pos system.hpp"

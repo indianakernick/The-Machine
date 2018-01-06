@@ -9,6 +9,5 @@
 #include "position init.hpp"
 
 void PositionInit::init(Position &comp, const json &node) {
-  comp.pos.x = node.at(0).get<Coord>();
-  comp.pos.y = node.at(1).get<Coord>();
+  comp.pos = node.get<Pos>();
 }

@@ -9,9 +9,11 @@
 #ifndef piston_component_hpp
 #define piston_component_hpp
 
+#include "position type.hpp"
 #include <Simpleton/Math/dir.hpp>
 
 struct Piston {
+  Pos basePos;
   Math::Dir dir;
 };
 
