@@ -15,5 +15,6 @@ void shiftPowerSystem(ECS::Registry &registry) {
   for (const ECS::EntityID entity : view) {
     Power &power = view.get(entity);
     power.prev = power.curr;
+    power.curr = false;
   }
 }

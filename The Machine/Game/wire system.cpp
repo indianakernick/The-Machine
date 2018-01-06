@@ -61,13 +61,7 @@ namespace {
 }
 
 void wireSystem(ECS::Registry &registry, const EntityGrid &grid) {
-  auto wireView = registry.view<Wire, Power>();
   const auto outputView = registry.view<Power, Position, PowerOutput>();
-  
-  for (const ECS::EntityID entity : wireView) {
-    wireView.get<Power>(entity).curr = false;
-  }
-  
   for (const ECS::EntityID entity : outputView) {
     if (!outputView.get<Power>(entity).prev) {
       continue;

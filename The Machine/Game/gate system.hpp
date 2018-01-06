@@ -12,6 +12,7 @@
 #include "entity grid.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
+// read the inputs for a gate and calculate the output
 void gateSystem(ECS::Registry &, const EntityGrid &);
 
 #endif

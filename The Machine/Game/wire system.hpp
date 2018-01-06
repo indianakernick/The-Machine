@@ -12,6 +12,7 @@
 #include "entity grid.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
+// propagate power from PowerOutputs to PowerInputs through Wires
 void wireSystem(ECS::Registry &, const EntityGrid &);
 
 #endif

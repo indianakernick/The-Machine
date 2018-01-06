@@ -11,7 +11,7 @@
 
 #include <Simpleton/ECS/registry.hpp>
 
-// set Power::prev to Power::curr
+// set Power::prev to Power::curr and set Power::curr to false
 void shiftPowerSystem(ECS::Registry &);
 
 #endif
