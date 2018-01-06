@@ -51,6 +51,7 @@
 		455AFE29200089BA00739358 /* piston system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE27200089BA00739358 /* piston system.cpp */; };
 		455AFE2C200090D100739358 /* shift player action system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE2A200090D100739358 /* shift player action system.cpp */; };
 		455AFE312000982B00739358 /* lever system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE2F2000982B00739358 /* lever system.cpp */; };
+		455AFE3420009C6C00739358 /* button system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE3220009C6C00739358 /* button system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -177,6 +178,8 @@
 		455AFE2E200094B500739358 /* button component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "button component.hpp"; sourceTree = "<group>"; };
 		455AFE2F2000982B00739358 /* lever system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "lever system.cpp"; sourceTree = "<group>"; };
 		455AFE302000982B00739358 /* lever system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "lever system.hpp"; sourceTree = "<group>"; };
+		455AFE3220009C6C00739358 /* button system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "button system.cpp"; sourceTree = "<group>"; };
+		455AFE3320009C6C00739358 /* button system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "button system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +347,8 @@
 				455AFE2B200090D100739358 /* shift player action system.hpp */,
 				455AFE2F2000982B00739358 /* lever system.cpp */,
 				455AFE302000982B00739358 /* lever system.hpp */,
+				455AFE3220009C6C00739358 /* button system.cpp */,
+				455AFE3320009C6C00739358 /* button system.hpp */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -530,6 +535,7 @@
 				455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */,
 				455AFE10200075C300739358 /* signal receiver init.cpp in Sources */,
 				455AFDD21FFF0B9200739358 /* update pos system.cpp in Sources */,
+				455AFE3420009C6C00739358 /* button system.cpp in Sources */,
 				455AFDC31FFDEE5B00739358 /* position init.cpp in Sources */,
 				455AFE312000982B00739358 /* lever system.cpp in Sources */,
 				455AFDEA1FFF449000739358 /* gate system.cpp in Sources */,

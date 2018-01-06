@@ -13,6 +13,7 @@
 #include "gate system.hpp"
 #include "lever system.hpp"
 #include "piston system.hpp"
+#include "button system.hpp"
 #include "move dir system.hpp"
 #include "init grid system.hpp"
 #include "update pos system.hpp"

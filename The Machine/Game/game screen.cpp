@@ -63,7 +63,7 @@ void GameScreen::update(const float ) {
   signalReceiverSystem(registry);
   pressurePlateSystem(registry, grid);
   leverSystem(registry, grid);
-  //button
+  buttonSystem(registry, grid);
   
   gateSystem(registry, grid);
   wireSystem(registry, grid);
