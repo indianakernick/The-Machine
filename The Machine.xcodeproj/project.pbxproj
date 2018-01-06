@@ -45,6 +45,7 @@
 		455AFE10200075C300739358 /* signal receiver init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE0E200075C300739358 /* signal receiver init.cpp */; };
 		455AFE13200076A200739358 /* signal receiver system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE11200076A200739358 /* signal receiver system.cpp */; };
 		455AFE1820007F1500739358 /* pressure plate init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE1620007F1500739358 /* pressure plate init.cpp */; };
+		455AFE1F2000824200739358 /* weight init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE1D2000824200739358 /* weight init.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -155,6 +156,9 @@
 		455AFE1520007EC600739358 /* pressure plate component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "pressure plate component.hpp"; sourceTree = "<group>"; };
 		455AFE1620007F1500739358 /* pressure plate init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "pressure plate init.cpp"; sourceTree = "<group>"; };
 		455AFE1720007F1500739358 /* pressure plate init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "pressure plate init.hpp"; sourceTree = "<group>"; };
+		455AFE1C2000821800739358 /* weight component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "weight component.hpp"; sourceTree = "<group>"; };
+		455AFE1D2000824200739358 /* weight init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "weight init.cpp"; sourceTree = "<group>"; };
+		455AFE1E2000824200739358 /* weight init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "weight init.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +262,7 @@
 				455AFE09200072EF00739358 /* signal transmitter component.hpp */,
 				455AFE0D2000751100739358 /* signal receiver component.hpp */,
 				455AFE1520007EC600739358 /* pressure plate component.hpp */,
+				455AFE1C2000821800739358 /* weight component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -356,6 +361,8 @@
 				455AFE0F200075C300739358 /* signal receiver init.hpp */,
 				455AFE1620007F1500739358 /* pressure plate init.cpp */,
 				455AFE1720007F1500739358 /* pressure plate init.hpp */,
+				455AFE1D2000824200739358 /* weight init.cpp */,
+				455AFE1E2000824200739358 /* weight init.hpp */,
 			);
 			name = "Component initializers";
 			sourceTree = "<group>";
@@ -482,6 +489,7 @@
 				455AFE0C2000733100739358 /* signal transmitter init.cpp in Sources */,
 				455AFDC61FFDF34800739358 /* init grid system.cpp in Sources */,
 				455AFDC91FFDF71100739358 /* move dir system.cpp in Sources */,
+				455AFE1F2000824200739358 /* weight init.cpp in Sources */,
 				455AFDDC1FFF1D2000739358 /* power output init.cpp in Sources */,
 				455AFDE41FFF3F4200739358 /* wire init.cpp in Sources */,
 				455AFDB11FFDD77000739358 /* dynamic collision init.cpp in Sources */,

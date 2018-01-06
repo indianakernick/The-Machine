@@ -9,5 +9,5 @@
 #include "radioactivity init.hpp"
 
 void RadioactivityInit::init(Radioactivity &comp, const json &node) {
-  Data::getOptional(comp.curr, node, "enabled");
+  comp.curr = node.at("enabled").get<bool>();
 }
