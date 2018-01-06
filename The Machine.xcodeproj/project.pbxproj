@@ -247,6 +247,14 @@
 		455AFE812000B40B00739358 /* box 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box 3.png"; sourceTree = "<group>"; };
 		455AFE822000B40B00739358 /* box 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box 4.png"; sourceTree = "<group>"; };
 		455AFE832000B40C00739358 /* box 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box 0.png"; sourceTree = "<group>"; };
+		455AFE842000B6D700739358 /* lever 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lever 5.png"; sourceTree = "<group>"; };
+		455AFE852000B6D800739358 /* lever 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lever 1.png"; sourceTree = "<group>"; };
+		455AFE862000B6D900739358 /* lever 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lever 2.png"; sourceTree = "<group>"; };
+		455AFE872000B6D900739358 /* lever 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lever 0.png"; sourceTree = "<group>"; };
+		455AFE882000B6D900739358 /* lever 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lever 3.png"; sourceTree = "<group>"; };
+		455AFE892000B6D900739358 /* lever 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lever 4.png"; sourceTree = "<group>"; };
+		455AFE8A2000B6DA00739358 /* lever 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lever 6.png"; sourceTree = "<group>"; };
+		455AFE8B2000B6EB00739358 /* lever.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = lever.anim; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -495,6 +503,7 @@
 		455AFE352000A31D00739358 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				455AFE8B2000B6EB00739358 /* lever.anim */,
 				455AFE7C2000B3E200739358 /* box.anim */,
 				455AFE732000AEC500739358 /* player.anim */,
 				455AFE3B2000A41D00739358 /* gates.anim */,
@@ -507,10 +516,10 @@
 			isa = PBXGroup;
 			children = (
 				455AFE832000B40C00739358 /* box 0.png */,
+				455AFE7D2000B40A00739358 /* box 1.png */,
 				455AFE7F2000B40B00739358 /* box 2.png */,
 				455AFE812000B40B00739358 /* box 3.png */,
 				455AFE822000B40B00739358 /* box 4.png */,
-				455AFE7D2000B40A00739358 /* box 1.png */,
 				455AFE7E2000B40A00739358 /* box 5.png */,
 				455AFE802000B40B00739358 /* box 6.png */,
 				455AFE3F2000A55E00739358 /* gate 0.png */,
@@ -521,6 +530,13 @@
 				455AFE412000A55F00739358 /* gate 5.png */,
 				455AFE3E2000A55E00739358 /* gate 6.png */,
 				455AFE3D2000A55D00739358 /* gate 7.png */,
+				455AFE872000B6D900739358 /* lever 0.png */,
+				455AFE852000B6D800739358 /* lever 1.png */,
+				455AFE862000B6D900739358 /* lever 2.png */,
+				455AFE882000B6D900739358 /* lever 3.png */,
+				455AFE892000B6D900739358 /* lever 4.png */,
+				455AFE842000B6D700739358 /* lever 5.png */,
+				455AFE8A2000B6DA00739358 /* lever 6.png */,
 				455AFE742000AED300739358 /* player.png */,
 				455AFE6A2000AD7100739358 /* wire 0 0.png */,
 				455AFE692000AD7100739358 /* wire 0 1.png */,
