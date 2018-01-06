@@ -10,8 +10,8 @@
 #define radioactivity_component_hpp
 
 struct Radioactivity {
-  bool prev = false;
-  bool curr = false;
+  bool prev;
+  bool curr;
 };
 
 #endif
