@@ -27,7 +27,7 @@ namespace {
       return;
     }
     // tile must be wire
-    const ECS::EntityID entity = grid[pos].dynamicID;
+    const ECS::EntityID entity = grid[pos].staticID;
     if (!registry.has<Wire>(entity)) {
       if (!registry.has<PowerInput>(entity)) {
         return;
