@@ -331,6 +331,14 @@
 		455AFEF42001FC3300739358 /* signal receiver power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal receiver power 1.png"; sourceTree = "<group>"; };
 		455AFEF52001FC3400739358 /* signal receiver power 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal receiver power 4.png"; sourceTree = "<group>"; };
 		455AFEF62001FC3400739358 /* signal receiver power 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal receiver power 6.png"; sourceTree = "<group>"; };
+		455AFEF72001FFC800739358 /* radioactivity detector 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactivity detector 3.png"; sourceTree = "<group>"; };
+		455AFEF82001FFC800739358 /* radioactivity detector 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactivity detector 5.png"; sourceTree = "<group>"; };
+		455AFEF92001FFC900739358 /* radioactivity detector 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactivity detector 2.png"; sourceTree = "<group>"; };
+		455AFEFA2001FFC900739358 /* radioactivity detector 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactivity detector 0.png"; sourceTree = "<group>"; };
+		455AFEFB2001FFC900739358 /* radioactivity detector 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactivity detector 1.png"; sourceTree = "<group>"; };
+		455AFEFC2001FFCA00739358 /* radioactivity detector 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactivity detector 6.png"; sourceTree = "<group>"; };
+		455AFEFD2001FFCA00739358 /* radioactivity detector 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactivity detector 4.png"; sourceTree = "<group>"; };
+		455AFEFE2001FFD300739358 /* radioactivity detector.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "radioactivity detector.anim"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -592,6 +600,7 @@
 				455AFEBF2001BECF00739358 /* piston head.anim */,
 				455AFE732000AEC500739358 /* player.anim */,
 				455AFEAE2001AEA500739358 /* pressure plate.anim */,
+				455AFEFE2001FFD300739358 /* radioactivity detector.anim */,
 				455AFECB2001EE2B00739358 /* signal channel.anim */,
 				455AFEE22001FBA200739358 /* signal receiver.anim */,
 				455AFED42001EFFB00739358 /* signal transmitter.anim */,
@@ -655,6 +664,13 @@
 				455AFEBE2001B34800739358 /* pressure plate 1 4.png */,
 				455AFEB92001B34600739358 /* pressure plate 1 5.png */,
 				455AFEB82001B34500739358 /* pressure plate 1 6.png */,
+				455AFEFA2001FFC900739358 /* radioactivity detector 0.png */,
+				455AFEFB2001FFC900739358 /* radioactivity detector 1.png */,
+				455AFEF92001FFC900739358 /* radioactivity detector 2.png */,
+				455AFEF72001FFC800739358 /* radioactivity detector 3.png */,
+				455AFEFD2001FFCA00739358 /* radioactivity detector 4.png */,
+				455AFEF82001FFC800739358 /* radioactivity detector 5.png */,
+				455AFEFC2001FFCA00739358 /* radioactivity detector 6.png */,
 				455AFED32001EE3F00739358 /* signal channel 0.png */,
 				455AFED02001EE3E00739358 /* signal channel 1.png */,
 				455AFECE2001EE3D00739358 /* signal channel 2.png */,
