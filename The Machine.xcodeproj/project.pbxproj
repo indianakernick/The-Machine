@@ -259,6 +259,14 @@
 		455AFE8C2000B7D800739358 /* exit component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "exit component.hpp"; sourceTree = "<group>"; };
 		455AFE8D2000B8A200739358 /* exit system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "exit system.cpp"; sourceTree = "<group>"; };
 		455AFE8E2000B8A200739358 /* exit system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "exit system.hpp"; sourceTree = "<group>"; };
+		455AFEA62001A33800739358 /* button.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = button.anim; sourceTree = "<group>"; };
+		455AFEA72001A35200739358 /* button 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button 2.png"; sourceTree = "<group>"; };
+		455AFEA82001A35200739358 /* button 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button 1.png"; sourceTree = "<group>"; };
+		455AFEA92001A35200739358 /* button 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button 4.png"; sourceTree = "<group>"; };
+		455AFEAA2001A35300739358 /* button 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button 0.png"; sourceTree = "<group>"; };
+		455AFEAB2001A35300739358 /* button 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button 5.png"; sourceTree = "<group>"; };
+		455AFEAC2001A35400739358 /* button 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button 6.png"; sourceTree = "<group>"; };
+		455AFEAD2001A35400739358 /* button 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button 3.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -510,10 +518,11 @@
 		455AFE352000A31D00739358 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				455AFE8B2000B6EB00739358 /* lever.anim */,
 				455AFE7C2000B3E200739358 /* box.anim */,
-				455AFE732000AEC500739358 /* player.anim */,
+				455AFEA62001A33800739358 /* button.anim */,
 				455AFE3B2000A41D00739358 /* gates.anim */,
+				455AFE8B2000B6EB00739358 /* lever.anim */,
+				455AFE732000AEC500739358 /* player.anim */,
 				455AFE482000AD5100739358 /* wire.anim */,
 			);
 			path = Animations;
@@ -529,6 +538,13 @@
 				455AFE822000B40B00739358 /* box 4.png */,
 				455AFE7E2000B40A00739358 /* box 5.png */,
 				455AFE802000B40B00739358 /* box 6.png */,
+				455AFEAA2001A35300739358 /* button 0.png */,
+				455AFEA82001A35200739358 /* button 1.png */,
+				455AFEA72001A35200739358 /* button 2.png */,
+				455AFEAD2001A35400739358 /* button 3.png */,
+				455AFEA92001A35200739358 /* button 4.png */,
+				455AFEAB2001A35300739358 /* button 5.png */,
+				455AFEAC2001A35400739358 /* button 6.png */,
 				455AFE3F2000A55E00739358 /* gate 0.png */,
 				455AFE402000A55F00739358 /* gate 1.png */,
 				455AFE432000A55F00739358 /* gate 2.png */,
