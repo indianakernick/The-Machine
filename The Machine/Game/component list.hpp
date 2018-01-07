@@ -32,6 +32,7 @@
 #include "dynamic collision component.hpp"
 #include "signal transmitter component.hpp"
 #include "radioactive toggle component.hpp"
+#include "radioactivity sprite component.hpp"
 #include "radioactivity detector component.hpp"
 
 using CompList = Utils::TypeList<
@@ -57,6 +58,7 @@ using CompList = Utils::TypeList<
   DynamicCollision,
   SignalTransmitter,
   RadioactiveToggle,
+  RadioactivitySprite,
   RadioactivityDetector
 >;
 

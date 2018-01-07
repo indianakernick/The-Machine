@@ -61,6 +61,7 @@
 		455AFF18200218B800739358 /* sprite shader.frag in Resources */ = {isa = PBXBuildFile; fileRef = 455AFF16200218B800739358 /* sprite shader.frag */; };
 		455AFF1D20022C4100739358 /* anim sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF1B20022C4100739358 /* anim sprite init.cpp */; };
 		455AFF242002314900739358 /* channel sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF222002314900739358 /* channel sprite init.cpp */; };
+		455AFF28200232CF00739358 /* radioactivity sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF26200232CF00739358 /* radioactivity sprite init.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -369,6 +370,9 @@
 		455AFF1E200230E200739358 /* channel sprite component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "channel sprite component.hpp"; sourceTree = "<group>"; };
 		455AFF222002314900739358 /* channel sprite init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "channel sprite init.cpp"; sourceTree = "<group>"; };
 		455AFF232002314900739358 /* channel sprite init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "channel sprite init.hpp"; sourceTree = "<group>"; };
+		455AFF252002325700739358 /* radioactivity sprite component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity sprite component.hpp"; sourceTree = "<group>"; };
+		455AFF26200232CF00739358 /* radioactivity sprite init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "radioactivity sprite init.cpp"; sourceTree = "<group>"; };
+		455AFF27200232CF00739358 /* radioactivity sprite init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity sprite init.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -487,6 +491,7 @@
 				455AFE8C2000B7D800739358 /* exit component.hpp */,
 				455AFF1A20022B4100739358 /* anim sprite component.hpp */,
 				455AFF1E200230E200739358 /* channel sprite component.hpp */,
+				455AFF252002325700739358 /* radioactivity sprite component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -611,6 +616,8 @@
 				455AFF1C20022C4100739358 /* anim sprite init.hpp */,
 				455AFF222002314900739358 /* channel sprite init.cpp */,
 				455AFF232002314900739358 /* channel sprite init.hpp */,
+				455AFF26200232CF00739358 /* radioactivity sprite init.cpp */,
+				455AFF27200232CF00739358 /* radioactivity sprite init.hpp */,
 			);
 			name = "Component initializers";
 			sourceTree = "<group>";
@@ -943,6 +950,7 @@
 				455AFE10200075C300739358 /* signal receiver init.cpp in Sources */,
 				455AFDD21FFF0B9200739358 /* update pos system.cpp in Sources */,
 				455AFE3420009C6C00739358 /* button system.cpp in Sources */,
+				455AFF28200232CF00739358 /* radioactivity sprite init.cpp in Sources */,
 				455AFDC31FFDEE5B00739358 /* position init.cpp in Sources */,
 				455AFE312000982B00739358 /* lever system.cpp in Sources */,
 				455AFDEA1FFF449000739358 /* gate system.cpp in Sources */,

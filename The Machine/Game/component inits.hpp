@@ -25,6 +25,7 @@
 #include "dynamic collision init.hpp"
 #include "signal transmitter init.hpp"
 #include "radioactive toggle init.hpp"
+#include "radioactivity sprite init.hpp"
 #include "radioactivity detector init.hpp"
 
 #endif

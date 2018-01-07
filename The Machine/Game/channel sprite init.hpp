@@ -14,7 +14,7 @@
 
 class ChannelSpriteInit final : public ECS::CompInit<ChannelSprite> {
 public:
-  void init(ChannelSprite &, const json &);
+  void init(ChannelSprite &, const json &) override;
 };
 
 #endif
