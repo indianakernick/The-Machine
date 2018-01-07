@@ -294,6 +294,15 @@
 		455AFEC82001D2DB00739358 /* exit 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 0.png"; sourceTree = "<group>"; };
 		455AFEC92001D2DB00739358 /* exit 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 1.png"; sourceTree = "<group>"; };
 		455AFECA2001D2E700739358 /* exit.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = exit.anim; sourceTree = "<group>"; };
+		455AFECB2001EE2B00739358 /* signal channel.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "signal channel.anim"; sourceTree = "<group>"; };
+		455AFECC2001EE3D00739358 /* signal channel 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal channel 4.png"; sourceTree = "<group>"; };
+		455AFECD2001EE3D00739358 /* signal channel 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal channel 3.png"; sourceTree = "<group>"; };
+		455AFECE2001EE3D00739358 /* signal channel 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal channel 2.png"; sourceTree = "<group>"; };
+		455AFECF2001EE3E00739358 /* signal channel 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal channel 6.png"; sourceTree = "<group>"; };
+		455AFED02001EE3E00739358 /* signal channel 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal channel 1.png"; sourceTree = "<group>"; };
+		455AFED12001EE3F00739358 /* signal channel 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal channel 5.png"; sourceTree = "<group>"; };
+		455AFED22001EE3F00739358 /* signal channel 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal channel 7.png"; sourceTree = "<group>"; };
+		455AFED32001EE3F00739358 /* signal channel 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal channel 0.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -546,6 +555,7 @@
 		455AFE352000A31D00739358 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				455AFECB2001EE2B00739358 /* signal channel.anim */,
 				455AFECA2001D2E700739358 /* exit.anim */,
 				455AFEC02001BED000739358 /* piston base.anim */,
 				455AFEBF2001BECF00739358 /* piston head.anim */,
@@ -615,6 +625,14 @@
 				455AFEBE2001B34800739358 /* pressure plate 1 4.png */,
 				455AFEB92001B34600739358 /* pressure plate 1 5.png */,
 				455AFEB82001B34500739358 /* pressure plate 1 6.png */,
+				455AFED32001EE3F00739358 /* signal channel 0.png */,
+				455AFED02001EE3E00739358 /* signal channel 1.png */,
+				455AFECE2001EE3D00739358 /* signal channel 2.png */,
+				455AFECD2001EE3D00739358 /* signal channel 3.png */,
+				455AFECC2001EE3D00739358 /* signal channel 4.png */,
+				455AFED12001EE3F00739358 /* signal channel 5.png */,
+				455AFECF2001EE3E00739358 /* signal channel 6.png */,
+				455AFED22001EE3F00739358 /* signal channel 7.png */,
 				455AFE6A2000AD7100739358 /* wire 0 0.png */,
 				455AFE692000AD7100739358 /* wire 0 1.png */,
 				455AFE552000AD6900739358 /* wire 0 2.png */,

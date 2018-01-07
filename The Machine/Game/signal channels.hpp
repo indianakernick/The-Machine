@@ -12,6 +12,6 @@
 #include <cstdint>
 
 using SignalChannel = uint8_t;
-constexpr SignalChannel NUM_CHANNELS = 3;
+constexpr SignalChannel NUM_CHANNELS = 8;
 
 #endif
