@@ -21,6 +21,7 @@
 #include "movement component.hpp"
 #include "anim sprite component.hpp"
 #include "power input component.hpp"
+#include "power sprite component.hpp"
 #include "power output component.hpp"
 #include "radioactivity component.hpp"
 #include "player action component.hpp"
@@ -48,6 +49,7 @@ using CompList = Utils::TypeList<
   Movement,
   AnimSprite,
   PowerInput,
+  PowerSprite,
   PowerOutput,
   PlayerAction,
   PressurePlate,

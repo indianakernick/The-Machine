@@ -16,6 +16,7 @@
 #include "position init.hpp"
 #include "anim sprite init.hpp"
 #include "power input init.hpp"
+#include "power sprite init.hpp"
 #include "power output init.hpp"
 #include "radioactivity init.hpp"
 #include "channel sprite init.hpp"
