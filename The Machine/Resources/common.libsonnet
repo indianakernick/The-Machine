@@ -50,13 +50,18 @@
   ],
   collision_bitset_size: 32,
 
-  getCollisionComp(params):: {
+  getStaticCollisionComp(params):: {
     local allNames = $.collision_type_names,
     local size = $.collision_bitset_size,
-
     type: $.getNamedBit(allNames, size, params.type),
-    pushed_by: $.getNamedBitset(allNames, size, params.pushed_by),
     accepts: $.getNamedBitset(allNames, size, params.accepts)
+  },
+
+  getDynamicCollisionComp(params):: {
+    local allNames = $.collision_type_names,
+    local size = $.collision_bitset_size,
+    type: $.getNamedBit(allNames, size, params.type),
+    pushed_by: $.getNamedBitset(allNames, size, params.pushed_by)
   },
 
   dir_names: [

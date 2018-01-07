@@ -11,8 +11,14 @@
 #include "systems.hpp"
 #include "component inits.hpp"
 #include <Simpleton/SDL/paths.hpp>
+#include <Simpleton/Camera 2D/zoom to fit.hpp>
 
 void GameScreen::init() {
+  rendering.init();
+
+  camera.transform.setOrigin(Cam2D::Origin::CENTER);
+  camera.targetZoom = std::make_unique<Cam2D::ZoomToFit>(glm::vec2());
+
   compInits.construct<GateInit>();
   compInits.construct<WireInit>();
   compInits.construct<PistonInit>();
@@ -38,15 +44,14 @@ void GameScreen::init() {
     return SDL::getResDir() + "level " + levelStr + ".json";
   });
   
-  grid = EntityGrid({32, 18});
-  initGridSystem(registry, grid);
+  loadLevel(progress.getIncompleteLevel());
 }
 
 void GameScreen::quit() {
   registry.reset();
   levels.quit();
-  
   compInits.destroyAll();
+  rendering.quit();
 }
 
 void GameScreen::input(const SDL_Event &e) {
@@ -54,6 +59,8 @@ void GameScreen::input(const SDL_Event &e) {
 }
 
 void GameScreen::update(const float ) {
+  frame = 0;
+
   shiftPlayerActionSystem(registry);
   updatePosSystem(registry, grid);
   shiftPowerSystem(registry);
@@ -77,7 +84,19 @@ void GameScreen::update(const float ) {
 }
 
 void GameScreen::render(const float aspect, const float delta) {
+  ++frame;
   camera.update(aspect, delta);
-  const glm::mat3 viewProj = camera.transform.toPixels();
-  static_cast<void>(viewProj);
+  rendering.render(registry, camera.transform.toPixels(), frame);
+}
+
+bool GameScreen::loadLevel(const ECS::Level level) {
+  const bool success = levels.loadLevel(level);
+  // @TODO level size should be defined in level file
+  constexpr Pos LEVEL_SIZE = {32, 18};
+  camera.setPos(LEVEL_SIZE / 2u);
+  dynamic_cast<Cam2D::ZoomToFit *>(camera.targetZoom.get())->setSize(LEVEL_SIZE);
+  grid = EntityGrid(LEVEL_SIZE);
+  initGridSystem(registry, grid);
+  rendering.updateQuadCount(registry);
+  return success;
 }

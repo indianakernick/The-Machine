@@ -55,6 +55,10 @@
 		455AFE462000A57800739358 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 455AFE442000A57700739358 /* sprites.atlas */; };
 		455AFE472000A57800739358 /* sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = 455AFE452000A57700739358 /* sprites.png */; };
 		455AFE8F2000B8A200739358 /* exit system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE8D2000B8A200739358 /* exit system.cpp */; };
+		455AFF10200212D700739358 /* rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF0C200212D500739358 /* rendering system.cpp */; };
+		455AFF142002132B00739358 /* quad writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF122002132B00739358 /* quad writer.cpp */; };
+		455AFF17200218B800739358 /* sprite shader.vert in Resources */ = {isa = PBXBuildFile; fileRef = 455AFF15200218B700739358 /* sprite shader.vert */; };
+		455AFF18200218B800739358 /* sprite shader.frag in Resources */ = {isa = PBXBuildFile; fileRef = 455AFF16200218B800739358 /* sprite shader.frag */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -349,6 +353,14 @@
 		455AFF062002057900739358 /* radioactive toggle 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactive toggle 5.png"; sourceTree = "<group>"; };
 		455AFF072002057900739358 /* radioactive toggle 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactive toggle 1.png"; sourceTree = "<group>"; };
 		455AFF082002058A00739358 /* radioactive toggle.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "radioactive toggle.anim"; sourceTree = "<group>"; };
+		455AFF0B200212D500739358 /* rendering system.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering system.hpp"; sourceTree = "<group>"; };
+		455AFF0C200212D500739358 /* rendering system.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "rendering system.cpp"; sourceTree = "<group>"; };
+		455AFF0E200212D600739358 /* rendering types.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering types.hpp"; sourceTree = "<group>"; };
+		455AFF122002132B00739358 /* quad writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "quad writer.cpp"; sourceTree = "<group>"; };
+		455AFF132002132B00739358 /* quad writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "quad writer.hpp"; sourceTree = "<group>"; };
+		455AFF15200218B700739358 /* sprite shader.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sprite shader.vert"; sourceTree = "<group>"; };
+		455AFF16200218B800739358 /* sprite shader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sprite shader.frag"; sourceTree = "<group>"; };
+		455AFF192002245400739358 /* frame type.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "frame type.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -430,6 +442,8 @@
 				455AFE372000A35A00739358 /* sprite config.json */,
 				455AFE442000A57700739358 /* sprites.atlas */,
 				455AFE452000A57700739358 /* sprites.png */,
+				455AFF16200218B800739358 /* sprite shader.frag */,
+				455AFF15200218B700739358 /* sprite shader.vert */,
 				455AFE362000A32600739358 /* Sprites */,
 				455AFE352000A31D00739358 /* Animations */,
 				455AFDA71FFDC85C00739358 /* Entities */,
@@ -481,6 +495,11 @@
 			children = (
 				455AFD881FFDB3E000739358 /* rendering context.cpp */,
 				455AFD871FFDB3E000739358 /* rendering context.hpp */,
+				455AFF0E200212D600739358 /* rendering types.hpp */,
+				455AFF0C200212D500739358 /* rendering system.cpp */,
+				455AFF0B200212D500739358 /* rendering system.hpp */,
+				455AFF122002132B00739358 /* quad writer.cpp */,
+				455AFF132002132B00739358 /* quad writer.hpp */,
 			);
 			name = Rendering;
 			sourceTree = "<group>";
@@ -539,6 +558,7 @@
 				455AFDD31FFF0F1B00739358 /* dir to vec.hpp */,
 				455AFD951FFDBADF00739358 /* entity grid.cpp */,
 				455AFD961FFDBADF00739358 /* entity grid.hpp */,
+				455AFF192002245400739358 /* frame type.hpp */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -838,9 +858,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455AFF18200218B800739358 /* sprite shader.frag in Resources */,
 				455AFE462000A57800739358 /* sprites.atlas in Resources */,
 				455AFE472000A57800739358 /* sprites.png in Resources */,
 				450759921FFC77E30009B360 /* Assets.xcassets in Resources */,
+				455AFF17200218B800739358 /* sprite shader.vert in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -916,7 +938,9 @@
 				455AFE222000839000739358 /* pressure plate system.cpp in Sources */,
 				455AFDD91FFF1B9A00739358 /* power input init.cpp in Sources */,
 				455AFE262000881A00739358 /* piston init.cpp in Sources */,
+				455AFF142002132B00739358 /* quad writer.cpp in Sources */,
 				455AFDFF20005DE300739358 /* radioactive toggle init.cpp in Sources */,
+				455AFF10200212D700739358 /* rendering system.cpp in Sources */,
 				455AFDE71FFF42CF00739358 /* shift power system.cpp in Sources */,
 				455AFE29200089BA00739358 /* piston system.cpp in Sources */,
 				455AFE052000691D00739358 /* radioactive toggle system.cpp in Sources */,

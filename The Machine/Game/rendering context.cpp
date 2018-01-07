@@ -25,7 +25,9 @@ void RenderingContext::init(SDL_Window *newWindow, const bool vsyncEnabled) {
   
   SDL_DisplayMode mode;
   CHECK_SDL_ERROR(SDL_GetWindowDisplayMode(window, &mode));
-  if (mode.refresh_rate != 0) {
+  if (mode.refresh_rate == 0) {
+    minFrameTime = 1000 / 70;
+  } else {
     minFrameTime = 1000 / (mode.refresh_rate + 10);
   }
 }

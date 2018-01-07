@@ -4,9 +4,8 @@ local common = import "common.libsonnet";
 [
   {
     components: {
-      Collision: common.getCollisionComp({
+      StaticCollision: common.getStaticCollisionComp({
         type: "air",
-        pushed_by: "none",
         accepts: "all"
       }),
       PowerInput: common.getDirBitsetComp(["right", "left"])

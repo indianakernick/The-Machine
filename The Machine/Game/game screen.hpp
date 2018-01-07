@@ -11,6 +11,7 @@
 
 #include "entity grid.hpp"
 #include "component list.hpp"
+#include "rendering system.hpp"
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/ECS/comp inits.hpp>
 #include <Simpleton/Camera 2D/camera.hpp>
@@ -34,6 +35,10 @@ private:
   ECS::ProgressManager progress;
   Cam2D::Camera camera;
   EntityGrid grid;
+  RenderingSystem rendering;
+  Frame frame = 0;
+  
+  bool loadLevel(ECS::Level);
 };
 
 #endif

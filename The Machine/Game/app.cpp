@@ -43,9 +43,11 @@ void App::init() {
   windowLibrary = SDL::makeLibrary(SDL_INIT_EVENTS);
   window = SDL::makeWindow(WINDOW_DESC);
   renderingContext.init(window.get(), true);
+  game.init();
 }
 
 void App::quit() {
+  game.quit();
   renderingContext.quit();
   window.reset();
   windowLibrary.reset();
