@@ -19,6 +19,7 @@
 #include "weight component.hpp"
 #include "position component.hpp"
 #include "movement component.hpp"
+#include "anim sprite component.hpp"
 #include "power input component.hpp"
 #include "power output component.hpp"
 #include "radioactivity component.hpp"
@@ -43,6 +44,7 @@ using CompList = Utils::TypeList<
   Weight,
   Position,
   Movement,
+  AnimSprite,
   PowerInput,
   PowerOutput,
   PlayerAction,

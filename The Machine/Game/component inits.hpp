@@ -14,6 +14,7 @@
 #include "weight init.hpp"
 #include "piston init.hpp"
 #include "position init.hpp"
+#include "anim sprite init.hpp"
 #include "power input init.hpp"
 #include "power output init.hpp"
 #include "radioactivity init.hpp"
