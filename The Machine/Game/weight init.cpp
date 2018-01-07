@@ -8,6 +8,6 @@
 
 #include "weight init.hpp"
 
-void WeightInit::init(Weight &weight, const json &node) {
-  weight.heavy = node.at("heavy").get<bool>();
+void WeightInit::init(Weight &comp, const json &node) {
+  Data::get(comp.heavy, node, "heavy");
 }

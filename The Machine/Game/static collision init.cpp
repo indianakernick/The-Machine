@@ -9,6 +9,6 @@
 #include "static collision init.hpp"
 
 void StaticCollisionInit::init(StaticCollision &comp, const json &node) {
-  comp.type = node.at("type").get<uint32_t>();
-  comp.accepts = node.at("accepts").get<uint32_t>();
+  Data::get(comp.type, node, "type");
+  Data::get(comp.accepts, node, "accepts");
 }

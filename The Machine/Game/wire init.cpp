@@ -8,7 +8,7 @@
 
 #include "wire init.hpp"
 
-void WireInit::init(Wire &wire, const json &node) {
-  wire.sides = static_cast<Math::DirBits>(node.at("sides").get<Math::DirType>());
-  wire.cross = node.at("cross").get<bool>();
+void WireInit::init(Wire &comp, const json &node) {
+  comp.sides = static_cast<Math::DirBits>(node.at("sides").get<Math::DirType>());
+  Data::get(comp.cross, node, "cross");
 }

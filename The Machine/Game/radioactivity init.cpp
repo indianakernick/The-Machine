@@ -9,6 +9,6 @@
 #include "radioactivity init.hpp"
 
 void RadioactivityInit::init(Radioactivity &comp, const json &node) {
-  comp.prev = node.at("enabled").get<bool>();
+  Data::get(comp.prev, node, "enabled");
   comp.curr = comp.prev;
 }

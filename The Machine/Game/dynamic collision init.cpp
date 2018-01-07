@@ -9,6 +9,6 @@
 #include "dynamic collision init.hpp"
 
 void DynamicCollisionInit::init(DynamicCollision &comp, const json &node) {
-  comp.type = node.at("type").get<uint32_t>();
-  comp.pushedBy = node.at("pushed_by").get<uint32_t>();
+  Data::get(comp.type, node, "type");
+  Data::get(comp.pushedBy, node, "pushed_by");
 }

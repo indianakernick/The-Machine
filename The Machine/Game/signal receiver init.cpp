@@ -9,5 +9,5 @@
 #include "signal receiver init.hpp"
 
 void SignalReceiverInit::init(SignalReceiver &comp, const json &node) {
-  comp.channel = node.at("channel").get<SignalChannel>();
+  Data::get(comp.channel, node, "channel");
 }

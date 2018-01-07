@@ -9,5 +9,5 @@
 #include "pressure plate init.hpp"
 
 void PressurePlateInit::init(PressurePlate &comp, const json &node) {
-  comp.heavy = node.at("heavy").get<bool>();
+  Data::get(comp.heavy, node, "heavy");
 }

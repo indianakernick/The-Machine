@@ -9,6 +9,6 @@
 #include "piston init.hpp"
 
 void PistonInit::init(Piston &comp, const json &node) {
-  comp.basePos = node.at("base_pos").get<Pos>();
+  Data::get(comp.basePos, node, "base_pos");
   comp.dir = static_cast<Math::Dir>(node.at("dir").get<Math::DirType>());
 }

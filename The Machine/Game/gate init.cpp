@@ -8,6 +8,6 @@
 
 #include "gate init.hpp"
 
-void GateInit::init(Gate &gate, const json &node) {
-  gate.fun = static_cast<GateFun>(node.at("fun").get<int>());
+void GateInit::init(Gate &comp, const json &node) {
+  comp.fun = static_cast<GateFun>(node.at("fun").get<int>());
 }
