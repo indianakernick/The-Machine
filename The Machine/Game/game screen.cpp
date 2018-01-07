@@ -63,7 +63,12 @@ void GameScreen::input(const SDL_Event &e) {
 }
 
 void GameScreen::update(const float ) {
-  frame = 0;
+  if (frame == 6) {
+    frame = 0;
+  } else {
+    ++frame;
+    return;
+  }
 
   shiftPlayerActionSystem(registry);
   updatePosSystem(registry, grid);
