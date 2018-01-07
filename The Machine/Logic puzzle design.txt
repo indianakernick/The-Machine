@@ -1,0 +1,23 @@
+Make the player think a few steps ahead
+	Make the player think about the consequinces of their actions and how they
+  will affect them at a later step
+Make the player hold a lot of possibilities in their head
+	The player is presented with a number of choices, one of them is correct.
+	The Player must think about all of the choices to find out which is correct
+Make the player think about multiple things across different time frames
+	A combination lock is short term because when the player is at the combo lock,
+	they can solve it right then and there. But a box could be long term. Perhaps
+  the box should not be moved when the player first encourters it but should be
+  moved later in a way that links to the rest of the puzzle.
+Sequencing
+	The player must perform an action at the right time. Perhaps performing the
+  action at the wrong time will put the level into an impossible state or simply
+  won't work
+Tricking the player
+	Make the correct sequence seem more efficient. Put a switch close to the
+  player, the player may think that it is more efficient to toggle the switch
+  while right next to it. But toggling the switch at this point is the wrong
+  move.
+Layout
+	Start with the general layout of the path the player must take and then build
+	complexity onto this layout

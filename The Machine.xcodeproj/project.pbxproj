@@ -286,6 +286,7 @@
 		455AFEC02001BED000739358 /* piston base.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "piston base.anim"; sourceTree = "<group>"; };
 		455AFEC12001BEDE00739358 /* piston base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piston base.png"; sourceTree = "<group>"; };
 		455AFEC22001BEDE00739358 /* piston head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piston head.png"; sourceTree = "<group>"; };
+		455AFEC32001C21900739358 /* Logic puzzle design.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Logic puzzle design.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,6 +325,7 @@
 		4507598E1FFC77E20009B360 /* The Machine */ = {
 			isa = PBXGroup;
 			children = (
+				455AFEC32001C21900739358 /* Logic puzzle design.txt */,
 				450759AE1FFC98AC0009B360 /* Resources */,
 				450759AD1FFC98A50009B360 /* Game */,
 				450759911FFC77E20009B360 /* Assets.xcassets */,
