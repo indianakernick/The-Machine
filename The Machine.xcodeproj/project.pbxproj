@@ -339,6 +339,8 @@
 		455AFEFC2001FFCA00739358 /* radioactivity detector 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactivity detector 6.png"; sourceTree = "<group>"; };
 		455AFEFD2001FFCA00739358 /* radioactivity detector 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactivity detector 4.png"; sourceTree = "<group>"; };
 		455AFEFE2001FFD300739358 /* radioactivity detector.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "radioactivity detector.anim"; sourceTree = "<group>"; };
+		455AFEFF2002029800739358 /* wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall.png; sourceTree = "<group>"; };
+		455AFF00200202A000739358 /* wall.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = wall.anim; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -604,6 +606,7 @@
 				455AFECB2001EE2B00739358 /* signal channel.anim */,
 				455AFEE22001FBA200739358 /* signal receiver.anim */,
 				455AFED42001EFFB00739358 /* signal transmitter.anim */,
+				455AFF00200202A000739358 /* wall.anim */,
 				455AFE482000AD5100739358 /* wire.anim */,
 			);
 			path = Animations;
@@ -705,6 +708,7 @@
 				455AFED82001F00E00739358 /* signal transmitter power 4.png */,
 				455AFED52001F00D00739358 /* signal transmitter power 5.png */,
 				455AFED72001F00E00739358 /* signal transmitter power 6.png */,
+				455AFEFF2002029800739358 /* wall.png */,
 				455AFE6A2000AD7100739358 /* wire 0 0.png */,
 				455AFE692000AD7100739358 /* wire 0 1.png */,
 				455AFE552000AD6900739358 /* wire 0 2.png */,
