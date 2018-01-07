@@ -341,6 +341,14 @@
 		455AFEFE2001FFD300739358 /* radioactivity detector.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "radioactivity detector.anim"; sourceTree = "<group>"; };
 		455AFEFF2002029800739358 /* wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall.png; sourceTree = "<group>"; };
 		455AFF00200202A000739358 /* wall.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = wall.anim; sourceTree = "<group>"; };
+		455AFF012002057700739358 /* radioactive toggle 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactive toggle 2.png"; sourceTree = "<group>"; };
+		455AFF022002057700739358 /* radioactive toggle 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactive toggle 4.png"; sourceTree = "<group>"; };
+		455AFF032002057800739358 /* radioactive toggle 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactive toggle 3.png"; sourceTree = "<group>"; };
+		455AFF042002057800739358 /* radioactive toggle 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactive toggle 0.png"; sourceTree = "<group>"; };
+		455AFF052002057900739358 /* radioactive toggle 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactive toggle 6.png"; sourceTree = "<group>"; };
+		455AFF062002057900739358 /* radioactive toggle 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactive toggle 5.png"; sourceTree = "<group>"; };
+		455AFF072002057900739358 /* radioactive toggle 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactive toggle 1.png"; sourceTree = "<group>"; };
+		455AFF082002058A00739358 /* radioactive toggle.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "radioactive toggle.anim"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -602,6 +610,7 @@
 				455AFEBF2001BECF00739358 /* piston head.anim */,
 				455AFE732000AEC500739358 /* player.anim */,
 				455AFEAE2001AEA500739358 /* pressure plate.anim */,
+				455AFF082002058A00739358 /* radioactive toggle.anim */,
 				455AFEFE2001FFD300739358 /* radioactivity detector.anim */,
 				455AFECB2001EE2B00739358 /* signal channel.anim */,
 				455AFEE22001FBA200739358 /* signal receiver.anim */,
@@ -667,6 +676,13 @@
 				455AFEBE2001B34800739358 /* pressure plate 1 4.png */,
 				455AFEB92001B34600739358 /* pressure plate 1 5.png */,
 				455AFEB82001B34500739358 /* pressure plate 1 6.png */,
+				455AFF042002057800739358 /* radioactive toggle 0.png */,
+				455AFF072002057900739358 /* radioactive toggle 1.png */,
+				455AFF012002057700739358 /* radioactive toggle 2.png */,
+				455AFF032002057800739358 /* radioactive toggle 3.png */,
+				455AFF022002057700739358 /* radioactive toggle 4.png */,
+				455AFF062002057900739358 /* radioactive toggle 5.png */,
+				455AFF052002057900739358 /* radioactive toggle 6.png */,
 				455AFEFA2001FFC900739358 /* radioactivity detector 0.png */,
 				455AFEFB2001FFC900739358 /* radioactivity detector 1.png */,
 				455AFEF92001FFC900739358 /* radioactivity detector 2.png */,
