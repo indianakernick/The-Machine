@@ -282,6 +282,10 @@
 		455AFEBC2001B34700739358 /* pressure plate 0 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate 0 6.png"; sourceTree = "<group>"; };
 		455AFEBD2001B34700739358 /* pressure plate 1 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate 1 2.png"; sourceTree = "<group>"; };
 		455AFEBE2001B34800739358 /* pressure plate 1 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate 1 4.png"; sourceTree = "<group>"; };
+		455AFEBF2001BECF00739358 /* piston head.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "piston head.anim"; sourceTree = "<group>"; };
+		455AFEC02001BED000739358 /* piston base.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "piston base.anim"; sourceTree = "<group>"; };
+		455AFEC12001BEDE00739358 /* piston base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piston base.png"; sourceTree = "<group>"; };
+		455AFEC22001BEDE00739358 /* piston head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piston head.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -533,6 +537,8 @@
 		455AFE352000A31D00739358 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				455AFEC02001BED000739358 /* piston base.anim */,
+				455AFEBF2001BECF00739358 /* piston head.anim */,
 				455AFE7C2000B3E200739358 /* box.anim */,
 				455AFEA62001A33800739358 /* button.anim */,
 				455AFE3B2000A41D00739358 /* gates.anim */,
@@ -576,6 +582,8 @@
 				455AFE892000B6D900739358 /* lever 4.png */,
 				455AFE842000B6D700739358 /* lever 5.png */,
 				455AFE8A2000B6DA00739358 /* lever 6.png */,
+				455AFEC12001BEDE00739358 /* piston base.png */,
+				455AFEC22001BEDE00739358 /* piston head.png */,
 				455AFE742000AED300739358 /* player.png */,
 				455AFEB62001B34400739358 /* pressure plate 0 0.png */,
 				455AFEB42001B34400739358 /* pressure plate 0 1.png */,
