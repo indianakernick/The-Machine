@@ -12,6 +12,7 @@
 #include "entity grid.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
+// toggle power output if the player presses the action button
 void leverSystem(ECS::Registry &, const EntityGrid &);
 
 #endif

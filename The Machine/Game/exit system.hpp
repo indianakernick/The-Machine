@@ -12,6 +12,7 @@
 #include "entity grid.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
+// return true if the player is in the exit tile
 bool exitSystem(ECS::Registry &, const EntityGrid &);
 
 #endif
