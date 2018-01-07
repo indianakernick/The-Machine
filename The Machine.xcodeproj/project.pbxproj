@@ -63,6 +63,7 @@
 		455AFF242002314900739358 /* channel sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF222002314900739358 /* channel sprite init.cpp */; };
 		455AFF28200232CF00739358 /* radioactivity sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF26200232CF00739358 /* radioactivity sprite init.cpp */; };
 		455AFF2C200234B400739358 /* power sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF2A200234B400739358 /* power sprite init.cpp */; };
+		455AFF2F2002E8D300739358 /* anim sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF2D2002E8D300739358 /* anim sprite writer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -377,6 +378,8 @@
 		455AFF29200233B000739358 /* power sprite component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power sprite component.hpp"; sourceTree = "<group>"; };
 		455AFF2A200234B400739358 /* power sprite init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "power sprite init.cpp"; sourceTree = "<group>"; };
 		455AFF2B200234B400739358 /* power sprite init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power sprite init.hpp"; sourceTree = "<group>"; };
+		455AFF2D2002E8D300739358 /* anim sprite writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "anim sprite writer.cpp"; sourceTree = "<group>"; };
+		455AFF2E2002E8D300739358 /* anim sprite writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "anim sprite writer.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -520,6 +523,8 @@
 				455AFF0B200212D500739358 /* rendering system.hpp */,
 				455AFF122002132B00739358 /* quad writer.cpp */,
 				455AFF132002132B00739358 /* quad writer.hpp */,
+				455AFF2D2002E8D300739358 /* anim sprite writer.cpp */,
+				455AFF2E2002E8D300739358 /* anim sprite writer.hpp */,
 			);
 			name = Rendering;
 			sourceTree = "<group>";
@@ -932,6 +937,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455AFF2F2002E8D300739358 /* anim sprite writer.cpp in Sources */,
 				455AFD971FFDBADF00739358 /* entity grid.cpp in Sources */,
 				455AFDCF1FFF06EB00739358 /* clear desired dir system.cpp in Sources */,
 				455AFDCC1FFF044900739358 /* clear real dir system.cpp in Sources */,

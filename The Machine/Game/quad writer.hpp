@@ -12,6 +12,7 @@
 #include "frame type.hpp"
 #include "position type.hpp"
 #include "rendering types.hpp"
+#include <Simpleton/Math/dir.hpp>
 #include <Simpleton/ECS/registry.hpp>
 
 class QuadWriter {
@@ -30,7 +31,7 @@ private:
 
 protected:
   static void writePos(QuadIter, Pos, float);
-  static void writeTexCoords(QuadIter, const Spritesheet &, SpriteID, float = 0.0f);
+  static void writeTexCoords(QuadIter, const Spritesheet &, SpriteID, Math::Dir = Math::Dir::UP);
 };
 
 #endif

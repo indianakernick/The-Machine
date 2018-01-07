@@ -37,7 +37,7 @@ void QuadWriter::writeTexCoords(
   const QuadIter quadIter,
   const Spritesheet &sheet,
   const SpriteID sprite,
-  const float angle
+  const Math::Dir dir
 ) {
   const Unpack::VecPx unpackSheetSize = sheet.getSize();
   const glm::vec2 sheetSize = {unpackSheetSize.x, unpackSheetSize.y};
@@ -45,16 +45,13 @@ void QuadWriter::writeTexCoords(
   glm::vec2 bottomLeft = glm::vec2(rect.x, rect.y) / sheetSize;
   glm::vec2 topRight = bottomLeft + glm::vec2(rect.w, rect.h) / sheetSize;
   
-  const float s = std::sin(angle);
-  const float c = std::cos(angle);
-  const glm::mat2 rotation = {{c, s}, {-s, c}};
-  
-  bottomLeft = rotation * bottomLeft;
-  topRight = rotation * topRight;
+  const size_t dirI = static_cast<size_t>(dir);
   
   Quad &quad = *quadIter;
-  quad[0].texCoord = {bottomLeft.x, topRight.y};
-  quad[1].texCoord = topRight;
-  quad[2].texCoord = {topRight.x, bottomLeft.y};
-  quad[3].texCoord = bottomLeft;
+  //winding is anticlockwise
+  //dir increases clockwise
+  quad[(4 - dirI) % 4].texCoord = {bottomLeft.x, topRight.y};
+  quad[(5 - dirI) % 4].texCoord = topRight;
+  quad[(6 - dirI) % 4].texCoord = {topRight.x, bottomLeft.y};
+  quad[(7 - dirI) % 4].texCoord = bottomLeft;
 }
