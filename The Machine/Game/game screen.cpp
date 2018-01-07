@@ -28,6 +28,7 @@ void GameScreen::init() {
   compInits.construct<PowerInputInit>();
   compInits.construct<PowerOutputInit>();
   compInits.construct<RadioactivityInit>();
+  compInits.construct<ChannelSpriteInit>();
   compInits.construct<PressurePlateInit>();
   compInits.construct<SignalReceiverInit>();
   compInits.construct<StaticCollisionInit>();
