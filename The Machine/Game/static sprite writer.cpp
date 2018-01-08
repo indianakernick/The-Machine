@@ -8,7 +8,6 @@
 
 #include "static sprite writer.hpp"
 
-#include "position component.hpp"
 #include "static sprite component.hpp"
 
 void StaticSpriteWriter::writeQuads(
@@ -17,15 +16,14 @@ void StaticSpriteWriter::writeQuads(
   const Spritesheet &sheet,
   const Frame frame
 ) const {
-  const auto view = registry.view<Position, StaticSprite>();
+  const auto view = registry.view<StaticSprite, SpritePosition>();
   for (const ECS::EntityID entity : view) {
-    const Pos pos = view.get<Position>(entity).pos;
     const StaticSprite sprite = view.get<StaticSprite>(entity);
     const Frame animFrame = sprite.animated ? frame : 0;
     const Unpack::SpriteID spriteID = sprite.sprite + animFrame;
     
-    writePos(quadIter, pos, sprite.depth);
-    writeTexCoords(quadIter, sheet, spriteID, sprite.dir);
+    writePos(quadIter, view.get<SpritePosition>(entity));
+    writeTexCoords(quadIter, sheet, spriteID);
     
     ++quadIter;
   }

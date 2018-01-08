@@ -14,6 +14,7 @@
 #include "rendering types.hpp"
 #include <Simpleton/Math/dir.hpp>
 #include <Simpleton/ECS/registry.hpp>
+#include "sprite position component.hpp"
 
 class QuadWriter {
 public:
@@ -30,8 +31,8 @@ private:
   virtual size_t count(ECS::Registry &) const = 0;
 
 protected:
-  static void writePos(QuadIter, Pos, float);
-  static void writeTexCoords(QuadIter, const Spritesheet &, SpriteID, Math::Dir = Math::Dir::UP);
+  static void writePos(QuadIter, SpritePosition);
+  static void writeTexCoords(QuadIter, const Spritesheet &, SpriteID);
 };
 
 #endif

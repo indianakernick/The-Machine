@@ -16,7 +16,6 @@ struct PowerSprite {
   Unpack::SpriteID riseAndFall = Unpack::NULL_SPRITE;
   Unpack::SpriteID off = Unpack::NULL_SPRITE;
   Unpack::SpriteID on = Unpack::NULL_SPRITE;
-  Math::Dir dir = Math::Dir::UP;
 };
 
 #endif

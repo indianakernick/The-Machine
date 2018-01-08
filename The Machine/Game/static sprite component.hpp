@@ -14,9 +14,7 @@
 
 struct StaticSprite {
   Unpack::SpriteID sprite;
-  float depth;
   bool animated;
-  Math::Dir dir = Math::Dir::UP;
 };
 
 #endif

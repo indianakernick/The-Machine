@@ -20,24 +20,26 @@ size_t QuadWriter::countQuads(ECS::Registry &registry) {
 
 void QuadWriter::writePos(
   const QuadIter quadIter,
-  const Pos pos,
-  const float depth
+  const SpritePosition spritePos
 ) {
-  static const Pos CORNER[4] = {
-    {0, 0}, {1, 0}, {1, 1}, {0, 1}
+  static const glm::vec2 CORNER[4] = {
+    {0.0f, 0.0f}, {1.0f, 0.0f}, {1.0f, 1.0f}, {0.0f, 1.0f}
   };
+  const size_t dirI = static_cast<size_t>(spritePos.orient);
+  
   Quad &quad = *quadIter;
   for (size_t v = 0; v != 4; ++v) {
-    const glm::vec2 vert = pos + CORNER[v];
-    quad[v].pos = glm::vec3(vert.x, vert.y, depth);
+    //winding is anticlockwise
+    //dir increases clockwise
+    const glm::vec2 vert = spritePos.pos + CORNER[(4 + v - dirI) % 4];
+    quad[v].pos = glm::vec3(vert.x, vert.y, spritePos.depth);
   }
 }
 
 void QuadWriter::writeTexCoords(
   const QuadIter quadIter,
   const Spritesheet &sheet,
-  const SpriteID sprite,
-  const Math::Dir dir
+  const SpriteID sprite
 ) {
   const Unpack::VecPx unpackSheetSize = sheet.getSize();
   const glm::vec2 sheetSize = {unpackSheetSize.x, unpackSheetSize.y};
@@ -45,13 +47,9 @@ void QuadWriter::writeTexCoords(
   glm::vec2 bottomLeft = glm::vec2(rect.x, rect.y) / sheetSize;
   glm::vec2 topRight = bottomLeft + glm::vec2(rect.w, rect.h) / sheetSize;
   
-  const size_t dirI = static_cast<size_t>(dir);
-  
   Quad &quad = *quadIter;
-  //winding is anticlockwise
-  //dir increases clockwise
-  quad[(4 - dirI) % 4].texCoord = {bottomLeft.x, topRight.y};
-  quad[(5 - dirI) % 4].texCoord = topRight;
-  quad[(6 - dirI) % 4].texCoord = {topRight.x, bottomLeft.y};
-  quad[(7 - dirI) % 4].texCoord = bottomLeft;
+  quad[0].texCoord = {bottomLeft.x, topRight.y};
+  quad[1].texCoord = topRight;
+  quad[2].texCoord = {topRight.x, bottomLeft.y};
+  quad[3].texCoord = bottomLeft;
 }

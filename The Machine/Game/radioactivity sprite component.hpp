@@ -13,7 +13,6 @@
 
 struct RadioactivitySprite {
   Unpack::SpriteID sprite;
-  float depth;
 };
 
 #endif

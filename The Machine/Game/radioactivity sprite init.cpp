@@ -10,5 +10,4 @@
 
 void RadioactivitySpriteInit::init(RadioactivitySprite &comp, const json &node) {
   Data::get(comp.sprite, node, "sprite");
-  Data::get(comp.depth, node, "depth");
 }

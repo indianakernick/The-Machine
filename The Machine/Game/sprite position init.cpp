@@ -10,5 +10,7 @@
 
 void SpritePositionInit::init(SpritePosition &comp, const json &node) {
   Data::get(comp.depth, node, "depth");
-  Data::getOptional(comp.orient, node, "orient");
+  if (JSON_OPTIONAL(orient, node, "dir")) {
+    comp.orient = static_cast<Math::Dir>(orient->get<Math::DirType>());
+  }
 }
