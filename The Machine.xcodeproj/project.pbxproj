@@ -60,7 +60,6 @@
 		455AFF17200218B800739358 /* sprite shader.vert in Resources */ = {isa = PBXBuildFile; fileRef = 455AFF15200218B700739358 /* sprite shader.vert */; };
 		455AFF18200218B800739358 /* sprite shader.frag in Resources */ = {isa = PBXBuildFile; fileRef = 455AFF16200218B800739358 /* sprite shader.frag */; };
 		455AFF1D20022C4100739358 /* static sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF1B20022C4100739358 /* static sprite init.cpp */; };
-		455AFF242002314900739358 /* channel sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF222002314900739358 /* channel sprite init.cpp */; };
 		455AFF28200232CF00739358 /* radioactivity sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF26200232CF00739358 /* radioactivity sprite init.cpp */; };
 		455AFF2C200234B400739358 /* power sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF2A200234B400739358 /* power sprite init.cpp */; };
 		455AFF2F2002E8D300739358 /* static sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF2D2002E8D300739358 /* static sprite writer.cpp */; };
@@ -339,9 +338,6 @@
 		455AFF1A20022B4100739358 /* static sprite component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "static sprite component.hpp"; sourceTree = "<group>"; };
 		455AFF1B20022C4100739358 /* static sprite init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "static sprite init.cpp"; sourceTree = "<group>"; };
 		455AFF1C20022C4100739358 /* static sprite init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "static sprite init.hpp"; sourceTree = "<group>"; };
-		455AFF1E200230E200739358 /* channel sprite component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "channel sprite component.hpp"; sourceTree = "<group>"; };
-		455AFF222002314900739358 /* channel sprite init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "channel sprite init.cpp"; sourceTree = "<group>"; };
-		455AFF232002314900739358 /* channel sprite init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "channel sprite init.hpp"; sourceTree = "<group>"; };
 		455AFF252002325700739358 /* radioactivity sprite component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity sprite component.hpp"; sourceTree = "<group>"; };
 		455AFF26200232CF00739358 /* radioactivity sprite init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "radioactivity sprite init.cpp"; sourceTree = "<group>"; };
 		455AFF27200232CF00739358 /* radioactivity sprite init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity sprite init.hpp"; sourceTree = "<group>"; };
@@ -673,7 +669,6 @@
 				455AFE2E200094B500739358 /* button component.hpp */,
 				455AFE8C2000B7D800739358 /* exit component.hpp */,
 				455AFF1A20022B4100739358 /* static sprite component.hpp */,
-				455AFF1E200230E200739358 /* channel sprite component.hpp */,
 				455AFF252002325700739358 /* radioactivity sprite component.hpp */,
 				455AFF29200233B000739358 /* power sprite component.hpp */,
 			);
@@ -800,8 +795,6 @@
 				455AFE252000881A00739358 /* piston init.hpp */,
 				455AFF1B20022C4100739358 /* static sprite init.cpp */,
 				455AFF1C20022C4100739358 /* static sprite init.hpp */,
-				455AFF222002314900739358 /* channel sprite init.cpp */,
-				455AFF232002314900739358 /* channel sprite init.hpp */,
 				455AFF26200232CF00739358 /* radioactivity sprite init.cpp */,
 				455AFF27200232CF00739358 /* radioactivity sprite init.hpp */,
 				455AFF2A200234B400739358 /* power sprite init.cpp */,
@@ -1297,7 +1290,6 @@
 				455AFDBB1FFDE84D00739358 /* player input system.cpp in Sources */,
 				455AFF1D20022C4100739358 /* static sprite init.cpp in Sources */,
 				455AFE02200064D200739358 /* radioactivity detector system.cpp in Sources */,
-				455AFF242002314900739358 /* channel sprite init.cpp in Sources */,
 				4507599E1FFC795D0009B360 /* main.cpp in Sources */,
 				455AFE0C2000733100739358 /* signal transmitter init.cpp in Sources */,
 				455AFE2C200090D100739358 /* shift player action system.cpp in Sources */,
