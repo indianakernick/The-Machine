@@ -28,6 +28,7 @@
 #include "pressure plate component.hpp"
 #include <Simpleton/Utils/type list.hpp>
 #include "signal receiver component.hpp"
+#include "sprite position component.hpp"
 #include "static collision component.hpp"
 #include "dynamic collision component.hpp"
 #include "signal transmitter component.hpp"
@@ -54,6 +55,7 @@ using CompList = Utils::TypeList<
   PressurePlate,
   Radioactivity,
   SignalReceiver,
+  SpritePosition,
   StaticCollision,
   DynamicCollision,
   SignalTransmitter,

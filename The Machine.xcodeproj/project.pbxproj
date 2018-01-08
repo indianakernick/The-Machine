@@ -15,6 +15,7 @@
 		450759A71FFC7B240009B360 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450759A61FFC7B240009B360 /* IOKit.framework */; };
 		450759A91FFC7B2A0009B360 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450759A81FFC7B2A0009B360 /* OpenGL.framework */; };
 		450759AB1FFC7B530009B360 /* SDL2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 450759A01FFC7A9E0009B360 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		455A000E20033CB900739358 /* sprite position init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A000C20033CB900739358 /* sprite position init.cpp */; };
 		455AFD861FFDB34400739358 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD841FFDB34400739358 /* app.cpp */; };
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
@@ -93,6 +94,9 @@
 		455A00022003333D00739358 /* signal receiver channel 7 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal receiver channel 7 power 1.png"; sourceTree = "<group>"; };
 		455A00032003333D00739358 /* signal receiver channel 6 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal receiver channel 6 power 2.png"; sourceTree = "<group>"; };
 		455A00062003384700739358 /* quad writers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "quad writers.hpp"; sourceTree = "<group>"; };
+		455A000B20033B6000739358 /* sprite position component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "sprite position component.hpp"; sourceTree = "<group>"; };
+		455A000C20033CB900739358 /* sprite position init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "sprite position init.cpp"; sourceTree = "<group>"; };
+		455A000D20033CB900739358 /* sprite position init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "sprite position init.hpp"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -683,6 +687,7 @@
 				455AFF1A20022B4100739358 /* static sprite component.hpp */,
 				455AFF252002325700739358 /* radioactivity sprite component.hpp */,
 				455AFF29200233B000739358 /* power sprite component.hpp */,
+				455A000B20033B6000739358 /* sprite position component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -809,6 +814,8 @@
 				455AFF27200232CF00739358 /* radioactivity sprite init.hpp */,
 				455AFF2A200234B400739358 /* power sprite init.cpp */,
 				455AFF2B200234B400739358 /* power sprite init.hpp */,
+				455A000C20033CB900739358 /* sprite position init.cpp */,
+				455A000D20033CB900739358 /* sprite position init.hpp */,
 			);
 			name = "Component initializers";
 			sourceTree = "<group>";
@@ -1307,6 +1314,7 @@
 				455AFDC91FFDF71100739358 /* move dir system.cpp in Sources */,
 				455AFE1F2000824200739358 /* weight init.cpp in Sources */,
 				455AFDDC1FFF1D2000739358 /* power output init.cpp in Sources */,
+				455A000E20033CB900739358 /* sprite position init.cpp in Sources */,
 				455AFDE41FFF3F4200739358 /* wire init.cpp in Sources */,
 				455AFDB11FFDD77000739358 /* dynamic collision init.cpp in Sources */,
 				455AFDFB20005A2400739358 /* radioactivity detector init.cpp in Sources */,
