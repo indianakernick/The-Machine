@@ -26,6 +26,8 @@ void AnimSpriteWriter::writeQuads(
     
     writePos(quadIter, pos, sprite.depth);
     writeTexCoords(quadIter, sheet, spriteID);
+    
+    ++quadIter;
   }
 }
 
