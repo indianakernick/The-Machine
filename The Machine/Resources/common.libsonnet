@@ -39,8 +39,8 @@
   ,
 
   layerNames: [
-    "static",
-    "dynamic"
+    "dynamic",
+    "static"
   ],
 
   getDepth(name)::
@@ -77,10 +77,7 @@
   collision_bitset_size: 32,
 
   getStaticCollisionComp(params):: {
-    local allNames = $.collision_type_names,
-    local size = $.collision_bitset_size,
-    type: $.getNamedBit(allNames, size, params.type),
-    accepts: $.getNamedBitset(allNames, size, params.accepts)
+    accepts: $.getNamedBitset($.collision_type_names, $.collision_bitset_size, params.accepts)
   },
 
   getDynamicCollisionComp(params):: {
@@ -127,7 +124,5 @@
       null
     ]: null,
     fun: $.indexOf($.gate_names, params.fun)
-  },
-
-
+  }
 }

@@ -1,3 +1,4 @@
 {
-  makeBox:: (import "box entity.libsonnet")
+  makeBox:: import "box entity.libsonnet",
+  makeButton:: import "button entity.libsonnet"
 }

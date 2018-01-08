@@ -16,6 +16,9 @@ function(params) {
     },
     RadioactivitySprite: {
       sprite: common.getSpriteID("box 0")
+    },
+    Weight: {
+      heavy: true
     }
   }
 }
