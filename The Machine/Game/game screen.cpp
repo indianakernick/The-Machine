@@ -9,12 +9,14 @@
 #include "game screen.hpp"
 
 #include "systems.hpp"
+#include "quad writers.hpp"
 #include "component inits.hpp"
 #include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
 
 void GameScreen::init() {
   rendering.init();
+  rendering.addWriter<StaticSpriteWriter>();
 
   camera.transform.setOrigin(Cam2D::Origin::CENTER);
   camera.targetZoom = std::make_unique<Cam2D::ZoomToFit>(glm::vec2());

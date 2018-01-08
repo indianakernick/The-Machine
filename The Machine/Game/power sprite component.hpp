@@ -10,11 +10,13 @@
 #define power_sprite_component_hpp
 
 #include <unpacker.hpp>
+#include <Simpleton/Math/dir.hpp>
 
 struct PowerSprite {
   Unpack::SpriteID riseAndFall = Unpack::NULL_SPRITE;
   Unpack::SpriteID off = Unpack::NULL_SPRITE;
   Unpack::SpriteID on = Unpack::NULL_SPRITE;
+  Math::Dir dir = Math::Dir::UP;
 };
 
 #endif

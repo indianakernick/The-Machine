@@ -11,7 +11,7 @@
 
 #include "quad writer.hpp"
 
-class AnimSpriteWriter final : public QuadWriter {
+class StaticSpriteWriter final : public QuadWriter {
 public:
   void writeQuads(QuadIter, ECS::Registry &, const Spritesheet &, Frame) const override;
   size_t count(ECS::Registry &) const override;

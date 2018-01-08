@@ -92,6 +92,7 @@
 		455A00012003333C00739358 /* signal receiver channel 4 power 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal receiver channel 4 power 3.png"; sourceTree = "<group>"; };
 		455A00022003333D00739358 /* signal receiver channel 7 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal receiver channel 7 power 1.png"; sourceTree = "<group>"; };
 		455A00032003333D00739358 /* signal receiver channel 6 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal receiver channel 6 power 2.png"; sourceTree = "<group>"; };
+		455A00062003384700739358 /* quad writers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "quad writers.hpp"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -617,6 +618,7 @@
 			children = (
 				455AFD941FFDBA9A00739358 /* Utils */,
 				455AFD921FFDB9C500739358 /* Rendering */,
+				455A00052003382C00739358 /* Quad Writers */,
 				455AFD931FFDBA8300739358 /* Systems */,
 				455AFD8F1FFDB86300739358 /* Components */,
 				455AFD9D1FFDC3CA00739358 /* Component initializers */,
@@ -641,6 +643,16 @@
 				455AFDA61FFDC85500739358 /* Levels */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		455A00052003382C00739358 /* Quad Writers */ = {
+			isa = PBXGroup;
+			children = (
+				455A00062003384700739358 /* quad writers.hpp */,
+				455AFF2D2002E8D300739358 /* static sprite writer.cpp */,
+				455AFF2E2002E8D300739358 /* static sprite writer.hpp */,
+			);
+			name = "Quad Writers";
 			sourceTree = "<group>";
 		};
 		455AFD8F1FFDB86300739358 /* Components */ = {
@@ -694,8 +706,6 @@
 				455AFF0B200212D500739358 /* rendering system.hpp */,
 				455AFF122002132B00739358 /* quad writer.cpp */,
 				455AFF132002132B00739358 /* quad writer.hpp */,
-				455AFF2D2002E8D300739358 /* static sprite writer.cpp */,
-				455AFF2E2002E8D300739358 /* static sprite writer.hpp */,
 			);
 			name = Rendering;
 			sourceTree = "<group>";

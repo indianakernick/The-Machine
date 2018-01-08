@@ -12,4 +12,7 @@ void StaticSpriteInit::init(StaticSprite &comp, const json &node) {
   Data::get(comp.sprite, node, "sprite");
   Data::get(comp.depth, node, "depth");
   Data::get(comp.animated, node, "animated");
+  if (JSON_OPTIONAL(dir, node, "dir")) {
+    comp.dir = static_cast<Math::Dir>(dir->get<Math::DirType>());
+  }
 }

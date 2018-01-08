@@ -11,7 +11,7 @@
 #include "position component.hpp"
 #include "static sprite component.hpp"
 
-void AnimSpriteWriter::writeQuads(
+void StaticSpriteWriter::writeQuads(
   QuadIter quadIter,
   ECS::Registry &registry,
   const Spritesheet &sheet,
@@ -25,13 +25,13 @@ void AnimSpriteWriter::writeQuads(
     const Unpack::SpriteID spriteID = sprite.sprite + animFrame;
     
     writePos(quadIter, pos, sprite.depth);
-    writeTexCoords(quadIter, sheet, spriteID);
+    writeTexCoords(quadIter, sheet, spriteID, sprite.dir);
     
     ++quadIter;
   }
 }
 
-size_t AnimSpriteWriter::count(ECS::Registry &registry) const {
+size_t StaticSpriteWriter::count(ECS::Registry &registry) const {
   return registry.view<StaticSprite>().size();
 }
 
@@ -65,10 +65,8 @@ radioactive detector
   rotation
 signal receiver
   power writer
-  channel writer
 signal transmitter
   power writer
-  channel writer
 wall
   anim writer
 wire
