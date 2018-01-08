@@ -10,5 +10,6 @@
 #define quad_writers_hpp
 
 #include "static sprite writer.hpp"
+#include "radioactivity sprite writer.hpp"
 
 #endif

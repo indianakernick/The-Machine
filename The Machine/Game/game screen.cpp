@@ -17,6 +17,7 @@
 void GameScreen::init() {
   rendering.init();
   rendering.addWriter<StaticSpriteWriter>();
+  rendering.addWriter<RadioactivitySpriteWriter>();
 
   camera.transform.setOrigin(Cam2D::Origin::CENTER);
   camera.targetZoom = std::make_unique<Cam2D::ZoomToFit>(glm::vec2());

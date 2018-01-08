@@ -34,40 +34,19 @@ size_t StaticSpriteWriter::count(ECS::Registry &registry) const {
 }
 
 /*
-box
-  radioactivity writer
-button
-  power writer
-exit
-  anim writer
-gate
-  anim writer
-  rotation
-lever
-  power writer
-piston base
-  anim writer
-  rotation
-piston head
-  anim writer
-  rotation
-player
-  anim writer
-pressure plate
-  power writer
-radioactive toggle
-  power writer
-  rotation
-radioactive detector
-  power writer
-  rotation
-signal receiver
-  power writer
-signal transmitter
-  power writer
-wall
-  anim writer
-wire
-  power writer
-  rotation
+box                   radioactivity writer
+button                power writer
+exit                  static writer
+gate                  static writer
+lever                 power writer
+piston base           static writer
+piston head           static writer
+player                static writer
+pressure plate        power writer
+radioactive toggle    power writer
+radioactive detector  power writer
+signal receiver       power writer
+signal transmitter    power writer
+wall                  static writer
+wire                  power writer
 */
