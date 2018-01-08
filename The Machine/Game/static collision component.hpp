@@ -12,7 +12,6 @@
 #include <cstdint>
 
 struct StaticCollision {
-  uint32_t type;
   uint32_t accepts;
 };
 

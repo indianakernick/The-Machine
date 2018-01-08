@@ -9,6 +9,5 @@
 #include "static collision init.hpp"
 
 void StaticCollisionInit::init(StaticCollision &comp, const json &node) {
-  Data::get(comp.type, node, "type");
   Data::get(comp.accepts, node, "accepts");
 }
