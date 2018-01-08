@@ -22,6 +22,7 @@
 #include "clear real dir system.hpp"
 #include "pressure plate system.hpp"
 #include "signal receiver system.hpp"
+#include "sprite position system.hpp"
 #include "clear desired dir system.hpp"
 #include "radioactive toggle system.hpp"
 #include "shift player action system.hpp"

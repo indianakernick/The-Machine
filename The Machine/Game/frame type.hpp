@@ -11,4 +11,6 @@
 
 using Frame = unsigned;
 
+constexpr Frame FRAMES_PER_TICK = 6;
+
 #endif

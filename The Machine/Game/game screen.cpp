@@ -65,7 +65,7 @@ void GameScreen::input(const SDL_Event &e) {
 }
 
 void GameScreen::update(const float ) {
-  if (frame == 6) {
+  if (frame == FRAMES_PER_TICK) {
     frame = 0;
   } else {
     ++frame;
@@ -96,6 +96,7 @@ void GameScreen::update(const float ) {
 
 void GameScreen::render(const float aspect, const float delta) {
   ++frame;
+  spritePositionSystem(registry, frame);
   camera.update(aspect, delta);
   rendering.render(registry, camera.transform.toPixels(), frame);
 }
