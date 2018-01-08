@@ -9,6 +9,7 @@
 #ifndef quad_writers_hpp
 #define quad_writers_hpp
 
+#include "power sprite writer.hpp"
 #include "static sprite writer.hpp"
 #include "radioactivity sprite writer.hpp"
 

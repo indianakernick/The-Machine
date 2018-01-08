@@ -13,7 +13,7 @@
 #include <Simpleton/Math/dir.hpp>
 
 struct PowerSprite {
-  Unpack::SpriteID riseAndFall = Unpack::NULL_SPRITE;
+  Unpack::SpriteID transition;
   Unpack::SpriteID off = Unpack::NULL_SPRITE;
   Unpack::SpriteID on = Unpack::NULL_SPRITE;
 };

@@ -18,6 +18,7 @@
 		455A000E20033CB900739358 /* sprite position init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A000C20033CB900739358 /* sprite position init.cpp */; };
 		455A001120033DED00739358 /* sprite position system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A000F20033DED00739358 /* sprite position system.cpp */; };
 		455A001420034C6100739358 /* radioactivity sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A001220034C6100739358 /* radioactivity sprite writer.cpp */; };
+		455A00172003531000739358 /* power sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A00152003531000739358 /* power sprite writer.cpp */; };
 		455AFD861FFDB34400739358 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD841FFDB34400739358 /* app.cpp */; };
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
@@ -103,6 +104,8 @@
 		455A001020033DED00739358 /* sprite position system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "sprite position system.hpp"; sourceTree = "<group>"; };
 		455A001220034C6100739358 /* radioactivity sprite writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "radioactivity sprite writer.cpp"; sourceTree = "<group>"; };
 		455A001320034C6100739358 /* radioactivity sprite writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity sprite writer.hpp"; sourceTree = "<group>"; };
+		455A00152003531000739358 /* power sprite writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "power sprite writer.cpp"; sourceTree = "<group>"; };
+		455A00162003531000739358 /* power sprite writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power sprite writer.hpp"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -663,6 +666,8 @@
 				455AFF2E2002E8D300739358 /* static sprite writer.hpp */,
 				455A001220034C6100739358 /* radioactivity sprite writer.cpp */,
 				455A001320034C6100739358 /* radioactivity sprite writer.hpp */,
+				455A00152003531000739358 /* power sprite writer.cpp */,
+				455A00162003531000739358 /* power sprite writer.hpp */,
 			);
 			name = "Quad Writers";
 			sourceTree = "<group>";
@@ -1347,6 +1352,7 @@
 				455AFD861FFDB34400739358 /* app.cpp in Sources */,
 				455AFE222000839000739358 /* pressure plate system.cpp in Sources */,
 				455AFDD91FFF1B9A00739358 /* power input init.cpp in Sources */,
+				455A00172003531000739358 /* power sprite writer.cpp in Sources */,
 				455AFE262000881A00739358 /* piston init.cpp in Sources */,
 				455AFF142002132B00739358 /* quad writer.cpp in Sources */,
 				455AFDFF20005DE300739358 /* radioactive toggle init.cpp in Sources */,

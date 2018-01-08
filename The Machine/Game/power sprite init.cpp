@@ -9,7 +9,7 @@
 #include "power sprite init.hpp"
 
 void PowerSpriteInit::init(PowerSprite &comp, const json &node) {
-  Data::getOptional(comp.riseAndFall, node, "rise_and_fall");
+  Data::get(comp.transition, node, "transition");
   Data::getOptional(comp.off, node, "off");
   Data::getOptional(comp.on, node, "on");
 }

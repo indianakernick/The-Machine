@@ -39,3 +39,7 @@ void RadioactivitySpriteWriter::writeQuads(
     ++quadIter;
   }
 }
+
+size_t RadioactivitySpriteWriter::count(ECS::Registry &registry) const {
+  return registry.view<RadioactivitySprite>().size();
+}

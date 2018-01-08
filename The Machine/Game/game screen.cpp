@@ -16,6 +16,7 @@
 
 void GameScreen::init() {
   rendering.init();
+  rendering.addWriter<PowerSpriteWriter>();
   rendering.addWriter<StaticSpriteWriter>();
   rendering.addWriter<RadioactivitySpriteWriter>();
 
