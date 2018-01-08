@@ -1,20 +1,20 @@
 //
-//  anim sprite component.hpp
+//  static sprite component.hpp
 //  The Machine
 //
 //  Created by Indi Kernick on 7/1/18.
 //  Copyright © 2018 Indi Kernick. All rights reserved.
 //
 
-#ifndef anim_sprite_component_hpp
-#define anim_sprite_component_hpp
+#ifndef static_sprite_component_hpp
+#define static_sprite_component_hpp
 
 #include <unpacker.hpp>
 
-struct AnimSprite {
+struct StaticSprite {
   Unpack::SpriteID sprite;
-  Unpack::SpriteID frames;
   float depth;
+  bool animated;
 };
 
 #endif

@@ -24,10 +24,10 @@ void GameScreen::init() {
   compInits.construct<PistonInit>();
   compInits.construct<WeightInit>();
   compInits.construct<PositionInit>();
-  compInits.construct<AnimSpriteInit>();
   compInits.construct<PowerInputInit>();
   compInits.construct<PowerSpriteInit>();
   compInits.construct<PowerOutputInit>();
+  compInits.construct<StaticSpriteInit>();
   compInits.construct<RadioactivityInit>();
   compInits.construct<ChannelSpriteInit>();
   compInits.construct<PressurePlateInit>();
