@@ -1,4 +1,20 @@
 {
+  sheet: (import "sprites.atlas"),
+
+  getSpriteID(name)::
+    local find(info, current) =
+      if info.found == -1 && name == current[0] then
+        {found: info.index, index: info.index + 1}
+      else
+        {found: info.found, index: info.index + 1}
+    ;
+    local found = std.foldl(find, $.sheet.rects, {found: -1, index: 0}).found;
+    if found == -1 then
+      error "Sprite not found in spritesheet: \"" + name + "\""
+    else
+      found
+  ,
+
   checkParams(params, validNames)::
     local paramNames = std.set(std.objectFields(params));
     local invalidNames = std.setDiff(paramNames, std.set(validNames));
@@ -20,6 +36,15 @@
       error "Item not found in array"
     else
       found
+  ,
+
+  layerNames: [
+    "static",
+    "dynamic"
+  ],
+
+  getDepth(name)::
+    $.indexOf($.layerNames, name) / $.length($.layerNames)
   ,
 
   getNamedBit(allNames, size, name)::
@@ -45,6 +70,7 @@
   collision_type_names: [
     "box",
     "player",
+    "piston_head",
     "wall",
     "air"
   ],
@@ -101,5 +127,7 @@
       null
     ]: null,
     fun: $.indexOf($.gate_names, params.fun)
-  }
+  },
+
+
 }

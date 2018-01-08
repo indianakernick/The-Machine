@@ -2,13 +2,7 @@ local e = import "entities.libsonnet";
 local common = import "common.libsonnet";
 
 [
-  {
-    components: {
-      StaticCollision: common.getStaticCollisionComp({
-        type: "air",
-        accepts: "all"
-      }),
-      PowerInput: common.getDirBitsetComp(["right", "left"])
-    }
-  }
+  e.makeBox({
+    pos: [0, 0]
+  })
 ]

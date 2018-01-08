@@ -19,6 +19,7 @@
 		455A001120033DED00739358 /* sprite position system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A000F20033DED00739358 /* sprite position system.cpp */; };
 		455A001420034C6100739358 /* radioactivity sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A001220034C6100739358 /* radioactivity sprite writer.cpp */; };
 		455A00172003531000739358 /* power sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A00152003531000739358 /* power sprite writer.cpp */; };
+		455A00192004283900739358 /* box entity.libsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 455A00182004283900739358 /* box entity.libsonnet */; };
 		455AFD861FFDB34400739358 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD841FFDB34400739358 /* app.cpp */; };
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
@@ -106,6 +107,7 @@
 		455A001320034C6100739358 /* radioactivity sprite writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity sprite writer.hpp"; sourceTree = "<group>"; };
 		455A00152003531000739358 /* power sprite writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "power sprite writer.cpp"; sourceTree = "<group>"; };
 		455A00162003531000739358 /* power sprite writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power sprite writer.hpp"; sourceTree = "<group>"; };
+		455A00182004283900739358 /* box entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "box entity.libsonnet"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -848,6 +850,7 @@
 			children = (
 				455AFDAA1FFDC91900739358 /* common.libsonnet */,
 				455AFDAC1FFDC93500739358 /* entities.libsonnet */,
+				455A00182004283900739358 /* box entity.libsonnet */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -1266,6 +1269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455A00192004283900739358 /* box entity.libsonnet in Resources */,
 				455AFF18200218B800739358 /* sprite shader.frag in Resources */,
 				455AFE462000A57800739358 /* sprites.atlas in Resources */,
 				455AFE472000A57800739358 /* sprites.png in Resources */,
