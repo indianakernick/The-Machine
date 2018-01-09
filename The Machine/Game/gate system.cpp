@@ -80,8 +80,14 @@ void gateSystem(ECS::Registry &registry, const EntityGrid &grid) {
         continue;
       }
       
-      // taking input from an entity without an output returns false
+      // taking input from a tile without a static entity returns false
       const ECS::EntityID targetID = grid[targetPos].staticID;
+      if (targetID == ECS::NULL_ENTITY) {
+        inputStates.push_back(false);
+        continue;
+      }
+      
+      // taking input from an entity without an output returns false
       if (!registry.has<PowerOutput>(targetID)) {
         inputStates.push_back(false);
         continue;

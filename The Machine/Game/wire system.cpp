@@ -27,8 +27,14 @@ namespace {
     if (grid.outOfRange(pos)) {
       return;
     }
-    // tile must be wire
+    
+    // tile must have a static entity
     const ECS::EntityID entity = grid[pos].staticID;
+    if (entity == ECS::NULL_ENTITY) {
+      return;
+    }
+    
+    // tile must be wire
     if (!registry.has<Wire>(entity)) {
       if (!registry.has<PowerInput>(entity)) {
         return;
@@ -43,6 +49,7 @@ namespace {
       registry.get<Power>(entity).prev = true;
       return;
     }
+    
     // wire must be unpowered
     Power &power = registry.get<Power>(entity);
     if (power.curr) {

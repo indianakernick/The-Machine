@@ -115,7 +115,6 @@
 		455A001A20042ED300739358 /* button entity.libsonnet */ = {isa = PBXFileReference; explicitFileType = text.json; path = "button entity.libsonnet"; sourceTree = "<group>"; };
 		455A002020043D2D00739358 /* exit entity.libsonnet */ = {isa = PBXFileReference; explicitFileType = text.json; path = "exit entity.libsonnet"; sourceTree = "<group>"; };
 		455A002220044BD300739358 /* gate entity.libsonnet */ = {isa = PBXFileReference; explicitFileType = text.json; path = "gate entity.libsonnet"; sourceTree = "<group>"; };
-		455A0024200454E000739358 /* air entity.libsonnet */ = {isa = PBXFileReference; explicitFileType = text.json; path = "air entity.libsonnet"; sourceTree = "<group>"; };
 		455A0026200458BA00739358 /* lever entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "lever entity.libsonnet"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		455A00282004626600739358 /* piston base entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "piston base entity.libsonnet"; sourceTree = "<group>"; };
 		455A002A2004652600739358 /* piston head entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "piston head entity.libsonnet"; sourceTree = "<group>"; };
@@ -895,7 +894,6 @@
 			children = (
 				455AFDAA1FFDC91900739358 /* common.libsonnet */,
 				455AFDAC1FFDC93500739358 /* entities.libsonnet */,
-				455A0024200454E000739358 /* air entity.libsonnet */,
 				455A00182004283900739358 /* box entity.libsonnet */,
 				455A001A20042ED300739358 /* button entity.libsonnet */,
 				455A002020043D2D00739358 /* exit entity.libsonnet */,

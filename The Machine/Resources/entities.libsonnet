@@ -1,5 +1,4 @@
 {
-  air:: import "air entity.libsonnet",
   box:: import "box entity.libsonnet",
   button:: import "button entity.libsonnet",
   exit:: import "exit entity.libsonnet",
