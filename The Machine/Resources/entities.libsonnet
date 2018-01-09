@@ -7,5 +7,6 @@
   lever:: import "lever entity.libsonnet",
   piston_base:: import "piston base entity.libsonnet",
   piston_head:: import "piston head entity.libsonnet",
-  player:: import "player entity.libsonnet"
+  player:: import "player entity.libsonnet",
+  pressure_plate: import "pressure plate entity.libsonnet"
 }

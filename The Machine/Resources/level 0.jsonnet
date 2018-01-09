@@ -46,5 +46,18 @@ local common = import "common.libsonnet";
   }),
   e.air({
     pos: [5, 0]
-  })
+  }),
+  e.pressure_plate({
+    pos: [5, 1],
+    heavy: false
+  }),
+  e.air({
+    pos: [4, 1]
+  }),
+  e.air({
+    pos: [5, 2]
+  }),
+  e.air({
+    pos: [6, 1]
+  }),
 ]

@@ -27,6 +27,7 @@
 		455A002D200467E600739358 /* player entity.libsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 455A002C200467E600739358 /* player entity.libsonnet */; };
 		455A003120046D4700739358 /* clear player input system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A002F20046D4700739358 /* clear player input system.cpp */; };
 		455A00342004708900739358 /* player input response system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A00322004708900739358 /* player input response system.cpp */; };
+		455A0036200482C500739358 /* pressure plate entity.libsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 455A0035200482C500739358 /* pressure plate entity.libsonnet */; };
 		455AFD861FFDB34400739358 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD841FFDB34400739358 /* app.cpp */; };
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
@@ -128,6 +129,7 @@
 		455A003020046D4700739358 /* clear player input system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "clear player input system.hpp"; sourceTree = "<group>"; };
 		455A00322004708900739358 /* player input response system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "player input response system.cpp"; sourceTree = "<group>"; };
 		455A00332004708900739358 /* player input response system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "player input response system.hpp"; sourceTree = "<group>"; };
+		455A0035200482C500739358 /* pressure plate entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "pressure plate entity.libsonnet"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -884,6 +886,7 @@
 				455A00282004626600739358 /* piston base entity.libsonnet */,
 				455A002A2004652600739358 /* piston head entity.libsonnet */,
 				455A002C200467E600739358 /* player entity.libsonnet */,
+				455A0035200482C500739358 /* pressure plate entity.libsonnet */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -1305,6 +1308,7 @@
 				455A00292004626600739358 /* piston base entity.libsonnet in Resources */,
 				455AFF17200218B800739358 /* sprite shader.vert in Resources */,
 				455A002D200467E600739358 /* player entity.libsonnet in Resources */,
+				455A0036200482C500739358 /* pressure plate entity.libsonnet in Resources */,
 				455AFF18200218B800739358 /* sprite shader.frag in Resources */,
 				455AFE462000A57800739358 /* sprites.atlas in Resources */,
 				455A002320044BD300739358 /* gate entity.libsonnet in Resources */,
