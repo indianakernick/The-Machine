@@ -1,19 +1,19 @@
 local common = import "common.libsonnet";
 
-function (params) {
+function(params) {
   components: common.checkParams(params, ["pos"]) {
     StaticCollision: common.getStaticCollisionComp({
       accepts: "player"
     }),
     Position: params.pos,
     Power: {},
-    Button: {},
+    Lever: {},
     PowerOutput: common.getDirBitsetComp("all", ""),
     SpritePosition: {
       depth: common.getDepth("static")
     },
     PowerSprite: {
-      transition: common.getSpriteID("button 0")
+      transition: common.getSpriteID("lever 0")
     }
   }
 }

@@ -17,5 +17,8 @@ local common = import "common.libsonnet";
   }),
   e.exit({
     pos: [2, 0]
+  }),
+  e.lever({
+    pos: [3, 0]
   })
 ]
