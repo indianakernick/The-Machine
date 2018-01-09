@@ -2,20 +2,20 @@ local e = import "entities.libsonnet";
 local common = import "common.libsonnet";
 
 [
-  e.makeBox({
+  e.box({
     pos: [0, 0]
   }),
-  e.makeAir({
+  e.air({
     pos: [0, 0]
   }),
-  e.makeButton({
+  e.button({
     pos: [1, 1]
   }),
-  e.makeGate({
+  e.gate({
     pos: [1, 0],
     gate: "xor"
   }),
-  e.makeExit({
+  e.exit({
     pos: [2, 0]
   })
 ]

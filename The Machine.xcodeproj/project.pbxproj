@@ -108,11 +108,11 @@
 		455A001320034C6100739358 /* radioactivity sprite writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity sprite writer.hpp"; sourceTree = "<group>"; };
 		455A00152003531000739358 /* power sprite writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "power sprite writer.cpp"; sourceTree = "<group>"; };
 		455A00162003531000739358 /* power sprite writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power sprite writer.hpp"; sourceTree = "<group>"; };
-		455A00182004283900739358 /* box entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "box entity.libsonnet"; sourceTree = "<group>"; };
-		455A001A20042ED300739358 /* button entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "button entity.libsonnet"; sourceTree = "<group>"; };
-		455A002020043D2D00739358 /* exit entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "exit entity.libsonnet"; sourceTree = "<group>"; };
-		455A002220044BD300739358 /* gate entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "gate entity.libsonnet"; sourceTree = "<group>"; };
-		455A0024200454E000739358 /* air entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "air entity.libsonnet"; sourceTree = "<group>"; };
+		455A00182004283900739358 /* box entity.libsonnet */ = {isa = PBXFileReference; explicitFileType = text.json; path = "box entity.libsonnet"; sourceTree = "<group>"; };
+		455A001A20042ED300739358 /* button entity.libsonnet */ = {isa = PBXFileReference; explicitFileType = text.json; path = "button entity.libsonnet"; sourceTree = "<group>"; };
+		455A002020043D2D00739358 /* exit entity.libsonnet */ = {isa = PBXFileReference; explicitFileType = text.json; path = "exit entity.libsonnet"; sourceTree = "<group>"; };
+		455A002220044BD300739358 /* gate entity.libsonnet */ = {isa = PBXFileReference; explicitFileType = text.json; path = "gate entity.libsonnet"; sourceTree = "<group>"; };
+		455A0024200454E000739358 /* air entity.libsonnet */ = {isa = PBXFileReference; explicitFileType = text.json; path = "air entity.libsonnet"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -128,8 +128,8 @@
 		455AFDA01FFDC42C00739358 /* static collision init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "static collision init.hpp"; sourceTree = "<group>"; };
 		455AFDA31FFDC46E00739358 /* static collision component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "static collision component.hpp"; sourceTree = "<group>"; };
 		455AFDA81FFDC8A200739358 /* level 0.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 0.jsonnet"; sourceTree = "<group>"; };
-		455AFDAA1FFDC91900739358 /* common.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = common.libsonnet; sourceTree = "<group>"; };
-		455AFDAC1FFDC93500739358 /* entities.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = entities.libsonnet; sourceTree = "<group>"; };
+		455AFDAA1FFDC91900739358 /* common.libsonnet */ = {isa = PBXFileReference; explicitFileType = text.json; path = common.libsonnet; sourceTree = "<group>"; };
+		455AFDAC1FFDC93500739358 /* entities.libsonnet */ = {isa = PBXFileReference; explicitFileType = text.json; path = entities.libsonnet; sourceTree = "<group>"; };
 		455AFDAE1FFDD67F00739358 /* dynamic collision component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "dynamic collision component.hpp"; sourceTree = "<group>"; };
 		455AFDAF1FFDD77000739358 /* dynamic collision init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "dynamic collision init.cpp"; sourceTree = "<group>"; };
 		455AFDB01FFDD77000739358 /* dynamic collision init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "dynamic collision init.hpp"; sourceTree = "<group>"; };
