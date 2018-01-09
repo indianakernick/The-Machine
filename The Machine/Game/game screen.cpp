@@ -63,7 +63,7 @@ void GameScreen::quit() {
 }
 
 void GameScreen::input(const SDL_Event &e) {
-  playerInputSystem(registry, e);
+  playerInputSystem(playerInput, e);
 }
 
 void GameScreen::update(const float ) {
@@ -75,9 +75,13 @@ void GameScreen::update(const float ) {
   }
 
   shiftPlayerActionSystem(registry);
-  updatePosSystem(registry, grid);
   shiftPowerSystem(registry);
   shiftRadioactivitySystem(registry);
+  
+  playerInputResponseSystem(registry, playerInput);
+  clearPlayerInputSystem(playerInput);
+  
+  updatePosSystem(registry, grid);
   
   radioactivityDetectorSystem(registry, grid);
   signalReceiverSystem(registry);

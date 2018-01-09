@@ -9,42 +9,25 @@
 #include "player input system.hpp"
 
 #include <SDL2/SDL_events.h>
-#include "movement component.hpp"
-#include "player action component.hpp"
 
-namespace {
-  void setActionState(ECS::Registry &registry, const bool enabled) {
-    auto view = registry.view<PlayerAction>();
-    view.each([enabled] (ECS::EntityID, PlayerAction &comp) {
-      comp.curr = enabled;
-    });
+void playerInputSystem(PlayerKeyStates &states, const SDL_Event &e) {
+  const bool keydown = (e.type == SDL_KEYDOWN && e.key.repeat == 0);
+  
+  if (!keydown && (e.type != SDL_KEYUP)) {
+    return;
   }
   
-  void setDesiredDir(ECS::Registry &registry, const Math::Dir dir) {
-    auto view = registry.view<PlayerAction, Movement>();
-    view.each([dir] (ECS::EntityID, PlayerAction &, Movement &comp) {
-      comp.desiredDir = dir;
-    });
-  }
-}
-
-void playerInputSystem(ECS::Registry &registry, const SDL_Event &e) {
-  if (e.type == SDL_KEYDOWN && e.key.repeat == 0) {
-    const SDL_Scancode key = e.key.keysym.scancode;
-    if (key == SDL_SCANCODE_SPACE) {
-      setActionState(registry, true);
-    } else if (key == SDL_SCANCODE_UP || key == SDL_SCANCODE_W) {
-      setDesiredDir(registry, Math::Dir::UP);
-    } else if (key == SDL_SCANCODE_RIGHT || key == SDL_SCANCODE_D) {
-      setDesiredDir(registry, Math::Dir::RIGHT);
-    } else if (key == SDL_SCANCODE_DOWN || key == SDL_SCANCODE_S) {
-      setDesiredDir(registry, Math::Dir::DOWN);
-    } else if (key == SDL_SCANCODE_LEFT || key == SDL_SCANCODE_A) {
-      setDesiredDir(registry, Math::Dir::LEFT);
-    }
-  } else if (e.type == SDL_KEYUP) {
-    if (e.key.keysym.scancode == SDL_SCANCODE_SPACE) {
-      setActionState(registry, false);
-    }
+  const SDL_Scancode key = e.key.keysym.scancode;
+  
+  if (key == SDL_SCANCODE_SPACE) {
+    states.action = keydown;
+  } else if (key == SDL_SCANCODE_UP || key == SDL_SCANCODE_W) {
+    states.dirs[0] = keydown;
+  } else if (key == SDL_SCANCODE_RIGHT || key == SDL_SCANCODE_D) {
+    states.dirs[1] = keydown;
+  } else if (key == SDL_SCANCODE_DOWN || key == SDL_SCANCODE_S) {
+    states.dirs[2] = keydown;
+  } else if (key == SDL_SCANCODE_LEFT || key == SDL_SCANCODE_A) {
+    states.dirs[3] = keydown;
   }
 }

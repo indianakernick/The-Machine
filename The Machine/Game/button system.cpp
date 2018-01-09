@@ -27,7 +27,7 @@ void buttonSystem(ECS::Registry &registry, const EntityGrid &grid) {
       continue;
     }
     
-    const PlayerAction action = registry.get<PlayerAction>(entity);
+    const PlayerAction action = registry.get<PlayerAction>(targetID);
     view.get<Power>(entity).curr = action.curr;
   }
 }

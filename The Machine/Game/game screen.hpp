@@ -12,6 +12,7 @@
 #include "entity grid.hpp"
 #include "component list.hpp"
 #include "rendering system.hpp"
+#include "player key states.hpp"
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/ECS/comp inits.hpp>
 #include <Simpleton/Camera 2D/camera.hpp>
@@ -36,6 +37,7 @@ private:
   Cam2D::Camera camera;
   EntityGrid grid;
   RenderingSystem rendering;
+  PlayerKeyStates playerInput;
   Frame frame = 0;
   
   bool loadLevel(ECS::Level);
