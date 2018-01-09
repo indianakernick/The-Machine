@@ -71,5 +71,9 @@ local common = import "common.libsonnet";
   }),
   e.air({
     pos: [10, 10]
+  }),
+  e.signal_receiver({
+    pos: [5, 10],
+    channel: 5
   })
 ]
