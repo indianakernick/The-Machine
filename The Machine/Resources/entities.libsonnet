@@ -9,5 +9,6 @@
   piston_head:: import "piston head entity.libsonnet",
   player:: import "player entity.libsonnet",
   pressure_plate: import "pressure plate entity.libsonnet",
-  radioactive_toggle: import "radioactive toggle entity.libsonnet"
+  radioactive_toggle: import "radioactive toggle entity.libsonnet",
+  radioactivity_detector: import "radioactivity detector entity.libsonnet"
 }

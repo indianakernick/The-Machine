@@ -3,7 +3,7 @@ local common = import "common.libsonnet";
 function(params) {
   components: common.checkParams(params, ["pos", "heavy"]) {
     StaticCollision: common.getStaticCollisionComp({
-      accepts: ["player", "box"]
+      accepts: "all"
     }),
     Position: params.pos,
     PressurePlate: {

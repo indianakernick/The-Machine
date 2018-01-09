@@ -61,4 +61,15 @@ local common = import "common.libsonnet";
   e.air({
     pos: [6, 1]
   }),
+  e.box({
+    pos: [10, 12],
+    radioactive: true
+  }),
+  e.radioactivity_detector({
+    pos: [9, 10],
+    dir: "right"
+  }),
+  e.air({
+    pos: [10, 10]
+  })
 ]
