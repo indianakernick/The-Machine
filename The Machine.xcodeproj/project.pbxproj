@@ -32,6 +32,7 @@
 		455A003A2004880600739358 /* radioactivity detector entity.libsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 455A00392004880600739358 /* radioactivity detector entity.libsonnet */; };
 		455A003C20048A5D00739358 /* signal receiver entity.libsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 455A003B20048A5D00739358 /* signal receiver entity.libsonnet */; };
 		455A003E20048C9E00739358 /* signal transmitter entity.libsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 455A003D20048C9E00739358 /* signal transmitter entity.libsonnet */; };
+		455A004020048E2B00739358 /* wall entity.libsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 455A003F20048E2B00739358 /* wall entity.libsonnet */; };
 		455AFD861FFDB34400739358 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD841FFDB34400739358 /* app.cpp */; };
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
@@ -138,6 +139,7 @@
 		455A00392004880600739358 /* radioactivity detector entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "radioactivity detector entity.libsonnet"; sourceTree = "<group>"; };
 		455A003B20048A5D00739358 /* signal receiver entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "signal receiver entity.libsonnet"; sourceTree = "<group>"; };
 		455A003D20048C9E00739358 /* signal transmitter entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "signal transmitter entity.libsonnet"; sourceTree = "<group>"; };
+		455A003F20048E2B00739358 /* wall entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "wall entity.libsonnet"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -899,6 +901,7 @@
 				455A00392004880600739358 /* radioactivity detector entity.libsonnet */,
 				455A003B20048A5D00739358 /* signal receiver entity.libsonnet */,
 				455A003D20048C9E00739358 /* signal transmitter entity.libsonnet */,
+				455A003F20048E2B00739358 /* wall entity.libsonnet */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -1318,6 +1321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				455A003C20048A5D00739358 /* signal receiver entity.libsonnet in Resources */,
+				455A004020048E2B00739358 /* wall entity.libsonnet in Resources */,
 				455A00382004868200739358 /* radioactive toggle entity.libsonnet in Resources */,
 				455A00292004626600739358 /* piston base entity.libsonnet in Resources */,
 				455AFF17200218B800739358 /* sprite shader.vert in Resources */,

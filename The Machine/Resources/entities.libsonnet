@@ -12,5 +12,6 @@
   radioactive_toggle: import "radioactive toggle entity.libsonnet",
   radioactivity_detector: import "radioactivity detector entity.libsonnet",
   signal_receiver: import "signal receiver entity.libsonnet",
-  signal_transmitter: import "signal transmitter entity.libsonnet"
+  signal_transmitter: import "signal transmitter entity.libsonnet",
+  wall: import "wall entity.libsonnet"
 }

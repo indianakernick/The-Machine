@@ -79,5 +79,8 @@ local common = import "common.libsonnet";
   e.signal_transmitter({
     pos: [5, 5],
     channel: 5
+  }),
+  e.wall({
+    pos: [4, 5]
   })
 ]
