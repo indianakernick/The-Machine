@@ -13,5 +13,6 @@
 #include <Simpleton/Math/dir.hpp>
 
 using ToVec = Math::ToVec<Coord, Math::Dir::RIGHT, Math::Dir::UP>;
+using ToFloatVec = Math::ToVec<float, ToVec::PLUS_X, ToVec::PLUS_Y>;
 
 #endif
