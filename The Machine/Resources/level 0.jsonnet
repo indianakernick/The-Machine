@@ -5,14 +5,15 @@ local common = import "common.libsonnet";
   e.box({
     pos: [0, 0]
   }),
+  e.radioactive_toggle({
+    pos: [0, 1],
+    dir: "down"
+  }),
   e.air({
     pos: [0, 0]
   }),
   e.button({
     pos: [1, 1]
-  }),
-  e.air({
-    pos: [0, 1]
   }),
   e.air({
     pos: [1, 2]
