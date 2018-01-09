@@ -24,5 +24,9 @@ local common = import "common.libsonnet";
   e.piston_base({
     pos: [4, 0],
     dir: "right"
+  }),
+  e.piston_head({
+    pos: [4, 0],
+    dir: "right"
   })
 ]
