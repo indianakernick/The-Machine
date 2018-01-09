@@ -20,7 +20,7 @@ void pistonSystem(ECS::Registry &registry, const EntityGrid &grid) {
     const Pos pos = headView.get<Position>(entity).pos;
     const ECS::EntityID baseID = grid[pos].staticID;
     const Piston piston = headView.get<Piston>(entity);
-    const bool extended = piston.basePos == pos;
+    const bool extended = piston.basePos != pos;
     const bool powered = baseView.get(baseID).curr;
     
     if (!extended && powered) {

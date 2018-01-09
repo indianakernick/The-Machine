@@ -12,6 +12,6 @@
 #include "position type.hpp"
 #include <Simpleton/Math/dir.hpp>
 
-using ToVec = Math::ToVec<Coord, Math::Dir::UP, Math::Dir::RIGHT>;
+using ToVec = Math::ToVec<Coord, Math::Dir::RIGHT, Math::Dir::UP>;
 
 #endif
