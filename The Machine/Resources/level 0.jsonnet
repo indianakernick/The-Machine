@@ -5,6 +5,9 @@ local common = import "common.libsonnet";
   e.makeBox({
     pos: [0, 0]
   }),
+  e.makeAir({
+    pos: [0, 0]
+  }),
   e.makeButton({
     pos: [1, 1]
   }),

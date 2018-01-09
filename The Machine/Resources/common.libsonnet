@@ -70,9 +70,7 @@
   collision_type_names: [
     "box",
     "player",
-    "piston_head",
-    "wall",
-    "air"
+    "piston_head"
   ],
   collision_bitset_size: 32,
 

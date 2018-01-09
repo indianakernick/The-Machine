@@ -68,11 +68,6 @@ void gateSystem(ECS::Registry &registry, const EntityGrid &grid) {
     
     // for each neighbor
     for (const Math::Dir dir : Math::DIR_RANGE) {
-      // @TODO remove this
-      // a few systems assume that every tile contains a static entity
-      // this should be the case but I haven't finished defining the entities yet
-      continue;
-    
       // this side must be an input
       if (!Math::test(inputSides, dir)) {
         continue;
