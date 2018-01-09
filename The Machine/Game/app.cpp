@@ -42,7 +42,7 @@ void App::init() {
 
   windowLibrary = SDL::makeLibrary(SDL_INIT_EVENTS);
   window = SDL::makeWindow(WINDOW_DESC);
-  renderingContext.init(window.get(), true);
+  renderingContext.initLimitFPS(window.get(), 10);
   game.init();
 }
 

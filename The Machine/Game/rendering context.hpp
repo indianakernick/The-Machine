@@ -19,7 +19,9 @@ class RenderingContext {
 public:
   RenderingContext() = default;
   
-  void init(SDL_Window *, bool);
+  void init(SDL_Window *);
+  void initLimitFPS(SDL_Window *, uint32_t);
+  void initVSync(SDL_Window *);
   void quit();
   
   void preRender();
@@ -31,8 +33,9 @@ public:
 private:
   SDL_Window *window = nullptr;
   GL::Context context;
-  Uint32 minFrameTime;
-  bool vsync = false;
+  Uint32 minFrameTime = 0;
+  
+  void initImpl(SDL_Window *, bool);
 };
 
 #endif

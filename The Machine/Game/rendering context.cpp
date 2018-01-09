@@ -11,25 +11,32 @@
 #include <SDL2/SDL.h>
 #include <Simpleton/SDL/error.hpp>
 
-void RenderingContext::init(SDL_Window *newWindow, const bool vsyncEnabled) {
-  vsync = vsyncEnabled;
+void RenderingContext::init(SDL_Window *newWindow) {
+  initImpl(newWindow, false);
+  minFrameTime = 0;
+}
 
-  window = newWindow;
-  GL::ContextParams params;
-  params.vsync = vsync;
-  params.majorVersion = 4;
-  params.minorVersion = 1;
-  context = GL::makeContext(window, params);
-  
-  glEnable(GL_DEPTH_TEST);
-  
+void RenderingContext::initLimitFPS(SDL_Window *newWindow, const uint32_t fps) {
   SDL_DisplayMode mode;
-  CHECK_SDL_ERROR(SDL_GetWindowDisplayMode(window, &mode));
+  CHECK_SDL_ERROR(SDL_GetWindowDisplayMode(newWindow, &mode));
+  if (mode.refresh_rate == static_cast<int>(fps)) {
+    minFrameTime = 1000 / (fps + 10);
+    initImpl(newWindow, true);
+  } else {
+    minFrameTime = 1000 / fps;
+    initImpl(newWindow, false);
+  }
+}
+
+void RenderingContext::initVSync(SDL_Window *newWindow) {
+  SDL_DisplayMode mode;
+  CHECK_SDL_ERROR(SDL_GetWindowDisplayMode(newWindow, &mode));
   if (mode.refresh_rate == 0) {
     minFrameTime = 1000 / 70;
   } else {
     minFrameTime = 1000 / (mode.refresh_rate + 10);
   }
+  initImpl(newWindow, true);
 }
 
 void RenderingContext::quit() {
@@ -47,7 +54,9 @@ void RenderingContext::preRender() {
 }
 
 void RenderingContext::postRender() {
-  if (vsync) {
+  if (minFrameTime == 0) {
+    SDL_GL_SwapWindow(window);
+  } else {
     const Uint32 start = SDL_GetTicks();
     SDL_GL_SwapWindow(window);
     const Uint32 end = SDL_GetTicks();
@@ -56,8 +65,6 @@ void RenderingContext::postRender() {
     if (swapTime < minFrameTime) {
       SDL_Delay(minFrameTime - swapTime);
     }
-  } else {
-    SDL_GL_SwapWindow(window);
   }
 }
 
@@ -69,4 +76,14 @@ glm::ivec2 RenderingContext::getFrameSize() const {
 
 SDL_Window *RenderingContext::getWindow() const {
   return window;
+}
+
+void RenderingContext::initImpl(SDL_Window *const newWindow, const bool vsync) {
+  window = newWindow;
+  GL::ContextParams params;
+  params.vsync = vsync;
+  params.majorVersion = 4;
+  params.minorVersion = 1;
+  context = GL::makeContext(window, params);
+  glEnable(GL_DEPTH_TEST);
 }
