@@ -7,5 +7,8 @@ local common = import "common.libsonnet";
   }),
   e.makeButton({
     pos: [1, 0]
+  }),
+  e.makeExit({
+    pos: [2, 0]
   })
 ]
