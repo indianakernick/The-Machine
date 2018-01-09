@@ -34,6 +34,10 @@ local common = import "common.libsonnet";
   e.player({
     pos: [3, 1]
   }),
+  e.wire({
+    pos: [4, 1],
+    sides: ["right", "down"]
+  }),
   e.air({
     pos: [3, 1]
   }),
@@ -51,9 +55,6 @@ local common = import "common.libsonnet";
   e.pressure_plate({
     pos: [5, 1],
     heavy: false
-  }),
-  e.air({
-    pos: [4, 1]
   }),
   e.air({
     pos: [5, 2]

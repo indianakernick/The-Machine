@@ -13,5 +13,6 @@
   radioactivity_detector: import "radioactivity detector entity.libsonnet",
   signal_receiver: import "signal receiver entity.libsonnet",
   signal_transmitter: import "signal transmitter entity.libsonnet",
-  wall: import "wall entity.libsonnet"
+  wall: import "wall entity.libsonnet",
+  wire: import "wire entity.libsonnet"
 }
