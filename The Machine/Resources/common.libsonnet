@@ -39,12 +39,13 @@
   ,
 
   layerNames: [
+    "piston base",
     "dynamic",
     "static"
   ],
 
   getDepth(name)::
-    $.indexOf($.layerNames, name) / $.length($.layerNames)
+    $.indexOf($.layerNames, name) / std.length($.layerNames)
   ,
 
   getNamedBit(allNames, size, name)::
@@ -101,10 +102,7 @@
     "sides": (shifted & 15) | ((shifted & 240) >> 4)
   },
 
-  length(arrayOrScalar)::
-    if std.type(arrayOrScalar) == "array" then
-      std.length(arrayOrScalar)
-    else
-      1
+  getDir(dir)::
+    $.indexOf($.dir_names, dir)
   ,
 }

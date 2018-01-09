@@ -43,7 +43,7 @@ function(params) {
     },
     SpritePosition: {
       depth: common.getDepth("static"),
-      [if rot != "" then "dir"]: common.indexOf(common.dir_names, rot)
+      [if rot != "" then "dir"]: common.getDir(rot)
     },
     StaticSprite: {
       sprite: common.getSpriteID("gate 0") + gateIndex,

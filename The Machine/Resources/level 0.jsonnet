@@ -20,5 +20,9 @@ local common = import "common.libsonnet";
   }),
   e.lever({
     pos: [3, 0]
+  }),
+  e.piston_base({
+    pos: [4, 0],
+    dir: "right"
   })
 ]
