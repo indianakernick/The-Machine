@@ -80,5 +80,8 @@ assemble([
   }),
   e.wall({
     pos: [4, 5]
-  })
+  }),
+  a.rectangle([11, 11], [5, 3], function(pos)
+    e.wall({"pos": pos})
+  )
 ])
