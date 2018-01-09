@@ -95,20 +95,13 @@
   ],
   dir_bitset_size: 4,
 
-  getDirBitsetComp(sides):: {
-    "sides": $.getNamedBitset($.dir_names, $.dir_bitset_size, sides)
-  },
+  getDirBitsetComp(sides, rot):: {
+    local count = if rot == "" then 0 else $.indexOf($.dir_names, rot),
+    local bits = $.getNamedBitset($.dir_names, $.dir_bitset_size, sides),
+    local shifted = bits << count,
 
-  gate_names: [
-    "and",
-    "or",
-    "xor",
-    "not",
-    "nand",
-    "nor",
-    "xnor",
-    "identity"
-  ],
+    "sides": (shifted & 15) | ((shifted & 240) >> 4)
+  },
 
   length(arrayOrScalar)::
     if std.type(arrayOrScalar) == "array" then
@@ -116,13 +109,4 @@
     else
       1
   ,
-
-  getGateComp(params):: {
-    [if (params.fun == "not" || params.fun == "identity") && $.length(params.inputSides) != 1 then
-      error "NOT and IDENTITY gate functions can only have 1 input"
-    else
-      null
-    ]: null,
-    fun: $.indexOf($.gate_names, params.fun)
-  }
 }

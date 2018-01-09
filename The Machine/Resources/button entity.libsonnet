@@ -8,7 +8,7 @@ function (params) {
     Position: params.pos,
     Power: {},
     Button: {},
-    PowerOutput: common.getDirBitsetComp("all"),
+    PowerOutput: common.getDirBitsetComp("all", ""),
     SpritePosition: {
       depth: common.getDepth("dynamic")
     },

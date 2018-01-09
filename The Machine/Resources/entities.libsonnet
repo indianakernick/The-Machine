@@ -1,5 +1,6 @@
 {
   makeBox:: import "box entity.libsonnet",
   makeButton:: import "button entity.libsonnet",
-  makeExit:: import "exit entity.libsonnet"
+  makeExit:: import "exit entity.libsonnet",
+  makeGate:: import "gate entity.libsonnet"
 }
