@@ -6,5 +6,6 @@
   gate:: import "gate entity.libsonnet",
   lever:: import "lever entity.libsonnet",
   piston_base:: import "piston base entity.libsonnet",
-  piston_head:: import "piston head entity.libsonnet"
+  piston_head:: import "piston head entity.libsonnet",
+  player:: import "player entity.libsonnet"
 }

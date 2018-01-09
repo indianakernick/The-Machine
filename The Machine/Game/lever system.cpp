@@ -28,8 +28,8 @@ void leverSystem(ECS::Registry &registry, const EntityGrid &grid) {
     }
     
     const PlayerAction action = registry.get<PlayerAction>(targetID);
-    //rising edge
-    if (!action.prev && action.curr) {
+    //fall edge
+    if (action.prev && action.curr) {
       bool &enabled = posView.get<Lever>(entity).enabled;
       enabled = !enabled;
     }

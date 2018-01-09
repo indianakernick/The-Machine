@@ -21,6 +21,12 @@ local common = import "common.libsonnet";
   e.lever({
     pos: [3, 0]
   }),
+  e.player({
+    pos: [3, 1]
+  }),
+  e.air({
+    pos: [3, 1]
+  }),
   e.piston_base({
     pos: [4, 0],
     dir: "right"
@@ -28,5 +34,8 @@ local common = import "common.libsonnet";
   e.piston_head({
     pos: [4, 0],
     dir: "right"
+  }),
+  e.air({
+    pos: [5, 0]
   })
 ]

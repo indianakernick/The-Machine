@@ -40,6 +40,7 @@
 
   layerNames: [
     "piston base",
+    "lever",
     "dynamic",
     "static"
   ],

@@ -7,6 +7,7 @@ function(params) {
       pushed_by: "none"
     }),
     Position: params.pos,
+    Movement: {},
     Piston: {
       base_pos: params.pos,
       dir: common.getDir(params.dir)

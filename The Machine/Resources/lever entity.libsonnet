@@ -10,7 +10,7 @@ function(params) {
     Lever: {},
     PowerOutput: common.getDirBitsetComp("all", ""),
     SpritePosition: {
-      depth: common.getDepth("static")
+      depth: common.getDepth("lever")
     },
     PowerSprite: {
       transition: common.getSpriteID("lever 0")
