@@ -27,9 +27,10 @@ void PowerSpriteWriter::writeQuads(
     if (transition) {
       animFrame = sprite.transition;
       if (power.prev) {
-        animFrame += FRAMES_PER_TICK;
+        animFrame += FRAMES_PER_TICK - frame;
+      } else {
+        animFrame += frame;
       }
-      animFrame -= frame;
     } else if (power.prev) {
       if (sprite.on != Unpack::NULL_SPRITE) {
         animFrame = sprite.on + frame;
