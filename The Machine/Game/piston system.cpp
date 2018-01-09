@@ -18,10 +18,10 @@ void pistonSystem(ECS::Registry &registry, const EntityGrid &grid) {
   auto headView = registry.view<Piston, Position, Movement>();
   for (const ECS::EntityID entity : headView) {
     const Pos pos = headView.get<Position>(entity).pos;
-    const ECS::EntityID baseID = grid[pos].staticID;
     const Piston piston = headView.get<Piston>(entity);
+    const ECS::EntityID baseID = grid[piston.basePos].staticID;
     const bool extended = piston.basePos != pos;
-    const bool powered = baseView.get(baseID).curr;
+    const bool powered = baseView.get(baseID).prev;
     
     if (!extended && powered) {
       headView.get<Movement>(entity).desiredDir = piston.dir;

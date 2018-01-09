@@ -9,6 +9,7 @@
 #include "wire system.hpp"
 
 #include "dir to vec.hpp"
+#include "gate component.hpp"
 #include "wire component.hpp"
 #include "power component.hpp"
 #include "position component.hpp"
@@ -32,8 +33,11 @@ namespace {
       if (!registry.has<PowerInput>(entity)) {
         return;
       }
+      if (registry.has<Gate>(entity)) {
+        return;
+      }
       const Math::DirBits inputSides = registry.get<PowerInput>(entity).sides;
-      if (!Math::test(inputSides, fromPrev)) {
+      if (!Math::test(inputSides, Math::opposite(fromPrev))) {
         return;
       }
       registry.get<Power>(entity).prev = true;
