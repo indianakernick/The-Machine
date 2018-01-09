@@ -21,6 +21,8 @@
 		455A00172003531000739358 /* power sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A00152003531000739358 /* power sprite writer.cpp */; };
 		455A003120046D4700739358 /* clear player input system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A002F20046D4700739358 /* clear player input system.cpp */; };
 		455A00342004708900739358 /* player input response system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A00322004708900739358 /* player input response system.cpp */; };
+		455A004820057CB500739358 /* piston assembly.libsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 455A004720057CB500739358 /* piston assembly.libsonnet */; };
+		455A004A20057CFD00739358 /* assemblies.libsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 455A004920057CFD00739358 /* assemblies.libsonnet */; };
 		455AFD861FFDB34400739358 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD841FFDB34400739358 /* app.cpp */; };
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
@@ -130,6 +132,8 @@
 		455A003F20048E2B00739358 /* wall entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "wall entity.libsonnet"; sourceTree = "<group>"; };
 		455A00412004916900739358 /* wire entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "wire entity.libsonnet"; sourceTree = "<group>"; };
 		455A0045200578A700739358 /* assemble.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = assemble.libsonnet; sourceTree = "<group>"; };
+		455A004720057CB500739358 /* piston assembly.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "piston assembly.libsonnet"; sourceTree = "<group>"; };
+		455A004920057CFD00739358 /* assemblies.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = assemblies.libsonnet; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -701,6 +705,8 @@
 			isa = PBXGroup;
 			children = (
 				455A0045200578A700739358 /* assemble.libsonnet */,
+				455A004920057CFD00739358 /* assemblies.libsonnet */,
+				455A004720057CB500739358 /* piston assembly.libsonnet */,
 			);
 			name = Assemblies;
 			sourceTree = "<group>";
@@ -1320,10 +1326,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455A004820057CB500739358 /* piston assembly.libsonnet in Resources */,
 				455AFF17200218B800739358 /* sprite shader.vert in Resources */,
 				455AFF18200218B800739358 /* sprite shader.frag in Resources */,
 				455AFE462000A57800739358 /* sprites.atlas in Resources */,
 				455AFE472000A57800739358 /* sprites.png in Resources */,
+				455A004A20057CFD00739358 /* assemblies.libsonnet in Resources */,
 				450759921FFC77E30009B360 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

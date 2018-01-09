@@ -1,10 +1,8 @@
 local e = import "entities.libsonnet";
-local common = import "common.libsonnet";
+local a = import "assemblies.libsonnet";
 local assemble = import "assemble.libsonnet";
 
-assemble(["first", ["second", "third"], [["fourth", "fifth"], ["sixth", "seventh"]]])
-
-/*[
+assemble([
   e.box({
     pos: [0, 0]
   }),
@@ -44,11 +42,7 @@ assemble(["first", ["second", "third"], [["fourth", "fifth"], ["sixth", "seventh
   e.air({
     pos: [3, 1]
   }),
-  e.piston_base({
-    pos: [4, 0],
-    dir: "right"
-  }),
-  e.piston_head({
+  a.piston({
     pos: [4, 0],
     dir: "right"
   }),
@@ -87,4 +81,4 @@ assemble(["first", ["second", "third"], [["fourth", "fifth"], ["sixth", "seventh
   e.wall({
     pos: [4, 5]
   })
-]*/
+])
