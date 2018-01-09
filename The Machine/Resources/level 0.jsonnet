@@ -1,7 +1,10 @@
 local e = import "entities.libsonnet";
 local common = import "common.libsonnet";
+local assemble = import "assemble.libsonnet";
 
-[
+assemble(["first", ["second", "third"], [["fourth", "fifth"], ["sixth", "seventh"]]])
+
+/*[
   e.box({
     pos: [0, 0]
   }),
@@ -84,4 +87,4 @@ local common = import "common.libsonnet";
   e.wall({
     pos: [4, 5]
   })
-]
+]*/

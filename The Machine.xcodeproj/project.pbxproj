@@ -129,6 +129,7 @@
 		455A003D20048C9E00739358 /* signal transmitter entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "signal transmitter entity.libsonnet"; sourceTree = "<group>"; };
 		455A003F20048E2B00739358 /* wall entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "wall entity.libsonnet"; sourceTree = "<group>"; };
 		455A00412004916900739358 /* wire entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "wire entity.libsonnet"; sourceTree = "<group>"; };
+		455A0045200578A700739358 /* assemble.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = assemble.libsonnet; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -676,6 +677,7 @@
 				455AFE362000A32600739358 /* Sprites */,
 				455AFE352000A31D00739358 /* Animations */,
 				455AFDA71FFDC85C00739358 /* Entities */,
+				455A00442005787800739358 /* Assemblies */,
 				455AFDA61FFDC85500739358 /* Levels */,
 			);
 			path = Resources;
@@ -693,6 +695,14 @@
 				455A00162003531000739358 /* power sprite writer.hpp */,
 			);
 			name = "Quad Writers";
+			sourceTree = "<group>";
+		};
+		455A00442005787800739358 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				455A0045200578A700739358 /* assemble.libsonnet */,
+			);
+			name = Assemblies;
 			sourceTree = "<group>";
 		};
 		455AFD8F1FFDB86300739358 /* Components */ = {
