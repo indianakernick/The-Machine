@@ -10,7 +10,6 @@
 #define power_sprite_component_hpp
 
 #include <unpacker.hpp>
-#include <Simpleton/Math/dir.hpp>
 
 struct PowerSprite {
   Unpack::SpriteID transition;

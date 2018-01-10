@@ -22,6 +22,8 @@
 		455A003120046D4700739358 /* clear player input system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A002F20046D4700739358 /* clear player input system.cpp */; };
 		455A00342004708900739358 /* player input response system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A00322004708900739358 /* player input response system.cpp */; };
 		455A005220059B0500739358 /* power input system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A005020059B0500739358 /* power input system.cpp */; };
+		455A007D2005DCA800739358 /* cross wire entity.libsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 455A007C2005DCA800739358 /* cross wire entity.libsonnet */; };
+		455A00822005DE7400739358 /* cross wire sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A00802005DE7400739358 /* cross wire sprite init.cpp */; };
 		455AFD861FFDB34400739358 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD841FFDB34400739358 /* app.cpp */; };
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
@@ -164,6 +166,11 @@
 		455A00782005D4F000739358 /* cross wire 3 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 3 1.png"; sourceTree = "<group>"; };
 		455A00792005D4F100739358 /* cross wire 0 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 0 2.png"; sourceTree = "<group>"; };
 		455A007A2005D4F100739358 /* cross wire 2 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 2 3.png"; sourceTree = "<group>"; };
+		455A007C2005DCA800739358 /* cross wire entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "cross wire entity.libsonnet"; sourceTree = "<group>"; };
+		455A007E2005DDA700739358 /* cross wire component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "cross wire component.hpp"; sourceTree = "<group>"; };
+		455A007F2005DDE000739358 /* cross wire sprite component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "cross wire sprite component.hpp"; sourceTree = "<group>"; };
+		455A00802005DE7400739358 /* cross wire sprite init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "cross wire sprite init.cpp"; sourceTree = "<group>"; };
+		455A00812005DE7400739358 /* cross wire sprite init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "cross wire sprite init.hpp"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -756,6 +763,7 @@
 				455AFDD61FFF19AD00739358 /* power output component.hpp */,
 				455AFDDD1FFF3DDD00739358 /* gate component.hpp */,
 				455AFDDE1FFF3E2F00739358 /* wire component.hpp */,
+				455A007E2005DDA700739358 /* cross wire component.hpp */,
 				455AFDF4200056D600739358 /* radioactivity component.hpp */,
 				455AFDF8200059AB00739358 /* radioactivity detector component.hpp */,
 				455AFDFC20005D5600739358 /* radioactive toggle component.hpp */,
@@ -771,6 +779,7 @@
 				455AFF252002325700739358 /* radioactivity sprite component.hpp */,
 				455AFF29200233B000739358 /* power sprite component.hpp */,
 				455A000B20033B6000739358 /* sprite position component.hpp */,
+				455A007F2005DDE000739358 /* cross wire sprite component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -908,6 +917,8 @@
 				455AFF2B200234B400739358 /* power sprite init.hpp */,
 				455A000C20033CB900739358 /* sprite position init.cpp */,
 				455A000D20033CB900739358 /* sprite position init.hpp */,
+				455A00802005DE7400739358 /* cross wire sprite init.cpp */,
+				455A00812005DE7400739358 /* cross wire sprite init.hpp */,
 			);
 			name = "Component initializers";
 			sourceTree = "<group>";
@@ -940,6 +951,7 @@
 				455A003D20048C9E00739358 /* signal transmitter entity.libsonnet */,
 				455A003F20048E2B00739358 /* wall entity.libsonnet */,
 				455A00412004916900739358 /* wire entity.libsonnet */,
+				455A007C2005DCA800739358 /* cross wire entity.libsonnet */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -1392,6 +1404,7 @@
 				455AFE462000A57800739358 /* sprites.atlas in Resources */,
 				455AFE472000A57800739358 /* sprites.png in Resources */,
 				450759921FFC77E30009B360 /* Assets.xcassets in Resources */,
+				455A007D2005DCA800739358 /* cross wire entity.libsonnet in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1478,6 +1491,7 @@
 				455AFDD91FFF1B9A00739358 /* power input init.cpp in Sources */,
 				455A00172003531000739358 /* power sprite writer.cpp in Sources */,
 				455AFE262000881A00739358 /* piston init.cpp in Sources */,
+				455A00822005DE7400739358 /* cross wire sprite init.cpp in Sources */,
 				455AFF142002132B00739358 /* quad writer.cpp in Sources */,
 				455AFDFF20005DE300739358 /* radioactive toggle init.cpp in Sources */,
 				455AFF10200212D700739358 /* rendering system.cpp in Sources */,

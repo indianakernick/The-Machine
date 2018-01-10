@@ -10,5 +10,4 @@
 
 void WireInit::init(Wire &comp, const json &node) {
   comp.sides = static_cast<Math::DirBits>(node.at("sides").get<Math::DirType>());
-  Data::get(comp.cross, node, "cross");
 }

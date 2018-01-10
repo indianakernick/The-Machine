@@ -24,6 +24,7 @@
 #include "signal receiver init.hpp"
 #include "static collision init.hpp"
 #include "dynamic collision init.hpp"
+#include "cross wire sprite init.hpp"
 #include "signal transmitter init.hpp"
 #include "radioactive toggle init.hpp"
 #include "radioactivity sprite init.hpp"

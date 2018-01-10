@@ -13,10 +13,6 @@
 
 struct Wire {
   Math::DirBits sides;
-  bool cross;
-  // only apply when this is a cross wire
-  bool vertPowered = false;
-  bool horiPowered = false;
 };
 
 #endif

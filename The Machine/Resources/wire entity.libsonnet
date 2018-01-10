@@ -30,15 +30,13 @@ local getWireSprite(sides) =
 ;
 
 function(params) {
-  components: common.checkParams(params, ["pos", "sides", "cross"]) {
+  components: common.checkParams(params, ["pos", "sides"]) {
     StaticCollision: common.getStaticCollisionComp({
       accepts: "player"
     }),
     Position: params.pos,
     Power: {},
-    Wire: common.getDirBitsetComp(params.sides, "") + {
-      cross: if "cross" in params then params.cross else false
-    },
+    Wire: common.getDirBitsetComp(params.sides, ""),
     SpritePosition: {
       depth: common.getDepth("static"),
       dir: getWireDir(params.sides)

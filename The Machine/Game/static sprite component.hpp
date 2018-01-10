@@ -10,7 +10,6 @@
 #define static_sprite_component_hpp
 
 #include <unpacker.hpp>
-#include <Simpleton/Math/dir.hpp>
 
 struct StaticSprite {
   Unpack::SpriteID sprite;

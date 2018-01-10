@@ -19,6 +19,7 @@
 #include "weight component.hpp"
 #include "position component.hpp"
 #include "movement component.hpp"
+#include "cross wire component.hpp"
 #include "power input component.hpp"
 #include "power sprite component.hpp"
 #include "power output component.hpp"
@@ -47,6 +48,7 @@ using CompList = Utils::TypeList<
   Weight,
   Position,
   Movement,
+  CrossWire,
   PowerInput,
   PowerSprite,
   PowerOutput,
