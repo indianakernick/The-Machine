@@ -135,6 +135,35 @@
 		455A004E200585E400739358 /* rectangle assembly.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "rectangle assembly.libsonnet"; sourceTree = "<group>"; };
 		455A005020059B0500739358 /* power input system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "power input system.cpp"; sourceTree = "<group>"; };
 		455A005120059B0500739358 /* power input system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power input system.hpp"; sourceTree = "<group>"; };
+		455A005E2005D4CE00739358 /* cross wire.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "cross wire.anim"; sourceTree = "<group>"; };
+		455A005F2005D4E500739358 /* cross wire 0 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 0 1.png"; sourceTree = "<group>"; };
+		455A00602005D4E600739358 /* cross wire 0 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 0 0.png"; sourceTree = "<group>"; };
+		455A00612005D4E600739358 /* cross wire 3 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 3 2.png"; sourceTree = "<group>"; };
+		455A00622005D4E700739358 /* cross wire 1 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 1 4.png"; sourceTree = "<group>"; };
+		455A00632005D4E700739358 /* cross wire 0 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 0 6.png"; sourceTree = "<group>"; };
+		455A00642005D4E700739358 /* cross wire 1 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 1 6.png"; sourceTree = "<group>"; };
+		455A00652005D4E800739358 /* cross wire 2 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 2 5.png"; sourceTree = "<group>"; };
+		455A00662005D4E800739358 /* cross wire 2 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 2 6.png"; sourceTree = "<group>"; };
+		455A00672005D4E800739358 /* cross wire 3 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 3 4.png"; sourceTree = "<group>"; };
+		455A00682005D4E900739358 /* cross wire 3 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 3 0.png"; sourceTree = "<group>"; };
+		455A00692005D4E900739358 /* cross wire 3 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 3 3.png"; sourceTree = "<group>"; };
+		455A006A2005D4E900739358 /* cross wire 3 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 3 6.png"; sourceTree = "<group>"; };
+		455A006B2005D4EA00739358 /* cross wire 3 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 3 5.png"; sourceTree = "<group>"; };
+		455A006C2005D4EA00739358 /* cross wire 1 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 1 3.png"; sourceTree = "<group>"; };
+		455A006D2005D4EA00739358 /* cross wire 1 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 1 1.png"; sourceTree = "<group>"; };
+		455A006E2005D4EB00739358 /* cross wire 2 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 2 4.png"; sourceTree = "<group>"; };
+		455A006F2005D4EB00739358 /* cross wire 0 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 0 4.png"; sourceTree = "<group>"; };
+		455A00702005D4EC00739358 /* cross wire 1 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 1 0.png"; sourceTree = "<group>"; };
+		455A00712005D4EC00739358 /* cross wire 2 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 2 2.png"; sourceTree = "<group>"; };
+		455A00722005D4EC00739358 /* cross wire 0 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 0 3.png"; sourceTree = "<group>"; };
+		455A00732005D4ED00739358 /* cross wire 1 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 1 2.png"; sourceTree = "<group>"; };
+		455A00742005D4ED00739358 /* cross wire 2 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 2 1.png"; sourceTree = "<group>"; };
+		455A00752005D4EE00739358 /* cross wire 2 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 2 0.png"; sourceTree = "<group>"; };
+		455A00762005D4EE00739358 /* cross wire 0 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 0 5.png"; sourceTree = "<group>"; };
+		455A00772005D4EF00739358 /* cross wire 1 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 1 5.png"; sourceTree = "<group>"; };
+		455A00782005D4F000739358 /* cross wire 3 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 3 1.png"; sourceTree = "<group>"; };
+		455A00792005D4F100739358 /* cross wire 0 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 0 2.png"; sourceTree = "<group>"; };
+		455A007A2005D4F100739358 /* cross wire 2 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 2 3.png"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -920,6 +949,7 @@
 			children = (
 				455AFE7C2000B3E200739358 /* box.anim */,
 				455AFEA62001A33800739358 /* button.anim */,
+				455A005E2005D4CE00739358 /* cross wire.anim */,
 				455AFECA2001D2E700739358 /* exit.anim */,
 				455AFE3B2000A41D00739358 /* gates.anim */,
 				455AFE8B2000B6EB00739358 /* lever.anim */,
@@ -955,6 +985,34 @@
 				455AFEA92001A35200739358 /* button 4.png */,
 				455AFEAB2001A35300739358 /* button 5.png */,
 				455AFEAC2001A35400739358 /* button 6.png */,
+				455A00602005D4E600739358 /* cross wire 0 0.png */,
+				455A005F2005D4E500739358 /* cross wire 0 1.png */,
+				455A00792005D4F100739358 /* cross wire 0 2.png */,
+				455A00722005D4EC00739358 /* cross wire 0 3.png */,
+				455A006F2005D4EB00739358 /* cross wire 0 4.png */,
+				455A00762005D4EE00739358 /* cross wire 0 5.png */,
+				455A00632005D4E700739358 /* cross wire 0 6.png */,
+				455A00702005D4EC00739358 /* cross wire 1 0.png */,
+				455A006D2005D4EA00739358 /* cross wire 1 1.png */,
+				455A00732005D4ED00739358 /* cross wire 1 2.png */,
+				455A006C2005D4EA00739358 /* cross wire 1 3.png */,
+				455A00622005D4E700739358 /* cross wire 1 4.png */,
+				455A00772005D4EF00739358 /* cross wire 1 5.png */,
+				455A00642005D4E700739358 /* cross wire 1 6.png */,
+				455A00752005D4EE00739358 /* cross wire 2 0.png */,
+				455A00742005D4ED00739358 /* cross wire 2 1.png */,
+				455A00712005D4EC00739358 /* cross wire 2 2.png */,
+				455A007A2005D4F100739358 /* cross wire 2 3.png */,
+				455A006E2005D4EB00739358 /* cross wire 2 4.png */,
+				455A00652005D4E800739358 /* cross wire 2 5.png */,
+				455A00662005D4E800739358 /* cross wire 2 6.png */,
+				455A00682005D4E900739358 /* cross wire 3 0.png */,
+				455A00782005D4F000739358 /* cross wire 3 1.png */,
+				455A00612005D4E600739358 /* cross wire 3 2.png */,
+				455A00692005D4E900739358 /* cross wire 3 3.png */,
+				455A00672005D4E800739358 /* cross wire 3 4.png */,
+				455A006B2005D4EA00739358 /* cross wire 3 5.png */,
+				455A006A2005D4E900739358 /* cross wire 3 6.png */,
 				455AFEC82001D2DB00739358 /* exit 0.png */,
 				455AFEC92001D2DB00739358 /* exit 1.png */,
 				455AFEC62001D2DA00739358 /* exit 2.png */,
