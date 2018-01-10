@@ -14,6 +14,7 @@
 #include "wire component.hpp"
 #include "power component.hpp"
 #include "lever component.hpp"
+#include "device component.hpp"
 #include "piston component.hpp"
 #include "button component.hpp"
 #include "weight component.hpp"
@@ -44,6 +45,7 @@ using CompList = Utils::TypeList<
   Wire,
   Power,
   Lever,
+  Device,
   Piston,
   Button,
   Weight,

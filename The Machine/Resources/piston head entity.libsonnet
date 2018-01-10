@@ -8,6 +8,7 @@ function(params) {
     }),
     Position: params.pos,
     Movement: {},
+    Device: {},
     Piston: {
       base_pos: params.pos,
       dir: common.getDir(params.dir)

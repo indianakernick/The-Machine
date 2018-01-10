@@ -7,6 +7,7 @@ function(params) {
     }),
     Position: params.pos,
     Power: {},
+    Device: {},
     PowerInput: common.getDirBitsetComp(["right", "down", "left"], params.dir),
     SpritePosition: {
       depth: common.getDepth("piston base"),

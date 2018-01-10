@@ -7,6 +7,7 @@ function(params) {
     }),
     Position: params.pos,
     Power: {},
+    Device: {},
     PowerInput: common.getDirBitsetComp("all", ""),
     SignalTransmitter: {
       channel: params.channel

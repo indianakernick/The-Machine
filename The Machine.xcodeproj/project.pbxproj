@@ -174,6 +174,7 @@
 		455A00812005DE7400739358 /* cross wire sprite init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "cross wire sprite init.hpp"; sourceTree = "<group>"; };
 		455A00832005E04600739358 /* shift cross wire system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "shift cross wire system.cpp"; sourceTree = "<group>"; };
 		455A00842005E04600739358 /* shift cross wire system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "shift cross wire system.hpp"; sourceTree = "<group>"; };
+		455A00862005E99700739358 /* device component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "device component.hpp"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -783,6 +784,7 @@
 				455AFF29200233B000739358 /* power sprite component.hpp */,
 				455A000B20033B6000739358 /* sprite position component.hpp */,
 				455A007F2005DDE000739358 /* cross wire sprite component.hpp */,
+				455A00862005E99700739358 /* device component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";

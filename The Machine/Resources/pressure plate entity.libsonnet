@@ -10,6 +10,7 @@ function(params) {
       heavy: params.heavy
     },
     Power: {},
+    Device: {},
     PowerOutput: common.getDirBitsetComp("all", ""),
     SpritePosition: {
       depth: common.getDepth("static")

@@ -8,6 +8,7 @@ function(params) {
     Position: params.pos,
     Power: {},
     Lever: {},
+    Device: {},
     PowerOutput: common.getDirBitsetComp("all", ""),
     SpritePosition: {
       depth: common.getDepth("lever")
