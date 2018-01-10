@@ -75,8 +75,9 @@ void GameScreen::update(const float ) {
     return;
   }
 
-  shiftPlayerActionSystem(registry);
   shiftPowerSystem(registry);
+  shiftCrossWireSystem(registry);
+  shiftPlayerActionSystem(registry);
   shiftRadioactivitySystem(registry);
   
   playerInputResponseSystem(registry, playerInput);

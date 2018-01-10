@@ -24,6 +24,7 @@
 #include "pressure plate system.hpp"
 #include "signal receiver system.hpp"
 #include "sprite position system.hpp"
+#include "shift cross wire system.hpp"
 #include "clear desired dir system.hpp"
 #include "clear player input system.hpp"
 #include "radioactive toggle system.hpp"
