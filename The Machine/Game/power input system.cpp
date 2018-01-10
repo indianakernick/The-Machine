@@ -12,13 +12,12 @@
 #include "wire component.hpp"
 #include "power component.hpp"
 #include "position component.hpp"
+#include "cross wire component.hpp"
 #include "power input component.hpp"
 #include "power output component.hpp"
 
 void powerInputSystem(ECS::Registry &registry, const EntityGrid &grid) {
   auto view = registry.view<Power, Position, PowerInput>();
-  const auto outputView = registry.view<PowerOutput>();
-  const auto powerView = registry.view<Power>();
   for (const ECS::EntityID entity : view) {
     PowerInput &input = view.get<PowerInput>(entity);
     
@@ -34,38 +33,36 @@ void powerInputSystem(ECS::Registry &registry, const EntityGrid &grid) {
         continue;
       }
       
-      // taking input from a tile outside of the map returns false
+      // target tile must be inside world
       const Pos targetPos = pos + ToVec::conv(dir);
       if (grid.outOfRange(targetPos)) {
         continue;
       }
       
-      // taking input from a tile without a static entity returns false
+      // target tile must have static entity
       const ECS::EntityID targetID = grid[targetPos].staticID;
       if (targetID == ECS::NULL_ENTITY) {
         continue;
       }
       
-      // taking input from an entity without an output returns false
       if (registry.has<PowerOutput>(targetID)) {
-        // taking input from an entity without an output in the opposite dir returns false
-        const Math::DirBits outputSides = outputView.get(targetID).sides;
+        const Math::DirBits outputSides = registry.get<PowerOutput>(targetID).sides;
         if (!Math::test(outputSides, Math::opposite(dir))) {
           continue;
         }
-        
-        input.states = Math::change(input.states, dir, powerView.get(targetID).prev);
+        const bool power = registry.get<Power>(targetID).prev;
+        input.states = Math::change(input.states, dir, power);
       } else if (registry.has<Wire>(targetID)) {
         const Wire wire = registry.get<Wire>(targetID);
         if (!Math::test(wire.sides, Math::opposite(dir))) {
           continue;
         }
-        if (wire.cross) {
-          const bool power = Math::isHori(dir) ? wire.horiPowered : wire.vertPowered;
-          input.states = Math::change(input.states, dir, power);
-        } else {
-          input.states = Math::change(input.states, dir, powerView.get(targetID).prev);
-        }
+        const bool power = registry.get<Power>(targetID).prev;
+        input.states = Math::change(input.states, dir, power);
+      } else if (registry.has<CrossWire>(targetID)) {
+        const CrossWire cross = registry.get<CrossWire>(targetID);
+        const bool power = Math::isVert(dir) ? cross.vert.prev : cross.hori.prev;
+        input.states = Math::change(input.states, dir, power);
       }
     }
     

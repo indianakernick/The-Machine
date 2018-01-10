@@ -12,6 +12,7 @@
 #include "wire component.hpp"
 #include "power component.hpp"
 #include "position component.hpp"
+#include "cross wire component.hpp"
 #include "power input component.hpp"
 #include "power output component.hpp"
 
@@ -33,34 +34,34 @@ namespace {
       return;
     }
     
-    // tile must be wire
-    if (!registry.has<Wire>(entity)) {
-      return;
-    }
-    
-    // wire must be unpowered
-    Power &power = registry.get<Power>(entity);
-    if (power.curr) {
-      return;
-    }
-    
-    power.curr = true;
-    
-    Wire &wire = registry.get<Wire>(entity);
-    if (wire.cross) {
-      if (Math::isHori(fromPrev)) {
-        wire.horiPowered = true;
-      } else {
-        wire.vertPowered = true;
+    if (registry.has<Wire>(entity)) {
+      // wire must be unpowered
+      Power &power = registry.get<Power>(entity);
+      if (power.curr) {
+        return;
       }
-    
-      propagatePower(registry, grid, pos + ToVec::conv(fromPrev), fromPrev);
-    } else {
+      power.curr = true;
+      
+      Wire &wire = registry.get<Wire>(entity);
       for (const Math::Dir dir : Math::DIR_RANGE) {
         if (Math::test(wire.sides, dir)) {
           propagatePower(registry, grid, pos + ToVec::conv(dir), dir);
         }
       }
+    } else if (registry.has<CrossWire>(entity)) {
+      CrossWire &cross = registry.get<CrossWire>(entity);
+      if (Math::isVert(fromPrev)) {
+        if (cross.vert.curr) {
+          return;
+        }
+        cross.vert.curr = true;
+      } else {
+        if (cross.hori.curr) {
+          return;
+        }
+        cross.hori.curr = true;
+      }
+      propagatePower(registry, grid, pos + ToVec::conv(fromPrev), fromPrev);
     }
   }
 }

@@ -32,6 +32,7 @@
 #include "sprite position component.hpp"
 #include "static collision component.hpp"
 #include "dynamic collision component.hpp"
+#include "cross wire sprite component.hpp"
 #include "signal transmitter component.hpp"
 #include "radioactive toggle component.hpp"
 #include "radioactivity sprite component.hpp"
@@ -59,6 +60,7 @@ using CompList = Utils::TypeList<
   SignalReceiver,
   SpritePosition,
   StaticCollision,
+  CrossWireSprite,
   DynamicCollision,
   SignalTransmitter,
   RadioactiveToggle,
