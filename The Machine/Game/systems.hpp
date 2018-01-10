@@ -30,6 +30,8 @@
 #include "radioactive toggle system.hpp"
 #include "shift player action system.hpp"
 #include "shift radioactivity system.hpp"
+#include "device input states system.hpp"
+#include "device output states system.hpp"
 #include "player input response system.hpp"
 #include "radioactivity detector system.hpp"
 

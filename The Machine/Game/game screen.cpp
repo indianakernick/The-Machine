@@ -90,10 +90,12 @@ void GameScreen::update(const float ) {
   pressurePlateSystem(registry, grid);
   leverSystem(registry, grid);
   buttonSystem(registry, grid);
+  deviceOutputStatesSystem(registry);
   
   gateSystem(registry);
   wireSystem(registry, grid);
   powerInputSystem(registry, grid);
+  deviceInputStatesSystem(registry);
   
   radioactiveToggleSystem(registry, grid);
   pistonSystem(registry, grid);

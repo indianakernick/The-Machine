@@ -65,9 +65,5 @@ void powerInputSystem(ECS::Registry &registry, const EntityGrid &grid) {
         input.states = Math::change(input.states, dir, power);
       }
     }
-    
-    if (!registry.has<PowerOutput>(entity)) {
-      view.get<Power>(entity).curr = Math::any(input.states);
-    }
   }
 }
