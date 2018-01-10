@@ -32,7 +32,7 @@ local getWireSprite(sides) =
 function(params) {
   components: common.checkParams(params, ["pos", "sides", "cross"]) {
     StaticCollision: common.getStaticCollisionComp({
-      accepts: "none"
+      accepts: "player"
     }),
     Position: params.pos,
     Power: {},

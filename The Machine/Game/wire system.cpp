@@ -9,7 +9,6 @@
 #include "wire system.hpp"
 
 #include "dir to vec.hpp"
-#include "gate component.hpp"
 #include "wire component.hpp"
 #include "power component.hpp"
 #include "position component.hpp"
@@ -36,17 +35,6 @@ namespace {
     
     // tile must be wire
     if (!registry.has<Wire>(entity)) {
-      if (!registry.has<PowerInput>(entity)) {
-        return;
-      }
-      if (registry.has<Gate>(entity)) {
-        return;
-      }
-      const Math::DirBits inputSides = registry.get<PowerInput>(entity).sides;
-      if (!Math::test(inputSides, Math::opposite(fromPrev))) {
-        return;
-      }
-      registry.get<Power>(entity).prev = true;
       return;
     }
     
@@ -58,8 +46,14 @@ namespace {
     
     power.curr = true;
     
-    const Wire wire = registry.get<Wire>(entity);
+    Wire &wire = registry.get<Wire>(entity);
     if (wire.cross) {
+      if (Math::isHori(fromPrev)) {
+        wire.horiPowered = true;
+      } else {
+        wire.vertPowered = true;
+      }
+    
       propagatePower(registry, grid, pos + ToVec::conv(fromPrev), fromPrev);
     } else {
       for (const Math::Dir dir : Math::DIR_RANGE) {
@@ -72,6 +66,13 @@ namespace {
 }
 
 void wireSystem(ECS::Registry &registry, const EntityGrid &grid) {
+  auto wireView = registry.view<Wire>();
+  for (const ECS::EntityID entity : wireView) {
+    Wire &wire = wireView.get(entity);
+    wire.horiPowered = false;
+    wire.vertPowered = false;
+  }
+
   const auto outputView = registry.view<Power, Position, PowerOutput>();
   for (const ECS::EntityID entity : outputView) {
     if (!outputView.get<Power>(entity).prev) {

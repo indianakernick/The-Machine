@@ -13,6 +13,7 @@
 
 struct PowerInput {
   Math::DirBits sides;
+  Math::DirBits states = Math::DirBits::NONE;
 };
 
 #endif

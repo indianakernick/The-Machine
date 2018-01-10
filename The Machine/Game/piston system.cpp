@@ -21,11 +21,11 @@ void pistonSystem(ECS::Registry &registry, const EntityGrid &grid) {
     const Piston piston = headView.get<Piston>(entity);
     const ECS::EntityID baseID = grid[piston.basePos].staticID;
     const bool extended = piston.basePos != pos;
-    const bool powered = baseView.get(baseID).prev;
+    const bool powered = baseView.get(baseID).curr;
     
-    if (!extended && powered) {
+    if (not extended and powered) {
       headView.get<Movement>(entity).desiredDir = piston.dir;
-    } else if (extended && !powered) {
+    } else if (extended and not powered) {
       headView.get<Movement>(entity).desiredDir = Math::opposite(piston.dir);
     }
   }

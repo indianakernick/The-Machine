@@ -18,6 +18,7 @@
 #include "init grid system.hpp"
 #include "update pos system.hpp"
 #include "shift power system.hpp"
+#include "power input system.hpp"
 #include "player input system.hpp"
 #include "clear real dir system.hpp"
 #include "pressure plate system.hpp"
