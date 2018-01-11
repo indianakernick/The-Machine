@@ -7,6 +7,7 @@ function(params) {
     }),
     Position: params.pos,
     CrossWire: {},
+    PowerOutput: common.getDirBitsetComp("all", ""),
     SpritePosition: {
       depth: common.getDepth("static")
     },
