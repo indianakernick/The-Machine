@@ -26,6 +26,7 @@
 #include "sprite position system.hpp"
 #include "shift cross wire system.hpp"
 #include "clear desired dir system.hpp"
+#include "clear input state system.hpp"
 #include "clear player input system.hpp"
 #include "radioactive toggle system.hpp"
 #include "shift player action system.hpp"

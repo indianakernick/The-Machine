@@ -34,6 +34,11 @@ namespace {
       return;
     }
     
+    if (registry.has<PowerOutput>(entity)) {
+      PowerOutput &output = registry.get<PowerOutput>(entity);
+      output.states = output.sides;
+    }
+    
     if (registry.has<Wire>(entity)) {
       // wire must be unpowered
       Power &power = registry.get<Power>(entity);
@@ -67,6 +72,16 @@ namespace {
 }
 
 void wireSystem(ECS::Registry &registry, const EntityGrid &grid) {
+  auto wireOutputView = registry.view<Wire, PowerOutput>();
+  for (const ECS::EntityID entity : wireOutputView) {
+    wireOutputView.get<PowerOutput>(entity).states = Math::DirBits::NONE;
+  }
+  
+  auto crossOutputView = registry.view<CrossWire, PowerOutput>();
+  for (const ECS::EntityID entity : crossOutputView) {
+    crossOutputView.get<PowerOutput>(entity).states = Math::DirBits::NONE;
+  }
+
   const auto outputView = registry.view<Power, Position, PowerOutput>();
   for (const ECS::EntityID entity : outputView) {
     if (!outputView.get<Power>(entity).prev) {

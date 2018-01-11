@@ -100,6 +100,8 @@ void GameScreen::update(const float ) {
   radioactiveToggleSystem(registry, grid);
   pistonSystem(registry, grid);
   
+  clearInputStateSystem(registry);
+  
   clearRealDirSystem(registry);
   moveDirSystem(registry, grid);
   clearDesiredDirSystem(registry);

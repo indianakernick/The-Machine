@@ -28,11 +28,11 @@ namespace {
           throw std::runtime_error("NOT function expects single input");
         }
       case GateFun::NAND:
-        return Math::all(Math::opposite(input.states));
+        return !Math::all(input.states);
       case GateFun::NOR:
-        return Math::any(Math::opposite(input.states));
+        return !Math::any(input.states);
       case GateFun::XNOR:
-        return Math::count(input.states) == 3;
+        return Math::count(input.states) != 1;
       case GateFun::IDENTITY:
         if (Math::count(input.sides) == 1) {
           return Math::count(input.states) != 0;

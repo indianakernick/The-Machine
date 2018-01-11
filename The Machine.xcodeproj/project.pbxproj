@@ -27,6 +27,7 @@
 		455A00852005E04600739358 /* shift cross wire system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A00832005E04600739358 /* shift cross wire system.cpp */; };
 		455A008C2005ED0400739358 /* device output states system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A008A2005ED0400739358 /* device output states system.cpp */; };
 		455A008F2005EEA200739358 /* device input states system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A008D2005EEA200739358 /* device input states system.cpp */; };
+		455A009520070A8000739358 /* io state grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A009320070A8000739358 /* io state grid.cpp */; };
 		455AFD861FFDB34400739358 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD841FFDB34400739358 /* app.cpp */; };
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
@@ -181,6 +182,8 @@
 		455A008B2005ED0400739358 /* device output states system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "device output states system.hpp"; sourceTree = "<group>"; };
 		455A008D2005EEA200739358 /* device input states system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "device input states system.cpp"; sourceTree = "<group>"; };
 		455A008E2005EEA200739358 /* device input states system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "device input states system.hpp"; sourceTree = "<group>"; };
+		455A009320070A8000739358 /* io state grid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "io state grid.cpp"; sourceTree = "<group>"; };
+		455A009420070A8000739358 /* io state grid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "io state grid.hpp"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -888,6 +891,8 @@
 				455AFD961FFDBADF00739358 /* entity grid.hpp */,
 				455AFF192002245400739358 /* frame type.hpp */,
 				455A002E20046C0100739358 /* player key states.hpp */,
+				455A009320070A8000739358 /* io state grid.cpp */,
+				455A009420070A8000739358 /* io state grid.hpp */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -1514,6 +1519,7 @@
 				455AFF142002132B00739358 /* quad writer.cpp in Sources */,
 				455AFDFF20005DE300739358 /* radioactive toggle init.cpp in Sources */,
 				455AFF10200212D700739358 /* rendering system.cpp in Sources */,
+				455A009520070A8000739358 /* io state grid.cpp in Sources */,
 				455AFDE71FFF42CF00739358 /* shift power system.cpp in Sources */,
 				455A008C2005ED0400739358 /* device output states system.cpp in Sources */,
 				455AFE29200089BA00739358 /* piston system.cpp in Sources */,
