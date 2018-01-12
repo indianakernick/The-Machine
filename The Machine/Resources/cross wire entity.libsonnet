@@ -12,7 +12,10 @@ function(params) {
       depth: common.getDepth("static")
     },
     CrossWireSprite: {
-      sprite: common.getSpriteID("cross wire 0 0")
+      both: common.getSpriteID("cross wire 0 0"),
+      inverted: common.getSpriteID("cross wire 1 0"),
+      hori_off: common.getSpriteID("cross wire 2 0"),
+      hori_on: common.getSpriteID("cross wire 3 0")
     }
   }
 }

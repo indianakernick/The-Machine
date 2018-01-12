@@ -12,7 +12,10 @@
 #include <unpacker.hpp>
 
 struct CrossWireSprite {
-  Unpack::SpriteID sprite;
+  Unpack::SpriteID both;
+  Unpack::SpriteID inverted;
+  Unpack::SpriteID horiOff;
+  Unpack::SpriteID horiOn;
 };
 
 #endif
