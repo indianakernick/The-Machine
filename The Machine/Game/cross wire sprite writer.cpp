@@ -14,28 +14,28 @@
 namespace {
   /*
   
-  +--------+--------+-------------+----------+---------+------------+
-  |  VERT  |  HORI  |             |          |         |            |
-  +----+---+---+----+  ANIMATION  |  ORIENT  |  START  |  ANIM DIR  |
-  |  P | C | P | C  |             |          |         |            |
-  +----+---+---+----+-------------+----------+---------+------------+
-  |  0 | 0 | 0 | 0  |  BOTH       |  UP      |  BEGIN  |  0         |
-  |  0 | 0 | 0 | 1  |  HORI_OFF   |  RIGHT   |  BEGIN  |  1         |
-  |  0 | 0 | 1 | 0  |  HORI_OFF   |  RIGHT   |  END    |  -1        |
-  |  0 | 0 | 1 | 1  |  INVERTED   |  UP      |  BEGIN  |  0         |
-  |  0 | 1 | 0 | 0  |  HORI_OFF   |  UP      |  BEGIN  |  1         |
-  |  0 | 1 | 0 | 1  |  BOTH       |  UP      |  BEGIN  |  1         |
-  |  0 | 1 | 1 | 0  |  INVERTED   |  UP      |  BEGIN  |  1         |
-  |  0 | 1 | 1 | 1  |  HORI_ON    |  UP      |  BEGIN  |  1         |
-  |  1 | 0 | 0 | 0  |  HORI_OFF   |  UP      |  END    |  -1        |
-  |  1 | 0 | 0 | 1  |  INVERTED   |  UP      |  END    |  -1        |
-  |  1 | 0 | 1 | 0  |  BOTH       |  UP      |  END    |  -1        |
-  |  1 | 0 | 1 | 1  |  HORI_ON    |  UP      |  END    |  -1        |
-  |  1 | 1 | 0 | 0  |  INVERTED   |  RIGHT   |  BEGIN  |  0         |
-  |  1 | 1 | 0 | 1  |  HORI_ON    |  RIGHT   |  BEGIN  |  1         |
-  |  1 | 1 | 1 | 0  |  HORI_ON    |  RIGHT   |  END    |  -1        |
-  |  1 | 1 | 1 | 1  |  BOTH       |  UP      |  END    |  0         |
-  +----+---+---+----+-------------+----------+---------+------------+
+  ┏━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━┓
+  ┃  VERT  ┃  HORI  ┃             ┃          ┃         ┃            ┃
+  ┣━━━━┳━━━╋━━━┳━━━━┫  ANIMATION  ┃  ORIENT  ┃  START  ┃  ANIM DIR  ┃
+  ┃  P ┃ C ┃ P ┃ C  ┃             ┃          ┃         ┃            ┃
+  ┣━━━━╋━━━╋━━━╋━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━╋━━━━━━━━━╋━━━━━━━━━━━━┫
+  ┃  0 ┃ 0 ┃ 0 ┃ 0  ┃  BOTH       ┃  UP      ┃  BEGIN  ┃  0         ┃
+  ┃  0 ┃ 0 ┃ 0 ┃ 1  ┃  HORI_OFF   ┃  RIGHT   ┃  BEGIN  ┃  1         ┃
+  ┃  0 ┃ 0 ┃ 1 ┃ 0  ┃  HORI_OFF   ┃  RIGHT   ┃  END    ┃  -1        ┃
+  ┃  0 ┃ 0 ┃ 1 ┃ 1  ┃  INVERTED   ┃  UP      ┃  BEGIN  ┃  0         ┃
+  ┃  0 ┃ 1 ┃ 0 ┃ 0  ┃  HORI_OFF   ┃  UP      ┃  BEGIN  ┃  1         ┃
+  ┃  0 ┃ 1 ┃ 0 ┃ 1  ┃  BOTH       ┃  UP      ┃  BEGIN  ┃  1         ┃
+  ┃  0 ┃ 1 ┃ 1 ┃ 0  ┃  INVERTED   ┃  UP      ┃  BEGIN  ┃  1         ┃
+  ┃  0 ┃ 1 ┃ 1 ┃ 1  ┃  HORI_ON    ┃  UP      ┃  BEGIN  ┃  1         ┃
+  ┃  1 ┃ 0 ┃ 0 ┃ 0  ┃  HORI_OFF   ┃  UP      ┃  END    ┃  -1        ┃
+  ┃  1 ┃ 0 ┃ 0 ┃ 1  ┃  INVERTED   ┃  UP      ┃  END    ┃  -1        ┃
+  ┃  1 ┃ 0 ┃ 1 ┃ 0  ┃  BOTH       ┃  UP      ┃  END    ┃  -1        ┃
+  ┃  1 ┃ 0 ┃ 1 ┃ 1  ┃  HORI_ON    ┃  UP      ┃  END    ┃  -1        ┃
+  ┃  1 ┃ 1 ┃ 0 ┃ 0  ┃  INVERTED   ┃  RIGHT   ┃  BEGIN  ┃  0         ┃
+  ┃  1 ┃ 1 ┃ 0 ┃ 1  ┃  HORI_ON    ┃  RIGHT   ┃  BEGIN  ┃  1         ┃
+  ┃  1 ┃ 1 ┃ 1 ┃ 0  ┃  HORI_ON    ┃  RIGHT   ┃  END    ┃  -1        ┃
+  ┃  1 ┃ 1 ┃ 1 ┃ 1  ┃  BOTH       ┃  UP      ┃  END    ┃  0         ┃
+  ┗━━━━┻━━━┻━━━┻━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━┻━━━━━━━━━┻━━━━━━━━━━━━┛
   
   */
   
