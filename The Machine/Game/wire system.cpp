@@ -11,7 +11,6 @@
 #include "dir to vec.hpp"
 #include "wire component.hpp"
 #include "power component.hpp"
-#include "device component.hpp"
 #include "position component.hpp"
 #include "cross wire component.hpp"
 #include "power input component.hpp"
@@ -36,7 +35,6 @@ namespace {
     }
     
     if (registry.has<Wire>(entity)) {
-      // wire must be unpowered
       Power &power = registry.get<Power>(entity);
       if (power.curr) {
         return;
@@ -68,8 +66,12 @@ namespace {
 }
 
 void wireSystem(ECS::Registry &registry, const EntityGrid &grid) {
-  const auto outputView = registry.view<Power, Device, Position, PowerOutput>();
+  const auto outputView = registry.view<Power, Position, PowerOutput>();
   for (const ECS::EntityID entity : outputView) {
+    if (registry.has<Wire>(entity) || registry.has<CrossWire>(entity)) {
+      continue;
+    }
+  
     if (!outputView.get<Power>(entity).prev) {
       continue;
     }

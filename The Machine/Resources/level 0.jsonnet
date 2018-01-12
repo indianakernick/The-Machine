@@ -58,5 +58,35 @@ assemble([
   a.piston({
     pos: [12, 7],
     dir: "right"
+  }),
+
+  e.wire({
+    pos: [16, 5],
+    sides: ["left", "right"]
+  }),
+  e.wire({
+    pos: [15, 5],
+    sides: ["up", "right"]
+  }),
+  e.wire({
+    pos: [15, 6],
+    sides: ["up", "down", "right"]
+  }),
+  e.gate({
+    pos: [16, 6],
+    dir: "left",
+    gate: "not"
+  }),
+  e.wire({
+    pos: [17, 6],
+    sides: ["left", "down"]
+  }),
+  e.wire({
+    pos: [17, 5],
+    sides: ["left", "up"]
+  }),
+  a.piston({
+    pos: [15, 7],
+    dir: "up"
   })
 ])
