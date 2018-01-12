@@ -448,6 +448,175 @@
 		455A01CE200861CC00739358 /* signal receiver channel 0 on 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal receiver channel 0 on 9.png"; sourceTree = "<group>"; };
 		455A01CF200861CC00739358 /* signal receiver channel 4 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal receiver channel 4 power 2.png"; sourceTree = "<group>"; };
 		455A01D02008621300739358 /* signal receiver.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "signal receiver.anim"; sourceTree = "<group>"; };
+		455A01D1200864AC00739358 /* signal transmitter channel 0 on 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 on 3.png"; sourceTree = "<group>"; };
+		455A01D2200864AC00739358 /* signal transmitter channel 3 on 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 on 3.png"; sourceTree = "<group>"; };
+		455A01D3200864AD00739358 /* signal transmitter channel 5 on 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 on 6.png"; sourceTree = "<group>"; };
+		455A01D4200864AE00739358 /* signal transmitter channel 2 on 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 on 6.png"; sourceTree = "<group>"; };
+		455A01D5200864AF00739358 /* signal transmitter channel 1 power 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 3.png"; sourceTree = "<group>"; };
+		455A01D6200864AF00739358 /* signal transmitter channel 2 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 1.png"; sourceTree = "<group>"; };
+		455A01D7200864B000739358 /* signal transmitter channel 2 on 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 on 1.png"; sourceTree = "<group>"; };
+		455A01D8200864B200739358 /* signal transmitter channel 2 power 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 10.png"; sourceTree = "<group>"; };
+		455A01D9200864B400739358 /* signal transmitter channel 7 on 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 on 0.png"; sourceTree = "<group>"; };
+		455A01DA200864B500739358 /* signal transmitter channel 7 on 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 on 5.png"; sourceTree = "<group>"; };
+		455A01DB200864B600739358 /* signal transmitter channel 3 power 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 10.png"; sourceTree = "<group>"; };
+		455A01DC200864B600739358 /* signal transmitter channel 5 on 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 on 5.png"; sourceTree = "<group>"; };
+		455A01DD200864B600739358 /* signal transmitter channel 3 on 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 on 2.png"; sourceTree = "<group>"; };
+		455A01DE200864B700739358 /* signal transmitter channel 1 on 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 on 6.png"; sourceTree = "<group>"; };
+		455A01DF200864B700739358 /* signal transmitter channel 1 on 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 on 8.png"; sourceTree = "<group>"; };
+		455A01E0200864B700739358 /* signal transmitter channel 1 on 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 on 0.png"; sourceTree = "<group>"; };
+		455A01E1200864B800739358 /* signal transmitter channel 2 on 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 on 8.png"; sourceTree = "<group>"; };
+		455A01E2200864B800739358 /* signal transmitter channel 2 power 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 6.png"; sourceTree = "<group>"; };
+		455A01E3200864B800739358 /* signal transmitter channel 6 on 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 on 5.png"; sourceTree = "<group>"; };
+		455A01E4200864B800739358 /* signal transmitter channel 1 on 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 on 7.png"; sourceTree = "<group>"; };
+		455A01E5200864B900739358 /* signal transmitter channel 4 on 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 on 5.png"; sourceTree = "<group>"; };
+		455A01E6200864B900739358 /* signal transmitter channel 6 on 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 on 9.png"; sourceTree = "<group>"; };
+		455A01E7200864B900739358 /* signal transmitter channel 6 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 1.png"; sourceTree = "<group>"; };
+		455A01E8200864B900739358 /* signal transmitter channel 7 on 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 on 9.png"; sourceTree = "<group>"; };
+		455A01E9200864BA00739358 /* signal transmitter channel 6 power 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 10.png"; sourceTree = "<group>"; };
+		455A01EA200864BA00739358 /* signal transmitter channel 7 on 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 on 7.png"; sourceTree = "<group>"; };
+		455A01EB200864BA00739358 /* signal transmitter channel 7 power 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 4.png"; sourceTree = "<group>"; };
+		455A01EC200864BB00739358 /* signal transmitter channel 5 on 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 on 0.png"; sourceTree = "<group>"; };
+		455A01ED200864BB00739358 /* signal transmitter channel 1 power 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 9.png"; sourceTree = "<group>"; };
+		455A01EE200864BB00739358 /* signal transmitter channel 6 power 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 3.png"; sourceTree = "<group>"; };
+		455A01EF200864BC00739358 /* signal transmitter channel 7 power 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 6.png"; sourceTree = "<group>"; };
+		455A01F0200864BD00739358 /* signal transmitter channel 2 on 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 on 9.png"; sourceTree = "<group>"; };
+		455A01F1200864BD00739358 /* signal transmitter channel 7 on 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 on 6.png"; sourceTree = "<group>"; };
+		455A01F2200864BE00739358 /* signal transmitter channel 3 power 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 3.png"; sourceTree = "<group>"; };
+		455A01F3200864BE00739358 /* signal transmitter channel 0 power 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 10.png"; sourceTree = "<group>"; };
+		455A01F4200864C000739358 /* signal transmitter channel 1 on 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 on 5.png"; sourceTree = "<group>"; };
+		455A01F5200864C000739358 /* signal transmitter channel 4 on 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 on 8.png"; sourceTree = "<group>"; };
+		455A01F6200864C000739358 /* signal transmitter channel 4 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 1.png"; sourceTree = "<group>"; };
+		455A01F7200864C100739358 /* signal transmitter channel 0 power 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 5.png"; sourceTree = "<group>"; };
+		455A01F8200864C100739358 /* signal transmitter channel 5 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 1.png"; sourceTree = "<group>"; };
+		455A01F9200864C200739358 /* signal transmitter channel 3 on 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 on 9.png"; sourceTree = "<group>"; };
+		455A01FA200864C200739358 /* signal transmitter channel 6 power 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 8.png"; sourceTree = "<group>"; };
+		455A01FB200864C300739358 /* signal transmitter channel 5 power 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 7.png"; sourceTree = "<group>"; };
+		455A01FC200864C400739358 /* signal transmitter channel 4 on 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 on 0.png"; sourceTree = "<group>"; };
+		455A01FD200864C400739358 /* signal transmitter channel 6 on 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 on 4.png"; sourceTree = "<group>"; };
+		455A01FE200864C400739358 /* signal transmitter channel 7 power 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 10.png"; sourceTree = "<group>"; };
+		455A01FF200864C500739358 /* signal transmitter channel 5 on 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 on 1.png"; sourceTree = "<group>"; };
+		455A0200200864C500739358 /* signal transmitter channel 5 power 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 10.png"; sourceTree = "<group>"; };
+		455A0201200864C800739358 /* signal transmitter channel 1 on 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 on 1.png"; sourceTree = "<group>"; };
+		455A0202200864C900739358 /* signal transmitter channel 7 power 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 9.png"; sourceTree = "<group>"; };
+		455A0203200864C900739358 /* signal transmitter channel 2 power 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 7.png"; sourceTree = "<group>"; };
+		455A0204200864CA00739358 /* signal transmitter channel 5 on 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 on 2.png"; sourceTree = "<group>"; };
+		455A0205200864CA00739358 /* signal transmitter channel 2 on 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 on 5.png"; sourceTree = "<group>"; };
+		455A0206200864CB00739358 /* signal transmitter channel 3 on 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 on 6.png"; sourceTree = "<group>"; };
+		455A0207200864CB00739358 /* signal transmitter channel 5 on 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 on 3.png"; sourceTree = "<group>"; };
+		455A0208200864CB00739358 /* signal transmitter channel 1 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 1.png"; sourceTree = "<group>"; };
+		455A0209200864CC00739358 /* signal transmitter channel 5 power 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 0.png"; sourceTree = "<group>"; };
+		455A020A200864CD00739358 /* signal transmitter channel 5 power 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 5.png"; sourceTree = "<group>"; };
+		455A020B200864CE00739358 /* signal transmitter channel 3 on 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 on 4.png"; sourceTree = "<group>"; };
+		455A020C200864CE00739358 /* signal transmitter channel 3 power 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 8.png"; sourceTree = "<group>"; };
+		455A020D200864CF00739358 /* signal transmitter channel 7 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 2.png"; sourceTree = "<group>"; };
+		455A020E200864D000739358 /* signal transmitter channel 0 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 2.png"; sourceTree = "<group>"; };
+		455A020F200864D000739358 /* signal transmitter channel 6 on 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 on 0.png"; sourceTree = "<group>"; };
+		455A0210200864D100739358 /* signal transmitter channel 7 power 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 7.png"; sourceTree = "<group>"; };
+		455A0211200864D100739358 /* signal transmitter channel 6 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 2.png"; sourceTree = "<group>"; };
+		455A0212200864D200739358 /* signal transmitter channel 4 on 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 on 9.png"; sourceTree = "<group>"; };
+		455A0213200864D300739358 /* signal transmitter channel 0 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 1.png"; sourceTree = "<group>"; };
+		455A0214200864D300739358 /* signal transmitter channel 5 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 2.png"; sourceTree = "<group>"; };
+		455A0215200864D400739358 /* signal transmitter channel 2 power 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 5.png"; sourceTree = "<group>"; };
+		455A0216200864D500739358 /* signal transmitter channel 4 on 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 on 3.png"; sourceTree = "<group>"; };
+		455A0217200864D500739358 /* signal transmitter channel 4 power 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 3.png"; sourceTree = "<group>"; };
+		455A0218200864D600739358 /* signal transmitter channel 4 power 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 0.png"; sourceTree = "<group>"; };
+		455A0219200864D600739358 /* signal transmitter channel 2 on 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 on 2.png"; sourceTree = "<group>"; };
+		455A021A200864D700739358 /* signal transmitter channel 4 power 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 7.png"; sourceTree = "<group>"; };
+		455A021B200864D800739358 /* signal transmitter channel 6 on 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 on 8.png"; sourceTree = "<group>"; };
+		455A021C200864D800739358 /* signal transmitter channel 4 power 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 9.png"; sourceTree = "<group>"; };
+		455A021D200864D900739358 /* signal transmitter channel 2 on 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 on 4.png"; sourceTree = "<group>"; };
+		455A021E200864D900739358 /* signal transmitter channel 0 power 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 3.png"; sourceTree = "<group>"; };
+		455A021F200864DA00739358 /* signal transmitter channel 3 on 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 on 0.png"; sourceTree = "<group>"; };
+		455A0220200864DB00739358 /* signal transmitter channel 0 on 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 on 4.png"; sourceTree = "<group>"; };
+		455A0221200864DB00739358 /* signal transmitter channel 3 power 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 9.png"; sourceTree = "<group>"; };
+		455A0222200864DD00739358 /* signal transmitter channel 6 on 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 on 6.png"; sourceTree = "<group>"; };
+		455A0223200864DD00739358 /* signal transmitter channel 6 power 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 7.png"; sourceTree = "<group>"; };
+		455A0224200864DD00739358 /* signal transmitter channel 7 on 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 on 2.png"; sourceTree = "<group>"; };
+		455A0225200864DE00739358 /* signal transmitter channel 0 power 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 7.png"; sourceTree = "<group>"; };
+		455A0226200864DF00739358 /* signal transmitter channel 1 power 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 8.png"; sourceTree = "<group>"; };
+		455A0227200864E000739358 /* signal transmitter channel 1 on 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 on 4.png"; sourceTree = "<group>"; };
+		455A0228200864E100739358 /* signal transmitter channel 3 on 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 on 7.png"; sourceTree = "<group>"; };
+		455A0229200864E200739358 /* signal transmitter channel 0 power 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 8.png"; sourceTree = "<group>"; };
+		455A022A200864E300739358 /* signal transmitter channel 1 power 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 7.png"; sourceTree = "<group>"; };
+		455A022B200864E300739358 /* signal transmitter channel 3 power 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 6.png"; sourceTree = "<group>"; };
+		455A022C200864E300739358 /* signal transmitter channel 6 power 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 6.png"; sourceTree = "<group>"; };
+		455A022D200864E400739358 /* signal transmitter channel 7 power 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 8.png"; sourceTree = "<group>"; };
+		455A022E200864E400739358 /* signal transmitter channel 4 on 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 on 4.png"; sourceTree = "<group>"; };
+		455A022F200864E500739358 /* signal transmitter channel 4 power 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 10.png"; sourceTree = "<group>"; };
+		455A0230200864E600739358 /* signal transmitter channel 0 on 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 on 6.png"; sourceTree = "<group>"; };
+		455A0231200864E600739358 /* signal transmitter channel 4 power 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 6.png"; sourceTree = "<group>"; };
+		455A0232200864E800739358 /* signal transmitter channel 6 on 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 on 7.png"; sourceTree = "<group>"; };
+		455A0233200864E800739358 /* signal transmitter channel 0 on 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 on 5.png"; sourceTree = "<group>"; };
+		455A0234200864E900739358 /* signal transmitter channel 3 on 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 on 1.png"; sourceTree = "<group>"; };
+		455A0235200864EA00739358 /* signal transmitter channel 7 on 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 on 1.png"; sourceTree = "<group>"; };
+		455A0236200864EA00739358 /* signal transmitter channel 2 power 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 8.png"; sourceTree = "<group>"; };
+		455A0237200864EB00739358 /* signal transmitter channel 3 power 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 7.png"; sourceTree = "<group>"; };
+		455A0238200864EB00739358 /* signal transmitter channel 0 power 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 6.png"; sourceTree = "<group>"; };
+		455A0239200864EC00739358 /* signal transmitter channel 3 on 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 on 8.png"; sourceTree = "<group>"; };
+		455A023A200864EC00739358 /* signal transmitter channel 4 on 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 on 6.png"; sourceTree = "<group>"; };
+		455A023B200864ED00739358 /* signal transmitter channel 5 on 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 on 9.png"; sourceTree = "<group>"; };
+		455A023C200864ED00739358 /* signal transmitter channel 5 power 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 4.png"; sourceTree = "<group>"; };
+		455A023D200864ED00739358 /* signal transmitter channel 6 on 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 on 2.png"; sourceTree = "<group>"; };
+		455A023E200864ED00739358 /* signal transmitter channel 7 on 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 on 4.png"; sourceTree = "<group>"; };
+		455A023F200864EE00739358 /* signal transmitter channel 1 on 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 on 3.png"; sourceTree = "<group>"; };
+		455A0240200864EE00739358 /* signal transmitter channel 1 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 2.png"; sourceTree = "<group>"; };
+		455A0241200864EE00739358 /* signal transmitter channel 6 power 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 0.png"; sourceTree = "<group>"; };
+		455A0242200864EE00739358 /* signal transmitter channel 7 power 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 0.png"; sourceTree = "<group>"; };
+		455A0243200864EF00739358 /* signal transmitter channel 5 power 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 3.png"; sourceTree = "<group>"; };
+		455A0244200864EF00739358 /* signal transmitter channel 1 on 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 on 2.png"; sourceTree = "<group>"; };
+		455A0245200864EF00739358 /* signal transmitter channel 4 power 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 5.png"; sourceTree = "<group>"; };
+		455A0246200864EF00739358 /* signal transmitter channel 6 power 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 4.png"; sourceTree = "<group>"; };
+		455A0247200864F000739358 /* signal transmitter channel 0 power 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 4.png"; sourceTree = "<group>"; };
+		455A0248200864F000739358 /* signal transmitter channel 2 on 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 on 7.png"; sourceTree = "<group>"; };
+		455A0249200864F000739358 /* signal transmitter channel 1 power 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 4.png"; sourceTree = "<group>"; };
+		455A024A200864F100739358 /* signal transmitter channel 0 on 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 on 0.png"; sourceTree = "<group>"; };
+		455A024B200864F100739358 /* signal transmitter channel 5 on 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 on 4.png"; sourceTree = "<group>"; };
+		455A024C200864F300739358 /* signal transmitter channel 0 on 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 on 2.png"; sourceTree = "<group>"; };
+		455A024D200864F300739358 /* signal transmitter channel 1 power 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 5.png"; sourceTree = "<group>"; };
+		455A024E200864F400739358 /* signal transmitter channel 5 power 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 6.png"; sourceTree = "<group>"; };
+		455A024F200864F400739358 /* signal transmitter channel 3 on 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 on 5.png"; sourceTree = "<group>"; };
+		455A0250200864F400739358 /* signal transmitter channel 4 on 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 on 2.png"; sourceTree = "<group>"; };
+		455A0251200864F500739358 /* signal transmitter channel 3 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 1.png"; sourceTree = "<group>"; };
+		455A0252200864F500739358 /* signal transmitter channel 0 on 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 on 1.png"; sourceTree = "<group>"; };
+		455A0253200864F500739358 /* signal transmitter channel 5 power 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 9.png"; sourceTree = "<group>"; };
+		455A0254200864F600739358 /* signal transmitter channel 2 on 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 on 3.png"; sourceTree = "<group>"; };
+		455A0255200864F600739358 /* signal transmitter channel 3 power 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 4.png"; sourceTree = "<group>"; };
+		455A0256200864F700739358 /* signal transmitter channel 6 power 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 5.png"; sourceTree = "<group>"; };
+		455A0257200864F700739358 /* signal transmitter channel 7 on 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 on 3.png"; sourceTree = "<group>"; };
+		455A0258200864F700739358 /* signal transmitter channel 5 on 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 on 8.png"; sourceTree = "<group>"; };
+		455A0259200864F800739358 /* signal transmitter channel 2 on 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 on 0.png"; sourceTree = "<group>"; };
+		455A025A200864F800739358 /* signal transmitter channel 7 power 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 5.png"; sourceTree = "<group>"; };
+		455A025B200864F800739358 /* signal transmitter channel 3 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 2.png"; sourceTree = "<group>"; };
+		455A025C200864F900739358 /* signal transmitter channel 4 on 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 on 1.png"; sourceTree = "<group>"; };
+		455A025D200864F900739358 /* signal transmitter channel 5 on 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 on 7.png"; sourceTree = "<group>"; };
+		455A025E200864F900739358 /* signal transmitter channel 1 power 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 10.png"; sourceTree = "<group>"; };
+		455A025F200864F900739358 /* signal transmitter channel 1 power 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 0.png"; sourceTree = "<group>"; };
+		455A0260200864FA00739358 /* signal transmitter channel 0 on 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 on 7.png"; sourceTree = "<group>"; };
+		455A0261200864FA00739358 /* signal transmitter channel 4 power 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 4.png"; sourceTree = "<group>"; };
+		455A0262200864FA00739358 /* signal transmitter channel 1 on 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 on 9.png"; sourceTree = "<group>"; };
+		455A0263200864FC00739358 /* signal transmitter channel 6 on 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 on 1.png"; sourceTree = "<group>"; };
+		455A0264200864FC00739358 /* signal transmitter channel 2 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 2.png"; sourceTree = "<group>"; };
+		455A0265200864FD00739358 /* signal transmitter channel 3 power 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 0.png"; sourceTree = "<group>"; };
+		455A0266200864FD00739358 /* signal transmitter channel 0 power 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 9.png"; sourceTree = "<group>"; };
+		455A0267200864FD00739358 /* signal transmitter channel 7 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 1.png"; sourceTree = "<group>"; };
+		455A0268200864FD00739358 /* signal transmitter channel 2 power 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 4.png"; sourceTree = "<group>"; };
+		455A0269200864FE00739358 /* signal transmitter channel 3 power 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 5.png"; sourceTree = "<group>"; };
+		455A026A200864FE00739358 /* signal transmitter channel 2 power 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 0.png"; sourceTree = "<group>"; };
+		455A026B200864FE00739358 /* signal transmitter channel 5 power 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 8.png"; sourceTree = "<group>"; };
+		455A026C200864FE00739358 /* signal transmitter channel 6 power 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 9.png"; sourceTree = "<group>"; };
+		455A026D200864FF00739358 /* signal transmitter channel 4 power 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 8.png"; sourceTree = "<group>"; };
+		455A026E200864FF00739358 /* signal transmitter channel 2 power 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 3.png"; sourceTree = "<group>"; };
+		455A026F200864FF00739358 /* signal transmitter channel 0 power 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 0.png"; sourceTree = "<group>"; };
+		455A0270200864FF00739358 /* signal transmitter channel 6 on 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 on 3.png"; sourceTree = "<group>"; };
+		455A02712008650000739358 /* signal transmitter channel 7 on 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 on 8.png"; sourceTree = "<group>"; };
+		455A02722008650000739358 /* signal transmitter channel 7 power 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 3.png"; sourceTree = "<group>"; };
+		455A02732008650100739358 /* signal transmitter channel 1 power 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 6.png"; sourceTree = "<group>"; };
+		455A02742008650100739358 /* signal transmitter channel 0 on 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 on 8.png"; sourceTree = "<group>"; };
+		455A02752008650200739358 /* signal transmitter channel 0 on 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 on 9.png"; sourceTree = "<group>"; };
+		455A02762008650200739358 /* signal transmitter channel 2 power 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 9.png"; sourceTree = "<group>"; };
+		455A02772008650300739358 /* signal transmitter channel 4 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 2.png"; sourceTree = "<group>"; };
+		455A02782008650300739358 /* signal transmitter channel 4 on 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 on 7.png"; sourceTree = "<group>"; };
+		455A02792008651700739358 /* signal transmitter.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "signal transmitter.anim"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -617,7 +786,6 @@
 		455AFEC22001BEDE00739358 /* piston head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piston head.png"; sourceTree = "<group>"; };
 		455AFEC32001C21900739358 /* Logic puzzle design.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Logic puzzle design.txt"; sourceTree = "<group>"; };
 		455AFECB2001EE2B00739358 /* signal channel.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "signal channel.anim"; sourceTree = "<group>"; };
-		455AFED42001EFFB00739358 /* signal transmitter.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "signal transmitter.anim"; sourceTree = "<group>"; };
 		455AFEFF2002029800739358 /* wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall.png; sourceTree = "<group>"; };
 		455AFF00200202A000739358 /* wall.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = wall.anim; sourceTree = "<group>"; };
 		455AFF0B200212D500739358 /* rendering system.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering system.hpp"; sourceTree = "<group>"; };
@@ -640,110 +808,6 @@
 		455AFF2D2002E8D300739358 /* static sprite writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "static sprite writer.cpp"; sourceTree = "<group>"; };
 		455AFF2E2002E8D300739358 /* static sprite writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "static sprite writer.hpp"; sourceTree = "<group>"; };
 		455AFF33200331EC00739358 /* anim helpers.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "anim helpers.js"; sourceTree = "<group>"; };
-		455AFF34200332A500739358 /* signal transmitter channel 1 on 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 on 5.png"; sourceTree = "<group>"; };
-		455AFF35200332A500739358 /* signal transmitter channel 2 power 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 5.png"; sourceTree = "<group>"; };
-		455AFF36200332A600739358 /* signal transmitter channel 2 on 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 on 2.png"; sourceTree = "<group>"; };
-		455AFF37200332A600739358 /* signal transmitter channel 3 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 2.png"; sourceTree = "<group>"; };
-		455AFF38200332A700739358 /* signal transmitter channel 4 on 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 on 1.png"; sourceTree = "<group>"; };
-		455AFF39200332A700739358 /* signal transmitter channel 2 on 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 on 3.png"; sourceTree = "<group>"; };
-		455AFF3A200332A700739358 /* signal transmitter channel 4 power 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 0.png"; sourceTree = "<group>"; };
-		455AFF3B200332A800739358 /* signal transmitter channel 5 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 1.png"; sourceTree = "<group>"; };
-		455AFF3C200332A800739358 /* signal transmitter channel 6 power 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 0.png"; sourceTree = "<group>"; };
-		455AFF3D200332A900739358 /* signal transmitter channel 3 power 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 6.png"; sourceTree = "<group>"; };
-		455AFF3E200332A900739358 /* signal transmitter channel 4 power 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 3.png"; sourceTree = "<group>"; };
-		455AFF3F200332A900739358 /* signal transmitter channel 6 on 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 on 4.png"; sourceTree = "<group>"; };
-		455AFF40200332AA00739358 /* signal transmitter channel 6 power 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 3.png"; sourceTree = "<group>"; };
-		455AFF41200332AA00739358 /* signal transmitter channel 5 power 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 3.png"; sourceTree = "<group>"; };
-		455AFF42200332AB00739358 /* signal transmitter channel 4 on 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 on 3.png"; sourceTree = "<group>"; };
-		455AFF43200332AB00739358 /* signal transmitter channel 2 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 2.png"; sourceTree = "<group>"; };
-		455AFF44200332AC00739358 /* signal transmitter channel 5 on 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 on 3.png"; sourceTree = "<group>"; };
-		455AFF45200332AC00739358 /* signal transmitter channel 5 on 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 on 1.png"; sourceTree = "<group>"; };
-		455AFF46200332AD00739358 /* signal transmitter channel 4 power 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 6.png"; sourceTree = "<group>"; };
-		455AFF47200332AD00739358 /* signal transmitter channel 5 power 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 4.png"; sourceTree = "<group>"; };
-		455AFF48200332AE00739358 /* signal transmitter channel 7 power 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 4.png"; sourceTree = "<group>"; };
-		455AFF49200332AE00739358 /* signal transmitter channel 3 on 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 on 0.png"; sourceTree = "<group>"; };
-		455AFF4A200332AF00739358 /* signal transmitter channel 7 on 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 on 4.png"; sourceTree = "<group>"; };
-		455AFF4B200332AF00739358 /* signal transmitter channel 2 on 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 on 0.png"; sourceTree = "<group>"; };
-		455AFF4C200332AF00739358 /* signal transmitter channel 1 power 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 0.png"; sourceTree = "<group>"; };
-		455AFF4D200332AF00739358 /* signal transmitter channel 1 power 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 4.png"; sourceTree = "<group>"; };
-		455AFF4E200332B000739358 /* signal transmitter channel 1 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 2.png"; sourceTree = "<group>"; };
-		455AFF4F200332B000739358 /* signal transmitter channel 5 power 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 6.png"; sourceTree = "<group>"; };
-		455AFF50200332B100739358 /* signal transmitter channel 7 on 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 on 5.png"; sourceTree = "<group>"; };
-		455AFF51200332B100739358 /* signal transmitter channel 0 power 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 0.png"; sourceTree = "<group>"; };
-		455AFF52200332B200739358 /* signal transmitter channel 5 on 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 on 0.png"; sourceTree = "<group>"; };
-		455AFF53200332B200739358 /* signal transmitter channel 4 on 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 on 4.png"; sourceTree = "<group>"; };
-		455AFF54200332B300739358 /* signal transmitter channel 3 power 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 5.png"; sourceTree = "<group>"; };
-		455AFF55200332B300739358 /* signal transmitter channel 7 on 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 on 0.png"; sourceTree = "<group>"; };
-		455AFF56200332B400739358 /* signal transmitter channel 3 power 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 0.png"; sourceTree = "<group>"; };
-		455AFF57200332B400739358 /* signal transmitter channel 7 power 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 3.png"; sourceTree = "<group>"; };
-		455AFF58200332B500739358 /* signal transmitter channel 6 on 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 on 5.png"; sourceTree = "<group>"; };
-		455AFF59200332B500739358 /* signal transmitter channel 1 power 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 5.png"; sourceTree = "<group>"; };
-		455AFF5A200332B600739358 /* signal transmitter channel 5 power 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 5.png"; sourceTree = "<group>"; };
-		455AFF5B200332B600739358 /* signal transmitter channel 0 power 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 6.png"; sourceTree = "<group>"; };
-		455AFF5C200332B600739358 /* signal transmitter channel 3 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 1.png"; sourceTree = "<group>"; };
-		455AFF5D200332B700739358 /* signal transmitter channel 3 on 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 on 2.png"; sourceTree = "<group>"; };
-		455AFF5E200332B700739358 /* signal transmitter channel 7 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 1.png"; sourceTree = "<group>"; };
-		455AFF5F200332B700739358 /* signal transmitter channel 0 on 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 on 0.png"; sourceTree = "<group>"; };
-		455AFF60200332B800739358 /* signal transmitter channel 5 on 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 on 2.png"; sourceTree = "<group>"; };
-		455AFF61200332B800739358 /* signal transmitter channel 4 on 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 on 2.png"; sourceTree = "<group>"; };
-		455AFF62200332B900739358 /* signal transmitter channel 1 power 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 3.png"; sourceTree = "<group>"; };
-		455AFF63200332BA00739358 /* signal transmitter channel 0 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 1.png"; sourceTree = "<group>"; };
-		455AFF64200332BB00739358 /* signal transmitter channel 5 on 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 on 4.png"; sourceTree = "<group>"; };
-		455AFF65200332BD00739358 /* signal transmitter channel 0 power 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 5.png"; sourceTree = "<group>"; };
-		455AFF66200332BE00739358 /* signal transmitter channel 5 power 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 0.png"; sourceTree = "<group>"; };
-		455AFF67200332BE00739358 /* signal transmitter channel 3 power 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 3.png"; sourceTree = "<group>"; };
-		455AFF68200332BF00739358 /* signal transmitter channel 1 on 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 on 3.png"; sourceTree = "<group>"; };
-		455AFF69200332BF00739358 /* signal transmitter channel 6 power 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 5.png"; sourceTree = "<group>"; };
-		455AFF6A200332C000739358 /* signal transmitter channel 7 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 2.png"; sourceTree = "<group>"; };
-		455AFF6B200332C100739358 /* signal transmitter channel 1 on 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 on 0.png"; sourceTree = "<group>"; };
-		455AFF6C200332C100739358 /* signal transmitter channel 1 on 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 on 1.png"; sourceTree = "<group>"; };
-		455AFF6D200332C200739358 /* signal transmitter channel 4 on 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 on 0.png"; sourceTree = "<group>"; };
-		455AFF6E200332C200739358 /* signal transmitter channel 7 power 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 0.png"; sourceTree = "<group>"; };
-		455AFF6F200332C400739358 /* signal transmitter channel 7 on 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 on 3.png"; sourceTree = "<group>"; };
-		455AFF70200332C500739358 /* signal transmitter channel 7 on 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 on 2.png"; sourceTree = "<group>"; };
-		455AFF71200332C500739358 /* signal transmitter channel 2 on 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 on 1.png"; sourceTree = "<group>"; };
-		455AFF72200332C600739358 /* signal transmitter channel 6 on 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 on 0.png"; sourceTree = "<group>"; };
-		455AFF73200332C700739358 /* signal transmitter channel 2 power 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 4.png"; sourceTree = "<group>"; };
-		455AFF74200332C700739358 /* signal transmitter channel 3 on 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 on 5.png"; sourceTree = "<group>"; };
-		455AFF75200332C800739358 /* signal transmitter channel 4 power 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 5.png"; sourceTree = "<group>"; };
-		455AFF76200332C900739358 /* signal transmitter channel 7 power 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 5.png"; sourceTree = "<group>"; };
-		455AFF77200332C900739358 /* signal transmitter channel 6 on 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 on 3.png"; sourceTree = "<group>"; };
-		455AFF78200332CA00739358 /* signal transmitter channel 3 on 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 on 4.png"; sourceTree = "<group>"; };
-		455AFF79200332CB00739358 /* signal transmitter channel 4 on 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 on 5.png"; sourceTree = "<group>"; };
-		455AFF7A200332CC00739358 /* signal transmitter channel 2 power 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 6.png"; sourceTree = "<group>"; };
-		455AFF7B200332CD00739358 /* signal transmitter channel 4 power 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 4.png"; sourceTree = "<group>"; };
-		455AFF7C200332CE00739358 /* signal transmitter channel 6 power 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 4.png"; sourceTree = "<group>"; };
-		455AFF7D200332CE00739358 /* signal transmitter channel 3 on 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 on 3.png"; sourceTree = "<group>"; };
-		455AFF7E200332CF00739358 /* signal transmitter channel 0 on 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 on 2.png"; sourceTree = "<group>"; };
-		455AFF7F200332CF00739358 /* signal transmitter channel 2 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 1.png"; sourceTree = "<group>"; };
-		455AFF80200332D000739358 /* signal transmitter channel 1 on 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 on 4.png"; sourceTree = "<group>"; };
-		455AFF81200332D000739358 /* signal transmitter channel 0 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 2.png"; sourceTree = "<group>"; };
-		455AFF82200332D100739358 /* signal transmitter channel 5 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 power 2.png"; sourceTree = "<group>"; };
-		455AFF83200332D100739358 /* signal transmitter channel 3 on 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 on 1.png"; sourceTree = "<group>"; };
-		455AFF84200332D200739358 /* signal transmitter channel 0 power 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 4.png"; sourceTree = "<group>"; };
-		455AFF85200332D300739358 /* signal transmitter channel 6 power 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 6.png"; sourceTree = "<group>"; };
-		455AFF86200332D300739358 /* signal transmitter channel 6 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 1.png"; sourceTree = "<group>"; };
-		455AFF87200332D400739358 /* signal transmitter channel 0 on 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 on 1.png"; sourceTree = "<group>"; };
-		455AFF88200332D400739358 /* signal transmitter channel 0 on 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 on 5.png"; sourceTree = "<group>"; };
-		455AFF89200332D600739358 /* signal transmitter channel 0 power 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 power 3.png"; sourceTree = "<group>"; };
-		455AFF8A200332D600739358 /* signal transmitter channel 2 on 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 on 5.png"; sourceTree = "<group>"; };
-		455AFF8B200332D800739358 /* signal transmitter channel 1 power 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 6.png"; sourceTree = "<group>"; };
-		455AFF8C200332D900739358 /* signal transmitter channel 4 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 2.png"; sourceTree = "<group>"; };
-		455AFF8D200332DA00739358 /* signal transmitter channel 2 power 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 3.png"; sourceTree = "<group>"; };
-		455AFF8E200332DA00739358 /* signal transmitter channel 3 power 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 3 power 4.png"; sourceTree = "<group>"; };
-		455AFF8F200332DB00739358 /* signal transmitter channel 2 on 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 on 4.png"; sourceTree = "<group>"; };
-		455AFF90200332DC00739358 /* signal transmitter channel 6 on 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 on 1.png"; sourceTree = "<group>"; };
-		455AFF91200332DC00739358 /* signal transmitter channel 0 on 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 on 3.png"; sourceTree = "<group>"; };
-		455AFF92200332DD00739358 /* signal transmitter channel 1 on 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 on 2.png"; sourceTree = "<group>"; };
-		455AFF93200332DD00739358 /* signal transmitter channel 1 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 1 power 1.png"; sourceTree = "<group>"; };
-		455AFF94200332DE00739358 /* signal transmitter channel 2 power 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 2 power 0.png"; sourceTree = "<group>"; };
-		455AFF95200332DE00739358 /* signal transmitter channel 7 on 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 on 1.png"; sourceTree = "<group>"; };
-		455AFF96200332DF00739358 /* signal transmitter channel 4 power 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 4 power 1.png"; sourceTree = "<group>"; };
-		455AFF97200332E000739358 /* signal transmitter channel 5 on 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 5 on 5.png"; sourceTree = "<group>"; };
-		455AFF98200332E100739358 /* signal transmitter channel 6 on 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 on 2.png"; sourceTree = "<group>"; };
-		455AFF99200332E200739358 /* signal transmitter channel 0 on 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 0 on 4.png"; sourceTree = "<group>"; };
-		455AFF9A200332E300739358 /* signal transmitter channel 6 power 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 6 power 2.png"; sourceTree = "<group>"; };
-		455AFF9B200332E400739358 /* signal transmitter channel 7 power 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal transmitter channel 7 power 6.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1122,7 +1186,7 @@
 				455A0127200852CF00739358 /* radioactivity detector.anim */,
 				455AFECB2001EE2B00739358 /* signal channel.anim */,
 				455A01D02008621300739358 /* signal receiver.anim */,
-				455AFED42001EFFB00739358 /* signal transmitter.anim */,
+				455A02792008651700739358 /* signal transmitter.anim */,
 				455AFF00200202A000739358 /* wall.anim */,
 				455AFE482000AD5100739358 /* wire.anim */,
 			);
@@ -1441,110 +1505,174 @@
 				455A01CA200861C900739358 /* signal receiver channel 7 power 8.png */,
 				455A01BC200861C100739358 /* signal receiver channel 7 power 9.png */,
 				455A01AE200861B900739358 /* signal receiver channel 7 power 10.png */,
-				455AFF5F200332B700739358 /* signal transmitter channel 0 on 0.png */,
-				455AFF87200332D400739358 /* signal transmitter channel 0 on 1.png */,
-				455AFF7E200332CF00739358 /* signal transmitter channel 0 on 2.png */,
-				455AFF91200332DC00739358 /* signal transmitter channel 0 on 3.png */,
-				455AFF99200332E200739358 /* signal transmitter channel 0 on 4.png */,
-				455AFF88200332D400739358 /* signal transmitter channel 0 on 5.png */,
-				455AFF51200332B100739358 /* signal transmitter channel 0 power 0.png */,
-				455AFF63200332BA00739358 /* signal transmitter channel 0 power 1.png */,
-				455AFF81200332D000739358 /* signal transmitter channel 0 power 2.png */,
-				455AFF89200332D600739358 /* signal transmitter channel 0 power 3.png */,
-				455AFF84200332D200739358 /* signal transmitter channel 0 power 4.png */,
-				455AFF65200332BD00739358 /* signal transmitter channel 0 power 5.png */,
-				455AFF5B200332B600739358 /* signal transmitter channel 0 power 6.png */,
-				455AFF6B200332C100739358 /* signal transmitter channel 1 on 0.png */,
-				455AFF6C200332C100739358 /* signal transmitter channel 1 on 1.png */,
-				455AFF92200332DD00739358 /* signal transmitter channel 1 on 2.png */,
-				455AFF68200332BF00739358 /* signal transmitter channel 1 on 3.png */,
-				455AFF80200332D000739358 /* signal transmitter channel 1 on 4.png */,
-				455AFF34200332A500739358 /* signal transmitter channel 1 on 5.png */,
-				455AFF4C200332AF00739358 /* signal transmitter channel 1 power 0.png */,
-				455AFF93200332DD00739358 /* signal transmitter channel 1 power 1.png */,
-				455AFF4E200332B000739358 /* signal transmitter channel 1 power 2.png */,
-				455AFF62200332B900739358 /* signal transmitter channel 1 power 3.png */,
-				455AFF4D200332AF00739358 /* signal transmitter channel 1 power 4.png */,
-				455AFF59200332B500739358 /* signal transmitter channel 1 power 5.png */,
-				455AFF8B200332D800739358 /* signal transmitter channel 1 power 6.png */,
-				455AFF4B200332AF00739358 /* signal transmitter channel 2 on 0.png */,
-				455AFF71200332C500739358 /* signal transmitter channel 2 on 1.png */,
-				455AFF36200332A600739358 /* signal transmitter channel 2 on 2.png */,
-				455AFF39200332A700739358 /* signal transmitter channel 2 on 3.png */,
-				455AFF8F200332DB00739358 /* signal transmitter channel 2 on 4.png */,
-				455AFF8A200332D600739358 /* signal transmitter channel 2 on 5.png */,
-				455AFF94200332DE00739358 /* signal transmitter channel 2 power 0.png */,
-				455AFF7F200332CF00739358 /* signal transmitter channel 2 power 1.png */,
-				455AFF43200332AB00739358 /* signal transmitter channel 2 power 2.png */,
-				455AFF8D200332DA00739358 /* signal transmitter channel 2 power 3.png */,
-				455AFF73200332C700739358 /* signal transmitter channel 2 power 4.png */,
-				455AFF35200332A500739358 /* signal transmitter channel 2 power 5.png */,
-				455AFF7A200332CC00739358 /* signal transmitter channel 2 power 6.png */,
-				455AFF49200332AE00739358 /* signal transmitter channel 3 on 0.png */,
-				455AFF83200332D100739358 /* signal transmitter channel 3 on 1.png */,
-				455AFF5D200332B700739358 /* signal transmitter channel 3 on 2.png */,
-				455AFF7D200332CE00739358 /* signal transmitter channel 3 on 3.png */,
-				455AFF78200332CA00739358 /* signal transmitter channel 3 on 4.png */,
-				455AFF74200332C700739358 /* signal transmitter channel 3 on 5.png */,
-				455AFF56200332B400739358 /* signal transmitter channel 3 power 0.png */,
-				455AFF5C200332B600739358 /* signal transmitter channel 3 power 1.png */,
-				455AFF37200332A600739358 /* signal transmitter channel 3 power 2.png */,
-				455AFF67200332BE00739358 /* signal transmitter channel 3 power 3.png */,
-				455AFF8E200332DA00739358 /* signal transmitter channel 3 power 4.png */,
-				455AFF54200332B300739358 /* signal transmitter channel 3 power 5.png */,
-				455AFF3D200332A900739358 /* signal transmitter channel 3 power 6.png */,
-				455AFF6D200332C200739358 /* signal transmitter channel 4 on 0.png */,
-				455AFF38200332A700739358 /* signal transmitter channel 4 on 1.png */,
-				455AFF61200332B800739358 /* signal transmitter channel 4 on 2.png */,
-				455AFF42200332AB00739358 /* signal transmitter channel 4 on 3.png */,
-				455AFF53200332B200739358 /* signal transmitter channel 4 on 4.png */,
-				455AFF79200332CB00739358 /* signal transmitter channel 4 on 5.png */,
-				455AFF3A200332A700739358 /* signal transmitter channel 4 power 0.png */,
-				455AFF96200332DF00739358 /* signal transmitter channel 4 power 1.png */,
-				455AFF8C200332D900739358 /* signal transmitter channel 4 power 2.png */,
-				455AFF3E200332A900739358 /* signal transmitter channel 4 power 3.png */,
-				455AFF7B200332CD00739358 /* signal transmitter channel 4 power 4.png */,
-				455AFF75200332C800739358 /* signal transmitter channel 4 power 5.png */,
-				455AFF46200332AD00739358 /* signal transmitter channel 4 power 6.png */,
-				455AFF52200332B200739358 /* signal transmitter channel 5 on 0.png */,
-				455AFF45200332AC00739358 /* signal transmitter channel 5 on 1.png */,
-				455AFF60200332B800739358 /* signal transmitter channel 5 on 2.png */,
-				455AFF44200332AC00739358 /* signal transmitter channel 5 on 3.png */,
-				455AFF64200332BB00739358 /* signal transmitter channel 5 on 4.png */,
-				455AFF97200332E000739358 /* signal transmitter channel 5 on 5.png */,
-				455AFF66200332BE00739358 /* signal transmitter channel 5 power 0.png */,
-				455AFF3B200332A800739358 /* signal transmitter channel 5 power 1.png */,
-				455AFF82200332D100739358 /* signal transmitter channel 5 power 2.png */,
-				455AFF41200332AA00739358 /* signal transmitter channel 5 power 3.png */,
-				455AFF47200332AD00739358 /* signal transmitter channel 5 power 4.png */,
-				455AFF5A200332B600739358 /* signal transmitter channel 5 power 5.png */,
-				455AFF4F200332B000739358 /* signal transmitter channel 5 power 6.png */,
-				455AFF72200332C600739358 /* signal transmitter channel 6 on 0.png */,
-				455AFF90200332DC00739358 /* signal transmitter channel 6 on 1.png */,
-				455AFF98200332E100739358 /* signal transmitter channel 6 on 2.png */,
-				455AFF77200332C900739358 /* signal transmitter channel 6 on 3.png */,
-				455AFF3F200332A900739358 /* signal transmitter channel 6 on 4.png */,
-				455AFF58200332B500739358 /* signal transmitter channel 6 on 5.png */,
-				455AFF3C200332A800739358 /* signal transmitter channel 6 power 0.png */,
-				455AFF86200332D300739358 /* signal transmitter channel 6 power 1.png */,
-				455AFF9A200332E300739358 /* signal transmitter channel 6 power 2.png */,
-				455AFF40200332AA00739358 /* signal transmitter channel 6 power 3.png */,
-				455AFF7C200332CE00739358 /* signal transmitter channel 6 power 4.png */,
-				455AFF69200332BF00739358 /* signal transmitter channel 6 power 5.png */,
-				455AFF85200332D300739358 /* signal transmitter channel 6 power 6.png */,
-				455AFF55200332B300739358 /* signal transmitter channel 7 on 0.png */,
-				455AFF95200332DE00739358 /* signal transmitter channel 7 on 1.png */,
-				455AFF70200332C500739358 /* signal transmitter channel 7 on 2.png */,
-				455AFF6F200332C400739358 /* signal transmitter channel 7 on 3.png */,
-				455AFF4A200332AF00739358 /* signal transmitter channel 7 on 4.png */,
-				455AFF50200332B100739358 /* signal transmitter channel 7 on 5.png */,
-				455AFF6E200332C200739358 /* signal transmitter channel 7 power 0.png */,
-				455AFF5E200332B700739358 /* signal transmitter channel 7 power 1.png */,
-				455AFF6A200332C000739358 /* signal transmitter channel 7 power 2.png */,
-				455AFF57200332B400739358 /* signal transmitter channel 7 power 3.png */,
-				455AFF48200332AE00739358 /* signal transmitter channel 7 power 4.png */,
-				455AFF76200332C900739358 /* signal transmitter channel 7 power 5.png */,
-				455AFF9B200332E400739358 /* signal transmitter channel 7 power 6.png */,
+				455A024A200864F100739358 /* signal transmitter channel 0 on 0.png */,
+				455A0252200864F500739358 /* signal transmitter channel 0 on 1.png */,
+				455A024C200864F300739358 /* signal transmitter channel 0 on 2.png */,
+				455A01D1200864AC00739358 /* signal transmitter channel 0 on 3.png */,
+				455A0220200864DB00739358 /* signal transmitter channel 0 on 4.png */,
+				455A0233200864E800739358 /* signal transmitter channel 0 on 5.png */,
+				455A0230200864E600739358 /* signal transmitter channel 0 on 6.png */,
+				455A0260200864FA00739358 /* signal transmitter channel 0 on 7.png */,
+				455A02742008650100739358 /* signal transmitter channel 0 on 8.png */,
+				455A02752008650200739358 /* signal transmitter channel 0 on 9.png */,
+				455A026F200864FF00739358 /* signal transmitter channel 0 power 0.png */,
+				455A0213200864D300739358 /* signal transmitter channel 0 power 1.png */,
+				455A020E200864D000739358 /* signal transmitter channel 0 power 2.png */,
+				455A021E200864D900739358 /* signal transmitter channel 0 power 3.png */,
+				455A0247200864F000739358 /* signal transmitter channel 0 power 4.png */,
+				455A01F7200864C100739358 /* signal transmitter channel 0 power 5.png */,
+				455A0238200864EB00739358 /* signal transmitter channel 0 power 6.png */,
+				455A0225200864DE00739358 /* signal transmitter channel 0 power 7.png */,
+				455A0229200864E200739358 /* signal transmitter channel 0 power 8.png */,
+				455A0266200864FD00739358 /* signal transmitter channel 0 power 9.png */,
+				455A01F3200864BE00739358 /* signal transmitter channel 0 power 10.png */,
+				455A01E0200864B700739358 /* signal transmitter channel 1 on 0.png */,
+				455A0201200864C800739358 /* signal transmitter channel 1 on 1.png */,
+				455A0244200864EF00739358 /* signal transmitter channel 1 on 2.png */,
+				455A023F200864EE00739358 /* signal transmitter channel 1 on 3.png */,
+				455A0227200864E000739358 /* signal transmitter channel 1 on 4.png */,
+				455A01F4200864C000739358 /* signal transmitter channel 1 on 5.png */,
+				455A01DE200864B700739358 /* signal transmitter channel 1 on 6.png */,
+				455A01E4200864B800739358 /* signal transmitter channel 1 on 7.png */,
+				455A01DF200864B700739358 /* signal transmitter channel 1 on 8.png */,
+				455A0262200864FA00739358 /* signal transmitter channel 1 on 9.png */,
+				455A025F200864F900739358 /* signal transmitter channel 1 power 0.png */,
+				455A0208200864CB00739358 /* signal transmitter channel 1 power 1.png */,
+				455A0240200864EE00739358 /* signal transmitter channel 1 power 2.png */,
+				455A01D5200864AF00739358 /* signal transmitter channel 1 power 3.png */,
+				455A0249200864F000739358 /* signal transmitter channel 1 power 4.png */,
+				455A024D200864F300739358 /* signal transmitter channel 1 power 5.png */,
+				455A02732008650100739358 /* signal transmitter channel 1 power 6.png */,
+				455A022A200864E300739358 /* signal transmitter channel 1 power 7.png */,
+				455A0226200864DF00739358 /* signal transmitter channel 1 power 8.png */,
+				455A01ED200864BB00739358 /* signal transmitter channel 1 power 9.png */,
+				455A025E200864F900739358 /* signal transmitter channel 1 power 10.png */,
+				455A0259200864F800739358 /* signal transmitter channel 2 on 0.png */,
+				455A01D7200864B000739358 /* signal transmitter channel 2 on 1.png */,
+				455A0219200864D600739358 /* signal transmitter channel 2 on 2.png */,
+				455A0254200864F600739358 /* signal transmitter channel 2 on 3.png */,
+				455A021D200864D900739358 /* signal transmitter channel 2 on 4.png */,
+				455A0205200864CA00739358 /* signal transmitter channel 2 on 5.png */,
+				455A01D4200864AE00739358 /* signal transmitter channel 2 on 6.png */,
+				455A0248200864F000739358 /* signal transmitter channel 2 on 7.png */,
+				455A01E1200864B800739358 /* signal transmitter channel 2 on 8.png */,
+				455A01F0200864BD00739358 /* signal transmitter channel 2 on 9.png */,
+				455A026A200864FE00739358 /* signal transmitter channel 2 power 0.png */,
+				455A01D6200864AF00739358 /* signal transmitter channel 2 power 1.png */,
+				455A0264200864FC00739358 /* signal transmitter channel 2 power 2.png */,
+				455A026E200864FF00739358 /* signal transmitter channel 2 power 3.png */,
+				455A0268200864FD00739358 /* signal transmitter channel 2 power 4.png */,
+				455A0215200864D400739358 /* signal transmitter channel 2 power 5.png */,
+				455A01E2200864B800739358 /* signal transmitter channel 2 power 6.png */,
+				455A0203200864C900739358 /* signal transmitter channel 2 power 7.png */,
+				455A0236200864EA00739358 /* signal transmitter channel 2 power 8.png */,
+				455A02762008650200739358 /* signal transmitter channel 2 power 9.png */,
+				455A01D8200864B200739358 /* signal transmitter channel 2 power 10.png */,
+				455A021F200864DA00739358 /* signal transmitter channel 3 on 0.png */,
+				455A0234200864E900739358 /* signal transmitter channel 3 on 1.png */,
+				455A01DD200864B600739358 /* signal transmitter channel 3 on 2.png */,
+				455A01D2200864AC00739358 /* signal transmitter channel 3 on 3.png */,
+				455A020B200864CE00739358 /* signal transmitter channel 3 on 4.png */,
+				455A024F200864F400739358 /* signal transmitter channel 3 on 5.png */,
+				455A0206200864CB00739358 /* signal transmitter channel 3 on 6.png */,
+				455A0228200864E100739358 /* signal transmitter channel 3 on 7.png */,
+				455A0239200864EC00739358 /* signal transmitter channel 3 on 8.png */,
+				455A01F9200864C200739358 /* signal transmitter channel 3 on 9.png */,
+				455A0265200864FD00739358 /* signal transmitter channel 3 power 0.png */,
+				455A0251200864F500739358 /* signal transmitter channel 3 power 1.png */,
+				455A025B200864F800739358 /* signal transmitter channel 3 power 2.png */,
+				455A01F2200864BE00739358 /* signal transmitter channel 3 power 3.png */,
+				455A0255200864F600739358 /* signal transmitter channel 3 power 4.png */,
+				455A0269200864FE00739358 /* signal transmitter channel 3 power 5.png */,
+				455A022B200864E300739358 /* signal transmitter channel 3 power 6.png */,
+				455A0237200864EB00739358 /* signal transmitter channel 3 power 7.png */,
+				455A020C200864CE00739358 /* signal transmitter channel 3 power 8.png */,
+				455A0221200864DB00739358 /* signal transmitter channel 3 power 9.png */,
+				455A01DB200864B600739358 /* signal transmitter channel 3 power 10.png */,
+				455A01FC200864C400739358 /* signal transmitter channel 4 on 0.png */,
+				455A025C200864F900739358 /* signal transmitter channel 4 on 1.png */,
+				455A0250200864F400739358 /* signal transmitter channel 4 on 2.png */,
+				455A0216200864D500739358 /* signal transmitter channel 4 on 3.png */,
+				455A022E200864E400739358 /* signal transmitter channel 4 on 4.png */,
+				455A01E5200864B900739358 /* signal transmitter channel 4 on 5.png */,
+				455A023A200864EC00739358 /* signal transmitter channel 4 on 6.png */,
+				455A02782008650300739358 /* signal transmitter channel 4 on 7.png */,
+				455A01F5200864C000739358 /* signal transmitter channel 4 on 8.png */,
+				455A0212200864D200739358 /* signal transmitter channel 4 on 9.png */,
+				455A0218200864D600739358 /* signal transmitter channel 4 power 0.png */,
+				455A01F6200864C000739358 /* signal transmitter channel 4 power 1.png */,
+				455A02772008650300739358 /* signal transmitter channel 4 power 2.png */,
+				455A0217200864D500739358 /* signal transmitter channel 4 power 3.png */,
+				455A0261200864FA00739358 /* signal transmitter channel 4 power 4.png */,
+				455A0245200864EF00739358 /* signal transmitter channel 4 power 5.png */,
+				455A0231200864E600739358 /* signal transmitter channel 4 power 6.png */,
+				455A021A200864D700739358 /* signal transmitter channel 4 power 7.png */,
+				455A026D200864FF00739358 /* signal transmitter channel 4 power 8.png */,
+				455A021C200864D800739358 /* signal transmitter channel 4 power 9.png */,
+				455A022F200864E500739358 /* signal transmitter channel 4 power 10.png */,
+				455A01EC200864BB00739358 /* signal transmitter channel 5 on 0.png */,
+				455A01FF200864C500739358 /* signal transmitter channel 5 on 1.png */,
+				455A0204200864CA00739358 /* signal transmitter channel 5 on 2.png */,
+				455A0207200864CB00739358 /* signal transmitter channel 5 on 3.png */,
+				455A024B200864F100739358 /* signal transmitter channel 5 on 4.png */,
+				455A01DC200864B600739358 /* signal transmitter channel 5 on 5.png */,
+				455A01D3200864AD00739358 /* signal transmitter channel 5 on 6.png */,
+				455A025D200864F900739358 /* signal transmitter channel 5 on 7.png */,
+				455A0258200864F700739358 /* signal transmitter channel 5 on 8.png */,
+				455A023B200864ED00739358 /* signal transmitter channel 5 on 9.png */,
+				455A0209200864CC00739358 /* signal transmitter channel 5 power 0.png */,
+				455A01F8200864C100739358 /* signal transmitter channel 5 power 1.png */,
+				455A0214200864D300739358 /* signal transmitter channel 5 power 2.png */,
+				455A0243200864EF00739358 /* signal transmitter channel 5 power 3.png */,
+				455A023C200864ED00739358 /* signal transmitter channel 5 power 4.png */,
+				455A020A200864CD00739358 /* signal transmitter channel 5 power 5.png */,
+				455A024E200864F400739358 /* signal transmitter channel 5 power 6.png */,
+				455A01FB200864C300739358 /* signal transmitter channel 5 power 7.png */,
+				455A026B200864FE00739358 /* signal transmitter channel 5 power 8.png */,
+				455A0253200864F500739358 /* signal transmitter channel 5 power 9.png */,
+				455A0200200864C500739358 /* signal transmitter channel 5 power 10.png */,
+				455A020F200864D000739358 /* signal transmitter channel 6 on 0.png */,
+				455A0263200864FC00739358 /* signal transmitter channel 6 on 1.png */,
+				455A023D200864ED00739358 /* signal transmitter channel 6 on 2.png */,
+				455A0270200864FF00739358 /* signal transmitter channel 6 on 3.png */,
+				455A01FD200864C400739358 /* signal transmitter channel 6 on 4.png */,
+				455A01E3200864B800739358 /* signal transmitter channel 6 on 5.png */,
+				455A0222200864DD00739358 /* signal transmitter channel 6 on 6.png */,
+				455A0232200864E800739358 /* signal transmitter channel 6 on 7.png */,
+				455A021B200864D800739358 /* signal transmitter channel 6 on 8.png */,
+				455A01E6200864B900739358 /* signal transmitter channel 6 on 9.png */,
+				455A0241200864EE00739358 /* signal transmitter channel 6 power 0.png */,
+				455A01E7200864B900739358 /* signal transmitter channel 6 power 1.png */,
+				455A0211200864D100739358 /* signal transmitter channel 6 power 2.png */,
+				455A01EE200864BB00739358 /* signal transmitter channel 6 power 3.png */,
+				455A0246200864EF00739358 /* signal transmitter channel 6 power 4.png */,
+				455A0256200864F700739358 /* signal transmitter channel 6 power 5.png */,
+				455A022C200864E300739358 /* signal transmitter channel 6 power 6.png */,
+				455A0223200864DD00739358 /* signal transmitter channel 6 power 7.png */,
+				455A01FA200864C200739358 /* signal transmitter channel 6 power 8.png */,
+				455A026C200864FE00739358 /* signal transmitter channel 6 power 9.png */,
+				455A01E9200864BA00739358 /* signal transmitter channel 6 power 10.png */,
+				455A01D9200864B400739358 /* signal transmitter channel 7 on 0.png */,
+				455A0235200864EA00739358 /* signal transmitter channel 7 on 1.png */,
+				455A0224200864DD00739358 /* signal transmitter channel 7 on 2.png */,
+				455A0257200864F700739358 /* signal transmitter channel 7 on 3.png */,
+				455A023E200864ED00739358 /* signal transmitter channel 7 on 4.png */,
+				455A01DA200864B500739358 /* signal transmitter channel 7 on 5.png */,
+				455A01F1200864BD00739358 /* signal transmitter channel 7 on 6.png */,
+				455A01EA200864BA00739358 /* signal transmitter channel 7 on 7.png */,
+				455A02712008650000739358 /* signal transmitter channel 7 on 8.png */,
+				455A01E8200864B900739358 /* signal transmitter channel 7 on 9.png */,
+				455A0242200864EE00739358 /* signal transmitter channel 7 power 0.png */,
+				455A0267200864FD00739358 /* signal transmitter channel 7 power 1.png */,
+				455A020D200864CF00739358 /* signal transmitter channel 7 power 2.png */,
+				455A02722008650000739358 /* signal transmitter channel 7 power 3.png */,
+				455A01EB200864BA00739358 /* signal transmitter channel 7 power 4.png */,
+				455A025A200864F800739358 /* signal transmitter channel 7 power 5.png */,
+				455A01EF200864BC00739358 /* signal transmitter channel 7 power 6.png */,
+				455A0210200864D100739358 /* signal transmitter channel 7 power 7.png */,
+				455A022D200864E400739358 /* signal transmitter channel 7 power 8.png */,
+				455A0202200864C900739358 /* signal transmitter channel 7 power 9.png */,
+				455A01FE200864C400739358 /* signal transmitter channel 7 power 10.png */,
 				455AFEFF2002029800739358 /* wall.png */,
 				455AFE6A2000AD7100739358 /* wire 0 0.png */,
 				455AFE692000AD7100739358 /* wire 0 1.png */,
@@ -1682,7 +1810,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  jsonnet \"$PROJECT_RES/$name.jsonnet\" |           # compile jsonnet\n  jq -cM . > \"$PRODUCT_RES/$name.json\"             # minify json\n  # exit if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone";
+			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" |         # find\negrep --only-matching \"level (\\d+|final)\" |                # trim path and extension\nwhile read name; do\n  jsonnet --max-stack 1024 \"$PROJECT_RES/$name.jsonnet\" |  # compile jsonnet\n  jq -cM . > \"$PRODUCT_RES/$name.json\"                     # minify json\n  # exit if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone";
 		};
 		455AFE392000A39900739358 /* Pack Sprites */ = {
 			isa = PBXShellScriptBuildPhase;
