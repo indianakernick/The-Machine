@@ -9,6 +9,8 @@
 #include "clear player input system.hpp"
 
 void clearPlayerInputSystem(PlayerKeyStates &events) {
-  //events.dirs.fill(false);
-  //events.action = false;
+  for (KeyState &state : events.dirs) {
+    state.downLastTick = false;
+  }
+  events.action.downLastTick = false;
 }

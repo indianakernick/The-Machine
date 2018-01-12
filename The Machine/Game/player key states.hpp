@@ -11,9 +11,14 @@
 
 #include <array>
 
+struct KeyState {
+  bool downLastTick = false;  // the key was pressed last tick
+  bool down = false;          // the key is being held down
+};
+
 struct PlayerKeyStates {
-  std::array<bool, 4> dirs = {{}};
-  bool action = false;
+  std::array<KeyState, 4> dirs = {};
+  KeyState action;
 };
 
 #endif

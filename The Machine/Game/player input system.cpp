@@ -10,6 +10,13 @@
 
 #include <SDL2/SDL_events.h>
 
+namespace {
+  void setState(KeyState &state, const bool keydown) {
+    state.downLastTick = state.downLastTick || keydown;
+    state.down = keydown;
+  }
+}
+
 void playerInputSystem(PlayerKeyStates &states, const SDL_Event &e) {
   const bool keydown = (e.type == SDL_KEYDOWN && e.key.repeat == 0);
   
@@ -20,14 +27,14 @@ void playerInputSystem(PlayerKeyStates &states, const SDL_Event &e) {
   const SDL_Scancode key = e.key.keysym.scancode;
   
   if (key == SDL_SCANCODE_SPACE) {
-    states.action = keydown;
+    setState(states.action, keydown);
   } else if (key == SDL_SCANCODE_UP || key == SDL_SCANCODE_W) {
-    states.dirs[0] = keydown;
+    setState(states.dirs[0], keydown);
   } else if (key == SDL_SCANCODE_RIGHT || key == SDL_SCANCODE_D) {
-    states.dirs[1] = keydown;
+    setState(states.dirs[1], keydown);
   } else if (key == SDL_SCANCODE_DOWN || key == SDL_SCANCODE_S) {
-    states.dirs[2] = keydown;
+    setState(states.dirs[2], keydown);
   } else if (key == SDL_SCANCODE_LEFT || key == SDL_SCANCODE_A) {
-    states.dirs[3] = keydown;
+    setState(states.dirs[3], keydown);
   }
 }

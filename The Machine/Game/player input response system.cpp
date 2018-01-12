@@ -25,13 +25,17 @@ namespace {
       comp.desiredDir = dir;
     });
   }
+  
+  bool isEnabled(const KeyState state) {
+    return state.downLastTick || state.down;
+  }
 }
 
 void playerInputResponseSystem(ECS::Registry &registry, const PlayerKeyStates states) {
-  setActionState(registry, states.action);
+  setActionState(registry, isEnabled(states.action));
  
   for (const Math::Dir dir : Math::DIR_RANGE) {
-    if (states.dirs[static_cast<size_t>(dir)]) {
+    if (isEnabled(states.dirs[static_cast<size_t>(dir)])) {
       return setDesiredDir(registry, dir);
     }
   }
