@@ -24,6 +24,7 @@
 		455A00822005DE7400739358 /* cross wire sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A00802005DE7400739358 /* cross wire sprite init.cpp */; };
 		455A00852005E04600739358 /* shift cross wire system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A00832005E04600739358 /* shift cross wire system.cpp */; };
 		455A00982007243C00739358 /* device input system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A00962007243C00739358 /* device input system.cpp */; };
+		455A02BF200875EF00739358 /* cross wire sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A02BD200875EF00739358 /* cross wire sprite writer.cpp */; };
 		455AFD861FFDB34400739358 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD841FFDB34400739358 /* app.cpp */; };
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
@@ -684,6 +685,8 @@
 		455A02BA20086C6D00739358 /* wire 5 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wire 5 4.png"; sourceTree = "<group>"; };
 		455A02BB20086C6D00739358 /* wire 5 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wire 5 10.png"; sourceTree = "<group>"; };
 		455A02BC20086C6E00739358 /* wire 0 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wire 0 6.png"; sourceTree = "<group>"; };
+		455A02BD200875EF00739358 /* cross wire sprite writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "cross wire sprite writer.cpp"; sourceTree = "<group>"; };
+		455A02BE200875EF00739358 /* cross wire sprite writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "cross wire sprite writer.hpp"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -936,6 +939,8 @@
 				455A001320034C6100739358 /* radioactivity sprite writer.hpp */,
 				455A00152003531000739358 /* power sprite writer.cpp */,
 				455A00162003531000739358 /* power sprite writer.hpp */,
+				455A02BD200875EF00739358 /* cross wire sprite writer.cpp */,
+				455A02BE200875EF00739358 /* cross wire sprite writer.hpp */,
 			);
 			name = "Quad Writers";
 			sourceTree = "<group>";
@@ -1934,6 +1939,7 @@
 				455AFDE71FFF42CF00739358 /* shift power system.cpp in Sources */,
 				455AFE29200089BA00739358 /* piston system.cpp in Sources */,
 				455AFE052000691D00739358 /* radioactive toggle system.cpp in Sources */,
+				455A02BF200875EF00739358 /* cross wire sprite writer.cpp in Sources */,
 				455AFDE11FFF3E8800739358 /* gate init.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
