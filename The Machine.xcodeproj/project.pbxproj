@@ -214,6 +214,17 @@
 		455A00DF20082B9700739358 /* cross wire 1 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 1 9.png"; sourceTree = "<group>"; };
 		455A00E020082B9800739358 /* cross wire 3 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross wire 3 7.png"; sourceTree = "<group>"; };
 		455A00E120082BB000739358 /* cross wire.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "cross wire.anim"; sourceTree = "<group>"; };
+		455A00E22008454200739358 /* exit 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 6.png"; sourceTree = "<group>"; };
+		455A00E32008454300739358 /* exit 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 9.png"; sourceTree = "<group>"; };
+		455A00E42008454300739358 /* exit 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 0.png"; sourceTree = "<group>"; };
+		455A00E52008454400739358 /* exit 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 5.png"; sourceTree = "<group>"; };
+		455A00E62008454700739358 /* exit 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 1.png"; sourceTree = "<group>"; };
+		455A00E72008454800739358 /* exit 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 4.png"; sourceTree = "<group>"; };
+		455A00E82008454900739358 /* exit 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 2.png"; sourceTree = "<group>"; };
+		455A00E92008454900739358 /* exit 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 7.png"; sourceTree = "<group>"; };
+		455A00EA2008454900739358 /* exit 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 8.png"; sourceTree = "<group>"; };
+		455A00EB2008454A00739358 /* exit 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 3.png"; sourceTree = "<group>"; };
+		455A00EC2008456600739358 /* exit.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = exit.anim; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -405,13 +416,6 @@
 		455AFEC12001BEDE00739358 /* piston base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piston base.png"; sourceTree = "<group>"; };
 		455AFEC22001BEDE00739358 /* piston head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piston head.png"; sourceTree = "<group>"; };
 		455AFEC32001C21900739358 /* Logic puzzle design.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Logic puzzle design.txt"; sourceTree = "<group>"; };
-		455AFEC42001D2D900739358 /* exit 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 4.png"; sourceTree = "<group>"; };
-		455AFEC52001D2D900739358 /* exit 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 5.png"; sourceTree = "<group>"; };
-		455AFEC62001D2DA00739358 /* exit 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 2.png"; sourceTree = "<group>"; };
-		455AFEC72001D2DA00739358 /* exit 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 3.png"; sourceTree = "<group>"; };
-		455AFEC82001D2DB00739358 /* exit 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 0.png"; sourceTree = "<group>"; };
-		455AFEC92001D2DB00739358 /* exit 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 1.png"; sourceTree = "<group>"; };
-		455AFECA2001D2E700739358 /* exit.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = exit.anim; sourceTree = "<group>"; };
 		455AFECB2001EE2B00739358 /* signal channel.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "signal channel.anim"; sourceTree = "<group>"; };
 		455AFED42001EFFB00739358 /* signal transmitter.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "signal transmitter.anim"; sourceTree = "<group>"; };
 		455AFEE22001FBA200739358 /* signal receiver.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "signal receiver.anim"; sourceTree = "<group>"; };
@@ -1024,7 +1028,7 @@
 				455A009E2008253200739358 /* box.anim */,
 				455A00AA200826CE00739358 /* button.anim */,
 				455A00E120082BB000739358 /* cross wire.anim */,
-				455AFECA2001D2E700739358 /* exit.anim */,
+				455A00EC2008456600739358 /* exit.anim */,
 				455AFE3B2000A41D00739358 /* gates.anim */,
 				455AFE8B2000B6EB00739358 /* lever.anim */,
 				455AFEC02001BED000739358 /* piston base.anim */,
@@ -1110,12 +1114,16 @@
 				455A00D620082B9400739358 /* cross wire 3 8.png */,
 				455A00CC20082B8F00739358 /* cross wire 3 9.png */,
 				455A00CE20082B9000739358 /* cross wire 3 10.png */,
-				455AFEC82001D2DB00739358 /* exit 0.png */,
-				455AFEC92001D2DB00739358 /* exit 1.png */,
-				455AFEC62001D2DA00739358 /* exit 2.png */,
-				455AFEC72001D2DA00739358 /* exit 3.png */,
-				455AFEC42001D2D900739358 /* exit 4.png */,
-				455AFEC52001D2D900739358 /* exit 5.png */,
+				455A00E42008454300739358 /* exit 0.png */,
+				455A00E62008454700739358 /* exit 1.png */,
+				455A00E82008454900739358 /* exit 2.png */,
+				455A00EB2008454A00739358 /* exit 3.png */,
+				455A00E72008454800739358 /* exit 4.png */,
+				455A00E52008454400739358 /* exit 5.png */,
+				455A00E22008454200739358 /* exit 6.png */,
+				455A00E92008454900739358 /* exit 7.png */,
+				455A00EA2008454900739358 /* exit 8.png */,
+				455A00E32008454300739358 /* exit 9.png */,
 				455AFE3F2000A55E00739358 /* gate 0.png */,
 				455AFE402000A55F00739358 /* gate 1.png */,
 				455AFE432000A55F00739358 /* gate 2.png */,
