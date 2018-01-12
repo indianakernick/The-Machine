@@ -11,6 +11,7 @@
 
 #include "power sprite writer.hpp"
 #include "static sprite writer.hpp"
+#include "cross wire sprite writer.hpp"
 #include "radioactivity sprite writer.hpp"
 
 #endif

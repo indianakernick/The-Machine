@@ -12,6 +12,25 @@
 #include "cross wire sprite component.hpp"
 
 namespace {
+  using Anim = Unpack::SpriteID CrossWireSprite::*;
+  constexpr Anim BOTH = &CrossWireSprite::both;
+  constexpr Anim INVERTED = &CrossWireSprite::inverted;
+  constexpr Anim HORI_OFF = &CrossWireSprite::horiOff;
+  constexpr Anim HORI_ON = &CrossWireSprite::horiOn;
+  
+  constexpr Math::Dir UP = Math::Dir::UP;
+  constexpr Math::Dir RIGHT = Math::Dir::RIGHT;
+  
+  constexpr Frame BEGIN = 0;
+  constexpr Frame END = FRAMES_PER_TICK;
+  
+  struct Row {
+    Anim anim;
+    Math::Dir orient;
+    Frame start;
+    int dir;
+  };
+
   /*
   
   ┏━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━┓
@@ -39,14 +58,24 @@ namespace {
   
   */
   
-  Unpack::SpriteID getAnimFrame(
-    CrossWire cross,
-    const CrossWireSprite sprite,
-    const Frame frame,
-    Math::Dir &orient
-  ) {
-    return 0;
-  }
+  constexpr Row TABLE[16] = {
+    {BOTH, UP, BEGIN, 0},
+    {HORI_OFF, RIGHT, BEGIN, 1},
+    {HORI_OFF, RIGHT, END, -1},
+    {INVERTED, UP, BEGIN, 0},
+    {HORI_OFF, UP, BEGIN, 1},
+    {BOTH, UP, BEGIN, 1},
+    {INVERTED, UP, BEGIN, 1},
+    {HORI_ON, UP, BEGIN, 1},
+    {HORI_OFF, UP, END, -1},
+    {INVERTED, UP, END, -1},
+    {BOTH, UP, END, -1},
+    {HORI_ON, UP, END, -1},
+    {INVERTED, RIGHT, BEGIN, 0},
+    {HORI_ON, RIGHT, BEGIN, 1},
+    {HORI_ON, RIGHT, END, -1},
+    {BOTH, UP, END, 0}
+  };
 }
 
 void CrossWireSpriteWriter::writeQuads(
@@ -61,7 +90,14 @@ void CrossWireSpriteWriter::writeQuads(
     const CrossWireSprite sprite = view.get<CrossWireSprite>(entity);
     SpritePosition spritePos = view.get<SpritePosition>(entity);
     
-    const Unpack::SpriteID animFrame = getAnimFrame(cross, sprite, frame, spritePos.orient);
+    const size_t key = (cross.vert.prev << 3) |
+                       (cross.vert.curr << 2) |
+                       (cross.hori.prev << 1) |
+                        cross.hori.curr;
+    const Row row = TABLE[key];
+    spritePos.orient = row.orient;
+    const Unpack::SpriteID animFrame = sprite.*(row.anim) + row.start + frame * row.dir;
+    
     writePos(quadIter, spritePos);
     writeTexCoords(quadIter, sheet, animFrame);
     

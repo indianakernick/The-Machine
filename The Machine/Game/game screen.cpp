@@ -18,6 +18,7 @@ void GameScreen::init() {
   rendering.init();
   rendering.addWriter<PowerSpriteWriter>();
   rendering.addWriter<StaticSpriteWriter>();
+  rendering.addWriter<CrossWireSpriteWriter>();
   rendering.addWriter<RadioactivitySpriteWriter>();
 
   camera.transform.setOrigin(Cam2D::Origin::CENTER);
