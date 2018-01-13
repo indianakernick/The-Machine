@@ -176,5 +176,34 @@ assemble([
   e.signal_transmitter({
     pos: [20, 2],
     channel: 5
+  }),
+
+  e.button({
+    pos: [25, 0]
+  }),
+  e.wire({
+    pos: [25, 1],
+    sides: ["up", "down", "right"]
+  }),
+  e.wire({
+    pos: [26, 1],
+    sides: ["left", "up"]
+  }),
+  e.wire({
+    pos: [26, 2],
+    sides: ["down", "up"]
+  }),
+  e.delay({
+    pos: [25, 2],
+    length: 2,
+    dir: "up"
+  }),
+  a.piston({
+    pos: [25, 3],
+    dir: "up"
+  }),
+  a.piston({
+    pos: [26, 3],
+    dir: "up"
   })
 ])

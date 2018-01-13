@@ -28,6 +28,7 @@
 		455A03162009C64F00739358 /* power input system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A03142009C64F00739358 /* power input system.cpp */; };
 		455A031E2009D8D600739358 /* delay init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A031C2009D8D600739358 /* delay init.cpp */; };
 		455A03212009DBFE00739358 /* delay system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A031F2009DBFE00739358 /* delay system.cpp */; };
+		455A03232009EB8B00739358 /* delay entity.libsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 455A03222009EB8B00739358 /* delay entity.libsonnet */; };
 		455AFD861FFDB34400739358 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD841FFDB34400739358 /* app.cpp */; };
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
@@ -697,6 +698,7 @@
 		455A031D2009D8D600739358 /* delay init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "delay init.hpp"; sourceTree = "<group>"; };
 		455A031F2009DBFE00739358 /* delay system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "delay system.cpp"; sourceTree = "<group>"; };
 		455A03202009DBFE00739358 /* delay system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "delay system.hpp"; sourceTree = "<group>"; };
+		455A03222009EB8B00739358 /* delay entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "delay entity.libsonnet"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -1283,6 +1285,7 @@
 				455A003F20048E2B00739358 /* wall entity.libsonnet */,
 				455A00412004916900739358 /* wire entity.libsonnet */,
 				455A007C2005DCA800739358 /* cross wire entity.libsonnet */,
+				455A03222009EB8B00739358 /* delay entity.libsonnet */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -1933,6 +1936,7 @@
 				455AFF18200218B800739358 /* sprite shader.frag in Resources */,
 				455AFE462000A57800739358 /* sprites.atlas in Resources */,
 				455AFE472000A57800739358 /* sprites.png in Resources */,
+				455A03232009EB8B00739358 /* delay entity.libsonnet in Resources */,
 				450759921FFC77E30009B360 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

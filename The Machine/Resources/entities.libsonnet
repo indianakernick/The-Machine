@@ -14,5 +14,6 @@
   signal_transmitter: import "signal transmitter entity.libsonnet",
   wall: import "wall entity.libsonnet",
   wire: import "wire entity.libsonnet",
-  cross_wire: import "cross wire entity.libsonnet"
+  cross_wire: import "cross wire entity.libsonnet",
+  delay: import "delay entity.libsonnet"
 }

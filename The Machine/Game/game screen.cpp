@@ -95,6 +95,7 @@ void GameScreen::update(const float ) {
   
   powerInputSystem(registry, grid);
   gateSystem(registry);
+  delaySystem(registry);
   wireSystem(registry, grid);
   deviceInputSystem(registry);
   
