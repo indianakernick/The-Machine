@@ -35,13 +35,17 @@ namespace {
     }
     
     if (registry.has<Wire>(entity)) {
+      const Wire wire = registry.get<Wire>(entity);
+      if (!Math::test(wire.sides, Math::opposite(fromPrev))) {
+        return;
+      }
+    
       Power &power = registry.get<Power>(entity);
       if (power.curr) {
         return;
       }
       power.curr = true;
       
-      Wire &wire = registry.get<Wire>(entity);
       for (const Math::Dir dir : Math::DIR_RANGE) {
         if (Math::test(wire.sides, dir)) {
           propagatePower(registry, grid, pos + ToVec::conv(dir), dir);
