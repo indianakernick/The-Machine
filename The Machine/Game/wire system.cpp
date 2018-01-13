@@ -72,10 +72,6 @@ namespace {
 void wireSystem(ECS::Registry &registry, const EntityGrid &grid) {
   const auto outputView = registry.view<Power, Position, PowerOutput>();
   for (const ECS::EntityID entity : outputView) {
-    if (registry.has<Wire>(entity) || registry.has<CrossWire>(entity)) {
-      continue;
-    }
-  
     if (!outputView.get<Power>(entity).prev) {
       continue;
     }

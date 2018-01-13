@@ -92,9 +92,10 @@ void GameScreen::update(const float ) {
   leverSystem(registry, grid);
   buttonSystem(registry, grid);
   
-  gateSystem(registry, grid);
+  powerInputSystem(registry, grid);
+  gateSystem(registry);
   wireSystem(registry, grid);
-  deviceInputSystem(registry, grid);
+  deviceInputSystem(registry);
   
   radioactiveToggleSystem(registry, grid);
   pistonSystem(registry, grid);

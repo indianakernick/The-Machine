@@ -9,8 +9,9 @@
 #ifndef device_input_system_hpp
 #define device_input_system_hpp
 
-#include "entity grid.hpp"
+#include <Simpleton/ECS/registry.hpp>
 
-void deviceInputSystem(ECS::Registry &, const EntityGrid &);
+// set the Power state of Devices based on PowerInput
+void deviceInputSystem(ECS::Registry &);
 
 #endif

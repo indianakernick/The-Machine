@@ -9,10 +9,9 @@
 #ifndef gate_system_hpp
 #define gate_system_hpp
 
-#include "entity grid.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
-// read the inputs for a gate and calculate the output
-void gateSystem(ECS::Registry &, const EntityGrid &);
+// Read the inputs for a gate and calculate the output
+void gateSystem(ECS::Registry &);
 
 #endif

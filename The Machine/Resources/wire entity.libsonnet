@@ -37,7 +37,6 @@ function(params) {
     Position: params.pos,
     Power: {},
     Wire: common.getDirBitsetComp(params.sides, ""),
-    PowerOutput: common.getDirBitsetComp(params.sides, ""),
     SpritePosition: {
       depth: common.getDepth("static"),
       dir: getWireDir(params.sides)
