@@ -115,5 +115,24 @@ assemble([
   a.piston({
     pos: [12, 3],
     dir: "up"
+  }),
+
+  e.button({
+    pos: [18, 0]
+  }),
+  e.radioactive_toggle({
+    pos: [18, 1],
+    dir: "up"
+  }),
+  e.box({
+    pos: [18, 2]
+  }),
+  e.radioactivity_detector({
+    pos: [18, 3],
+    dir: "down"
+  }),
+  a.piston({
+    pos: [18, 4],
+    dir: "up"
   })
 ])
