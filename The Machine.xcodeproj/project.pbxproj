@@ -1956,7 +1956,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" |         # find\negrep --only-matching \"level (\\d+|final)\" |                # trim path and extension\nwhile read name; do\n  jsonnet --max-stack 1024 \"$PROJECT_RES/$name.jsonnet\" |  # compile jsonnet\n  jq -cM . > \"$PRODUCT_RES/$name.json\"                     # minify json\n  # exit if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone";
+			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" |              # find\negrep --only-matching \"level (\\d+|final)\" |                     # trim path and extension\nwhile read name; do\n  echo \"Compiling level $name\"\n  time jsonnet --max-stack 1024 \"$PROJECT_RES/$name.jsonnet\" |  # compile jsonnet\n  jq -cM . > \"$PRODUCT_RES/$name.json\"                          # minify json\n  # exit if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone";
 		};
 		455AFE392000A39900739358 /* Pack Sprites */ = {
 			isa = PBXShellScriptBuildPhase;
