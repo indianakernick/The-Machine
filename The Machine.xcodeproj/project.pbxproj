@@ -698,6 +698,15 @@
 		455A031F2009DBFE00739358 /* delay system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "delay system.cpp"; sourceTree = "<group>"; };
 		455A03202009DBFE00739358 /* delay system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "delay system.hpp"; sourceTree = "<group>"; };
 		455A03222009EB8B00739358 /* delay entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "delay entity.libsonnet"; sourceTree = "<group>"; };
+		455A0324200ACEFB00739358 /* delay.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = delay.anim; sourceTree = "<group>"; };
+		455A0325200ACF4400739358 /* delay 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delay 0.png"; sourceTree = "<group>"; };
+		455A0326200ACF4400739358 /* delay 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delay 7.png"; sourceTree = "<group>"; };
+		455A0327200ACF4500739358 /* delay 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delay 2.png"; sourceTree = "<group>"; };
+		455A0328200ACF4500739358 /* delay 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delay 6.png"; sourceTree = "<group>"; };
+		455A0329200ACF4600739358 /* delay 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delay 1.png"; sourceTree = "<group>"; };
+		455A032A200ACF4600739358 /* delay 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delay 3.png"; sourceTree = "<group>"; };
+		455A032B200ACF4700739358 /* delay 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delay 5.png"; sourceTree = "<group>"; };
+		455A032C200ACF4700739358 /* delay 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delay 4.png"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -1266,10 +1275,12 @@
 		455AFDA71FFDC85C00739358 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				455AFDAA1FFDC91900739358 /* common.libsonnet */,
 				455AFDAC1FFDC93500739358 /* entities.libsonnet */,
+				455AFDAA1FFDC91900739358 /* common.libsonnet */,
 				455A00182004283900739358 /* box entity.libsonnet */,
 				455A001A20042ED300739358 /* button entity.libsonnet */,
+				455A007C2005DCA800739358 /* cross wire entity.libsonnet */,
+				455A03222009EB8B00739358 /* delay entity.libsonnet */,
 				455A002020043D2D00739358 /* exit entity.libsonnet */,
 				455A002220044BD300739358 /* gate entity.libsonnet */,
 				455A0026200458BA00739358 /* lever entity.libsonnet */,
@@ -1283,8 +1294,6 @@
 				455A003D20048C9E00739358 /* signal transmitter entity.libsonnet */,
 				455A003F20048E2B00739358 /* wall entity.libsonnet */,
 				455A00412004916900739358 /* wire entity.libsonnet */,
-				455A007C2005DCA800739358 /* cross wire entity.libsonnet */,
-				455A03222009EB8B00739358 /* delay entity.libsonnet */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -1295,6 +1304,7 @@
 				455A009E2008253200739358 /* box.anim */,
 				455A00AA200826CE00739358 /* button.anim */,
 				455A00E120082BB000739358 /* cross wire.anim */,
+				455A0324200ACEFB00739358 /* delay.anim */,
 				455A00EC2008456600739358 /* exit.anim */,
 				455AFE3B2000A41D00739358 /* gates.anim */,
 				455A00F82008488500739358 /* lever.anim */,
@@ -1381,6 +1391,14 @@
 				455A00D620082B9400739358 /* cross wire 3 8.png */,
 				455A00CC20082B8F00739358 /* cross wire 3 9.png */,
 				455A00CE20082B9000739358 /* cross wire 3 10.png */,
+				455A0325200ACF4400739358 /* delay 0.png */,
+				455A0329200ACF4600739358 /* delay 1.png */,
+				455A0327200ACF4500739358 /* delay 2.png */,
+				455A032A200ACF4600739358 /* delay 3.png */,
+				455A032C200ACF4700739358 /* delay 4.png */,
+				455A032B200ACF4700739358 /* delay 5.png */,
+				455A0328200ACF4500739358 /* delay 6.png */,
+				455A0326200ACF4400739358 /* delay 7.png */,
 				455A00E42008454300739358 /* exit 0.png */,
 				455A00E62008454700739358 /* exit 1.png */,
 				455A00E82008454900739358 /* exit 2.png */,

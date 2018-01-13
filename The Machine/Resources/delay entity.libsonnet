@@ -1,4 +1,5 @@
 local common = import "common.libsonnet";
+local maxDelay = 8;
 
 function(params) {
   components: common.checkParams(params, ["pos", "length", "dir"]) {
@@ -17,7 +18,7 @@ function(params) {
       dir: common.getDir(params.dir)
     },
     StaticSprite: {
-      sprite: common.getSpriteID("gate 7"),
+      sprite: common.getSpriteID("delay 0") + params.length - 1,
       animated: false
     }
   }
