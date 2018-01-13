@@ -206,5 +206,38 @@ assemble([
   a.piston({
     pos: [26, 3],
     dir: "up"
+  }),
+
+  e.button({
+    pos: [5, 15]
+  }),
+  e.wire({
+    pos: [6, 15],
+    sides: ["left", "up", "right"]
+  }),
+  e.delay({
+    pos: [7, 15],
+    dir: "right",
+    length: 1
+  }),
+  e.wire({
+    pos: [8, 15],
+    sides: ["left", "up", "right"]
+  }),
+  a.piston({
+    pos: [9, 15],
+    dir: "right"
+  }),
+  e.wire({
+    pos: [8, 16],
+    sides: ["left", "down"]
+  }),
+  e.wire({
+    pos: [7, 16],
+    sides: ["left", "right"]
+  }),
+  e.wire({
+    pos: [6, 16],
+    sides: ["right", "down"]
   })
 ])
