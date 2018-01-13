@@ -11,6 +11,7 @@
 
 #include "gate init.hpp"
 #include "wire init.hpp"
+#include "delay init.hpp"
 #include "weight init.hpp"
 #include "piston init.hpp"
 #include "position init.hpp"

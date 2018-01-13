@@ -12,6 +12,7 @@
 #include "exit component.hpp"
 #include "gate component.hpp"
 #include "wire component.hpp"
+#include "delay component.hpp"
 #include "power component.hpp"
 #include "lever component.hpp"
 #include "device component.hpp"
@@ -43,6 +44,7 @@ using CompList = Utils::TypeList<
   Exit,
   Gate,
   Wire,
+  Delay,
   Power,
   Lever,
   Device,

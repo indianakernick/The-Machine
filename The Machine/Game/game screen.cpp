@@ -26,6 +26,7 @@ void GameScreen::init() {
 
   compInits.construct<GateInit>();
   compInits.construct<WireInit>();
+  compInits.construct<DelayInit>();
   compInits.construct<PistonInit>();
   compInits.construct<WeightInit>();
   compInits.construct<PositionInit>();
