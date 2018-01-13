@@ -11,14 +11,15 @@
 
 struct Delay {
   enum class State {
-    FALL = -1,
-    NONE = 0,
-    RISE = 1
+    LOW,
+    RISE,
+    HIGH,
+    FALL
   };
 
   unsigned length;
   unsigned counter = 0;
-  State state = State::NONE;
+  State state = State::LOW;
 };
 
 #endif

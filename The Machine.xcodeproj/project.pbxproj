@@ -27,6 +27,7 @@
 		455A02BF200875EF00739358 /* cross wire sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A02BD200875EF00739358 /* cross wire sprite writer.cpp */; };
 		455A03162009C64F00739358 /* power input system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A03142009C64F00739358 /* power input system.cpp */; };
 		455A031E2009D8D600739358 /* delay init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A031C2009D8D600739358 /* delay init.cpp */; };
+		455A03212009DBFE00739358 /* delay system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A031F2009DBFE00739358 /* delay system.cpp */; };
 		455AFD861FFDB34400739358 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD841FFDB34400739358 /* app.cpp */; };
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
@@ -694,6 +695,8 @@
 		455A03172009D77400739358 /* delay component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "delay component.hpp"; sourceTree = "<group>"; };
 		455A031C2009D8D600739358 /* delay init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "delay init.cpp"; sourceTree = "<group>"; };
 		455A031D2009D8D600739358 /* delay init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "delay init.hpp"; sourceTree = "<group>"; };
+		455A031F2009DBFE00739358 /* delay system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "delay system.cpp"; sourceTree = "<group>"; };
+		455A03202009DBFE00739358 /* delay system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "delay system.hpp"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -978,6 +981,8 @@
 				455A00972007243C00739358 /* device input system.hpp */,
 				455A03142009C64F00739358 /* power input system.cpp */,
 				455A03152009C64F00739358 /* power input system.hpp */,
+				455A031F2009DBFE00739358 /* delay system.cpp */,
+				455A03202009DBFE00739358 /* delay system.hpp */,
 			);
 			name = Power;
 			sourceTree = "<group>";
@@ -1999,6 +2004,7 @@
 				455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */,
 				455AFE10200075C300739358 /* signal receiver init.cpp in Sources */,
 				455AFDD21FFF0B9200739358 /* update pos system.cpp in Sources */,
+				455A03212009DBFE00739358 /* delay system.cpp in Sources */,
 				455AFE3420009C6C00739358 /* button system.cpp in Sources */,
 				455AFF28200232CF00739358 /* radioactivity sprite init.cpp in Sources */,
 				455AFF2C200234B400739358 /* power sprite init.cpp in Sources */,
