@@ -12,6 +12,7 @@
 #include "gate component.hpp"
 #include "power component.hpp"
 #include "position component.hpp"
+#include "cross wire component.hpp"
 #include "power input component.hpp"
 #include "power output component.hpp"
 
@@ -99,7 +100,16 @@ void gateSystem(ECS::Registry &registry, const EntityGrid &grid) {
         continue;
       }
       
-      inputStates.push_back(powerView.get(targetID).prev);
+      if (registry.has<Power>(targetID)) {
+        inputStates.push_back(registry.get<Power>(targetID).prev);
+      } else if (registry.has<CrossWire>(targetID)) {
+        const CrossWire cross = registry.get<CrossWire>(targetID);
+        if (Math::isVert(dir)) {
+          inputStates.push_back(cross.vert.prev);
+        } else {
+          inputStates.push_back(cross.hori.prev);
+        }
+      }
     }
     
     const GateFun gateFun = gateView.get<Gate>(entity).fun;

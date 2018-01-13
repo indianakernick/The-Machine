@@ -27,36 +27,20 @@ assemble([
   }),
 
   e.lever({
-    pos: [10, 5]
-  }),
-  e.wire({
-    pos: [10, 6],
-    sides: ["down", "up"]
+    pos: [10, 6]
   }),
   e.cross_wire({
     pos: [10, 7]
   }),
-  e.wire({
-    pos: [10, 8],
-    sides: ["down", "up"]
-  }),
   a.piston({
-    pos: [10, 9],
+    pos: [10, 8],
     dir: "up"
   }),
   e.lever({
-    pos: [8, 7]
-  }),
-  e.wire({
-    pos: [9, 7],
-    sides: ["left", "right"]
-  }),
-  e.wire({
-    pos: [11, 7],
-    sides: ["left", "right"]
+    pos: [9, 7]
   }),
   a.piston({
-    pos: [12, 7],
+    pos: [11, 7],
     dir: "right"
   }),
 

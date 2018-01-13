@@ -12,6 +12,7 @@
 #include "power component.hpp"
 #include "device component.hpp"
 #include "position component.hpp"
+#include "cross wire component.hpp"
 #include "power input component.hpp"
 #include "power output component.hpp"
 
@@ -50,7 +51,16 @@ void deviceInputSystem(ECS::Registry &registry, const EntityGrid &grid) {
         continue;
       }
       
-      power = registry.get<Power>(targetID).prev;
+      if (registry.has<Power>(targetID)) {
+        power = power || registry.get<Power>(targetID).prev;
+      } else if (registry.has<CrossWire>(targetID)) {
+        const CrossWire cross = registry.get<CrossWire>(targetID);
+        if (Math::isVert(dir)) {
+          power = power || cross.vert.prev;
+        } else {
+          power = power || cross.hori.prev;
+        }
+      }
     }
     
     view.get<Power>(entity).curr = power;
