@@ -81,4 +81,39 @@ assemble([
     pos: [20, 9],
     dir: "down"
   }),
+
+  a.piston({
+    pos: [10, 1],
+    dir: "right"
+  }),
+  e.box({
+    pos: [11, 1],
+    radioactive: true
+  }),
+  a.piston({
+    pos: [13, 1],
+    dir: "left"
+  }),
+  e.button({
+    pos: [10, 0]
+  }),
+  e.button({
+    pos: [13, 0]
+  }),
+  e.radioactivity_detector({
+    pos: [11, 2],
+    dir: "down"
+  }),
+  e.radioactivity_detector({
+    pos: [12, 2],
+    dir: "down"
+  }),
+  a.piston({
+    pos: [11, 3],
+    dir: "up"
+  }),
+  a.piston({
+    pos: [12, 3],
+    dir: "up"
+  })
 ])
