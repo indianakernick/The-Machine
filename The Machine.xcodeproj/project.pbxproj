@@ -1028,21 +1028,46 @@
 			name = Logic;
 			sourceTree = "<group>";
 		};
-		455AFD8F1FFDB86300739358 /* Components */ = {
+		455A03032009BF4B00739358 /* Motion */ = {
 			isa = PBXGroup;
 			children = (
-				455AFD901FFDB88300739358 /* component list.hpp */,
 				455AFDA31FFDC46E00739358 /* static collision component.hpp */,
 				455AFDAE1FFDD67F00739358 /* dynamic collision component.hpp */,
 				455AFDB31FFDE0B800739358 /* movement component.hpp */,
-				455AFDB81FFDE6A900739358 /* player action component.hpp */,
 				455AFDC01FFDEE1900739358 /* position component.hpp */,
-				455AFDD41FFF191F00739358 /* power component.hpp */,
-				455AFDD51FFF19A300739358 /* power input component.hpp */,
-				455AFDD61FFF19AD00739358 /* power output component.hpp */,
+			);
+			name = Motion;
+			sourceTree = "<group>";
+		};
+		455A03042009BF7B00739358 /* Power */ = {
+			isa = PBXGroup;
+			children = (
+				455A00862005E99700739358 /* device component.hpp */,
 				455AFDDD1FFF3DDD00739358 /* gate component.hpp */,
 				455AFDDE1FFF3E2F00739358 /* wire component.hpp */,
 				455A007E2005DDA700739358 /* cross wire component.hpp */,
+				455AFDD51FFF19A300739358 /* power input component.hpp */,
+				455AFDD61FFF19AD00739358 /* power output component.hpp */,
+				455AFDD41FFF191F00739358 /* power component.hpp */,
+			);
+			name = Power;
+			sourceTree = "<group>";
+		};
+		455A03052009BFB500739358 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				455AFF1A20022B4100739358 /* static sprite component.hpp */,
+				455AFF252002325700739358 /* radioactivity sprite component.hpp */,
+				455AFF29200233B000739358 /* power sprite component.hpp */,
+				455A000B20033B6000739358 /* sprite position component.hpp */,
+				455A007F2005DDE000739358 /* cross wire sprite component.hpp */,
+			);
+			name = Rendering;
+			sourceTree = "<group>";
+		};
+		455A03062009BFC500739358 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
 				455AFDF4200056D600739358 /* radioactivity component.hpp */,
 				455AFDF8200059AB00739358 /* radioactivity detector component.hpp */,
 				455AFDFC20005D5600739358 /* radioactive toggle component.hpp */,
@@ -1054,12 +1079,27 @@
 				455AFE2D2000946A00739358 /* lever component.hpp */,
 				455AFE2E200094B500739358 /* button component.hpp */,
 				455AFE8C2000B7D800739358 /* exit component.hpp */,
-				455AFF1A20022B4100739358 /* static sprite component.hpp */,
-				455AFF252002325700739358 /* radioactivity sprite component.hpp */,
-				455AFF29200233B000739358 /* power sprite component.hpp */,
-				455A000B20033B6000739358 /* sprite position component.hpp */,
-				455A007F2005DDE000739358 /* cross wire sprite component.hpp */,
-				455A00862005E99700739358 /* device component.hpp */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		455A03072009BFCD00739358 /* Player Input */ = {
+			isa = PBXGroup;
+			children = (
+				455AFDB81FFDE6A900739358 /* player action component.hpp */,
+			);
+			name = "Player Input";
+			sourceTree = "<group>";
+		};
+		455AFD8F1FFDB86300739358 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				455AFD901FFDB88300739358 /* component list.hpp */,
+				455A03032009BF4B00739358 /* Motion */,
+				455A03072009BFCD00739358 /* Player Input */,
+				455A03042009BF7B00739358 /* Power */,
+				455A03062009BFC500739358 /* Logic */,
+				455A03052009BFB500739358 /* Rendering */,
 			);
 			name = Components;
 			sourceTree = "<group>";
