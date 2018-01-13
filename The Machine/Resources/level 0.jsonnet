@@ -139,9 +139,10 @@ assemble([
   e.button({
     pos: [22, 0]
   }),
-  e.wire({
+  e.delay({
     pos: [22, 1],
-    sides: ["up", "down"]
+    dir: "up",
+    length: 2
   }),
   e.wire({
     pos: [23, 0],
