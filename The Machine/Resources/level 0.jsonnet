@@ -44,33 +44,41 @@ assemble([
     dir: "right"
   }),
 
-  e.wire({
-    pos: [16, 5],
-    sides: ["left", "right"]
-  }),
-  e.wire({
-    pos: [15, 5],
-    sides: ["up", "right"]
-  }),
-  e.wire({
-    pos: [15, 6],
-    sides: ["up", "down", "right"]
-  }),
   e.gate({
-    pos: [16, 6],
-    dir: "left",
-    gate: "not"
+    pos: [15, 6],
+    gate: "nor",
+    dir: "right"
   }),
   e.wire({
-    pos: [17, 6],
+    pos: [16, 6],
     sides: ["left", "down"]
   }),
   e.wire({
-    pos: [17, 5],
-    sides: ["left", "up"]
+    pos: [16, 5],
+    sides: ["up", "left"]
+  }),
+  e.wire({
+    pos: [15, 5],
+    sides: ["right", "up"]
   }),
   a.piston({
     pos: [15, 7],
     dir: "up"
-  })
+  }),
+
+  e.button({
+    pos: [5, 0]
+  }),
+  e.signal_transmitter({
+    pos: [5, 1],
+    channel: 5
+  }),
+  e.signal_receiver({
+    pos: [20, 10],
+    channel: 5
+  }),
+  a.piston({
+    pos: [20, 9],
+    dir: "down"
+  }),
 ])

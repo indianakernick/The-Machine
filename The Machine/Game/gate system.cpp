@@ -38,11 +38,11 @@ namespace {
           return !inputs[0];
         }
       case GateFun::NAND:
-        return std::all_of(inputs.cbegin(), inputs.cend(), equals(false));
+        return !std::all_of(inputs.cbegin(), inputs.cend(), equals(true));
       case GateFun::NOR:
-        return std::any_of(inputs.cbegin(), inputs.cend(), equals(false));
+        return !std::any_of(inputs.cbegin(), inputs.cend(), equals(true));
       case GateFun::XNOR:
-        return std::count(inputs.cbegin(), inputs.cend(), false) == 1;
+        return std::count(inputs.cbegin(), inputs.cend(), true) != 1;
       case GateFun::IDENTITY:
         if (inputs.size() != 1) {
           throw std::runtime_error("IDENTITY function expects single input");
