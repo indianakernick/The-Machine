@@ -1,19 +1,7 @@
 {
   sheet: (import "sprites.atlas"),
 
-  getSpriteID(name)::
-    local find(info, current) =
-      if info.found == -1 && name == current[0] then
-        {found: info.index, index: info.index + 1}
-      else
-        {found: info.found, index: info.index + 1}
-    ;
-    local found = std.foldl(find, $.sheet.rects, {found: -1, index: 0}).found;
-    if found == -1 then
-      error "Sprite not found in spritesheet: \"" + name + "\""
-    else
-      found
-  ,
+  getSpriteID(name):: $.sheet.names[name],
 
   checkParams(params, validNames)::
     local paramNames = std.set(std.objectFields(params));

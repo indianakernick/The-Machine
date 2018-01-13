@@ -28,7 +28,6 @@
 		455A03162009C64F00739358 /* power input system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A03142009C64F00739358 /* power input system.cpp */; };
 		455A031E2009D8D600739358 /* delay init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A031C2009D8D600739358 /* delay init.cpp */; };
 		455A03212009DBFE00739358 /* delay system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A031F2009DBFE00739358 /* delay system.cpp */; };
-		455A03232009EB8B00739358 /* delay entity.libsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 455A03222009EB8B00739358 /* delay entity.libsonnet */; };
 		455AFD861FFDB34400739358 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD841FFDB34400739358 /* app.cpp */; };
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
@@ -1936,7 +1935,6 @@
 				455AFF18200218B800739358 /* sprite shader.frag in Resources */,
 				455AFE462000A57800739358 /* sprites.atlas in Resources */,
 				455AFE472000A57800739358 /* sprites.png in Resources */,
-				455A03232009EB8B00739358 /* delay entity.libsonnet in Resources */,
 				450759921FFC77E30009B360 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1956,7 +1954,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" |              # find\negrep --only-matching \"level (\\d+|final)\" |                     # trim path and extension\nwhile read name; do\n  echo \"Compiling level $name\"\n  time jsonnet --max-stack 1024 \"$PROJECT_RES/$name.jsonnet\" |  # compile jsonnet\n  jq -cM . > \"$PRODUCT_RES/$name.json\"                          # minify json\n  # exit if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone";
+			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  echo \"Compiling level $name\"\n  time jsonnet \"$PROJECT_RES/$name.jsonnet\" |      # compile jsonnet\n  jq -cM . > \"$PRODUCT_RES/$name.json\"             # minify json\n  # exit if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone";
 		};
 		455AFE392000A39900739358 /* Pack Sprites */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1970,7 +1968,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources\"\n\npacker --silent sprite\\ config.json";
+			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources\"\n\ntime packer --silent sprite\\ config.json";
 		};
 /* End PBXShellScriptBuildPhase section */
 
