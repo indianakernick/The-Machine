@@ -16,23 +16,22 @@ function(params) {
       depth: common.getDepth("static")
     },
     PowerSprite: {
-      local spriteName = "signal receiver channel " + params.channel,
-      local onID = common.getSpriteID(spriteName + " on 0"),
+      local id = common.getSpriteID("signal receiver " + params.channel + " 0"),
 
       low: {
-        start: onID,
+        start: id,
         dir: 0
       },
       rise: {
-        start: onID,
+        start: id,
         dir: 1
       },
       fall: {
-        start: onID,
+        start: id,
         dir: 0
       },
       high: {
-        start: onID,
+        start: id,
         dir: 1
       }
     }
