@@ -19,7 +19,7 @@ function(params) {
     },
     StaticSprite: {
       sprite: common.getSpriteID("delay 0") + params.length - 1,
-      animated: false
+      ticks: 0
     }
   }
 }

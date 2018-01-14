@@ -10,10 +10,13 @@
 #define static_sprite_component_hpp
 
 #include <unpacker.hpp>
+#include "frame type.hpp"
 
 struct StaticSprite {
+  Frame frame = 0;
+  Frame repeats = 0;
+  Frame ticks;
   Unpack::SpriteID sprite;
-  bool animated;
 };
 
 #endif

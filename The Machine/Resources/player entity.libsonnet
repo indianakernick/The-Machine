@@ -17,7 +17,7 @@ function(params) {
     },
     StaticSprite: {
       sprite: common.getSpriteID("player"),
-      animated: false
+      ticks: 0
     }
   }
 }

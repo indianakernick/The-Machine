@@ -6,6 +6,9 @@ assemble([
   e.player({
     pos: [0, 0]
   }),
+  e.exit({
+    pos: [31, 17]
+  }),
   e.button({
     pos: [5, 5]
   }),

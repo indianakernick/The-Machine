@@ -11,7 +11,7 @@ function(params) {
     },
     StaticSprite: {
       sprite: common.getSpriteID("wall"),
-      animated: false
+      ticks: 0
     }
   }
 }

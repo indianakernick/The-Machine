@@ -19,7 +19,7 @@ function(params) {
     },
     StaticSprite: {
       sprite: common.getSpriteID("piston head"),
-      animated: false
+      ticks: 0
     }
   }
 }

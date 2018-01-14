@@ -15,7 +15,7 @@ function(params) {
     },
     StaticSprite: {
       sprite: common.getSpriteID("piston base"),
-      animated: false
+      ticks: 0
     }
   }
 }

@@ -10,5 +10,5 @@
 
 void StaticSpriteInit::init(StaticSprite &comp, const json &node) {
   Data::get(comp.sprite, node, "sprite");
-  Data::get(comp.animated, node, "animated");
+  Data::get(comp.ticks, node, "ticks");
 }

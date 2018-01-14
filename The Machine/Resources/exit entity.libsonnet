@@ -12,7 +12,7 @@ function(params) {
     },
     StaticSprite: {
       sprite: common.getSpriteID("exit 0"),
-      animated: true
+      ticks: 4
     }
   }
 }

@@ -47,7 +47,7 @@ function(params) {
     },
     StaticSprite: {
       sprite: common.getSpriteID("gate 0") + gateIndex,
-      animated: false
+      ticks: 0
     }
   }
 }
