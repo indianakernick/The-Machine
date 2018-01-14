@@ -6,13 +6,13 @@ function(params) {
       accepts: "player"
     }),
     Position: params.pos,
+    Exit: {},
     SpritePosition: {
       depth: common.getDepth("static")
     },
     StaticSprite: {
       sprite: common.getSpriteID("exit 0"),
       animated: true
-    },
-    Exit: {}
+    }
   }
 }

@@ -1,4 +1,6 @@
 {
+  framesPerTick: 10,
+
   sheet: (import "sprites.atlas"),
 
   getSpriteID(name):: $.sheet.names[name],
@@ -94,4 +96,24 @@
   getDir(dir)::
     $.indexOf($.dir_names, dir)
   ,
+
+  getTransitionPowerSpriteComp(name): {
+    local id = $.getSpriteID(name),
+    low: {
+      start: id,
+      dir: 0
+    },
+    rise: {
+      start: id,
+      dir: 1
+    },
+    fall: {
+      start: id + $.framesPerTick,
+      dir: -1
+    },
+    high: {
+      start: id + $.framesPerTick,
+      dir: 0
+    }
+  }
 }

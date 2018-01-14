@@ -21,29 +21,19 @@ void PowerSpriteWriter::writeQuads(
   for (const ECS::EntityID entity : view) {
     const Power power = view.get<Power>(entity);
     const PowerSprite sprite = view.get<PowerSprite>(entity);
-    const bool transition = power.curr != power.prev;
     
-    Unpack::SpriteID animFrame;
-    if (transition) {
-      animFrame = sprite.transition;
-      if (power.prev) {
-        animFrame += FRAMES_PER_TICK - frame;
-      } else {
-        animFrame += frame;
-      }
-    } else if (power.prev) {
-      if (sprite.on != Unpack::NULL_SPRITE) {
-        animFrame = sprite.on + frame;
-      } else {
-        animFrame = sprite.transition + FRAMES_PER_TICK;
-      }
+    Anim anim;
+    if (!power.prev && !power.curr) {
+      anim = sprite.low;
+    } else if (!power.prev && power.curr) {
+      anim = sprite.rise;
+    } else if (power.prev && !power.curr) {
+      anim = sprite.fall;
     } else {
-      if (sprite.off != Unpack::NULL_SPRITE) {
-        animFrame = sprite.off + frame;
-      } else {
-        animFrame = sprite.transition;
-      }
+      anim = sprite.high;
     }
+    
+    const Unpack::SpriteID animFrame = anim.start + anim.dir * frame;
     
     writePos(quadIter, view.get<SpritePosition>(entity));
     writeTexCoords(quadIter, sheet, animFrame);

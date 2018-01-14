@@ -13,8 +13,6 @@ function (params) {
     SpritePosition: {
       depth: common.getDepth("static")
     },
-    PowerSprite: {
-      transition: common.getSpriteID("button 0")
-    }
+    PowerSprite: common.getTransitionPowerSpriteComp("button 0")
   }
 }

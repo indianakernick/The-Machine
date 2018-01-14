@@ -26,7 +26,7 @@ local getWireDir(sides) =
 
 local getWireSprite(sides) =
   local sidesSet = common.getDirBitsetComp(sides, "").sides;
-  common.getSpriteID("wire " + wireSprites[sidesSet].sprite + " 0")
+  "wire " + wireSprites[sidesSet].sprite + " 0"
 ;
 
 function(params) {
@@ -41,8 +41,6 @@ function(params) {
       depth: common.getDepth("static"),
       dir: getWireDir(params.sides)
     },
-    PowerSprite: {
-      transition: getWireSprite(params.sides)
-    }
+    PowerSprite: common.getTransitionPowerSpriteComp(getWireSprite(params.sides))
   }
 }

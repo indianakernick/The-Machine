@@ -16,8 +16,6 @@ function(params) {
       depth: common.getDepth("static"),
       dir: common.getDir(params.dir)
     },
-    PowerSprite: {
-      transition: common.getSpriteID("radioactive toggle 0")
-    }
+    PowerSprite: common.getTransitionPowerSpriteComp("radioactive toggle 0")
   }
 }

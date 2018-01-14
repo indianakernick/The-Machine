@@ -11,10 +11,16 @@
 
 #include <unpacker.hpp>
 
+struct Anim {
+  Unpack::SpriteID start;
+  int dir;
+};
+
 struct PowerSprite {
-  Unpack::SpriteID transition;
-  Unpack::SpriteID off = Unpack::NULL_SPRITE;
-  Unpack::SpriteID on = Unpack::NULL_SPRITE;
+  Anim low;
+  Anim rise;
+  Anim fall;
+  Anim high;
 };
 
 #endif

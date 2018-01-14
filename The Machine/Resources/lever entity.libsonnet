@@ -13,8 +13,6 @@ function(params) {
     SpritePosition: {
       depth: common.getDepth("lever")
     },
-    PowerSprite: {
-      transition: common.getSpriteID("lever 0")
-    }
+    PowerSprite: common.getTransitionPowerSpriteComp("lever 0")
   }
 }

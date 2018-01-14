@@ -17,8 +17,24 @@ function(params) {
     },
     PowerSprite: {
       local spriteName = "signal transmitter channel " + params.channel,
-      transition: common.getSpriteID(spriteName + " power 0"),
-      on: common.getSpriteID(spriteName + " on 0")
+      local onID = common.getSpriteID(spriteName + " on 0"),
+
+      low: {
+        start: onID,
+        dir: 0
+      },
+      rise: {
+        start: onID,
+        dir: 1
+      },
+      fall: {
+        start: onID,
+        dir: 0
+      },
+      high: {
+        start: onID,
+        dir: 1
+      }
     }
   }
 }

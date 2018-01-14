@@ -15,9 +15,7 @@ function(params) {
     SpritePosition: {
       depth: common.getDepth("static")
     },
-    PowerSprite: {
-      local weightName = if params.heavy then "heavy" else "light",
-      transition: common.getSpriteID("pressure plate " + weightName + " 0")
-    }
+    local weightName = if params.heavy then "heavy" else "light",
+    PowerSprite: common.getTransitionPowerSpriteComp("pressure plate " + weightName + " 0")
   }
 }
