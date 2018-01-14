@@ -4,7 +4,7 @@ function(params) {
   components: common.checkParams(params, ["pos", "radioactive"]) {
     DynamicCollision: common.getDynamicCollisionComp({
       type: "box",
-      pushed_by: ["player", "piston_head"]
+      pushed_by: "all"
     }),
     Movement: {},
     Position: params.pos,

@@ -9,6 +9,9 @@ assemble([
   e.exit({
     pos: [31, 17]
   }),
+  e.box({
+    pos: [2, 2]
+  }),
   e.button({
     pos: [5, 5]
   }),

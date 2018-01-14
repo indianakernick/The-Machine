@@ -24,12 +24,11 @@ namespace {
     const Pos pos,
     const Math::Dir side
   ) {
-    const auto movementView = registry.view<Movement>();
     const ECS::EntityID fromID = getDynamic(grid, pos + ToVec::conv(side));
     if (fromID == ECS::NULL_ENTITY) {
       return false;
     } else {
-      return (movementView.get(fromID).realDir == Math::opposite(side));
+      return (registry.get<Movement>(fromID).realDir == Math::opposite(side));
     }
   }
   
@@ -40,11 +39,7 @@ namespace {
     const Pos pos,
     const Math::Dir dir
   ) {
-    auto movementView = registry.view<Movement>();
-    const auto staticView = registry.view<StaticCollision>();
-    const auto dynamicView = registry.view<DynamicCollision>();
-    
-    const uint32_t type = dynamicView.get(entity).type;
+    const uint32_t type = registry.get<DynamicCollision>(entity).type;
     const Pos targetPos = pos + ToVec::conv(dir);
     
     // can't move past the edge of the map
@@ -52,11 +47,11 @@ namespace {
       return false;
     }
     
-    const Tile targetTile = grid[targetPos];;
+    const Tile targetTile = grid[targetPos];
     
     // static entity in target tile must accept this type of dynamic entity
     if (targetTile.staticID != ECS::NULL_ENTITY) {
-      const uint32_t accepts = staticView.get(targetTile.staticID).accepts;
+      const uint32_t accepts = registry.get<StaticCollision>(targetTile.staticID).accepts;
       if (!(accepts & type)) {
         return false;
       }
@@ -74,20 +69,20 @@ namespace {
     // if the target tile has a dynamic entity
     if (targetTile.dynamicID != ECS::NULL_ENTITY) {
       // the dynamic entity must allow this entity to push it
-      const uint32_t pushedBy = dynamicView.get(targetTile.dynamicID).pushedBy;
+      const uint32_t pushedBy = registry.get<DynamicCollision>(targetTile.dynamicID).pushedBy;
       if (!(pushedBy & type)) {
         return false;
       }
       // the dynamic entity must be able to move in the direction of this entity
       if (moveInDir(registry, grid, targetTile.dynamicID, targetPos, dir)) {
-        movementView.get(entity).realDir = dir;
+        registry.get<Movement>(entity).realDir = dir;
         return true;
       } else {
         return false;
       }
     } else {
       // there aren't any dynamic entities in the way
-      movementView.get(entity).realDir = dir;
+      registry.get<Movement>(entity).realDir = dir;
       return true;
     }
   }
