@@ -11,6 +11,7 @@
 #include <chrono>
 #include "game screen.hpp"
 #include "title screen.hpp"
+#include <Simpleton/SDL/events.hpp>
 #include <Simpleton/Utils/profiler.hpp>
 #include <Simpleton/Time/main loop.hpp>
 
@@ -97,6 +98,8 @@ bool App::input() {
   while (SDL_PollEvent(&e)) {
     if (e.type == SDL_QUIT) {
       return false;
+    } else if (SDL::keyDown(e, SDL_SCANCODE_M)) {
+      music.togglePlaying();
     } else {
       screenMan.input(e);
     }

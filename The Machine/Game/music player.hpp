@@ -25,6 +25,8 @@ public:
   void init();
   void quit();
   
+  void togglePlaying();
+  
 private:
   std::vector<SDL::Music> songs;
   size_t currentSong = 0;

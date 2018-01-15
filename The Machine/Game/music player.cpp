@@ -52,3 +52,11 @@ void MusicPlayer::init() {
 void MusicPlayer::quit() {
   songs.clear();
 }
+
+void MusicPlayer::togglePlaying() {
+  if (Mix_PausedMusic()) {
+    Mix_ResumeMusic();
+  } else {
+    Mix_PauseMusic();
+  }
+}
