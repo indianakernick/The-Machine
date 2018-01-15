@@ -46,7 +46,9 @@ void App::init() {
   window = SDL::makeWindow(WINDOW_DESC);
   renderingContext.initVSync(window.get());
   
-  audioLibrary = SDL::makeAudioLibrary({});
+  SDL::AudioLibParams audioParams;
+  audioParams.frequency = 44100;
+  audioLibrary = SDL::makeAudioLibrary(audioParams);
   
   screenMan.addScreen<GameScreen>();
   screenMan.addScreen<TitleScreen>();

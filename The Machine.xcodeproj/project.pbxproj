@@ -84,6 +84,16 @@
 		455AFF2F2002E8D300739358 /* static sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF2D2002E8D300739358 /* static sprite writer.cpp */; };
 		45F62404200CA34000AEB428 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; };
 		45F62407200CA39100AEB428 /* SDL2_mixer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		45F62424200CB3DB00AEB428 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241A200CB3C400AEB428 /* 1.wav */; };
+		45F62425200CB3DB00AEB428 /* 6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241B200CB3C600AEB428 /* 6.wav */; };
+		45F62426200CB3DB00AEB428 /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241C200CB3C800AEB428 /* 2.wav */; };
+		45F62427200CB3DB00AEB428 /* 9.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241D200CB3CB00AEB428 /* 9.wav */; };
+		45F62428200CB3DB00AEB428 /* 5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241E200CB3CF00AEB428 /* 5.wav */; };
+		45F62429200CB3DB00AEB428 /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241F200CB3D200AEB428 /* 4.wav */; };
+		45F6242A200CB3DB00AEB428 /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F62420200CB3D400AEB428 /* 3.wav */; };
+		45F6242B200CB3DB00AEB428 /* 8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F62421200CB3D600AEB428 /* 8.wav */; };
+		45F6242C200CB3DB00AEB428 /* 10.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F62422200CB3D900AEB428 /* 10.wav */; };
+		45F6242D200CB3DB00AEB428 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F62423200CB3DB00AEB428 /* 7.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1242,6 +1252,26 @@
 		455AFF2E2002E8D300739358 /* static sprite writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "static sprite writer.hpp"; sourceTree = "<group>"; };
 		455AFF33200331EC00739358 /* anim helpers.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "anim helpers.js"; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
+		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
+		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
+		45F6240F200CB36B00AEB428 /* 02 Underclocked (underunderclocked mix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 Underclocked (underunderclocked mix).mp3"; sourceTree = "<group>"; };
+		45F62410200CB36B00AEB428 /* 07 We're the Resistors.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 We're the Resistors.mp3"; sourceTree = "<group>"; };
+		45F62411200CB36C00AEB428 /* 03 Chibi Ninja.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03 Chibi Ninja.mp3"; sourceTree = "<group>"; };
+		45F62412200CB36C00AEB428 /* 01 A Night Of Dizzy Spells.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 A Night Of Dizzy Spells.mp3"; sourceTree = "<group>"; };
+		45F62413200CB36D00AEB428 /* 05 Come and Find Me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 Come and Find Me.mp3"; sourceTree = "<group>"; };
+		45F62414200CB36D00AEB428 /* 10 Arpanauts.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 Arpanauts.mp3"; sourceTree = "<group>"; };
+		45F62415200CB36E00AEB428 /* 06 Searching.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 Searching.mp3"; sourceTree = "<group>"; };
+		45F62416200CB36F00AEB428 /* 09 Come and Find Me - B mix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 Come and Find Me - B mix.mp3"; sourceTree = "<group>"; };
+		45F6241A200CB3C400AEB428 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
+		45F6241B200CB3C600AEB428 /* 6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 6.wav; sourceTree = "<group>"; };
+		45F6241C200CB3C800AEB428 /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2.wav; sourceTree = "<group>"; };
+		45F6241D200CB3CB00AEB428 /* 9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 9.wav; sourceTree = "<group>"; };
+		45F6241E200CB3CF00AEB428 /* 5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5.wav; sourceTree = "<group>"; };
+		45F6241F200CB3D200AEB428 /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4.wav; sourceTree = "<group>"; };
+		45F62420200CB3D400AEB428 /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
+		45F62421200CB3D600AEB428 /* 8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8.wav; sourceTree = "<group>"; };
+		45F62422200CB3D900AEB428 /* 10.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 10.wav; sourceTree = "<group>"; };
+		45F62423200CB3DB00AEB428 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1308,6 +1338,7 @@
 		450759AD1FFC98A50009B360 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				45F6240B200CB07200AEB428 /* Audio */,
 				455AFD941FFDBA9A00739358 /* Utils */,
 				455AFD921FFDB9C500739358 /* Rendering */,
 				455A00052003382C00739358 /* Quad Writers */,
@@ -1324,14 +1355,10 @@
 		450759AE1FFC98AC0009B360 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				455AFE372000A35A00739358 /* sprite config.json */,
-				455AFE442000A57700739358 /* sprites.atlas */,
-				455AFE452000A57700739358 /* sprites.png */,
-				455A084C200C71A100739358 /* title screen config.json */,
-				455A0850200C72A500739358 /* title screen.atlas */,
-				455A084F200C72A400739358 /* title screen.png */,
-				455AFF16200218B800739358 /* sprite shader.frag */,
-				455AFF15200218B700739358 /* sprite shader.vert */,
+				45F62418200CB39B00AEB428 /* Shaders */,
+				45F62417200CB38300AEB428 /* Spritesheets */,
+				45F6240C200CB34F00AEB428 /* Resistor Anthems */,
+				45F62419200CB3A800AEB428 /* Music */,
 				455A0413200C6FCF00739358 /* Title Screen Frames */,
 				455AFE362000A32600739358 /* Sprites */,
 				455AFE352000A31D00739358 /* Animations */,
@@ -2656,6 +2683,69 @@
 			path = Sprites;
 			sourceTree = "<group>";
 		};
+		45F6240B200CB07200AEB428 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		45F6240C200CB34F00AEB428 /* Resistor Anthems */ = {
+			isa = PBXGroup;
+			children = (
+				45F62412200CB36C00AEB428 /* 01 A Night Of Dizzy Spells.mp3 */,
+				45F6240F200CB36B00AEB428 /* 02 Underclocked (underunderclocked mix).mp3 */,
+				45F62411200CB36C00AEB428 /* 03 Chibi Ninja.mp3 */,
+				45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */,
+				45F62413200CB36D00AEB428 /* 05 Come and Find Me.mp3 */,
+				45F62415200CB36E00AEB428 /* 06 Searching.mp3 */,
+				45F62410200CB36B00AEB428 /* 07 We're the Resistors.mp3 */,
+				45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */,
+				45F62416200CB36F00AEB428 /* 09 Come and Find Me - B mix.mp3 */,
+				45F62414200CB36D00AEB428 /* 10 Arpanauts.mp3 */,
+			);
+			path = "Resistor Anthems";
+			sourceTree = "<group>";
+		};
+		45F62417200CB38300AEB428 /* Spritesheets */ = {
+			isa = PBXGroup;
+			children = (
+				455AFE372000A35A00739358 /* sprite config.json */,
+				455AFE442000A57700739358 /* sprites.atlas */,
+				455AFE452000A57700739358 /* sprites.png */,
+				455A084C200C71A100739358 /* title screen config.json */,
+				455A0850200C72A500739358 /* title screen.atlas */,
+				455A084F200C72A400739358 /* title screen.png */,
+			);
+			name = Spritesheets;
+			sourceTree = "<group>";
+		};
+		45F62418200CB39B00AEB428 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				455AFF16200218B800739358 /* sprite shader.frag */,
+				455AFF15200218B700739358 /* sprite shader.vert */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		45F62419200CB3A800AEB428 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				45F6241A200CB3C400AEB428 /* 1.wav */,
+				45F6241C200CB3C800AEB428 /* 2.wav */,
+				45F62420200CB3D400AEB428 /* 3.wav */,
+				45F6241F200CB3D200AEB428 /* 4.wav */,
+				45F6241E200CB3CF00AEB428 /* 5.wav */,
+				45F6241B200CB3C600AEB428 /* 6.wav */,
+				45F62423200CB3DB00AEB428 /* 7.wav */,
+				45F62421200CB3D600AEB428 /* 8.wav */,
+				45F6241D200CB3CB00AEB428 /* 9.wav */,
+				45F62422200CB3D900AEB428 /* 10.wav */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2724,11 +2814,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F6242A200CB3DB00AEB428 /* 3.wav in Resources */,
+				45F62427200CB3DB00AEB428 /* 9.wav in Resources */,
 				455AFF17200218B800739358 /* sprite shader.vert in Resources */,
+				45F6242C200CB3DB00AEB428 /* 10.wav in Resources */,
 				455AFF18200218B800739358 /* sprite shader.frag in Resources */,
+				45F62429200CB3DB00AEB428 /* 4.wav in Resources */,
+				45F62424200CB3DB00AEB428 /* 1.wav in Resources */,
+				45F6242D200CB3DB00AEB428 /* 7.wav in Resources */,
+				45F6242B200CB3DB00AEB428 /* 8.wav in Resources */,
+				45F62426200CB3DB00AEB428 /* 2.wav in Resources */,
 				455AFE462000A57800739358 /* sprites.atlas in Resources */,
+				45F62428200CB3DB00AEB428 /* 5.wav in Resources */,
 				455AFE472000A57800739358 /* sprites.png in Resources */,
 				450759921FFC77E30009B360 /* Assets.xcassets in Resources */,
+				45F62425200CB3DB00AEB428 /* 6.wav in Resources */,
 				455A0851200C72A500739358 /* title screen.png in Resources */,
 				455A0852200C72A500739358 /* title screen.atlas in Resources */,
 			);
