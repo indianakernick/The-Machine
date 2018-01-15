@@ -41,7 +41,7 @@ void RenderingSystem::init(const std::string &spritesheet) {
   Surface image;
   {
     PROFILE(Load image);
-    image = loadSurface(path + ".png");
+    image = loadSurfaceRGBA(path + ".png");
   }
   const GL::Image2D glImage = {
     image.data(),

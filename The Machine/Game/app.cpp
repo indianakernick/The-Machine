@@ -52,7 +52,12 @@ void App::init() {
     windowLibrary = SDL::makeLibrary(SDL_INIT_EVENTS | SDL_INIT_AUDIO);
     window = SDL::makeWindow(WINDOW_DESC);
     renderingContext.initVSync(window.get());
+    
+    renderingContext.preRender();
+    renderingContext.postRender();
   }
+  
+  SDL_PumpEvents();
   
   {
     PROFILE(Open Audio);
