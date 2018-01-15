@@ -42,9 +42,11 @@ void App::init() {
   
   #pragma clang diagnostic pop
 
-  windowLibrary = SDL::makeLibrary(SDL_INIT_EVENTS);
+  windowLibrary = SDL::makeLibrary(SDL_INIT_EVENTS | SDL_INIT_AUDIO);
   window = SDL::makeWindow(WINDOW_DESC);
   renderingContext.initVSync(window.get());
+  
+  audioLibrary = SDL::makeAudioLibrary({});
   
   screenMan.addScreen<GameScreen>();
   screenMan.addScreen<TitleScreen>();
@@ -56,6 +58,7 @@ void App::init() {
 void App::quit() {
   screenMan.quitAll();
   screenMan.removeAll();
+  audioLibrary.reset();
   renderingContext.quit();
   window.reset();
   windowLibrary.reset();

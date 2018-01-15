@@ -82,6 +82,8 @@
 		455AFF28200232CF00739358 /* radioactivity sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF26200232CF00739358 /* radioactivity sprite init.cpp */; };
 		455AFF2C200234B400739358 /* power sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF2A200234B400739358 /* power sprite init.cpp */; };
 		455AFF2F2002E8D300739358 /* static sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF2D2002E8D300739358 /* static sprite writer.cpp */; };
+		45F62404200CA34000AEB428 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; };
+		45F62407200CA39100AEB428 /* SDL2_mixer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,6 +94,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				450759AB1FFC7B530009B360 /* SDL2.framework in CopyFiles */,
+				45F62407200CA39100AEB428 /* SDL2_mixer.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1238,6 +1241,7 @@
 		455AFF2D2002E8D300739358 /* static sprite writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "static sprite writer.cpp"; sourceTree = "<group>"; };
 		455AFF2E2002E8D300739358 /* static sprite writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "static sprite writer.hpp"; sourceTree = "<group>"; };
 		455AFF33200331EC00739358 /* anim helpers.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "anim helpers.js"; sourceTree = "<group>"; };
+		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1245,6 +1249,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F62404200CA34000AEB428 /* SDL2_mixer.framework in Frameworks */,
 				450759A91FFC7B2A0009B360 /* OpenGL.framework in Frameworks */,
 				450759A71FFC7B240009B360 /* IOKit.framework in Frameworks */,
 				450759A51FFC7B1C0009B360 /* Cocoa.framework in Frameworks */,
@@ -1290,6 +1295,7 @@
 		4507599F1FFC7A9C0009B360 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45F62403200CA34000AEB428 /* SDL2_mixer.framework */,
 				450759A81FFC7B2A0009B360 /* OpenGL.framework */,
 				450759A61FFC7B240009B360 /* IOKit.framework */,
 				450759A41FFC7B1C0009B360 /* Cocoa.framework */,
@@ -2967,12 +2973,13 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
+				COMBINE_HIDPI_IMAGES = NO;
 				DEVELOPMENT_TEAM = QY44MADGVC;
 				FRAMEWORK_SEARCH_PATHS = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					/usr/local/Cellar/nlohmann_json/3.0.0/include,
+					/usr/local/Cellar/sdl2_mixer/include,
 				);
 				INFOPLIST_FILE = "The Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -3004,13 +3011,14 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
+				COMBINE_HIDPI_IMAGES = NO;
 				DEVELOPMENT_TEAM = QY44MADGVC;
 				FRAMEWORK_SEARCH_PATHS = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					/usr/local/Cellar/nlohmann_json/3.0.0/include,
+					/usr/local/Cellar/sdl2_mixer/include,
 				);
 				INFOPLIST_FILE = "The Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
