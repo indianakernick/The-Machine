@@ -24,6 +24,9 @@ class GameScreen final : public Screen {
 public:
   void init() override;
   void quit() override;
+  
+  void enter() override;
+  
   void input(const SDL_Event &) override;
   void update(float) override;
   void render(float, float) override;

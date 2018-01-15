@@ -50,7 +50,7 @@ void App::init() {
   screenMan.addScreen<TitleScreen>();
   screenMan.initAll();
   
-  screenMan.transitionTo<GameScreen>();
+  screenMan.transitionTo<TitleScreen>();
 }
 
 void App::quit() {

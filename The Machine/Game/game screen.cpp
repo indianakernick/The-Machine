@@ -65,6 +65,10 @@ void GameScreen::quit() {
   rendering.quit();
 }
 
+void GameScreen::enter() {
+  rendering.updateQuadCount(registry);
+}
+
 void GameScreen::input(const SDL_Event &e) {
   playerInputSystem(playerInput, e);
 }

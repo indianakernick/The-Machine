@@ -40,8 +40,6 @@ void RenderingSystem::init(const std::string &spritesheet) {
   GL::TexParams2D texParams;
   texParams.setWrap(GL_CLAMP_TO_EDGE);
   texParams.setFilter(GL_NEAREST);
-  glActiveTexture(GL_TEXTURE0);
-  CHECK_OPENGL_ERROR();
   texture = GL::makeTexture2D(glImage, texParams);
   
   vertArray = GL::makeVertexArray();
@@ -85,6 +83,7 @@ void RenderingSystem::updateQuadCount(ECS::Registry &registry) {
   
   GL::attribs<Attribs>();
   
+  GL::unuseProgram();
   GL::unbindVertexArray();
 }
 
@@ -100,7 +99,13 @@ void RenderingSystem::render(
   }
   
   vertArray.bind();
+  program.use();
   GL::setUniform(viewProjLoc, viewProj);
+  
+  glActiveTexture(GL_TEXTURE0);
+  CHECK_OPENGL_ERROR();
+  texture.bind();
+  
   fillVBOs();
   if (!program.validate()) {
     std::cerr << "Failed to validate program\n";
@@ -113,6 +118,8 @@ void RenderingSystem::render(
     0
   );
   CHECK_OPENGL_ERROR();
+  GL::unbindTexture2D();
+  GL::unuseProgram();
   GL::unbindVertexArray();
 }
 
