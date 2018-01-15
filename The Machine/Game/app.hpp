@@ -9,7 +9,7 @@
 #ifndef app_hpp
 #define app_hpp
 
-#include "game screen.hpp"
+#include "screen manager.hpp"
 #include "rendering context.hpp"
 #include <Simpleton/SDL/library.hpp>
 
@@ -23,7 +23,7 @@ private:
   SDL::Library windowLibrary;
   SDL::Window window;
   RenderingContext renderingContext;
-  GameScreen game;
+  ScreenManager screenMan;
   
   void init();
   void quit();

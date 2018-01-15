@@ -9,6 +9,8 @@
 #include "app.hpp"
 
 #include <chrono>
+#include "game screen.hpp"
+#include "title screen.hpp"
 #include <Simpleton/Time/main loop.hpp>
 
 void App::mainloop() {
@@ -43,11 +45,17 @@ void App::init() {
   windowLibrary = SDL::makeLibrary(SDL_INIT_EVENTS);
   window = SDL::makeWindow(WINDOW_DESC);
   renderingContext.initVSync(window.get());
-  game.init();
+  
+  screenMan.addScreen<GameScreen>();
+  screenMan.addScreen<TitleScreen>();
+  screenMan.initAll();
+  
+  screenMan.transitionTo<GameScreen>();
 }
 
 void App::quit() {
-  game.quit();
+  screenMan.quitAll();
+  screenMan.removeAll();
   renderingContext.quit();
   window.reset();
   windowLibrary.reset();
@@ -59,20 +67,20 @@ bool App::input() {
     if (e.type == SDL_QUIT) {
       return false;
     } else {
-      game.input(e);
+      screenMan.input(e);
     }
   }
   return true;
 }
 
 void App::update(const float delta) {
-  game.update(delta);
+  screenMan.update(delta);
 }
 
 void App::render(const float delta) {
   renderingContext.preRender();
   const glm::ivec2 windowSize = window.size();
   const float aspect = static_cast<float>(windowSize.x) / windowSize.y;
-  game.render(aspect, delta);
+  screenMan.render(aspect, delta);
   renderingContext.postRender();
 }

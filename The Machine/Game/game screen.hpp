@@ -9,6 +9,7 @@
 #ifndef game_screen_hpp
 #define game_screen_hpp
 
+#include "screen.hpp"
 #include "entity grid.hpp"
 #include "component list.hpp"
 #include "rendering system.hpp"
@@ -19,15 +20,13 @@
 #include <Simpleton/ECS/level manager.hpp>
 #include <Simpleton/ECS/progress manager.hpp>
 
-extern "C" union SDL_Event;
-
-class GameScreen {
+class GameScreen final : public Screen {
 public:
-  void init();
-  void quit();
-  void input(const SDL_Event &);
-  void update(float);
-  void render(float, float);
+  void init() override;
+  void quit() override;
+  void input(const SDL_Event &) override;
+  void update(float) override;
+  void render(float, float) override;
 
 private:
   ECS::Registry registry;

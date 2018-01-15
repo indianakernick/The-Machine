@@ -31,6 +31,9 @@
 		455A0851200C72A500739358 /* title screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 455A084F200C72A400739358 /* title screen.png */; };
 		455A0852200C72A500739358 /* title screen.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 455A0850200C72A500739358 /* title screen.atlas */; };
 		455A0855200C79F600739358 /* title screen writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A0853200C79F600739358 /* title screen writer.cpp */; };
+		455A0858200C830500739358 /* title screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A0856200C830500739358 /* title screen.cpp */; };
+		455A085B200C831400739358 /* screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A0859200C831400739358 /* screen.cpp */; };
+		455A085F200C844C00739358 /* screen manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A085D200C844C00739358 /* screen manager.cpp */; };
 		455AFD861FFDB34400739358 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD841FFDB34400739358 /* app.cpp */; };
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
@@ -1082,6 +1085,13 @@
 		455A0850200C72A500739358 /* title screen.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "title screen.atlas"; sourceTree = "<group>"; };
 		455A0853200C79F600739358 /* title screen writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "title screen writer.cpp"; sourceTree = "<group>"; };
 		455A0854200C79F600739358 /* title screen writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "title screen writer.hpp"; sourceTree = "<group>"; };
+		455A0856200C830500739358 /* title screen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "title screen.cpp"; sourceTree = "<group>"; };
+		455A0857200C830500739358 /* title screen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "title screen.hpp"; sourceTree = "<group>"; };
+		455A0859200C831400739358 /* screen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = screen.cpp; sourceTree = "<group>"; };
+		455A085A200C831400739358 /* screen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = screen.hpp; sourceTree = "<group>"; };
+		455A085C200C842300739358 /* screen id.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "screen id.hpp"; sourceTree = "<group>"; };
+		455A085D200C844C00739358 /* screen manager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "screen manager.cpp"; sourceTree = "<group>"; };
+		455A085E200C844C00739358 /* screen manager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "screen manager.hpp"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -2128,8 +2138,15 @@
 		455AFD911FFDB9BB00739358 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				455A085C200C842300739358 /* screen id.hpp */,
+				455A0859200C831400739358 /* screen.cpp */,
+				455A085A200C831400739358 /* screen.hpp */,
+				455A085D200C844C00739358 /* screen manager.cpp */,
+				455A085E200C844C00739358 /* screen manager.hpp */,
 				455AFD8A1FFDB5E800739358 /* game screen.cpp */,
 				455AFD8B1FFDB5E800739358 /* game screen.hpp */,
+				455A0856200C830500739358 /* title screen.cpp */,
+				455A0857200C830500739358 /* title screen.hpp */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -2787,6 +2804,7 @@
 				455AFDC91FFDF71100739358 /* move dir system.cpp in Sources */,
 				455AFE1F2000824200739358 /* weight init.cpp in Sources */,
 				455A00342004708900739358 /* player input response system.cpp in Sources */,
+				455A085F200C844C00739358 /* screen manager.cpp in Sources */,
 				455AFDDC1FFF1D2000739358 /* power output init.cpp in Sources */,
 				455A000E20033CB900739358 /* sprite position init.cpp in Sources */,
 				455AFDE41FFF3F4200739358 /* wire init.cpp in Sources */,
@@ -2828,6 +2846,8 @@
 				455A02BF200875EF00739358 /* cross wire sprite writer.cpp in Sources */,
 				455AFDE11FFF3E8800739358 /* gate init.cpp in Sources */,
 				455A0855200C79F600739358 /* title screen writer.cpp in Sources */,
+				455A0858200C830500739358 /* title screen.cpp in Sources */,
+				455A085B200C831400739358 /* screen.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
