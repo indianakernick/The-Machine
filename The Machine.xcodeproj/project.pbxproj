@@ -30,6 +30,7 @@
 		455A03212009DBFE00739358 /* delay system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A031F2009DBFE00739358 /* delay system.cpp */; };
 		455A0851200C72A500739358 /* title screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 455A084F200C72A400739358 /* title screen.png */; };
 		455A0852200C72A500739358 /* title screen.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 455A0850200C72A500739358 /* title screen.atlas */; };
+		455A0855200C79F600739358 /* title screen writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A0853200C79F600739358 /* title screen writer.cpp */; };
 		455AFD861FFDB34400739358 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD841FFDB34400739358 /* app.cpp */; };
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
@@ -1079,6 +1080,8 @@
 		455A084C200C71A100739358 /* title screen config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "title screen config.json"; sourceTree = "<group>"; };
 		455A084F200C72A400739358 /* title screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title screen.png"; sourceTree = "<group>"; };
 		455A0850200C72A500739358 /* title screen.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "title screen.atlas"; sourceTree = "<group>"; };
+		455A0853200C79F600739358 /* title screen writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "title screen writer.cpp"; sourceTree = "<group>"; };
+		455A0854200C79F600739358 /* title screen writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "title screen writer.hpp"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -1335,6 +1338,8 @@
 				455A00162003531000739358 /* power sprite writer.hpp */,
 				455A02BD200875EF00739358 /* cross wire sprite writer.cpp */,
 				455A02BE200875EF00739358 /* cross wire sprite writer.hpp */,
+				455A0853200C79F600739358 /* title screen writer.cpp */,
+				455A0854200C79F600739358 /* title screen writer.hpp */,
 			);
 			name = "Quad Writers";
 			sourceTree = "<group>";
@@ -2822,6 +2827,7 @@
 				455AFE052000691D00739358 /* radioactive toggle system.cpp in Sources */,
 				455A02BF200875EF00739358 /* cross wire sprite writer.cpp in Sources */,
 				455AFDE11FFF3E8800739358 /* gate init.cpp in Sources */,
+				455A0855200C79F600739358 /* title screen writer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
