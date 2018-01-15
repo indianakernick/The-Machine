@@ -533,7 +533,7 @@
 		455A0404200B150000739358 /* exit 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 8.png"; sourceTree = "<group>"; };
 		455A0405200B150100739358 /* exit 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 3.png"; sourceTree = "<group>"; };
 		455A0406200B15C500739358 /* exit.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = exit.anim; sourceTree = "<group>"; };
-		455A0409200C200E00739358 /* title screen.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "title screen.anim"; sourceTree = "<group>"; };
+		455A040A200C2B2B00739358 /* title screen.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "title screen.anim"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -1142,7 +1142,7 @@
 				455AFECB2001EE2B00739358 /* signal channel.anim */,
 				455A032D200AEA7300739358 /* signal receiver.anim */,
 				455A032E200AEB6100739358 /* signal transmitter.anim */,
-				455A0409200C200E00739358 /* title screen.anim */,
+				455A040A200C2B2B00739358 /* title screen.anim */,
 				455AFF00200202A000739358 /* wall.anim */,
 				455A02C020097BEB00739358 /* wire.anim */,
 			);
