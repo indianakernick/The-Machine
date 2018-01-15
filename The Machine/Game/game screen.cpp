@@ -15,7 +15,7 @@
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
 
 void GameScreen::init() {
-  rendering.init();
+  rendering.init("sprites");
   rendering.addWriter<PowerSpriteWriter>();
   rendering.addWriter<StaticSpriteWriter>();
   rendering.addWriter<CrossWireSpriteWriter>();

@@ -19,7 +19,7 @@
 
 class RenderingSystem {
 public:
-  void init();
+  void init(const std::string &);
   void quit();
   
   template <typename WriterClass>

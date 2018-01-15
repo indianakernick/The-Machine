@@ -27,9 +27,10 @@ namespace {
   using Attribs = std::tuple<PosType, TexCoordType>;
 }
 
-void RenderingSystem::init() {
-  sheet = Unpack::makeSpritesheet(SDL::getResDir() + "sprites.atlas");
-  const Surface image = loadSurface(SDL::getResDir() + "sprites.png");
+void RenderingSystem::init(const std::string &spritesheet) {
+  const std::string path = SDL::getResDir() + spritesheet;
+  sheet = Unpack::makeSpritesheet(path + ".atlas");
+  const Surface image = loadSurface(path + ".png");
   const GL::Image2D glImage = {
     image.data(),
     static_cast<GLsizei>(image.width()),
