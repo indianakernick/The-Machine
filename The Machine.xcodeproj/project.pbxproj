@@ -28,7 +28,7 @@
 		455A03162009C64F00739358 /* power input system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A03142009C64F00739358 /* power input system.cpp */; };
 		455A031E2009D8D600739358 /* delay init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A031C2009D8D600739358 /* delay init.cpp */; };
 		455A03212009DBFE00739358 /* delay system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A031F2009DBFE00739358 /* delay system.cpp */; };
-		455A040E200C5A8100739358 /* title screen.anim in Resources */ = {isa = PBXBuildFile; fileRef = 455A040D200C5A8100739358 /* title screen.anim */; };
+		455A0410200C690700739358 /* title screen.anim in Resources */ = {isa = PBXBuildFile; fileRef = 455A040F200C690700739358 /* title screen.anim */; };
 		455AFD861FFDB34400739358 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD841FFDB34400739358 /* app.cpp */; };
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
@@ -534,7 +534,7 @@
 		455A0404200B150000739358 /* exit 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 8.png"; sourceTree = "<group>"; };
 		455A0405200B150100739358 /* exit 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 3.png"; sourceTree = "<group>"; };
 		455A0406200B15C500739358 /* exit.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = exit.anim; sourceTree = "<group>"; };
-		455A040D200C5A8100739358 /* title screen.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "title screen.anim"; sourceTree = "<group>"; };
+		455A040F200C690700739358 /* title screen.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "title screen.anim"; sourceTree = "<group>"; };
 		455AFD841FFDB34400739358 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		455AFD851FFDB34400739358 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		455AFD871FFDB3E000739358 /* rendering context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering context.hpp"; sourceTree = "<group>"; };
@@ -1143,7 +1143,7 @@
 				455AFECB2001EE2B00739358 /* signal channel.anim */,
 				455A032D200AEA7300739358 /* signal receiver.anim */,
 				455A032E200AEB6100739358 /* signal transmitter.anim */,
-				455A040D200C5A8100739358 /* title screen.anim */,
+				455A040F200C690700739358 /* title screen.anim */,
 				455AFF00200202A000739358 /* wall.anim */,
 				455A02C020097BEB00739358 /* wire.anim */,
 			);
@@ -1602,7 +1602,7 @@
 			files = (
 				455AFF17200218B800739358 /* sprite shader.vert in Resources */,
 				455AFF18200218B800739358 /* sprite shader.frag in Resources */,
-				455A040E200C5A8100739358 /* title screen.anim in Resources */,
+				455A0410200C690700739358 /* title screen.anim in Resources */,
 				455AFE462000A57800739358 /* sprites.atlas in Resources */,
 				455AFE472000A57800739358 /* sprites.png in Resources */,
 				450759921FFC77E30009B360 /* Assets.xcassets in Resources */,
