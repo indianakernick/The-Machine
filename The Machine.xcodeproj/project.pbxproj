@@ -94,6 +94,7 @@
 		45F6242B200CB3DB00AEB428 /* 8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F62421200CB3D600AEB428 /* 8.wav */; };
 		45F6242C200CB3DB00AEB428 /* 10.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F62422200CB3D900AEB428 /* 10.wav */; };
 		45F6242D200CB3DB00AEB428 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F62423200CB3DB00AEB428 /* 7.wav */; };
+		45F62434200CBBA600AEB428 /* music player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F62432200CBBA600AEB428 /* music player.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1272,6 +1273,8 @@
 		45F62421200CB3D600AEB428 /* 8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8.wav; sourceTree = "<group>"; };
 		45F62422200CB3D900AEB428 /* 10.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 10.wav; sourceTree = "<group>"; };
 		45F62423200CB3DB00AEB428 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
+		45F62432200CBBA600AEB428 /* music player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "music player.cpp"; sourceTree = "<group>"; };
+		45F62433200CBBA600AEB428 /* music player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "music player.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2686,6 +2689,8 @@
 		45F6240B200CB07200AEB428 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				45F62432200CBBA600AEB428 /* music player.cpp */,
+				45F62433200CBBA600AEB428 /* music player.hpp */,
 			);
 			name = Audio;
 			sourceTree = "<group>";
@@ -2921,6 +2926,7 @@
 				455AFE0820006D0100739358 /* shift radioactivity system.cpp in Sources */,
 				455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */,
 				455AFE10200075C300739358 /* signal receiver init.cpp in Sources */,
+				45F62434200CBBA600AEB428 /* music player.cpp in Sources */,
 				455AFDD21FFF0B9200739358 /* update pos system.cpp in Sources */,
 				455A03212009DBFE00739358 /* delay system.cpp in Sources */,
 				455AFE3420009C6C00739358 /* button system.cpp in Sources */,
@@ -3076,6 +3082,10 @@
 				COMBINE_HIDPI_IMAGES = NO;
 				DEVELOPMENT_TEAM = QY44MADGVC;
 				FRAMEWORK_SEARCH_PATHS = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					ENABLE_PROFILER,
+					"$(inherited)",
+				);
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					/usr/local/Cellar/nlohmann_json/3.0.0/include,
@@ -3115,6 +3125,7 @@
 				DEVELOPMENT_TEAM = QY44MADGVC;
 				FRAMEWORK_SEARCH_PATHS = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ENABLE_PROFILER;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					/usr/local/Cellar/nlohmann_json/3.0.0/include,

@@ -12,9 +12,12 @@
 #include "quad writers.hpp"
 #include "component inits.hpp"
 #include <Simpleton/SDL/paths.hpp>
+#include <Simpleton/Utils/profiler.hpp>
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
 
 void GameScreen::init() {
+  PROFILE(GameScreen::init);
+
   rendering.init("sprites");
   rendering.addWriter<PowerSpriteWriter>();
   rendering.addWriter<StaticSpriteWriter>();
@@ -59,6 +62,8 @@ void GameScreen::init() {
 }
 
 void GameScreen::quit() {
+  PROFILE(GameScreen::quit);
+  
   registry.reset();
   levels.quit();
   compInits.destroyAll();
@@ -73,7 +78,9 @@ void GameScreen::input(const SDL_Event &e) {
   playerInputSystem(playerInput, e);
 }
 
-void GameScreen::update(const float ) {
+void GameScreen::update(float) {
+  PROFILE(GameScreen::update);
+  
   if (frame == FRAMES_PER_TICK - 1) {
     frame = 0;
   } else {
@@ -112,12 +119,16 @@ void GameScreen::update(const float ) {
 }
 
 void GameScreen::render(const float aspect, const float delta) {
+  PROFILE(GameScreen::render);
+  
   spritePositionSystem(registry, frame);
   camera.update(aspect, delta);
   rendering.render(registry, camera.transform.toPixels(), frame);
 }
 
 bool GameScreen::loadLevel(const ECS::Level level) {
+  PROFILE(GameScreen::loadLevel);
+
   const bool success = levels.loadLevel(level);
   // @TODO level size should be defined in level file
   constexpr Pos LEVEL_SIZE = {32, 18};

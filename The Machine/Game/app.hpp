@@ -9,9 +9,9 @@
 #ifndef app_hpp
 #define app_hpp
 
+#include "music player.hpp"
 #include "screen manager.hpp"
 #include "rendering context.hpp"
-#include <Simpleton/SDL/music.hpp>
 #include <Simpleton/SDL/library.hpp>
 #include <Simpleton/SDL/audio library.hpp>
 
@@ -27,7 +27,7 @@ private:
   SDL::Window window;
   RenderingContext renderingContext;
   ScreenManager screenMan;
-  SDL::Music music;
+  MusicPlayer music;
   
   void init();
   void quit();

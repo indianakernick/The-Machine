@@ -11,10 +11,12 @@
 #include <chrono>
 #include "game screen.hpp"
 #include "title screen.hpp"
-#include <Simpleton/SDL/paths.hpp>
+#include <Simpleton/Utils/profiler.hpp>
 #include <Simpleton/Time/main loop.hpp>
 
 void App::mainloop() {
+  PROFILE(App::mainloop);
+
   init();
   
   Time::Mainloop<std::chrono::nanoseconds>::varNoSync([this] (const uint64_t delta) {
@@ -31,6 +33,8 @@ void App::mainloop() {
 }
 
 void App::init() {
+  PROFILE(App::init);
+
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wc99-extensions"
 
@@ -43,28 +47,38 @@ void App::init() {
   
   #pragma clang diagnostic pop
 
-  windowLibrary = SDL::makeLibrary(SDL_INIT_EVENTS | SDL_INIT_AUDIO);
-  window = SDL::makeWindow(WINDOW_DESC);
-  renderingContext.initVSync(window.get());
+  {
+    PROFILE(Open Window);
+    windowLibrary = SDL::makeLibrary(SDL_INIT_EVENTS | SDL_INIT_AUDIO);
+    window = SDL::makeWindow(WINDOW_DESC);
+    renderingContext.initVSync(window.get());
+  }
   
-  SDL::AudioLibParams audioParams;
-  audioParams.frequency = 44100;
-  audioLibrary = SDL::makeAudioLibrary(audioParams);
-  
-  music = SDL::makeMusic((SDL::getResDir() + "1.wav").c_str());
-  music.play();
+  {
+    PROFILE(Open Audio);
+    SDL::AudioLibParams audioParams;
+    audioParams.frequency = 44100;
+    audioLibrary = SDL::makeAudioLibrary(audioParams);
+    music.init();
+  }
   
   screenMan.addScreen<GameScreen>();
   screenMan.addScreen<TitleScreen>();
-  screenMan.initAll();
+  
+  {
+    PROFILE(Initialize Screens);
+    screenMan.initAll();
+  }
   
   screenMan.transitionTo<TitleScreen>();
 }
 
 void App::quit() {
+  PROFILE(App::quit);
+
   screenMan.quitAll();
   screenMan.removeAll();
-  music.reset();
+  music.quit();
   audioLibrary.reset();
   renderingContext.quit();
   window.reset();
@@ -72,6 +86,8 @@ void App::quit() {
 }
 
 bool App::input() {
+  PROFILE(App::input);
+  
   SDL_Event e;
   while (SDL_PollEvent(&e)) {
     if (e.type == SDL_QUIT) {
@@ -84,10 +100,14 @@ bool App::input() {
 }
 
 void App::update(const float delta) {
+  PROFILE(App::update);
+
   screenMan.update(delta);
 }
 
 void App::render(const float delta) {
+  PROFILE(App::render);
+  
   renderingContext.preRender();
   const glm::ivec2 windowSize = window.size();
   const float aspect = static_cast<float>(windowSize.x) / windowSize.y;

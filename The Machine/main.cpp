@@ -8,8 +8,11 @@
 
 #include "app.hpp"
 
+#include <Simpleton/Utils/profiler.hpp>
+
 int main(int, char **) {
   App app;
   app.mainloop();
+  PROFILER_INFO(stdout);
   return 0;
 }

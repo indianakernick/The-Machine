@@ -11,6 +11,7 @@
 #include <fstream>
 #include <Surface/load.hpp>
 #include <Simpleton/SDL/paths.hpp>
+#include <Simpleton/Utils/profiler.hpp>
 #include <Simpleton/OpenGL/uniforms.hpp>
 #include <Simpleton/OpenGL/attrib pointer.hpp>
 
@@ -28,19 +29,34 @@ namespace {
 }
 
 void RenderingSystem::init(const std::string &spritesheet) {
+  PROFILE(RenderingSystem::init);
+  
   const std::string path = SDL::getResDir() + spritesheet;
-  sheet = Unpack::makeSpritesheet(path + ".atlas");
-  const Surface image = loadSurface(path + ".png");
+  
+  {
+    PROFILE(Load spritesheet);
+    sheet = Unpack::makeSpritesheet(path + ".atlas");
+  }
+  
+  Surface image;
+  {
+    PROFILE(Load image);
+    image = loadSurface(path + ".png");
+  }
   const GL::Image2D glImage = {
     image.data(),
     static_cast<GLsizei>(image.width()),
     static_cast<GLsizei>(image.height())
   };
   
-  GL::TexParams2D texParams;
-  texParams.setWrap(GL_CLAMP_TO_EDGE);
-  texParams.setFilter(GL_NEAREST);
-  texture = GL::makeTexture2D(glImage, texParams);
+  {
+    PROFILE(Create texture);
+    
+    GL::TexParams2D texParams;
+    texParams.setWrap(GL_CLAMP_TO_EDGE);
+    texParams.setFilter(GL_NEAREST);
+    texture = GL::makeTexture2D(glImage, texParams);
+  }
   
   vertArray = GL::makeVertexArray();
   

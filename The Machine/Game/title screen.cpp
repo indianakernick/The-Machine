@@ -11,6 +11,7 @@
 #include "game screen.hpp"
 #include "screen manager.hpp"
 #include "title screen writer.hpp"
+#include <Simpleton/Utils/profiler.hpp>
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
 
 namespace {
@@ -19,6 +20,8 @@ namespace {
 }
 
 void TitleScreen::init() {
+  PROFILE(TitleScreen::init);
+
   rendering.init("title screen");
   rendering.addWriter<TitleScreenWriter>();
   ECS::Registry fakeRegistry;
@@ -29,6 +32,8 @@ void TitleScreen::init() {
 }
 
 void TitleScreen::quit() {
+  PROFILE(TitleScreen::quit);
+  
   rendering.quit();
 }
 
@@ -46,6 +51,8 @@ void TitleScreen::input(const SDL_Event &e) {
 void TitleScreen::update(float) {}
 
 void TitleScreen::render(const float aspect, const float delta) {
+  PROFILE(TitleScreen::render);
+
   if (frame == TOTAL_FRAMES) {
     frame = LOOP_BEGIN;
   }
