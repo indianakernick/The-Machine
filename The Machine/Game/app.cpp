@@ -11,6 +11,7 @@
 #include <chrono>
 #include "game screen.hpp"
 #include "title screen.hpp"
+#include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/Time/main loop.hpp>
 
 void App::mainloop() {
@@ -50,6 +51,9 @@ void App::init() {
   audioParams.frequency = 44100;
   audioLibrary = SDL::makeAudioLibrary(audioParams);
   
+  music = SDL::makeMusic((SDL::getResDir() + "1.wav").c_str());
+  music.play();
+  
   screenMan.addScreen<GameScreen>();
   screenMan.addScreen<TitleScreen>();
   screenMan.initAll();
@@ -60,6 +64,7 @@ void App::init() {
 void App::quit() {
   screenMan.quitAll();
   screenMan.removeAll();
+  music.reset();
   audioLibrary.reset();
   renderingContext.quit();
   window.reset();
