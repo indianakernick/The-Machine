@@ -14,16 +14,14 @@
 #include <Simpleton/SDL/music.hpp>
 #include <Simpleton/Utils/instance limiter.hpp>
 
-void songFinished();
-
 class MusicPlayer final : public Utils::ForceSingleton<MusicPlayer> {
 public:
-  friend void songFinished();
-
   void init();
   void quit();
   
   void togglePlaying();
+  
+  void nextSong();
   
 private:
   struct Song {
@@ -41,7 +39,6 @@ private:
   void shuffle();
   void setFinishHook();
   void removeFinishHook();
-  void songFinished();
 };
 
 #endif

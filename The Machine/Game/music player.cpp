@@ -16,11 +16,11 @@
 
 namespace {
   MusicPlayer *globalPlayer = nullptr;
-}
-
-void songFinished() {
-  assert(globalPlayer);
-  globalPlayer->songFinished();
+  
+  void songFinished() {
+    assert(globalPlayer);
+    globalPlayer->nextSong();
+  }
 }
 
 void MusicPlayer::init() {
@@ -47,6 +47,14 @@ void MusicPlayer::togglePlaying() {
   } else {
     Mix_PauseMusic();
   }
+}
+
+void MusicPlayer::nextSong() {
+  if (++currentSong == songs.size()) {
+    currentSong = 0;
+    shuffle();
+  }
+  songs[currentSong].music.play();
 }
 
 void MusicPlayer::loadMusic() {
@@ -77,19 +85,11 @@ void MusicPlayer::shuffle() {
 void MusicPlayer::setFinishHook() {
   assert(globalPlayer == nullptr);
   globalPlayer = this;
-  Mix_HookMusicFinished(&::songFinished);
+  Mix_HookMusicFinished(&songFinished);
 }
 
 void MusicPlayer::removeFinishHook() {
   assert(globalPlayer == this);
   Mix_HookMusicFinished(nullptr);
   globalPlayer = nullptr;
-}
-
-void MusicPlayer::songFinished() {
-  if (++currentSong == songs.size()) {
-    currentSong = 0;
-    shuffle();
-  }
-  songs[currentSong].music.play();
 }
