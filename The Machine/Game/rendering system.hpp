@@ -38,7 +38,6 @@ private:
   GL::ElementBuffer elemBuf;
   GL::VertexArray vertArray;
   GL::ShaderProgram program;
-  size_t numQuads;
   GLint viewProjLoc;
   GLint texLoc;
   
@@ -47,7 +46,7 @@ private:
   
   void fillIndicies(size_t);
   void fillIndiciesBuf();
-  void fillVertBuf(size_t, size_t);
+  void fillVertBuf(size_t);
 };
 
 #endif

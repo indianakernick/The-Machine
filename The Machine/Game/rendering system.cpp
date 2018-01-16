@@ -71,9 +71,9 @@ TextureID RenderingSystem::addTexture(const std::string_view name) {
 }
 
 void RenderingSystem::updateQuadCount() {
-  numQuads = 0;
+  size_t numQuads = 0;
   for (auto &writer : writers) {
-    numQuads += writer->countQuads();
+    numQuads = std::max(numQuads, writer->countQuads());
   }
   
   fillIndicies(numQuads);
@@ -103,27 +103,22 @@ void RenderingSystem::render(const glm::mat3 &viewProj, const Frame frame) {
     std::cerr << "Shader program info log:\n" << program << '\n';
   }
   
-  QuadIter quadIter = quads.begin();
-  size_t offset = 0;
+  const QuadIter quadIter = quads.begin();
   
   for (auto &writer : writers) {
     const size_t writerQuads = writer->numQuads();
-  
     writer->writeQuads(quadIter, frame);
-    quadIter += writerQuads;
     
     textures.at(writer->getTexture()).bind(0);
-    fillVertBuf(offset, writerQuads);
+    fillVertBuf(writerQuads);
     
     glDrawElements(
       GL_TRIANGLES,
       static_cast<GLsizei>(QUAD_INDICIES * writerQuads),
       GL::TypeEnum<ElemType>::type,
-      reinterpret_cast<const GLvoid *>(offset * QUAD_ELEM_SIZE)
+      nullptr
     );
     CHECK_OPENGL_ERROR();
-    
-    offset += writerQuads;
   }
   
   GL::unbindTexture2D(0);
@@ -147,13 +142,13 @@ void RenderingSystem::fillIndicies(const size_t minQuads) {
 }
 
 void RenderingSystem::fillIndiciesBuf() {
-  const size_t indiciesSize = sizeof(ElemType) * QUAD_INDICIES * numQuads;
+  const size_t indiciesSize = sizeof(ElemType) * indicies.size();
   glBufferSubData(GL_ELEMENT_ARRAY_BUFFER, 0, indiciesSize, indicies.data());
   CHECK_OPENGL_ERROR();
 }
 
-void RenderingSystem::fillVertBuf(const size_t quadIndex, const size_t numQuads) {
+void RenderingSystem::fillVertBuf(const size_t numQuads) {
   const size_t vertsSize = sizeof(Quad) * numQuads;
-  glBufferSubData(GL_ARRAY_BUFFER, sizeof(Quad) * quadIndex, vertsSize, quads.data() + quadIndex);
+  glBufferSubData(GL_ARRAY_BUFFER, 0, vertsSize, quads.data());
   CHECK_OPENGL_ERROR();
 }
