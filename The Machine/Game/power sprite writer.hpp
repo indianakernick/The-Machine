@@ -13,8 +13,16 @@
 
 class PowerSpriteWriter final : public QuadWriter {
 public:
-  void writeQuads(QuadIter, ECS::Registry &, const Spritesheet &, Frame) const override;
-  size_t count(ECS::Registry &) const override;
+  PowerSpriteWriter(TextureID, std::shared_ptr<ECS::Registry>, std::shared_ptr<Spritesheet>);
+
+  void writeQuads(QuadIter, Frame) const override;
+  TextureID getTexture() const override;
+  size_t count() const override;
+
+private:
+  TextureID tex;
+  std::shared_ptr<ECS::Registry> registry;
+  std::shared_ptr<Spritesheet> sheet;
 };
 
 #endif

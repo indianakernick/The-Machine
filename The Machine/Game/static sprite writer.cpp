@@ -8,15 +8,19 @@
 
 #include "static sprite writer.hpp"
 
+#include "rendering helpers.hpp"
 #include "static sprite component.hpp"
 
-void StaticSpriteWriter::writeQuads(
-  QuadIter quadIter,
-  ECS::Registry &registry,
-  const Spritesheet &sheet,
-  Frame
-) const {
-  auto view = registry.view<StaticSprite, SpritePosition>();
+StaticSpriteWriter::StaticSpriteWriter(
+  const TextureID tex,
+  std::shared_ptr<ECS::Registry> registry,
+  std::shared_ptr<Spritesheet> sheet
+) : tex(tex),
+    registry(registry),
+    sheet(sheet) {}
+
+void StaticSpriteWriter::writeQuads(QuadIter quadIter, Frame) const {
+  auto view = registry->view<StaticSprite, SpritePosition>();
   for (const ECS::EntityID entity : view) {
     StaticSprite &sprite = view.get<StaticSprite>(entity);
     const Unpack::SpriteID spriteID = sprite.sprite + sprite.frame;
@@ -37,12 +41,16 @@ void StaticSpriteWriter::writeQuads(
     }
     
     writePos(quadIter, view.get<SpritePosition>(entity));
-    writeTexCoords(quadIter, sheet, spriteID);
+    writeTexCoords(quadIter, *sheet, spriteID);
     
     ++quadIter;
   }
 }
 
-size_t StaticSpriteWriter::count(ECS::Registry &registry) const {
-  return registry.view<StaticSprite>().size();
+TextureID StaticSpriteWriter::getTexture() const {
+  return tex;
+}
+
+size_t StaticSpriteWriter::count() const {
+  return registry->view<StaticSprite>().size();
 }

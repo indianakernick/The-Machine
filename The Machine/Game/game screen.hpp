@@ -32,7 +32,8 @@ public:
   void render(float, float) override;
 
 private:
-  ECS::Registry registry;
+  std::shared_ptr<ECS::Registry> registry;
+  std::shared_ptr<Spritesheet> sheet;
   ECS::CompInits<CompList> compInits;
   ECS::LevelManager<CompList> levels;
   ECS::ProgressManager progress;

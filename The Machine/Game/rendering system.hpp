@@ -19,20 +19,22 @@
 
 class RenderingSystem {
 public:
-  void init(const std::string &);
+  void init();
   void quit();
   
-  template <typename WriterClass>
-  void addWriter() {
-    writers.emplace_back(std::make_unique<WriterClass>());
+  template <typename WriterClass, typename ...Args>
+  void addWriter(Args &&... args) {
+    writers.emplace_back(std::make_unique<WriterClass>(std::forward<Args>(args)...));
   }
-  void updateQuadCount(ECS::Registry &);
-  void render(ECS::Registry &, const glm::mat3 &, Frame);
+  
+  TextureID addTexture(std::string_view);
+  
+  void updateQuadCount();
+  void render(const glm::mat3 &, Frame);
 
 private:
   std::vector<std::unique_ptr<QuadWriter>> writers;
-  Spritesheet sheet;
-  GL::Texture2D texture;
+  std::vector<GL::Texture2D> textures;
   GL::ArrayBuffer arrayBuf;
   GL::ElementBuffer elemBuf;
   GL::VertexArray vertArray;
@@ -45,7 +47,8 @@ private:
   Elems indicies;
   
   void fillIndicies(size_t);
-  void fillVBOs();
+  void fillIndiciesBuf();
+  void fillVertBuf(size_t, size_t);
 };
 
 #endif

@@ -13,8 +13,15 @@
 
 class TitleScreenWriter final : public QuadWriter {
 public:
-  void writeQuads(QuadIter, ECS::Registry &, const Spritesheet &, Frame) const override;
-  size_t count(ECS::Registry &) const override;
+  explicit TitleScreenWriter(TextureID);
+
+  void writeQuads(QuadIter, Frame) const override;
+  TextureID getTexture() const override;
+  size_t count() const override;
+
+private:
+  TextureID tex;
+  Spritesheet sheet;
 };
 
 #endif

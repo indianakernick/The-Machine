@@ -18,11 +18,17 @@
 void GameScreen::init() {
   PROFILE(GameScreen::init);
 
-  rendering.init("sprites");
-  rendering.addWriter<PowerSpriteWriter>();
-  rendering.addWriter<StaticSpriteWriter>();
-  rendering.addWriter<CrossWireSpriteWriter>();
-  rendering.addWriter<RadioactivitySpriteWriter>();
+  rendering.init();
+  
+  const TextureID tex = rendering.addTexture("sprites.png");
+  const std::string atlasPath = SDL::getResDir() + "sprites.atlas";
+  sheet = std::make_shared<Spritesheet>(Unpack::makeSpritesheet(atlasPath));
+  registry = std::make_shared<ECS::Registry>();
+  
+  rendering.addWriter<PowerSpriteWriter>(tex, registry, sheet);
+  rendering.addWriter<StaticSpriteWriter>(tex, registry, sheet);
+  rendering.addWriter<CrossWireSpriteWriter>(tex, registry, sheet);
+  rendering.addWriter<RadioactivitySpriteWriter>(tex, registry, sheet);
 
   camera.transform.setOrigin(Cam2D::Origin::CENTER);
   camera.targetZoom = std::make_unique<Cam2D::ZoomToFit>(glm::vec2());
@@ -52,7 +58,7 @@ void GameScreen::init() {
 
   progress.setFilePath(SDL::getSaveDir("Indi Kernick", "The Machine") + "progress.txt");
   progress.readFile();
-  levels.init(registry, compInits);
+  levels.init(*registry, compInits);
   levels.levelPath([] (const ECS::Level level) {
     const std::string levelStr = level == ECS::FINAL_LEVEL ? "final" : std::to_string(level);
     return SDL::getResDir() + "level " + levelStr + ".json";
@@ -65,13 +71,14 @@ void GameScreen::quit() {
   PROFILE(GameScreen::quit);
   
   registry.reset();
+  sheet.reset();
   levels.quit();
   compInits.destroyAll();
   rendering.quit();
 }
 
 void GameScreen::enter() {
-  rendering.updateQuadCount(registry);
+  rendering.updateQuadCount();
 }
 
 void GameScreen::input(const SDL_Event &e) {
@@ -88,42 +95,42 @@ void GameScreen::update(float) {
     return;
   }
 
-  shiftPowerSystem(registry);
-  shiftCrossWireSystem(registry);
-  shiftPlayerActionSystem(registry);
-  shiftRadioactivitySystem(registry);
+  shiftPowerSystem(*registry);
+  shiftCrossWireSystem(*registry);
+  shiftPlayerActionSystem(*registry);
+  shiftRadioactivitySystem(*registry);
   
-  playerInputResponseSystem(registry, playerInput);
+  playerInputResponseSystem(*registry, playerInput);
   clearPlayerInputSystem(playerInput);
   
-  updatePosSystem(registry, grid);
+  updatePosSystem(*registry, grid);
   
-  radioactivityDetectorSystem(registry, grid);
-  signalReceiverSystem(registry);
-  pressurePlateSystem(registry, grid);
-  leverSystem(registry, grid);
-  buttonSystem(registry, grid);
+  radioactivityDetectorSystem(*registry, grid);
+  signalReceiverSystem(*registry);
+  pressurePlateSystem(*registry, grid);
+  leverSystem(*registry, grid);
+  buttonSystem(*registry, grid);
   
-  powerInputSystem(registry, grid);
-  gateSystem(registry);
-  delaySystem(registry);
-  wireSystem(registry, grid);
-  deviceInputSystem(registry);
+  powerInputSystem(*registry, grid);
+  gateSystem(*registry);
+  delaySystem(*registry);
+  wireSystem(*registry, grid);
+  deviceInputSystem(*registry);
   
-  radioactiveToggleSystem(registry, grid);
-  pistonSystem(registry, grid);
+  radioactiveToggleSystem(*registry, grid);
+  pistonSystem(*registry, grid);
   
-  clearRealDirSystem(registry);
-  moveDirSystem(registry, grid);
-  clearDesiredDirSystem(registry);
+  clearRealDirSystem(*registry);
+  moveDirSystem(*registry, grid);
+  clearDesiredDirSystem(*registry);
 }
 
 void GameScreen::render(const float aspect, const float delta) {
   PROFILE(GameScreen::render);
   
-  spritePositionSystem(registry, frame);
+  spritePositionSystem(*registry, frame);
   camera.update(aspect, delta);
-  rendering.render(registry, camera.transform.toPixels(), frame);
+  rendering.render(camera.transform.toPixels(), frame);
 }
 
 bool GameScreen::loadLevel(const ECS::Level level) {
@@ -135,7 +142,7 @@ bool GameScreen::loadLevel(const ECS::Level level) {
   camera.setPos(LEVEL_SIZE / 2u);
   dynamic_cast<Cam2D::ZoomToFit *>(camera.targetZoom.get())->setSize(LEVEL_SIZE);
   grid = EntityGrid(LEVEL_SIZE);
-  initGridSystem(registry, grid);
-  rendering.updateQuadCount(registry);
+  initGridSystem(*registry, grid);
+  rendering.updateQuadCount();
   return success;
 }

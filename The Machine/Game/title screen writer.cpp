@@ -8,10 +8,15 @@
 
 #include "title screen writer.hpp"
 
+#include "rendering helpers.hpp"
+#include <Simpleton/SDL/paths.hpp>
+
+TitleScreenWriter::TitleScreenWriter(const TextureID tex)
+  : tex(tex),
+    sheet(Unpack::makeSpritesheet(SDL::getResDir() + "title screen.atlas")) {}
+
 void TitleScreenWriter::writeQuads(
   QuadIter quadIter,
-  ECS::Registry &,
-  const Spritesheet &sheet,
   const Frame frame
 ) const {
   static const glm::vec2 CORNER[4] = {
@@ -26,6 +31,10 @@ void TitleScreenWriter::writeQuads(
   writeTexCoords(quadIter, sheet, frame);
 }
 
-size_t TitleScreenWriter::count(ECS::Registry &) const {
+TextureID TitleScreenWriter::getTexture() const {
+  return tex;
+}
+
+size_t TitleScreenWriter::count() const {
   return 1;
 }

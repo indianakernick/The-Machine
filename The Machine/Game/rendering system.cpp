@@ -28,36 +28,9 @@ namespace {
   using Attribs = std::tuple<PosType, TexCoordType>;
 }
 
-void RenderingSystem::init(const std::string &spritesheet) {
+void RenderingSystem::init() {
   PROFILE(RenderingSystem::init);
-  
-  const std::string path = SDL::getResDir() + spritesheet;
-  
-  {
-    PROFILE(Load spritesheet);
-    sheet = Unpack::makeSpritesheet(path + ".atlas");
-  }
-  
-  Surface image;
-  {
-    PROFILE(Load image);
-    image = loadSurfaceRGBA(path + ".png");
-  }
-  const GL::Image2D glImage = {
-    image.data(),
-    static_cast<GLsizei>(image.width()),
-    static_cast<GLsizei>(image.height())
-  };
-  
-  {
-    PROFILE(Create texture);
-    
-    GL::TexParams2D texParams;
-    texParams.setWrap(GL_CLAMP_TO_EDGE);
-    texParams.setFilter(GL_NEAREST);
-    texture = GL::makeTexture2D(glImage, texParams);
-  }
-  
+
   vertArray = GL::makeVertexArray();
   
   std::ifstream vertFile(SDL::getResDir() + "sprite shader.vert");
@@ -76,16 +49,31 @@ void RenderingSystem::init(const std::string &spritesheet) {
 }
 
 void RenderingSystem::quit() {
-  elemBuf = nullptr;
-  arrayBuf = nullptr;
-  vertArray = nullptr;
-  texture = nullptr;
+  elemBuf.reset();
+  arrayBuf.reset();
+  vertArray.reset();
+  textures.clear();
 }
 
-void RenderingSystem::updateQuadCount(ECS::Registry &registry) {
+TextureID RenderingSystem::addTexture(const std::string_view name) {
+  const Surface image = loadSurfaceRGBA(SDL::getResDir() + std::string(name));
+  const GL::Image2D glImage = {
+    image.data(),
+    static_cast<GLsizei>(image.width()),
+    static_cast<GLsizei>(image.height())
+  };
+  GL::TexParams2D texParams;
+  texParams.setWrap(GL_CLAMP_TO_EDGE);
+  texParams.setFilter(GL_NEAREST);
+  const TextureID id = textures.size();
+  textures.emplace_back(GL::makeTexture2D(glImage, texParams, 0));
+  return id;
+}
+
+void RenderingSystem::updateQuadCount() {
   numQuads = 0;
   for (auto &writer : writers) {
-    numQuads += writer->countQuads(registry);
+    numQuads += writer->countQuads();
   }
   
   fillIndicies(numQuads);
@@ -97,44 +85,48 @@ void RenderingSystem::updateQuadCount(ECS::Registry &registry) {
   arrayBuf = GL::makeArrayBuffer(numQuads * QUAD_ATTR_SIZE, GL_DYNAMIC_DRAW);
   elemBuf = GL::makeElementBuffer(indicies.data(), numQuads * QUAD_ELEM_SIZE);
   
+  fillIndiciesBuf();
+  
   GL::attribs<Attribs>();
   
   GL::unuseProgram();
   GL::unbindVertexArray();
 }
 
-void RenderingSystem::render(
-  ECS::Registry &registry,
-  const glm::mat3 &viewProj,
-  const Frame frame
-) {
-  QuadIter quadIter = quads.begin();
-  for (auto &writer : writers) {
-    writer->writeQuads(quadIter, registry, sheet, frame);
-    quadIter += writer->numQuads();
-  }
-  
+void RenderingSystem::render(const glm::mat3 &viewProj, const Frame frame) {
   vertArray.bind();
   program.use();
   GL::setUniform(viewProjLoc, viewProj);
   
-  glActiveTexture(GL_TEXTURE0);
-  CHECK_OPENGL_ERROR();
-  texture.bind();
-  
-  fillVBOs();
   if (!program.validate()) {
     std::cerr << "Failed to validate program\n";
     std::cerr << "Shader program info log:\n" << program << '\n';
   }
-  glDrawElements(
-    GL_TRIANGLES,
-    static_cast<GLsizei>(QUAD_INDICIES * numQuads),
-    GL::TypeEnum<ElemType>::type,
-    0
-  );
-  CHECK_OPENGL_ERROR();
-  GL::unbindTexture2D();
+  
+  QuadIter quadIter = quads.begin();
+  size_t offset = 0;
+  
+  for (auto &writer : writers) {
+    const size_t writerQuads = writer->numQuads();
+  
+    writer->writeQuads(quadIter, frame);
+    quadIter += writerQuads;
+    
+    textures.at(writer->getTexture()).bind(0);
+    fillVertBuf(offset, writerQuads);
+    
+    glDrawElements(
+      GL_TRIANGLES,
+      static_cast<GLsizei>(QUAD_INDICIES * writerQuads),
+      GL::TypeEnum<ElemType>::type,
+      reinterpret_cast<const GLvoid *>(offset * QUAD_ELEM_SIZE)
+    );
+    CHECK_OPENGL_ERROR();
+    
+    offset += writerQuads;
+  }
+  
+  GL::unbindTexture2D(0);
   GL::unuseProgram();
   GL::unbindVertexArray();
 }
@@ -154,12 +146,14 @@ void RenderingSystem::fillIndicies(const size_t minQuads) {
   }
 }
 
-void RenderingSystem::fillVBOs() {
-  const size_t vertsSize = sizeof(Quad) * quads.size();
-  glBufferSubData(GL_ARRAY_BUFFER, 0, vertsSize, quads.data());
-  CHECK_OPENGL_ERROR();
-  
+void RenderingSystem::fillIndiciesBuf() {
   const size_t indiciesSize = sizeof(ElemType) * QUAD_INDICIES * numQuads;
   glBufferSubData(GL_ELEMENT_ARRAY_BUFFER, 0, indiciesSize, indicies.data());
+  CHECK_OPENGL_ERROR();
+}
+
+void RenderingSystem::fillVertBuf(const size_t quadIndex, const size_t numQuads) {
+  const size_t vertsSize = sizeof(Quad) * numQuads;
+  glBufferSubData(GL_ARRAY_BUFFER, sizeof(Quad) * quadIndex, vertsSize, quads.data() + quadIndex);
   CHECK_OPENGL_ERROR();
 }

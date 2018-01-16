@@ -22,17 +22,14 @@ public:
   virtual ~QuadWriter() = default;
   
   size_t numQuads() const;
-  size_t countQuads(ECS::Registry &);
-  virtual void writeQuads(QuadIter, ECS::Registry &, const Spritesheet &, Frame) const = 0;
+  size_t countQuads();
+  virtual void writeQuads(QuadIter, Frame) const = 0;
+  virtual TextureID getTexture() const = 0;
 
 private:
   size_t quadCount = 0;
 
-  virtual size_t count(ECS::Registry &) const = 0;
-
-protected:
-  static void writePos(QuadIter, SpritePosition);
-  static void writeTexCoords(QuadIter, const Spritesheet &, SpriteID);
+  virtual size_t count() const = 0;
 };
 
 #endif

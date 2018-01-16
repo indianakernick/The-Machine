@@ -8,16 +8,20 @@
 
 #include "radioactivity sprite writer.hpp"
 
+#include "rendering helpers.hpp"
 #include "radioactivity component.hpp"
 #include "radioactivity sprite component.hpp"
 
-void RadioactivitySpriteWriter::writeQuads(
-  QuadIter quadIter,
-  ECS::Registry &registry,
-  const Spritesheet &sheet,
-  const Frame frame
-) const {
-  const auto view = registry.view<Radioactivity, RadioactivitySprite, SpritePosition>();
+RadioactivitySpriteWriter::RadioactivitySpriteWriter(
+  const TextureID tex,
+  std::shared_ptr<ECS::Registry> registry,
+  std::shared_ptr<Spritesheet> sheet
+) : tex(tex),
+    registry(registry),
+    sheet(sheet) {}
+
+void RadioactivitySpriteWriter::writeQuads(QuadIter quadIter, const Frame frame) const {
+  const auto view = registry->view<Radioactivity, RadioactivitySprite, SpritePosition>();
   for (const ECS::EntityID entity : view) {
     const Radioactivity activity = view.get<Radioactivity>(entity);
     const RadioactivitySprite sprite = view.get<RadioactivitySprite>(entity);
@@ -34,12 +38,16 @@ void RadioactivitySpriteWriter::writeQuads(
     }
     
     writePos(quadIter, view.get<SpritePosition>(entity));
-    writeTexCoords(quadIter, sheet, animFrame);
+    writeTexCoords(quadIter, *sheet, animFrame);
     
     ++quadIter;
   }
 }
 
-size_t RadioactivitySpriteWriter::count(ECS::Registry &registry) const {
-  return registry.view<RadioactivitySprite>().size();
+TextureID RadioactivitySpriteWriter::getTexture() const {
+  return tex;
+}
+
+size_t RadioactivitySpriteWriter::count() const {
+  return registry->view<RadioactivitySprite>().size();
 }

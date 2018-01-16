@@ -8,6 +8,7 @@
 
 #include "cross wire sprite writer.hpp"
 
+#include "rendering helpers.hpp"
 #include "cross wire component.hpp"
 #include "cross wire sprite component.hpp"
 
@@ -78,13 +79,16 @@ namespace {
   };
 }
 
-void CrossWireSpriteWriter::writeQuads(
-  QuadIter quadIter,
-  ECS::Registry &registry,
-  const Spritesheet &sheet,
-  const Frame frame
-) const {
-  const auto view = registry.view<CrossWire, CrossWireSprite, SpritePosition>();
+CrossWireSpriteWriter::CrossWireSpriteWriter(
+  const TextureID tex,
+  std::shared_ptr<ECS::Registry> registry,
+  std::shared_ptr<Spritesheet> sheet
+) : tex(tex),
+    registry(registry),
+    sheet(sheet) {}
+
+void CrossWireSpriteWriter::writeQuads(QuadIter quadIter, const Frame frame) const {
+  const auto view = registry->view<CrossWire, CrossWireSprite, SpritePosition>();
   for (const ECS::EntityID entity : view) {
     const CrossWire cross = view.get<CrossWire>(entity);
     const CrossWireSprite sprite = view.get<CrossWireSprite>(entity);
@@ -99,12 +103,16 @@ void CrossWireSpriteWriter::writeQuads(
     const Unpack::SpriteID animFrame = sprite.*(row.anim) + row.start + frame * row.dir;
     
     writePos(quadIter, spritePos);
-    writeTexCoords(quadIter, sheet, animFrame);
+    writeTexCoords(quadIter, *sheet, animFrame);
     
     ++quadIter;
   }
 }
 
-size_t CrossWireSpriteWriter::count(ECS::Registry &registry) const {
-  return registry.view<CrossWireSprite>().size();
+TextureID CrossWireSpriteWriter::getTexture() const {
+  return tex;
+}
+
+size_t CrossWireSpriteWriter::count() const {
+  return registry->view<CrossWireSprite>().size();
 }

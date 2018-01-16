@@ -30,5 +30,6 @@ using QuadIter = typename Quads::iterator;
 using Elems = std::vector<ElemType>;
 using Unpack::Spritesheet;
 using Unpack::SpriteID;
+using TextureID = size_t;
 
 #endif

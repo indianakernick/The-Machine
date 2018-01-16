@@ -9,15 +9,19 @@
 #include "power sprite writer.hpp"
 
 #include "power component.hpp"
+#include "rendering helpers.hpp"
 #include "power sprite component.hpp"
 
-void PowerSpriteWriter::writeQuads(
-  QuadIter quadIter,
-  ECS::Registry &registry,
-  const Spritesheet &sheet,
-  const Frame frame
-) const {
-  const auto view = registry.view<Power, PowerSprite, SpritePosition>();
+PowerSpriteWriter::PowerSpriteWriter(
+  const TextureID tex,
+  std::shared_ptr<ECS::Registry> registry,
+  std::shared_ptr<Spritesheet> sheet
+) : tex(tex),
+    registry(registry),
+    sheet(sheet) {}
+
+void PowerSpriteWriter::writeQuads(QuadIter quadIter, const Frame frame) const {
+  const auto view = registry->view<Power, PowerSprite, SpritePosition>();
   for (const ECS::EntityID entity : view) {
     const Power power = view.get<Power>(entity);
     const PowerSprite sprite = view.get<PowerSprite>(entity);
@@ -36,12 +40,16 @@ void PowerSpriteWriter::writeQuads(
     const Unpack::SpriteID animFrame = anim.start + anim.dir * frame;
     
     writePos(quadIter, view.get<SpritePosition>(entity));
-    writeTexCoords(quadIter, sheet, animFrame);
+    writeTexCoords(quadIter, *sheet, animFrame);
     
     ++quadIter;
   }
 }
 
-size_t PowerSpriteWriter::count(ECS::Registry &registry) const {
-  return registry.view<PowerSprite>().size();
+TextureID PowerSpriteWriter::getTexture() const {
+  return tex;
+}
+
+size_t PowerSpriteWriter::count() const {
+  return registry->view<PowerSprite>().size();
 }

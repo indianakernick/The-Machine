@@ -95,6 +95,7 @@
 		45F6242C200CB3DB00AEB428 /* 10.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F62422200CB3D900AEB428 /* 10.wav */; };
 		45F6242D200CB3DB00AEB428 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F62423200CB3DB00AEB428 /* 7.wav */; };
 		45F62434200CBBA600AEB428 /* music player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F62432200CBBA600AEB428 /* music player.cpp */; };
+		45F62437200D76BD00AEB428 /* rendering helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F62435200D76BD00AEB428 /* rendering helpers.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1275,6 +1276,8 @@
 		45F62423200CB3DB00AEB428 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
 		45F62432200CBBA600AEB428 /* music player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "music player.cpp"; sourceTree = "<group>"; };
 		45F62433200CBBA600AEB428 /* music player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "music player.hpp"; sourceTree = "<group>"; };
+		45F62435200D76BD00AEB428 /* rendering helpers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "rendering helpers.cpp"; sourceTree = "<group>"; };
+		45F62436200D76BD00AEB428 /* rendering helpers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "rendering helpers.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2197,6 +2200,8 @@
 				455AFF0B200212D500739358 /* rendering system.hpp */,
 				455AFF122002132B00739358 /* quad writer.cpp */,
 				455AFF132002132B00739358 /* quad writer.hpp */,
+				45F62435200D76BD00AEB428 /* rendering helpers.cpp */,
+				45F62436200D76BD00AEB428 /* rendering helpers.hpp */,
 			);
 			name = Rendering;
 			sourceTree = "<group>";
@@ -2920,6 +2925,7 @@
 				455A000E20033CB900739358 /* sprite position init.cpp in Sources */,
 				455AFDE41FFF3F4200739358 /* wire init.cpp in Sources */,
 				455AFDB11FFDD77000739358 /* dynamic collision init.cpp in Sources */,
+				45F62437200D76BD00AEB428 /* rendering helpers.cpp in Sources */,
 				455A001120033DED00739358 /* sprite position system.cpp in Sources */,
 				455A00982007243C00739358 /* device input system.cpp in Sources */,
 				455AFDFB20005A2400739358 /* radioactivity detector init.cpp in Sources */,
