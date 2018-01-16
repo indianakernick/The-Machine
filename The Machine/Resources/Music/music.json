@@ -1,18 +1,12 @@
 [
-  {
-    "name": "Resistor Anthems",
-    "artist": "Eric Skiff",
-    "songs": [
-      {"file": "1.wav",  "name": "A Night of Dizzy Spells"},
-      {"file": "2.wav",  "name": "Underclocked"},
-      {"file": "3.wav",  "name": "Chibi Ninja"},
-      {"file": "4.wav",  "name": "All of Us"},
-      {"file": "5.wav",  "name": "Come and Find Me"},
-      {"file": "6.wav",  "name": "Searching"},
-      {"file": "7.wav",  "name": "We're the Resistors"},
-      {"file": "8.wav",  "name": "Ascending"},
-      {"file": "9.wav",  "name": "Come and Find Me (B Mix)"},
-      {"file": "10.wav", "name": "Arpanauts"}
-    ]
-  }
+  {"artist": "Eric Skiff", "file": "1.wav",  "name": "A Night of Dizzy Spells"},
+  {"artist": "Eric Skiff", "file": "2.wav",  "name": "Underclocked"},
+  {"artist": "Eric Skiff", "file": "3.wav",  "name": "Chibi Ninja"},
+  {"artist": "Eric Skiff", "file": "4.wav",  "name": "All of Us"},
+  {"artist": "Eric Skiff", "file": "5.wav",  "name": "Come and Find Me"},
+  {"artist": "Eric Skiff", "file": "6.wav",  "name": "Searching"},
+  {"artist": "Eric Skiff", "file": "7.wav",  "name": "We're the Resistors"},
+  {"artist": "Eric Skiff", "file": "8.wav",  "name": "Ascending"},
+  {"artist": "Eric Skiff", "file": "9.wav",  "name": "Come and Find Me (B Mix)"},
+  {"artist": "Eric Skiff", "file": "10.wav", "name": "Arpanauts"}
 ]
