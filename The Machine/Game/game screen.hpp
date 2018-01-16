@@ -33,7 +33,7 @@ public:
 
 private:
   std::shared_ptr<ECS::Registry> registry;
-  std::shared_ptr<Spritesheet> sheet;
+  std::shared_ptr<Unpack::Spritesheet> sheet;
   ECS::CompInits<CompList> compInits;
   ECS::LevelManager<CompList> levels;
   ECS::ProgressManager progress;

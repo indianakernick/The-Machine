@@ -8,7 +8,6 @@
 
 #include "static sprite writer.hpp"
 
-#include "rendering helpers.hpp"
 #include "static sprite component.hpp"
 
 StaticSpriteWriter::StaticSpriteWriter(

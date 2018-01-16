@@ -8,7 +8,6 @@
 
 #include "cross wire sprite writer.hpp"
 
-#include "rendering helpers.hpp"
 #include "cross wire component.hpp"
 #include "cross wire sprite component.hpp"
 

@@ -9,8 +9,12 @@
 #ifndef rendering_helpers_hpp
 #define rendering_helpers_hpp
 
+#include <unpacker.hpp>
 #include "rendering types.hpp"
 #include "sprite position component.hpp"
+
+using Unpack::Spritesheet;
+using Unpack::SpriteID;
 
 void writePos(QuadIter, SpritePosition);
 void writeTexCoords(QuadIter, const Spritesheet &, SpriteID);

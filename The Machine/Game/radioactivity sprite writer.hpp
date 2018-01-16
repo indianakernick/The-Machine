@@ -10,6 +10,8 @@
 #define radioactivity_sprite_writer_hpp
 
 #include "quad writer.hpp"
+#include "rendering helpers.hpp"
+#include <Simpleton/ECS/registry.hpp>
 
 class RadioactivitySpriteWriter final : public QuadWriter {
 public:

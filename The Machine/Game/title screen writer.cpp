@@ -8,7 +8,6 @@
 
 #include "title screen writer.hpp"
 
-#include "rendering helpers.hpp"
 #include <Simpleton/SDL/paths.hpp>
 
 TitleScreenWriter::TitleScreenWriter(const TextureID tex)

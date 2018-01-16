@@ -10,6 +10,7 @@
 #define title_screen_writer_hpp
 
 #include "quad writer.hpp"
+#include "rendering helpers.hpp"
 
 class TitleScreenWriter final : public QuadWriter {
 public:

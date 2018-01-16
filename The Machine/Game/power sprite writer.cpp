@@ -9,7 +9,6 @@
 #include "power sprite writer.hpp"
 
 #include "power component.hpp"
-#include "rendering helpers.hpp"
 #include "power sprite component.hpp"
 
 PowerSpriteWriter::PowerSpriteWriter(

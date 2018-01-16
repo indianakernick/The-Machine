@@ -12,8 +12,6 @@
 #include "frame type.hpp"
 #include "position type.hpp"
 #include "rendering types.hpp"
-#include <Simpleton/Math/dir.hpp>
-#include <Simpleton/ECS/registry.hpp>
 #include "sprite position component.hpp"
 
 class QuadWriter {

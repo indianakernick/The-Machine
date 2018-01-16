@@ -8,7 +8,6 @@
 
 #include "radioactivity sprite writer.hpp"
 
-#include "rendering helpers.hpp"
 #include "radioactivity component.hpp"
 #include "radioactivity sprite component.hpp"
 

@@ -11,7 +11,6 @@
 
 #include <glm/mat3x3.hpp>
 #include "quad writer.hpp"
-#include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/OpenGL/buffer.hpp>
 #include <Simpleton/OpenGL/texture.hpp>
 #include <Simpleton/OpenGL/vertex array.hpp>

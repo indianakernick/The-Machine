@@ -10,6 +10,8 @@
 #define static_sprite_writer_hpp
 
 #include "quad writer.hpp"
+#include "rendering helpers.hpp"
+#include <Simpleton/ECS/registry.hpp>
 
 class StaticSpriteWriter final : public QuadWriter {
 public:

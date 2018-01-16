@@ -11,7 +11,6 @@
 
 #include <array>
 #include <vector>
-#include <unpacker.hpp>
 #include <glm/vec2.hpp>
 #include <glm/vec3.hpp>
 
@@ -28,8 +27,6 @@ using Quad = std::array<Vertex, 4>;
 using Quads = std::vector<Quad>;
 using QuadIter = typename Quads::iterator;
 using Elems = std::vector<ElemType>;
-using Unpack::Spritesheet;
-using Unpack::SpriteID;
 using TextureID = size_t;
 
 #endif
