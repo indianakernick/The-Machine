@@ -76,8 +76,6 @@
 		455AFE8F2000B8A200739358 /* exit system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE8D2000B8A200739358 /* exit system.cpp */; };
 		455AFF10200212D700739358 /* rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF0C200212D500739358 /* rendering system.cpp */; };
 		455AFF142002132B00739358 /* quad writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF122002132B00739358 /* quad writer.cpp */; };
-		455AFF17200218B800739358 /* sprite shader.vert in Resources */ = {isa = PBXBuildFile; fileRef = 455AFF15200218B700739358 /* sprite shader.vert */; };
-		455AFF18200218B800739358 /* sprite shader.frag in Resources */ = {isa = PBXBuildFile; fileRef = 455AFF16200218B800739358 /* sprite shader.frag */; };
 		455AFF1D20022C4100739358 /* static sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF1B20022C4100739358 /* static sprite init.cpp */; };
 		455AFF28200232CF00739358 /* radioactivity sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF26200232CF00739358 /* radioactivity sprite init.cpp */; };
 		455AFF2C200234B400739358 /* power sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF2A200234B400739358 /* power sprite init.cpp */; };
@@ -1238,8 +1236,6 @@
 		455AFF0E200212D600739358 /* rendering types.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "rendering types.hpp"; sourceTree = "<group>"; };
 		455AFF122002132B00739358 /* quad writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "quad writer.cpp"; sourceTree = "<group>"; };
 		455AFF132002132B00739358 /* quad writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "quad writer.hpp"; sourceTree = "<group>"; };
-		455AFF15200218B700739358 /* sprite shader.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sprite shader.vert"; sourceTree = "<group>"; };
-		455AFF16200218B800739358 /* sprite shader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sprite shader.frag"; sourceTree = "<group>"; };
 		455AFF192002245400739358 /* frame type.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "frame type.hpp"; sourceTree = "<group>"; };
 		455AFF1A20022B4100739358 /* static sprite component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "static sprite component.hpp"; sourceTree = "<group>"; };
 		455AFF1B20022C4100739358 /* static sprite init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "static sprite init.cpp"; sourceTree = "<group>"; };
@@ -1361,7 +1357,6 @@
 		450759AE1FFC98AC0009B360 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				45F62418200CB39B00AEB428 /* Shaders */,
 				45F62417200CB38300AEB428 /* Spritesheets */,
 				45F6240C200CB34F00AEB428 /* Resistor Anthems */,
 				45F62419200CB3A800AEB428 /* Music */,
@@ -2730,15 +2725,6 @@
 			name = Spritesheets;
 			sourceTree = "<group>";
 		};
-		45F62418200CB39B00AEB428 /* Shaders */ = {
-			isa = PBXGroup;
-			children = (
-				455AFF16200218B800739358 /* sprite shader.frag */,
-				455AFF15200218B700739358 /* sprite shader.vert */,
-			);
-			name = Shaders;
-			sourceTree = "<group>";
-		};
 		45F62419200CB3A800AEB428 /* Music */ = {
 			isa = PBXGroup;
 			children = (
@@ -2826,9 +2812,7 @@
 			files = (
 				45F6242A200CB3DB00AEB428 /* 3.wav in Resources */,
 				45F62427200CB3DB00AEB428 /* 9.wav in Resources */,
-				455AFF17200218B800739358 /* sprite shader.vert in Resources */,
 				45F6242C200CB3DB00AEB428 /* 10.wav in Resources */,
-				455AFF18200218B800739358 /* sprite shader.frag in Resources */,
 				45F62429200CB3DB00AEB428 /* 4.wav in Resources */,
 				45F62424200CB3DB00AEB428 /* 1.wav in Resources */,
 				45F6242D200CB3DB00AEB428 /* 7.wav in Resources */,

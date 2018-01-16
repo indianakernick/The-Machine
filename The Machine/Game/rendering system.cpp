@@ -26,6 +26,38 @@ namespace {
   constexpr size_t QUAD_ELEM_SIZE = sizeof(ElemType) * QUAD_INDICIES;
   
   using Attribs = std::tuple<PosType, TexCoordType>;
+  
+  const char VERT_SHADER[] = R"delimiter(
+#version 410 core
+
+layout (location = 0) in vec3 pos;
+layout (location = 1) in vec2 texCoord;
+
+out vec2 fragTexCoord;
+
+uniform mat3 viewProj;
+
+void main() {
+  gl_Position.xy = (viewProj * vec3(pos.xy, 1.0)).xy;
+  gl_Position.zw = vec2(pos.z, 1.0);
+  fragTexCoord = texCoord;
+}
+)delimiter";
+
+  const char FRAG_SHADER[] = R"delimiter(
+#version 410 core
+
+in vec2 fragTexCoord;
+
+uniform sampler2D tex;
+
+out vec4 color;
+
+void main() {
+  color = texture(tex, fragTexCoord);
+  gl_FragDepth = (color.a == 0.0 ? 1.0 : gl_FragCoord.z);
+}
+)delimiter";
 }
 
 void RenderingSystem::init() {
@@ -33,11 +65,9 @@ void RenderingSystem::init() {
 
   vertArray = GL::makeVertexArray();
   
-  std::ifstream vertFile(SDL::getResDir() + "sprite shader.vert");
-  std::ifstream fragFile(SDL::getResDir() + "sprite shader.frag");
   program = GL::makeShaderProgram(
-    GL::makeVertShader(vertFile),
-    GL::makeFragShader(fragFile)
+    GL::makeVertShader(VERT_SHADER, sizeof(VERT_SHADER)),
+    GL::makeFragShader(FRAG_SHADER, sizeof(FRAG_SHADER))
   );
   
   viewProjLoc = program.getUniformLoc("viewProj");
