@@ -9,8 +9,10 @@
 #include "music player.hpp"
 
 #include <cassert>
-#include <Simpleton/Utils/profiler.hpp>
+#include <fstream>
+#include <Simpleton/Data/json.hpp>
 #include <Simpleton/SDL/paths.hpp>
+#include <Simpleton/Utils/profiler.hpp>
 
 namespace {
   MusicPlayer *globalPlayer = nullptr;
@@ -18,38 +20,24 @@ namespace {
 
 void songFinished() {
   assert(globalPlayer);
-  if (++globalPlayer->currentSong == globalPlayer->songs.size()) {
-    globalPlayer->currentSong = 0;
-    std::shuffle(globalPlayer->songs.begin(), globalPlayer->songs.end(), globalPlayer->gen);
-  }
-  globalPlayer->songs[globalPlayer->currentSong].play();
+  globalPlayer->songFinished();
 }
 
 void MusicPlayer::init() {
   PROFILE(MusicPlayer::init);
-  const std::string resDir = SDL::getResDir();
   
-  for (size_t i = 0; i != NUM_SONGS; ++i) {
-    const std::string path = resDir + std::to_string(i + 1) + ".wav";
-    songs.emplace_back(SDL::makeMusic(path.c_str()));
-  }
-  
-  std::random_device device;
-  gen = decltype(gen)(device());
-  
-  std::shuffle(songs.begin(), songs.end(), gen);
-  
-  assert(globalPlayer == nullptr);
-  globalPlayer = this;
-  
-  Mix_HookMusicFinished(&songFinished);
+  loadMusic();
+  initRNG();
+  shuffle();
+  setFinishHook();
   
   if (!songs.empty()) {
-    songs[0].play();
+    songs[0].music.play();
   }
 }
 
 void MusicPlayer::quit() {
+  removeFinishHook();
   songs.clear();
 }
 
@@ -59,4 +47,49 @@ void MusicPlayer::togglePlaying() {
   } else {
     Mix_PauseMusic();
   }
+}
+
+void MusicPlayer::loadMusic() {
+  const std::string resDir = SDL::getResDir();
+  std::ifstream musicFile(resDir + "music.json");
+  json musicData;
+  musicFile >> musicData;
+  
+  for (json &songNode : musicData) {
+    Song song;
+    Data::get(song.name, songNode, "name");
+    Data::get(song.artist, songNode, "artist");
+    const std::string songFileName = songNode.at("file").get<std::string>();
+    song.music = SDL::makeMusic((resDir + songFileName).c_str());
+    songs.emplace_back(std::move(song));
+  }
+}
+
+void MusicPlayer::initRNG() {
+  std::random_device device;
+  gen = decltype(gen)(device());
+}
+
+void MusicPlayer::shuffle() {
+  std::shuffle(songs.begin(), songs.end(), gen);
+}
+
+void MusicPlayer::setFinishHook() {
+  assert(globalPlayer == nullptr);
+  globalPlayer = this;
+  Mix_HookMusicFinished(&::songFinished);
+}
+
+void MusicPlayer::removeFinishHook() {
+  assert(globalPlayer == this);
+  Mix_HookMusicFinished(nullptr);
+  globalPlayer = nullptr;
+}
+
+void MusicPlayer::songFinished() {
+  if (++currentSong == songs.size()) {
+    currentSong = 0;
+    shuffle();
+  }
+  songs[currentSong].music.play();
 }

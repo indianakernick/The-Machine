@@ -20,17 +20,28 @@ class MusicPlayer final : public Utils::ForceSingleton<MusicPlayer> {
 public:
   friend void songFinished();
 
-  static constexpr size_t NUM_SONGS = 10;
-
   void init();
   void quit();
   
   void togglePlaying();
   
 private:
-  std::vector<SDL::Music> songs;
+  struct Song {
+    std::string name;
+    std::string artist;
+    SDL::Music music;
+  };
+
+  std::vector<Song> songs;
   size_t currentSong = 0;
   std::mt19937 gen;
+  
+  void loadMusic();
+  void initRNG();
+  void shuffle();
+  void setFinishHook();
+  void removeFinishHook();
+  void songFinished();
 };
 
 #endif
