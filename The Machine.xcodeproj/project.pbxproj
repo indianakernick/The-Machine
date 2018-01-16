@@ -94,6 +94,7 @@
 		45F6242D200CB3DB00AEB428 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F62423200CB3DB00AEB428 /* 7.wav */; };
 		45F62434200CBBA600AEB428 /* music player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F62432200CBBA600AEB428 /* music player.cpp */; };
 		45F62437200D76BD00AEB428 /* rendering helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F62435200D76BD00AEB428 /* rendering helpers.cpp */; };
+		45F62439200DA7B300AEB428 /* music.json in Resources */ = {isa = PBXBuildFile; fileRef = 45F62438200DA7B300AEB428 /* music.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1274,6 +1275,7 @@
 		45F62433200CBBA600AEB428 /* music player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "music player.hpp"; sourceTree = "<group>"; };
 		45F62435200D76BD00AEB428 /* rendering helpers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "rendering helpers.cpp"; sourceTree = "<group>"; };
 		45F62436200D76BD00AEB428 /* rendering helpers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "rendering helpers.hpp"; sourceTree = "<group>"; };
+		45F62438200DA7B300AEB428 /* music.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = music.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2728,6 +2730,7 @@
 		45F62419200CB3A800AEB428 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				45F62438200DA7B300AEB428 /* music.json */,
 				45F6241A200CB3C400AEB428 /* 1.wav */,
 				45F6241C200CB3C800AEB428 /* 2.wav */,
 				45F62420200CB3D400AEB428 /* 3.wav */,
@@ -2810,21 +2813,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45F6242A200CB3DB00AEB428 /* 3.wav in Resources */,
-				45F62427200CB3DB00AEB428 /* 9.wav in Resources */,
-				45F6242C200CB3DB00AEB428 /* 10.wav in Resources */,
-				45F62429200CB3DB00AEB428 /* 4.wav in Resources */,
+				45F62439200DA7B300AEB428 /* music.json in Resources */,
 				45F62424200CB3DB00AEB428 /* 1.wav in Resources */,
+				45F62426200CB3DB00AEB428 /* 2.wav in Resources */,
+				45F6242A200CB3DB00AEB428 /* 3.wav in Resources */,
+				45F62429200CB3DB00AEB428 /* 4.wav in Resources */,
+				45F62428200CB3DB00AEB428 /* 5.wav in Resources */,
+				45F62425200CB3DB00AEB428 /* 6.wav in Resources */,
 				45F6242D200CB3DB00AEB428 /* 7.wav in Resources */,
 				45F6242B200CB3DB00AEB428 /* 8.wav in Resources */,
-				45F62426200CB3DB00AEB428 /* 2.wav in Resources */,
+				45F62427200CB3DB00AEB428 /* 9.wav in Resources */,
+				45F6242C200CB3DB00AEB428 /* 10.wav in Resources */,
 				455AFE462000A57800739358 /* sprites.atlas in Resources */,
-				45F62428200CB3DB00AEB428 /* 5.wav in Resources */,
 				455AFE472000A57800739358 /* sprites.png in Resources */,
-				450759921FFC77E30009B360 /* Assets.xcassets in Resources */,
-				45F62425200CB3DB00AEB428 /* 6.wav in Resources */,
 				455A0851200C72A500739358 /* title screen.png in Resources */,
 				455A0852200C72A500739358 /* title screen.atlas in Resources */,
+				450759921FFC77E30009B360 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
