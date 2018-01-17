@@ -16,8 +16,8 @@
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
 
 namespace {
-  constexpr Frame LOOP_BEGIN = 420;
-  constexpr Frame TOTAL_FRAMES = 660;
+  constexpr Frame LOOP_BEGIN = 480;
+  constexpr Frame TOTAL_FRAMES = 720;
 }
 
 void TitleScreen::init(std::shared_ptr<RenderingSystem> renderingSystem) {
