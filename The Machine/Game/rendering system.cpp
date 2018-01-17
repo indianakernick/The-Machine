@@ -181,7 +181,7 @@ void RenderingSystem::fillIndicies(const size_t minQuads) {
 }
 
 void RenderingSystem::fillIndiciesBuf() {
-  const size_t indiciesSize = sizeof(ElemType) * indicies.size();
+  const size_t indiciesSize = QUAD_ELEM_SIZE * quads.size();
   glBufferSubData(GL_ELEMENT_ARRAY_BUFFER, 0, indiciesSize, indicies.data());
   CHECK_OPENGL_ERROR();
 }
