@@ -81,6 +81,7 @@
 		455AFF2F2002E8D300739358 /* static sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF2D2002E8D300739358 /* static sprite writer.cpp */; };
 		45B6773A200EFAC5000CF80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450759911FFC77E20009B360 /* Assets.xcassets */; };
 		45B67A14200F21FD000CF80E /* signal channel toggle system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A12200F21FD000CF80E /* signal channel toggle system.cpp */; };
+		45B67A1D200F50DA000CF80E /* level controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A1B200F50DA000CF80E /* level controller.cpp */; };
 		45F62404200CA34000AEB428 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; };
 		45F62407200CA39100AEB428 /* SDL2_mixer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45F62424200CB3DB00AEB428 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241A200CB3C400AEB428 /* 1.wav */; };
@@ -1433,6 +1434,8 @@
 		45B67A11200F1D8B000CF80E /* title screen.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "title screen.anim"; sourceTree = "<group>"; };
 		45B67A12200F21FD000CF80E /* signal channel toggle system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "signal channel toggle system.cpp"; sourceTree = "<group>"; };
 		45B67A13200F21FD000CF80E /* signal channel toggle system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal channel toggle system.hpp"; sourceTree = "<group>"; };
+		45B67A1B200F50DA000CF80E /* level controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "level controller.cpp"; sourceTree = "<group>"; };
+		45B67A1C200F50DA000CF80E /* level controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "level controller.hpp"; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -2548,6 +2551,8 @@
 				455AFD8B1FFDB5E800739358 /* game screen.hpp */,
 				455A0856200C830500739358 /* title screen.cpp */,
 				455A0857200C830500739358 /* title screen.hpp */,
+				45B67A1B200F50DA000CF80E /* level controller.cpp */,
+				45B67A1C200F50DA000CF80E /* level controller.hpp */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -3292,6 +3297,7 @@
 				455AFE3420009C6C00739358 /* button system.cpp in Sources */,
 				455AFF28200232CF00739358 /* radioactivity sprite init.cpp in Sources */,
 				455AFF2C200234B400739358 /* power sprite init.cpp in Sources */,
+				45B67A1D200F50DA000CF80E /* level controller.cpp in Sources */,
 				455AFDC31FFDEE5B00739358 /* position init.cpp in Sources */,
 				455AFE312000982B00739358 /* lever system.cpp in Sources */,
 				455A003120046D4700739358 /* clear player input system.cpp in Sources */,

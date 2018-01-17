@@ -84,12 +84,15 @@ void GameScreen::enter() {
 }
 
 void GameScreen::input(const SDL_Event &e) {
-  if (SDL::keyDown(e, SDL_SCANCODE_R)) {
-    const ECS::Level current = levels.getLoaded();
-    if (current != ECS::NULL_LEVEL) {
-      loadLevel(current);
-    }
+  const auto newLevel = levelControl.getLevel(
+    e,
+    levels.getLoaded(),
+    progress.getIncompleteLevel()
+  );
+  if (newLevel) {
+    loadLevel(*newLevel);
   }
+  
   playerInputSystem(playerInput, e);
 }
 

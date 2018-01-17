@@ -13,6 +13,7 @@
 #include "entity grid.hpp"
 #include "component list.hpp"
 #include "rendering types.hpp"
+#include "level controller.hpp"
 #include "player key states.hpp"
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/ECS/comp inits.hpp>
@@ -43,6 +44,7 @@ private:
   Frame frame = 0;
   WriterGroup quadWriters;
   std::shared_ptr<RenderingSystem> rendering;
+  LevelController levelControl;
   
   bool loadLevel(ECS::Level);
 };
