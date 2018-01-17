@@ -11,24 +11,25 @@
 #include "systems.hpp"
 #include "quad writers.hpp"
 #include "component inits.hpp"
+#include "rendering system.hpp"
 #include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/Utils/profiler.hpp>
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
 
-void GameScreen::init() {
+void GameScreen::init(std::shared_ptr<RenderingSystem> renderingSystem) {
   PROFILE(GameScreen::init);
 
-  rendering.init();
+  rendering = renderingSystem;
   
-  const TextureID tex = rendering.addTexture("sprites.png");
+  const TextureID tex = rendering->addTexture("sprites.png");
   const std::string atlasPath = SDL::getResDir() + "sprites.atlas";
   sheet = std::make_shared<Spritesheet>(Unpack::makeSpritesheet(atlasPath));
   registry = std::make_shared<ECS::Registry>();
   
-  quadWriters.push_back(rendering.addWriter<PowerSpriteWriter>(tex, registry, sheet));
-  quadWriters.push_back(rendering.addWriter<StaticSpriteWriter>(tex, registry, sheet));
-  quadWriters.push_back(rendering.addWriter<CrossWireSpriteWriter>(tex, registry, sheet));
-  quadWriters.push_back(rendering.addWriter<RadioactivitySpriteWriter>(tex, registry, sheet));
+  quadWriters.push_back(rendering->addWriter<PowerSpriteWriter>(tex, registry, sheet));
+  quadWriters.push_back(rendering->addWriter<StaticSpriteWriter>(tex, registry, sheet));
+  quadWriters.push_back(rendering->addWriter<CrossWireSpriteWriter>(tex, registry, sheet));
+  quadWriters.push_back(rendering->addWriter<RadioactivitySpriteWriter>(tex, registry, sheet));
 
   camera.transform.setOrigin(Cam2D::Origin::CENTER);
   camera.targetZoom = std::make_unique<Cam2D::ZoomToFit>(glm::vec2());
@@ -74,11 +75,11 @@ void GameScreen::quit() {
   sheet.reset();
   levels.quit();
   compInits.destroyAll();
-  rendering.quit();
+  rendering.reset();
 }
 
 void GameScreen::enter() {
-  rendering.updateQuadCount();
+  rendering->updateQuadCount();
 }
 
 void GameScreen::input(const SDL_Event &e) {
@@ -130,7 +131,7 @@ void GameScreen::render(const float aspect, const float delta) {
   
   spritePositionSystem(*registry, frame);
   camera.update(aspect, delta);
-  rendering.render(quadWriters, camera.transform.toPixels(), frame);
+  rendering->render(quadWriters, camera.transform.toPixels(), frame);
 }
 
 bool GameScreen::loadLevel(const ECS::Level level) {
@@ -143,6 +144,6 @@ bool GameScreen::loadLevel(const ECS::Level level) {
   dynamic_cast<Cam2D::ZoomToFit *>(camera.targetZoom.get())->setSize(LEVEL_SIZE);
   grid = EntityGrid(LEVEL_SIZE);
   initGridSystem(*registry, grid);
-  rendering.updateQuadCount();
+  rendering->updateQuadCount();
   return success;
 }

@@ -9,7 +9,6 @@
 #ifndef screen_manager_hpp
 #define screen_manager_hpp
 
-#include <memory>
 #include "screen.hpp"
 #include <unordered_map>
 
@@ -41,7 +40,7 @@ public:
   
   void removeAll();
   
-  void initAll();
+  void initAll(std::shared_ptr<RenderingSystem>);
   void quitAll();
   void input(const SDL_Event &);
   void update(float);

@@ -12,7 +12,7 @@
 #include "screen.hpp"
 #include "entity grid.hpp"
 #include "component list.hpp"
-#include "rendering system.hpp"
+#include "rendering types.hpp"
 #include "player key states.hpp"
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/ECS/comp inits.hpp>
@@ -22,7 +22,7 @@
 
 class GameScreen final : public Screen {
 public:
-  void init() override;
+  void init(std::shared_ptr<RenderingSystem>) override;
   void quit() override;
   
   void enter() override;
@@ -39,10 +39,10 @@ private:
   ECS::ProgressManager progress;
   Cam2D::Camera camera;
   EntityGrid grid;
-  RenderingSystem rendering;
   PlayerKeyStates playerInput;
   Frame frame = 0;
   WriterGroup quadWriters;
+  std::shared_ptr<RenderingSystem> rendering;
   
   bool loadLevel(ECS::Level);
 };

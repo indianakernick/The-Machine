@@ -10,6 +10,7 @@
 
 #include "game screen.hpp"
 #include "screen manager.hpp"
+#include "rendering system.hpp"
 #include "title screen writer.hpp"
 #include <Simpleton/Utils/profiler.hpp>
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
@@ -19,26 +20,25 @@ namespace {
   constexpr Frame TOTAL_FRAMES = 540;
 }
 
-void TitleScreen::init() {
+void TitleScreen::init(std::shared_ptr<RenderingSystem> renderingSystem) {
   PROFILE(TitleScreen::init);
 
-  rendering.init();
-  const TextureID tex = rendering.addTexture("title screen.png");
-  quadWriters.push_back(rendering.addWriter<TitleScreenWriter>(tex));
-  rendering.updateQuadCount();
+  rendering = renderingSystem;
+  
+  const TextureID tex = rendering->addTexture("title screen.png");
+  quadWriters.push_back(rendering->addWriter<TitleScreenWriter>(tex));
+  rendering->updateQuadCount();
   
   camera.transform.setOrigin(Cam2D::Origin::BOTTOM_LEFT);
   camera.targetZoom = std::make_unique<Cam2D::ZoomToFit>(glm::vec2(16.0f, 9.0f));
 }
 
 void TitleScreen::quit() {
-  PROFILE(TitleScreen::quit);
-  
-  rendering.quit();
+  rendering.reset();
 }
 
 void TitleScreen::enter() {
-  rendering.updateQuadCount();
+  rendering->updateQuadCount();
 }
 
 void TitleScreen::input(const SDL_Event &e) {
@@ -56,6 +56,6 @@ void TitleScreen::render(const float aspect, const float delta) {
     frame = LOOP_BEGIN;
   }
   camera.update(aspect, delta);
-  rendering.render(quadWriters, camera.transform.toPixels(), frame);
+  rendering->render(quadWriters, camera.transform.toPixels(), frame);
   ++frame;
 }

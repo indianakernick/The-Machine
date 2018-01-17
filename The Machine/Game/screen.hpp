@@ -9,9 +9,11 @@
 #ifndef screen_hpp
 #define screen_hpp
 
+#include <memory>
 #include "screen id.hpp"
 
 class ScreenManager;
+class RenderingSystem;
 extern "C" union SDL_Event;
 
 class Screen {
@@ -24,7 +26,7 @@ public:
   virtual void enter() {}
   virtual void leave() {}
 
-  virtual void init() = 0;
+  virtual void init(std::shared_ptr<RenderingSystem>) = 0;
   virtual void quit() = 0;
   virtual void input(const SDL_Event &) = 0;
   virtual void update(float) = 0;

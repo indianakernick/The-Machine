@@ -56,6 +56,9 @@ void App::init() {
     
     renderingContext.preRender();
     renderingContext.postRender();
+    
+    renderingSystem = std::make_shared<RenderingSystem>();
+    renderingSystem->init();
   }
   
   SDL_PumpEvents();
@@ -73,7 +76,7 @@ void App::init() {
   
   {
     PROFILE(Initialize Screens);
-    screenMan.initAll();
+    screenMan.initAll(renderingSystem);
   }
   
   screenMan.transitionTo<TitleScreen>();
@@ -86,6 +89,8 @@ void App::quit() {
   screenMan.removeAll();
   music.quit();
   audioLibrary.reset();
+  renderingSystem->quit();
+  renderingSystem.reset();
   renderingContext.quit();
   window.reset();
   windowLibrary.reset();

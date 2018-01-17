@@ -11,6 +11,7 @@
 
 #include "music player.hpp"
 #include "screen manager.hpp"
+#include "rendering system.hpp"
 #include "rendering context.hpp"
 #include <Simpleton/SDL/library.hpp>
 #include <Simpleton/SDL/audio library.hpp>
@@ -28,6 +29,7 @@ private:
   RenderingContext renderingContext;
   ScreenManager screenMan;
   MusicPlayer music;
+  std::shared_ptr<RenderingSystem> renderingSystem;
   
   void init();
   void quit();

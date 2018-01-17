@@ -10,12 +10,13 @@
 #define title_screen_hpp
 
 #include "screen.hpp"
-#include "rendering system.hpp"
+#include "frame type.hpp"
+#include "rendering types.hpp"
 #include <Simpleton/Camera 2D/camera.hpp>
 
 class TitleScreen final : public Screen {
 public:
-  void init() override;
+  void init(std::shared_ptr<RenderingSystem>) override;
   void quit() override;
   
   void enter() override;
@@ -26,7 +27,7 @@ public:
 
 private:
   Cam2D::Camera camera;
-  RenderingSystem rendering;
+  std::shared_ptr<RenderingSystem> rendering;
   WriterGroup quadWriters;
   Frame frame = 0;
 };
