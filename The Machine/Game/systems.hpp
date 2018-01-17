@@ -11,6 +11,7 @@
 
 #include "wire system.hpp"
 #include "gate system.hpp"
+#include "exit system.hpp"
 #include "delay system.hpp"
 #include "lever system.hpp"
 #include "piston system.hpp"

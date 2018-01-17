@@ -125,6 +125,14 @@ void GameScreen::update(float) {
   clearRealDirSystem(*registry);
   moveDirSystem(*registry, grid);
   clearDesiredDirSystem(*registry);
+  
+  if (exitSystem(*registry, grid)) {
+    const ECS::Level current = levels.getLoaded();
+    if (current != ECS::NULL_LEVEL) {
+      progress.finishLevel(current);
+      loadLevel(current + 1);
+    }
+  }
 }
 
 void GameScreen::render(const float aspect, const float delta) {
@@ -138,13 +146,13 @@ void GameScreen::render(const float aspect, const float delta) {
 bool GameScreen::loadLevel(const ECS::Level level) {
   PROFILE(GameScreen::loadLevel);
 
-  const bool success = levels.loadLevel(level);
-  // @TODO level size should be defined in level file
+  // @TODO maybe define level size in level file
   constexpr Pos LEVEL_SIZE = {32, 18};
+  levels.loadLevel(level);
   camera.setPos(LEVEL_SIZE / 2u);
   dynamic_cast<Cam2D::ZoomToFit *>(camera.targetZoom.get())->setSize(LEVEL_SIZE);
   grid = EntityGrid(LEVEL_SIZE);
   initGridSystem(*registry, grid);
   rendering->updateQuadCount();
-  return success;
+  return true;
 }
