@@ -29,5 +29,6 @@ using QuadIter = typename Quads::iterator;
 using Elems = std::vector<ElemType>;
 using TextureID = size_t;
 using WriterID = size_t;
+using WriterGroup = std::vector<WriterID>;
 
 #endif

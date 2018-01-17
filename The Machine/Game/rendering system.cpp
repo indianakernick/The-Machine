@@ -123,7 +123,15 @@ void RenderingSystem::updateQuadCount() {
   GL::unbindVertexArray();
 }
 
-void RenderingSystem::render(const glm::mat3 &viewProj, const Frame frame) {
+void RenderingSystem::render(
+  const WriterGroup &group,
+  const glm::mat3 &viewProj,
+  const Frame frame
+) {
+  if (group.empty()) {
+    return;
+  }
+
   vertArray.bind();
   program.use();
   GL::setUniform(viewProjLoc, viewProj);
@@ -135,7 +143,8 @@ void RenderingSystem::render(const glm::mat3 &viewProj, const Frame frame) {
   
   const QuadIter quadIter = quads.begin();
   
-  for (auto &writer : writers) {
+  for (WriterID writerID : group) {
+    std::unique_ptr<QuadWriter> &writer = writers.at(writerID);
     const size_t writerQuads = writer->numQuads();
     writer->writeQuads(quadIter, frame);
     

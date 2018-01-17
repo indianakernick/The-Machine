@@ -25,10 +25,10 @@ void GameScreen::init() {
   sheet = std::make_shared<Spritesheet>(Unpack::makeSpritesheet(atlasPath));
   registry = std::make_shared<ECS::Registry>();
   
-  rendering.addWriter<PowerSpriteWriter>(tex, registry, sheet);
-  rendering.addWriter<StaticSpriteWriter>(tex, registry, sheet);
-  rendering.addWriter<CrossWireSpriteWriter>(tex, registry, sheet);
-  rendering.addWriter<RadioactivitySpriteWriter>(tex, registry, sheet);
+  quadWriters.push_back(rendering.addWriter<PowerSpriteWriter>(tex, registry, sheet));
+  quadWriters.push_back(rendering.addWriter<StaticSpriteWriter>(tex, registry, sheet));
+  quadWriters.push_back(rendering.addWriter<CrossWireSpriteWriter>(tex, registry, sheet));
+  quadWriters.push_back(rendering.addWriter<RadioactivitySpriteWriter>(tex, registry, sheet));
 
   camera.transform.setOrigin(Cam2D::Origin::CENTER);
   camera.targetZoom = std::make_unique<Cam2D::ZoomToFit>(glm::vec2());
@@ -130,7 +130,7 @@ void GameScreen::render(const float aspect, const float delta) {
   
   spritePositionSystem(*registry, frame);
   camera.update(aspect, delta);
-  rendering.render(camera.transform.toPixels(), frame);
+  rendering.render(quadWriters, camera.transform.toPixels(), frame);
 }
 
 bool GameScreen::loadLevel(const ECS::Level level) {

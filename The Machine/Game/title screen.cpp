@@ -24,7 +24,7 @@ void TitleScreen::init() {
 
   rendering.init();
   const TextureID tex = rendering.addTexture("title screen.png");
-  rendering.addWriter<TitleScreenWriter>(tex);
+  quadWriters.push_back(rendering.addWriter<TitleScreenWriter>(tex));
   rendering.updateQuadCount();
   
   camera.transform.setOrigin(Cam2D::Origin::BOTTOM_LEFT);
@@ -56,6 +56,6 @@ void TitleScreen::render(const float aspect, const float delta) {
     frame = LOOP_BEGIN;
   }
   camera.update(aspect, delta);
-  rendering.render(camera.transform.toPixels(), frame);
+  rendering.render(quadWriters, camera.transform.toPixels(), frame);
   ++frame;
 }

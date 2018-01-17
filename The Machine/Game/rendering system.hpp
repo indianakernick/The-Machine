@@ -31,7 +31,7 @@ public:
   TextureID addTexture(std::string_view);
   
   void updateQuadCount();
-  void render(const glm::mat3 &, Frame);
+  void render(const WriterGroup &, const glm::mat3 &, Frame);
 
 private:
   std::vector<std::unique_ptr<QuadWriter>> writers;

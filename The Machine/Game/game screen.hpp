@@ -42,6 +42,7 @@ private:
   RenderingSystem rendering;
   PlayerKeyStates playerInput;
   Frame frame = 0;
+  WriterGroup quadWriters;
   
   bool loadLevel(ECS::Level);
 };

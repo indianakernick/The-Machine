@@ -27,6 +27,7 @@ public:
 private:
   Cam2D::Camera camera;
   RenderingSystem rendering;
+  WriterGroup quadWriters;
   Frame frame = 0;
 };
 
