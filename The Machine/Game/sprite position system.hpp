@@ -12,6 +12,7 @@
 #include "frame type.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
+// set SpritePosition based on the Movement of the entity
 void spritePositionSystem(ECS::Registry &, Frame);
 
 #endif

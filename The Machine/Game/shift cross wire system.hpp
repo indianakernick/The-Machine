@@ -11,6 +11,8 @@
 
 #include <Simpleton/ECS/registry.hpp>
 
+//Shift the Power components held by the CrossWire component as described in the
+//shiftPowerSystem
 void shiftCrossWireSystem(ECS::Registry &);
 
 #endif

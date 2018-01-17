@@ -11,6 +11,7 @@
 
 #include "player key states.hpp"
 
+//reset the input states ready for the next tick
 void clearPlayerInputSystem(PlayerKeyStates &);
 
 #endif

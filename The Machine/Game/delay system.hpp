@@ -11,6 +11,7 @@
 
 #include <Simpleton/ECS/registry.hpp>
 
+//calculate the output of the Delay entity
 void delaySystem(ECS::Registry &);
 
 #endif

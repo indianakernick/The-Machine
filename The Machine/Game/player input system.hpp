@@ -13,6 +13,7 @@
 
 extern "C" union SDL_Event;
 
+//read key events and converted then into a higher level representation
 void playerInputSystem(PlayerKeyStates &, const SDL_Event &);
 
 #endif
