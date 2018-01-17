@@ -33,6 +33,7 @@
 #include "shift player action system.hpp"
 #include "shift radioactivity system.hpp"
 #include "player input response system.hpp"
+#include "signal channel toggle system.hpp"
 #include "radioactivity detector system.hpp"
 
 #endif

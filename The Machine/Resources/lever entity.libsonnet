@@ -11,7 +11,7 @@ function(params) {
     Device: {},
     PowerOutput: common.getDirBitsetComp("all", ""),
     SpritePosition: {
-      depth: common.getDepth("lever")
+      depth: common.getDepth("over dynamic")
     },
     PowerSprite: common.getTransitionPowerSpriteComp("lever 0")
   }

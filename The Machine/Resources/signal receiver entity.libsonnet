@@ -3,7 +3,7 @@ local common = import "common.libsonnet";
 function(params) {
   components: common.checkParams(params, ["pos", "channel"]) {
     StaticCollision: common.getStaticCollisionComp({
-      accepts: "none"
+      accepts: "player"
     }),
     Position: params.pos,
     Power: {},
@@ -13,7 +13,7 @@ function(params) {
       channel: params.channel
     },
     SpritePosition: {
-      depth: common.getDepth("static")
+      depth: common.getDepth("over dynamic")
     },
     PowerSprite: {
       local id = common.getSpriteID("signal receiver " + params.channel + " 0"),

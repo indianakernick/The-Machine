@@ -80,6 +80,7 @@
 		455AFF2C200234B400739358 /* power sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF2A200234B400739358 /* power sprite init.cpp */; };
 		455AFF2F2002E8D300739358 /* static sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF2D2002E8D300739358 /* static sprite writer.cpp */; };
 		45B6773A200EFAC5000CF80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450759911FFC77E20009B360 /* Assets.xcassets */; };
+		45B67A14200F21FD000CF80E /* signal channel toggle system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A12200F21FD000CF80E /* signal channel toggle system.cpp */; };
 		45F62404200CA34000AEB428 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; };
 		45F62407200CA39100AEB428 /* SDL2_mixer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45F62424200CB3DB00AEB428 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241A200CB3C400AEB428 /* 1.wav */; };
@@ -1430,6 +1431,8 @@
 		45B67A0F200F1D1E000CF80E /* f 704.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f 704.png"; sourceTree = "<group>"; };
 		45B67A10200F1D1E000CF80E /* f 707.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f 707.png"; sourceTree = "<group>"; };
 		45B67A11200F1D8B000CF80E /* title screen.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "title screen.anim"; sourceTree = "<group>"; };
+		45B67A12200F21FD000CF80E /* signal channel toggle system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "signal channel toggle system.cpp"; sourceTree = "<group>"; };
+		45B67A13200F21FD000CF80E /* signal channel toggle system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal channel toggle system.hpp"; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -1653,6 +1656,8 @@
 				455AFE3320009C6C00739358 /* button system.hpp */,
 				455AFE8D2000B8A200739358 /* exit system.cpp */,
 				455AFE8E2000B8A200739358 /* exit system.hpp */,
+				45B67A12200F21FD000CF80E /* signal channel toggle system.cpp */,
+				45B67A13200F21FD000CF80E /* signal channel toggle system.hpp */,
 			);
 			name = Logic;
 			sourceTree = "<group>";
@@ -3277,6 +3282,7 @@
 				455A001120033DED00739358 /* sprite position system.cpp in Sources */,
 				455A00982007243C00739358 /* device input system.cpp in Sources */,
 				455AFDFB20005A2400739358 /* radioactivity detector init.cpp in Sources */,
+				45B67A14200F21FD000CF80E /* signal channel toggle system.cpp in Sources */,
 				455AFE0820006D0100739358 /* shift radioactivity system.cpp in Sources */,
 				455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */,
 				455AFE10200075C300739358 /* signal receiver init.cpp in Sources */,

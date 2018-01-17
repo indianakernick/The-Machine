@@ -106,6 +106,7 @@ void GameScreen::update(float) {
   
   updatePosSystem(*registry, grid);
   
+  signalChannelToggleSystem(*registry, grid);
   radioactivityDetectorSystem(*registry, grid);
   signalReceiverSystem(*registry);
   pressurePlateSystem(*registry, grid);
