@@ -22,8 +22,10 @@ public:
   void quit();
   
   template <typename WriterClass, typename ...Args>
-  void addWriter(Args &&... args) {
+  WriterID addWriter(Args &&... args) {
+    const WriterID id = writers.size();
     writers.emplace_back(std::make_unique<WriterClass>(std::forward<Args>(args)...));
+    return id;
   }
   
   TextureID addTexture(std::string_view);

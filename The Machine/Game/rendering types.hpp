@@ -28,5 +28,6 @@ using Quads = std::vector<Quad>;
 using QuadIter = typename Quads::iterator;
 using Elems = std::vector<ElemType>;
 using TextureID = size_t;
+using WriterID = size_t;
 
 #endif
