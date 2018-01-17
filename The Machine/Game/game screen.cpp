@@ -13,6 +13,7 @@
 #include "component inits.hpp"
 #include "rendering system.hpp"
 #include <Simpleton/SDL/paths.hpp>
+#include <Simpleton/SDL/events.hpp>
 #include <Simpleton/Utils/profiler.hpp>
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
 
@@ -83,6 +84,12 @@ void GameScreen::enter() {
 }
 
 void GameScreen::input(const SDL_Event &e) {
+  if (SDL::keyDown(e, SDL_SCANCODE_R)) {
+    const ECS::Level current = levels.getLoaded();
+    if (current != ECS::NULL_LEVEL) {
+      loadLevel(current);
+    }
+  }
   playerInputSystem(playerInput, e);
 }
 
