@@ -3337,6 +3337,7 @@
 					"-Weffc++",
 					"-Wpedantic",
 					"-Wno-documentation",
+					"-fvisibility=default",
 				);
 				OTHER_LDFLAGS = (
 					/usr/local/lib/libSurface.a,
@@ -3377,6 +3378,7 @@
 					"-Weffc++",
 					"-Wpedantic",
 					"-Wno-documentation",
+					"-fvisibility=default",
 				);
 				OTHER_LDFLAGS = (
 					/usr/local/lib/libSurface.a,
