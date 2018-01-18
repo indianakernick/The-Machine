@@ -14,18 +14,15 @@
 		450759A71FFC7B240009B360 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450759A61FFC7B240009B360 /* IOKit.framework */; };
 		450759A91FFC7B2A0009B360 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450759A81FFC7B2A0009B360 /* OpenGL.framework */; };
 		450759AB1FFC7B530009B360 /* SDL2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 450759A01FFC7A9E0009B360 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		455A000E20033CB900739358 /* sprite position init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A000C20033CB900739358 /* sprite position init.cpp */; };
 		455A001120033DED00739358 /* sprite position system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A000F20033DED00739358 /* sprite position system.cpp */; };
 		455A001420034C6100739358 /* radioactivity sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A001220034C6100739358 /* radioactivity sprite writer.cpp */; };
 		455A00172003531000739358 /* power sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A00152003531000739358 /* power sprite writer.cpp */; };
 		455A003120046D4700739358 /* clear player input system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A002F20046D4700739358 /* clear player input system.cpp */; };
 		455A00342004708900739358 /* player input response system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A00322004708900739358 /* player input response system.cpp */; };
-		455A00822005DE7400739358 /* cross wire sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A00802005DE7400739358 /* cross wire sprite init.cpp */; };
 		455A00852005E04600739358 /* shift cross wire system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A00832005E04600739358 /* shift cross wire system.cpp */; };
 		455A00982007243C00739358 /* device input system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A00962007243C00739358 /* device input system.cpp */; };
 		455A02BF200875EF00739358 /* cross wire sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A02BD200875EF00739358 /* cross wire sprite writer.cpp */; };
 		455A03162009C64F00739358 /* power input system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A03142009C64F00739358 /* power input system.cpp */; };
-		455A031E2009D8D600739358 /* delay init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A031C2009D8D600739358 /* delay init.cpp */; };
 		455A03212009DBFE00739358 /* delay system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A031F2009DBFE00739358 /* delay system.cpp */; };
 		455A0851200C72A500739358 /* title screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 455A084F200C72A400739358 /* title screen.png */; };
 		455A0852200C72A500739358 /* title screen.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 455A0850200C72A500739358 /* title screen.atlas */; };
@@ -37,35 +34,20 @@
 		455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD881FFDB3E000739358 /* rendering context.cpp */; };
 		455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD8A1FFDB5E800739358 /* game screen.cpp */; };
 		455AFD971FFDBADF00739358 /* entity grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD951FFDBADF00739358 /* entity grid.cpp */; };
-		455AFDA11FFDC42C00739358 /* static collision init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFD9F1FFDC42C00739358 /* static collision init.cpp */; };
-		455AFDB11FFDD77000739358 /* dynamic collision init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDAF1FFDD77000739358 /* dynamic collision init.cpp */; };
 		455AFDBB1FFDE84D00739358 /* player input system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDB91FFDE84D00739358 /* player input system.cpp */; };
-		455AFDC31FFDEE5B00739358 /* position init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDC11FFDEE5B00739358 /* position init.cpp */; };
 		455AFDC61FFDF34800739358 /* init grid system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDC41FFDF34800739358 /* init grid system.cpp */; };
 		455AFDC91FFDF71100739358 /* move dir system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDC71FFDF71100739358 /* move dir system.cpp */; };
 		455AFDCC1FFF044900739358 /* clear real dir system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDCA1FFF044900739358 /* clear real dir system.cpp */; };
 		455AFDCF1FFF06EB00739358 /* clear desired dir system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDCD1FFF06EB00739358 /* clear desired dir system.cpp */; };
 		455AFDD21FFF0B9200739358 /* update pos system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDD01FFF0B9200739358 /* update pos system.cpp */; };
-		455AFDD91FFF1B9A00739358 /* power input init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDD71FFF1B9A00739358 /* power input init.cpp */; };
-		455AFDDC1FFF1D2000739358 /* power output init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDDA1FFF1D2000739358 /* power output init.cpp */; };
-		455AFDE11FFF3E8800739358 /* gate init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDDF1FFF3E8800739358 /* gate init.cpp */; };
-		455AFDE41FFF3F4200739358 /* wire init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDE21FFF3F4200739358 /* wire init.cpp */; };
 		455AFDE71FFF42CF00739358 /* shift power system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDE51FFF42CF00739358 /* shift power system.cpp */; };
 		455AFDEA1FFF449000739358 /* gate system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDE81FFF449000739358 /* gate system.cpp */; };
 		455AFDED200042F200739358 /* wire system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDEB200042F200739358 /* wire system.cpp */; };
-		455AFDF72000578100739358 /* radioactivity init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDF52000578100739358 /* radioactivity init.cpp */; };
-		455AFDFB20005A2400739358 /* radioactivity detector init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDF920005A2400739358 /* radioactivity detector init.cpp */; };
-		455AFDFF20005DE300739358 /* radioactive toggle init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFDFD20005DE300739358 /* radioactive toggle init.cpp */; };
 		455AFE02200064D200739358 /* radioactivity detector system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE00200064D200739358 /* radioactivity detector system.cpp */; };
 		455AFE052000691D00739358 /* radioactive toggle system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE032000691D00739358 /* radioactive toggle system.cpp */; };
 		455AFE0820006D0100739358 /* shift radioactivity system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE0620006D0100739358 /* shift radioactivity system.cpp */; };
-		455AFE0C2000733100739358 /* signal transmitter init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE0A2000733100739358 /* signal transmitter init.cpp */; };
-		455AFE10200075C300739358 /* signal receiver init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE0E200075C300739358 /* signal receiver init.cpp */; };
 		455AFE13200076A200739358 /* signal receiver system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE11200076A200739358 /* signal receiver system.cpp */; };
-		455AFE1820007F1500739358 /* pressure plate init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE1620007F1500739358 /* pressure plate init.cpp */; };
-		455AFE1F2000824200739358 /* weight init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE1D2000824200739358 /* weight init.cpp */; };
 		455AFE222000839000739358 /* pressure plate system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE202000839000739358 /* pressure plate system.cpp */; };
-		455AFE262000881A00739358 /* piston init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE242000881A00739358 /* piston init.cpp */; };
 		455AFE29200089BA00739358 /* piston system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE27200089BA00739358 /* piston system.cpp */; };
 		455AFE2C200090D100739358 /* shift player action system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE2A200090D100739358 /* shift player action system.cpp */; };
 		455AFE312000982B00739358 /* lever system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE2F2000982B00739358 /* lever system.cpp */; };
@@ -75,9 +57,6 @@
 		455AFE8F2000B8A200739358 /* exit system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE8D2000B8A200739358 /* exit system.cpp */; };
 		455AFF10200212D700739358 /* rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF0C200212D500739358 /* rendering system.cpp */; };
 		455AFF142002132B00739358 /* quad writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF122002132B00739358 /* quad writer.cpp */; };
-		455AFF1D20022C4100739358 /* static sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF1B20022C4100739358 /* static sprite init.cpp */; };
-		455AFF28200232CF00739358 /* radioactivity sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF26200232CF00739358 /* radioactivity sprite init.cpp */; };
-		455AFF2C200234B400739358 /* power sprite init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF2A200234B400739358 /* power sprite init.cpp */; };
 		455AFF2F2002E8D300739358 /* static sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF2D2002E8D300739358 /* static sprite writer.cpp */; };
 		45B6773A200EFAC5000CF80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450759911FFC77E20009B360 /* Assets.xcassets */; };
 		45B67A14200F21FD000CF80E /* signal channel toggle system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A12200F21FD000CF80E /* signal channel toggle system.cpp */; };
@@ -125,8 +104,6 @@
 		450759A81FFC7B2A0009B360 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		455A00062003384700739358 /* quad writers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "quad writers.hpp"; sourceTree = "<group>"; };
 		455A000B20033B6000739358 /* sprite position component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "sprite position component.hpp"; sourceTree = "<group>"; };
-		455A000C20033CB900739358 /* sprite position init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "sprite position init.cpp"; sourceTree = "<group>"; };
-		455A000D20033CB900739358 /* sprite position init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "sprite position init.hpp"; sourceTree = "<group>"; };
 		455A000F20033DED00739358 /* sprite position system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "sprite position system.cpp"; sourceTree = "<group>"; };
 		455A001020033DED00739358 /* sprite position system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "sprite position system.hpp"; sourceTree = "<group>"; };
 		455A001220034C6100739358 /* radioactivity sprite writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "radioactivity sprite writer.cpp"; sourceTree = "<group>"; };
@@ -160,8 +137,6 @@
 		455A007C2005DCA800739358 /* cross wire entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "cross wire entity.libsonnet"; sourceTree = "<group>"; };
 		455A007E2005DDA700739358 /* cross wire component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "cross wire component.hpp"; sourceTree = "<group>"; };
 		455A007F2005DDE000739358 /* cross wire sprite component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "cross wire sprite component.hpp"; sourceTree = "<group>"; };
-		455A00802005DE7400739358 /* cross wire sprite init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "cross wire sprite init.cpp"; sourceTree = "<group>"; };
-		455A00812005DE7400739358 /* cross wire sprite init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "cross wire sprite init.hpp"; sourceTree = "<group>"; };
 		455A00832005E04600739358 /* shift cross wire system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "shift cross wire system.cpp"; sourceTree = "<group>"; };
 		455A00842005E04600739358 /* shift cross wire system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "shift cross wire system.hpp"; sourceTree = "<group>"; };
 		455A00862005E99700739358 /* device component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "device component.hpp"; sourceTree = "<group>"; };
@@ -366,8 +341,6 @@
 		455A03142009C64F00739358 /* power input system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "power input system.cpp"; sourceTree = "<group>"; };
 		455A03152009C64F00739358 /* power input system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power input system.hpp"; sourceTree = "<group>"; };
 		455A03172009D77400739358 /* delay component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "delay component.hpp"; sourceTree = "<group>"; };
-		455A031C2009D8D600739358 /* delay init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "delay init.cpp"; sourceTree = "<group>"; };
-		455A031D2009D8D600739358 /* delay init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "delay init.hpp"; sourceTree = "<group>"; };
 		455A031F2009DBFE00739358 /* delay system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "delay system.cpp"; sourceTree = "<group>"; };
 		455A03202009DBFE00739358 /* delay system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "delay system.hpp"; sourceTree = "<group>"; };
 		455A03222009EB8B00739358 /* delay entity.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "delay entity.libsonnet"; sourceTree = "<group>"; };
@@ -577,24 +550,17 @@
 		455AFD951FFDBADF00739358 /* entity grid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "entity grid.cpp"; sourceTree = "<group>"; };
 		455AFD961FFDBADF00739358 /* entity grid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "entity grid.hpp"; sourceTree = "<group>"; };
 		455AFD991FFDBB7F00739358 /* position type.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "position type.hpp"; sourceTree = "<group>"; };
-		455AFD9E1FFDC41300739358 /* component inits.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "component inits.hpp"; sourceTree = "<group>"; };
-		455AFD9F1FFDC42C00739358 /* static collision init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "static collision init.cpp"; sourceTree = "<group>"; };
-		455AFDA01FFDC42C00739358 /* static collision init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "static collision init.hpp"; sourceTree = "<group>"; };
 		455AFDA31FFDC46E00739358 /* static collision component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "static collision component.hpp"; sourceTree = "<group>"; };
 		455AFDA81FFDC8A200739358 /* level 0.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 0.jsonnet"; sourceTree = "<group>"; };
 		455AFDAA1FFDC91900739358 /* common.libsonnet */ = {isa = PBXFileReference; explicitFileType = text.json; path = common.libsonnet; sourceTree = "<group>"; };
 		455AFDAC1FFDC93500739358 /* entities.libsonnet */ = {isa = PBXFileReference; explicitFileType = text.json; path = entities.libsonnet; sourceTree = "<group>"; };
 		455AFDAE1FFDD67F00739358 /* dynamic collision component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "dynamic collision component.hpp"; sourceTree = "<group>"; };
-		455AFDAF1FFDD77000739358 /* dynamic collision init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "dynamic collision init.cpp"; sourceTree = "<group>"; };
-		455AFDB01FFDD77000739358 /* dynamic collision init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "dynamic collision init.hpp"; sourceTree = "<group>"; };
 		455AFDB31FFDE0B800739358 /* movement component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "movement component.hpp"; sourceTree = "<group>"; };
 		455AFDB81FFDE6A900739358 /* player action component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "player action component.hpp"; sourceTree = "<group>"; };
 		455AFDB91FFDE84D00739358 /* player input system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "player input system.cpp"; sourceTree = "<group>"; };
 		455AFDBA1FFDE84D00739358 /* player input system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "player input system.hpp"; sourceTree = "<group>"; };
 		455AFDBC1FFDEBD700739358 /* systems.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = systems.hpp; sourceTree = "<group>"; };
 		455AFDC01FFDEE1900739358 /* position component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "position component.hpp"; sourceTree = "<group>"; };
-		455AFDC11FFDEE5B00739358 /* position init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "position init.cpp"; sourceTree = "<group>"; };
-		455AFDC21FFDEE5B00739358 /* position init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "position init.hpp"; sourceTree = "<group>"; };
 		455AFDC41FFDF34800739358 /* init grid system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "init grid system.cpp"; sourceTree = "<group>"; };
 		455AFDC51FFDF34800739358 /* init grid system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "init grid system.hpp"; sourceTree = "<group>"; };
 		455AFDC71FFDF71100739358 /* move dir system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "move dir system.cpp"; sourceTree = "<group>"; };
@@ -609,16 +575,8 @@
 		455AFDD41FFF191F00739358 /* power component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power component.hpp"; sourceTree = "<group>"; };
 		455AFDD51FFF19A300739358 /* power input component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power input component.hpp"; sourceTree = "<group>"; };
 		455AFDD61FFF19AD00739358 /* power output component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power output component.hpp"; sourceTree = "<group>"; };
-		455AFDD71FFF1B9A00739358 /* power input init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "power input init.cpp"; sourceTree = "<group>"; };
-		455AFDD81FFF1B9A00739358 /* power input init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power input init.hpp"; sourceTree = "<group>"; };
-		455AFDDA1FFF1D2000739358 /* power output init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "power output init.cpp"; sourceTree = "<group>"; };
-		455AFDDB1FFF1D2000739358 /* power output init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power output init.hpp"; sourceTree = "<group>"; };
 		455AFDDD1FFF3DDD00739358 /* gate component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "gate component.hpp"; sourceTree = "<group>"; };
 		455AFDDE1FFF3E2F00739358 /* wire component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "wire component.hpp"; sourceTree = "<group>"; };
-		455AFDDF1FFF3E8800739358 /* gate init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "gate init.cpp"; sourceTree = "<group>"; };
-		455AFDE01FFF3E8800739358 /* gate init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "gate init.hpp"; sourceTree = "<group>"; };
-		455AFDE21FFF3F4200739358 /* wire init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "wire init.cpp"; sourceTree = "<group>"; };
-		455AFDE31FFF3F4200739358 /* wire init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "wire init.hpp"; sourceTree = "<group>"; };
 		455AFDE51FFF42CF00739358 /* shift power system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "shift power system.cpp"; sourceTree = "<group>"; };
 		455AFDE61FFF42CF00739358 /* shift power system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "shift power system.hpp"; sourceTree = "<group>"; };
 		455AFDE81FFF449000739358 /* gate system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "gate system.cpp"; sourceTree = "<group>"; };
@@ -626,14 +584,8 @@
 		455AFDEB200042F200739358 /* wire system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "wire system.cpp"; sourceTree = "<group>"; };
 		455AFDEC200042F200739358 /* wire system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "wire system.hpp"; sourceTree = "<group>"; };
 		455AFDF4200056D600739358 /* radioactivity component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity component.hpp"; sourceTree = "<group>"; };
-		455AFDF52000578100739358 /* radioactivity init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "radioactivity init.cpp"; sourceTree = "<group>"; };
-		455AFDF62000578100739358 /* radioactivity init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity init.hpp"; sourceTree = "<group>"; };
 		455AFDF8200059AB00739358 /* radioactivity detector component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity detector component.hpp"; sourceTree = "<group>"; };
-		455AFDF920005A2400739358 /* radioactivity detector init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "radioactivity detector init.cpp"; sourceTree = "<group>"; };
-		455AFDFA20005A2400739358 /* radioactivity detector init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity detector init.hpp"; sourceTree = "<group>"; };
 		455AFDFC20005D5600739358 /* radioactive toggle component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactive toggle component.hpp"; sourceTree = "<group>"; };
-		455AFDFD20005DE300739358 /* radioactive toggle init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "radioactive toggle init.cpp"; sourceTree = "<group>"; };
-		455AFDFE20005DE300739358 /* radioactive toggle init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactive toggle init.hpp"; sourceTree = "<group>"; };
 		455AFE00200064D200739358 /* radioactivity detector system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "radioactivity detector system.cpp"; sourceTree = "<group>"; };
 		455AFE01200064D200739358 /* radioactivity detector system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity detector system.hpp"; sourceTree = "<group>"; };
 		455AFE032000691D00739358 /* radioactive toggle system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "radioactive toggle system.cpp"; sourceTree = "<group>"; };
@@ -641,25 +593,15 @@
 		455AFE0620006D0100739358 /* shift radioactivity system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "shift radioactivity system.cpp"; sourceTree = "<group>"; };
 		455AFE0720006D0100739358 /* shift radioactivity system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "shift radioactivity system.hpp"; sourceTree = "<group>"; };
 		455AFE09200072EF00739358 /* signal transmitter component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal transmitter component.hpp"; sourceTree = "<group>"; };
-		455AFE0A2000733100739358 /* signal transmitter init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "signal transmitter init.cpp"; sourceTree = "<group>"; };
-		455AFE0B2000733100739358 /* signal transmitter init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal transmitter init.hpp"; sourceTree = "<group>"; };
 		455AFE0D2000751100739358 /* signal receiver component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal receiver component.hpp"; sourceTree = "<group>"; };
-		455AFE0E200075C300739358 /* signal receiver init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "signal receiver init.cpp"; sourceTree = "<group>"; };
-		455AFE0F200075C300739358 /* signal receiver init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal receiver init.hpp"; sourceTree = "<group>"; };
 		455AFE11200076A200739358 /* signal receiver system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "signal receiver system.cpp"; sourceTree = "<group>"; };
 		455AFE12200076A200739358 /* signal receiver system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal receiver system.hpp"; sourceTree = "<group>"; };
 		455AFE1420007A7200739358 /* signal channels.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal channels.hpp"; sourceTree = "<group>"; };
 		455AFE1520007EC600739358 /* pressure plate component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "pressure plate component.hpp"; sourceTree = "<group>"; };
-		455AFE1620007F1500739358 /* pressure plate init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "pressure plate init.cpp"; sourceTree = "<group>"; };
-		455AFE1720007F1500739358 /* pressure plate init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "pressure plate init.hpp"; sourceTree = "<group>"; };
 		455AFE1C2000821800739358 /* weight component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "weight component.hpp"; sourceTree = "<group>"; };
-		455AFE1D2000824200739358 /* weight init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "weight init.cpp"; sourceTree = "<group>"; };
-		455AFE1E2000824200739358 /* weight init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "weight init.hpp"; sourceTree = "<group>"; };
 		455AFE202000839000739358 /* pressure plate system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "pressure plate system.cpp"; sourceTree = "<group>"; };
 		455AFE212000839000739358 /* pressure plate system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "pressure plate system.hpp"; sourceTree = "<group>"; };
 		455AFE232000869D00739358 /* piston component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "piston component.hpp"; sourceTree = "<group>"; };
-		455AFE242000881A00739358 /* piston init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "piston init.cpp"; sourceTree = "<group>"; };
-		455AFE252000881A00739358 /* piston init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "piston init.hpp"; sourceTree = "<group>"; };
 		455AFE27200089BA00739358 /* piston system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "piston system.cpp"; sourceTree = "<group>"; };
 		455AFE28200089BA00739358 /* piston system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "piston system.hpp"; sourceTree = "<group>"; };
 		455AFE2A200090D100739358 /* shift player action system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "shift player action system.cpp"; sourceTree = "<group>"; };
@@ -700,14 +642,8 @@
 		455AFF132002132B00739358 /* quad writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "quad writer.hpp"; sourceTree = "<group>"; };
 		455AFF192002245400739358 /* frame type.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "frame type.hpp"; sourceTree = "<group>"; };
 		455AFF1A20022B4100739358 /* static sprite component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "static sprite component.hpp"; sourceTree = "<group>"; };
-		455AFF1B20022C4100739358 /* static sprite init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "static sprite init.cpp"; sourceTree = "<group>"; };
-		455AFF1C20022C4100739358 /* static sprite init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "static sprite init.hpp"; sourceTree = "<group>"; };
 		455AFF252002325700739358 /* radioactivity sprite component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity sprite component.hpp"; sourceTree = "<group>"; };
-		455AFF26200232CF00739358 /* radioactivity sprite init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "radioactivity sprite init.cpp"; sourceTree = "<group>"; };
-		455AFF27200232CF00739358 /* radioactivity sprite init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "radioactivity sprite init.hpp"; sourceTree = "<group>"; };
 		455AFF29200233B000739358 /* power sprite component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power sprite component.hpp"; sourceTree = "<group>"; };
-		455AFF2A200234B400739358 /* power sprite init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "power sprite init.cpp"; sourceTree = "<group>"; };
-		455AFF2B200234B400739358 /* power sprite init.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "power sprite init.hpp"; sourceTree = "<group>"; };
 		455AFF2D2002E8D300739358 /* static sprite writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "static sprite writer.cpp"; sourceTree = "<group>"; };
 		455AFF2E2002E8D300739358 /* static sprite writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "static sprite writer.hpp"; sourceTree = "<group>"; };
 		455AFF33200331EC00739358 /* anim helpers.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "anim helpers.js"; sourceTree = "<group>"; };
@@ -1537,7 +1473,6 @@
 				455A00052003382C00739358 /* Quad Writers */,
 				455AFD931FFDBA8300739358 /* Systems */,
 				455AFD8F1FFDB86300739358 /* Components */,
-				455AFD9D1FFDC3CA00739358 /* Component initializers */,
 				455AFD911FFDB9BB00739358 /* UI */,
 				455AFD841FFDB34400739358 /* app.cpp */,
 				455AFD851FFDB34400739358 /* app.hpp */,
@@ -1730,76 +1665,6 @@
 				455AFDB81FFDE6A900739358 /* player action component.hpp */,
 			);
 			name = "Player Input";
-			sourceTree = "<group>";
-		};
-		455A03182009D87E00739358 /* Motion */ = {
-			isa = PBXGroup;
-			children = (
-				455AFD9F1FFDC42C00739358 /* static collision init.cpp */,
-				455AFDA01FFDC42C00739358 /* static collision init.hpp */,
-				455AFDAF1FFDD77000739358 /* dynamic collision init.cpp */,
-				455AFDB01FFDD77000739358 /* dynamic collision init.hpp */,
-				455AFDC11FFDEE5B00739358 /* position init.cpp */,
-				455AFDC21FFDEE5B00739358 /* position init.hpp */,
-			);
-			name = Motion;
-			sourceTree = "<group>";
-		};
-		455A03192009D88800739358 /* Power */ = {
-			isa = PBXGroup;
-			children = (
-				455AFDD71FFF1B9A00739358 /* power input init.cpp */,
-				455AFDD81FFF1B9A00739358 /* power input init.hpp */,
-				455AFDDA1FFF1D2000739358 /* power output init.cpp */,
-				455AFDDB1FFF1D2000739358 /* power output init.hpp */,
-				455AFDDF1FFF3E8800739358 /* gate init.cpp */,
-				455AFDE01FFF3E8800739358 /* gate init.hpp */,
-				455AFDE21FFF3F4200739358 /* wire init.cpp */,
-				455AFDE31FFF3F4200739358 /* wire init.hpp */,
-				455A031C2009D8D600739358 /* delay init.cpp */,
-				455A031D2009D8D600739358 /* delay init.hpp */,
-			);
-			name = Power;
-			sourceTree = "<group>";
-		};
-		455A031A2009D89800739358 /* Rendering */ = {
-			isa = PBXGroup;
-			children = (
-				455AFF1B20022C4100739358 /* static sprite init.cpp */,
-				455AFF1C20022C4100739358 /* static sprite init.hpp */,
-				455AFF26200232CF00739358 /* radioactivity sprite init.cpp */,
-				455AFF27200232CF00739358 /* radioactivity sprite init.hpp */,
-				455AFF2A200234B400739358 /* power sprite init.cpp */,
-				455AFF2B200234B400739358 /* power sprite init.hpp */,
-				455A000C20033CB900739358 /* sprite position init.cpp */,
-				455A000D20033CB900739358 /* sprite position init.hpp */,
-				455A00802005DE7400739358 /* cross wire sprite init.cpp */,
-				455A00812005DE7400739358 /* cross wire sprite init.hpp */,
-			);
-			name = Rendering;
-			sourceTree = "<group>";
-		};
-		455A031B2009D8A400739358 /* Logic */ = {
-			isa = PBXGroup;
-			children = (
-				455AFDF52000578100739358 /* radioactivity init.cpp */,
-				455AFDF62000578100739358 /* radioactivity init.hpp */,
-				455AFDF920005A2400739358 /* radioactivity detector init.cpp */,
-				455AFDFA20005A2400739358 /* radioactivity detector init.hpp */,
-				455AFDFD20005DE300739358 /* radioactive toggle init.cpp */,
-				455AFDFE20005DE300739358 /* radioactive toggle init.hpp */,
-				455AFE0A2000733100739358 /* signal transmitter init.cpp */,
-				455AFE0B2000733100739358 /* signal transmitter init.hpp */,
-				455AFE0E200075C300739358 /* signal receiver init.cpp */,
-				455AFE0F200075C300739358 /* signal receiver init.hpp */,
-				455AFE1620007F1500739358 /* pressure plate init.cpp */,
-				455AFE1720007F1500739358 /* pressure plate init.hpp */,
-				455AFE1D2000824200739358 /* weight init.cpp */,
-				455AFE1E2000824200739358 /* weight init.hpp */,
-				455AFE242000881A00739358 /* piston init.cpp */,
-				455AFE252000881A00739358 /* piston init.hpp */,
-			);
-			name = Logic;
 			sourceTree = "<group>";
 		};
 		455A0413200C6FCF00739358 /* Title Screen Frames */ = {
@@ -2606,18 +2471,6 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
-		455AFD9D1FFDC3CA00739358 /* Component initializers */ = {
-			isa = PBXGroup;
-			children = (
-				455AFD9E1FFDC41300739358 /* component inits.hpp */,
-				455A03182009D87E00739358 /* Motion */,
-				455A03192009D88800739358 /* Power */,
-				455A031B2009D8A400739358 /* Logic */,
-				455A031A2009D89800739358 /* Rendering */,
-			);
-			name = "Component initializers";
-			sourceTree = "<group>";
-		};
 		455AFDA61FFDC85500739358 /* Levels */ = {
 			isa = PBXGroup;
 			children = (
@@ -3279,62 +3132,41 @@
 				455AFDCC1FFF044900739358 /* clear real dir system.cpp in Sources */,
 				455AFE8F2000B8A200739358 /* exit system.cpp in Sources */,
 				455AFE13200076A200739358 /* signal receiver system.cpp in Sources */,
-				455AFDA11FFDC42C00739358 /* static collision init.cpp in Sources */,
 				455AFDBB1FFDE84D00739358 /* player input system.cpp in Sources */,
-				455AFF1D20022C4100739358 /* static sprite init.cpp in Sources */,
 				455AFE02200064D200739358 /* radioactivity detector system.cpp in Sources */,
 				4507599E1FFC795D0009B360 /* main.cpp in Sources */,
-				455AFE0C2000733100739358 /* signal transmitter init.cpp in Sources */,
 				455AFE2C200090D100739358 /* shift player action system.cpp in Sources */,
 				455AFDC61FFDF34800739358 /* init grid system.cpp in Sources */,
 				455AFDC91FFDF71100739358 /* move dir system.cpp in Sources */,
-				455AFE1F2000824200739358 /* weight init.cpp in Sources */,
 				455A00342004708900739358 /* player input response system.cpp in Sources */,
 				455A085F200C844C00739358 /* screen manager.cpp in Sources */,
-				455AFDDC1FFF1D2000739358 /* power output init.cpp in Sources */,
-				455A000E20033CB900739358 /* sprite position init.cpp in Sources */,
-				455AFDE41FFF3F4200739358 /* wire init.cpp in Sources */,
-				455AFDB11FFDD77000739358 /* dynamic collision init.cpp in Sources */,
 				45F62437200D76BD00AEB428 /* rendering helpers.cpp in Sources */,
 				455A001120033DED00739358 /* sprite position system.cpp in Sources */,
 				455A00982007243C00739358 /* device input system.cpp in Sources */,
-				455AFDFB20005A2400739358 /* radioactivity detector init.cpp in Sources */,
 				45B67A14200F21FD000CF80E /* signal channel toggle system.cpp in Sources */,
 				455AFE0820006D0100739358 /* shift radioactivity system.cpp in Sources */,
 				455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */,
-				455AFE10200075C300739358 /* signal receiver init.cpp in Sources */,
 				45F62434200CBBA600AEB428 /* music player.cpp in Sources */,
 				455AFDD21FFF0B9200739358 /* update pos system.cpp in Sources */,
 				455A03212009DBFE00739358 /* delay system.cpp in Sources */,
 				455AFE3420009C6C00739358 /* button system.cpp in Sources */,
-				455AFF28200232CF00739358 /* radioactivity sprite init.cpp in Sources */,
-				455AFF2C200234B400739358 /* power sprite init.cpp in Sources */,
 				45B67A1D200F50DA000CF80E /* level controller.cpp in Sources */,
-				455AFDC31FFDEE5B00739358 /* position init.cpp in Sources */,
 				455AFE312000982B00739358 /* lever system.cpp in Sources */,
 				455A003120046D4700739358 /* clear player input system.cpp in Sources */,
 				455AFDEA1FFF449000739358 /* gate system.cpp in Sources */,
-				455A031E2009D8D600739358 /* delay init.cpp in Sources */,
 				455A001420034C6100739358 /* radioactivity sprite writer.cpp in Sources */,
-				455AFDF72000578100739358 /* radioactivity init.cpp in Sources */,
 				455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */,
-				455AFE1820007F1500739358 /* pressure plate init.cpp in Sources */,
 				455AFDED200042F200739358 /* wire system.cpp in Sources */,
 				455A03162009C64F00739358 /* power input system.cpp in Sources */,
 				455AFD861FFDB34400739358 /* app.cpp in Sources */,
 				455AFE222000839000739358 /* pressure plate system.cpp in Sources */,
-				455AFDD91FFF1B9A00739358 /* power input init.cpp in Sources */,
 				455A00172003531000739358 /* power sprite writer.cpp in Sources */,
-				455AFE262000881A00739358 /* piston init.cpp in Sources */,
-				455A00822005DE7400739358 /* cross wire sprite init.cpp in Sources */,
 				455AFF142002132B00739358 /* quad writer.cpp in Sources */,
-				455AFDFF20005DE300739358 /* radioactive toggle init.cpp in Sources */,
 				455AFF10200212D700739358 /* rendering system.cpp in Sources */,
 				455AFDE71FFF42CF00739358 /* shift power system.cpp in Sources */,
 				455AFE29200089BA00739358 /* piston system.cpp in Sources */,
 				455AFE052000691D00739358 /* radioactive toggle system.cpp in Sources */,
 				455A02BF200875EF00739358 /* cross wire sprite writer.cpp in Sources */,
-				455AFDE11FFF3E8800739358 /* gate init.cpp in Sources */,
 				455A0855200C79F600739358 /* title screen writer.cpp in Sources */,
 				455A0858200C830500739358 /* title screen.cpp in Sources */,
 				455A085B200C831400739358 /* screen.cpp in Sources */,

@@ -9,8 +9,14 @@
 #ifndef weight_component_hpp
 #define weight_component_hpp
 
+#include <Simpleton/Data/json.hpp>
+
 struct Weight {
   bool heavy;
+  
+  static void init(Weight &comp, const json &node) {
+    Data::get(comp.heavy, node, "heavy");
+  }
 };
 
 #endif

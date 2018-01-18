@@ -10,7 +10,6 @@
 
 #include "systems.hpp"
 #include "quad writers.hpp"
-#include "component inits.hpp"
 #include "rendering system.hpp"
 #include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/SDL/events.hpp>
@@ -34,37 +33,10 @@ void GameScreen::init(std::shared_ptr<RenderingSystem> renderingSystem) {
 
   camera.transform.setOrigin(Cam2D::Origin::CENTER);
   camera.targetZoom = std::make_unique<Cam2D::ZoomToFit>(glm::vec2());
-
-  compInits.construct<GateInit>();
-  compInits.construct<WireInit>();
-  compInits.construct<DelayInit>();
-  compInits.construct<PistonInit>();
-  compInits.construct<WeightInit>();
-  compInits.construct<PositionInit>();
-  compInits.construct<PowerInputInit>();
-  compInits.construct<PowerSpriteInit>();
-  compInits.construct<PowerOutputInit>();
-  compInits.construct<StaticSpriteInit>();
-  compInits.construct<RadioactivityInit>();
-  compInits.construct<PressurePlateInit>();
-  compInits.construct<SpritePositionInit>();
-  compInits.construct<SignalReceiverInit>();
-  compInits.construct<StaticCollisionInit>();
-  compInits.construct<CrossWireSpriteInit>();
-  compInits.construct<DynamicCollisionInit>();
-  compInits.construct<SignalTransmitterInit>();
-  compInits.construct<RadioactiveToggleInit>();
-  compInits.construct<RadioactivitySpriteInit>();
-  compInits.construct<RadioactivityDetectorInit>();
-  compInits.constructDefaults();
-
+  
   progress.setFilePath(SDL::getSaveDir("Indi Kernick", "The Machine") + "progress.txt");
   progress.readFile();
-  levels.init(*registry, compInits);
-  levels.levelPath([] (const ECS::Level level) {
-    const std::string levelStr = level == ECS::FINAL_LEVEL ? "final" : std::to_string(level);
-    return SDL::getResDir() + "level " + levelStr + ".json";
-  });
+  levels.setPath(SDL::getResDir() + "level ");
   
   loadLevel(progress.getIncompleteLevel());
 }
@@ -74,8 +46,6 @@ void GameScreen::quit() {
   
   registry.reset();
   sheet.reset();
-  levels.quit();
-  compInits.destroyAll();
   rendering.reset();
 }
 
@@ -86,7 +56,7 @@ void GameScreen::enter() {
 void GameScreen::input(const SDL_Event &e) {
   const auto newLevel = levelControl.getLevel(
     e,
-    levels.getLoaded(),
+    levels.current(),
     progress.getIncompleteLevel()
   );
   if (newLevel) {
@@ -137,7 +107,7 @@ void GameScreen::update(float) {
   clearDesiredDirSystem(*registry);
   
   if (exitSystem(*registry, grid)) {
-    const ECS::Level current = levels.getLoaded();
+    const ECS::Level current = levels.current();
     if (current != ECS::NULL_LEVEL) {
       progress.finishLevel(current);
       loadLevel(current + 1);
@@ -158,7 +128,7 @@ bool GameScreen::loadLevel(const ECS::Level level) {
 
   // @TODO maybe define level size in level file
   constexpr Pos LEVEL_SIZE = {32, 18};
-  levels.loadLevel(level);
+  levels.load(*registry, level);
   camera.setPos(LEVEL_SIZE / 2u);
   dynamic_cast<Cam2D::ZoomToFit *>(camera.targetZoom.get())->setSize(LEVEL_SIZE);
   grid = EntityGrid(LEVEL_SIZE);

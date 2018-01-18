@@ -9,6 +9,8 @@
 #ifndef gate_component_hpp
 #define gate_component_hpp
 
+#include <Simpleton/Data/json.hpp>
+
 enum class GateFun {
   AND,
   OR,
@@ -22,6 +24,10 @@ enum class GateFun {
 
 struct Gate {
   GateFun fun;
+  
+  static void init(Gate &comp, const json &node) {
+    comp.fun = static_cast<GateFun>(node.at("fun").get<int>());
+  }
 };
 
 #endif

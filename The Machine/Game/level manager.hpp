@@ -9,6 +9,7 @@
 #ifndef level_manager_hpp
 #define level_manager_hpp
 
+#include <string>
 #include <Simpleton/ECS/level.hpp>
 #include <Simpleton/ECS/registry.hpp>
 

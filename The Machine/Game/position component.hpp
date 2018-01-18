@@ -10,9 +10,14 @@
 #define position_component_hpp
 
 #include "position type.hpp"
+#include <Simpleton/Data/json.hpp>
 
 struct Position {
   Pos pos;
+  
+  static void init(Position &comp, const json &node) {
+    comp.pos = node.get<Pos>();
+  }
 };
 
 #endif

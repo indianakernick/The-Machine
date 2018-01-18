@@ -11,14 +11,13 @@
 
 #include "screen.hpp"
 #include "entity grid.hpp"
+#include "level manager.hpp"
 #include "component list.hpp"
 #include "rendering types.hpp"
 #include "level controller.hpp"
 #include "player key states.hpp"
 #include <Simpleton/ECS/registry.hpp>
-#include <Simpleton/ECS/comp inits.hpp>
 #include <Simpleton/Camera 2D/camera.hpp>
-#include <Simpleton/ECS/level manager.hpp>
 #include <Simpleton/ECS/progress manager.hpp>
 
 class GameScreen final : public Screen {
@@ -35,8 +34,7 @@ public:
 private:
   std::shared_ptr<ECS::Registry> registry;
   std::shared_ptr<Unpack::Spritesheet> sheet;
-  ECS::CompInits<CompList> compInits;
-  ECS::LevelManager<CompList> levels;
+  LevelManager<CompList> levels;
   ECS::ProgressManager progress;
   Cam2D::Camera camera;
   EntityGrid grid;

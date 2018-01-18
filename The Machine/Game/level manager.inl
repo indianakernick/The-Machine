@@ -8,6 +8,7 @@
 
 #include <fstream>
 #include <Simpleton/Data/json.hpp>
+#include <Simpleton/Utils/type list.hpp>
 
 namespace detail {
   template <typename Comp>
@@ -55,7 +56,7 @@ namespace detail {
     
     for (json &entityNode : root) {
       const ECS::EntityID entity = registry.create();
-      loadEntity<CompList>(registry, entityNode, entity);
+      loadEntity<CompList>(registry, entityNode.at("components"), entity);
     }
     
     return true;
@@ -91,6 +92,6 @@ void LevelManager<CompList>::setPath(const std::string &newPath) {
 }
 
 template <typename CompList>
-std::string LevelManager<CompList>::levelPath(const ECS::Level level) {
+std::string LevelManager<CompList>::levelPath(const ECS::Level level) const {
   return path + std::to_string(level) + ".json";
 }

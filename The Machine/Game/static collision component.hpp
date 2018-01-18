@@ -10,9 +10,14 @@
 #define static_collision_component_hpp
 
 #include <cstdint>
+#include <Simpleton/Data/json.hpp>
 
 struct StaticCollision {
   uint32_t accepts;
+  
+  static void init(StaticCollision &comp, const json &node) {
+    Data::get(comp.accepts, node, "accepts");
+  }
 };
 
 #endif
