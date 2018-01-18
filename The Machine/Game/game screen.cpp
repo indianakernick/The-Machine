@@ -129,7 +129,7 @@ bool GameScreen::loadLevel(const ECS::Level level) {
   const OptionalObject meta = levels.load(*registry, level);
   if (meta) {
     const Pos levelSize = meta->at("size").get<Pos>();
-    camera.setPos(levelSize / 2u);
+    camera.setPos(static_cast<glm::vec2>(levelSize) / 2.0f);
     dynamic_cast<Cam2D::ZoomToFit *>(camera.targetZoom.get())->setSize(levelSize);
     grid = EntityGrid(levelSize);
     initGridSystem(*registry, grid);
