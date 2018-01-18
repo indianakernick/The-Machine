@@ -42,7 +42,8 @@ void TitleScreen::enter() {
 }
 
 void TitleScreen::input(const SDL_Event &e) {
-  if (e.type == SDL_KEYDOWN && frame >= LOOP_BEGIN) {
+  // @TODO uncomment
+  if (e.type == SDL_KEYDOWN /* && frame >= LOOP_BEGIN */) {
     getScreenMan()->transitionTo<GameScreen>();
   }
 }
