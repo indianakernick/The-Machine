@@ -29,6 +29,7 @@ public:
   }
   
   TextureID addTexture(std::string_view);
+  TextureID addTexture(GL::Texture2D &&);
   
   void updateQuadCount();
   void render(const WriterGroup &, const glm::mat3 &, Frame);

@@ -95,8 +95,12 @@ TextureID RenderingSystem::addTexture(const std::string_view name) {
   GL::TexParams2D texParams;
   texParams.setWrap(GL_CLAMP_TO_EDGE);
   texParams.setFilter(GL_NEAREST);
+  return addTexture(GL::makeTexture2D(glImage, texParams, 0));
+}
+
+TextureID RenderingSystem::addTexture(GL::Texture2D &&texture) {
   const TextureID id = textures.size();
-  textures.emplace_back(GL::makeTexture2D(glImage, texParams, 0));
+  textures.emplace_back(std::move(texture));
   return id;
 }
 
