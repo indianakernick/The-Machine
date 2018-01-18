@@ -1436,6 +1436,8 @@
 		45B67A13200F21FD000CF80E /* signal channel toggle system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal channel toggle system.hpp"; sourceTree = "<group>"; };
 		45B67A1B200F50DA000CF80E /* level controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "level controller.cpp"; sourceTree = "<group>"; };
 		45B67A1C200F50DA000CF80E /* level controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "level controller.hpp"; sourceTree = "<group>"; };
+		45B67A2220102C22000CF80E /* level manager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "level manager.hpp"; sourceTree = "<group>"; };
+		45B67A2320102C22000CF80E /* level manager.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level manager.inl"; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -1528,6 +1530,7 @@
 		450759AD1FFC98A50009B360 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				45B67A1E20102ACD000CF80E /* ECS */,
 				45F6240B200CB07200AEB428 /* Audio */,
 				455AFD941FFDBA9A00739358 /* Utils */,
 				455AFD921FFDB9C500739358 /* Rendering */,
@@ -3056,6 +3059,15 @@
 				455A030120097C4200739358 /* wire 5 10.png */,
 			);
 			path = Sprites;
+			sourceTree = "<group>";
+		};
+		45B67A1E20102ACD000CF80E /* ECS */ = {
+			isa = PBXGroup;
+			children = (
+				45B67A2320102C22000CF80E /* level manager.inl */,
+				45B67A2220102C22000CF80E /* level manager.hpp */,
+			);
+			name = ECS;
 			sourceTree = "<group>";
 		};
 		45F6240B200CB07200AEB428 /* Audio */ = {

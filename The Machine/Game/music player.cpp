@@ -93,3 +93,27 @@ void MusicPlayer::removeFinishHook() {
   Mix_HookMusicFinished(nullptr);
   globalPlayer = nullptr;
 }
+
+struct TheComp {
+  int thing = 0;
+};
+
+struct MyComp {
+  int n;
+
+  static void init(MyComp &comp, int n) {
+    comp.n = n;
+  }
+};
+
+struct MyOtherComp {
+  static void init(MyOtherComp &comp, int x) {
+    comp.x = x;
+    comp.y = x;
+  }
+  
+  int x;
+  int y;
+};
+
+
