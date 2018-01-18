@@ -7,7 +7,6 @@
 //
 
 #include <fstream>
-#include <Simpleton/Data/json.hpp>
 #include <Simpleton/Utils/type list.hpp>
 
 namespace detail {
@@ -46,34 +45,43 @@ namespace detail {
   }
 
   template <typename CompList>
-  bool load(ECS::Registry &registry, const std::string &path) {
+  OptionalObject load(
+    ECS::Registry &registry,
+    const std::string &path
+  ) {
     std::ifstream file(path);
     if (!file.is_open()) {
-      return false;
+      return std::experimental::nullopt;
     }
     json root;
     file >> root;
     
-    for (json &entityNode : root) {
+    json::object_t meta;
+    Data::getOptional(meta, root, "meta");
+    
+    const auto &entities = root.at("entities").get_ref<const json::array_t &>();
+    for (const json &entityNode : entities) {
       const ECS::EntityID entity = registry.create();
       loadEntity<CompList>(registry, entityNode.at("components"), entity);
     }
     
-    return true;
+    return meta;
   }
 }
 
 template <typename CompList>
-bool LevelManager<CompList>::load(ECS::Registry &registry, const ECS::Level newLevel) {
+OptionalObject LevelManager<CompList>::load(
+  ECS::Registry &registry,
+  const ECS::Level newLevel
+) {
   if (currentLevel != ECS::NULL_LEVEL) {
     registry.reset();
   }
-  if (detail::load<CompList>(registry, levelPath(newLevel))) {
+  const OptionalObject meta = detail::load<CompList>(registry, levelPath(newLevel));
+  if (meta) {
     currentLevel = newLevel;
-    return true;
-  } else {
-    return false;
   }
+  return meta;
 }
 
 template <typename CompList>

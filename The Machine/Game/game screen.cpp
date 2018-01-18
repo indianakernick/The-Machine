@@ -126,13 +126,14 @@ void GameScreen::render(const float aspect, const float delta) {
 bool GameScreen::loadLevel(const ECS::Level level) {
   PROFILE(GameScreen::loadLevel);
 
-  // @TODO maybe define level size in level file
-  constexpr Pos LEVEL_SIZE = {32, 18};
-  levels.load(*registry, level);
-  camera.setPos(LEVEL_SIZE / 2u);
-  dynamic_cast<Cam2D::ZoomToFit *>(camera.targetZoom.get())->setSize(LEVEL_SIZE);
-  grid = EntityGrid(LEVEL_SIZE);
-  initGridSystem(*registry, grid);
+  const OptionalObject meta = levels.load(*registry, level);
+  if (meta) {
+    const Pos levelSize = meta->at("size").get<Pos>();
+    camera.setPos(levelSize / 2u);
+    dynamic_cast<Cam2D::ZoomToFit *>(camera.targetZoom.get())->setSize(levelSize);
+    grid = EntityGrid(levelSize);
+    initGridSystem(*registry, grid);
+  }
   rendering->updateQuadCount();
-  return true;
+  return static_cast<bool>(meta);
 }
