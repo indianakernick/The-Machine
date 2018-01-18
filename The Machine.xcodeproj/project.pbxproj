@@ -596,7 +596,6 @@
 		455AFE0D2000751100739358 /* signal receiver component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal receiver component.hpp"; sourceTree = "<group>"; };
 		455AFE11200076A200739358 /* signal receiver system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "signal receiver system.cpp"; sourceTree = "<group>"; };
 		455AFE12200076A200739358 /* signal receiver system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal receiver system.hpp"; sourceTree = "<group>"; };
-		455AFE1420007A7200739358 /* signal channels.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal channels.hpp"; sourceTree = "<group>"; };
 		455AFE1520007EC600739358 /* pressure plate component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "pressure plate component.hpp"; sourceTree = "<group>"; };
 		455AFE1C2000821800739358 /* weight component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "weight component.hpp"; sourceTree = "<group>"; };
 		455AFE202000839000739358 /* pressure plate system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "pressure plate system.cpp"; sourceTree = "<group>"; };
@@ -1374,6 +1373,7 @@
 		45B67A1C200F50DA000CF80E /* level controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "level controller.hpp"; sourceTree = "<group>"; };
 		45B67A2220102C22000CF80E /* level manager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "level manager.hpp"; sourceTree = "<group>"; };
 		45B67A2320102C22000CF80E /* level manager.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level manager.inl"; sourceTree = "<group>"; };
+		45B67A2420104F0A000CF80E /* signal channel component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal channel component.hpp"; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -1587,6 +1587,8 @@
 				455AFE0720006D0100739358 /* shift radioactivity system.hpp */,
 				455AFE11200076A200739358 /* signal receiver system.cpp */,
 				455AFE12200076A200739358 /* signal receiver system.hpp */,
+				45B67A12200F21FD000CF80E /* signal channel toggle system.cpp */,
+				45B67A13200F21FD000CF80E /* signal channel toggle system.hpp */,
 				455AFE202000839000739358 /* pressure plate system.cpp */,
 				455AFE212000839000739358 /* pressure plate system.hpp */,
 				455AFE27200089BA00739358 /* piston system.cpp */,
@@ -1597,8 +1599,6 @@
 				455AFE3320009C6C00739358 /* button system.hpp */,
 				455AFE8D2000B8A200739358 /* exit system.cpp */,
 				455AFE8E2000B8A200739358 /* exit system.hpp */,
-				45B67A12200F21FD000CF80E /* signal channel toggle system.cpp */,
-				45B67A13200F21FD000CF80E /* signal channel toggle system.hpp */,
 			);
 			name = Logic;
 			sourceTree = "<group>";
@@ -1649,6 +1649,7 @@
 				455AFDFC20005D5600739358 /* radioactive toggle component.hpp */,
 				455AFE09200072EF00739358 /* signal transmitter component.hpp */,
 				455AFE0D2000751100739358 /* signal receiver component.hpp */,
+				45B67A2420104F0A000CF80E /* signal channel component.hpp */,
 				455AFE1520007EC600739358 /* pressure plate component.hpp */,
 				455AFE1C2000821800739358 /* weight component.hpp */,
 				455AFE232000869D00739358 /* piston component.hpp */,
@@ -2461,7 +2462,6 @@
 			isa = PBXGroup;
 			children = (
 				455AFD991FFDBB7F00739358 /* position type.hpp */,
-				455AFE1420007A7200739358 /* signal channels.hpp */,
 				455AFDD31FFF0F1B00739358 /* dir to vec.hpp */,
 				455AFD951FFDBADF00739358 /* entity grid.cpp */,
 				455AFD961FFDBADF00739358 /* entity grid.hpp */,

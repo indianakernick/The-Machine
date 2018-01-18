@@ -28,6 +28,7 @@
 #include "static sprite component.hpp"
 #include "radioactivity component.hpp"
 #include "player action component.hpp"
+#include "signal channel component.hpp"
 #include "pressure plate component.hpp"
 #include <Simpleton/Utils/type list.hpp>
 #include "signal receiver component.hpp"
@@ -59,6 +60,7 @@ using CompList = Utils::TypeList<
   PowerOutput,
   StaticSprite,
   PlayerAction,
+  SignalChannel,
   PressurePlate,
   Radioactivity,
   SignalReceiver,

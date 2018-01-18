@@ -12,12 +12,11 @@
 #include "position component.hpp"
 #include "power sprite component.hpp"
 #include "player action component.hpp"
-#include "signal receiver component.hpp"
-#include "signal transmitter component.hpp"
+#include "signal channel component.hpp"
 
 namespace {
   void setChannel0(PowerSprite &sprite) {
-    const Unpack::SpriteID idChange = (NUM_CHANNELS - 1) * FRAMES_PER_TICK;
+    constexpr Unpack::SpriteID idChange = (SignalChannel::NUM_CHANNELS - 1) * FRAMES_PER_TICK;
     sprite.low.start -= idChange;
     sprite.rise.start -= idChange;
     sprite.fall.start -= idChange;
@@ -33,11 +32,9 @@ namespace {
 }
 
 void signalChannelToggleSystem(ECS::Registry &registry, const EntityGrid &grid) {
-  // @TODO maybe create a SignalChannel component?
-  
-  auto rView = registry.view<PowerSprite, SignalReceiver, Position>();
-  for (const ECS::EntityID entity : rView) {
-    const Pos pos = rView.get<Position>(entity).pos;
+  auto view = registry.view<PowerSprite, SignalChannel, Position>();
+  for (const ECS::EntityID entity : view) {
+    const Pos pos = view.get<Position>(entity).pos;
     const ECS::EntityID targetID = grid[pos].dynamicID;
     
     if (targetID == ECS::NULL_ENTITY) {
@@ -50,41 +47,14 @@ void signalChannelToggleSystem(ECS::Registry &registry, const EntityGrid &grid) 
     
     const PlayerAction action = registry.get<PlayerAction>(targetID);
     if (!action.prev && action.curr) {
-      PowerSprite &sprite = rView.get<PowerSprite>(entity);
-      SignalReceiver &receiver = rView.get<SignalReceiver>(entity);
-      if (receiver.channel == NUM_CHANNELS - 1) {
+      PowerSprite &sprite = view.get<PowerSprite>(entity);
+      auto &channel = view.get<SignalChannel>(entity).channel;
+      if (channel == SignalChannel::NUM_CHANNELS - 1) {
         setChannel0(sprite);
-        receiver.channel = 0;
+        channel = 0;
       } else {
         incrChannel(sprite);
-        ++receiver.channel;
-      }
-    }
-  }
-  
-  auto tView = registry.view<PowerSprite, SignalTransmitter, Position>();
-  for (const ECS::EntityID entity : tView) {
-    const Pos pos = tView.get<Position>(entity).pos;
-    const ECS::EntityID targetID = grid[pos].dynamicID;
-    
-    if (targetID == ECS::NULL_ENTITY) {
-      continue;
-    }
-    
-    if (!registry.has<PlayerAction>(targetID)) {
-      continue;
-    }
-    
-    const PlayerAction action = registry.get<PlayerAction>(targetID);
-    if (!action.prev && action.curr) {
-      PowerSprite &sprite = tView.get<PowerSprite>(entity);
-      SignalTransmitter &transmitter = tView.get<SignalTransmitter>(entity);
-      if (transmitter.channel == NUM_CHANNELS - 1) {
-        setChannel0(sprite);
-        transmitter.channel = 0;
-      } else {
-        incrChannel(sprite);
-        ++transmitter.channel;
+        ++channel;
       }
     }
   }

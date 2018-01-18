@@ -9,7 +9,8 @@ function(params) {
     Power: {},
     Device: {},
     PowerInput: common.getDirBitsetComp("all", ""),
-    SignalTransmitter: {
+    SignalTransmitter: {},
+    SignalChannel: {
       channel: params.channel
     },
     SpritePosition: {
