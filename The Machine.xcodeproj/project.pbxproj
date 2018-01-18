@@ -24,8 +24,6 @@
 		455A02BF200875EF00739358 /* cross wire sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A02BD200875EF00739358 /* cross wire sprite writer.cpp */; };
 		455A03162009C64F00739358 /* power input system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A03142009C64F00739358 /* power input system.cpp */; };
 		455A03212009DBFE00739358 /* delay system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A031F2009DBFE00739358 /* delay system.cpp */; };
-		455A0851200C72A500739358 /* title screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 455A084F200C72A400739358 /* title screen.png */; };
-		455A0852200C72A500739358 /* title screen.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 455A0850200C72A500739358 /* title screen.atlas */; };
 		455A0855200C79F600739358 /* title screen writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A0853200C79F600739358 /* title screen writer.cpp */; };
 		455A0858200C830500739358 /* title screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A0856200C830500739358 /* title screen.cpp */; };
 		455A085B200C831400739358 /* screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455A0859200C831400739358 /* screen.cpp */; };
@@ -52,8 +50,6 @@
 		455AFE2C200090D100739358 /* shift player action system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE2A200090D100739358 /* shift player action system.cpp */; };
 		455AFE312000982B00739358 /* lever system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE2F2000982B00739358 /* lever system.cpp */; };
 		455AFE3420009C6C00739358 /* button system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE3220009C6C00739358 /* button system.cpp */; };
-		455AFE462000A57800739358 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 455AFE442000A57700739358 /* sprites.atlas */; };
-		455AFE472000A57800739358 /* sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = 455AFE452000A57700739358 /* sprites.png */; };
 		455AFE8F2000B8A200739358 /* exit system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFE8D2000B8A200739358 /* exit system.cpp */; };
 		455AFF10200212D700739358 /* rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF0C200212D500739358 /* rendering system.cpp */; };
 		455AFF142002132B00739358 /* quad writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF122002132B00739358 /* quad writer.cpp */; };
@@ -61,7 +57,10 @@
 		45B6773A200EFAC5000CF80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450759911FFC77E20009B360 /* Assets.xcassets */; };
 		45B67A14200F21FD000CF80E /* signal channel toggle system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A12200F21FD000CF80E /* signal channel toggle system.cpp */; };
 		45B67A1D200F50DA000CF80E /* level controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A1B200F50DA000CF80E /* level controller.cpp */; };
-		45B67A262010612A000CF80E /* level 0.jsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A252010612A000CF80E /* level 0.jsonnet */; };
+		45B67A2D20106948000CF80E /* sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A2720106947000CF80E /* sprites.png */; };
+		45B67A2F20106948000CF80E /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A2920106947000CF80E /* sprites.atlas */; };
+		45B67A3020106948000CF80E /* title screen.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A2A20106947000CF80E /* title screen.atlas */; };
+		45B67A3120106948000CF80E /* title screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A2B20106947000CF80E /* title screen.png */; };
 		45F62404200CA34000AEB428 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; };
 		45F62407200CA39100AEB428 /* SDL2_mixer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45F62424200CB3DB00AEB428 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241A200CB3C400AEB428 /* 1.wav */; };
@@ -529,9 +528,6 @@
 		455A0404200B150000739358 /* exit 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 8.png"; sourceTree = "<group>"; };
 		455A0405200B150100739358 /* exit 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit 3.png"; sourceTree = "<group>"; };
 		455A0406200B15C500739358 /* exit.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = exit.anim; sourceTree = "<group>"; };
-		455A084C200C71A100739358 /* title screen config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "title screen config.json"; sourceTree = "<group>"; };
-		455A084F200C72A400739358 /* title screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title screen.png"; sourceTree = "<group>"; };
-		455A0850200C72A500739358 /* title screen.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "title screen.atlas"; sourceTree = "<group>"; };
 		455A0853200C79F600739358 /* title screen writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "title screen writer.cpp"; sourceTree = "<group>"; };
 		455A0854200C79F600739358 /* title screen writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "title screen writer.hpp"; sourceTree = "<group>"; };
 		455A0856200C830500739358 /* title screen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "title screen.cpp"; sourceTree = "<group>"; };
@@ -612,7 +608,6 @@
 		455AFE302000982B00739358 /* lever system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "lever system.hpp"; sourceTree = "<group>"; };
 		455AFE3220009C6C00739358 /* button system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "button system.cpp"; sourceTree = "<group>"; };
 		455AFE3320009C6C00739358 /* button system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "button system.hpp"; sourceTree = "<group>"; };
-		455AFE372000A35A00739358 /* sprite config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "sprite config.json"; sourceTree = "<group>"; };
 		455AFE3B2000A41D00739358 /* gates.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = gates.anim; sourceTree = "<group>"; };
 		455AFE3C2000A55D00739358 /* gate 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 3.png"; sourceTree = "<group>"; };
 		455AFE3D2000A55D00739358 /* gate 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 7.png"; sourceTree = "<group>"; };
@@ -622,8 +617,6 @@
 		455AFE412000A55F00739358 /* gate 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 5.png"; sourceTree = "<group>"; };
 		455AFE422000A55F00739358 /* gate 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 4.png"; sourceTree = "<group>"; };
 		455AFE432000A55F00739358 /* gate 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 2.png"; sourceTree = "<group>"; };
-		455AFE442000A57700739358 /* sprites.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sprites.atlas; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
-		455AFE452000A57700739358 /* sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprites.png; sourceTree = "<group>"; };
 		455AFE732000AEC500739358 /* player.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = player.anim; sourceTree = "<group>"; };
 		455AFE742000AED300739358 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
 		455AFE8C2000B7D800739358 /* exit component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "exit component.hpp"; sourceTree = "<group>"; };
@@ -1376,6 +1369,12 @@
 		45B67A2320102C22000CF80E /* level manager.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level manager.inl"; sourceTree = "<group>"; };
 		45B67A2420104F0A000CF80E /* signal channel component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal channel component.hpp"; sourceTree = "<group>"; };
 		45B67A252010612A000CF80E /* level 0.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 0.jsonnet"; sourceTree = "<group>"; };
+		45B67A2720106947000CF80E /* sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprites.png; sourceTree = "<group>"; };
+		45B67A2820106947000CF80E /* title screen config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "title screen config.json"; sourceTree = "<group>"; };
+		45B67A2920106947000CF80E /* sprites.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sprites.atlas; sourceTree = "<group>"; };
+		45B67A2A20106947000CF80E /* title screen.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "title screen.atlas"; sourceTree = "<group>"; };
+		45B67A2B20106947000CF80E /* title screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title screen.png"; sourceTree = "<group>"; };
+		45B67A2C20106947000CF80E /* sprite config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sprite config.json"; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -2955,14 +2954,14 @@
 		45F62417200CB38300AEB428 /* Spritesheets */ = {
 			isa = PBXGroup;
 			children = (
-				455AFE372000A35A00739358 /* sprite config.json */,
-				455AFE442000A57700739358 /* sprites.atlas */,
-				455AFE452000A57700739358 /* sprites.png */,
-				455A084C200C71A100739358 /* title screen config.json */,
-				455A0850200C72A500739358 /* title screen.atlas */,
-				455A084F200C72A400739358 /* title screen.png */,
+				45B67A2C20106947000CF80E /* sprite config.json */,
+				45B67A2920106947000CF80E /* sprites.atlas */,
+				45B67A2720106947000CF80E /* sprites.png */,
+				45B67A2820106947000CF80E /* title screen config.json */,
+				45B67A2A20106947000CF80E /* title screen.atlas */,
+				45B67A2B20106947000CF80E /* title screen.png */,
 			);
-			name = Spritesheets;
+			path = Spritesheets;
 			sourceTree = "<group>";
 		};
 		45F62419200CB3A800AEB428 /* Music */ = {
@@ -3052,9 +3051,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				45B6773A200EFAC5000CF80E /* Assets.xcassets in Resources */,
+				45B67A3020106948000CF80E /* title screen.atlas in Resources */,
+				45B67A3120106948000CF80E /* title screen.png in Resources */,
+				45B67A2F20106948000CF80E /* sprites.atlas in Resources */,
+				45B67A2D20106948000CF80E /* sprites.png in Resources */,
 				45F62439200DA7B300AEB428 /* music.json in Resources */,
 				45F62424200CB3DB00AEB428 /* 1.wav in Resources */,
-				45B67A262010612A000CF80E /* level 0.jsonnet in Resources */,
 				45F62426200CB3DB00AEB428 /* 2.wav in Resources */,
 				45F6242A200CB3DB00AEB428 /* 3.wav in Resources */,
 				45F62429200CB3DB00AEB428 /* 4.wav in Resources */,
@@ -3064,10 +3066,6 @@
 				45F6242B200CB3DB00AEB428 /* 8.wav in Resources */,
 				45F62427200CB3DB00AEB428 /* 9.wav in Resources */,
 				45F6242C200CB3DB00AEB428 /* 10.wav in Resources */,
-				455AFE462000A57800739358 /* sprites.atlas in Resources */,
-				455AFE472000A57800739358 /* sprites.png in Resources */,
-				455A0851200C72A500739358 /* title screen.png in Resources */,
-				455A0852200C72A500739358 /* title screen.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3084,12 +3082,12 @@
 			);
 			name = "Pack Title Screen";
 			outputPaths = (
-				"$(PROJECT_DIR)/$(PROJECT)/Resources/title screen.atlas",
-				"$(PROJECT_DIR)/$(PROJECT)/Resources/title screen.png",
+				"$(PROJECT_DIR)/$(PROJECT)/Resources/Spritesheets/title screen.atlas",
+				"$(PROJECT_DIR)/$(PROJECT)/Resources/Spritesheets/title screen.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources\"\n\ntime packer --silent title\\ screen\\ config.json";
+			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources/Spritesheets\"\n\ntime packer --silent title\\ screen\\ config.json";
 		};
 		455AFDA51FFDC5F000739358 /* Compile Levels */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3115,12 +3113,12 @@
 			);
 			name = "Pack Sprites";
 			outputPaths = (
-				"$(PROJECT_DIR)/$(PROJECT)/Resources/sprites.atlas",
-				"$(PROJECT_DIR)/$(PROJECT)/Resources/sprites.png",
+				"$(PROJECT_DIR)/$(PROJECT)/Resources/Spritesheets/sprites.atlas",
+				"$(PROJECT_DIR)/$(PROJECT)/Resources/Spritesheets/sprites.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources\"\n\ntime packer --silent sprite\\ config.json";
+			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources/Spritesheets\"\n\ntime packer --silent sprite\\ config.json";
 		};
 /* End PBXShellScriptBuildPhase section */
 

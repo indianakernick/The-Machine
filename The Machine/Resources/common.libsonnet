@@ -1,7 +1,7 @@
 {
   framesPerTick: 10,
 
-  sheet: (import "sprites.atlas"),
+  sheet: (import "Spritesheets/sprites.atlas"),
 
   getSpriteID(name):: $.sheet.names[name],
 
