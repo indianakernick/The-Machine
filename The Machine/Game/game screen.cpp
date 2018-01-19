@@ -18,7 +18,7 @@
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
 
 namespace {
-  constexpr Frame TRANSITION_TIME = 60;
+  constexpr Frame TRANSITION_TIME = 120;
   
   glm::vec2 cast(const Unpack::VecPx v) {
     return {v.x, v.y};

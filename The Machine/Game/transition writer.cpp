@@ -8,6 +8,8 @@
 
 #include "transition writer.hpp"
 
+#include <Simpleton/Math/interpolate.hpp>
+
 TransitionWriter::TransitionWriter(
   const TextureID tex,
   const glm::vec2 whitepx,
@@ -33,12 +35,14 @@ TextureID TransitionWriter::getTexture() const {
 }
 
 glm::vec4 TransitionWriter::getColor(const Frame frame) const {
-  const float progress = static_cast<float>(frame) / duration;
+  const float progress = 3.0f * static_cast<float>(frame) / duration;
   float alpha;
-  if (progress <= 0.5f) {
-    alpha = progress * 2.0f;
+  if (progress <= 1.0f) {
+    alpha = Math::sinOut(progress);
+  } else if (progress <= 2.0f) {
+    alpha = 1.0f;
   } else {
-    alpha = progress * -2.0f + 2.0f;
+    alpha = Math::sinOut(3.0f - progress);
   }
   return {0.0f, 0.0f, 0.0f, alpha};
 }
