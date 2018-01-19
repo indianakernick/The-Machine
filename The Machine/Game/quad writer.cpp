@@ -17,3 +17,7 @@ size_t QuadWriter::numQuads() const {
 size_t QuadWriter::countQuads() {
   return quadCount = count();
 }
+
+glm::vec4 QuadWriter::getColor() const {
+  return {1.0f, 1.0f, 1.0f, 1.0f};
+}

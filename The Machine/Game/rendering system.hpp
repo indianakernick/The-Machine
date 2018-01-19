@@ -41,8 +41,10 @@ private:
   GL::ElementBuffer elemBuf;
   GL::VertexArray vertArray;
   GL::ShaderProgram program;
+  
   GLint viewProjLoc;
   GLint texLoc;
+  GLint colorLoc;
   
   Quads quads;
   Elems indicies;

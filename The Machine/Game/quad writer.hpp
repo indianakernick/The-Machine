@@ -23,6 +23,7 @@ public:
   size_t countQuads();
   virtual void writeQuads(QuadIter, Frame) const = 0;
   virtual TextureID getTexture() const = 0;
+  virtual glm::vec4 getColor() const;
 
 private:
   size_t quadCount = 0;

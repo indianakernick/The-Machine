@@ -50,12 +50,13 @@ void main() {
 in vec2 fragTexCoord;
 
 uniform sampler2D tex;
+uniform vec4 color;
 
-out vec4 color;
+out vec4 outColor;
 
 void main() {
-  color = texture(tex, fragTexCoord);
-  gl_FragDepth = (color.a == 0.0 ? 1.0 : gl_FragCoord.z);
+  outColor = color * texture(tex, fragTexCoord);
+  gl_FragDepth = (outColor.a == 0.0 ? 1.0 : gl_FragCoord.z);
 }
 )delimiter";
 }
@@ -72,6 +73,7 @@ void RenderingSystem::init() {
   
   viewProjLoc = program.getUniformLoc("viewProj");
   texLoc = program.getUniformLoc("tex");
+  colorLoc = program.getUniformLoc("color");
   
   program.use();
   GL::setUniform(texLoc, 0);
@@ -152,6 +154,7 @@ void RenderingSystem::render(
     const size_t writerQuads = writer->numQuads();
     writer->writeQuads(quadIter, frame);
     
+    GL::setUniform(colorLoc, writer->getColor());
     textures.at(writer->getTexture()).bind(0);
     fillVertBuf(writerQuads);
     
