@@ -1,7 +1,7 @@
 local e = import "entities.libsonnet";
 
 local defaultKey = {
-  "*": e.wall,
+  "#": e.wall,
   "p": e.player,
   "e": e.exit,
   "b": e.box
