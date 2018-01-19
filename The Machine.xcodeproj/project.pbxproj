@@ -3009,6 +3009,7 @@
 				455A084E200C722D00739358 /* Pack Title Screen */,
 				4507598A1FFC77E20009B360 /* Resources */,
 				455AFDA51FFDC5F000739358 /* Compile Levels */,
+				45B67A3F2011B85E000CF80E /* Reset Progress */,
 			);
 			buildRules = (
 			);
@@ -3138,6 +3139,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources/Spritesheets\"\n\ntime packer --silent sprite\\ config.json";
+		};
+		45B67A3F2011B85E000CF80E /* Reset Progress */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Reset Progress";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "rm \"/Users/indikernick/Library/Application Support/Indi Kernick/The Machine/progress.txt\"\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
