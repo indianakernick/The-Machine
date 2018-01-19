@@ -19,14 +19,7 @@ local assemble = import "assemble.libsonnet";
     "****************"
   ],
 
-  local key = {
-    "*": e.wall,
-    "p": e.player,
-    "e": e.exit,
-    "b": e.box
-  },
-
   "entities": assemble([
-    a.image([0, 0], image, key)
+    a.image([0, 0], image, null)
   ])
 }

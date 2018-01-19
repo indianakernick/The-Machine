@@ -1,3 +1,12 @@
+local e = import "entities.libsonnet";
+
+local defaultKey = {
+  "*": e.wall,
+  "p": e.player,
+  "e": e.exit,
+  "b": e.box
+};
+
 local readKey(keyObj, position) =
   if std.type(keyObj) == "function" then
     keyObj({
@@ -22,6 +31,8 @@ function(pos, image, key) [
 
     if char == " " then
       null
+    else if key == null then
+      readKey(defaultKey[char], [x, y])
     else
       readKey(key[char], [x, y])
     for x in std.makeArray(std.length(image[0]), function(x) x + pos[0])

@@ -62,6 +62,7 @@
 		45B67A3020106948000CF80E /* title screen.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A2A20106947000CF80E /* title screen.atlas */; };
 		45B67A3120106948000CF80E /* title screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A2B20106947000CF80E /* title screen.png */; };
 		45B67A3C2011876E000CF80E /* transition writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A3A2011876E000CF80E /* transition writer.cpp */; };
+		45B67A452011E2FE000CF80E /* level 4.jsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A442011E2FE000CF80E /* level 4.jsonnet */; };
 		45F62404200CA34000AEB428 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; };
 		45F62407200CA39100AEB428 /* SDL2_mixer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45F62424200CB3DB00AEB428 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241A200CB3C400AEB428 /* 1.wav */; };
@@ -549,7 +550,7 @@
 		455AFD961FFDBADF00739358 /* entity grid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "entity grid.hpp"; sourceTree = "<group>"; };
 		455AFD991FFDBB7F00739358 /* position type.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "position type.hpp"; sourceTree = "<group>"; };
 		455AFDA31FFDC46E00739358 /* static collision component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "static collision component.hpp"; sourceTree = "<group>"; };
-		455AFDA81FFDC8A200739358 /* level 4.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 4.jsonnet"; sourceTree = "<group>"; };
+		455AFDA81FFDC8A200739358 /* level 5.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 5.jsonnet"; sourceTree = "<group>"; };
 		455AFDAA1FFDC91900739358 /* common.libsonnet */ = {isa = PBXFileReference; explicitFileType = text.json; path = common.libsonnet; sourceTree = "<group>"; };
 		455AFDAC1FFDC93500739358 /* entities.libsonnet */ = {isa = PBXFileReference; explicitFileType = text.json; path = entities.libsonnet; sourceTree = "<group>"; };
 		455AFDAE1FFDD67F00739358 /* dynamic collision component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "dynamic collision component.hpp"; sourceTree = "<group>"; };
@@ -1382,6 +1383,7 @@
 		45B67A3B2011876E000CF80E /* transition writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "transition writer.hpp"; sourceTree = "<group>"; };
 		45B67A402011CF78000CF80E /* image assembly.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "image assembly.libsonnet"; sourceTree = "<group>"; };
 		45B67A422011D2A5000CF80E /* level 3.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 3.jsonnet"; sourceTree = "<group>"; };
+		45B67A442011E2FE000CF80E /* level 4.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 4.jsonnet"; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -2490,7 +2492,8 @@
 				45B67A3320107026000CF80E /* level 1.jsonnet */,
 				45B67A352010725E000CF80E /* level 2.jsonnet */,
 				45B67A422011D2A5000CF80E /* level 3.jsonnet */,
-				455AFDA81FFDC8A200739358 /* level 4.jsonnet */,
+				45B67A442011E2FE000CF80E /* level 4.jsonnet */,
+				455AFDA81FFDC8A200739358 /* level 5.jsonnet */,
 			);
 			path = Levels;
 			sourceTree = "<group>";
@@ -3080,6 +3083,7 @@
 				45F62425200CB3DB00AEB428 /* 6.wav in Resources */,
 				45F6242D200CB3DB00AEB428 /* 7.wav in Resources */,
 				45F6242B200CB3DB00AEB428 /* 8.wav in Resources */,
+				45B67A452011E2FE000CF80E /* level 4.jsonnet in Resources */,
 				45F62427200CB3DB00AEB428 /* 9.wav in Resources */,
 				45F6242C200CB3DB00AEB428 /* 10.wav in Resources */,
 			);
