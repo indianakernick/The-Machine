@@ -3156,7 +3156,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "rm \"/Users/indikernick/Library/Application Support/Indi Kernick/The Machine/progress.txt\" 2> /dev/null\nexit 0";
+			shellScript = "#rm \"/Users/indikernick/Library/Application Support/Indi Kernick/The Machine/progress.txt\" 2> /dev/null\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
