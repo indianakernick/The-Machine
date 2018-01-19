@@ -11,10 +11,19 @@
 #include "systems.hpp"
 #include "quad writers.hpp"
 #include "rendering system.hpp"
+#include "transition writer.hpp"
 #include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/SDL/events.hpp>
 #include <Simpleton/Utils/profiler.hpp>
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
+
+namespace {
+  constexpr Frame TRANSITION_TIME = 60;
+  
+  glm::vec2 cast(const Unpack::VecPx v) {
+    return {v.x, v.y};
+  }
+}
 
 void GameScreen::init(std::shared_ptr<RenderingSystem> renderingSystem) {
   PROFILE(GameScreen::init);
@@ -30,6 +39,13 @@ void GameScreen::init(std::shared_ptr<RenderingSystem> renderingSystem) {
   quadWriters.push_back(rendering->addWriter<StaticSpriteWriter>(tex, registry, sheet));
   quadWriters.push_back(rendering->addWriter<CrossWireSpriteWriter>(tex, registry, sheet));
   quadWriters.push_back(rendering->addWriter<RadioactivitySpriteWriter>(tex, registry, sheet));
+  
+  glm::vec2 whitepx = cast(sheet->getWhitepixel());
+  const glm::vec2 size = cast(sheet->getSize());
+  whitepx = whitepx / size;
+  transitionWriter = rendering->addWriter<TransitionWriter>(
+    tex, whitepx, TRANSITION_TIME
+  );
 
   camera.transform.setOrigin(Cam2D::Origin::CENTER);
   camera.targetZoom = std::make_unique<Cam2D::ZoomToFit>(glm::vec2());
@@ -54,13 +70,13 @@ void GameScreen::enter() {
 }
 
 void GameScreen::input(const SDL_Event &e) {
-  const auto newLevel = levelControl.getLevel(
+  const auto controllerLevel = levelControl.getLevel(
     e,
     levels.current(),
     progress.getIncompleteLevel()
   );
-  if (newLevel) {
-    loadLevel(*newLevel);
+  if (controllerLevel) {
+    nextLevel = controllerLevel;
   }
   
   playerInputSystem(playerInput, e);
@@ -68,6 +84,10 @@ void GameScreen::input(const SDL_Event &e) {
 
 void GameScreen::update(float) {
   PROFILE(GameScreen::update);
+  
+  if (state != TransitionState::NONE) {
+    return;
+  }
   
   if (frame == FRAMES_PER_TICK - 1) {
     frame = 0;
@@ -110,7 +130,7 @@ void GameScreen::update(float) {
     const ECS::Level current = levels.current();
     if (current != ECS::NULL_LEVEL) {
       progress.finishLevel(current);
-      loadLevel(current + 1);
+      nextLevel = current + 1;
     }
   }
 }
@@ -118,9 +138,36 @@ void GameScreen::update(float) {
 void GameScreen::render(const float aspect, const float delta) {
   PROFILE(GameScreen::render);
   
-  spritePositionSystem(*registry, frame);
   camera.update(aspect, delta);
-  rendering->render(quadWriters, camera.transform.toPixels(), frame);
+  
+  if (state == TransitionState::NONE) {
+    spritePositionSystem(*registry, frame);
+    rendering->render(quadWriters, camera.transform.toPixels(), frame);
+    
+    if (nextLevel) {
+      state = TransitionState::FADE_OUT;
+      frame = 1;
+    }
+  } else if (state == TransitionState::FADE_OUT) {
+    if (frame == TRANSITION_TIME / 2) {
+      state = TransitionState::FADE_IN;
+      loadLevel(*nextLevel);
+      nextLevel = std::experimental::nullopt;
+    }
+    spritePositionSystem(*registry, 0);
+    rendering->render(quadWriters, camera.transform.toPixels(), 0);
+    rendering->render(transitionWriter, camera.transform.toPixels(), frame);
+    ++frame;
+  } else if (state == TransitionState::FADE_IN) {
+    if (frame == TRANSITION_TIME) {
+      state = TransitionState::NONE;
+      frame = 0;
+    }
+    spritePositionSystem(*registry, 0);
+    rendering->render(quadWriters, camera.transform.toPixels(), 0);
+    rendering->render(transitionWriter, camera.transform.toPixels(), frame);
+    ++frame;
+  }
 }
 
 bool GameScreen::loadLevel(const ECS::Level level) {

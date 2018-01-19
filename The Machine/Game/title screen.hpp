@@ -28,7 +28,7 @@ public:
 private:
   Cam2D::Camera camera;
   std::shared_ptr<RenderingSystem> rendering;
-  WriterGroup quadWriters;
+  WriterID writer;
   Frame frame = 0;
 };
 

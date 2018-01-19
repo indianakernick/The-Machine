@@ -35,6 +35,7 @@ public:
   
   void updateQuadCount();
   void render(const WriterGroup &, const glm::mat3 &, Frame);
+  void render(WriterID, const glm::mat3 &, Frame);
 
 private:
   std::vector<std::unique_ptr<QuadWriter>> writers;

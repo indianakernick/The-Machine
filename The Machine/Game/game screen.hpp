@@ -41,8 +41,18 @@ private:
   PlayerKeyStates playerInput;
   Frame frame = 0;
   WriterGroup quadWriters;
+  WriterID transitionWriter;
   std::shared_ptr<RenderingSystem> rendering;
   LevelController levelControl;
+  
+  enum class TransitionState {
+    NONE,
+    FADE_OUT,
+    FADE_IN
+  };
+  
+  TransitionState state = TransitionState::NONE;
+  std::experimental::optional<ECS::Level> nextLevel;
   
   bool loadLevel(ECS::Level);
 };

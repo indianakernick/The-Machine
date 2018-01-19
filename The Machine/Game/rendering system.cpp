@@ -64,6 +64,9 @@ void main() {
 void RenderingSystem::init() {
   PROFILE(RenderingSystem::init);
 
+  glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+  glEnable(GL_BLEND);
+
   vertArray = GL::makeVertexArray();
   
   program = GL::makeShaderProgram(
@@ -174,6 +177,16 @@ void RenderingSystem::render(
   GL::unbindTexture2D(0);
   GL::unuseProgram();
   GL::unbindVertexArray();
+}
+
+void RenderingSystem::render(
+  const WriterID writer,
+  const glm::mat3 &viewProj,
+  const Frame frame
+) {
+  static WriterGroup group(1);
+  group[0] = writer;
+  render(group, viewProj, frame);
 }
 
 void RenderingSystem::fillIndicies(const size_t minQuads) {
