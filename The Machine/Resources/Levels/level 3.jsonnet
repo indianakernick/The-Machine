@@ -30,4 +30,3 @@ local assemble = import "assemble.libsonnet";
     a.image([0, 0], image, key)
   ])
 }
-

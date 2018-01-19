@@ -6,24 +6,26 @@ local assemble = import "assemble.libsonnet";
   "meta": {
     "size": [16, 9]
   },
+
+  local image = [
+    "****************",
+    "*             e*",
+    "*              *",
+    "*              *",
+    "*              *",
+    "*              *",
+    "*              *",
+    "*p             *",
+    "****************",
+  ],
+
+  local key = {
+    "*": e.wall,
+    "p": e.player,
+    "e": e.exit
+  },
+
   "entities": assemble([
-    e.player({
-      pos: [1, 1]
-    }),
-    e.exit({
-      pos: [14, 7]
-    }),
-    a.rectangle([0, 0], [16, 1], function(position)
-      e.wall({pos: position})
-    ),
-    a.rectangle([0, 8], [16, 1], function(position)
-      e.wall({pos: position})
-    ),
-    a.rectangle([0, 1], [1, 7], function(position)
-      e.wall({pos: position})
-    ),
-    a.rectangle([15, 1], [1, 7], function(position)
-      e.wall({pos: position})
-    )
+    a.image([0, 0], image, key)
   ])
 }
