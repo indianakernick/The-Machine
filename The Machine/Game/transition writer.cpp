@@ -19,9 +19,9 @@ TransitionWriter::TransitionWriter(
 void TransitionWriter::writeQuads(const QuadIter quadIter, Frame) const {
   Quad &quad = *quadIter;
   quad[0].pos = {0.0f, 0.0f, 0.0f};
-  quad[1].pos = {16.0f, 0.0f, 0.0f};
-  quad[2].pos = {16.0f, 9.0f, 0.0f};
-  quad[3].pos = {0.0f, 9.0f, 0.0f};
+  quad[1].pos = {128.0f, 0.0f, 0.0f};
+  quad[2].pos = {128.0f, 72.0f, 0.0f};
+  quad[3].pos = {0.0f, 72.0f, 0.0f};
   
   for (size_t v = 0; v != 4; ++v) {
     quad[v].texCoord = whitepx;

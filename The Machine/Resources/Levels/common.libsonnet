@@ -29,6 +29,7 @@
   ,
 
   layerNames: [
+    "transition",
     "piston base",
     "over dynamic",
     "dynamic",

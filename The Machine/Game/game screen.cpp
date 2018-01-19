@@ -133,6 +133,10 @@ void GameScreen::update(float) {
       nextLevel = current + 1;
     }
   }
+  
+  if (nextLevel) {
+    state = TransitionState::FADE_OUT;
+  }
 }
 
 void GameScreen::render(const float aspect, const float delta) {
@@ -143,11 +147,6 @@ void GameScreen::render(const float aspect, const float delta) {
   if (state == TransitionState::NONE) {
     spritePositionSystem(*registry, frame);
     rendering->render(quadWriters, camera.transform.toPixels(), frame);
-    
-    if (nextLevel) {
-      state = TransitionState::FADE_OUT;
-      frame = 1;
-    }
   } else if (state == TransitionState::FADE_OUT) {
     if (frame == TRANSITION_TIME / 2) {
       state = TransitionState::FADE_IN;
@@ -159,14 +158,15 @@ void GameScreen::render(const float aspect, const float delta) {
     rendering->render(transitionWriter, camera.transform.toPixels(), frame);
     ++frame;
   } else if (state == TransitionState::FADE_IN) {
-    if (frame == TRANSITION_TIME) {
-      state = TransitionState::NONE;
-      frame = 0;
-    }
     spritePositionSystem(*registry, 0);
     rendering->render(quadWriters, camera.transform.toPixels(), 0);
     rendering->render(transitionWriter, camera.transform.toPixels(), frame);
-    ++frame;
+    if (frame == TRANSITION_TIME) {
+      state = TransitionState::NONE;
+      frame = FRAMES_PER_TICK - 1;
+    } else {
+      ++frame;
+    }
   }
 }
 
