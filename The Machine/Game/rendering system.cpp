@@ -158,7 +158,7 @@ void RenderingSystem::render(
     const size_t writerQuads = writer->numQuads();
     writer->writeQuads(quadIter, frame);
     
-    GL::setUniform(colorLoc, writer->getColor());
+    GL::setUniform(colorLoc, writer->getColor(frame));
     textures.at(writer->getTexture()).bind(0);
     fillVertBuf(writerQuads);
     

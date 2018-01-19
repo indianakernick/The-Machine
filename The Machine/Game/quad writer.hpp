@@ -9,6 +9,7 @@
 #ifndef quad_writer_hpp
 #define quad_writer_hpp
 
+#include <glm/vec4.hpp>
 #include "frame type.hpp"
 #include "position type.hpp"
 #include "rendering types.hpp"
@@ -23,7 +24,7 @@ public:
   size_t countQuads();
   virtual void writeQuads(QuadIter, Frame) const = 0;
   virtual TextureID getTexture() const = 0;
-  virtual glm::vec4 getColor() const;
+  virtual glm::vec4 getColor(Frame) const;
 
 private:
   size_t quadCount = 0;

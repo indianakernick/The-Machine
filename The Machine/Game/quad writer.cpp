@@ -18,6 +18,6 @@ size_t QuadWriter::countQuads() {
   return quadCount = count();
 }
 
-glm::vec4 QuadWriter::getColor() const {
+glm::vec4 QuadWriter::getColor(Frame) const {
   return {1.0f, 1.0f, 1.0f, 1.0f};
 }

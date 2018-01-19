@@ -63,6 +63,7 @@
 		45B67A3120106948000CF80E /* title screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A2B20106947000CF80E /* title screen.png */; };
 		45B67A3420107026000CF80E /* level 1.jsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A3320107026000CF80E /* level 1.jsonnet */; };
 		45B67A362010725E000CF80E /* level 2.jsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A352010725E000CF80E /* level 2.jsonnet */; };
+		45B67A3C2011876E000CF80E /* transition writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A3A2011876E000CF80E /* transition writer.cpp */; };
 		45F62404200CA34000AEB428 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; };
 		45F62407200CA39100AEB428 /* SDL2_mixer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45F62424200CB3DB00AEB428 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241A200CB3C400AEB428 /* 1.wav */; };
@@ -1379,6 +1380,8 @@
 		45B67A2C20106947000CF80E /* sprite config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sprite config.json"; sourceTree = "<group>"; };
 		45B67A3320107026000CF80E /* level 1.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 1.jsonnet"; sourceTree = "<group>"; };
 		45B67A352010725E000CF80E /* level 2.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 2.jsonnet"; sourceTree = "<group>"; };
+		45B67A3A2011876E000CF80E /* transition writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "transition writer.cpp"; sourceTree = "<group>"; };
+		45B67A3B2011876E000CF80E /* transition writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "transition writer.hpp"; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -1515,6 +1518,8 @@
 				455A02BE200875EF00739358 /* cross wire sprite writer.hpp */,
 				455A0853200C79F600739358 /* title screen writer.cpp */,
 				455A0854200C79F600739358 /* title screen writer.hpp */,
+				45B67A3A2011876E000CF80E /* transition writer.cpp */,
+				45B67A3B2011876E000CF80E /* transition writer.hpp */,
 			);
 			name = "Quad Writers";
 			sourceTree = "<group>";
@@ -3172,6 +3177,7 @@
 				455AFDEA1FFF449000739358 /* gate system.cpp in Sources */,
 				455A001420034C6100739358 /* radioactivity sprite writer.cpp in Sources */,
 				455AFD8C1FFDB5E800739358 /* game screen.cpp in Sources */,
+				45B67A3C2011876E000CF80E /* transition writer.cpp in Sources */,
 				455AFDED200042F200739358 /* wire system.cpp in Sources */,
 				455A03162009C64F00739358 /* power input system.cpp in Sources */,
 				455AFD861FFDB34400739358 /* app.cpp in Sources */,
