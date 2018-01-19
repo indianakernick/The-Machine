@@ -87,6 +87,10 @@ void RenderingSystem::quit() {
   textures.clear();
 }
 
+QuadWriter &RenderingSystem::getWriter(const WriterID id) const {
+  return *writers.at(id);
+}
+
 TextureID RenderingSystem::addTexture(const std::string_view name) {
   const Surface image = loadSurfaceRGBA(SDL::getResDir() + std::string(name));
   const GL::Image2D glImage = {

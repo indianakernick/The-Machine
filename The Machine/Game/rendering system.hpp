@@ -28,6 +28,8 @@ public:
     return id;
   }
   
+  QuadWriter &getWriter(WriterID) const;
+  
   TextureID addTexture(std::string_view);
   TextureID addTexture(GL::Texture2D &&);
   
