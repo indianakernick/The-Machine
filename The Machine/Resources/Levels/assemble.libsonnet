@@ -3,7 +3,9 @@ local a = import "assemblies.libsonnet";
 
 local assemble = function(assembly)
   local fun(array, current) =
-    if std.type(current) == "array" then
+    if current == null then
+      array
+    else if std.type(current) == "array" then
       array + assemble(current)
     else if std.type(current) == "object" then
       array + [current]
