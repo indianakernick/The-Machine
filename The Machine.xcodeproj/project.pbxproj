@@ -1386,6 +1386,7 @@
 		45B67A462012CB36000CF80E /* wire image assembly.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "wire image assembly.libsonnet"; sourceTree = "<group>"; };
 		45B67A482012D83E000CF80E /* level 5.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 5.jsonnet"; sourceTree = "<group>"; };
 		45B67A4B201301BC000CF80E /* level 6.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 6.jsonnet"; sourceTree = "<group>"; };
+		45B67A4C201320E4000CF80E /* level 7.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 7.jsonnet"; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -2498,6 +2499,7 @@
 				45B67A442011E2FE000CF80E /* level 4.jsonnet */,
 				45B67A482012D83E000CF80E /* level 5.jsonnet */,
 				45B67A4B201301BC000CF80E /* level 6.jsonnet */,
+				45B67A4C201320E4000CF80E /* level 7.jsonnet */,
 				455AFDA81FFDC8A200739358 /* level test.jsonnet */,
 			);
 			path = Levels;
@@ -3128,7 +3130,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources/Levels\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  echo \"Compiling $name\"\n  time jsonnet \"$PROJECT_RES/$name.jsonnet\" |      # compile jsonnet\n  jq -c . > \"$PRODUCT_RES/$name.json\"             # minify json\n  # failed if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone\n";
+			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources/Levels\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  echo \"Compiling $name\"\n  time jsonnet \"$PROJECT_RES/$name.jsonnet\" |      # compile jsonnet\n  jq -c . > \"$PRODUCT_RES/$name.json\"              # minify json\n  # failed if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone\n";
 		};
 		455AFE392000A39900739358 /* Pack Sprites */ = {
 			isa = PBXShellScriptBuildPhase;

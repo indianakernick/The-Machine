@@ -19,9 +19,6 @@ local assemble = import "assemble.libsonnet";
     "################"
   ],
 
-  // using a similar solution for another level will fail
-  // try to get the player to make a mistake
-
   entities: assemble([
     a.image([0, 0], image, null),
     a.wire_image([0, 0], image),
