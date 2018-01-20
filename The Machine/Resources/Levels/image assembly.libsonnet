@@ -29,12 +29,12 @@ function(pos, image, key) [
   [
     local char = image[std.length(image) - y - 1][x];
 
-    if char == " " then
-      null
-    else if key == null then
+    if key == null && char in defaultKey then
       readKey(defaultKey[char], [x, y])
-    else
+    else if key != null && char in key then
       readKey(key[char], [x, y])
+    else
+      null
     for x in std.makeArray(std.length(image[0]), function(x) x + pos[0])
   ] for y in std.makeArray(std.length(image), function(y) y + pos[1])
 ]

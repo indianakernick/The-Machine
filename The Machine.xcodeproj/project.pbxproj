@@ -62,6 +62,7 @@
 		45B67A3020106948000CF80E /* title screen.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A2A20106947000CF80E /* title screen.atlas */; };
 		45B67A3120106948000CF80E /* title screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A2B20106947000CF80E /* title screen.png */; };
 		45B67A3C2011876E000CF80E /* transition writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A3A2011876E000CF80E /* transition writer.cpp */; };
+		45B67A472012CB37000CF80E /* wire image assembly.libsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A462012CB36000CF80E /* wire image assembly.libsonnet */; };
 		45F62404200CA34000AEB428 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; };
 		45F62407200CA39100AEB428 /* SDL2_mixer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45F62424200CB3DB00AEB428 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241A200CB3C400AEB428 /* 1.wav */; };
@@ -1383,6 +1384,7 @@
 		45B67A402011CF78000CF80E /* image assembly.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "image assembly.libsonnet"; sourceTree = "<group>"; };
 		45B67A422011D2A5000CF80E /* level 3.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 3.jsonnet"; sourceTree = "<group>"; };
 		45B67A442011E2FE000CF80E /* level 4.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 4.jsonnet"; sourceTree = "<group>"; };
+		45B67A462012CB36000CF80E /* wire image assembly.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "wire image assembly.libsonnet"; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -1533,6 +1535,7 @@
 				455A004720057CB500739358 /* piston assembly.libsonnet */,
 				455A004E200585E400739358 /* rectangle assembly.libsonnet */,
 				45B67A402011CF78000CF80E /* image assembly.libsonnet */,
+				45B67A462012CB36000CF80E /* wire image assembly.libsonnet */,
 			);
 			name = Assemblies;
 			path = Levels;
@@ -3069,6 +3072,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45B6773A200EFAC5000CF80E /* Assets.xcassets in Resources */,
+				45B67A472012CB37000CF80E /* wire image assembly.libsonnet in Resources */,
 				45B67A3020106948000CF80E /* title screen.atlas in Resources */,
 				45B67A3120106948000CF80E /* title screen.png in Resources */,
 				45B67A2F20106948000CF80E /* sprites.atlas in Resources */,
@@ -3122,7 +3126,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources/Levels\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  echo \"Compiling $name\"\n  time jsonnet \"$PROJECT_RES/$name.jsonnet\" |      # compile jsonnet\n  jq . > \"$PRODUCT_RES/$name.json\"             # minify json\n  # failed if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone\n";
+			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources/Levels\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  echo \"Compiling $name\"\n  time jsonnet \"$PROJECT_RES/$name.jsonnet\" |      # compile jsonnet\n  jq -c . > \"$PRODUCT_RES/$name.json\"             # minify json\n  # failed if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone\n";
 		};
 		455AFE392000A39900739358 /* Pack Sprites */ = {
 			isa = PBXShellScriptBuildPhase;
