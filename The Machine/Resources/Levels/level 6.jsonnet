@@ -32,4 +32,3 @@ local assemble = import "assemble.libsonnet";
     })
   ])
 }
-
