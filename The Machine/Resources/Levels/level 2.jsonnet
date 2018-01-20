@@ -3,8 +3,8 @@ local a = import "assemblies.libsonnet";
 local assemble = import "assemble.libsonnet";
 
 {
-  "meta": {
-    "size": [16, 9]
+  meta: {
+    size: [16, 9]
   },
 
   local image = [
@@ -19,7 +19,7 @@ local assemble = import "assemble.libsonnet";
     "################"
   ],
 
-  "entities": assemble([
+  entities: assemble([
     a.image([0, 0], image, null)
   ])
 }
