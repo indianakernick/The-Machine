@@ -9,12 +9,12 @@ local assemble = import "assemble.libsonnet";
 
   local image = [
     "################",
-    "####+-+-+--+##e#",
-    "####d#d#d##|## #",
-    "####|#|#|##|## #",
-    "###+d+d+d+#+-  #",
-    "###|#|#|#|#### #",
-    "### # # # #### #",
+    "# b -+# --+###e#",
+    "# ###db ##|### #",
+    "     -- ##|### #",
+    "  # ######d-   #",
+    "# #      -+### #",
+    "#b-  #b####### #",
     "#p             #",
     "################"
   ],
@@ -26,47 +26,52 @@ local assemble = import "assemble.libsonnet";
       pos: [13, 4],
       dir: "right"
     }),
-    e.lever({
-      pos: [3, 2]
-    }),
-    e.lever({
-      pos: [5, 2]
-    }),
-    e.lever({
-      pos: [7, 2]
-    }),
-    e.lever({
-      pos: [9, 2]
+    e.gate({
+      pos: [12, 4],
+      dir: "right",
+      gate: "not"
     }),
     e.gate({
-      pos: [4, 4],
-      dir: "right",
+      pos: [10, 4],
+      dir: "up",
       gate: "and"
     }),
+    e.pressure_plate({
+      pos: [8, 3],
+      heavy: true
+    }),
+    e.pressure_plate({
+      pos: [7, 7],
+      heavy: true
+    }),
+    a.piston({
+      pos: [7, 5],
+      dir: "up"
+    }),
+    e.pressure_plate({
+      pos: [4, 5],
+      heavy: true
+    }),
+    a.piston({
+      pos: [5, 6],
+      dir: "right"
+    }),
+    e.pressure_plate({
+      pos: [3, 7],
+      heavy: true
+    }),
+    e.pressure_plate({
+      pos: [1, 2],
+      heavy: true
+    }),
     e.gate({
-      pos: [6, 4],
+      pos: [3, 2],
       dir: "right",
-      gate: "xor"
-    }),
-    e.gate({
-      pos: [8, 4],
-      dir: "right",
-      gate: "or"
-    }),
-    e.gate({
-      pos: [4, 6],
-      dir: "up",
       gate: "not"
     }),
-    e.gate({
-      pos: [6, 6],
-      dir: "up",
-      gate: "not"
-    }),
-    e.gate({
-      pos: [8, 6],
-      dir: "up",
-      gate: "not"
-    }),
+    a.piston({
+      pos: [4, 2],
+      dir: "down"
+    })
   ])
 }
