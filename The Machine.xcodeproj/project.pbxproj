@@ -62,6 +62,7 @@
 		45B67A3020106948000CF80E /* title screen.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A2A20106947000CF80E /* title screen.atlas */; };
 		45B67A3120106948000CF80E /* title screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A2B20106947000CF80E /* title screen.png */; };
 		45B67A3C2011876E000CF80E /* transition writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A3A2011876E000CF80E /* transition writer.cpp */; };
+		45B67A5120146FBC000CF80E /* level 9.jsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A5020146FBC000CF80E /* level 9.jsonnet */; };
 		45F62404200CA34000AEB428 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; };
 		45F62407200CA39100AEB428 /* SDL2_mixer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45F62424200CB3DB00AEB428 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241A200CB3C400AEB428 /* 1.wav */; };
@@ -1388,6 +1389,7 @@
 		45B67A4B201301BC000CF80E /* level 7.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 7.jsonnet"; sourceTree = "<group>"; };
 		45B67A4C201320E4000CF80E /* level 5.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 5.jsonnet"; sourceTree = "<group>"; };
 		45B67A4F20142348000CF80E /* level 8.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 8.jsonnet"; sourceTree = "<group>"; };
+		45B67A5020146FBC000CF80E /* level 9.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 9.jsonnet"; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -2502,6 +2504,7 @@
 				45B67A482012D83E000CF80E /* level 6.jsonnet */,
 				45B67A4B201301BC000CF80E /* level 7.jsonnet */,
 				45B67A4F20142348000CF80E /* level 8.jsonnet */,
+				45B67A5020146FBC000CF80E /* level 9.jsonnet */,
 				455AFDA81FFDC8A200739358 /* level test.jsonnet */,
 			);
 			path = Levels;
@@ -3092,6 +3095,7 @@
 				45F62425200CB3DB00AEB428 /* 6.wav in Resources */,
 				45F6242D200CB3DB00AEB428 /* 7.wav in Resources */,
 				45F6242B200CB3DB00AEB428 /* 8.wav in Resources */,
+				45B67A5120146FBC000CF80E /* level 9.jsonnet in Resources */,
 				45F62427200CB3DB00AEB428 /* 9.wav in Resources */,
 				45F6242C200CB3DB00AEB428 /* 10.wav in Resources */,
 			);

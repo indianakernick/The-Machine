@@ -13,6 +13,10 @@ local getChar(image, x, y) =
     " "
   else if std.length(image[0]) == 0 then
     " "
+  else if x < 0 || x >= std.length(image[0]) then
+    " "
+  else if y < 0 || y >= height then
+    " "
   else
     image[height - y - 1][x]
 ;
