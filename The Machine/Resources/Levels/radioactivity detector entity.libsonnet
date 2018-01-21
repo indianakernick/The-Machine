@@ -8,7 +8,7 @@ function(params) {
     Position: params.pos,
     Power: {},
     Device: {},
-    PowerOutput: common.getDirBitsetComp(["right", "down", "left"], params.dir),
+    PowerOutput: common.getDirBitsetComp("down", params.dir),
     RadioactivityDetector: {
       side: common.getDir(params.dir)
     },
