@@ -69,6 +69,9 @@ void App::init() {
     audioParams.frequency = 44100;
     audioLibrary = SDL::makeAudioLibrary(audioParams);
     music.init();
+    
+    // @TODO remove this
+    music.togglePlaying();
   }
   
   screenMan.addScreen<GameScreen>();

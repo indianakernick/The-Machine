@@ -19,6 +19,7 @@ void GameScreen::init(std::shared_ptr<RenderingSystem> renderingSystem) {
   registry = std::make_shared<ECS::Registry>();
   view.init(*rendering, registry);
   transition.init(*rendering);
+  transition.startHalfway();
   level.init();
   loadNewLevel();
 }

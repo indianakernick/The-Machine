@@ -12,6 +12,7 @@
 #include "screen.hpp"
 #include "frame type.hpp"
 #include "rendering types.hpp"
+#include "level transition.hpp"
 #include <Simpleton/Camera 2D/camera.hpp>
 
 class TitleScreen final : public Screen {
@@ -30,6 +31,7 @@ private:
   std::shared_ptr<RenderingSystem> rendering;
   WriterID writer;
   Frame frame = 0;
+  LevelTransition transition;
 };
 
 #endif

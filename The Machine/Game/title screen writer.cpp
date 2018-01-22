@@ -24,7 +24,7 @@ void TitleScreenWriter::writeQuads(
   
   Quad &quad = *quadIter;
   for (size_t v = 0; v != 4; ++v) {
-    quad[v].pos = glm::vec3(CORNER[v].x, CORNER[v].y, 0.0f);
+    quad[v].pos = glm::vec3(CORNER[v].x, CORNER[v].y, 0.5f);
   }
   
   writeTexCoords(quadIter, sheet, frame);

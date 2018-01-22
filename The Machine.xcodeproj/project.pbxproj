@@ -2455,8 +2455,6 @@
 				455AFD8B1FFDB5E800739358 /* game screen.hpp */,
 				455A0856200C830500739358 /* title screen.cpp */,
 				455A0857200C830500739358 /* title screen.hpp */,
-				45B67A1B200F50DA000CF80E /* level controller.cpp */,
-				45B67A1C200F50DA000CF80E /* level controller.hpp */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -2486,6 +2484,8 @@
 				45B67A5B20156F37000CF80E /* game view.hpp */,
 				45B67A5D201576E9000CF80E /* level transition.cpp */,
 				45B67A5E201576E9000CF80E /* level transition.hpp */,
+				45B67A1B200F50DA000CF80E /* level controller.cpp */,
+				45B67A1C200F50DA000CF80E /* level controller.hpp */,
 				45B67A6220158B57000CF80E /* game tick.cpp */,
 				45B67A6320158B57000CF80E /* game tick.hpp */,
 				45B67A6520158E6D000CF80E /* game level.cpp */,

@@ -8,12 +8,13 @@
 
 #include "title screen.hpp"
 
-#include "game screen.hpp"
 #include "screen manager.hpp"
 #include "rendering system.hpp"
 #include "title screen writer.hpp"
 #include <Simpleton/Utils/profiler.hpp>
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
+
+class GameScreen;
 
 namespace {
   constexpr Frame LOOP_BEGIN = 480;
@@ -27,6 +28,7 @@ void TitleScreen::init(std::shared_ptr<RenderingSystem> renderingSystem) {
   
   const TextureID tex = rendering->addTexture("title screen.png");
   writer = rendering->addWriter<TitleScreenWriter>(tex);
+  transition.init(*rendering);
   rendering->updateQuadCount();
   
   camera.transform.setOrigin(Cam2D::Origin::BOTTOM_LEFT);
@@ -42,9 +44,8 @@ void TitleScreen::enter() {
 }
 
 void TitleScreen::input(const SDL_Event &e) {
-  // @TODO uncomment
-  if (e.type == SDL_KEYDOWN /* && frame >= LOOP_BEGIN */) {
-    getScreenMan()->transitionTo<GameScreen>();
+  if (e.type == SDL_KEYDOWN && frame >= LOOP_BEGIN) {
+    transition.start();
   }
 }
 
@@ -59,4 +60,10 @@ void TitleScreen::render(const float aspect, const float delta) {
   camera.update(aspect, delta);
   rendering->render(writer, camera.transform.toPixels(), frame);
   ++frame;
+  
+  transition.render(*rendering);
+  
+  if (transition.isHalfway()) {
+    getScreenMan()->transitionTo<GameScreen>();
+  }
 }

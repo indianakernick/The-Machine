@@ -18,6 +18,7 @@ public:
   void init(RenderingSystem &);
   bool isRunning() const;
   void start();
+  void startHalfway();
   bool isHalfway() const;
   void render(RenderingSystem &);
   

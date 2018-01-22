@@ -26,9 +26,13 @@ bool LevelTransition::isRunning() const {
 }
 
 void LevelTransition::start() {
-  assert(!running);
-  running = true;
   frame = 0;
+  running = true;
+}
+
+void LevelTransition::startHalfway() {
+  frame = DURATION / 2;
+  running = true;
 }
 
 bool LevelTransition::isHalfway() const {
