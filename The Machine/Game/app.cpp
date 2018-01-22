@@ -108,6 +108,12 @@ bool App::input() {
       return false;
     } else if (SDL::keyDown(e, SDL_SCANCODE_M)) {
       music.togglePlaying();
+    } else if (SDL::keyDown(e, SDL_SCANCODE_F)) {
+      if (SDL_GetWindowFlags(window.get()) & SDL_WINDOW_FULLSCREEN_DESKTOP) {
+        CHECK_SDL_ERROR(SDL_SetWindowFullscreen(window.get(), 0));
+      } else {
+        CHECK_SDL_ERROR(SDL_SetWindowFullscreen(window.get(), SDL_WINDOW_FULLSCREEN_DESKTOP));
+      }
     } else {
       screenMan.input(e);
     }
