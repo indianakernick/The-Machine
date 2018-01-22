@@ -1404,6 +1404,7 @@
 		45B67D362015A477000CF80E /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22.png; sourceTree = "<group>"; };
 		45B67D372015A478000CF80E /* 677.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 677.png; sourceTree = "<group>"; };
 		45B67D382015A478000CF80E /* 571.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 571.png; sourceTree = "<group>"; };
+		45B6801A2015AA94000CF80E /* The Machine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "The Machine.entitlements"; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -1469,6 +1470,7 @@
 		4507598E1FFC77E20009B360 /* The Machine */ = {
 			isa = PBXGroup;
 			children = (
+				45B6801A2015AA94000CF80E /* The Machine.entitlements */,
 				455AFEC32001C21900739358 /* Logic puzzle design.txt */,
 				455AFF33200331EC00739358 /* anim helpers.js */,
 				450759AE1FFC98AC0009B360 /* Resources */,
@@ -3099,7 +3101,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -3215,7 +3217,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "#rm \"/Users/indikernick/Library/Application Support/Indi Kernick/The Machine/progress.txt\" 2> /dev/null\nexit 0";
+			shellScript = "#rm \"/Users/indikernick/Library/Containers/Indi-Kernick.The-Machine/Data/Library/Application Support/Indi Kernick/The Machine/\" 2> /dev/null\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -3393,6 +3395,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_ENTITLEMENTS = "The Machine/The Machine.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = NO;
 				DEVELOPMENT_TEAM = QY44MADGVC;
@@ -3436,6 +3439,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_ENTITLEMENTS = "The Machine/The Machine.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = NO;
 				DEVELOPMENT_TEAM = QY44MADGVC;
