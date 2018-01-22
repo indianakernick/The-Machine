@@ -10,14 +10,12 @@
 #define game_screen_hpp
 
 #include "screen.hpp"
+#include "game tick.hpp"
 #include "game view.hpp"
 #include "game logic.hpp"
-#include "level manager.hpp"
-#include "component list.hpp"
+#include "game level.hpp"
 #include "level transition.hpp"
-#include "level controller.hpp"
 #include <Simpleton/ECS/registry.hpp>
-#include <Simpleton/ECS/progress manager.hpp>
 
 class GameScreen final : public Screen {
 public:
@@ -32,17 +30,14 @@ public:
 
 private:
   std::shared_ptr<ECS::Registry> registry;
-  LevelManager<CompList> levels;
-  ECS::ProgressManager progress;
-  Frame frame = 0;
   std::shared_ptr<RenderingSystem> rendering;
-  LevelController levelControl;
   GameLogic logic;
   GameView view;
   LevelTransition transition;
-  std::experimental::optional<ECS::Level> nextLevel;
+  GameTick tick;
+  GameLevel level;
   
-  bool loadLevel(ECS::Level);
+  void loadNewLevel();
 };
 
 #endif

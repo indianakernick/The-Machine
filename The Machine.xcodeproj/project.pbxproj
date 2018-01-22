@@ -67,6 +67,8 @@
 		45B67A5C20156F37000CF80E /* game view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A5A20156F37000CF80E /* game view.cpp */; };
 		45B67A5F201576E9000CF80E /* level transition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A5D201576E9000CF80E /* level transition.cpp */; };
 		45B67A6120157C70000CF80E /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A6020157C70000CF80E /* white.png */; };
+		45B67A6420158B57000CF80E /* game tick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A6220158B57000CF80E /* game tick.cpp */; };
+		45B67A6720158E6D000CF80E /* game level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A6520158E6D000CF80E /* game level.cpp */; };
 		45F62404200CA34000AEB428 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; };
 		45F62407200CA39100AEB428 /* SDL2_mixer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45F62424200CB3DB00AEB428 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241A200CB3C400AEB428 /* 1.wav */; };
@@ -1399,6 +1401,10 @@
 		45B67A5D201576E9000CF80E /* level transition.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "level transition.cpp"; sourceTree = "<group>"; };
 		45B67A5E201576E9000CF80E /* level transition.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "level transition.hpp"; sourceTree = "<group>"; };
 		45B67A6020157C70000CF80E /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
+		45B67A6220158B57000CF80E /* game tick.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "game tick.cpp"; sourceTree = "<group>"; };
+		45B67A6320158B57000CF80E /* game tick.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "game tick.hpp"; sourceTree = "<group>"; };
+		45B67A6520158E6D000CF80E /* game level.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "game level.cpp"; sourceTree = "<group>"; };
+		45B67A6620158E6D000CF80E /* game level.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "game level.hpp"; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -2480,6 +2486,10 @@
 				45B67A5B20156F37000CF80E /* game view.hpp */,
 				45B67A5D201576E9000CF80E /* level transition.cpp */,
 				45B67A5E201576E9000CF80E /* level transition.hpp */,
+				45B67A6220158B57000CF80E /* game tick.cpp */,
+				45B67A6320158B57000CF80E /* game tick.hpp */,
+				45B67A6520158E6D000CF80E /* game level.cpp */,
+				45B67A6620158E6D000CF80E /* game level.hpp */,
 				45B67A5620156B31000CF80E /* Init */,
 				455A009A2007250900739358 /* Player input */,
 				455A009B2007252100739358 /* Motion */,
@@ -3209,6 +3219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				455A00852005E04600739358 /* shift cross wire system.cpp in Sources */,
+				45B67A6720158E6D000CF80E /* game level.cpp in Sources */,
 				455AFF2F2002E8D300739358 /* static sprite writer.cpp in Sources */,
 				455AFD971FFDBADF00739358 /* entity grid.cpp in Sources */,
 				45B67A5C20156F37000CF80E /* game view.cpp in Sources */,
@@ -3229,6 +3240,7 @@
 				455A001120033DED00739358 /* sprite position system.cpp in Sources */,
 				455A00982007243C00739358 /* device input system.cpp in Sources */,
 				45B67A14200F21FD000CF80E /* signal channel toggle system.cpp in Sources */,
+				45B67A6420158B57000CF80E /* game tick.cpp in Sources */,
 				455AFE0820006D0100739358 /* shift radioactivity system.cpp in Sources */,
 				455AFD891FFDB3E000739358 /* rendering context.cpp in Sources */,
 				45F62434200CBBA600AEB428 /* music player.cpp in Sources */,

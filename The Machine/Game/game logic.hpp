@@ -20,7 +20,8 @@ class GameLogic {
 public:
   bool input(const SDL_Event &);
   void onLevelLoad(ECS::Registry &, Pos);
-  bool update(ECS::Registry &);
+  void update(ECS::Registry &);
+  bool exitLevel(ECS::Registry &);
 
 private:
   EntityGrid grid;

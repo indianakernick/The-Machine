@@ -22,15 +22,9 @@ public:
   void render(RenderingSystem &);
   
 private:
-  enum class State {
-    NONE,
-    FADE_OUT,
-    FADE_IN
-  };
-
   WriterID writer;
-  State state = State::NONE;
   Frame frame = 0;
+  bool running = false;
 };
 
 #endif

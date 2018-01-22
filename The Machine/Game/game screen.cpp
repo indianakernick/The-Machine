@@ -8,7 +8,6 @@
 
 #include "game screen.hpp"
 
-#include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/SDL/events.hpp>
 #include <Simpleton/Utils/profiler.hpp>
 
@@ -20,12 +19,8 @@ void GameScreen::init(std::shared_ptr<RenderingSystem> renderingSystem) {
   registry = std::make_shared<ECS::Registry>();
   view.init(*rendering, registry);
   transition.init(*rendering);
-
-  progress.setFilePath(SDL::getSaveDir("Indi Kernick", "The Machine") + "progress.txt");
-  progress.readFile();
-  levels.setPath(SDL::getResDir() + "level ");
-  
-  loadLevel(progress.getIncompleteLevel());
+  level.init();
+  loadNewLevel();
 }
 
 void GameScreen::quit() {
@@ -41,15 +36,7 @@ void GameScreen::enter() {
 }
 
 void GameScreen::input(const SDL_Event &e) {
-  const auto controllerLevel = levelControl.getLevel(
-    e,
-    levels.current(),
-    progress.getIncompleteLevel()
-  );
-  if (controllerLevel) {
-    nextLevel = controllerLevel;
-  }
-  
+  level.input(e);
   logic.input(e);
 }
 
@@ -60,22 +47,17 @@ void GameScreen::update(float) {
     return;
   }
   
-  if (frame == FRAMES_PER_TICK - 1) {
-    frame = 0;
-  } else {
-    ++frame;
+  tick.update();
+  if (!tick.isGameTick()) {
     return;
   }
 
-  if (logic.update(*registry)) {
-    const ECS::Level current = levels.current();
-    if (current != ECS::NULL_LEVEL) {
-      progress.finishLevel(current);
-      nextLevel = current + 1;
-    }
+  logic.update(*registry);
+  if (logic.exitLevel(*registry)) {
+    level.advanceLevel();
   }
   
-  if (nextLevel) {
+  if (level.levelChanged()) {
     transition.start();
   }
 }
@@ -89,23 +71,20 @@ void GameScreen::render(const float aspect, const float delta) {
     view.render(*rendering, *registry, 0);
     transition.render(*rendering);
     if (transition.isHalfway()) {
-      loadLevel(*nextLevel);
-      nextLevel = std::experimental::nullopt;
+      loadNewLevel();
     }
   } else {
-    view.render(*rendering, *registry, frame);
+    view.render(*rendering, *registry, tick.getAnimFrame());
   }
 }
 
-bool GameScreen::loadLevel(const ECS::Level level) {
+void GameScreen::loadNewLevel() {
   PROFILE(GameScreen::loadLevel);
 
-  const OptionalObject meta = levels.load(*registry, level);
-  if (meta) {
-    const Pos levelSize = meta->at("size").get<Pos>();
-    view.onLevelLoad(levelSize);
-    logic.onLevelLoad(*registry, levelSize);
+  const auto levelSize = level.loadNewLevel(*registry);
+  if (levelSize) {
+    view.onLevelLoad(*levelSize);
+    logic.onLevelLoad(*registry, *levelSize);
   }
   rendering->updateQuadCount();
-  return static_cast<bool>(meta);
 }

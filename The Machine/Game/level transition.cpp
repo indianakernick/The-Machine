@@ -22,29 +22,24 @@ void LevelTransition::init(RenderingSystem &rendering) {
 }
 
 bool LevelTransition::isRunning() const {
-  return state != State::NONE;
+  return running;
 }
 
 void LevelTransition::start() {
-  state = State::FADE_OUT;
+  assert(!running);
+  running = true;
   frame = 0;
 }
 
 bool LevelTransition::isHalfway() const {
-  return (state == State::FADE_OUT && frame == DURATION / 2);
+  return frame == DURATION / 2;
 }
 
 void LevelTransition::render(RenderingSystem &rendering) {
-  if (state == State::FADE_OUT) {
-    if (frame == DURATION / 2) {
-      state = State::FADE_IN;
-    }
-    rendering.render(writer, {}, frame);
-    ++frame;
-  } else if (state == State::FADE_IN) {
+  if (running) {
     rendering.render(writer, {}, frame);
     if (frame == DURATION) {
-      state = State::NONE;
+      running = false;
     } else {
       ++frame;
     }

@@ -44,7 +44,7 @@ void GameLogic::onLevelLoad(ECS::Registry &registry, const Pos levelSize) {
   initGridSystem(registry, grid);
 }
 
-bool GameLogic::update(ECS::Registry &registry) {
+void GameLogic::update(ECS::Registry &registry) {
   shiftPowerSystem(registry);
   shiftCrossWireSystem(registry);
   shiftPlayerActionSystem(registry);
@@ -74,6 +74,8 @@ bool GameLogic::update(ECS::Registry &registry) {
   clearRealDirSystem(registry);
   moveDirSystem(registry, grid);
   clearDesiredDirSystem(registry);
-  
+}
+
+bool GameLogic::exitLevel(ECS::Registry &registry) {
   return exitSystem(registry, grid);
 }
