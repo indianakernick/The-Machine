@@ -1,6 +1,5 @@
 {
   "input": "../Sprites",
   "output": "sprites",
-  "sep": 1,
-  "whitepixel": 1
+  "sep": 1
 }

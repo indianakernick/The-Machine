@@ -17,11 +17,11 @@ namespace {
   }
 }
 
-void playerInputSystem(PlayerKeyStates &states, const SDL_Event &e) {
+bool playerInputSystem(PlayerKeyStates &states, const SDL_Event &e) {
   const bool keydown = (e.type == SDL_KEYDOWN && e.key.repeat == 0);
   
   if (!keydown && (e.type != SDL_KEYUP)) {
-    return;
+    return false;
   }
   
   const SDL_Scancode key = e.key.keysym.scancode;
@@ -36,5 +36,8 @@ void playerInputSystem(PlayerKeyStates &states, const SDL_Event &e) {
     setState(states.dirs[2], keydown);
   } else if (key == SDL_SCANCODE_LEFT || key == SDL_SCANCODE_A) {
     setState(states.dirs[3], keydown);
+  } else {
+    return false;
   }
+  return true;
 }

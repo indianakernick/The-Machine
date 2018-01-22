@@ -63,6 +63,10 @@
 		45B67A3120106948000CF80E /* title screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A2B20106947000CF80E /* title screen.png */; };
 		45B67A3C2011876E000CF80E /* transition writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A3A2011876E000CF80E /* transition writer.cpp */; };
 		45B67A5120146FBC000CF80E /* level 9.jsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A5020146FBC000CF80E /* level 9.jsonnet */; };
+		45B67A5920156C35000CF80E /* game logic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A5720156C35000CF80E /* game logic.cpp */; };
+		45B67A5C20156F37000CF80E /* game view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A5A20156F37000CF80E /* game view.cpp */; };
+		45B67A5F201576E9000CF80E /* level transition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A5D201576E9000CF80E /* level transition.cpp */; };
+		45B67A6120157C70000CF80E /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A6020157C70000CF80E /* white.png */; };
 		45F62404200CA34000AEB428 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; };
 		45F62407200CA39100AEB428 /* SDL2_mixer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45F62424200CB3DB00AEB428 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241A200CB3C400AEB428 /* 1.wav */; };
@@ -104,7 +108,6 @@
 		450759A41FFC7B1C0009B360 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		450759A61FFC7B240009B360 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		450759A81FFC7B2A0009B360 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		455A00062003384700739358 /* quad writers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "quad writers.hpp"; sourceTree = "<group>"; };
 		455A000B20033B6000739358 /* sprite position component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "sprite position component.hpp"; sourceTree = "<group>"; };
 		455A000F20033DED00739358 /* sprite position system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "sprite position system.cpp"; sourceTree = "<group>"; };
 		455A001020033DED00739358 /* sprite position system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "sprite position system.hpp"; sourceTree = "<group>"; };
@@ -558,7 +561,6 @@
 		455AFDB81FFDE6A900739358 /* player action component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "player action component.hpp"; sourceTree = "<group>"; };
 		455AFDB91FFDE84D00739358 /* player input system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "player input system.cpp"; sourceTree = "<group>"; };
 		455AFDBA1FFDE84D00739358 /* player input system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "player input system.hpp"; sourceTree = "<group>"; };
-		455AFDBC1FFDEBD700739358 /* systems.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = systems.hpp; sourceTree = "<group>"; };
 		455AFDC01FFDEE1900739358 /* position component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "position component.hpp"; sourceTree = "<group>"; };
 		455AFDC41FFDF34800739358 /* init grid system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "init grid system.cpp"; sourceTree = "<group>"; };
 		455AFDC51FFDF34800739358 /* init grid system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "init grid system.hpp"; sourceTree = "<group>"; };
@@ -1390,6 +1392,13 @@
 		45B67A4C201320E4000CF80E /* level 5.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 5.jsonnet"; sourceTree = "<group>"; };
 		45B67A4F20142348000CF80E /* level 8.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 8.jsonnet"; sourceTree = "<group>"; };
 		45B67A5020146FBC000CF80E /* level 9.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 9.jsonnet"; sourceTree = "<group>"; };
+		45B67A5720156C35000CF80E /* game logic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "game logic.cpp"; sourceTree = "<group>"; };
+		45B67A5820156C35000CF80E /* game logic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "game logic.hpp"; sourceTree = "<group>"; };
+		45B67A5A20156F37000CF80E /* game view.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "game view.cpp"; sourceTree = "<group>"; };
+		45B67A5B20156F37000CF80E /* game view.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "game view.hpp"; sourceTree = "<group>"; };
+		45B67A5D201576E9000CF80E /* level transition.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "level transition.cpp"; sourceTree = "<group>"; };
+		45B67A5E201576E9000CF80E /* level transition.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "level transition.hpp"; sourceTree = "<group>"; };
+		45B67A6020157C70000CF80E /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -1515,7 +1524,6 @@
 		455A00052003382C00739358 /* Quad Writers */ = {
 			isa = PBXGroup;
 			children = (
-				455A00062003384700739358 /* quad writers.hpp */,
 				455AFF2D2002E8D300739358 /* static sprite writer.cpp */,
 				455AFF2E2002E8D300739358 /* static sprite writer.hpp */,
 				455A001220034C6100739358 /* radioactivity sprite writer.cpp */,
@@ -2466,15 +2474,18 @@
 		455AFD931FFDBA8300739358 /* Systems */ = {
 			isa = PBXGroup;
 			children = (
-				455AFDBC1FFDEBD700739358 /* systems.hpp */,
-				455AFDC41FFDF34800739358 /* init grid system.cpp */,
-				455AFDC51FFDF34800739358 /* init grid system.hpp */,
-				455A000F20033DED00739358 /* sprite position system.cpp */,
-				455A001020033DED00739358 /* sprite position system.hpp */,
+				45B67A5720156C35000CF80E /* game logic.cpp */,
+				45B67A5820156C35000CF80E /* game logic.hpp */,
+				45B67A5A20156F37000CF80E /* game view.cpp */,
+				45B67A5B20156F37000CF80E /* game view.hpp */,
+				45B67A5D201576E9000CF80E /* level transition.cpp */,
+				45B67A5E201576E9000CF80E /* level transition.hpp */,
+				45B67A5620156B31000CF80E /* Init */,
 				455A009A2007250900739358 /* Player input */,
 				455A009B2007252100739358 /* Motion */,
 				455A00992007246600739358 /* Power */,
 				455A009C2007254800739358 /* Logic */,
+				45B67A5520156B26000CF80E /* Rendering */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -2955,6 +2966,24 @@
 			name = ECS;
 			sourceTree = "<group>";
 		};
+		45B67A5520156B26000CF80E /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				455A000F20033DED00739358 /* sprite position system.cpp */,
+				455A001020033DED00739358 /* sprite position system.hpp */,
+			);
+			name = Rendering;
+			sourceTree = "<group>";
+		};
+		45B67A5620156B31000CF80E /* Init */ = {
+			isa = PBXGroup;
+			children = (
+				455AFDC41FFDF34800739358 /* init grid system.cpp */,
+				455AFDC51FFDF34800739358 /* init grid system.hpp */,
+			);
+			name = Init;
+			sourceTree = "<group>";
+		};
 		45F6240B200CB07200AEB428 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
@@ -2984,6 +3013,7 @@
 		45F62417200CB38300AEB428 /* Spritesheets */ = {
 			isa = PBXGroup;
 			children = (
+				45B67A6020157C70000CF80E /* white.png */,
 				45B67A2C20106947000CF80E /* sprite config.json */,
 				45B67A2920106947000CF80E /* sprites.atlas */,
 				45B67A2720106947000CF80E /* sprites.png */,
@@ -3092,6 +3122,7 @@
 				45F6242A200CB3DB00AEB428 /* 3.wav in Resources */,
 				45F62429200CB3DB00AEB428 /* 4.wav in Resources */,
 				45F62428200CB3DB00AEB428 /* 5.wav in Resources */,
+				45B67A6120157C70000CF80E /* white.png in Resources */,
 				45F62425200CB3DB00AEB428 /* 6.wav in Resources */,
 				45F6242D200CB3DB00AEB428 /* 7.wav in Resources */,
 				45F6242B200CB3DB00AEB428 /* 8.wav in Resources */,
@@ -3180,10 +3211,12 @@
 				455A00852005E04600739358 /* shift cross wire system.cpp in Sources */,
 				455AFF2F2002E8D300739358 /* static sprite writer.cpp in Sources */,
 				455AFD971FFDBADF00739358 /* entity grid.cpp in Sources */,
+				45B67A5C20156F37000CF80E /* game view.cpp in Sources */,
 				455AFDCF1FFF06EB00739358 /* clear desired dir system.cpp in Sources */,
 				455AFDCC1FFF044900739358 /* clear real dir system.cpp in Sources */,
 				455AFE8F2000B8A200739358 /* exit system.cpp in Sources */,
 				455AFE13200076A200739358 /* signal receiver system.cpp in Sources */,
+				45B67A5920156C35000CF80E /* game logic.cpp in Sources */,
 				455AFDBB1FFDE84D00739358 /* player input system.cpp in Sources */,
 				455AFE02200064D200739358 /* radioactivity detector system.cpp in Sources */,
 				4507599E1FFC795D0009B360 /* main.cpp in Sources */,
@@ -3213,6 +3246,7 @@
 				455A03162009C64F00739358 /* power input system.cpp in Sources */,
 				455AFD861FFDB34400739358 /* app.cpp in Sources */,
 				455AFE222000839000739358 /* pressure plate system.cpp in Sources */,
+				45B67A5F201576E9000CF80E /* level transition.cpp in Sources */,
 				455A00172003531000739358 /* power sprite writer.cpp in Sources */,
 				455AFF142002132B00739358 /* quad writer.cpp in Sources */,
 				455AFF10200212D700739358 /* rendering system.cpp in Sources */,

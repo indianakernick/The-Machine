@@ -10,14 +10,13 @@
 #define game_screen_hpp
 
 #include "screen.hpp"
-#include "entity grid.hpp"
+#include "game view.hpp"
+#include "game logic.hpp"
 #include "level manager.hpp"
 #include "component list.hpp"
-#include "rendering types.hpp"
+#include "level transition.hpp"
 #include "level controller.hpp"
-#include "player key states.hpp"
 #include <Simpleton/ECS/registry.hpp>
-#include <Simpleton/Camera 2D/camera.hpp>
 #include <Simpleton/ECS/progress manager.hpp>
 
 class GameScreen final : public Screen {
@@ -33,25 +32,14 @@ public:
 
 private:
   std::shared_ptr<ECS::Registry> registry;
-  std::shared_ptr<Unpack::Spritesheet> sheet;
   LevelManager<CompList> levels;
   ECS::ProgressManager progress;
-  Cam2D::Camera camera;
-  EntityGrid grid;
-  PlayerKeyStates playerInput;
   Frame frame = 0;
-  WriterGroup quadWriters;
-  WriterID transitionWriter;
   std::shared_ptr<RenderingSystem> rendering;
   LevelController levelControl;
-  
-  enum class TransitionState {
-    NONE,
-    FADE_OUT,
-    FADE_IN
-  };
-  
-  TransitionState state = TransitionState::NONE;
+  GameLogic logic;
+  GameView view;
+  LevelTransition transition;
   std::experimental::optional<ECS::Level> nextLevel;
   
   bool loadLevel(ECS::Level);

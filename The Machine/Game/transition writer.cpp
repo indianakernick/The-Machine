@@ -12,21 +12,21 @@
 
 TransitionWriter::TransitionWriter(
   const TextureID tex,
-  const glm::vec2 whitepx,
+  const glm::vec3 color,
   const Frame duration
-) : tex(tex),
-    whitepx(whitepx),
+) : color(color),
+    tex(tex),
     duration(duration) {}
 
 void TransitionWriter::writeQuads(const QuadIter quadIter, Frame) const {
   Quad &quad = *quadIter;
-  quad[0].pos = {0.0f, 0.0f, 0.0f};
-  quad[1].pos = {128.0f, 0.0f, 0.0f};
-  quad[2].pos = {128.0f, 72.0f, 0.0f};
-  quad[3].pos = {0.0f, 72.0f, 0.0f};
+  quad[0].pos = {-1.0f, -1.0f, 0.0f};
+  quad[1].pos = {1.0f, -1.0f, 0.0f};
+  quad[2].pos = {1.0f, 1.0f, 0.0f};
+  quad[3].pos = {-1.0f, 1.0f, 0.0f};
   
   for (size_t v = 0; v != 4; ++v) {
-    quad[v].texCoord = whitepx;
+    quad[v].texCoord = {0.5f, 0.5f};
   }
 }
 
@@ -44,7 +44,7 @@ glm::vec4 TransitionWriter::getColor(const Frame frame) const {
   } else {
     alpha = Math::sinOut(3.0f - progress);
   }
-  return {0.0f, 0.0f, 0.0f, alpha};
+  return {color.r, color.g, color.b, alpha};
 }
 
 size_t TransitionWriter::count() const {
