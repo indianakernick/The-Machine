@@ -39,6 +39,7 @@ private:
   void shuffle();
   void setFinishHook();
   void removeFinishHook();
+  void printSong();
 };
 
 #endif

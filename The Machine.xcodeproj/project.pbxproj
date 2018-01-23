@@ -79,8 +79,6 @@
 		45B680172015A5A7000CF80E /* 9.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241D200CB3CB00AEB428 /* 9.wav */; };
 		45B680182015A5A7000CF80E /* 10.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F62422200CB3D900AEB428 /* 10.wav */; };
 		45B680192015A5A7000CF80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450759911FFC77E20009B360 /* Assets.xcassets */; };
-		45B6801F2016F0F6000CF80E /* level 6.jsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 45B6801E2016F0F6000CF80E /* level 6.jsonnet */; };
-		45B680212016F2FB000CF80E /* level 8.jsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 45B680202016F2FB000CF80E /* level 8.jsonnet */; };
 		45F62404200CA34000AEB428 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; };
 		45F62407200CA39100AEB428 /* SDL2_mixer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45F62434200CBBA600AEB428 /* music player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F62432200CBBA600AEB428 /* music player.cpp */; };
@@ -3144,14 +3142,12 @@
 				45B680102015A5A7000CF80E /* 2.wav in Resources */,
 				45B680112015A5A7000CF80E /* 3.wav in Resources */,
 				45B680122015A5A7000CF80E /* 4.wav in Resources */,
-				45B680212016F2FB000CF80E /* level 8.jsonnet in Resources */,
 				45B680132015A5A7000CF80E /* 5.wav in Resources */,
 				45B680142015A5A7000CF80E /* 6.wav in Resources */,
 				45B680152015A5A7000CF80E /* 7.wav in Resources */,
 				45B680162015A5A7000CF80E /* 8.wav in Resources */,
 				45B680172015A5A7000CF80E /* 9.wav in Resources */,
 				45B680182015A5A7000CF80E /* 10.wav in Resources */,
-				45B6801F2016F0F6000CF80E /* level 6.jsonnet in Resources */,
 				45B680192015A5A7000CF80E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,7 @@
 
 #include <cassert>
 #include <fstream>
+#include <iostream>
 #include <Simpleton/Data/json.hpp>
 #include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/Utils/profiler.hpp>
@@ -33,6 +34,7 @@ void MusicPlayer::init() {
   
   if (!songs.empty()) {
     songs[0].music.play();
+    printSong();
   }
 }
 
@@ -55,6 +57,7 @@ void MusicPlayer::nextSong() {
     shuffle();
   }
   songs[currentSong].music.play();
+  printSong();
 }
 
 void MusicPlayer::loadMusic() {
@@ -94,26 +97,7 @@ void MusicPlayer::removeFinishHook() {
   globalPlayer = nullptr;
 }
 
-struct TheComp {
-  int thing = 0;
-};
-
-struct MyComp {
-  int n;
-
-  static void init(MyComp &comp, int n) {
-    comp.n = n;
-  }
-};
-
-struct MyOtherComp {
-  static void init(MyOtherComp &comp, int x) {
-    comp.x = x;
-    comp.y = x;
-  }
-  
-  int x;
-  int y;
-};
-
-
+void MusicPlayer::printSong() {
+  const Song &song = songs[currentSong];
+  std::cout << "Currently playing " << song.artist << " - " << song.name << '\n';
+}
