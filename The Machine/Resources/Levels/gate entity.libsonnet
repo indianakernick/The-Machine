@@ -17,12 +17,12 @@ function(params) {
     local inputSides = if unary then
       "down"
     else
-      ["up", "down"]
+      ["right", "left"]
     ,
     local outputSides = if unary then
       "up"
     else
-      ["right", "left"]
+      ["up", "down"]
     ,
     local rot = if "dir" in params then
       params.dir

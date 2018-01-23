@@ -616,14 +616,6 @@
 		455AFE3220009C6C00739358 /* button system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "button system.cpp"; sourceTree = "<group>"; };
 		455AFE3320009C6C00739358 /* button system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "button system.hpp"; sourceTree = "<group>"; };
 		455AFE3B2000A41D00739358 /* gates.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = gates.anim; sourceTree = "<group>"; };
-		455AFE3C2000A55D00739358 /* gate 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 3.png"; sourceTree = "<group>"; };
-		455AFE3D2000A55D00739358 /* gate 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 7.png"; sourceTree = "<group>"; };
-		455AFE3E2000A55E00739358 /* gate 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 6.png"; sourceTree = "<group>"; };
-		455AFE3F2000A55E00739358 /* gate 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 0.png"; sourceTree = "<group>"; };
-		455AFE402000A55F00739358 /* gate 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 1.png"; sourceTree = "<group>"; };
-		455AFE412000A55F00739358 /* gate 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 5.png"; sourceTree = "<group>"; };
-		455AFE422000A55F00739358 /* gate 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 4.png"; sourceTree = "<group>"; };
-		455AFE432000A55F00739358 /* gate 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 2.png"; sourceTree = "<group>"; };
 		455AFE732000AEC500739358 /* player.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = player.anim; sourceTree = "<group>"; };
 		455AFE742000AED300739358 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
 		455AFE8C2000B7D800739358 /* exit component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "exit component.hpp"; sourceTree = "<group>"; };
@@ -1408,6 +1400,14 @@
 		45B67D382015A478000CF80E /* 571.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 571.png; sourceTree = "<group>"; };
 		45B6801E2016F0F6000CF80E /* level 6.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 6.jsonnet"; sourceTree = "<group>"; };
 		45B680202016F2FB000CF80E /* level 8.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 8.jsonnet"; sourceTree = "<group>"; };
+		45B680222016F826000CF80E /* gate 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 3.png"; sourceTree = "<group>"; };
+		45B680232016F826000CF80E /* gate 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 7.png"; sourceTree = "<group>"; };
+		45B680242016F827000CF80E /* gate 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 6.png"; sourceTree = "<group>"; };
+		45B680252016F827000CF80E /* gate 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 0.png"; sourceTree = "<group>"; };
+		45B680262016F828000CF80E /* gate 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 1.png"; sourceTree = "<group>"; };
+		45B680272016F828000CF80E /* gate 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 5.png"; sourceTree = "<group>"; };
+		45B680282016F829000CF80E /* gate 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 4.png"; sourceTree = "<group>"; };
+		45B680292016F829000CF80E /* gate 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 2.png"; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -2664,14 +2664,14 @@
 				455A0403200B150000739358 /* exit 7.png */,
 				455A0404200B150000739358 /* exit 8.png */,
 				455A03FD200B14FC00739358 /* exit 9.png */,
-				455AFE3F2000A55E00739358 /* gate 0.png */,
-				455AFE402000A55F00739358 /* gate 1.png */,
-				455AFE432000A55F00739358 /* gate 2.png */,
-				455AFE3C2000A55D00739358 /* gate 3.png */,
-				455AFE422000A55F00739358 /* gate 4.png */,
-				455AFE412000A55F00739358 /* gate 5.png */,
-				455AFE3E2000A55E00739358 /* gate 6.png */,
-				455AFE3D2000A55D00739358 /* gate 7.png */,
+				45B680252016F827000CF80E /* gate 0.png */,
+				45B680262016F828000CF80E /* gate 1.png */,
+				45B680292016F829000CF80E /* gate 2.png */,
+				45B680222016F826000CF80E /* gate 3.png */,
+				45B680282016F829000CF80E /* gate 4.png */,
+				45B680272016F828000CF80E /* gate 5.png */,
+				45B680242016F827000CF80E /* gate 6.png */,
+				45B680232016F826000CF80E /* gate 7.png */,
 				455A00F32008486200739358 /* lever 0.png */,
 				455A00F42008486300739358 /* lever 1.png */,
 				455A00F52008486400739358 /* lever 2.png */,

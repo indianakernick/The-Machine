@@ -24,7 +24,7 @@ local assemble = import "assemble.libsonnet";
     a.wire_image([0, 0], image),
     e.gate({
       pos: [7, 4],
-      dir: "up",
+      dir: "right",
       gate: "and"
     }),
     e.gate({

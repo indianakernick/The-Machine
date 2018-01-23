@@ -33,7 +33,7 @@ local assemble = import "assemble.libsonnet";
     }),
     e.gate({
       pos: [10, 4],
-      dir: "up",
+      dir: "right",
       gate: "and"
     }),
     a.piston({

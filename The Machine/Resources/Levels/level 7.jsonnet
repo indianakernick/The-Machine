@@ -28,17 +28,17 @@ local assemble = import "assemble.libsonnet";
     }),
     e.gate({
       pos: [4, 4],
-      dir: "right",
+      dir: "up",
       gate: "and"
     }),
     e.gate({
       pos: [6, 4],
-      dir: "right",
+      dir: "up",
       gate: "xor"
     }),
     e.gate({
       pos: [8, 4],
-      dir: "right",
+      dir: "up",
       gate: "or"
     }),
     e.gate({
