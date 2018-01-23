@@ -8,71 +8,54 @@ local assemble = import "assemble.libsonnet";
   },
 
   local image = [
-    "##########  ####",
-    "+----   #  H #e#",
-    "| b     # b b# #",
-    "|  # H H# H  # #",
-    "Hb # #d##  bH# #",
-    "#  # d+d#    # #",
-    "# bH b    H-   #",
-    "#p |   d#      #",
-    "###+d--+########"
+    "################",
+    "# bH-+#H--+###e#",
+    "# ###db ##|### #",
+    "    H-- ##|### #",
+    "  # ######d-   #",
+    "# #     H-+### #",
+    "#b-  #b####### #",
+    "#p             #",
+    "################"
   ],
 
   entities: assemble([
     a.image([0, 0], image, null),
     a.wire_image([0, 0], image),
     a.piston({
-      pos: [5, 7],
-      dir: "down"
+      pos: [13, 4],
+      dir: "right"
     }),
     e.gate({
-      pos: [4, 0],
+      pos: [12, 4],
       dir: "right",
       gate: "not"
     }),
-    a.piston({
-      pos: [5, 3],
-      dir: "left"
-    }),
     e.gate({
-      pos: [6, 5],
-      dir: "right",
+      pos: [10, 4],
+      dir: "up",
       gate: "and"
     }),
-    e.gate({
-      pos: [6, 4],
-      dir: "down",
-      gate: "not"
-    }),
     a.piston({
-      pos: [7, 3],
-      dir: "down"
-    }),
-    a.piston({
-      pos: [7, 1],
+      pos: [7, 5],
       dir: "up"
     }),
     a.piston({
-      pos: [10, 4],
-      dir: "down"
+      pos: [5, 6],
+      dir: "right"
     }),
-    a.piston({
-      pos: [12, 7],
-      dir: "down"
-    }),
-    a.piston({
-      pos: [12, 3],
-      dir: "left"
+    e.pressure_plate({
+      pos: [1, 2],
+      heavy: true
     }),
     e.gate({
-      pos: [12, 2],
+      pos: [3, 2],
       dir: "right",
       gate: "not"
     }),
     a.piston({
-      pos: [13, 2],
-      dir: "right"
+      pos: [4, 2],
+      dir: "down"
     })
   ])
 }
