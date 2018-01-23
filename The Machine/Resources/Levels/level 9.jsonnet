@@ -19,21 +19,8 @@ local assemble = import "assemble.libsonnet";
     "###+d--+########"
   ],
 
-  local key = {
-    "#": e.wall,
-    "p": e.player,
-    "e": e.exit,
-    "b": e.box,
-    "H": {
-      factory: e.pressure_plate,
-      params: {
-        heavy: true
-      }
-    }
-  },
-
   entities: assemble([
-    a.image([0, 0], image, key),
+    a.image([0, 0], image, null),
     a.wire_image([0, 0], image),
     a.piston({
       pos: [5, 7],

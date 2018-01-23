@@ -14,7 +14,7 @@ local assemble = import "assemble.libsonnet";
     "####|#|#|##|## #",
     "###+d+d+d+#+-  #",
     "###|#|#|#|#### #",
-    "### # # # #### #",
+    "###l#l#l#l#### #",
     "#p             #",
     "################"
   ],
@@ -25,18 +25,6 @@ local assemble = import "assemble.libsonnet";
     a.piston({
       pos: [13, 4],
       dir: "right"
-    }),
-    e.lever({
-      pos: [3, 2]
-    }),
-    e.lever({
-      pos: [5, 2]
-    }),
-    e.lever({
-      pos: [7, 2]
-    }),
-    e.lever({
-      pos: [9, 2]
     }),
     e.gate({
       pos: [4, 4],

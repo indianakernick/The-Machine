@@ -13,7 +13,7 @@ local assemble = import "assemble.libsonnet";
     "#+d  bbbbb -+# #",
     "#|##bb bb  #d# #",
     "#|##d#####d#+d #",
-    "# --+-----+### #",
+    "#B--+-----+### #",
     "# ############ #",
     "#p             #",
     "################"
@@ -64,9 +64,6 @@ local assemble = import "assemble.libsonnet";
       pos: [2, 6],
       dir: "right",
       length: 2
-    }),
-    e.button({
-      pos: [1, 3]
     })
   ])
 }

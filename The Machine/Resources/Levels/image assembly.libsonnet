@@ -4,7 +4,21 @@ local defaultKey = {
   "#": e.wall,
   "p": e.player,
   "e": e.exit,
-  "b": e.box
+  "b": e.box,
+  "H": {
+    factory: e.pressure_plate,
+    params: {
+      heavy: true
+    }
+  },
+  "L": {
+    factory: e.pressure_plate,
+    params: {
+      heavy: false
+    }
+  },
+  "l": e.lever,
+  "B": e.button
 };
 
 local readKey(keyObj, position) =

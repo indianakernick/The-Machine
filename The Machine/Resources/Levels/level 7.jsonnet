@@ -9,11 +9,11 @@ local assemble = import "assemble.libsonnet";
 
   local image = [
     "################",
-    "# b -+# --+###e#",
+    "# bH-+#H--+###e#",
     "# ###db ##|### #",
-    "     -- ##|### #",
+    "    H-- ##|### #",
     "  # ######d-   #",
-    "# #      -+### #",
+    "# #     H-+### #",
     "#b-  #b####### #",
     "#p             #",
     "################"
@@ -36,29 +36,13 @@ local assemble = import "assemble.libsonnet";
       dir: "up",
       gate: "and"
     }),
-    e.pressure_plate({
-      pos: [8, 3],
-      heavy: true
-    }),
-    e.pressure_plate({
-      pos: [7, 7],
-      heavy: true
-    }),
     a.piston({
       pos: [7, 5],
       dir: "up"
     }),
-    e.pressure_plate({
-      pos: [4, 5],
-      heavy: true
-    }),
     a.piston({
       pos: [5, 6],
       dir: "right"
-    }),
-    e.pressure_plate({
-      pos: [3, 7],
-      heavy: true
     }),
     e.pressure_plate({
       pos: [1, 2],
