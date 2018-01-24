@@ -12,8 +12,8 @@ local assemble = import "assemble.libsonnet";
     "+d         #|   ",
     "|#     b   ++++#",
     "| b #d d   d d|#",
-    "|  #++-+ |    |#",
-    "+-l-+d#d |    ++",
+    "|  #  -+ |    |#",
+    "+-l- d#d |    ++",
     "#        |deb d|",
     "# bb#HdH#|+d   |",
     "#p  ##+d-+## --+"
@@ -100,6 +100,14 @@ local assemble = import "assemble.libsonnet";
       pos: [13, 5],
       dir: "down"
     }),
+    e.wire({
+      pos: [4, 4],
+      sides: ["right", "down"]
+    }),
+    e.wire({
+      pos: [5, 4],
+      sides: "all"
+    }),
     a.piston({
       pos: [11, 4],
       dir: "right"
@@ -107,6 +115,10 @@ local assemble = import "assemble.libsonnet";
     e.box({
       pos: [13, 4],
       radioactive: true
+    }),
+    e.wire({
+      pos: [4, 3],
+      sides: ["up", "left"]
     }),
     a.piston({
       pos: [5, 3],
