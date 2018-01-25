@@ -554,7 +554,6 @@
 		455AFD961FFDBADF00739358 /* entity grid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "entity grid.hpp"; sourceTree = "<group>"; };
 		455AFD991FFDBB7F00739358 /* position type.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "position type.hpp"; sourceTree = "<group>"; };
 		455AFDA31FFDC46E00739358 /* static collision component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "static collision component.hpp"; sourceTree = "<group>"; };
-		455AFDA81FFDC8A200739358 /* level test.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level test.jsonnet"; sourceTree = "<group>"; };
 		455AFDAA1FFDC91900739358 /* common.libsonnet */ = {isa = PBXFileReference; explicitFileType = text.json; path = common.libsonnet; sourceTree = "<group>"; };
 		455AFDAC1FFDC93500739358 /* entities.libsonnet */ = {isa = PBXFileReference; explicitFileType = text.json; path = entities.libsonnet; sourceTree = "<group>"; };
 		455AFDAE1FFDD67F00739358 /* dynamic collision component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "dynamic collision component.hpp"; sourceTree = "<group>"; };
@@ -652,19 +651,16 @@
 		45B67A2A20106947000CF80E /* title screen.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "title screen.atlas"; sourceTree = "<group>"; };
 		45B67A2B20106947000CF80E /* title screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title screen.png"; sourceTree = "<group>"; };
 		45B67A2C20106947000CF80E /* sprite config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sprite config.json"; sourceTree = "<group>"; };
-		45B67A3320107026000CF80E /* level 1.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 1.jsonnet"; sourceTree = "<group>"; };
-		45B67A352010725E000CF80E /* level 2.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 2.jsonnet"; sourceTree = "<group>"; };
+		45B67A352010725E000CF80E /* level 1.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 1.jsonnet"; sourceTree = "<group>"; };
 		45B67A3A2011876E000CF80E /* transition writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "transition writer.cpp"; sourceTree = "<group>"; };
 		45B67A3B2011876E000CF80E /* transition writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "transition writer.hpp"; sourceTree = "<group>"; };
 		45B67A402011CF78000CF80E /* image assembly.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "image assembly.libsonnet"; sourceTree = "<group>"; };
-		45B67A422011D2A5000CF80E /* level 3.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 3.jsonnet"; sourceTree = "<group>"; };
-		45B67A442011E2FE000CF80E /* level 5.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 5.jsonnet"; sourceTree = "<group>"; };
+		45B67A422011D2A5000CF80E /* level 2.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 2.jsonnet"; sourceTree = "<group>"; };
+		45B67A442011E2FE000CF80E /* level 4.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 4.jsonnet"; sourceTree = "<group>"; };
 		45B67A462012CB36000CF80E /* wire image assembly.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "wire image assembly.libsonnet"; sourceTree = "<group>"; };
-		45B67A482012D83E000CF80E /* level 6.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 6.jsonnet"; sourceTree = "<group>"; };
-		45B67A4B201301BC000CF80E /* level 9.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 9.jsonnet"; sourceTree = "<group>"; };
-		45B67A4C201320E4000CF80E /* level 8.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 8.jsonnet"; sourceTree = "<group>"; };
-		45B67A4F20142348000CF80E /* level 11.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 11.jsonnet"; sourceTree = "<group>"; };
-		45B67A5020146FBC000CF80E /* level 12.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 12.jsonnet"; sourceTree = "<group>"; };
+		45B67A4B201301BC000CF80E /* level 6.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 6.jsonnet"; sourceTree = "<group>"; };
+		45B67A4F20142348000CF80E /* level 9.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 9.jsonnet"; sourceTree = "<group>"; };
+		45B67A5020146FBC000CF80E /* level 7.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 7.jsonnet"; sourceTree = "<group>"; };
 		45B67A5720156C35000CF80E /* game logic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "game logic.cpp"; sourceTree = "<group>"; };
 		45B67A5820156C35000CF80E /* game logic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "game logic.hpp"; sourceTree = "<group>"; };
 		45B67A5A20156F37000CF80E /* game view.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "game view.cpp"; sourceTree = "<group>"; };
@@ -1396,7 +1392,7 @@
 		45B67D362015A477000CF80E /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22.png; sourceTree = "<group>"; };
 		45B67D372015A478000CF80E /* 677.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 677.png; sourceTree = "<group>"; };
 		45B67D382015A478000CF80E /* 571.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 571.png; sourceTree = "<group>"; };
-		45B680202016F2FB000CF80E /* level 7.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 7.jsonnet"; sourceTree = "<group>"; };
+		45B680202016F2FB000CF80E /* level 5.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 5.jsonnet"; sourceTree = "<group>"; };
 		45B680222016F826000CF80E /* gate 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 3.png"; sourceTree = "<group>"; };
 		45B680232016F826000CF80E /* gate 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 7.png"; sourceTree = "<group>"; };
 		45B680242016F827000CF80E /* gate 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 6.png"; sourceTree = "<group>"; };
@@ -1405,15 +1401,15 @@
 		45B680272016F828000CF80E /* gate 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 5.png"; sourceTree = "<group>"; };
 		45B680282016F829000CF80E /* gate 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 4.png"; sourceTree = "<group>"; };
 		45B680292016F829000CF80E /* gate 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gate 2.png"; sourceTree = "<group>"; };
-		45B6802A201703B6000CF80E /* level 10.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 10.jsonnet"; sourceTree = "<group>"; };
-		45B6802C20170E66000CF80E /* level 13.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 13.jsonnet"; sourceTree = "<group>"; };
-		45B6802E2018591D000CF80E /* level 14.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 14.jsonnet"; sourceTree = "<group>"; };
-		45B6802F201944BA000CF80E /* level 15.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 15.jsonnet"; sourceTree = "<group>"; };
-		45B680312019511B000CF80E /* level 4.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 4.jsonnet"; sourceTree = "<group>"; };
-		45B6803320197642000CF80E /* level 16.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 16.jsonnet"; sourceTree = "<group>"; };
-		45B6803920199A37000CF80E /* level 20.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 20.jsonnet"; sourceTree = "<group>"; };
-		45B6803B2019C013000CF80E /* level 17.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 17.jsonnet"; sourceTree = "<group>"; };
-		45B68057201A8F52000CF80E /* level 18.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 18.jsonnet"; sourceTree = "<group>"; };
+		45B6802A201703B6000CF80E /* level 8.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 8.jsonnet"; sourceTree = "<group>"; };
+		45B6802C20170E66000CF80E /* level 10.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 10.jsonnet"; sourceTree = "<group>"; };
+		45B6802E2018591D000CF80E /* level 11.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 11.jsonnet"; sourceTree = "<group>"; };
+		45B6802F201944BA000CF80E /* level 12.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 12.jsonnet"; sourceTree = "<group>"; };
+		45B680312019511B000CF80E /* level 3.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 3.jsonnet"; sourceTree = "<group>"; };
+		45B6803320197642000CF80E /* level 15.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 15.jsonnet"; sourceTree = "<group>"; };
+		45B6803920199A37000CF80E /* level 16.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 16.jsonnet"; sourceTree = "<group>"; };
+		45B6803B2019C013000CF80E /* level 14.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 14.jsonnet"; sourceTree = "<group>"; };
+		45B68057201A8F52000CF80E /* level 13.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 13.jsonnet"; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -2518,8 +2514,7 @@
 				45B68036201988BA000CF80E /* Logic */,
 				45B68037201988EC000CF80E /* Radioactivity */,
 				45B680382019896B000CF80E /* Signals */,
-				45B6803920199A37000CF80E /* level 20.jsonnet */,
-				455AFDA81FFDC8A200739358 /* level test.jsonnet */,
+				45B6803920199A37000CF80E /* level 16.jsonnet */,
 			);
 			path = Levels;
 			sourceTree = "<group>";
@@ -3010,10 +3005,9 @@
 			isa = PBXGroup;
 			children = (
 				45B67A252010612A000CF80E /* level 0.jsonnet */,
-				45B67A3320107026000CF80E /* level 1.jsonnet */,
-				45B67A352010725E000CF80E /* level 2.jsonnet */,
-				45B67A422011D2A5000CF80E /* level 3.jsonnet */,
-				45B680312019511B000CF80E /* level 4.jsonnet */,
+				45B67A352010725E000CF80E /* level 1.jsonnet */,
+				45B67A422011D2A5000CF80E /* level 2.jsonnet */,
+				45B680312019511B000CF80E /* level 3.jsonnet */,
 			);
 			name = Basics;
 			sourceTree = "<group>";
@@ -3021,11 +3015,10 @@
 		45B68036201988BA000CF80E /* Logic */ = {
 			isa = PBXGroup;
 			children = (
-				45B67A442011E2FE000CF80E /* level 5.jsonnet */,
-				45B67A482012D83E000CF80E /* level 6.jsonnet */,
-				45B680202016F2FB000CF80E /* level 7.jsonnet */,
-				45B67A4C201320E4000CF80E /* level 8.jsonnet */,
-				45B67A4B201301BC000CF80E /* level 9.jsonnet */,
+				45B67A442011E2FE000CF80E /* level 4.jsonnet */,
+				45B680202016F2FB000CF80E /* level 5.jsonnet */,
+				45B67A4B201301BC000CF80E /* level 6.jsonnet */,
+				45B67A5020146FBC000CF80E /* level 7.jsonnet */,
 			);
 			name = Logic;
 			sourceTree = "<group>";
@@ -3033,11 +3026,10 @@
 		45B68037201988EC000CF80E /* Radioactivity */ = {
 			isa = PBXGroup;
 			children = (
-				45B6802A201703B6000CF80E /* level 10.jsonnet */,
-				45B67A4F20142348000CF80E /* level 11.jsonnet */,
-				45B67A5020146FBC000CF80E /* level 12.jsonnet */,
-				45B6802C20170E66000CF80E /* level 13.jsonnet */,
-				45B6802E2018591D000CF80E /* level 14.jsonnet */,
+				45B6802A201703B6000CF80E /* level 8.jsonnet */,
+				45B67A4F20142348000CF80E /* level 9.jsonnet */,
+				45B6802C20170E66000CF80E /* level 10.jsonnet */,
+				45B6802E2018591D000CF80E /* level 11.jsonnet */,
 			);
 			name = Radioactivity;
 			sourceTree = "<group>";
@@ -3045,10 +3037,10 @@
 		45B680382019896B000CF80E /* Signals */ = {
 			isa = PBXGroup;
 			children = (
-				45B6802F201944BA000CF80E /* level 15.jsonnet */,
-				45B6803320197642000CF80E /* level 16.jsonnet */,
-				45B6803B2019C013000CF80E /* level 17.jsonnet */,
-				45B68057201A8F52000CF80E /* level 18.jsonnet */,
+				45B6802F201944BA000CF80E /* level 12.jsonnet */,
+				45B68057201A8F52000CF80E /* level 13.jsonnet */,
+				45B6803B2019C013000CF80E /* level 14.jsonnet */,
+				45B6803320197642000CF80E /* level 15.jsonnet */,
 			);
 			name = Signals;
 			sourceTree = "<group>";
@@ -3235,7 +3227,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"18\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources/Levels\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  echo \"Compiling $name\"\n  time jsonnet \"$PROJECT_RES/$name.jsonnet\" |      # compile jsonnet\n  jq -c . > \"$PRODUCT_RES/$name.json\"              # minify json\n  # failed if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone\n";
+			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources/Levels\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  echo \"Compiling $name\"\n  time jsonnet \"$PROJECT_RES/$name.jsonnet\" |      # compile jsonnet\n  jq -c . > \"$PRODUCT_RES/$name.json\"              # minify json\n  # failed if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone\n";
 		};
 		455AFE392000A39900739358 /* Pack Sprites */ = {
 			isa = PBXShellScriptBuildPhase;

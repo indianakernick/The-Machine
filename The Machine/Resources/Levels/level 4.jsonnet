@@ -1,3 +1,5 @@
+// introduction to power
+
 local e = import "entities.libsonnet";
 local a = import "assemblies.libsonnet";
 local assemble = import "assemble.libsonnet";
@@ -9,17 +11,22 @@ local assemble = import "assemble.libsonnet";
 
   local image = [
     "################",
-    "#           # e#",
-    "# # ###b### # ##",
-    "#   # #   #b# ##",
-    "### # # # # # ##",
-    "# #b#   #  b  ##",
-    "# # # # ### ####",
-    "#p  b b    b  ##",
+    "#+-+#+-+#+-+##e#",
+    "#|#|#|#|#|#|## #",
+    "#|#|#|#|#|#|## #",
+    "#|#|#|#|#|#+-db ",
+    "#|#+-+#+-+#### #",
+    "#l############ #",
+    "#p             #",
     "################"
   ],
 
   entities: assemble([
-    a.image([0, 0], image, null)
+    a.image([0, 0], image, null),
+    a.wire_image([0, 0], image),
+    a.piston({
+      pos: [13, 4],
+      dir: "right"
+    })
   ])
 }

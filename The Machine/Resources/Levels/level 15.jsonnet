@@ -1,5 +1,3 @@
-#introduction to signals
-
 local e = import "entities.libsonnet";
 local a = import "assemblies.libsonnet";
 local assemble = import "assemble.libsonnet";
@@ -10,15 +8,15 @@ local assemble = import "assemble.libsonnet";
   },
 
   local image = [
-    "################",
-    "# # # # # # ##e#",
-    "#T#T#T#T#T#T+d #",
-    "#b#B#b#b#B#b|# #",
-    "#D#D#D#D#D#Dd#p#",
-    "#            # #",
-    "##          #  #",
-    "#############  #",
-    "################"
+    "### H####    ###",
+    "###     # # ##e#",
+    "b      RRbR  # #",
+    "  bb  R RRRR # #",
+    "      # #      #",
+    "##  R      # # #",
+    "##### ###### # #",
+    "#pB  b         #",
+    "##### ##########"
   ],
 
   local key = {
@@ -26,88 +24,186 @@ local assemble = import "assemble.libsonnet";
     "p": e.player,
     "e": e.exit,
     "b": e.box,
-    "B": {
+    "R": {
       factory: e.box,
       params: {
         radioactive: true
       }
     },
-    "l": e.lever,
-    "T": {
-      factory: e.radioactive_toggle,
+    "H": {
+      factory: e.pressure_plate,
       params: {
-        dir: "down"
+        heavy: true
       }
     },
-    "D": {
-      factory: e.radioactivity_detector,
-      params: {
-        dir: "up"
-      }
-    }
+    "B": e.button
   },
 
   entities: assemble([
     a.image([0, 0], image, key),
-    a.wire_image([0, 0], image),
-
-    [
-      e.signal_receiver({
-        pos: [2 * i + 1, 7],
-        channel: i
-      })
-      for i in std.makeArray(6, function(i)i)
-    ],
-
-    [
-      local left = 2 * i + 2;
-      local right = 2 * i + 3;
-      local up = 3;
-      local down = 2;
-      [
-        e.wire({
-          pos: [left, up],
-          sides: ["down", "left"]
-        }),
-        e.gate({
-          pos: [right, up],
-          dir: "right",
-          gate: "and"
-        }),
-        e.wire({
-          pos: [left, down],
-          sides: ["up", "right"]
-        }),
-        e.wire({
-          pos: [right, down],
-          sides: ["up", "left"]
-        })
-      ] for i in std.makeArray(5, function(i)i)
-    ],
-
-    e.wire({
-      pos: [1, 3],
-      sides: ["up", "right"]
+    e.signal_transmitter({
+      pos: [3, 1],
+      channel: 0
     }),
-    e.wire({
+    a.piston({
+      pos: [5, 2],
+      dir: "down"
+    }),
+    a.piston({
+      pos: [12, 2],
+      dir: "down"
+    }),
+    e.signal_receiver({
+      pos: [2, 3],
+      channel: 3
+    }),
+    e.radioactive_toggle({
+      pos: [3, 3],
+      dir: "right"
+    }),
+    e.signal_receiver({
+      pos: [5, 3],
+      channel: 0
+    }),
+    e.signal_receiver({
+      pos: [6, 3],
+      channel: 6
+    }),
+    e.gate({
+      pos: [7, 3],
+      dir: "up",
+      gate: "and"
+    }),
+    e.signal_receiver({
+      pos: [8, 3],
+      channel: 2
+    }),
+    e.signal_transmitter({
+      pos: [10, 3],
+      channel: 7
+    }),
+    e.signal_receiver({
       pos: [12, 3],
-      sides: ["up", "left"]
+      channel: 7
+    }),
+    e.signal_receiver({
+      pos: [0, 4],
+      channel: 1
+    }),
+    e.signal_receiver({
+      pos: [1, 4],
+      channel: 2
+    }),
+    e.signal_receiver({
+      pos: [2, 4],
+      channel: 4
+    }),
+    a.piston({
+      pos: [3, 4],
+      dir: "up"
+    }),
+    e.radioactivity_detector({
+      pos: [4, 4],
+      dir: "down"
+    }),
+    e.signal_receiver({
+      pos: [5, 4],
+      channel: 5
+    }),
+    a.piston({
+      pos: [7, 4],
+      dir: "up"
+    }),
+    e.radioactivity_detector({
+      pos: [10, 4],
+      dir: "up"
+    }),
+    e.signal_receiver({
+      pos: [11, 4],
+      channel: 3
     }),
     e.gate({
       pos: [12, 4],
       dir: "up",
-      gate: "not"
+      gate: "and"
+    }),
+    e.signal_receiver({
+      pos: [13, 4],
+      channel: 6
+    }),
+    e.radioactive_toggle({
+      pos: [0, 5],
+      dir: "up"
     }),
     a.piston({
-      pos: [13, 6],
+      pos: [1, 5],
       dir: "right"
     }),
-    e.signal_transmitter({
-      pos: [13, 1],
-      channel: 0
+    a.piston({
+      pos: [4, 5],
+      dir: "up"
     }),
-    e.button({
-      pos: [14, 1]
+    a.piston({
+      pos: [5, 5],
+      dir: "right"
+    }),
+    a.piston({
+      pos: [12, 5],
+      dir: "left"
+    }),
+    e.radioactivity_detector({
+      pos: [1, 6],
+      dir: "left"
+    }),
+    a.piston({
+      pos: [2, 6],
+      dir: "right"
+    }),
+    a.piston({
+      pos: [6, 6],
+      dir: "right"
+    }),
+    e.signal_receiver({
+      pos: [5, 7],
+      channel: 6
+    }),
+    e.gate({
+      pos: [6, 7],
+      dir: "up",
+      gate: "and"
+    }),
+    e.signal_receiver({
+      pos: [7, 7],
+      channel: 1
+    }),
+    a.piston({
+      pos: [9, 7],
+      dir: "down"
+    }),
+    a.piston({
+      pos: [11, 7],
+      dir: "down"
+    }),
+    e.signal_transmitter({
+      pos: [3, 8],
+      channel: 6
+    }),
+    e.signal_receiver({
+      pos: [9, 8],
+      channel: 5
+    }),
+    e.signal_receiver({
+      pos: [10, 8],
+      channel: 6
+    }),
+    e.gate({
+      pos: [11, 8],
+      dir: "up",
+      gate: "and"
+    }),
+    e.signal_receiver({
+      pos: [12, 8],
+      channel: 0
     })
   ])
 }

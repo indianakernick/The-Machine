@@ -9,12 +9,12 @@ local assemble = import "assemble.libsonnet";
 
   local image = [
     "################",
-    "# bH-+#H--+###e#",
-    "# ###db ##|### #",
-    "    H-- ##|### #",
-    "  # ######d-   #",
-    "# #     H-+### #",
-    "#b-  #b####### #",
+    "#+------- ####e#",
+    "#+d  bbbbb -+# #",
+    "#|##bb bb  #d# #",
+    "#|##d#####d#+d #",
+    "#B--+-----+### #",
+    "# ############ #",
     "#p             #",
     "################"
   ],
@@ -27,35 +27,43 @@ local assemble = import "assemble.libsonnet";
       dir: "right"
     }),
     e.gate({
-      pos: [12, 4],
-      dir: "right",
+      pos: [12, 5],
+      dir: "down",
       gate: "not"
     }),
-    e.gate({
-      pos: [10, 4],
-      dir: "right",
-      gate: "and"
+    e.radioactivity_detector({
+      pos: [10, 6],
+      dir: "left"
     }),
     a.piston({
-      pos: [7, 5],
+      pos: [10, 5],
+      dir: "left"
+    }),
+    e.delay({
+     pos: [10, 4],
+     dir: "up",
+     length: 2
+    }),
+    a.piston({
+      pos: [9, 7],
+      dir: "down"
+    }),
+    e.box({
+      pos: [6, 5],
+      radioactive: true
+    }),
+    a.piston({
+      pos: [4, 4],
       dir: "up"
     }),
     a.piston({
-      pos: [5, 6],
+      pos: [3, 6],
       dir: "right"
     }),
-    e.pressure_plate({
-      pos: [1, 2],
-      heavy: true
-    }),
-    e.gate({
-      pos: [3, 2],
+    e.delay({
+      pos: [2, 6],
       dir: "right",
-      gate: "not"
-    }),
-    a.piston({
-      pos: [4, 2],
-      dir: "down"
+      length: 2
     })
   ])
 }
