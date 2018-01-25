@@ -1413,6 +1413,7 @@
 		45B6803320197642000CF80E /* level 16.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 16.jsonnet"; sourceTree = "<group>"; };
 		45B6803920199A37000CF80E /* level 20.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 20.jsonnet"; sourceTree = "<group>"; };
 		45B6803B2019C013000CF80E /* level 17.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 17.jsonnet"; sourceTree = "<group>"; };
+		45B68057201A8F52000CF80E /* level 18.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 18.jsonnet"; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -3047,6 +3048,7 @@
 				45B6802F201944BA000CF80E /* level 15.jsonnet */,
 				45B6803320197642000CF80E /* level 16.jsonnet */,
 				45B6803B2019C013000CF80E /* level 17.jsonnet */,
+				45B68057201A8F52000CF80E /* level 18.jsonnet */,
 			);
 			name = Signals;
 			sourceTree = "<group>";
@@ -3233,7 +3235,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"17\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources/Levels\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  echo \"Compiling $name\"\n  time jsonnet \"$PROJECT_RES/$name.jsonnet\" |      # compile jsonnet\n  jq -c . > \"$PRODUCT_RES/$name.json\"              # minify json\n  # failed if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone\n";
+			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"18\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources/Levels\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  echo \"Compiling $name\"\n  time jsonnet \"$PROJECT_RES/$name.jsonnet\" |      # compile jsonnet\n  jq -c . > \"$PRODUCT_RES/$name.json\"              # minify json\n  # failed if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone\n";
 		};
 		455AFE392000A39900739358 /* Pack Sprites */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3458,7 +3460,11 @@
 				);
 				INFOPLIST_FILE = "The Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/libogg/1.3.3/lib,
+					/usr/local/Cellar/libvorbis/1.3.5_1/lib,
+				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-Wall",
@@ -3499,7 +3505,11 @@
 				);
 				INFOPLIST_FILE = "The Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/libogg/1.3.3/lib,
+					/usr/local/Cellar/libvorbis/1.3.5_1/lib,
+				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-Wall",
