@@ -9,13 +9,13 @@ local assemble = import "assemble.libsonnet";
 
   local image = [
     "################",
-    "#######e      ##",
-    "#############  #",
-    "############# |#",
-    "##+------+d+#  #",
-    "##d######d#d# |#",
-    "# b    p      H#",
-    "#   ############",
+    "####+-+-+--+##e#",
+    "####d#d#d##|## #",
+    "####|#|#|##|## #",
+    "###+d+d+d+#+-  #",
+    "###|#|#|#|#### #",
+    "###|#|#|#|#### #",
+    "#p l l l l     #",
     "################"
   ],
 
@@ -23,30 +23,38 @@ local assemble = import "assemble.libsonnet";
     a.image([0, 0], image, null),
     a.wire_image([0, 0], image),
     a.piston({
-      pos: [2, 3],
-      dir: "down"
-    }),
-    e.lever({
-      pos: [9, 3]
+      pos: [13, 4],
+      dir: "right"
     }),
     e.gate({
-      pos: [10, 4],
-      dir: "right",
-      gate: "not"
-    }),
-    a.piston({
-      pos: [11, 3],
-      dir: "down"
+      pos: [4, 4],
+      dir: "up",
+      gate: "and"
     }),
     e.gate({
-      pos: [14, 4],
+      pos: [6, 4],
+      dir: "up",
+      gate: "xor"
+    }),
+    e.gate({
+      pos: [8, 4],
+      dir: "up",
+      gate: "or"
+    }),
+    e.gate({
+      pos: [4, 6],
       dir: "up",
       gate: "not"
     }),
-    a.piston({
-      pos: [14, 6],
-      dir: "left"
-    })
+    e.gate({
+      pos: [6, 6],
+      dir: "up",
+      gate: "not"
+    }),
+    e.gate({
+      pos: [8, 6],
+      dir: "up",
+      gate: "not"
+    }),
   ])
 }
-

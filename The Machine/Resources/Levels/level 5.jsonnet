@@ -9,12 +9,12 @@ local assemble = import "assemble.libsonnet";
 
   local image = [
     "################",
-    "#     d+#+-+##e#",
-    "# # # #|#|#|## #",
-    "#  b  #d#|#|## #",
-    "# # # #|#|#+-d #",
-    "#     #+-+#### #",
-    "# ############ #",
+    "#+-+#+-+#+-+##e#",
+    "#|#|#|#|#|#|## #",
+    "#|#|#|#|#|#|## #",
+    "#|#|#|#|#|#+-db ",
+    "#|#+-+#+-+#### #",
+    "#l############ #",
     "#p             #",
     "################"
   ],
@@ -22,18 +22,9 @@ local assemble = import "assemble.libsonnet";
   entities: assemble([
     a.image([0, 0], image, null),
     a.wire_image([0, 0], image),
-    e.pressure_plate({
-      pos: [6, 7],
-      heavy: false
-    }),
     a.piston({
       pos: [13, 4],
       dir: "right"
-    }),
-    e.gate({
-      pos: [7, 5],
-      dir: "down",
-      gate: "not"
     })
   ])
 }

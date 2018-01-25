@@ -9,22 +9,17 @@ local assemble = import "assemble.libsonnet";
 
   local image = [
     "################",
-    "#+-+#+-+#+-+##e#",
-    "#|#|#|#|#|#|## #",
-    "#|#|#|#|#|#|## #",
-    "#|#|#|#|#|#+-db ",
-    "#|#+-+#+-+#### #",
-    "#l############ #",
-    "#p             #",
+    "#           # e#",
+    "# # ###b### # ##",
+    "#   # #   #b# ##",
+    "### # # # # # ##",
+    "# #b#   #  b  ##",
+    "# # # # ### ####",
+    "#p  b b    b  ##",
     "################"
   ],
 
   entities: assemble([
-    a.image([0, 0], image, null),
-    a.wire_image([0, 0], image),
-    a.piston({
-      pos: [13, 4],
-      dir: "right"
-    })
+    a.image([0, 0], image, null)
   ])
 }
