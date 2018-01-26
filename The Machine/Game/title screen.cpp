@@ -44,7 +44,7 @@ void TitleScreen::enter() {
 }
 
 void TitleScreen::input(const SDL_Event &e) {
-  if (e.type == SDL_KEYDOWN && frame >= LOOP_BEGIN) {
+  if (e.type == SDL_KEYDOWN && e.key.repeat == 0 && frame >= LOOP_BEGIN) {
     transition.start();
   }
 }
