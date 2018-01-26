@@ -1,12 +1,12 @@
 [
-  {"artist": "Eric Skiff", "file": "1.wav",  "name": "A Night of Dizzy Spells"},
-  {"artist": "Eric Skiff", "file": "2.wav",  "name": "Underclocked"},
-  {"artist": "Eric Skiff", "file": "3.wav",  "name": "Chibi Ninja"},
-  {"artist": "Eric Skiff", "file": "4.wav",  "name": "All of Us"},
-  {"artist": "Eric Skiff", "file": "5.wav",  "name": "Come and Find Me"},
-  {"artist": "Eric Skiff", "file": "6.wav",  "name": "Searching"},
-  {"artist": "Eric Skiff", "file": "7.wav",  "name": "We're the Resistors"},
-  {"artist": "Eric Skiff", "file": "8.wav",  "name": "Ascending"},
-  {"artist": "Eric Skiff", "file": "9.wav",  "name": "Come and Find Me (B Mix)"},
-  {"artist": "Eric Skiff", "file": "10.wav", "name": "Arpanauts"}
+  {"artist": "Eric Skiff", "file": "1.ogg",  "name": "A Night of Dizzy Spells"},
+  {"artist": "Eric Skiff", "file": "2.ogg",  "name": "Underclocked"},
+  {"artist": "Eric Skiff", "file": "3.ogg",  "name": "Chibi Ninja"},
+  {"artist": "Eric Skiff", "file": "4.ogg",  "name": "All of Us"},
+  {"artist": "Eric Skiff", "file": "5.ogg",  "name": "Come and Find Me"},
+  {"artist": "Eric Skiff", "file": "6.ogg",  "name": "Searching"},
+  {"artist": "Eric Skiff", "file": "7.ogg",  "name": "We're the Resistors"},
+  {"artist": "Eric Skiff", "file": "8.ogg",  "name": "Ascending"},
+  {"artist": "Eric Skiff", "file": "9.ogg",  "name": "Come and Find Me (B Mix)"},
+  {"artist": "Eric Skiff", "file": "10.ogg", "name": "Arpanauts"}
 ]

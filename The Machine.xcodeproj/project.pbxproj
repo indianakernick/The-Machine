@@ -68,19 +68,18 @@
 		45B6800C2015A5A7000CF80E /* title screen.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A2A20106947000CF80E /* title screen.atlas */; };
 		45B6800D2015A5A7000CF80E /* title screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B67A2B20106947000CF80E /* title screen.png */; };
 		45B6800E2015A5A7000CF80E /* music.json in Resources */ = {isa = PBXBuildFile; fileRef = 45F62438200DA7B300AEB428 /* music.json */; };
-		45B6800F2015A5A7000CF80E /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241A200CB3C400AEB428 /* 1.wav */; };
-		45B680102015A5A7000CF80E /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241C200CB3C800AEB428 /* 2.wav */; };
-		45B680112015A5A7000CF80E /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F62420200CB3D400AEB428 /* 3.wav */; };
-		45B680122015A5A7000CF80E /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241F200CB3D200AEB428 /* 4.wav */; };
-		45B680132015A5A7000CF80E /* 5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241E200CB3CF00AEB428 /* 5.wav */; };
-		45B680142015A5A7000CF80E /* 6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241B200CB3C600AEB428 /* 6.wav */; };
-		45B680152015A5A7000CF80E /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F62423200CB3DB00AEB428 /* 7.wav */; };
-		45B680162015A5A7000CF80E /* 8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F62421200CB3D600AEB428 /* 8.wav */; };
-		45B680172015A5A7000CF80E /* 9.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F6241D200CB3CB00AEB428 /* 9.wav */; };
-		45B680182015A5A7000CF80E /* 10.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F62422200CB3D900AEB428 /* 10.wav */; };
 		45B680192015A5A7000CF80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450759911FFC77E20009B360 /* Assets.xcassets */; };
-		45F62404200CA34000AEB428 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; };
-		45F62407200CA39100AEB428 /* SDL2_mixer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45F62403200CA34000AEB428 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		45B680A5201B010A000CF80E /* stb_vorbis.c in Sources */ = {isa = PBXBuildFile; fileRef = 45B680A4201B010A000CF80E /* stb_vorbis.c */; };
+		45B680A7201B18CE000CF80E /* 1.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68064201AD172000CF80E /* 1.ogg */; };
+		45B680A8201B18CE000CF80E /* 2.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68067201AD175000CF80E /* 2.ogg */; };
+		45B680A9201B18CE000CF80E /* 3.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68068201AD175000CF80E /* 3.ogg */; };
+		45B680AA201B18CE000CF80E /* 4.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68065201AD174000CF80E /* 4.ogg */; };
+		45B680AB201B18CE000CF80E /* 5.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B6806C201AD177000CF80E /* 5.ogg */; };
+		45B680AC201B18CE000CF80E /* 6.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B6806B201AD177000CF80E /* 6.ogg */; };
+		45B680AD201B18CE000CF80E /* 7.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68066201AD174000CF80E /* 7.ogg */; };
+		45B680AE201B18CE000CF80E /* 8.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68069201AD176000CF80E /* 8.ogg */; };
+		45B680AF201B18CE000CF80E /* 9.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B6806A201AD176000CF80E /* 9.ogg */; };
+		45B680B0201B18CE000CF80E /* 10.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B6806D201AD178000CF80E /* 10.ogg */; };
 		45F62434200CBBA600AEB428 /* music player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F62432200CBBA600AEB428 /* music player.cpp */; };
 		45F62437200D76BD00AEB428 /* rendering helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F62435200D76BD00AEB428 /* rendering helpers.cpp */; };
 /* End PBXBuildFile section */
@@ -93,7 +92,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				450759AB1FFC7B530009B360 /* SDL2.framework in CopyFiles */,
-				45F62407200CA39100AEB428 /* SDL2_mixer.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1420,7 +1418,8 @@
 		45B6806B201AD177000CF80E /* 6.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.ogg; sourceTree = "<group>"; };
 		45B6806C201AD177000CF80E /* 5.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.ogg; sourceTree = "<group>"; };
 		45B6806D201AD178000CF80E /* 10.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = 10.ogg; sourceTree = "<group>"; };
-		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
+		45B680A4201B010A000CF80E /* stb_vorbis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_vorbis.c; sourceTree = "<group>"; };
+		45B680A6201B026C000CF80E /* stb_vorbis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_vorbis.h; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
 		45F6240F200CB36B00AEB428 /* 02 Underclocked (underunderclocked mix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 Underclocked (underunderclocked mix).mp3"; sourceTree = "<group>"; };
@@ -1431,16 +1430,6 @@
 		45F62414200CB36D00AEB428 /* 10 Arpanauts.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 Arpanauts.mp3"; sourceTree = "<group>"; };
 		45F62415200CB36E00AEB428 /* 06 Searching.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 Searching.mp3"; sourceTree = "<group>"; };
 		45F62416200CB36F00AEB428 /* 09 Come and Find Me - B mix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 Come and Find Me - B mix.mp3"; sourceTree = "<group>"; };
-		45F6241A200CB3C400AEB428 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
-		45F6241B200CB3C600AEB428 /* 6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 6.wav; sourceTree = "<group>"; };
-		45F6241C200CB3C800AEB428 /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2.wav; sourceTree = "<group>"; };
-		45F6241D200CB3CB00AEB428 /* 9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 9.wav; sourceTree = "<group>"; };
-		45F6241E200CB3CF00AEB428 /* 5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5.wav; sourceTree = "<group>"; };
-		45F6241F200CB3D200AEB428 /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4.wav; sourceTree = "<group>"; };
-		45F62420200CB3D400AEB428 /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
-		45F62421200CB3D600AEB428 /* 8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8.wav; sourceTree = "<group>"; };
-		45F62422200CB3D900AEB428 /* 10.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 10.wav; sourceTree = "<group>"; };
-		45F62423200CB3DB00AEB428 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
 		45F62432200CBBA600AEB428 /* music player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "music player.cpp"; sourceTree = "<group>"; };
 		45F62433200CBBA600AEB428 /* music player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "music player.hpp"; sourceTree = "<group>"; };
 		45F62435200D76BD00AEB428 /* rendering helpers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "rendering helpers.cpp"; sourceTree = "<group>"; };
@@ -1453,7 +1442,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45F62404200CA34000AEB428 /* SDL2_mixer.framework in Frameworks */,
 				450759A91FFC7B2A0009B360 /* OpenGL.framework in Frameworks */,
 				450759A71FFC7B240009B360 /* IOKit.framework in Frameworks */,
 				450759A51FFC7B1C0009B360 /* Cocoa.framework in Frameworks */,
@@ -1499,7 +1487,6 @@
 		4507599F1FFC7A9C0009B360 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				45F62403200CA34000AEB428 /* SDL2_mixer.framework */,
 				450759A81FFC7B2A0009B360 /* OpenGL.framework */,
 				450759A61FFC7B240009B360 /* IOKit.framework */,
 				450759A41FFC7B1C0009B360 /* Cocoa.framework */,
@@ -3058,6 +3045,8 @@
 		45F6240B200CB07200AEB428 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				45B680A4201B010A000CF80E /* stb_vorbis.c */,
+				45B680A6201B026C000CF80E /* stb_vorbis.h */,
 				45F62432200CBBA600AEB428 /* music player.cpp */,
 				45F62433200CBBA600AEB428 /* music player.hpp */,
 			);
@@ -3099,16 +3088,6 @@
 			isa = PBXGroup;
 			children = (
 				45F62438200DA7B300AEB428 /* music.json */,
-				45F6241A200CB3C400AEB428 /* 1.wav */,
-				45F6241C200CB3C800AEB428 /* 2.wav */,
-				45F62420200CB3D400AEB428 /* 3.wav */,
-				45F6241F200CB3D200AEB428 /* 4.wav */,
-				45F6241E200CB3CF00AEB428 /* 5.wav */,
-				45F6241B200CB3C600AEB428 /* 6.wav */,
-				45F62423200CB3DB00AEB428 /* 7.wav */,
-				45F62421200CB3D600AEB428 /* 8.wav */,
-				45F6241D200CB3CB00AEB428 /* 9.wav */,
-				45F62422200CB3D900AEB428 /* 10.wav */,
 				45B68064201AD172000CF80E /* 1.ogg */,
 				45B68067201AD175000CF80E /* 2.ogg */,
 				45B68068201AD175000CF80E /* 3.ogg */,
@@ -3192,22 +3171,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B680A7201B18CE000CF80E /* 1.ogg in Resources */,
+				45B680A8201B18CE000CF80E /* 2.ogg in Resources */,
+				45B680A9201B18CE000CF80E /* 3.ogg in Resources */,
+				45B680AA201B18CE000CF80E /* 4.ogg in Resources */,
+				45B680AB201B18CE000CF80E /* 5.ogg in Resources */,
+				45B680AC201B18CE000CF80E /* 6.ogg in Resources */,
+				45B680AD201B18CE000CF80E /* 7.ogg in Resources */,
+				45B680AE201B18CE000CF80E /* 8.ogg in Resources */,
+				45B680AF201B18CE000CF80E /* 9.ogg in Resources */,
+				45B680B0201B18CE000CF80E /* 10.ogg in Resources */,
 				45B680092015A5A7000CF80E /* white.png in Resources */,
 				45B6800A2015A5A7000CF80E /* sprites.atlas in Resources */,
 				45B6800B2015A5A7000CF80E /* sprites.png in Resources */,
 				45B6800C2015A5A7000CF80E /* title screen.atlas in Resources */,
 				45B6800D2015A5A7000CF80E /* title screen.png in Resources */,
 				45B6800E2015A5A7000CF80E /* music.json in Resources */,
-				45B6800F2015A5A7000CF80E /* 1.wav in Resources */,
-				45B680102015A5A7000CF80E /* 2.wav in Resources */,
-				45B680112015A5A7000CF80E /* 3.wav in Resources */,
-				45B680122015A5A7000CF80E /* 4.wav in Resources */,
-				45B680132015A5A7000CF80E /* 5.wav in Resources */,
-				45B680142015A5A7000CF80E /* 6.wav in Resources */,
-				45B680152015A5A7000CF80E /* 7.wav in Resources */,
-				45B680162015A5A7000CF80E /* 8.wav in Resources */,
-				45B680172015A5A7000CF80E /* 9.wav in Resources */,
-				45B680182015A5A7000CF80E /* 10.wav in Resources */,
 				45B680192015A5A7000CF80E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3298,6 +3277,7 @@
 				455AFE8F2000B8A200739358 /* exit system.cpp in Sources */,
 				455AFE13200076A200739358 /* signal receiver system.cpp in Sources */,
 				45B67A5920156C35000CF80E /* game logic.cpp in Sources */,
+				45B680A5201B010A000CF80E /* stb_vorbis.c in Sources */,
 				455AFDBB1FFDE84D00739358 /* player input system.cpp in Sources */,
 				455AFE02200064D200739358 /* radioactivity detector system.cpp in Sources */,
 				4507599E1FFC795D0009B360 /* main.cpp in Sources */,
@@ -3468,15 +3448,10 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					/usr/local/Cellar/nlohmann_json/3.0.0/include,
-					/usr/local/Cellar/sdl2_mixer/include,
 				);
 				INFOPLIST_FILE = "The Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					/usr/local/Cellar/libogg/1.3.3/lib,
-					/usr/local/Cellar/libvorbis/1.3.5_1/lib,
-				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-Wall",
@@ -3513,15 +3488,10 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					/usr/local/Cellar/nlohmann_json/3.0.0/include,
-					/usr/local/Cellar/sdl2_mixer/include,
 				);
 				INFOPLIST_FILE = "The Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					/usr/local/Cellar/libogg/1.3.3/lib,
-					/usr/local/Cellar/libvorbis/1.3.5_1/lib,
-				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-Wall",

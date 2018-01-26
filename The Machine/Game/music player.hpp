@@ -11,7 +11,8 @@
 
 #include <vector>
 #include <random>
-#include <Simpleton/SDL/music.hpp>
+#include "stb_vorbis.h"
+#include <SDL2/SDL_audio.h>
 #include <Simpleton/Utils/instance limiter.hpp>
 
 class MusicPlayer final : public Utils::ForceSingleton<MusicPlayer> {
@@ -22,23 +23,25 @@ public:
   void togglePlaying();
   
   void nextSong();
+  void fillAudioBuffer(uint8_t *, int);
   
 private:
   struct Song {
     std::string name;
     std::string artist;
-    SDL::Music music;
+    stb_vorbis *music;
   };
 
   std::vector<Song> songs;
   size_t currentSong = 0;
   std::mt19937 gen;
+  SDL_AudioDeviceID audioDevice = 0;
   
   void loadMusic();
   void initRNG();
   void shuffle();
-  void setFinishHook();
-  void removeFinishHook();
+  void openAudio();
+  void closeAudio();
   void printSong();
 };
 

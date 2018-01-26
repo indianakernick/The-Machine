@@ -65,9 +65,6 @@ void App::init() {
   
   {
     PROFILE(Open Audio);
-    SDL::AudioLibParams audioParams;
-    audioParams.frequency = 44100;
-    audioLibrary = SDL::makeAudioLibrary(audioParams);
     music.init();
   }
   
@@ -88,7 +85,6 @@ void App::quit() {
   screenMan.quitAll();
   screenMan.removeAll();
   music.quit();
-  audioLibrary.reset();
   renderingSystem->quit();
   renderingSystem.reset();
   renderingContext.quit();

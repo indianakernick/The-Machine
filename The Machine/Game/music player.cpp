@@ -16,11 +16,8 @@
 #include <Simpleton/Utils/profiler.hpp>
 
 namespace {
-  MusicPlayer *globalPlayer = nullptr;
-  
-  void songFinished() {
-    assert(globalPlayer);
-    globalPlayer->nextSong();
+  void audioCallback(void *userdata, Uint8 *stream, int len) {
+    reinterpret_cast<MusicPlayer *>(userdata)->fillAudioBuffer(stream, len);
   }
 }
 
@@ -30,24 +27,24 @@ void MusicPlayer::init() {
   loadMusic();
   initRNG();
   shuffle();
-  setFinishHook();
-  
-  if (!songs.empty()) {
-    songs[0].music.play();
-    printSong();
-  }
+  openAudio();
+  printSong();
 }
 
 void MusicPlayer::quit() {
-  removeFinishHook();
+  closeAudio();
+  for (const Song &song : songs) {
+    stb_vorbis_close(song.music);
+  }
   songs.clear();
 }
 
 void MusicPlayer::togglePlaying() {
-  if (Mix_PausedMusic()) {
-    Mix_ResumeMusic();
+  const SDL_AudioStatus status = SDL_GetAudioDeviceStatus(audioDevice);
+  if (status != SDL_AUDIO_PLAYING) {
+    SDL_PauseAudioDevice(audioDevice, 0);
   } else {
-    Mix_PauseMusic();
+    SDL_PauseAudioDevice(audioDevice, 1);
   }
 }
 
@@ -56,8 +53,29 @@ void MusicPlayer::nextSong() {
     currentSong = 0;
     shuffle();
   }
-  songs[currentSong].music.play();
   printSong();
+}
+
+void MusicPlayer::fillAudioBuffer(uint8_t *const buffer, const int requestedBytes) {
+  if (!songs.empty()) {
+    constexpr int bytesPerSample = 4;
+    constexpr int channels = 2;
+  
+    stb_vorbis *music = songs[currentSong].music;
+    const int requestedSamples = requestedBytes / bytesPerSample;
+    const int obtainedSamples = channels * stb_vorbis_get_samples_float_interleaved(
+      music,
+      channels,
+      reinterpret_cast<float *>(buffer),
+      requestedSamples
+    );
+    if (obtainedSamples < requestedSamples) {
+      stb_vorbis_seek_start(music);
+      nextSong();
+      const int obtainedBytes = obtainedSamples * bytesPerSample;
+      fillAudioBuffer(buffer + obtainedBytes, requestedBytes - obtainedBytes);
+    }
+  }
 }
 
 void MusicPlayer::loadMusic() {
@@ -70,8 +88,19 @@ void MusicPlayer::loadMusic() {
     Song song;
     Data::get(song.name, songNode, "name");
     Data::get(song.artist, songNode, "artist");
-    const std::string songFileName = songNode.at("file").get<std::string>();
-    song.music = SDL::makeMusic((resDir + songFileName).c_str());
+    const std::string songFileName = resDir + songNode.at("file").get<std::string>();
+    int error;
+    song.music = stb_vorbis_open_filename(songFileName.c_str(), &error, nullptr);
+    if (song.music == nullptr) {
+      if (error == VORBIS_file_open_failure) {
+        std::cout << "File does not exist: " << songFileName << '\n';
+      } else if (error >= VORBIS_unexpected_eof) {
+        std::cout << "File is currupt: " << songFileName << '\n';
+      } else {
+        std::cout << "Something weird happened, you might want to look into this\n";
+        assert(false);
+      }
+    }
     songs.emplace_back(std::move(song));
   }
 }
@@ -85,19 +114,33 @@ void MusicPlayer::shuffle() {
   std::shuffle(songs.begin(), songs.end(), gen);
 }
 
-void MusicPlayer::setFinishHook() {
-  assert(globalPlayer == nullptr);
-  globalPlayer = this;
-  Mix_HookMusicFinished(&songFinished);
+void MusicPlayer::openAudio() {
+  SDL_AudioSpec desired;
+  desired.freq = 44100;
+  desired.format = AUDIO_F32SYS;
+  desired.channels = 2;
+  desired.samples = 4096;
+  desired.callback = &audioCallback;
+  desired.userdata = this;
+  audioDevice = SDL_OpenAudioDevice(
+    nullptr,
+    0,
+    &desired,
+    nullptr,
+    0
+  );
+  
+  SDL_PauseAudioDevice(audioDevice, 0);
 }
 
-void MusicPlayer::removeFinishHook() {
-  assert(globalPlayer == this);
-  Mix_HookMusicFinished(nullptr);
-  globalPlayer = nullptr;
+void MusicPlayer::closeAudio() {
+  SDL_CloseAudioDevice(audioDevice);
+  audioDevice = 0;
 }
 
 void MusicPlayer::printSong() {
-  const Song &song = songs[currentSong];
-  std::cout << "Currently playing " << song.artist << " - " << song.name << '\n';
+  if (!songs.empty()) {
+    const Song &song = songs[currentSong];
+    std::cout << "Currently playing " << song.artist << " - " << song.name << '\n';
+  }
 }

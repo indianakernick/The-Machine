@@ -14,7 +14,6 @@
 #include "rendering system.hpp"
 #include "rendering context.hpp"
 #include <Simpleton/SDL/library.hpp>
-#include <Simpleton/SDL/audio library.hpp>
 
 class App {
 public:
@@ -24,7 +23,6 @@ public:
 
 private:
   SDL::Library windowLibrary;
-  SDL::AudioLibrary audioLibrary;
   SDL::Window window;
   RenderingContext renderingContext;
   ScreenManager screenMan;
