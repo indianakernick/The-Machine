@@ -228,17 +228,6 @@
 		455A00F62008486500739358 /* lever 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lever 5.png"; sourceTree = "<group>"; };
 		455A00F72008486500739358 /* lever 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lever 8.png"; sourceTree = "<group>"; };
 		455A00F82008488500739358 /* lever.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = lever.anim; sourceTree = "<group>"; };
-		455A00F920084CEF00739358 /* pressure plate heavy 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 4.png"; sourceTree = "<group>"; };
-		455A00FA20084CEF00739358 /* pressure plate heavy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 2.png"; sourceTree = "<group>"; };
-		455A00FB20084CF000739358 /* pressure plate heavy 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 0.png"; sourceTree = "<group>"; };
-		455A00FC20084CF000739358 /* pressure plate heavy 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 6.png"; sourceTree = "<group>"; };
-		455A00FD20084CF100739358 /* pressure plate heavy 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 7.png"; sourceTree = "<group>"; };
-		455A00FE20084CF200739358 /* pressure plate heavy 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 1.png"; sourceTree = "<group>"; };
-		455A00FF20084CF300739358 /* pressure plate heavy 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 3.png"; sourceTree = "<group>"; };
-		455A010020084CF300739358 /* pressure plate heavy 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 5.png"; sourceTree = "<group>"; };
-		455A010120084CF400739358 /* pressure plate heavy 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 8.png"; sourceTree = "<group>"; };
-		455A010220084CF400739358 /* pressure plate heavy 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 9.png"; sourceTree = "<group>"; };
-		455A010320084CF500739358 /* pressure plate heavy 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 10.png"; sourceTree = "<group>"; };
 		455A010420084D0500739358 /* pressure plate light 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate light 10.png"; sourceTree = "<group>"; };
 		455A010520084D0600739358 /* pressure plate light 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate light 5.png"; sourceTree = "<group>"; };
 		455A010620084D0600739358 /* pressure plate light 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate light 9.png"; sourceTree = "<group>"; };
@@ -250,7 +239,6 @@
 		455A010C20084D0A00739358 /* pressure plate light 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate light 7.png"; sourceTree = "<group>"; };
 		455A010D20084D1000739358 /* pressure plate light 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate light 1.png"; sourceTree = "<group>"; };
 		455A010E20084D1000739358 /* pressure plate light 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate light 8.png"; sourceTree = "<group>"; };
-		455A010F20084D2300739358 /* pressure plate.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pressure plate.anim"; sourceTree = "<group>"; };
 		455A011020084FDB00739358 /* radioactive toggle 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactive toggle 3.png"; sourceTree = "<group>"; };
 		455A011120084FDB00739358 /* radioactive toggle 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactive toggle 5.png"; sourceTree = "<group>"; };
 		455A011220084FDC00739358 /* radioactive toggle 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioactive toggle 4.png"; sourceTree = "<group>"; };
@@ -1410,6 +1398,18 @@
 		45B6803920199A37000CF80E /* level 16.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 16.jsonnet"; sourceTree = "<group>"; };
 		45B6803B2019C013000CF80E /* level 14.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 14.jsonnet"; sourceTree = "<group>"; };
 		45B68057201A8F52000CF80E /* level 13.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 13.jsonnet"; sourceTree = "<group>"; };
+		45B68058201AA903000CF80E /* pressure plate.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pressure plate.anim"; sourceTree = "<group>"; };
+		45B68059201AA937000CF80E /* pressure plate heavy 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 4.png"; sourceTree = "<group>"; };
+		45B6805A201AA938000CF80E /* pressure plate heavy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 2.png"; sourceTree = "<group>"; };
+		45B6805B201AA938000CF80E /* pressure plate heavy 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 0.png"; sourceTree = "<group>"; };
+		45B6805C201AA939000CF80E /* pressure plate heavy 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 6.png"; sourceTree = "<group>"; };
+		45B6805D201AA939000CF80E /* pressure plate heavy 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 7.png"; sourceTree = "<group>"; };
+		45B6805E201AA93A000CF80E /* pressure plate heavy 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 1.png"; sourceTree = "<group>"; };
+		45B6805F201AA93A000CF80E /* pressure plate heavy 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 3.png"; sourceTree = "<group>"; };
+		45B68060201AA93A000CF80E /* pressure plate heavy 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 5.png"; sourceTree = "<group>"; };
+		45B68061201AA93B000CF80E /* pressure plate heavy 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 8.png"; sourceTree = "<group>"; };
+		45B68062201AA93B000CF80E /* pressure plate heavy 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 9.png"; sourceTree = "<group>"; };
+		45B68063201AA93C000CF80E /* pressure plate heavy 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 10.png"; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -2559,7 +2559,7 @@
 				455A03D0200B0CEB00739358 /* piston base.anim */,
 				455AFEBF2001BECF00739358 /* piston head.anim */,
 				455AFE732000AEC500739358 /* player.anim */,
-				455A010F20084D2300739358 /* pressure plate.anim */,
+				45B68058201AA903000CF80E /* pressure plate.anim */,
 				455A011B20084FFD00739358 /* radioactive toggle.anim */,
 				455A0127200852CF00739358 /* radioactivity detector.anim */,
 				455AFECB2001EE2B00739358 /* signal channel.anim */,
@@ -2680,17 +2680,17 @@
 				455A03CF200B0C8E00739358 /* piston base.png */,
 				455AFEC22001BEDE00739358 /* piston head.png */,
 				455AFE742000AED300739358 /* player.png */,
-				455A00FB20084CF000739358 /* pressure plate heavy 0.png */,
-				455A00FE20084CF200739358 /* pressure plate heavy 1.png */,
-				455A00FA20084CEF00739358 /* pressure plate heavy 2.png */,
-				455A00FF20084CF300739358 /* pressure plate heavy 3.png */,
-				455A00F920084CEF00739358 /* pressure plate heavy 4.png */,
-				455A010020084CF300739358 /* pressure plate heavy 5.png */,
-				455A00FC20084CF000739358 /* pressure plate heavy 6.png */,
-				455A00FD20084CF100739358 /* pressure plate heavy 7.png */,
-				455A010120084CF400739358 /* pressure plate heavy 8.png */,
-				455A010220084CF400739358 /* pressure plate heavy 9.png */,
-				455A010320084CF500739358 /* pressure plate heavy 10.png */,
+				45B6805B201AA938000CF80E /* pressure plate heavy 0.png */,
+				45B6805E201AA93A000CF80E /* pressure plate heavy 1.png */,
+				45B6805A201AA938000CF80E /* pressure plate heavy 2.png */,
+				45B6805F201AA93A000CF80E /* pressure plate heavy 3.png */,
+				45B68059201AA937000CF80E /* pressure plate heavy 4.png */,
+				45B68060201AA93A000CF80E /* pressure plate heavy 5.png */,
+				45B6805C201AA939000CF80E /* pressure plate heavy 6.png */,
+				45B6805D201AA939000CF80E /* pressure plate heavy 7.png */,
+				45B68061201AA93B000CF80E /* pressure plate heavy 8.png */,
+				45B68062201AA93B000CF80E /* pressure plate heavy 9.png */,
+				45B68063201AA93C000CF80E /* pressure plate heavy 10.png */,
 				455A010720084D0700739358 /* pressure plate light 0.png */,
 				455A010D20084D1000739358 /* pressure plate light 1.png */,
 				455A010B20084D0900739358 /* pressure plate light 2.png */,

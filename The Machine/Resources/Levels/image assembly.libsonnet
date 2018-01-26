@@ -11,12 +11,6 @@ local defaultKey = {
       heavy: true
     }
   },
-  "L": {
-    factory: e.pressure_plate,
-    params: {
-      heavy: false
-    }
-  },
   "l": e.lever,
   "B": e.button
 };
