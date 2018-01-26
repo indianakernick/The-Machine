@@ -1410,6 +1410,16 @@
 		45B68061201AA93B000CF80E /* pressure plate heavy 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 8.png"; sourceTree = "<group>"; };
 		45B68062201AA93B000CF80E /* pressure plate heavy 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 9.png"; sourceTree = "<group>"; };
 		45B68063201AA93C000CF80E /* pressure plate heavy 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressure plate heavy 10.png"; sourceTree = "<group>"; };
+		45B68064201AD172000CF80E /* 1.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.ogg; sourceTree = "<group>"; };
+		45B68065201AD174000CF80E /* 4.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.ogg; sourceTree = "<group>"; };
+		45B68066201AD174000CF80E /* 7.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.ogg; sourceTree = "<group>"; };
+		45B68067201AD175000CF80E /* 2.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.ogg; sourceTree = "<group>"; };
+		45B68068201AD175000CF80E /* 3.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.ogg; sourceTree = "<group>"; };
+		45B68069201AD176000CF80E /* 8.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = 8.ogg; sourceTree = "<group>"; };
+		45B6806A201AD176000CF80E /* 9.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = 9.ogg; sourceTree = "<group>"; };
+		45B6806B201AD177000CF80E /* 6.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.ogg; sourceTree = "<group>"; };
+		45B6806C201AD177000CF80E /* 5.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.ogg; sourceTree = "<group>"; };
+		45B6806D201AD178000CF80E /* 10.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = 10.ogg; sourceTree = "<group>"; };
 		45F62403200CA34000AEB428 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		45F6240D200CB36900AEB428 /* 08 Ascending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Ascending.mp3"; sourceTree = "<group>"; };
 		45F6240E200CB36A00AEB428 /* 04 All of Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 All of Us.mp3"; sourceTree = "<group>"; };
@@ -3099,6 +3109,16 @@
 				45F62421200CB3D600AEB428 /* 8.wav */,
 				45F6241D200CB3CB00AEB428 /* 9.wav */,
 				45F62422200CB3D900AEB428 /* 10.wav */,
+				45B68064201AD172000CF80E /* 1.ogg */,
+				45B68067201AD175000CF80E /* 2.ogg */,
+				45B68068201AD175000CF80E /* 3.ogg */,
+				45B68065201AD174000CF80E /* 4.ogg */,
+				45B6806C201AD177000CF80E /* 5.ogg */,
+				45B6806B201AD177000CF80E /* 6.ogg */,
+				45B68066201AD174000CF80E /* 7.ogg */,
+				45B68069201AD176000CF80E /* 8.ogg */,
+				45B6806A201AD176000CF80E /* 9.ogg */,
+				45B6806D201AD178000CF80E /* 10.ogg */,
 			);
 			path = Music;
 			sourceTree = "<group>";
