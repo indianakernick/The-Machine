@@ -3447,7 +3447,7 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
-					/usr/local/Cellar/nlohmann_json/3.0.0/include,
+					/usr/local/Cellar/nlohmann_json/3.1.0/include,
 				);
 				INFOPLIST_FILE = "The Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -3487,7 +3487,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = ENABLE_PROFILER;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
-					/usr/local/Cellar/nlohmann_json/3.0.0/include,
+					/usr/local/Cellar/nlohmann_json/3.1.0/include,
 				);
 				INFOPLIST_FILE = "The Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
