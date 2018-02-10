@@ -7,7 +7,6 @@
 //
 
 #include "app.hpp"
-
 #include <Simpleton/Utils/profiler.hpp>
 
 int main(int, char **) {
