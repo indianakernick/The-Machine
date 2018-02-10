@@ -3461,10 +3461,7 @@
 					"-Wno-documentation",
 					"-fvisibility=default",
 				);
-				OTHER_LDFLAGS = (
-					/usr/local/lib/libUnpacker.a,
-					/usr/local/Cellar/glew/2.1.0/lib/libGLEW.a,
-				);
+				OTHER_LDFLAGS = /usr/local/Cellar/glew/2.1.0/lib/libGLEW.a;
 				PRODUCT_BUNDLE_IDENTIFIER = "Indi-Kernick.The-Machine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -3499,10 +3496,7 @@
 					"-Wno-documentation",
 					"-fvisibility=default",
 				);
-				OTHER_LDFLAGS = (
-					/usr/local/lib/libUnpacker.a,
-					/usr/local/Cellar/glew/2.1.0/lib/libGLEW.a,
-				);
+				OTHER_LDFLAGS = /usr/local/Cellar/glew/2.1.0/lib/libGLEW.a;
 				PRODUCT_BUNDLE_IDENTIFIER = "Indi-Kernick.The-Machine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
