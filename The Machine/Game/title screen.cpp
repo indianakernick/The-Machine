@@ -12,7 +12,6 @@
 #include "rendering system.hpp"
 #include "title screen writer.hpp"
 #include <Simpleton/Utils/profiler.hpp>
-#include <Simpleton/Camera 2D/zoom to fit.hpp>
 
 class GameScreen;
 
@@ -32,7 +31,7 @@ void TitleScreen::init(std::shared_ptr<RenderingSystem> renderingSystem) {
   rendering->updateQuadCount();
   
   camera.transform.setOrigin(Cam2D::Origin::BOTTOM_LEFT);
-  camera.targetZoom = std::make_unique<Cam2D::ZoomToFit>(glm::vec2(16.0f, 9.0f));
+  zoomToFit.setSize({16.0f, 9.0f});
 }
 
 void TitleScreen::quit() {
@@ -57,7 +56,7 @@ void TitleScreen::render(const float aspect, const float delta) {
   if (frame == TOTAL_FRAMES) {
     frame = LOOP_BEGIN;
   }
-  camera.update(aspect, delta);
+  camera.update({aspect, delta}, zoomToFit);
   rendering->render(writer, camera.transform.toPixels(), frame);
   ++frame;
   

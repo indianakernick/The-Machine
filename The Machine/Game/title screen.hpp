@@ -14,6 +14,7 @@
 #include "rendering types.hpp"
 #include "level transition.hpp"
 #include <Simpleton/Camera 2D/camera.hpp>
+#include <Simpleton/Camera 2D/zoom to fit.hpp>
 
 class TitleScreen final : public Screen {
 public:
@@ -32,6 +33,7 @@ private:
   WriterID writer;
   Frame frame = 0;
   LevelTransition transition;
+  Cam2D::ZoomToFit zoomToFit;
 };
 
 #endif

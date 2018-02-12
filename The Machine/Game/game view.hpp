@@ -14,6 +14,7 @@
 #include "rendering system.hpp"
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/Camera 2D/camera.hpp>
+#include <Simpleton/Camera 2D/zoom to fit.hpp>
 
 class GameView {
 public:
@@ -27,6 +28,7 @@ private:
   std::shared_ptr<Unpack::Spritesheet> sheet;
   WriterGroup writers;
   Cam2D::Camera camera;
+  Cam2D::ZoomToFit zoomToFit;
 };
 
 #endif
