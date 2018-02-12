@@ -56,7 +56,10 @@ void TitleScreen::render(const float aspect, const float delta) {
   if (frame == TOTAL_FRAMES) {
     frame = LOOP_BEGIN;
   }
-  camera.update({aspect, delta}, zoomToFit);
+  camera.animateProps(
+    camera.calcTargetProps({aspect, delta}, zoomToFit),
+    {aspect, delta}
+  );
   rendering->render(writer, camera.transform.toPixels(), frame);
   ++frame;
   

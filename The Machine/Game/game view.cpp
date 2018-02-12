@@ -38,7 +38,10 @@ void GameView::onLevelLoad(const Pos levelSize) {
 }
 
 void GameView::updateCam(const float aspect, const float delta) {
-  camera.update({aspect, delta}, zoomToFit);
+  camera.animateProps(
+    camera.calcTargetProps({aspect, delta}, zoomToFit),
+    {aspect, delta}
+  );
 }
 
 void GameView::render(RenderingSystem &rendering, ECS::Registry &registry, const Frame frame) {
