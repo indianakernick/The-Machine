@@ -9,8 +9,8 @@
 #ifndef cross_wire_sprite_component_hpp
 #define cross_wire_sprite_component_hpp
 
-#include <unpacker.hpp>
 #include <Simpleton/Data/json.hpp>
+#include <Simpleton/Unpack/types.hpp>
 
 struct CrossWireSprite {
   Unpack::SpriteID both;

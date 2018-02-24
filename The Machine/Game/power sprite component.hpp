@@ -9,8 +9,8 @@
 #ifndef power_sprite_component_hpp
 #define power_sprite_component_hpp
 
-#include <unpacker.hpp>
 #include <Simpleton/Data/json.hpp>
+#include <Simpleton/Unpack/types.hpp>
 
 struct Anim {
   Unpack::SpriteID start;

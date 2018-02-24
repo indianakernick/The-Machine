@@ -9,9 +9,9 @@
 #ifndef static_sprite_component_hpp
 #define static_sprite_component_hpp
 
-#include <unpacker.hpp>
 #include "frame type.hpp"
 #include <Simpleton/Data/json.hpp>
+#include <Simpleton/Unpack/types.hpp>
 
 struct StaticSprite {
   Frame frame = 0;

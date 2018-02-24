@@ -31,15 +31,11 @@ void writeTexCoords(
   const Spritesheet &sheet,
   const SpriteID sprite
 ) {
-  const Unpack::VecPx unpackSheetSize = sheet.getSize();
-  const glm::vec2 sheetSize = {unpackSheetSize.x, unpackSheetSize.y};
-  const Unpack::RectPx rect = sheet.getSprite(sprite);
-  glm::vec2 bottomLeft = glm::vec2(rect.x, rect.y) / sheetSize;
-  glm::vec2 topRight = bottomLeft + glm::vec2(rect.w, rect.h) / sheetSize;
+  const Unpack::Rect rect = sheet.getSprite(sprite);
   
   Quad &quad = *quadIter;
-  quad[0].texCoord = {bottomLeft.x, topRight.y};
-  quad[1].texCoord = topRight;
-  quad[2].texCoord = {topRight.x, bottomLeft.y};
-  quad[3].texCoord = bottomLeft;
+  quad[0].texCoord = rect.min;
+  quad[1].texCoord = {rect.max.x, rect.min.y};
+  quad[2].texCoord = rect.max;
+  quad[3].texCoord = {rect.min.x, rect.max.y};
 }

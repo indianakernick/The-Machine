@@ -632,11 +632,9 @@
 		45B67A2420104F0A000CF80E /* signal channel component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "signal channel component.hpp"; sourceTree = "<group>"; };
 		45B67A252010612A000CF80E /* level 0.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 0.jsonnet"; sourceTree = "<group>"; };
 		45B67A2720106947000CF80E /* sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprites.png; sourceTree = "<group>"; };
-		45B67A2820106947000CF80E /* title screen config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "title screen config.json"; sourceTree = "<group>"; };
 		45B67A2920106947000CF80E /* sprites.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sprites.atlas; sourceTree = "<group>"; };
 		45B67A2A20106947000CF80E /* title screen.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "title screen.atlas"; sourceTree = "<group>"; };
 		45B67A2B20106947000CF80E /* title screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title screen.png"; sourceTree = "<group>"; };
-		45B67A2C20106947000CF80E /* sprite config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sprite config.json"; sourceTree = "<group>"; };
 		45B67A352010725E000CF80E /* level 1.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 1.jsonnet"; sourceTree = "<group>"; };
 		45B67A3A2011876E000CF80E /* transition writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "transition writer.cpp"; sourceTree = "<group>"; };
 		45B67A3B2011876E000CF80E /* transition writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "transition writer.hpp"; sourceTree = "<group>"; };
@@ -3074,10 +3072,8 @@
 			isa = PBXGroup;
 			children = (
 				45B67A6020157C70000CF80E /* white.png */,
-				45B67A2C20106947000CF80E /* sprite config.json */,
 				45B67A2920106947000CF80E /* sprites.atlas */,
 				45B67A2720106947000CF80E /* sprites.png */,
-				45B67A2820106947000CF80E /* title screen config.json */,
 				45B67A2A20106947000CF80E /* title screen.atlas */,
 				45B67A2B20106947000CF80E /* title screen.png */,
 			);
@@ -3201,7 +3197,6 @@
 			);
 			inputPaths = (
 				"$(PROJECT_DIR)/$(PROJECT)/Resources/Title Screen Frames/",
-				"$(PROJECT_DIR)/$(PROJECT)/Resources/Spritesheets/title screen config.json",
 			);
 			name = "Pack Title Screen";
 			outputPaths = (
@@ -3210,7 +3205,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources/Spritesheets\"\n\ntime packer --silent title\\ screen\\ config.json";
+			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources/Spritesheets\"\n\ntime pack in=../Title\\ Screen\\ Frames out=title\\ screen > /dev/null";
 		};
 		455AFDA51FFDC5F000739358 /* Compile Levels */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3235,7 +3230,6 @@
 			);
 			inputPaths = (
 				"$(PROJECT_DIR)/$(PROJECT)/Resources/Sprites/",
-				"$(PROJECT_DIR)/$(PROJECT)/Resources/Spritesheets/sprite config.json",
 			);
 			name = "Pack Sprites";
 			outputPaths = (
@@ -3244,7 +3238,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources/Spritesheets\"\n\ntime packer --silent sprite\\ config.json";
+			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources/Spritesheets\"\n\ntime pack in=../Sprites out=sprites > /dev/null";
 		};
 		45B67A3F2011B85E000CF80E /* Reset Progress */ = {
 			isa = PBXShellScriptBuildPhase;
