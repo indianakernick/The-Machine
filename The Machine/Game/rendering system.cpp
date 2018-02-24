@@ -9,11 +9,11 @@
 #include "rendering system.hpp"
 
 #include <fstream>
-#include <Surface/load.hpp>
 #include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/Utils/profiler.hpp>
 #include <Simpleton/OpenGL/uniforms.hpp>
 #include <Simpleton/OpenGL/attrib pointer.hpp>
+#include <Simpleton/Graphics 2D/load surface.hpp>
 
 namespace {
   ///Number of indicies that make up a quad
@@ -95,7 +95,7 @@ QuadWriter &RenderingSystem::getWriter(const WriterID id) const {
 }
 
 TextureID RenderingSystem::addTexture(const std::string_view name) {
-  const Surface image = loadSurfaceRGBA(SDL::getResDir() + std::string(name));
+  const G2D::Surface image = G2D::loadSurfaceRGBA(SDL::getResDir() + std::string(name));
   const GL::Image2D glImage = {
     image.data(),
     static_cast<GLsizei>(image.width()),
