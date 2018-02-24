@@ -3205,7 +3205,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources/Spritesheets\"\n\ntime pack in=../Title\\ Screen\\ Frames out=title\\ screen > /dev/null";
+			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources/Spritesheets\"\n\npack in=../Title\\ Screen\\ Frames out=title\\ screen 1> /dev/null";
 		};
 		455AFDA51FFDC5F000739358 /* Compile Levels */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3238,7 +3238,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources/Spritesheets\"\n\ntime pack in=../Sprites out=sprites > /dev/null";
+			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources/Spritesheets\"\n\npack in=../Sprites out=sprites 1> /dev/null";
 		};
 		45B67A3F2011B85E000CF80E /* Reset Progress */ = {
 			isa = PBXShellScriptBuildPhase;
