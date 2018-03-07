@@ -1,0 +1,3576 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/app.cpp
+app.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/app.hpp
+chrono
+-
+game screen.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game screen.hpp
+title screen.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen.hpp
+Simpleton/SDL/events.hpp
+-
+Simpleton/Utils/profiler.hpp
+-
+Simpleton/Time/main loop.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/app.hpp
+music player.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/music player.hpp
+screen manager.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen manager.hpp
+rendering system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering system.hpp
+rendering context.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering context.hpp
+Simpleton/SDL/library.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/button component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/button system.cpp
+button system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/button system.hpp
+power component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp
+button component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/button component.hpp
+position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position component.hpp
+player action component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player action component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/button system.hpp
+entity grid.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear desired dir system.cpp
+clear desired dir system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear desired dir system.hpp
+movement component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/movement component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear desired dir system.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear player input system.cpp
+clear player input system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear player input system.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear player input system.hpp
+player key states.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player key states.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear real dir system.cpp
+clear real dir system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear real dir system.hpp
+movement component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/movement component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear real dir system.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/component list.hpp
+exit component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/exit component.hpp
+gate component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/gate component.hpp
+wire component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/wire component.hpp
+delay component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/delay component.hpp
+power component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp
+lever component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/lever component.hpp
+device component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/device component.hpp
+piston component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/piston component.hpp
+button component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/button component.hpp
+weight component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/weight component.hpp
+position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position component.hpp
+movement component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/movement component.hpp
+cross wire component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire component.hpp
+power input component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input component.hpp
+power sprite component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power sprite component.hpp
+power output component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power output component.hpp
+static sprite component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static sprite component.hpp
+radioactivity component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity component.hpp
+player action component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player action component.hpp
+signal channel component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal channel component.hpp
+pressure plate component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/pressure plate component.hpp
+Simpleton/Utils/type list.hpp
+-
+signal receiver component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal receiver component.hpp
+sprite position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position component.hpp
+static collision component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static collision component.hpp
+dynamic collision component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/dynamic collision component.hpp
+cross wire sprite component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire sprite component.hpp
+signal transmitter component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal transmitter component.hpp
+radioactive toggle component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactive toggle component.hpp
+radioactivity sprite component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity sprite component.hpp
+radioactivity detector component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity detector component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire component.hpp
+power component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire sprite component.hpp
+Simpleton/Data/json.hpp
+-
+Simpleton/Unpack/types.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire sprite writer.cpp
+cross wire sprite writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire sprite writer.hpp
+cross wire component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire component.hpp
+cross wire sprite component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire sprite component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire sprite writer.hpp
+quad writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/quad writer.hpp
+rendering helpers.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/delay component.hpp
+Simpleton/Data/json.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/delay system.cpp
+delay system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/delay system.hpp
+delay component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/delay component.hpp
+power component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp
+power input component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/delay system.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/device component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/device input system.cpp
+device input system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/device input system.hpp
+power component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp
+device component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/device component.hpp
+power input component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/device input system.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/dir to vec.hpp
+position type.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position type.hpp
+Simpleton/Math/dir.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/dynamic collision component.hpp
+cstdint
+-
+Simpleton/Data/json.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.cpp
+entity grid.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.hpp
+position type.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position type.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/exit component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/exit system.cpp
+exit system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/exit system.hpp
+exit component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/exit component.hpp
+position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position component.hpp
+player action component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player action component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/exit system.hpp
+entity grid.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/frame type.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game level.cpp
+game level.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game level.hpp
+Simpleton/SDL/paths.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game level.hpp
+level manager.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level manager.hpp
+component list.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/component list.hpp
+level controller.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level controller.hpp
+Simpleton/ECS/registry.hpp
+-
+Simpleton/ECS/progress manager.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game logic.cpp
+game logic.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game logic.hpp
+wire system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/wire system.hpp
+gate system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/gate system.hpp
+exit system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/exit system.hpp
+delay system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/delay system.hpp
+lever system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/lever system.hpp
+piston system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/piston system.hpp
+button system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/button system.hpp
+move dir system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/move dir system.hpp
+init grid system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/init grid system.hpp
+update pos system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/update pos system.hpp
+shift power system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift power system.hpp
+power input system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input system.hpp
+player input system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input system.hpp
+device input system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/device input system.hpp
+clear real dir system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear real dir system.hpp
+pressure plate system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/pressure plate system.hpp
+signal receiver system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal receiver system.hpp
+shift cross wire system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift cross wire system.hpp
+clear desired dir system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear desired dir system.hpp
+clear player input system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear player input system.hpp
+radioactive toggle system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactive toggle system.hpp
+shift player action system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift player action system.hpp
+shift radioactivity system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift radioactivity system.hpp
+player input response system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input response system.hpp
+signal channel toggle system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal channel toggle system.hpp
+radioactivity detector system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity detector system.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game logic.hpp
+frame type.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/frame type.hpp
+entity grid.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.hpp
+player key states.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player key states.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game screen.cpp
+game screen.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game screen.hpp
+Simpleton/SDL/events.hpp
+-
+Simpleton/Utils/profiler.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game screen.hpp
+screen.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen.hpp
+game tick.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game tick.hpp
+game view.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game view.hpp
+game logic.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game logic.hpp
+game level.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game level.hpp
+level transition.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level transition.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game tick.cpp
+game tick.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game tick.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game tick.hpp
+frame type.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/frame type.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game view.cpp
+game view.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game view.hpp
+Simpleton/SDL/paths.hpp
+-
+power sprite writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power sprite writer.hpp
+static sprite writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static sprite writer.hpp
+sprite position system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position system.hpp
+cross wire sprite writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire sprite writer.hpp
+radioactivity sprite writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity sprite writer.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game view.hpp
+rendering types.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering types.hpp
+rendering system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering system.hpp
+Simpleton/Unpack/sheet.hpp
+-
+Simpleton/ECS/registry.hpp
+-
+Simpleton/Camera 2D/camera.hpp
+-
+Simpleton/Camera 2D/zoom to fit.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/gate component.hpp
+Simpleton/Data/json.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/gate system.cpp
+gate system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/gate system.hpp
+gate component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/gate component.hpp
+power component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp
+power input component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/gate system.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/init grid system.cpp
+init grid system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/init grid system.hpp
+position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position component.hpp
+static collision component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static collision component.hpp
+dynamic collision component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/dynamic collision component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/init grid system.hpp
+entity grid.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level controller.cpp
+level controller.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level controller.hpp
+SDL2/SDL_events.h
+-
+Simpleton/SDL/events.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level controller.hpp
+experimental/optional
+-
+Simpleton/ECS/level.hpp
+-
+Simpleton/Math/digit stack.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level manager.hpp
+string
+-
+experimental/optional
+-
+Simpleton/Data/json.hpp
+-
+Simpleton/ECS/level.hpp
+-
+Simpleton/ECS/registry.hpp
+-
+level manager.inl
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level manager.inl
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level manager.inl
+fstream
+-
+Simpleton/Utils/type list.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level transition.cpp
+level transition.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level transition.hpp
+transition writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/transition writer.hpp
+Simpleton/SDL/paths.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level transition.hpp
+rendering types.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering types.hpp
+rendering system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering system.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/lever component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/lever system.cpp
+lever system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/lever system.hpp
+power component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp
+lever component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/lever component.hpp
+position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position component.hpp
+player action component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player action component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/lever system.hpp
+entity grid.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/move dir system.cpp
+move dir system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/move dir system.hpp
+dir to vec.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/dir to vec.hpp
+movement component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/movement component.hpp
+static collision component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static collision component.hpp
+dynamic collision component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/dynamic collision component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/move dir system.hpp
+entity grid.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/movement component.hpp
+Simpleton/Math/dir.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/music player.cpp
+music player.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/music player.hpp
+cassert
+-
+fstream
+-
+iostream
+-
+Simpleton/Data/json.hpp
+-
+Simpleton/SDL/paths.hpp
+-
+Simpleton/Utils/profiler.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/music player.hpp
+vector
+-
+random
+-
+stb_vorbis.h
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/stb_vorbis.h
+SDL2/SDL_audio.h
+-
+Simpleton/Utils/instance limiter.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/piston component.hpp
+position type.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position type.hpp
+Simpleton/Math/dir.hpp
+-
+Simpleton/Data/json.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/piston system.cpp
+piston system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/piston system.hpp
+power component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp
+piston component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/piston component.hpp
+position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position component.hpp
+movement component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/movement component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/piston system.hpp
+entity grid.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player action component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input response system.cpp
+player input response system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input response system.hpp
+movement component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/movement component.hpp
+player action component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player action component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input response system.hpp
+player key states.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player key states.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input system.cpp
+player input system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input system.hpp
+SDL2/SDL_events.h
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input system.hpp
+player key states.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player key states.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player key states.hpp
+array
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position component.hpp
+position type.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position type.hpp
+Simpleton/Data/json.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position type.hpp
+glm/vec2.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input component.hpp
+Simpleton/Data/json.hpp
+-
+Simpleton/Math/dir bits.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input system.cpp
+power input system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input system.hpp
+dir to vec.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/dir to vec.hpp
+wire component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/wire component.hpp
+power component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp
+position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position component.hpp
+cross wire component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire component.hpp
+power input component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input component.hpp
+power output component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power output component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input system.hpp
+entity grid.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power output component.hpp
+Simpleton/Data/json.hpp
+-
+Simpleton/Math/dir bits.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power sprite component.hpp
+Simpleton/Data/json.hpp
+-
+Simpleton/Unpack/types.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power sprite writer.cpp
+power sprite writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power sprite writer.hpp
+power component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp
+power sprite component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power sprite component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power sprite writer.hpp
+quad writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/quad writer.hpp
+rendering helpers.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/pressure plate component.hpp
+Simpleton/Data/json.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/pressure plate system.cpp
+pressure plate system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/pressure plate system.hpp
+power component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp
+weight component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/weight component.hpp
+position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position component.hpp
+pressure plate component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/pressure plate component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/pressure plate system.hpp
+entity grid.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/quad writer.cpp
+quad writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/quad writer.hpp
+glm/mat2x2.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/quad writer.hpp
+glm/vec4.hpp
+-
+frame type.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/frame type.hpp
+position type.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position type.hpp
+rendering types.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering types.hpp
+sprite position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactive toggle component.hpp
+Simpleton/Math/dir.hpp
+-
+Simpleton/Data/json.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactive toggle system.cpp
+radioactive toggle system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactive toggle system.hpp
+dir to vec.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/dir to vec.hpp
+power component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp
+position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position component.hpp
+radioactivity component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity component.hpp
+radioactive toggle component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactive toggle component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactive toggle system.hpp
+entity grid.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity component.hpp
+Simpleton/Data/json.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity detector component.hpp
+Simpleton/Math/dir.hpp
+-
+Simpleton/Data/json.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity detector system.cpp
+radioactivity detector system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity detector system.hpp
+dir to vec.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/dir to vec.hpp
+power component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp
+position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position component.hpp
+radioactivity component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity component.hpp
+radioactivity detector component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity detector component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity detector system.hpp
+entity grid.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity sprite component.hpp
+Simpleton/Data/json.hpp
+-
+Simpleton/Unpack/types.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity sprite writer.cpp
+radioactivity sprite writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity sprite writer.hpp
+radioactivity component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity component.hpp
+radioactivity sprite component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity sprite component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity sprite writer.hpp
+quad writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/quad writer.hpp
+rendering helpers.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering context.cpp
+rendering context.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering context.hpp
+SDL2/SDL.h
+-
+Simpleton/SDL/error.hpp
+-
+Simpleton/OpenGL/opengl.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering context.hpp
+glm/vec2.hpp
+-
+SDL2/SDL.h
+-
+GLES3/gl32.h
+-
+Simpleton/OpenGL/context.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.cpp
+rendering helpers.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.hpp
+rendering types.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering types.hpp
+Simpleton/Unpack/sheet.hpp
+-
+sprite position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering system.cpp
+rendering system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering system.hpp
+fstream
+-
+Simpleton/SDL/paths.hpp
+-
+Simpleton/Utils/profiler.hpp
+-
+Simpleton/OpenGL/uniforms.hpp
+-
+Simpleton/OpenGL/attrib pointer.hpp
+-
+Simpleton/Graphics 2D/load surface.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering system.hpp
+GLES3/gl32.h
+-
+SDL2/SDL.h
+-
+glm/mat3x3.hpp
+-
+quad writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/quad writer.hpp
+Simpleton/OpenGL/buffer.hpp
+-
+Simpleton/OpenGL/texture.hpp
+-
+Simpleton/OpenGL/vertex array.hpp
+-
+Simpleton/OpenGL/shader program.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering types.hpp
+array
+-
+vector
+-
+glm/vec2.hpp
+-
+glm/vec3.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen id.hpp
+Simpleton/ID/type.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen manager.cpp
+screen manager.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen manager.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen manager.hpp
+screen.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen.hpp
+unordered_map
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen.cpp
+screen.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen.hpp
+memory
+-
+screen id.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen id.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift cross wire system.cpp
+shift cross wire system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift cross wire system.hpp
+cross wire component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift cross wire system.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift player action system.cpp
+shift player action system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift player action system.hpp
+player action component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player action component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift player action system.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift power system.cpp
+shift power system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift power system.hpp
+power component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift power system.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift radioactivity system.cpp
+shift radioactivity system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift radioactivity system.hpp
+radioactivity component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift radioactivity system.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal channel component.hpp
+cstdint
+-
+Simpleton/Data/json.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal channel toggle system.cpp
+signal channel toggle system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal channel toggle system.hpp
+frame type.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/frame type.hpp
+position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position component.hpp
+power sprite component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power sprite component.hpp
+player action component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player action component.hpp
+signal channel component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal channel component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal channel toggle system.hpp
+entity grid.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal receiver component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal receiver system.cpp
+signal receiver system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal receiver system.hpp
+power component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp
+signal channel component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal channel component.hpp
+signal receiver component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal receiver component.hpp
+signal transmitter component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal transmitter component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal receiver system.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal transmitter component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position component.hpp
+Simpleton/Math/dir.hpp
+-
+Simpleton/Data/json.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position system.cpp
+sprite position system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position system.hpp
+dir to vec.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/dir to vec.hpp
+position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position component.hpp
+movement component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/movement component.hpp
+sprite position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position system.hpp
+frame type.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/frame type.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static collision component.hpp
+cstdint
+-
+Simpleton/Data/json.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static sprite component.hpp
+frame type.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/frame type.hpp
+Simpleton/Data/json.hpp
+-
+Simpleton/Unpack/types.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static sprite writer.cpp
+static sprite writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static sprite writer.hpp
+static sprite component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static sprite component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static sprite writer.hpp
+quad writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/quad writer.hpp
+rendering helpers.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/stb_vorbis.c
+stdio.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+assert.h
+-
+math.h
+-
+malloc.h
+-
+alloca.h
+-
+limits.h
+-
+crtdbg.h
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/stb_vorbis.h
+stb_vorbis.c
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/stb_vorbis.c
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen writer.cpp
+title screen writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen writer.hpp
+Simpleton/SDL/paths.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen writer.hpp
+quad writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/quad writer.hpp
+rendering helpers.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen.cpp
+title screen.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen.hpp
+screen manager.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen manager.hpp
+rendering system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering system.hpp
+title screen writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen writer.hpp
+Simpleton/Utils/profiler.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen.hpp
+screen.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen.hpp
+frame type.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/frame type.hpp
+rendering types.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering types.hpp
+level transition.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level transition.hpp
+Simpleton/Camera 2D/camera.hpp
+-
+Simpleton/Camera 2D/zoom to fit.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/transition writer.cpp
+transition writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/transition writer.hpp
+Simpleton/Math/interpolate.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/transition writer.hpp
+glm/vec3.hpp
+-
+quad writer.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/quad writer.hpp
+rendering helpers.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/update pos system.cpp
+update pos system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/update pos system.hpp
+dir to vec.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/dir to vec.hpp
+movement component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/movement component.hpp
+position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/update pos system.hpp
+entity grid.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/weight component.hpp
+Simpleton/Data/json.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/wire component.hpp
+Simpleton/Data/json.hpp
+-
+Simpleton/Math/dir bits.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/wire system.cpp
+wire system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/wire system.hpp
+dir to vec.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/dir to vec.hpp
+wire component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/wire component.hpp
+power component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp
+position component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position component.hpp
+cross wire component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire component.hpp
+power input component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input component.hpp
+power output component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power output component.hpp
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/wire system.hpp
+entity grid.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.hpp
+Simpleton/ECS/registry.hpp
+-
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/main.cpp
+emscripten.h
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/emscripten.h
+Game/app.hpp
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/app.hpp
+Simpleton/Utils/profiler.hpp
+-
+iostream
+-
+
+/usr/local/include/GL/glew.h
+stddef.h
+-
+inttypes.h
+-
+stdint.h
+-
+inttypes.h
+-
+Availability.h
+-
+OpenGL/glu.h
+-
+GL/glu.h
+-
+
+/usr/local/include/SDL2/SDL.h
+SDL_main.h
+/usr/local/include/SDL2/SDL_main.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_assert.h
+/usr/local/include/SDL2/SDL_assert.h
+SDL_atomic.h
+/usr/local/include/SDL2/SDL_atomic.h
+SDL_audio.h
+/usr/local/include/SDL2/SDL_audio.h
+SDL_clipboard.h
+/usr/local/include/SDL2/SDL_clipboard.h
+SDL_cpuinfo.h
+/usr/local/include/SDL2/SDL_cpuinfo.h
+SDL_endian.h
+/usr/local/include/SDL2/SDL_endian.h
+SDL_error.h
+/usr/local/include/SDL2/SDL_error.h
+SDL_events.h
+/usr/local/include/SDL2/SDL_events.h
+SDL_filesystem.h
+/usr/local/include/SDL2/SDL_filesystem.h
+SDL_gamecontroller.h
+/usr/local/include/SDL2/SDL_gamecontroller.h
+SDL_haptic.h
+/usr/local/include/SDL2/SDL_haptic.h
+SDL_hints.h
+/usr/local/include/SDL2/SDL_hints.h
+SDL_joystick.h
+/usr/local/include/SDL2/SDL_joystick.h
+SDL_loadso.h
+/usr/local/include/SDL2/SDL_loadso.h
+SDL_log.h
+/usr/local/include/SDL2/SDL_log.h
+SDL_messagebox.h
+/usr/local/include/SDL2/SDL_messagebox.h
+SDL_mutex.h
+/usr/local/include/SDL2/SDL_mutex.h
+SDL_power.h
+/usr/local/include/SDL2/SDL_power.h
+SDL_render.h
+/usr/local/include/SDL2/SDL_render.h
+SDL_rwops.h
+/usr/local/include/SDL2/SDL_rwops.h
+SDL_shape.h
+/usr/local/include/SDL2/SDL_shape.h
+SDL_system.h
+/usr/local/include/SDL2/SDL_system.h
+SDL_thread.h
+/usr/local/include/SDL2/SDL_thread.h
+SDL_timer.h
+/usr/local/include/SDL2/SDL_timer.h
+SDL_version.h
+/usr/local/include/SDL2/SDL_version.h
+SDL_video.h
+/usr/local/include/SDL2/SDL_video.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_assert.h
+SDL_config.h
+/usr/local/include/SDL2/SDL_config.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+signal.h
+-
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_atomic.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_platform.h
+/usr/local/include/SDL2/SDL_platform.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+mbarrier.h
+-
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_audio.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_error.h
+/usr/local/include/SDL2/SDL_error.h
+SDL_endian.h
+/usr/local/include/SDL2/SDL_endian.h
+SDL_mutex.h
+/usr/local/include/SDL2/SDL_mutex.h
+SDL_thread.h
+/usr/local/include/SDL2/SDL_thread.h
+SDL_rwops.h
+/usr/local/include/SDL2/SDL_rwops.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_blendmode.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_clipboard.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_config.h
+SDL_platform.h
+/usr/local/include/SDL2/SDL_platform.h
+
+/usr/local/include/SDL2/SDL_cpuinfo.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+intrin.h
+-
+intrin.h
+-
+altivec.h
+-
+mmintrin.h
+-
+mm3dnow.h
+-
+xmmintrin.h
+-
+emmintrin.h
+-
+pmmintrin.h
+-
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_endian.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+endian.h
+-
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_error.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_events.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_error.h
+/usr/local/include/SDL2/SDL_error.h
+SDL_video.h
+/usr/local/include/SDL2/SDL_video.h
+SDL_keyboard.h
+/usr/local/include/SDL2/SDL_keyboard.h
+SDL_mouse.h
+/usr/local/include/SDL2/SDL_mouse.h
+SDL_joystick.h
+/usr/local/include/SDL2/SDL_joystick.h
+SDL_gamecontroller.h
+/usr/local/include/SDL2/SDL_gamecontroller.h
+SDL_quit.h
+/usr/local/include/SDL2/SDL_quit.h
+SDL_gesture.h
+/usr/local/include/SDL2/SDL_gesture.h
+SDL_touch.h
+/usr/local/include/SDL2/SDL_touch.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_filesystem.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_gamecontroller.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_error.h
+/usr/local/include/SDL2/SDL_error.h
+SDL_rwops.h
+/usr/local/include/SDL2/SDL_rwops.h
+SDL_joystick.h
+/usr/local/include/SDL2/SDL_joystick.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_gesture.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_error.h
+/usr/local/include/SDL2/SDL_error.h
+SDL_video.h
+/usr/local/include/SDL2/SDL_video.h
+SDL_touch.h
+/usr/local/include/SDL2/SDL_touch.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_haptic.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_error.h
+/usr/local/include/SDL2/SDL_error.h
+SDL_joystick.h
+/usr/local/include/SDL2/SDL_joystick.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_hints.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_joystick.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_error.h
+/usr/local/include/SDL2/SDL_error.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_keyboard.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_error.h
+/usr/local/include/SDL2/SDL_error.h
+SDL_keycode.h
+/usr/local/include/SDL2/SDL_keycode.h
+SDL_video.h
+/usr/local/include/SDL2/SDL_video.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_keycode.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_scancode.h
+/usr/local/include/SDL2/SDL_scancode.h
+
+/usr/local/include/SDL2/SDL_loadso.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_error.h
+/usr/local/include/SDL2/SDL_error.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_log.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_main.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_messagebox.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_video.h
+/usr/local/include/SDL2/SDL_video.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_mouse.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_error.h
+/usr/local/include/SDL2/SDL_error.h
+SDL_video.h
+/usr/local/include/SDL2/SDL_video.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_mutex.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_error.h
+/usr/local/include/SDL2/SDL_error.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_opengl.h
+SDL_config.h
+/usr/local/include/SDL2/SDL_config.h
+gl_mangle.h
+/usr/local/include/SDL2/gl_mangle.h
+windows.h
+-
+SDL_opengl_glext.h
+/usr/local/include/SDL2/SDL_opengl_glext.h
+
+/usr/local/include/SDL2/SDL_opengl_glext.h
+windows.h
+-
+stddef.h
+-
+inttypes.h
+-
+inttypes.h
+-
+inttypes.h
+-
+stdint.h
+-
+stdint.h
+-
+inttypes.h
+-
+
+/usr/local/include/SDL2/SDL_pixels.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_endian.h
+/usr/local/include/SDL2/SDL_endian.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_platform.h
+AvailabilityMacros.h
+/usr/local/include/SDL2/AvailabilityMacros.h
+TargetConditionals.h
+/usr/local/include/SDL2/TargetConditionals.h
+winapifamily.h
+-
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_power.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_quit.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_error.h
+/usr/local/include/SDL2/SDL_error.h
+
+/usr/local/include/SDL2/SDL_rect.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_error.h
+/usr/local/include/SDL2/SDL_error.h
+SDL_pixels.h
+/usr/local/include/SDL2/SDL_pixels.h
+SDL_rwops.h
+/usr/local/include/SDL2/SDL_rwops.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_render.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_rect.h
+/usr/local/include/SDL2/SDL_rect.h
+SDL_video.h
+/usr/local/include/SDL2/SDL_video.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_rwops.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_error.h
+/usr/local/include/SDL2/SDL_error.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_scancode.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+
+/usr/local/include/SDL2/SDL_shape.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_pixels.h
+/usr/local/include/SDL2/SDL_pixels.h
+SDL_rect.h
+/usr/local/include/SDL2/SDL_rect.h
+SDL_surface.h
+/usr/local/include/SDL2/SDL_surface.h
+SDL_video.h
+/usr/local/include/SDL2/SDL_video.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_config.h
+/usr/local/include/SDL2/SDL_config.h
+sys/types.h
+-
+stdio.h
+-
+stdlib.h
+-
+stddef.h
+-
+stdarg.h
+-
+stdlib.h
+-
+malloc.h
+-
+stddef.h
+-
+stdarg.h
+-
+memory.h
+-
+string.h
+-
+strings.h
+-
+wchar.h
+-
+inttypes.h
+-
+stdint.h
+-
+ctype.h
+-
+math.h
+-
+float.h
+-
+sal.h
+-
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+alloca.h
+-
+malloc.h
+-
+malloc.h
+-
+malloc.h
+-
+stdlib.h
+-
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_surface.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_pixels.h
+/usr/local/include/SDL2/SDL_pixels.h
+SDL_rect.h
+/usr/local/include/SDL2/SDL_rect.h
+SDL_blendmode.h
+/usr/local/include/SDL2/SDL_blendmode.h
+SDL_rwops.h
+/usr/local/include/SDL2/SDL_rwops.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_system.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_keyboard.h
+/usr/local/include/SDL2/SDL_keyboard.h
+SDL_render.h
+/usr/local/include/SDL2/SDL_render.h
+SDL_video.h
+/usr/local/include/SDL2/SDL_video.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_thread.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_error.h
+/usr/local/include/SDL2/SDL_error.h
+SDL_atomic.h
+/usr/local/include/SDL2/SDL_atomic.h
+SDL_mutex.h
+/usr/local/include/SDL2/SDL_mutex.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+process.h
+-
+process.h
+-
+stdlib.h
+-
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_timer.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_error.h
+/usr/local/include/SDL2/SDL_error.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_touch.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_error.h
+/usr/local/include/SDL2/SDL_error.h
+SDL_video.h
+/usr/local/include/SDL2/SDL_video.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_version.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/SDL_video.h
+SDL_stdinc.h
+/usr/local/include/SDL2/SDL_stdinc.h
+SDL_pixels.h
+/usr/local/include/SDL2/SDL_pixels.h
+SDL_rect.h
+/usr/local/include/SDL2/SDL_rect.h
+SDL_surface.h
+/usr/local/include/SDL2/SDL_surface.h
+begin_code.h
+/usr/local/include/SDL2/begin_code.h
+close_code.h
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/SDL2/begin_code.h
+
+/usr/local/include/SDL2/close_code.h
+
+/usr/local/include/Simpleton/Camera 2D/aabb.hpp
+../Math/rect.hpp
+/usr/local/include/Simpleton/Math/rect.hpp
+
+/usr/local/include/Simpleton/Camera 2D/animate.hpp
+props.hpp
+/usr/local/include/Simpleton/Camera 2D/props.hpp
+glm/gtx/norm.hpp
+-
+
+/usr/local/include/Simpleton/Camera 2D/camera.hpp
+tuple
+-
+memory
+-
+utility
+-
+target.hpp
+/usr/local/include/Simpleton/Camera 2D/target.hpp
+animate.hpp
+/usr/local/include/Simpleton/Camera 2D/animate.hpp
+transform.hpp
+/usr/local/include/Simpleton/Camera 2D/transform.hpp
+camera.inl
+/usr/local/include/Simpleton/Camera 2D/camera.inl
+
+/usr/local/include/Simpleton/Camera 2D/camera.inl
+
+/usr/local/include/Simpleton/Camera 2D/props.hpp
+glm/vec2.hpp
+-
+
+/usr/local/include/Simpleton/Camera 2D/target.hpp
+props.hpp
+/usr/local/include/Simpleton/Camera 2D/props.hpp
+
+/usr/local/include/Simpleton/Camera 2D/transform.hpp
+aabb.hpp
+/usr/local/include/Simpleton/Camera 2D/aabb.hpp
+glm/vec2.hpp
+-
+glm/mat3x3.hpp
+-
+transform.inl
+/usr/local/include/Simpleton/Camera 2D/transform.inl
+
+/usr/local/include/Simpleton/Camera 2D/transform.inl
+props.hpp
+/usr/local/include/Simpleton/Camera 2D/props.hpp
+glm/gtx/matrix_transform_2d.hpp
+-
+
+/usr/local/include/Simpleton/Camera 2D/zoom to fit.hpp
+target.hpp
+/usr/local/include/Simpleton/Camera 2D/target.hpp
+glm/vec2.hpp
+-
+zoom to fit.inl
+/usr/local/include/Simpleton/Camera 2D/zoom to fit.inl
+
+/usr/local/include/Simpleton/Camera 2D/zoom to fit.inl
+props.hpp
+/usr/local/include/Simpleton/Camera 2D/props.hpp
+
+/usr/local/include/Simpleton/Data/json.hpp
+glm/vec2.hpp
+-
+nlohmann/json.hpp
+-
+
+/usr/local/include/Simpleton/ECS/level.hpp
+limits
+-
+
+/usr/local/include/Simpleton/ECS/progress manager.hpp
+string
+-
+level.hpp
+/usr/local/include/Simpleton/ECS/level.hpp
+progress manager.inl
+/usr/local/include/Simpleton/ECS/progress manager.inl
+
+/usr/local/include/Simpleton/ECS/progress manager.inl
+fstream
+-
+
+/usr/local/include/Simpleton/ECS/registry.hpp
+limits
+-
+cstdint
+-
+entt/entity/registry.hpp
+-
+
+/usr/local/include/Simpleton/Graphics 2D/load surface.hpp
+stdexcept
+-
+string_view
+-
+surface.hpp
+/usr/local/include/Simpleton/Graphics 2D/surface.hpp
+load surface.inl
+/usr/local/include/Simpleton/Graphics 2D/load surface.inl
+
+/usr/local/include/Simpleton/Graphics 2D/load surface.inl
+string
+-
+realloc.hpp
+/usr/local/include/Simpleton/Graphics 2D/realloc.hpp
+stb_image.h
+/usr/local/include/Simpleton/Graphics 2D/stb_image.h
+
+/usr/local/include/Simpleton/Graphics 2D/realloc.hpp
+cstring
+-
+
+/usr/local/include/Simpleton/Graphics 2D/stb_image.h
+stb_image.h
+/usr/local/include/Simpleton/Graphics 2D/stb_image.h
+stdio.h
+-
+stdarg.h
+-
+stddef.h
+-
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+math.h
+-
+stdio.h
+-
+assert.h
+-
+stdint.h
+-
+emmintrin.h
+-
+intrin.h
+-
+arm_neon.h
+-
+
+/usr/local/include/Simpleton/Graphics 2D/surface.hpp
+memory
+-
+cstdint
+-
+surface.inl
+/usr/local/include/Simpleton/Graphics 2D/surface.inl
+
+/usr/local/include/Simpleton/Graphics 2D/surface.inl
+
+/usr/local/include/Simpleton/ID/type.hpp
+type_traits
+-
+../Utils/type name.hpp
+/usr/local/include/Simpleton/Utils/type name.hpp
+../Utils/combine hashes.hpp
+/usr/local/include/Simpleton/Utils/combine hashes.hpp
+
+/usr/local/include/Simpleton/Math/constants.hpp
+
+/usr/local/include/Simpleton/Math/digit stack.hpp
+cmath
+-
+type_traits
+-
+
+/usr/local/include/Simpleton/Math/dir bits.hpp
+dir.hpp
+/usr/local/include/Simpleton/Math/dir.hpp
+
+/usr/local/include/Simpleton/Math/dir.hpp
+cctype
+-
+stdexcept
+-
+string_view
+-
+glm/vec2.hpp
+-
+
+/usr/local/include/Simpleton/Math/int float.hpp
+cmath
+-
+limits
+-
+type_traits
+-
+
+/usr/local/include/Simpleton/Math/interpolate.hpp
+cmath
+-
+pow.hpp
+/usr/local/include/Simpleton/Math/pow.hpp
+constants.hpp
+/usr/local/include/Simpleton/Math/constants.hpp
+
+/usr/local/include/Simpleton/Math/pow.hpp
+cassert
+-
+type_traits
+-
+../Utils/bits.hpp
+/usr/local/include/Simpleton/Utils/bits.hpp
+
+/usr/local/include/Simpleton/Math/rect.hpp
+cmath
+-
+dir.hpp
+/usr/local/include/Simpleton/Math/dir.hpp
+glm/vec2.hpp
+-
+
+/usr/local/include/Simpleton/Math/round.hpp
+pow.hpp
+/usr/local/include/Simpleton/Math/pow.hpp
+../Utils/bits.hpp
+/usr/local/include/Simpleton/Utils/bits.hpp
+
+/usr/local/include/Simpleton/Memory/buffer.hpp
+memory
+-
+cassert
+-
+cstdint
+-
+byteptr.hpp
+/usr/local/include/Simpleton/Memory/byteptr.hpp
+buffer.inl
+/usr/local/include/Simpleton/Memory/buffer.inl
+
+/usr/local/include/Simpleton/Memory/buffer.inl
+../Utils/null check.hpp
+/usr/local/include/Simpleton/Utils/null check.hpp
+
+/usr/local/include/Simpleton/Memory/byteptr.hpp
+new
+-
+cstdint
+-
+cstddef
+-
+type_traits
+-
+
+/usr/local/include/Simpleton/Memory/file io.hpp
+cstdio
+-
+string
+-
+fstream
+-
+buffer.hpp
+/usr/local/include/Simpleton/Memory/buffer.hpp
+string_view
+-
+file io.inl
+/usr/local/include/Simpleton/Memory/file io.inl
+
+/usr/local/include/Simpleton/Memory/file io.inl
+
+/usr/local/include/Simpleton/OpenGL/attrib pointer.hpp
+type enum.hpp
+/usr/local/include/Simpleton/OpenGL/type enum.hpp
+../Utils/tuple.hpp
+/usr/local/include/Simpleton/Utils/tuple.hpp
+../Utils/meta glm.hpp
+/usr/local/include/Simpleton/Utils/meta glm.hpp
+
+/usr/local/include/Simpleton/OpenGL/buffer.hpp
+opengl.hpp
+/usr/local/include/Simpleton/OpenGL/opengl.hpp
+../Utils/generic raii.hpp
+/usr/local/include/Simpleton/Utils/generic raii.hpp
+buffer.inl
+/usr/local/include/Simpleton/OpenGL/buffer.inl
+
+/usr/local/include/Simpleton/OpenGL/buffer.inl
+
+/usr/local/include/Simpleton/OpenGL/context.hpp
+opengl.hpp
+/usr/local/include/Simpleton/OpenGL/opengl.hpp
+../Utils/generic raii.hpp
+/usr/local/include/Simpleton/Utils/generic raii.hpp
+context.inl
+/usr/local/include/Simpleton/OpenGL/context.inl
+
+/usr/local/include/Simpleton/OpenGL/context.inl
+../SDL/error.hpp
+/usr/local/include/Simpleton/SDL/error.hpp
+
+/usr/local/include/Simpleton/OpenGL/opengl.hpp
+cassert
+-
+iostream
+-
+GL/glew.h
+-
+SDL2/SDL.h
+-
+SDL2/SDL_opengl.h
+-
+
+/usr/local/include/Simpleton/OpenGL/shader program.hpp
+shader.hpp
+/usr/local/include/Simpleton/OpenGL/shader.hpp
+shader program.inl
+/usr/local/include/Simpleton/OpenGL/shader program.inl
+
+/usr/local/include/Simpleton/OpenGL/shader program.inl
+static char buffer.hpp
+/usr/local/include/Simpleton/OpenGL/static char buffer.hpp
+
+/usr/local/include/Simpleton/OpenGL/shader.hpp
+iostream
+-
+opengl.hpp
+/usr/local/include/Simpleton/OpenGL/opengl.hpp
+../Utils/generic raii.hpp
+/usr/local/include/Simpleton/Utils/generic raii.hpp
+shader.inl
+/usr/local/include/Simpleton/OpenGL/shader.inl
+
+/usr/local/include/Simpleton/OpenGL/shader.inl
+static char buffer.hpp
+/usr/local/include/Simpleton/OpenGL/static char buffer.hpp
+
+/usr/local/include/Simpleton/OpenGL/static char buffer.hpp
+memory
+-
+opengl.hpp
+/usr/local/include/Simpleton/OpenGL/opengl.hpp
+
+/usr/local/include/Simpleton/OpenGL/texture.hpp
+opengl.hpp
+/usr/local/include/Simpleton/OpenGL/opengl.hpp
+glm/vec2.hpp
+-
+../Utils/generic raii.hpp
+/usr/local/include/Simpleton/Utils/generic raii.hpp
+texture.inl
+/usr/local/include/Simpleton/OpenGL/texture.inl
+
+/usr/local/include/Simpleton/OpenGL/texture.inl
+
+/usr/local/include/Simpleton/OpenGL/type enum.hpp
+opengl.hpp
+/usr/local/include/Simpleton/OpenGL/opengl.hpp
+../Utils/meta glm.hpp
+/usr/local/include/Simpleton/Utils/meta glm.hpp
+
+/usr/local/include/Simpleton/OpenGL/uniforms.hpp
+array
+-
+vector
+-
+opengl.hpp
+/usr/local/include/Simpleton/OpenGL/opengl.hpp
+glm/glm.hpp
+-
+glm/gtc/type_ptr.hpp
+-
+
+/usr/local/include/Simpleton/OpenGL/vertex array.hpp
+opengl.hpp
+/usr/local/include/Simpleton/OpenGL/opengl.hpp
+../Utils/generic raii.hpp
+/usr/local/include/Simpleton/Utils/generic raii.hpp
+vertex array.inl
+/usr/local/include/Simpleton/OpenGL/vertex array.inl
+
+/usr/local/include/Simpleton/OpenGL/vertex array.inl
+
+/usr/local/include/Simpleton/SDL/error.hpp
+stdexcept
+-
+
+/usr/local/include/Simpleton/SDL/events.hpp
+SDL2/SDL_events.h
+-
+SDL2/SDL_scancode.h
+-
+events.inl
+/usr/local/include/Simpleton/SDL/events.inl
+
+/usr/local/include/Simpleton/SDL/events.inl
+
+/usr/local/include/Simpleton/SDL/library.hpp
+error.hpp
+/usr/local/include/Simpleton/SDL/error.hpp
+SDL2/SDL.h
+-
+window.hpp
+/usr/local/include/Simpleton/SDL/window.hpp
+renderer.hpp
+/usr/local/include/Simpleton/SDL/renderer.hpp
+../Utils/generic raii.hpp
+/usr/local/include/Simpleton/Utils/generic raii.hpp
+../Utils/instance limiter.hpp
+/usr/local/include/Simpleton/Utils/instance limiter.hpp
+library.inl
+/usr/local/include/Simpleton/SDL/library.inl
+
+/usr/local/include/Simpleton/SDL/library.inl
+../Utils/bool enable.hpp
+/usr/local/include/Simpleton/Utils/bool enable.hpp
+
+/usr/local/include/Simpleton/SDL/paths.hpp
+string
+-
+string_view
+-
+paths.inl
+/usr/local/include/Simpleton/SDL/paths.inl
+
+/usr/local/include/Simpleton/SDL/paths.inl
+SDL2/SDL.h
+-
+
+/usr/local/include/Simpleton/SDL/renderer.hpp
+glm/vec4.hpp
+-
+SDL2/SDL_render.h
+-
+../Utils/generic raii.hpp
+/usr/local/include/Simpleton/Utils/generic raii.hpp
+renderer.inl
+/usr/local/include/Simpleton/SDL/renderer.inl
+
+/usr/local/include/Simpleton/SDL/renderer.inl
+cassert
+-
+error.hpp
+/usr/local/include/Simpleton/SDL/error.hpp
+
+/usr/local/include/Simpleton/SDL/window.hpp
+string
+-
+glm/vec2.hpp
+-
+SDL2/SDL_video.h
+-
+SDL2/SDL_mouse.h
+-
+../Utils/generic raii.hpp
+/usr/local/include/Simpleton/Utils/generic raii.hpp
+window.inl
+/usr/local/include/Simpleton/SDL/window.inl
+
+/usr/local/include/Simpleton/SDL/window.inl
+error.hpp
+/usr/local/include/Simpleton/SDL/error.hpp
+
+/usr/local/include/Simpleton/Time/get.hpp
+chrono
+-
+ctime
+-
+string
+-
+
+/usr/local/include/Simpleton/Time/main loop.hpp
+cmath
+-
+thread
+-
+get.hpp
+/usr/local/include/Simpleton/Time/get.hpp
+stopwatch.hpp
+/usr/local/include/Simpleton/Time/stopwatch.hpp
+../Math/int float.hpp
+/usr/local/include/Simpleton/Math/int float.hpp
+../Utils/function traits.hpp
+/usr/local/include/Simpleton/Utils/function traits.hpp
+
+/usr/local/include/Simpleton/Time/stopwatch.hpp
+get.hpp
+/usr/local/include/Simpleton/Time/get.hpp
+cassert
+-
+
+/usr/local/include/Simpleton/Unpack/sheet.hpp
+string
+-
+vector
+-
+types.hpp
+/usr/local/include/Simpleton/Unpack/types.hpp
+string_view
+-
+unordered_map
+-
+sheet.inl
+/usr/local/include/Simpleton/Unpack/sheet.inl
+
+/usr/local/include/Simpleton/Unpack/sheet.inl
+../Memory/file io.hpp
+/usr/local/include/Simpleton/Memory/file io.hpp
+../Utils/parse string.hpp
+/usr/local/include/Simpleton/Utils/parse string.hpp
+
+/usr/local/include/Simpleton/Unpack/types.hpp
+../Math/rect.hpp
+/usr/local/include/Simpleton/Math/rect.hpp
+types.inl
+/usr/local/include/Simpleton/Unpack/types.inl
+
+/usr/local/include/Simpleton/Unpack/types.inl
+
+/usr/local/include/Simpleton/Utils/bits.hpp
+climits
+-
+cstddef
+-
+
+/usr/local/include/Simpleton/Utils/bool enable.hpp
+type_traits
+-
+int least.hpp
+/usr/local/include/Simpleton/Utils/int least.hpp
+
+/usr/local/include/Simpleton/Utils/combine hashes.hpp
+cstddef
+-
+
+/usr/local/include/Simpleton/Utils/endian.hpp
+int least.hpp
+/usr/local/include/Simpleton/Utils/int least.hpp
+SDL2/SDL_endian.h
+-
+
+/usr/local/include/Simpleton/Utils/function traits.hpp
+tuple
+-
+functional
+-
+
+/usr/local/include/Simpleton/Utils/generic raii.hpp
+utility
+-
+type_traits
+-
+
+/usr/local/include/Simpleton/Utils/instance limiter.hpp
+string
+-
+stdexcept
+-
+string_view
+-
+type name.hpp
+/usr/local/include/Simpleton/Utils/type name.hpp
+
+/usr/local/include/Simpleton/Utils/int least.hpp
+cstdint
+-
+../Math/round.hpp
+/usr/local/include/Simpleton/Math/round.hpp
+
+/usr/local/include/Simpleton/Utils/line col.hpp
+cctype
+-
+string
+-
+null check.hpp
+/usr/local/include/Simpleton/Utils/null check.hpp
+
+/usr/local/include/Simpleton/Utils/meta glm.hpp
+glm/glm.hpp
+-
+
+/usr/local/include/Simpleton/Utils/null check.hpp
+stdexcept
+-
+
+/usr/local/include/Simpleton/Utils/parse string.hpp
+string
+-
+string_view
+-
+line col.hpp
+/usr/local/include/Simpleton/Utils/line col.hpp
+parse string.inl
+/usr/local/include/Simpleton/Utils/parse string.inl
+
+/usr/local/include/Simpleton/Utils/parse string.inl
+cerrno
+-
+endian.hpp
+/usr/local/include/Simpleton/Utils/endian.hpp
+functional
+-
+
+/usr/local/include/Simpleton/Utils/profiler.hpp
+chrono
+-
+cstdio
+-
+unordered_map
+-
+profiler.inl
+/usr/local/include/Simpleton/Utils/profiler.inl
+
+/usr/local/include/Simpleton/Utils/profiler.inl
+vector
+-
+
+/usr/local/include/Simpleton/Utils/tuple.hpp
+tuple
+-
+
+/usr/local/include/Simpleton/Utils/type list.hpp
+tuple
+-
+string
+-
+cstddef
+-
+utility
+-
+type_traits
+-
+type name.hpp
+/usr/local/include/Simpleton/Utils/type name.hpp
+experimental/optional
+-
+
+/usr/local/include/Simpleton/Utils/type name.hpp
+string_view
+-
+
+/usr/local/include/entt/core/family.hpp
+type_traits
+-
+cstddef
+-
+
+/usr/local/include/entt/entity/registry.hpp
+vector
+-
+memory
+-
+utility
+-
+cstddef
+-
+cassert
+-
+../core/family.hpp
+/usr/local/include/entt/core/family.hpp
+sparse_set.hpp
+/usr/local/include/entt/entity/sparse_set.hpp
+traits.hpp
+/usr/local/include/entt/entity/traits.hpp
+view.hpp
+/usr/local/include/entt/entity/view.hpp
+
+/usr/local/include/entt/entity/sparse_set.hpp
+algorithm
+-
+utility
+-
+vector
+-
+cstddef
+-
+cassert
+-
+traits.hpp
+/usr/local/include/entt/entity/traits.hpp
+
+/usr/local/include/entt/entity/traits.hpp
+cstdint
+-
+
+/usr/local/include/entt/entity/view.hpp
+tuple
+-
+utility
+-
+sparse_set.hpp
+/usr/local/include/entt/entity/sparse_set.hpp
+
+/usr/local/include/glm/common.hpp
+detail/func_common.hpp
+/usr/local/include/glm/detail/func_common.hpp
+
+/usr/local/include/glm/detail/_fixes.hpp
+cmath
+-
+
+/usr/local/include/glm/detail/_swizzle.hpp
+
+/usr/local/include/glm/detail/_swizzle_func.hpp
+
+/usr/local/include/glm/detail/_vectorize.hpp
+type_vec1.hpp
+/usr/local/include/glm/detail/type_vec1.hpp
+type_vec2.hpp
+/usr/local/include/glm/detail/type_vec2.hpp
+type_vec3.hpp
+/usr/local/include/glm/detail/type_vec3.hpp
+type_vec4.hpp
+/usr/local/include/glm/detail/type_vec4.hpp
+
+/usr/local/include/glm/detail/func_common.hpp
+setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+precision.hpp
+/usr/local/include/glm/detail/precision.hpp
+type_int.hpp
+/usr/local/include/glm/detail/type_int.hpp
+_fixes.hpp
+/usr/local/include/glm/detail/_fixes.hpp
+func_common.inl
+/usr/local/include/glm/detail/func_common.inl
+
+/usr/local/include/glm/detail/func_common.inl
+func_vector_relational.hpp
+/usr/local/include/glm/detail/func_vector_relational.hpp
+type_vec2.hpp
+/usr/local/include/glm/detail/type_vec2.hpp
+type_vec3.hpp
+/usr/local/include/glm/detail/type_vec3.hpp
+type_vec4.hpp
+/usr/local/include/glm/detail/type_vec4.hpp
+_vectorize.hpp
+/usr/local/include/glm/detail/_vectorize.hpp
+limits
+-
+func_common_simd.inl
+/usr/local/include/glm/detail/func_common_simd.inl
+
+/usr/local/include/glm/detail/func_common_simd.inl
+../simd/common.h
+/usr/local/include/glm/simd/common.h
+immintrin.h
+-
+
+/usr/local/include/glm/detail/func_exponential.hpp
+type_vec1.hpp
+/usr/local/include/glm/detail/type_vec1.hpp
+type_vec2.hpp
+/usr/local/include/glm/detail/type_vec2.hpp
+type_vec3.hpp
+/usr/local/include/glm/detail/type_vec3.hpp
+type_vec4.hpp
+/usr/local/include/glm/detail/type_vec4.hpp
+cmath
+-
+func_exponential.inl
+/usr/local/include/glm/detail/func_exponential.inl
+
+/usr/local/include/glm/detail/func_exponential.inl
+func_vector_relational.hpp
+/usr/local/include/glm/detail/func_vector_relational.hpp
+_vectorize.hpp
+/usr/local/include/glm/detail/_vectorize.hpp
+limits
+-
+cmath
+-
+cassert
+-
+func_exponential_simd.inl
+/usr/local/include/glm/detail/func_exponential_simd.inl
+
+/usr/local/include/glm/detail/func_exponential_simd.inl
+../simd/exponential.h
+/usr/local/include/glm/simd/exponential.h
+
+/usr/local/include/glm/detail/func_geometric.hpp
+type_vec3.hpp
+/usr/local/include/glm/detail/type_vec3.hpp
+func_geometric.inl
+/usr/local/include/glm/detail/func_geometric.inl
+
+/usr/local/include/glm/detail/func_geometric.inl
+func_exponential.hpp
+/usr/local/include/glm/detail/func_exponential.hpp
+func_common.hpp
+/usr/local/include/glm/detail/func_common.hpp
+type_vec2.hpp
+/usr/local/include/glm/detail/type_vec2.hpp
+type_vec4.hpp
+/usr/local/include/glm/detail/type_vec4.hpp
+type_float.hpp
+/usr/local/include/glm/detail/type_float.hpp
+func_geometric_simd.inl
+/usr/local/include/glm/detail/func_geometric_simd.inl
+
+/usr/local/include/glm/detail/func_geometric_simd.inl
+../simd/geometric.h
+/usr/local/include/glm/simd/geometric.h
+
+/usr/local/include/glm/detail/func_integer.hpp
+setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+precision.hpp
+/usr/local/include/glm/detail/precision.hpp
+func_common.hpp
+/usr/local/include/glm/detail/func_common.hpp
+func_vector_relational.hpp
+/usr/local/include/glm/detail/func_vector_relational.hpp
+func_integer.inl
+/usr/local/include/glm/detail/func_integer.inl
+
+/usr/local/include/glm/detail/func_integer.inl
+type_vec2.hpp
+/usr/local/include/glm/detail/type_vec2.hpp
+type_vec3.hpp
+/usr/local/include/glm/detail/type_vec3.hpp
+type_vec4.hpp
+/usr/local/include/glm/detail/type_vec4.hpp
+type_int.hpp
+/usr/local/include/glm/detail/type_int.hpp
+_vectorize.hpp
+/usr/local/include/glm/detail/_vectorize.hpp
+intrin.h
+-
+limits
+-
+func_integer_simd.inl
+/usr/local/include/glm/detail/func_integer_simd.inl
+
+/usr/local/include/glm/detail/func_integer_simd.inl
+../simd/integer.h
+/usr/local/include/glm/simd/integer.h
+
+/usr/local/include/glm/detail/func_matrix.hpp
+../detail/precision.hpp
+/usr/local/include/glm/detail/precision.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+../detail/type_mat.hpp
+/usr/local/include/glm/detail/type_mat.hpp
+../vec2.hpp
+/usr/local/include/glm/vec2.hpp
+../vec3.hpp
+/usr/local/include/glm/vec3.hpp
+../vec4.hpp
+/usr/local/include/glm/vec4.hpp
+../mat2x2.hpp
+/usr/local/include/glm/mat2x2.hpp
+../mat2x3.hpp
+/usr/local/include/glm/mat2x3.hpp
+../mat2x4.hpp
+/usr/local/include/glm/mat2x4.hpp
+../mat3x2.hpp
+/usr/local/include/glm/mat3x2.hpp
+../mat3x3.hpp
+/usr/local/include/glm/mat3x3.hpp
+../mat3x4.hpp
+/usr/local/include/glm/mat3x4.hpp
+../mat4x2.hpp
+/usr/local/include/glm/mat4x2.hpp
+../mat4x3.hpp
+/usr/local/include/glm/mat4x3.hpp
+../mat4x4.hpp
+/usr/local/include/glm/mat4x4.hpp
+func_matrix.inl
+/usr/local/include/glm/detail/func_matrix.inl
+
+/usr/local/include/glm/detail/func_matrix.inl
+../geometric.hpp
+/usr/local/include/glm/geometric.hpp
+limits
+-
+func_matrix_simd.inl
+/usr/local/include/glm/detail/func_matrix_simd.inl
+
+/usr/local/include/glm/detail/func_matrix_simd.inl
+type_mat4x4.hpp
+/usr/local/include/glm/detail/type_mat4x4.hpp
+func_geometric.hpp
+/usr/local/include/glm/detail/func_geometric.hpp
+../simd/matrix.h
+/usr/local/include/glm/simd/matrix.h
+
+/usr/local/include/glm/detail/func_packing.hpp
+type_vec2.hpp
+/usr/local/include/glm/detail/type_vec2.hpp
+type_vec4.hpp
+/usr/local/include/glm/detail/type_vec4.hpp
+func_packing.inl
+/usr/local/include/glm/detail/func_packing.inl
+
+/usr/local/include/glm/detail/func_packing.inl
+func_common.hpp
+/usr/local/include/glm/detail/func_common.hpp
+type_half.hpp
+/usr/local/include/glm/detail/type_half.hpp
+../fwd.hpp
+/usr/local/include/glm/fwd.hpp
+func_packing_simd.inl
+/usr/local/include/glm/detail/func_packing_simd.inl
+
+/usr/local/include/glm/detail/func_packing_simd.inl
+
+/usr/local/include/glm/detail/func_trigonometric.hpp
+setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+precision.hpp
+/usr/local/include/glm/detail/precision.hpp
+func_trigonometric.inl
+/usr/local/include/glm/detail/func_trigonometric.inl
+
+/usr/local/include/glm/detail/func_trigonometric.inl
+_vectorize.hpp
+/usr/local/include/glm/detail/_vectorize.hpp
+cmath
+-
+limits
+-
+func_trigonometric_simd.inl
+/usr/local/include/glm/detail/func_trigonometric_simd.inl
+
+/usr/local/include/glm/detail/func_trigonometric_simd.inl
+
+/usr/local/include/glm/detail/func_vector_relational.hpp
+precision.hpp
+/usr/local/include/glm/detail/precision.hpp
+setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+func_vector_relational.inl
+/usr/local/include/glm/detail/func_vector_relational.inl
+
+/usr/local/include/glm/detail/func_vector_relational.inl
+limits
+-
+func_vector_relational_simd.inl
+/usr/local/include/glm/detail/func_vector_relational_simd.inl
+
+/usr/local/include/glm/detail/func_vector_relational_simd.inl
+
+/usr/local/include/glm/detail/precision.hpp
+setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+
+/usr/local/include/glm/detail/setup.hpp
+cassert
+-
+cstddef
+-
+../simd/platform.h
+/usr/local/include/glm/simd/platform.h
+
+/usr/local/include/glm/detail/type_float.hpp
+setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+
+/usr/local/include/glm/detail/type_half.hpp
+setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+type_half.inl
+/usr/local/include/glm/detail/type_half.inl
+
+/usr/local/include/glm/detail/type_half.inl
+
+/usr/local/include/glm/detail/type_int.hpp
+setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+type_traits
+-
+cstdint
+-
+
+/usr/local/include/glm/detail/type_mat.hpp
+precision.hpp
+/usr/local/include/glm/detail/precision.hpp
+
+/usr/local/include/glm/detail/type_mat2x2.hpp
+../fwd.hpp
+/usr/local/include/glm/fwd.hpp
+type_vec2.hpp
+/usr/local/include/glm/detail/type_vec2.hpp
+type_mat.hpp
+/usr/local/include/glm/detail/type_mat.hpp
+limits
+-
+cstddef
+-
+type_mat2x2.inl
+/usr/local/include/glm/detail/type_mat2x2.inl
+
+/usr/local/include/glm/detail/type_mat2x2.inl
+func_matrix.hpp
+/usr/local/include/glm/detail/func_matrix.hpp
+
+/usr/local/include/glm/detail/type_mat2x3.hpp
+../fwd.hpp
+/usr/local/include/glm/fwd.hpp
+type_vec2.hpp
+/usr/local/include/glm/detail/type_vec2.hpp
+type_vec3.hpp
+/usr/local/include/glm/detail/type_vec3.hpp
+type_mat.hpp
+/usr/local/include/glm/detail/type_mat.hpp
+limits
+-
+cstddef
+-
+type_mat2x3.inl
+/usr/local/include/glm/detail/type_mat2x3.inl
+
+/usr/local/include/glm/detail/type_mat2x3.inl
+
+/usr/local/include/glm/detail/type_mat2x4.hpp
+../fwd.hpp
+/usr/local/include/glm/fwd.hpp
+type_vec2.hpp
+/usr/local/include/glm/detail/type_vec2.hpp
+type_vec4.hpp
+/usr/local/include/glm/detail/type_vec4.hpp
+type_mat.hpp
+/usr/local/include/glm/detail/type_mat.hpp
+limits
+-
+cstddef
+-
+type_mat2x4.inl
+/usr/local/include/glm/detail/type_mat2x4.inl
+
+/usr/local/include/glm/detail/type_mat2x4.inl
+
+/usr/local/include/glm/detail/type_mat3x2.hpp
+../fwd.hpp
+/usr/local/include/glm/fwd.hpp
+type_vec2.hpp
+/usr/local/include/glm/detail/type_vec2.hpp
+type_vec3.hpp
+/usr/local/include/glm/detail/type_vec3.hpp
+type_mat.hpp
+/usr/local/include/glm/detail/type_mat.hpp
+limits
+-
+cstddef
+-
+type_mat3x2.inl
+/usr/local/include/glm/detail/type_mat3x2.inl
+
+/usr/local/include/glm/detail/type_mat3x2.inl
+
+/usr/local/include/glm/detail/type_mat3x3.hpp
+../fwd.hpp
+/usr/local/include/glm/fwd.hpp
+type_vec3.hpp
+/usr/local/include/glm/detail/type_vec3.hpp
+type_mat.hpp
+/usr/local/include/glm/detail/type_mat.hpp
+limits
+-
+cstddef
+-
+type_mat3x3.inl
+/usr/local/include/glm/detail/type_mat3x3.inl
+
+/usr/local/include/glm/detail/type_mat3x3.inl
+func_matrix.hpp
+/usr/local/include/glm/detail/func_matrix.hpp
+
+/usr/local/include/glm/detail/type_mat3x4.hpp
+../fwd.hpp
+/usr/local/include/glm/fwd.hpp
+type_vec3.hpp
+/usr/local/include/glm/detail/type_vec3.hpp
+type_vec4.hpp
+/usr/local/include/glm/detail/type_vec4.hpp
+type_mat.hpp
+/usr/local/include/glm/detail/type_mat.hpp
+limits
+-
+cstddef
+-
+type_mat3x4.inl
+/usr/local/include/glm/detail/type_mat3x4.inl
+
+/usr/local/include/glm/detail/type_mat3x4.inl
+
+/usr/local/include/glm/detail/type_mat4x2.hpp
+../fwd.hpp
+/usr/local/include/glm/fwd.hpp
+type_vec2.hpp
+/usr/local/include/glm/detail/type_vec2.hpp
+type_vec4.hpp
+/usr/local/include/glm/detail/type_vec4.hpp
+type_mat.hpp
+/usr/local/include/glm/detail/type_mat.hpp
+limits
+-
+cstddef
+-
+type_mat4x2.inl
+/usr/local/include/glm/detail/type_mat4x2.inl
+
+/usr/local/include/glm/detail/type_mat4x2.inl
+
+/usr/local/include/glm/detail/type_mat4x3.hpp
+../fwd.hpp
+/usr/local/include/glm/fwd.hpp
+type_vec3.hpp
+/usr/local/include/glm/detail/type_vec3.hpp
+type_vec4.hpp
+/usr/local/include/glm/detail/type_vec4.hpp
+type_mat.hpp
+/usr/local/include/glm/detail/type_mat.hpp
+limits
+-
+cstddef
+-
+type_mat4x3.inl
+/usr/local/include/glm/detail/type_mat4x3.inl
+
+/usr/local/include/glm/detail/type_mat4x3.inl
+
+/usr/local/include/glm/detail/type_mat4x4.hpp
+../fwd.hpp
+/usr/local/include/glm/fwd.hpp
+type_vec4.hpp
+/usr/local/include/glm/detail/type_vec4.hpp
+type_mat.hpp
+/usr/local/include/glm/detail/type_mat.hpp
+limits
+-
+cstddef
+-
+type_mat4x4.inl
+/usr/local/include/glm/detail/type_mat4x4.inl
+
+/usr/local/include/glm/detail/type_mat4x4.inl
+func_matrix.hpp
+/usr/local/include/glm/detail/func_matrix.hpp
+type_mat4x4_simd.inl
+/usr/local/include/glm/detail/type_mat4x4_simd.inl
+
+/usr/local/include/glm/detail/type_mat4x4_simd.inl
+
+/usr/local/include/glm/detail/type_vec.hpp
+precision.hpp
+/usr/local/include/glm/detail/precision.hpp
+type_int.hpp
+/usr/local/include/glm/detail/type_int.hpp
+
+/usr/local/include/glm/detail/type_vec1.hpp
+../fwd.hpp
+/usr/local/include/glm/fwd.hpp
+type_vec.hpp
+/usr/local/include/glm/detail/type_vec.hpp
+_swizzle.hpp
+/usr/local/include/glm/detail/_swizzle.hpp
+_swizzle_func.hpp
+/usr/local/include/glm/detail/_swizzle_func.hpp
+cstddef
+-
+type_vec1.inl
+/usr/local/include/glm/detail/type_vec1.inl
+
+/usr/local/include/glm/detail/type_vec1.inl
+
+/usr/local/include/glm/detail/type_vec2.hpp
+type_vec.hpp
+/usr/local/include/glm/detail/type_vec.hpp
+_swizzle.hpp
+/usr/local/include/glm/detail/_swizzle.hpp
+_swizzle_func.hpp
+/usr/local/include/glm/detail/_swizzle_func.hpp
+cstddef
+-
+type_vec2.inl
+/usr/local/include/glm/detail/type_vec2.inl
+
+/usr/local/include/glm/detail/type_vec2.inl
+
+/usr/local/include/glm/detail/type_vec3.hpp
+type_vec.hpp
+/usr/local/include/glm/detail/type_vec.hpp
+_swizzle.hpp
+/usr/local/include/glm/detail/_swizzle.hpp
+_swizzle_func.hpp
+/usr/local/include/glm/detail/_swizzle_func.hpp
+cstddef
+-
+type_vec3.inl
+/usr/local/include/glm/detail/type_vec3.inl
+
+/usr/local/include/glm/detail/type_vec3.inl
+
+/usr/local/include/glm/detail/type_vec4.hpp
+type_vec.hpp
+/usr/local/include/glm/detail/type_vec.hpp
+_swizzle.hpp
+/usr/local/include/glm/detail/_swizzle.hpp
+_swizzle_func.hpp
+/usr/local/include/glm/detail/_swizzle_func.hpp
+cstddef
+-
+type_vec4.inl
+/usr/local/include/glm/detail/type_vec4.inl
+
+/usr/local/include/glm/detail/type_vec4.inl
+type_vec4_simd.inl
+/usr/local/include/glm/detail/type_vec4_simd.inl
+
+/usr/local/include/glm/detail/type_vec4_simd.inl
+
+/usr/local/include/glm/exponential.hpp
+detail/func_exponential.hpp
+/usr/local/include/glm/detail/func_exponential.hpp
+
+/usr/local/include/glm/fwd.hpp
+detail/type_int.hpp
+/usr/local/include/glm/detail/type_int.hpp
+detail/type_float.hpp
+/usr/local/include/glm/detail/type_float.hpp
+detail/type_vec.hpp
+/usr/local/include/glm/detail/type_vec.hpp
+detail/type_mat.hpp
+/usr/local/include/glm/detail/type_mat.hpp
+
+/usr/local/include/glm/geometric.hpp
+detail/func_geometric.hpp
+/usr/local/include/glm/detail/func_geometric.hpp
+
+/usr/local/include/glm/glm.hpp
+detail/_fixes.hpp
+/usr/local/include/glm/detail/_fixes.hpp
+cmath
+-
+climits
+-
+cfloat
+-
+limits
+-
+cassert
+-
+fwd.hpp
+/usr/local/include/glm/fwd.hpp
+vec2.hpp
+/usr/local/include/glm/vec2.hpp
+vec3.hpp
+/usr/local/include/glm/vec3.hpp
+vec4.hpp
+/usr/local/include/glm/vec4.hpp
+mat2x2.hpp
+/usr/local/include/glm/mat2x2.hpp
+mat2x3.hpp
+/usr/local/include/glm/mat2x3.hpp
+mat2x4.hpp
+/usr/local/include/glm/mat2x4.hpp
+mat3x2.hpp
+/usr/local/include/glm/mat3x2.hpp
+mat3x3.hpp
+/usr/local/include/glm/mat3x3.hpp
+mat3x4.hpp
+/usr/local/include/glm/mat3x4.hpp
+mat4x2.hpp
+/usr/local/include/glm/mat4x2.hpp
+mat4x3.hpp
+/usr/local/include/glm/mat4x3.hpp
+mat4x4.hpp
+/usr/local/include/glm/mat4x4.hpp
+trigonometric.hpp
+/usr/local/include/glm/trigonometric.hpp
+exponential.hpp
+/usr/local/include/glm/exponential.hpp
+common.hpp
+/usr/local/include/glm/common.hpp
+packing.hpp
+/usr/local/include/glm/packing.hpp
+geometric.hpp
+/usr/local/include/glm/geometric.hpp
+matrix.hpp
+/usr/local/include/glm/matrix.hpp
+vector_relational.hpp
+/usr/local/include/glm/vector_relational.hpp
+integer.hpp
+/usr/local/include/glm/integer.hpp
+
+/usr/local/include/glm/gtc/constants.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+constants.inl
+/usr/local/include/glm/gtc/constants.inl
+
+/usr/local/include/glm/gtc/constants.inl
+limits
+-
+
+/usr/local/include/glm/gtc/quaternion.hpp
+../mat3x3.hpp
+/usr/local/include/glm/mat3x3.hpp
+../mat4x4.hpp
+/usr/local/include/glm/mat4x4.hpp
+../vec3.hpp
+/usr/local/include/glm/vec3.hpp
+../vec4.hpp
+/usr/local/include/glm/vec4.hpp
+../gtc/constants.hpp
+/usr/local/include/glm/gtc/constants.hpp
+quaternion.inl
+/usr/local/include/glm/gtc/quaternion.inl
+
+/usr/local/include/glm/gtc/quaternion.inl
+../trigonometric.hpp
+/usr/local/include/glm/trigonometric.hpp
+../geometric.hpp
+/usr/local/include/glm/geometric.hpp
+../exponential.hpp
+/usr/local/include/glm/exponential.hpp
+limits
+-
+quaternion_simd.inl
+/usr/local/include/glm/gtc/quaternion_simd.inl
+
+/usr/local/include/glm/gtc/quaternion_simd.inl
+
+/usr/local/include/glm/gtc/type_ptr.hpp
+../gtc/quaternion.hpp
+/usr/local/include/glm/gtc/quaternion.hpp
+../vec2.hpp
+/usr/local/include/glm/vec2.hpp
+../vec3.hpp
+/usr/local/include/glm/vec3.hpp
+../vec4.hpp
+/usr/local/include/glm/vec4.hpp
+../mat2x2.hpp
+/usr/local/include/glm/mat2x2.hpp
+../mat2x3.hpp
+/usr/local/include/glm/mat2x3.hpp
+../mat2x4.hpp
+/usr/local/include/glm/mat2x4.hpp
+../mat3x2.hpp
+/usr/local/include/glm/mat3x2.hpp
+../mat3x3.hpp
+/usr/local/include/glm/mat3x3.hpp
+../mat3x4.hpp
+/usr/local/include/glm/mat3x4.hpp
+../mat4x2.hpp
+/usr/local/include/glm/mat4x2.hpp
+../mat4x3.hpp
+/usr/local/include/glm/mat4x3.hpp
+../mat4x4.hpp
+/usr/local/include/glm/mat4x4.hpp
+cstring
+-
+type_ptr.inl
+/usr/local/include/glm/gtc/type_ptr.inl
+
+/usr/local/include/glm/gtc/type_ptr.inl
+cstring
+-
+
+/usr/local/include/glm/gtx/matrix_transform_2d.hpp
+../mat3x3.hpp
+/usr/local/include/glm/mat3x3.hpp
+../vec2.hpp
+/usr/local/include/glm/vec2.hpp
+matrix_transform_2d.inl
+/usr/local/include/glm/gtx/matrix_transform_2d.inl
+
+/usr/local/include/glm/gtx/matrix_transform_2d.inl
+../trigonometric.hpp
+/usr/local/include/glm/trigonometric.hpp
+
+/usr/local/include/glm/gtx/norm.hpp
+../detail/func_geometric.hpp
+/usr/local/include/glm/detail/func_geometric.hpp
+../gtx/quaternion.hpp
+/usr/local/include/glm/gtx/quaternion.hpp
+norm.inl
+/usr/local/include/glm/gtx/norm.inl
+
+/usr/local/include/glm/gtx/norm.inl
+../detail/precision.hpp
+/usr/local/include/glm/detail/precision.hpp
+
+/usr/local/include/glm/gtx/quaternion.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+../gtc/constants.hpp
+/usr/local/include/glm/gtc/constants.hpp
+../gtc/quaternion.hpp
+/usr/local/include/glm/gtc/quaternion.hpp
+../gtx/norm.hpp
+/usr/local/include/glm/gtx/norm.hpp
+quaternion.inl
+/usr/local/include/glm/gtx/quaternion.inl
+
+/usr/local/include/glm/gtx/quaternion.inl
+limits
+-
+../gtc/constants.hpp
+/usr/local/include/glm/gtc/constants.hpp
+
+/usr/local/include/glm/integer.hpp
+detail/func_integer.hpp
+/usr/local/include/glm/detail/func_integer.hpp
+
+/usr/local/include/glm/mat2x2.hpp
+detail/type_mat2x2.hpp
+/usr/local/include/glm/detail/type_mat2x2.hpp
+
+/usr/local/include/glm/mat2x3.hpp
+detail/type_mat2x3.hpp
+/usr/local/include/glm/detail/type_mat2x3.hpp
+
+/usr/local/include/glm/mat2x4.hpp
+detail/type_mat2x4.hpp
+/usr/local/include/glm/detail/type_mat2x4.hpp
+
+/usr/local/include/glm/mat3x2.hpp
+detail/type_mat3x2.hpp
+/usr/local/include/glm/detail/type_mat3x2.hpp
+
+/usr/local/include/glm/mat3x3.hpp
+detail/type_mat3x3.hpp
+/usr/local/include/glm/detail/type_mat3x3.hpp
+
+/usr/local/include/glm/mat3x4.hpp
+detail/type_mat3x4.hpp
+/usr/local/include/glm/detail/type_mat3x4.hpp
+
+/usr/local/include/glm/mat4x2.hpp
+detail/type_mat4x2.hpp
+/usr/local/include/glm/detail/type_mat4x2.hpp
+
+/usr/local/include/glm/mat4x3.hpp
+detail/type_mat4x3.hpp
+/usr/local/include/glm/detail/type_mat4x3.hpp
+
+/usr/local/include/glm/mat4x4.hpp
+detail/type_mat4x4.hpp
+/usr/local/include/glm/detail/type_mat4x4.hpp
+
+/usr/local/include/glm/matrix.hpp
+detail/func_matrix.hpp
+/usr/local/include/glm/detail/func_matrix.hpp
+
+/usr/local/include/glm/packing.hpp
+detail/func_packing.hpp
+/usr/local/include/glm/detail/func_packing.hpp
+
+/usr/local/include/glm/simd/common.h
+platform.h
+/usr/local/include/glm/simd/platform.h
+
+/usr/local/include/glm/simd/exponential.h
+platform.h
+/usr/local/include/glm/simd/platform.h
+
+/usr/local/include/glm/simd/geometric.h
+common.h
+/usr/local/include/glm/simd/common.h
+
+/usr/local/include/glm/simd/integer.h
+
+/usr/local/include/glm/simd/matrix.h
+geometric.h
+/usr/local/include/glm/simd/geometric.h
+
+/usr/local/include/glm/simd/platform.h
+cuda.h
+-
+intrin.h
+-
+immintrin.h
+-
+immintrin.h
+-
+popcntintrin.h
+-
+nmmintrin.h
+-
+smmintrin.h
+-
+tmmintrin.h
+-
+pmmintrin.h
+-
+emmintrin.h
+-
+
+/usr/local/include/glm/trigonometric.hpp
+detail/func_trigonometric.hpp
+/usr/local/include/glm/detail/func_trigonometric.hpp
+
+/usr/local/include/glm/vec2.hpp
+detail/type_vec2.hpp
+/usr/local/include/glm/detail/type_vec2.hpp
+
+/usr/local/include/glm/vec3.hpp
+detail/type_vec3.hpp
+/usr/local/include/glm/detail/type_vec3.hpp
+
+/usr/local/include/glm/vec4.hpp
+detail/type_vec4.hpp
+/usr/local/include/glm/detail/type_vec4.hpp
+
+/usr/local/include/glm/vector_relational.hpp
+detail/func_vector_relational.hpp
+/usr/local/include/glm/detail/func_vector_relational.hpp
+
+/usr/local/include/nlohmann/json.hpp
+algorithm
+-
+cassert
+-
+ciso646
+-
+cstddef
+-
+functional
+-
+initializer_list
+-
+iosfwd
+-
+iterator
+-
+numeric
+-
+string
+-
+utility
+-
+cstdint
+-
+map
+-
+memory
+-
+string
+-
+vector
+-
+ciso646
+-
+cstddef
+-
+limits
+-
+type_traits
+-
+utility
+-
+exception
+-
+stdexcept
+-
+string
+-
+array
+-
+ciso646
+-
+cstddef
+-
+cstdint
+-
+algorithm
+-
+array
+-
+ciso646
+-
+forward_list
+-
+iterator
+-
+string
+-
+tuple
+-
+type_traits
+-
+utility
+-
+valarray
+-
+ciso646
+-
+iterator
+-
+tuple
+-
+type_traits
+-
+utility
+-
+valarray
+-
+vector
+-
+algorithm
+-
+array
+-
+cassert
+-
+cstddef
+-
+cstring
+-
+ios
+-
+istream
+-
+iterator
+-
+memory
+-
+numeric
+-
+string
+-
+type_traits
+-
+utility
+-
+clocale
+-
+cstddef
+-
+cstdlib
+-
+initializer_list
+-
+ios
+-
+iomanip
+-
+sstream
+-
+string
+-
+vector
+-
+cassert
+-
+cmath
+-
+cstdint
+-
+functional
+-
+string
+-
+utility
+-
+cstddef
+-
+limits
+-
+ciso646
+-
+iterator
+-
+type_traits
+-
+cstddef
+-
+string
+-
+cstddef
+-
+iterator
+-
+utility
+-
+algorithm
+-
+cstddef
+-
+ios
+-
+iterator
+-
+memory
+-
+ostream
+-
+string
+-
+vector
+-
+algorithm
+-
+array
+-
+cassert
+-
+cmath
+-
+cstddef
+-
+cstdint
+-
+cstring
+-
+iomanip
+-
+ios
+-
+iterator
+-
+limits
+-
+sstream
+-
+string
+-
+utility
+-
+algorithm
+-
+array
+-
+cstdint
+-
+cstring
+-
+limits
+-
+algorithm
+-
+array
+-
+cassert
+-
+ciso646
+-
+clocale
+-
+cmath
+-
+cstddef
+-
+cstdint
+-
+cstdio
+-
+iomanip
+-
+iterator
+-
+limits
+-
+string
+-
+sstream
+-
+type_traits
+-
+cassert
+-
+ciso646
+-
+cmath
+-
+cstdint
+-
+cstring
+-
+initializer_list
+-
+utility
+-
+cassert
+-
+numeric
+-
+string
+-
+vector
+-
+utility
+-
+

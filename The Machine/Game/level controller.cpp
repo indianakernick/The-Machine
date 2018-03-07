@@ -25,7 +25,7 @@ std::experimental::optional<ECS::Level> LevelController::getLevel(
   if (SDL::keyDown(e, SDL_SCANCODE_N)) {
     if (current == ECS::NULL_LEVEL) {
       return progress;
-    } else if (current + 1 <= progress) {
+    } else /* if (current + 1 <= progress) */ {
       return current + 1;
     }
   }

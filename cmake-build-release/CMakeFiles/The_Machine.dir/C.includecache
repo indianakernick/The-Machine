@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/stb_vorbis.c
+stdio.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+assert.h
+-
+math.h
+-
+malloc.h
+-
+alloca.h
+-
+limits.h
+-
+crtdbg.h
+-
+

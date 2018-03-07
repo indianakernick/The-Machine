@@ -18,8 +18,12 @@
 class App {
 public:
   App() = default;
-  
-  void mainloop();
+
+  void runMainloop();
+  bool mainloop(uint64_t);
+
+  void init();
+  void quit();
 
 private:
   SDL::Library windowLibrary;
@@ -28,9 +32,7 @@ private:
   ScreenManager screenMan;
   MusicPlayer music;
   std::shared_ptr<RenderingSystem> renderingSystem;
-  
-  void init();
-  void quit();
+
   bool input();
   void update(float);
   void render(float);

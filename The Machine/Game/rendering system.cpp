@@ -26,10 +26,11 @@ namespace {
   constexpr size_t QUAD_ELEM_SIZE = sizeof(ElemType) * QUAD_INDICIES;
   
   using Attribs = std::tuple<PosType, TexCoordType>;
-  
-  const char VERT_SHADER[] = R"delimiter(
-#version 410 core
 
+  const char CORE_SHADER_VERSION[] = "#version 330 core\n";
+  const char ES_SHADER_VERSION[] = "#version 300 es\nprecision mediump float;\n";
+
+  const char VERT_SHADER[] = R"delimiter(
 layout (location = 0) in vec3 pos;
 layout (location = 1) in vec2 texCoord;
 
@@ -45,8 +46,6 @@ void main() {
 )delimiter";
 
   const char FRAG_SHADER[] = R"delimiter(
-#version 410 core
-
 in vec2 fragTexCoord;
 
 uniform sampler2D tex;
@@ -56,6 +55,9 @@ out vec4 outColor;
 
 void main() {
   outColor = color * texture(tex, fragTexCoord);
+  outColor.r = pow(outColor.r, 1.0/2.2);
+  outColor.g = pow(outColor.g, 1.0/2.2);
+  outColor.b = pow(outColor.b, 1.0/2.2);
   gl_FragDepth = (outColor.a == 0.0 ? 1.0 : gl_FragCoord.z);
 }
 )delimiter";
@@ -68,11 +70,18 @@ void RenderingSystem::init() {
   glEnable(GL_BLEND);
 
   vertArray = GL::makeVertexArray();
-  
+
+#ifdef EMSCRIPTEN
   program = GL::makeShaderProgram(
-    GL::makeVertShader(VERT_SHADER, sizeof(VERT_SHADER)),
-    GL::makeFragShader(FRAG_SHADER, sizeof(FRAG_SHADER))
+    GL::makeVertShader(ES_SHADER_VERSION, VERT_SHADER),
+    GL::makeFragShader(ES_SHADER_VERSION, FRAG_SHADER)
   );
+#else
+  program = GL::makeShaderProgram(
+    GL::makeVertShader(CORE_SHADER_VERSION, VERT_SHADER),
+    GL::makeFragShader(CORE_SHADER_VERSION, FRAG_SHADER)
+  );
+#endif
   
   viewProjLoc = program.getUniformLoc("viewProj");
   texLoc = program.getUniformLoc("tex");
@@ -211,7 +220,9 @@ void RenderingSystem::fillIndiciesBuf() {
 }
 
 void RenderingSystem::fillVertBuf(const size_t numQuads) {
-  const size_t vertsSize = sizeof(Quad) * numQuads;
+  arrayBuf.bind();
+  const size_t vertsSize = sizeof(Quad) * quads.size();
   glBufferSubData(GL_ARRAY_BUFFER, 0, vertsSize, quads.data());
   CHECK_OPENGL_ERROR();
+  GL::unbindArrayBuffer();
 }

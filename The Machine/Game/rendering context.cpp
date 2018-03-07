@@ -10,6 +10,7 @@
 
 #include <SDL2/SDL.h>
 #include <Simpleton/SDL/error.hpp>
+#include <Simpleton/OpenGL/opengl.hpp>
 
 void RenderingContext::init(SDL_Window *newWindow) {
   initImpl(newWindow, false);
@@ -49,16 +50,29 @@ void RenderingContext::preRender() {
   SDL_GetWindowSize(window, &size.x, &size.y);
   glViewport(0, 0, size.x, size.y);
   CHECK_OPENGL_ERROR();
-  
+
+#ifdef EMSCRIPTEN
+  SDL_SetRenderDrawColor(context, 0, 0, 0, 0);
+  SDL_RenderClear(context);
+#else
   GL::clearFrame();
+#endif
 }
 
 void RenderingContext::postRender() {
   if (minFrameTime == 0) {
+#ifdef EMSCRIPTEN
+    SDL_RenderPresent(context);
+#else
     SDL_GL_SwapWindow(window);
+#endif
   } else {
     const Uint32 start = SDL_GetTicks();
+#ifdef EMSCRIPTEN
+    SDL_RenderPresent(context);
+#else
     SDL_GL_SwapWindow(window);
+#endif
     const Uint32 end = SDL_GetTicks();
     
     const Uint32 swapTime = end - start;
@@ -80,10 +94,16 @@ SDL_Window *RenderingContext::getWindow() const {
 
 void RenderingContext::initImpl(SDL_Window *const newWindow, const bool vsync) {
   window = newWindow;
+
+  #ifdef EMSCRIPTEN
+  context = CHECK_SDL_NULL(SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC));
+  #else
   GL::ContextParams params;
   params.vsync = vsync;
   params.majorVersion = 4;
   params.minorVersion = 1;
   context = GL::makeContext(window, params);
+  #endif
+
   glEnable(GL_DEPTH_TEST);
 }

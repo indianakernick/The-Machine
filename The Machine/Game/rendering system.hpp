@@ -9,6 +9,11 @@
 #ifndef rendering_system_hpp
 #define rendering_system_hpp
 
+#ifdef EMSCRIPTEN
+#include <GLES3/gl32.h>
+#include <SDL2/SDL.h>
+#endif
+
 #include <glm/mat3x3.hpp>
 #include "quad writer.hpp"
 #include <Simpleton/OpenGL/buffer.hpp>

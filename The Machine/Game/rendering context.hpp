@@ -10,7 +10,13 @@
 #define rendering_context_hpp
 
 #include <glm/vec2.hpp>
+
+#ifdef EMSCRIPTEN
+#include <SDL2/SDL.h>
+#include <GLES3/gl32.h>
+#else
 #include <Simpleton/OpenGL/context.hpp>
+#endif
 
 extern "C" struct SDL_Window;
 extern "C" struct SDL_Renderer;
@@ -31,8 +37,12 @@ public:
   SDL_Window *getWindow() const;
   
 private:
-  SDL_Window *window = nullptr;
+#ifdef EMSCRIPTEN
+  SDL_Renderer *context;
+#else
   GL::Context context;
+#endif
+  SDL_Window *window = nullptr;
   Uint32 minFrameTime = 0;
   
   void initImpl(SDL_Window *, bool);

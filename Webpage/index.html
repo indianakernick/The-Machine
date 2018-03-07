@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>The Machine</title>
+
+    <style>
+      canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="z-index: -1;
+                display: flex;
+                align-items: center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #000">
+      <span style="text-align: center;
+                   width:100%;
+                   font-size: 6em;
+                   font-family: sans-serif;
+                   color: #FFF">Loading...</span>
+    </div>
+    <canvas></canvas>
+    {{{ SCRIPT }}}
+    <script>
+      setInterval(() => window.focus(), 500);
+    </script>
+  </body>
+</html>

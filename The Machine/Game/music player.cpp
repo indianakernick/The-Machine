@@ -8,6 +8,18 @@
 
 #include "music player.hpp"
 
+#ifdef EMSCRIPTEN
+
+void MusicPlayer::init() {};
+    void MusicPlayer::quit() {};
+
+    void MusicPlayer::togglePlaying() {};
+
+    void MusicPlayer::nextSong() {};
+    void MusicPlayer::fillAudioBuffer(uint8_t *, int) {};
+
+#else
+
 #include <cassert>
 #include <fstream>
 #include <iostream>
@@ -144,3 +156,5 @@ void MusicPlayer::printSong() {
     std::cout << "Currently playing " << song.artist << " - " << song.name << '\n';
   }
 }
+
+#endif
