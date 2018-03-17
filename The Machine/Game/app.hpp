@@ -12,8 +12,8 @@
 #include "music player.hpp"
 #include "screen manager.hpp"
 #include "rendering system.hpp"
-#include "rendering context.hpp"
 #include <Simpleton/SDL/library.hpp>
+#include <Simpleton/OpenGL/context.hpp>
 
 class App {
 public:
@@ -28,7 +28,7 @@ public:
 private:
   SDL::Library windowLibrary;
   SDL::Window window;
-  RenderingContext renderingContext;
+  GL::Context renderingContext;
   ScreenManager screenMan;
   MusicPlayer music;
   std::shared_ptr<RenderingSystem> renderingSystem;

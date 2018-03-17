@@ -38,7 +38,6 @@ bool App::mainloop(const uint64_t delta) {
 
 void App::init() {
   PROFILE(App::init);
-  std::cout << "App::init\n";
 
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wc99-extensions"
@@ -55,29 +54,22 @@ void App::init() {
   {
     PROFILE(Open Window);
     windowLibrary = SDL::makeLibrary(SDL_INIT_EVENTS | SDL_INIT_AUDIO);
-    std::cout << "Initialized SDL\n";
     window = SDL::makeWindow(WINDOW_DESC);
-    std::cout << "Opened window\n";
     renderingContext.initVSync(window.get());
-    std::cout << "Created rendering context\n";
+    glEnable(GL_DEPTH_TEST);
 
     renderingContext.preRender();
-    std::cout << "Pre rendered\n";
     renderingContext.postRender();
-    std::cout << "Post rendered\n";
     
     renderingSystem = std::make_shared<RenderingSystem>();
     renderingSystem->init();
-    std::cout << "Initialized rendering system\n";
   }
   
   SDL_PumpEvents();
-  std::cout << "Pumped events\n";
   
   {
     PROFILE(Open Audio);
     music.init();
-    std::cout << "Initialized audio\n";
   }
   
   screenMan.addScreen<GameScreen>();
@@ -86,12 +78,9 @@ void App::init() {
   {
     PROFILE(Initialize Screens);
     screenMan.initAll(renderingSystem);
-    std::cout << "Initialized screens\n";
   }
   
   screenMan.transitionTo<TitleScreen>();
-
-  std::cout << "Done App::init()\n";
 }
 
 void App::quit() {

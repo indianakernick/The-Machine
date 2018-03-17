@@ -21,7 +21,6 @@ void mainloop() {
 #include <iostream>
 
 int main(int, char **) {
-  std::cout << "Main function called\n";
 #ifdef EMSCRIPTEN
   emscripten_set_main_loop(mainloop, 0, 0);
   try {
@@ -29,12 +28,9 @@ int main(int, char **) {
   } catch (std::exception &e) {
     std::cerr << "Exception " << e.what() << '\n';
   }
-  std::cout << "Finished init\n";
   emscripten_cancel_main_loop();
-  std::cout << "Canceled main loop\n";
   emscripten_set_main_loop(mainloop, 0, 1);
   emscripten_set_main_loop_timing(EM_TIMING_RAF, 0);
-  std::cout << "Finished running main loop\n";
 #else
   App app;
   app.runMainloop();
