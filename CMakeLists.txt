@@ -47,9 +47,12 @@ set(LINKER_FLAGS " \
   --shell-file '${PROJECT_SOURCE_DIR}/Webpage/index.html' \
   ${PRELOADED_FILES} \
 ")
-include_directories(/usr/local/include/)
+set(CMAKE_CXX_FLAGS " \
+  ${EXTRA_FLAGS} \
+  -msse3 \
+")
 
-add_definitions(-DNO_INCLUDE_SDL_OPENGL)
+include_directories(/usr/local/include/)
 
 set(SOURCE_FILES
         "The Machine/Game/app.cpp"
