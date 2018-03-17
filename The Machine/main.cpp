@@ -10,7 +10,7 @@
 #include <Simpleton/SDL/mainloop.hpp>
 #include <Simpleton/Utils/profiler.hpp>
 
-int main(int, char **) {
+int main() {
   App app;
   SDL::runMainloop(&app);
   PROFILER_INFO(stdout);
