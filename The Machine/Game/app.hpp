@@ -19,7 +19,6 @@ class App {
 public:
   App() = default;
 
-  void runMainloop();
   bool mainloop(uint64_t);
 
   void init();

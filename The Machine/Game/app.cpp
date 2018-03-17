@@ -8,26 +8,14 @@
 
 #include "app.hpp"
 
-#include <chrono>
 #include "game screen.hpp"
 #include "title screen.hpp"
 #include <Simpleton/SDL/events.hpp>
 #include <Simpleton/Utils/profiler.hpp>
-#include <Simpleton/Time/main loop.hpp>
 
-void App::runMainloop() {
-  init();
-
-  Time::Mainloop<std::chrono::nanoseconds>::varNoSync([this] (const uint64_t delta) {
-    return mainloop(delta);
-  });
-
-  quit();
-}
-
-bool App::mainloop(const uint64_t delta) {
+bool App::mainloop(const uint64_t deltaNano) {
   PROFILE(App::mainloop);
-  const float deltaSec = delta / 1'000'000'000.0f;
+  const float deltaSec = deltaNano / 1'000'000'000.0f;
     
   const bool ok = input();
   update(deltaSec);
@@ -106,11 +94,7 @@ bool App::input() {
     } else if (SDL::keyDown(e, SDL_SCANCODE_M)) {
       music.togglePlaying();
     } else if (SDL::keyDown(e, SDL_SCANCODE_F)) {
-      if (SDL_GetWindowFlags(window.get()) & SDL_WINDOW_FULLSCREEN_DESKTOP) {
-        CHECK_SDL_ERROR(SDL_SetWindowFullscreen(window.get(), 0));
-      } else {
-        CHECK_SDL_ERROR(SDL_SetWindowFullscreen(window.get(), SDL_WINDOW_FULLSCREEN_DESKTOP));
-      }
+      window.toggleFullscreen();
     } else {
       screenMan.input(e);
     }
