@@ -12,7 +12,156 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="debe2dea-869e-4e2c-811c-a3c699185ff3" name="Default" comment="" />
+    <list default="true" id="debe2dea-869e-4e2c-811c-a3c699185ff3" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/C.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/CXX.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/stb_vorbis.c.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/depend.internal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WebASM.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WebASM.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WebASM.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WebASM.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WebASM.dir/flags.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WebASM.dir/link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WebASM.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/C.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/stb_vorbis.c.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/Game.zip" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/index.wasm" afterPath="$PROJECT_DIR$/cmake-build-release/index.wasm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/cmake_clean.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/The_Machine.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/The_Machine.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeOutput.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/cmake_clean.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" afterPath="$PROJECT_DIR$/cmake-build-release/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/The_Machine.cbp" afterPath="$PROJECT_DIR$/cmake-build-release/The_Machine.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/index.html" afterPath="$PROJECT_DIR$/cmake-build-release/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/index.js" afterPath="$PROJECT_DIR$/cmake-build-release/index.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +173,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2955">
-              <caret line="197" column="82" lean-forward="false" selection-start-line="197" selection-start-column="82" selection-end-line="197" selection-end-column="82" />
+            <state relative-caret-position="60">
+              <caret line="4" column="54" lean-forward="false" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainloop.hpp" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/include/Simpleton/SDL/mainloop.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+              <folding>
+                <marker date="1521267545122" expanded="true" signature="312:1022" ph="{...}" />
+                <marker date="1521267545122" expanded="true" signature="517:1020" ph="{...}" />
+                <marker date="1521267545122" expanded="true" signature="841:1000" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emscripten.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/emscripten/1.37.36/libexec/system/include/emscripten/emscripten.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="82" column="6" lean-forward="false" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake-build-release/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -37,7 +220,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmake-build-release/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12834">
+            <state relative-caret-position="-19079">
               <caret line="0" column="119891" lean-forward="false" selection-start-line="0" selection-start-column="119891" selection-end-line="0" selection-end-column="119891" />
               <folding />
             </state>
@@ -47,18 +230,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Webpage/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
+            <state relative-caret-position="450">
               <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="level controller.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="level controller.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/The Machine/Game/level controller.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+            <state relative-caret-position="-325">
+              <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -67,28 +250,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/The Machine/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="29" column="50" lean-forward="false" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/The Machine/Game/app.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="93" column="36" lean-forward="false" selection-start-line="93" selection-start-column="36" selection-end-line="93" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rendering context.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/The Machine/Game/rendering context.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="98" column="113" lean-forward="false" selection-start-line="98" selection-start-column="113" selection-end-line="98" selection-end-column="113" />
+            <state relative-caret-position="195">
+              <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -97,7 +260,7 @@
       <file leaf-file-name="SDL_video.h" pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/include/SDL2/SDL_video.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
+            <state relative-caret-position="3060">
               <caret line="204" column="4" lean-forward="false" selection-start-line="204" selection-start-column="4" selection-end-line="204" selection-end-column="4" />
               <folding>
                 <marker date="1519922122000" expanded="true" signature="17861:18391" ph="/**...*/" />
@@ -175,7 +338,7 @@
       <file leaf-file-name="rendering system.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/The Machine/Game/rendering system.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2080">
+            <state relative-caret-position="885">
               <caret line="59" column="2" lean-forward="false" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
               <folding />
             </state>
@@ -188,7 +351,11 @@
     <findStrings>
       <find>Browser.requestAnimationFrame</find>
       <find>_emscripten_set_main_loop_timing</find>
+      <find>[ ]*&quot;The Machine/Game/.*\.hpp&quot;[\n]</find>
     </findStrings>
+    <replaceStrings>
+      <replace>[]</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -204,11 +371,12 @@
         <option value="$PROJECT_DIR$/The Machine/main.cpp" />
         <option value="$PROJECT_DIR$/The Machine/Game/rendering context.cpp" />
         <option value="$PROJECT_DIR$/The Machine/Game/rendering system.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/cmake-build-release/index.js" />
-        <option value="$PROJECT_DIR$/cmake-build-release/index.html" />
         <option value="$PROJECT_DIR$/Webpage/index.html" />
         <option value="$PROJECT_DIR$/The Machine/Game/level controller.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="/usr/local/include/Simpleton/SDL/mainloop.hpp" />
+        <option value="$PROJECT_DIR$/cmake-build-release/index.html" />
       </list>
     </option>
   </component>
@@ -325,7 +493,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -354,6 +522,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="debe2dea-869e-4e2c-811c-a3c699185ff3" name="Default" comment="" />
@@ -364,24 +535,25 @@
       <workItem from="1520284262510" duration="5048000" />
       <workItem from="1520303072224" duration="618000" />
       <workItem from="1520314858499" duration="6869000" />
+      <workItem from="1521264372548" duration="3576000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12535000" />
+    <option name="totallyTimeSpent" value="16111000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -407,6 +579,146 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2955">
+          <caret line="197" column="82" lean-forward="false" selection-start-line="197" selection-start-column="82" selection-end-line="197" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-release/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="119891" lean-forward="false" selection-start-line="0" selection-start-column="119891" selection-end-line="0" selection-end-column="119891" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Webpage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/The Machine/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="50" lean-forward="false" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/The Machine/Game/app.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="93" column="36" lean-forward="false" selection-start-line="93" selection-start-column="36" selection-end-line="93" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/The Machine/Game/rendering context.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="98" column="113" lean-forward="false" selection-start-line="98" selection-start-column="113" selection-end-line="98" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/include/SDL2/SDL_video.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3060">
+          <caret line="204" column="4" lean-forward="false" selection-start-line="204" selection-start-column="4" selection-end-line="204" selection-end-column="4" />
+          <folding>
+            <marker date="1519922122000" expanded="true" signature="17861:18391" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="18617:18859" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="18938:19010" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="19081:19159" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="19230:19270" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="19344:19438" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="19577:19671" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="19750:19902" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="20040:20393" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="20595:20833" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="20971:21483" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="21623:21998" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="22140:22939" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="23071:23752" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="23886:24690" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="24919:25387" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="25541:25891" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="26039:26507" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="26661:27011" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="27159:27663" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="27808:28329" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="28477:28538" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="28606:28667" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="28735:28813" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="28882:28967" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="29039:29135" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="29207:29352" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="29423:29618" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="29760:30204" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="30287:30462" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="30538:30734" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="30967:31356" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="31492:31656" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="31731:31917" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="31984:32202" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="32296:32480" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="32558:32924" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="33012:33381" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="33475:33736" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="33844:34230" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="34306:35108" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="35399:36077" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="36350:36445" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="36459:36856" ph="{...}" />
+            <marker date="1519922122000" expanded="true" signature="36877:36958" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="37160:39120" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="39334:39370" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="39442:39596" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="39663:39800" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="39860:40003" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="40065:40107" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="40118:40814" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="40882:40939" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="41012:41131" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="41190:41292" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="41436:41529" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="41590:41733" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="41812:42039" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="42119:42259" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="42401:42555" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="42696:42754" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="42823:42882" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="42954:43657" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="43801:44282" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="44350:44844" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="44904:45003" ph="/**...*/" />
+            <marker date="1519922122000" expanded="true" signature="45074:45152" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/The Machine/Game/rendering system.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="2" lean-forward="false" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/The Machine/Game/level controller.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2625">
           <caret line="175" column="72" lean-forward="false" selection-start-line="175" selection-start-column="72" selection-end-line="175" selection-end-column="72" />
           <folding />
@@ -425,7 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -441,7 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -449,7 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -481,7 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="975">
           <caret line="65" column="12" lean-forward="false" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -505,7 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -529,7 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -537,7 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -545,7 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="2" lean-forward="false" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -569,7 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -577,7 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -585,7 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="2" lean-forward="false" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -593,7 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -601,7 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="71" column="42" lean-forward="false" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -609,7 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -617,7 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="45" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -625,29 +922,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2385">
           <caret line="159" column="6" lean-forward="false" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/The Machine/Game/app.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="93" column="36" lean-forward="false" selection-start-line="93" selection-start-column="36" selection-end-line="93" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/The Machine/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="29" column="50" lean-forward="false" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+        <state relative-caret-position="1065">
+          <caret line="71" column="1" lean-forward="false" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/include/SDL2/SDL_video.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
+        <state relative-caret-position="3060">
           <caret line="204" column="4" lean-forward="false" selection-start-line="204" selection-start-column="4" selection-end-line="204" selection-end-column="4" />
           <folding>
             <marker date="1519922122000" expanded="true" signature="17861:18391" ph="/**...*/" />
@@ -723,7 +1011,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/The Machine/Game/rendering context.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
+        <state relative-caret-position="1470">
           <caret line="98" column="113" lean-forward="false" selection-start-line="98" selection-start-column="113" selection-end-line="98" selection-end-column="113" />
           <folding />
         </state>
@@ -731,15 +1019,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/The Machine/Game/rendering system.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2080">
+        <state relative-caret-position="885">
           <caret line="59" column="2" lean-forward="false" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Webpage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/The Machine/Game/level controller.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-325">
+          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/The Machine/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-release/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/include/Simpleton/SDL/mainloop.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <marker date="1521267545122" expanded="true" signature="312:1022" ph="{...}" />
+            <marker date="1521267545122" expanded="true" signature="517:1020" ph="{...}" />
+            <marker date="1521267545122" expanded="true" signature="841:1000" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/emscripten/1.37.36/libexec/system/include/emscripten/emscripten.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="82" column="6" lean-forward="false" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-release/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-release/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12834">
+        <state relative-caret-position="-19079">
           <caret line="0" column="119891" lean-forward="false" selection-start-line="0" selection-start-column="119891" selection-end-line="0" selection-end-column="119891" />
           <folding />
         </state>
@@ -747,32 +1095,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2955">
-          <caret line="197" column="82" lean-forward="false" selection-start-line="197" selection-start-column="82" selection-end-line="197" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Webpage/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-release/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/The Machine/Game/level controller.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        <state relative-caret-position="60">
+          <caret line="4" column="54" lean-forward="false" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
           <folding />
         </state>
       </provider>
