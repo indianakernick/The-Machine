@@ -20,6 +20,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -148,6 +149,7 @@
         <option value="/usr/local/include/Simpleton/SDL/mainloop.hpp" />
         <option value="$PROJECT_DIR$/cmake-build-release/index.html" />
         <option value="$PROJECT_DIR$/Webpage/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -280,7 +282,7 @@
       <workItem from="1520284262510" duration="5048000" />
       <workItem from="1520303072224" duration="618000" />
       <workItem from="1520314858499" duration="6869000" />
-      <workItem from="1521264372548" duration="5332000" />
+      <workItem from="1521264372548" duration="5399000" />
     </task>
     <task id="LOCAL-00001" summary="Update cmake file">
       <created>1521269339026</created>
@@ -317,11 +319,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521270745242</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Delete .idea">
+      <created>1521271215422</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1521271215423</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17867000" />
+    <option name="totallyTimeSpent" value="17934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -361,7 +370,8 @@
     <MESSAGE value="Remove build from repo" />
     <MESSAGE value="Tidy up HTML" />
     <MESSAGE value="Delete builds" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete builds" />
+    <MESSAGE value="Delete .idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete .idea" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
