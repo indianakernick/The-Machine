@@ -1,2 +1,0 @@
-Options: 
-CMake: 3.10.2@/usr/local/Cellar/cmake/3.10.2/bin/cmake
