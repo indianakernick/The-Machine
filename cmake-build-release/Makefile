@@ -987,33 +987,6 @@ The_Machine/Game/radioactivity_sprite_writer.cpp.s:
 	$(MAKE) -f CMakeFiles/The_Machine.dir/build.make CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.s
 .PHONY : The_Machine/Game/radioactivity_sprite_writer.cpp.s
 
-The_Machine/Game/rendering_context.o: The_Machine/Game/rendering_context.cpp.o
-
-.PHONY : The_Machine/Game/rendering_context.o
-
-# target to build an object file
-The_Machine/Game/rendering_context.cpp.o:
-	$(MAKE) -f CMakeFiles/The_Machine.dir/build.make CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o
-.PHONY : The_Machine/Game/rendering_context.cpp.o
-
-The_Machine/Game/rendering_context.i: The_Machine/Game/rendering_context.cpp.i
-
-.PHONY : The_Machine/Game/rendering_context.i
-
-# target to preprocess a source file
-The_Machine/Game/rendering_context.cpp.i:
-	$(MAKE) -f CMakeFiles/The_Machine.dir/build.make CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.i
-.PHONY : The_Machine/Game/rendering_context.cpp.i
-
-The_Machine/Game/rendering_context.s: The_Machine/Game/rendering_context.cpp.s
-
-.PHONY : The_Machine/Game/rendering_context.s
-
-# target to generate assembly for a file
-The_Machine/Game/rendering_context.cpp.s:
-	$(MAKE) -f CMakeFiles/The_Machine.dir/build.make CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.s
-.PHONY : The_Machine/Game/rendering_context.cpp.s
-
 The_Machine/Game/rendering_helpers.o: The_Machine/Game/rendering_helpers.cpp.o
 
 .PHONY : The_Machine/Game/rendering_helpers.o
@@ -1605,9 +1578,6 @@ help:
 	@echo "... The_Machine/Game/radioactivity_sprite_writer.o"
 	@echo "... The_Machine/Game/radioactivity_sprite_writer.i"
 	@echo "... The_Machine/Game/radioactivity_sprite_writer.s"
-	@echo "... The_Machine/Game/rendering_context.o"
-	@echo "... The_Machine/Game/rendering_context.i"
-	@echo "... The_Machine/Game/rendering_context.s"
 	@echo "... The_Machine/Game/rendering_helpers.o"
 	@echo "... The_Machine/Game/rendering_helpers.i"
 	@echo "... The_Machine/Game/rendering_helpers.s"

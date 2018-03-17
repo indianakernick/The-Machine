@@ -190,12 +190,6 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 
 //Value Computed by CMake
-Roboids_BINARY_DIR:STATIC=/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-debug
-
-//Value Computed by CMake
-Roboids_SOURCE_DIR:STATIC=/Users/indikernick/Dev/Projects/C++/Games/The Machine
-
-//Value Computed by CMake
 The_Machine_BINARY_DIR:STATIC=/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-debug
 
 //Value Computed by CMake

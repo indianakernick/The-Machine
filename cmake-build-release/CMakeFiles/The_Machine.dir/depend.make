@@ -41,7 +41,6 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: ../The\ Machine/Game/radi
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: ../The\ Machine/Game/radioactivity\ component.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: ../The\ Machine/Game/radioactivity\ detector\ component.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: ../The\ Machine/Game/radioactivity\ sprite\ component.hpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: ../The\ Machine/Game/rendering\ context.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: ../The\ Machine/Game/rendering\ system.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: ../The\ Machine/Game/rendering\ types.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: ../The\ Machine/Game/screen\ id.hpp
@@ -124,7 +123,6 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simple
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Math/digit\ stack.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Math/dir\ bits.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Math/dir.hpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Math/int\ float.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Math/pow.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Math/rect.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Math/round.hpp
@@ -155,9 +153,6 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simple
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/SDL/renderer.inl
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/SDL/window.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/SDL/window.inl
-CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Time/get.hpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Time/main\ loop.hpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Time/stopwatch.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Unpack/sheet.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Unpack/sheet.inl
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Unpack/types.hpp
@@ -166,7 +161,6 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simple
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Utils/bool\ enable.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Utils/combine\ hashes.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Utils/endian.hpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Utils/function\ traits.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Utils/generic\ raii.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Utils/instance\ limiter.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: /usr/local/include/Simpleton/Utils/int\ least.hpp
@@ -1935,71 +1929,6 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o: /
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o: /usr/local/include/glm/vec4.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o: /usr/local/include/nlohmann/json.hpp
 
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: ../The\ Machine/Game/rendering\ context.cpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: ../The\ Machine/Game/rendering\ context.hpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_assert.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_atomic.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_audio.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_blendmode.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_clipboard.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_config.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_cpuinfo.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_endian.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_error.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_events.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_filesystem.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_gamecontroller.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_gesture.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_haptic.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_hints.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_joystick.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_keyboard.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_keycode.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_loadso.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_log.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_main.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_messagebox.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_mouse.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_mutex.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_opengl.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_opengl_glext.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_pixels.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_platform.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_power.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_quit.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_rect.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_render.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_rwops.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_scancode.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_shape.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_stdinc.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_surface.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_system.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_thread.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_timer.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_touch.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_version.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/SDL_video.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/begin_code.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/SDL2/close_code.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/Simpleton/OpenGL/context.hpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/Simpleton/OpenGL/context.inl
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/Simpleton/OpenGL/opengl.hpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/Simpleton/SDL/error.hpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/Simpleton/Utils/generic\ raii.hpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/glm/detail/_swizzle.hpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/glm/detail/_swizzle_func.hpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/glm/detail/precision.hpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/glm/detail/setup.hpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/glm/detail/type_int.hpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/glm/detail/type_vec.hpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/glm/detail/type_vec2.hpp
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/glm/detail/type_vec2.inl
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/glm/simd/platform.h
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: /usr/local/include/glm/vec2.hpp
-
 CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o: ../The\ Machine/Game/rendering\ helpers.cpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o: ../The\ Machine/Game/rendering\ helpers.hpp
 CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o: ../The\ Machine/Game/rendering\ types.hpp
@@ -2871,7 +2800,6 @@ CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: ../The\ Machine/Game/frame\ t
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: ../The\ Machine/Game/music\ player.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: ../The\ Machine/Game/position\ type.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: ../The\ Machine/Game/quad\ writer.hpp
-CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: ../The\ Machine/Game/rendering\ context.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: ../The\ Machine/Game/rendering\ system.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: ../The\ Machine/Game/rendering\ types.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: ../The\ Machine/Game/screen\ id.hpp
@@ -2931,6 +2859,7 @@ CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/SDL2/close
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/Data/json.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/ID/type.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/Math/dir.hpp
+CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/Math/int\ float.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/Math/pow.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/Math/round.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/OpenGL/buffer.hpp
@@ -2950,13 +2879,18 @@ CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/SDL/error.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/SDL/library.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/SDL/library.inl
+CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/SDL/mainloop.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/SDL/renderer.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/SDL/renderer.inl
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/SDL/window.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/SDL/window.inl
+CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/Time/get.hpp
+CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/Time/main\ loop.hpp
+CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/Time/stopwatch.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/Utils/bits.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/Utils/bool\ enable.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/Utils/combine\ hashes.hpp
+CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/Utils/function\ traits.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/Utils/generic\ raii.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/Utils/instance\ limiter.hpp
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: /usr/local/include/Simpleton/Utils/int\ least.hpp

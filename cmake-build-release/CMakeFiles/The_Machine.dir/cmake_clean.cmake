@@ -31,7 +31,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.o"
   "CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.o"
   "CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o"
-  "CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o"
   "CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o"
   "CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o"
   "CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o"

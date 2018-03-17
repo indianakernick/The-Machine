@@ -88,9 +88,6 @@
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/app.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/button component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/button system.cpp">
 			<Option target="The_Machine"/>
 		</Unit>
@@ -115,22 +112,10 @@
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear real dir system.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/component list.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire sprite component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire sprite writer.cpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire sprite writer.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/delay component.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/delay system.cpp">
@@ -139,19 +124,10 @@
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/delay system.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/device component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/device input system.cpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/device input system.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/dir to vec.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/dynamic collision component.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.cpp">
@@ -160,16 +136,10 @@
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/exit component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/exit system.cpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/exit system.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/frame type.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game level.cpp">
@@ -202,9 +172,6 @@
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game view.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/gate component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/gate system.cpp">
 			<Option target="The_Machine"/>
 		</Unit>
@@ -223,19 +190,10 @@
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level controller.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level manager.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level size.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level transition.cpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level transition.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/lever component.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/lever system.cpp">
@@ -250,25 +208,16 @@
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/move dir system.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/movement component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/music player.cpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/music player.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/piston component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/piston system.cpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/piston system.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player action component.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input response system.cpp">
@@ -283,40 +232,16 @@
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input system.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player key states.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/position type.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input system.cpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input system.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power output component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power sprite component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power sprite writer.cpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power sprite writer.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/pressure plate component.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/pressure plate system.cpp">
@@ -331,19 +256,10 @@
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/quad writer.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactive toggle component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactive toggle system.cpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactive toggle system.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity detector component.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity detector system.cpp">
@@ -352,19 +268,10 @@
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity detector system.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity sprite component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity sprite writer.cpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity sprite writer.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering context.cpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering context.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.cpp">
@@ -377,12 +284,6 @@
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering system.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering types.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen id.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen manager.cpp">
@@ -421,16 +322,10 @@
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift radioactivity system.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal channel component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal channel toggle system.cpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal channel toggle system.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal receiver component.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal receiver system.cpp">
@@ -439,22 +334,10 @@
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal receiver system.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal transmitter component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position system.cpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position system.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static collision component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static sprite component.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static sprite writer.cpp">
@@ -485,12 +368,6 @@
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/update pos system.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/weight component.hpp">
-			<Option target="The_Machine"/>
-		</Unit>
-		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/wire component.hpp">
 			<Option target="The_Machine"/>
 		</Unit>
 		<Unit filename="/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/wire system.cpp">

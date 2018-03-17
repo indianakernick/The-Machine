@@ -60,15 +60,15 @@ include CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o: ../The\ Machine/Game/app.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/app.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/app.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/app.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/app.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/app.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/app.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o.requires:
 
@@ -84,15 +84,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o.provides.build: CMakeFiles
 CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.o: ../The\ Machine/Game/button\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/button system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/button system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/button system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/button system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/button system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/button system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.o.requires:
 
@@ -108,15 +108,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.o.provides.build: 
 CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.o: ../The\ Machine/Game/clear\ desired\ dir\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear desired dir system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear desired dir system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear desired dir system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear desired dir system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear desired dir system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear desired dir system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.o.requires:
 
@@ -132,15 +132,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.o.provi
 CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.o: ../The\ Machine/Game/clear\ player\ input\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear player input system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear player input system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear player input system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear player input system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear player input system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear player input system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.o.requires:
 
@@ -156,15 +156,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.o.prov
 CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.o: ../The\ Machine/Game/clear\ real\ dir\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear real dir system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear real dir system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear real dir system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear real dir system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear real dir system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/clear real dir system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.o.requires:
 
@@ -180,15 +180,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.o.provides
 CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.o: ../The\ Machine/Game/cross\ wire\ sprite\ writer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire sprite writer.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire sprite writer.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire sprite writer.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire sprite writer.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire sprite writer.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/cross wire sprite writer.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.o.requires:
 
@@ -204,15 +204,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.o.provi
 CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.o: ../The\ Machine/Game/delay\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/delay system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/delay system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/delay system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/delay system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/delay system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/delay system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.o.requires:
 
@@ -228,15 +228,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.o.provides.build: C
 CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.o: ../The\ Machine/Game/device\ input\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/device input system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/device input system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/device input system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/device input system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/device input system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/device input system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.o.requires:
 
@@ -252,15 +252,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.o.provides.b
 CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.o: ../The\ Machine/Game/entity\ grid.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/entity grid.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.o.requires:
 
@@ -276,15 +276,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.o.provides.build: CM
 CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.o: ../The\ Machine/Game/exit\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/exit system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/exit system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/exit system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/exit system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/exit system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/exit system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.o.requires:
 
@@ -300,15 +300,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.o.provides.build: CM
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.o: ../The\ Machine/Game/game\ level.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game level.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game level.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game level.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game level.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game level.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game level.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.o.requires:
 
@@ -324,15 +324,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.o.provides.build: CMa
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.o: ../The\ Machine/Game/game\ logic.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game logic.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game logic.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game logic.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game logic.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game logic.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game logic.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.o.requires:
 
@@ -348,15 +348,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.o.provides.build: CMa
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.o: ../The\ Machine/Game/game\ screen.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game screen.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game screen.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game screen.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game screen.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game screen.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game screen.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.o.requires:
 
@@ -372,15 +372,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.o.provides.build: CM
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.o: ../The\ Machine/Game/game\ tick.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game tick.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game tick.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game tick.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game tick.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game tick.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game tick.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.o.requires:
 
@@ -396,15 +396,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.o.provides.build: CMak
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.o: ../The\ Machine/Game/game\ view.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game view.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game view.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game view.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game view.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game view.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game view.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.o.requires:
 
@@ -420,15 +420,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.o.provides.build: CMak
 CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.o: ../The\ Machine/Game/gate\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/gate system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/gate system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/gate system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/gate system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/gate system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/gate system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.o.requires:
 
@@ -444,15 +444,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.o.provides.build: CM
 CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.o: ../The\ Machine/Game/init\ grid\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/init grid system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/init grid system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/init grid system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/init grid system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/init grid system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/init grid system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.o.requires:
 
@@ -468,15 +468,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.o.provides.buil
 CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.o: ../The\ Machine/Game/level\ controller.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level controller.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level controller.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level controller.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level controller.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level controller.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level controller.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.o.requires:
 
@@ -492,15 +492,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.o.provides.buil
 CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.o: ../The\ Machine/Game/level\ transition.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level transition.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level transition.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level transition.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level transition.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level transition.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/level transition.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.o.requires:
 
@@ -516,15 +516,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.o.provides.buil
 CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.o: ../The\ Machine/Game/lever\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/lever system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/lever system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/lever system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/lever system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/lever system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/lever system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.o.requires:
 
@@ -540,15 +540,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.o.provides.build: C
 CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.o: ../The\ Machine/Game/move\ dir\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/move dir system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/move dir system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/move dir system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/move dir system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/move dir system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/move dir system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.o.requires:
 
@@ -564,15 +564,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.o.provides.build
 CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.o: ../The\ Machine/Game/music\ player.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/music player.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/music player.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/music player.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/music player.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/music player.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/music player.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.o.requires:
 
@@ -588,15 +588,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.o.provides.build: C
 CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.o: ../The\ Machine/Game/piston\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/piston system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/piston system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/piston system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/piston system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/piston system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/piston system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.o.requires:
 
@@ -612,15 +612,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.o.provides.build: 
 CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.o: ../The\ Machine/Game/player\ input\ response\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input response system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input response system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input response system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input response system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input response system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input response system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.o.requires:
 
@@ -636,15 +636,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.o.p
 CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.o: ../The\ Machine/Game/player\ input\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/player input system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.o.requires:
 
@@ -660,15 +660,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.o.provides.b
 CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.o: ../The\ Machine/Game/power\ input\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power input system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.o.requires:
 
@@ -684,15 +684,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.o.provides.bu
 CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.o: ../The\ Machine/Game/power\ sprite\ writer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power sprite writer.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power sprite writer.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power sprite writer.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power sprite writer.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power sprite writer.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/power sprite writer.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.o.requires:
 
@@ -708,15 +708,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.o.provides.b
 CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.o: ../The\ Machine/Game/pressure\ plate\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/pressure plate system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/pressure plate system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/pressure plate system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/pressure plate system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/pressure plate system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/pressure plate system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.o.requires:
 
@@ -732,15 +732,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.o.provides
 CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.o: ../The\ Machine/Game/quad\ writer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/quad writer.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/quad writer.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/quad writer.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/quad writer.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/quad writer.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/quad writer.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.o.requires:
 
@@ -756,15 +756,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.o.provides.build: CM
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.o: ../The\ Machine/Game/radioactive\ toggle\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactive toggle system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactive toggle system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactive toggle system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactive toggle system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactive toggle system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactive toggle system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.o.requires:
 
@@ -780,15 +780,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.o.prov
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.o: ../The\ Machine/Game/radioactivity\ detector\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity detector system.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity detector system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity detector system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity detector system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity detector system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity detector system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.o.requires:
 
@@ -804,15 +804,15 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.o.
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o: ../The\ Machine/Game/radioactivity\ sprite\ writer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity sprite writer.cpp"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity sprite writer.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity sprite writer.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity sprite writer.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity sprite writer.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/radioactivity sprite writer.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o.requires:
 
@@ -825,42 +825,18 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o.pr
 CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o.provides.build: CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o
 
 
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: CMakeFiles/The_Machine.dir/flags.make
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o: ../The\ Machine/Game/rendering\ context.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering context.cpp"
-
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering context.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.i
-
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering context.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.s
-
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o.requires:
-
-.PHONY : CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o.requires
-
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o.provides: CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o.requires
-	$(MAKE) -f CMakeFiles/The_Machine.dir/build.make CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o.provides.build
-.PHONY : CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o.provides
-
-CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o.provides.build: CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o
-
-
 CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o: ../The\ Machine/Game/rendering\ helpers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o.requires:
 
@@ -875,16 +851,16 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o.provides.bui
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o: ../The\ Machine/Game/rendering\ system.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering system.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o.requires:
 
@@ -899,16 +875,16 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o.provides.buil
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o: ../The\ Machine/Game/screen\ manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen manager.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen manager.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen manager.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen manager.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen manager.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen manager.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o.requires:
 
@@ -923,16 +899,16 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o.provides.build:
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.o: ../The\ Machine/Game/screen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.o.requires:
 
@@ -947,16 +923,16 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.o: ../The\ Machine/Game/shift\ cross\ wire\ system.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift cross wire system.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift cross wire system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift cross wire system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift cross wire system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift cross wire system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift cross wire system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.o.requires:
 
@@ -971,16 +947,16 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.o.provid
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.o: ../The\ Machine/Game/shift\ player\ action\ system.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift player action system.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift player action system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift player action system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift player action system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift player action system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift player action system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.o.requires:
 
@@ -995,16 +971,16 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.o.pro
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.o: ../The\ Machine/Game/shift\ power\ system.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift power system.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift power system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift power system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift power system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift power system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift power system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.o.requires:
 
@@ -1019,16 +995,16 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.o.provides.bu
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.o: ../The\ Machine/Game/shift\ radioactivity\ system.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift radioactivity system.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift radioactivity system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift radioactivity system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift radioactivity system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift radioactivity system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/shift radioactivity system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.o.requires:
 
@@ -1043,16 +1019,16 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.o.pro
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.o: ../The\ Machine/Game/signal\ channel\ toggle\ system.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal channel toggle system.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal channel toggle system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal channel toggle system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal channel toggle system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal channel toggle system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal channel toggle system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.o.requires:
 
@@ -1067,16 +1043,16 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.o.p
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.o: ../The\ Machine/Game/signal\ receiver\ system.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal receiver system.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal receiver system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal receiver system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal receiver system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal receiver system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/signal receiver system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.o.requires:
 
@@ -1091,16 +1067,16 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.o.provide
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.o: ../The\ Machine/Game/sprite\ position\ system.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position system.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/sprite position system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.o.requires:
 
@@ -1115,16 +1091,16 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.o.provide
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.o: ../The\ Machine/Game/static\ sprite\ writer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static sprite writer.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static sprite writer.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static sprite writer.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static sprite writer.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static sprite writer.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/static sprite writer.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.o.requires:
 
@@ -1139,16 +1115,16 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.o.provides.
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.o: ../The\ Machine/Game/title\ screen\ writer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen writer.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen writer.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen writer.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen writer.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen writer.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen writer.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.o.requires:
 
@@ -1163,16 +1139,16 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.o.provides.b
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.o: ../The\ Machine/Game/title\ screen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/title screen.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.o.requires:
 
@@ -1187,16 +1163,16 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.o.provides.build: C
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.o: ../The\ Machine/Game/transition\ writer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/transition writer.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/transition writer.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/transition writer.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/transition writer.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/transition writer.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/transition writer.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.o.requires:
 
@@ -1211,16 +1187,16 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.o.provides.bui
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.o: ../The\ Machine/Game/update\ pos\ system.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/update pos system.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/update pos system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/update pos system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/update pos system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/update pos system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/update pos system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.o.requires:
 
@@ -1235,16 +1211,16 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.o.provides.bui
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.o: ../The\ Machine/Game/wire\ system.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/wire system.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/wire system.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/wire system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/wire system.cpp" > CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/wire system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/wire system.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.o.requires:
 
@@ -1259,16 +1235,16 @@ CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.o.provides.build: CM
 
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: CMakeFiles/The_Machine.dir/flags.make
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o: ../The\ Machine/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o"
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o -c "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/main.cpp"
 
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/The_Machine.dir/The_Machine/main.cpp.i"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/main.cpp" > CMakeFiles/The_Machine.dir/The_Machine/main.cpp.i
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/main.cpp" > CMakeFiles/The_Machine.dir/The_Machine/main.cpp.i
 
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/The_Machine.dir/The_Machine/main.cpp.s"
-	/usr/local/Cellar/emscripten/1.37.33/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/main.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/main.cpp.s
+	/usr/local/Cellar/emscripten/1.37.36/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/main.cpp" -o CMakeFiles/The_Machine.dir/The_Machine/main.cpp.s
 
 CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o.requires:
 
@@ -1315,7 +1291,6 @@ The_Machine_OBJECTS = \
 "CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.o" \
 "CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.o" \
 "CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o" \
-"CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o" \
 "CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o" \
 "CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o" \
 "CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o" \
@@ -1370,7 +1345,6 @@ index.html: CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.o
 index.html: CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.o
 index.html: CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.o
 index.html: CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o
-index.html: CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o
 index.html: CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o
 index.html: CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o
 index.html: CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o
@@ -1391,7 +1365,7 @@ index.html: CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.o
 index.html: CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o
 index.html: CMakeFiles/The_Machine.dir/build.make
 index.html: CMakeFiles/The_Machine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Linking CXX executable index.html"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/The Machine/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Linking CXX executable index.html"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/The_Machine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1431,7 +1405,6 @@ CMakeFiles/The_Machine.dir/requires: CMakeFiles/The_Machine.dir/The_Machine/Game
 CMakeFiles/The_Machine.dir/requires: CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.o.requires
 CMakeFiles/The_Machine.dir/requires: CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.o.requires
 CMakeFiles/The_Machine.dir/requires: CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o.requires
-CMakeFiles/The_Machine.dir/requires: CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o.requires
 CMakeFiles/The_Machine.dir/requires: CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o.requires
 CMakeFiles/The_Machine.dir/requires: CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o.requires
 CMakeFiles/The_Machine.dir/requires: CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o.requires

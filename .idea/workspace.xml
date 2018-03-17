@@ -12,9 +12,31 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="debe2dea-869e-4e2c-811c-a3c699185ff3" name="Default" comment="">
+    <list default="true" id="debe2dea-869e-4e2c-811c-a3c699185ff3" name="Default" comment="Update cmake file">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/The Machine.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeCCompiler.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeSystem.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdC/a.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/a.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/C.includecache" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/CXX.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/DependInfo.cmake" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.o" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.o" afterPath="" />
@@ -67,7 +89,13 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.o" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.o" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/cmake_clean.cmake" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/depend.internal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/flags.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/progress.make" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WebASM.dir/DependInfo.cmake" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WebASM.dir/build.make" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WebASM.dir/cmake_clean.cmake" afterPath="" />
@@ -75,92 +103,115 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WebASM.dir/flags.make" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WebASM.dir/link.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WebASM.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/Roboids.cbp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/The_Machine.cbp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/index.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/index.wasm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/index.wast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CMakeCCompiler.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CMakeSystem.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CompilerIdC/a.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CompilerIdCXX/a.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeOutput.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TargetDirectories.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/C.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/CXX.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_context.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.o" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/stb_vorbis.c.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/depend.internal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/flags.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-environment.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/cmake.check_cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/feature_tests.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/feature_tests.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/feature_tests.cxx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/Game.zip" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/app.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/button_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_desired_dir_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_player_input_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/clear_real_dir_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/cross_wire_sprite_writer.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/delay_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/device_input_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/entity_grid.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/exit_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_level.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_logic.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_screen.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_tick.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/game_view.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/gate_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/init_grid_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/level_controller.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/level_transition.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/lever_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/move_dir_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/music_player.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/piston_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_response_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/player_input_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/power_input_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/power_sprite_writer.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/pressure_plate_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/quad_writer.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactive_toggle_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_detector_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/radioactivity_sprite_writer.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_helpers.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/rendering_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/screen.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/screen_manager.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_cross_wire_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_player_action_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_power_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/shift_radioactivity_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/signal_channel_toggle_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/signal_receiver_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/sprite_position_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/static_sprite_writer.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/title_screen_writer.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/transition_writer.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/update_pos_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/Game/wire_system.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/The_Machine/main.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/index.wasm" afterPath="$PROJECT_DIR$/cmake-build-release/index.wasm" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/The_Machine.cbp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/cmake_install.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/index.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-release/index.wasm" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/cmake_clean.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/flags.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/link.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/The_Machine.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/The_Machine.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/The_Machine.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeOutput.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/cmake_clean.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/flags.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/link.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/The_Machine.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" afterPath="$PROJECT_DIR$/cmake-build-release/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/The_Machine.cbp" afterPath="$PROJECT_DIR$/cmake-build-release/The_Machine.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/index.html" afterPath="$PROJECT_DIR$/cmake-build-release/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-release/index.js" afterPath="$PROJECT_DIR$/cmake-build-release/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -211,7 +262,7 @@
         <entry file="file://$PROJECT_DIR$/cmake-build-release/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="630">
-              <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+              <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -220,7 +271,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmake-build-release/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19079">
+            <state relative-caret-position="-32144">
               <caret line="0" column="119891" lean-forward="false" selection-start-line="0" selection-start-column="119891" selection-end-line="0" selection-end-column="119891" />
               <folding />
             </state>
@@ -535,12 +586,20 @@
       <workItem from="1520284262510" duration="5048000" />
       <workItem from="1520303072224" duration="618000" />
       <workItem from="1520314858499" duration="6869000" />
-      <workItem from="1521264372548" duration="3576000" />
+      <workItem from="1521264372548" duration="3910000" />
     </task>
+    <task id="LOCAL-00001" summary="Update cmake file">
+      <created>1521269339026</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1521269339028</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16111000" />
+    <option name="totallyTimeSpent" value="16445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -571,6 +630,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update cmake file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update cmake file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1080,14 +1143,14 @@
     <entry file="file://$PROJECT_DIR$/cmake-build-release/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
-          <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+          <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-release/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19079">
+        <state relative-caret-position="-32144">
           <caret line="0" column="119891" lean-forward="false" selection-start-line="0" selection-start-column="119891" selection-end-line="0" selection-end-column="119891" />
           <folding />
         </state>

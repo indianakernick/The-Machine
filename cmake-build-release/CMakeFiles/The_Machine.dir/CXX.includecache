@@ -9,8 +9,6 @@
 /Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/app.cpp
 app.hpp
 /Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/app.hpp
-chrono
--
 game screen.hpp
 /Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/game screen.hpp
 title screen.hpp
@@ -18,8 +16,6 @@ title screen.hpp
 Simpleton/SDL/events.hpp
 -
 Simpleton/Utils/profiler.hpp
--
-Simpleton/Time/main loop.hpp
 -
 
 /Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/app.hpp
@@ -29,9 +25,9 @@ screen manager.hpp
 /Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/screen manager.hpp
 rendering system.hpp
 /Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering system.hpp
-rendering context.hpp
-/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering context.hpp
 Simpleton/SDL/library.hpp
+-
+Simpleton/OpenGL/context.hpp
 -
 
 /Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/button component.hpp
@@ -792,26 +788,6 @@ rendering helpers.hpp
 Simpleton/ECS/registry.hpp
 -
 
-/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering context.cpp
-rendering context.hpp
-/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering context.hpp
-SDL2/SDL.h
--
-Simpleton/SDL/error.hpp
--
-Simpleton/OpenGL/opengl.hpp
--
-
-/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering context.hpp
-glm/vec2.hpp
--
-SDL2/SDL.h
--
-GLES3/gl32.h
--
-Simpleton/OpenGL/context.hpp
--
-
 /Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.cpp
 rendering helpers.hpp
 /Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/rendering helpers.hpp
@@ -1159,13 +1135,11 @@ Simpleton/ECS/registry.hpp
 -
 
 /Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/main.cpp
-emscripten.h
-/Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/emscripten.h
 Game/app.hpp
 /Users/indikernick/Dev/Projects/C++/Games/The Machine/The Machine/Game/app.hpp
-Simpleton/Utils/profiler.hpp
+Simpleton/SDL/mainloop.hpp
 -
-iostream
+Simpleton/Utils/profiler.hpp
 -
 
 /usr/local/include/GL/glew.h
@@ -1313,9 +1287,11 @@ intrin.h
 -
 altivec.h
 -
-mmintrin.h
--
 mm3dnow.h
+-
+immintrin.h
+-
+mmintrin.h
 -
 xmmintrin.h
 -
@@ -2077,8 +2053,8 @@ buffer.inl
 /usr/local/include/Simpleton/OpenGL/context.hpp
 opengl.hpp
 /usr/local/include/Simpleton/OpenGL/opengl.hpp
-../Utils/generic raii.hpp
-/usr/local/include/Simpleton/Utils/generic raii.hpp
+glm/vec2.hpp
+-
 context.inl
 /usr/local/include/Simpleton/OpenGL/context.inl
 
@@ -2091,9 +2067,11 @@ cassert
 -
 iostream
 -
-GL/glew.h
--
 SDL2/SDL.h
+-
+GLES3/gl32.h
+-
+GL/glew.h
 -
 SDL2/SDL_opengl.h
 -
@@ -2201,6 +2179,12 @@ library.inl
 /usr/local/include/Simpleton/SDL/library.inl
 ../Utils/bool enable.hpp
 /usr/local/include/Simpleton/Utils/bool enable.hpp
+
+/usr/local/include/Simpleton/SDL/mainloop.hpp
+emscripten.h
+/usr/local/include/Simpleton/SDL/emscripten.h
+../Time/main loop.hpp
+/usr/local/include/Simpleton/Time/main loop.hpp
 
 /usr/local/include/Simpleton/SDL/paths.hpp
 string
