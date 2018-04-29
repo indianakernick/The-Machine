@@ -14,7 +14,7 @@
 PowerSpriteWriter::PowerSpriteWriter(
   const TextureID tex,
   std::shared_ptr<ECS::Registry> registry,
-  std::shared_ptr<Spritesheet> sheet
+  std::shared_ptr<Sheet> sheet
 ) : tex(tex),
     registry(registry),
     sheet(sheet) {}
@@ -36,7 +36,7 @@ void PowerSpriteWriter::writeQuads(QuadIter quadIter, const Frame frame) const {
       anim = sprite.high;
     }
     
-    const Unpack::SpriteID animFrame = anim.start + anim.dir * frame;
+    const Sprite::ID animFrame = anim.start + anim.dir * frame;
     
     writePos(quadIter, view.get<SpritePosition>(entity));
     writeTexCoords(quadIter, *sheet, animFrame);

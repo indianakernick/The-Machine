@@ -14,7 +14,7 @@
 RadioactivitySpriteWriter::RadioactivitySpriteWriter(
   const TextureID tex,
   std::shared_ptr<ECS::Registry> registry,
-  std::shared_ptr<Spritesheet> sheet
+  std::shared_ptr<Sheet> sheet
 ) : tex(tex),
     registry(registry),
     sheet(sheet) {}
@@ -26,7 +26,7 @@ void RadioactivitySpriteWriter::writeQuads(QuadIter quadIter, const Frame frame)
     const RadioactivitySprite sprite = view.get<RadioactivitySprite>(entity);
     const bool animate = activity.curr != activity.prev;
     
-    Unpack::SpriteID animFrame = sprite.sprite;
+    Sprite::ID animFrame = sprite.sprite;
     if (activity.prev) {
       animFrame += FRAMES_PER_TICK;
       if (animate) {

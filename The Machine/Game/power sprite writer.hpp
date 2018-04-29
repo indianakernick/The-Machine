@@ -15,7 +15,7 @@
 
 class PowerSpriteWriter final : public QuadWriter {
 public:
-  PowerSpriteWriter(TextureID, std::shared_ptr<ECS::Registry>, std::shared_ptr<Spritesheet>);
+  PowerSpriteWriter(TextureID, std::shared_ptr<ECS::Registry>, std::shared_ptr<Sheet>);
 
   void writeQuads(QuadIter, Frame) const override;
   TextureID getTexture() const override;
@@ -24,7 +24,7 @@ public:
 private:
   TextureID tex;
   std::shared_ptr<ECS::Registry> registry;
-  std::shared_ptr<Spritesheet> sheet;
+  std::shared_ptr<Sheet> sheet;
 };
 
 #endif

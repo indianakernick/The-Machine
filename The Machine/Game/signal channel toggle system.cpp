@@ -16,7 +16,7 @@
 
 namespace {
   void setChannel0(PowerSprite &sprite) {
-    constexpr Unpack::SpriteID idChange = (SignalChannel::NUM_CHANNELS - 1) * FRAMES_PER_TICK;
+    constexpr Sprite::ID idChange = (SignalChannel::NUM_CHANNELS - 1) * FRAMES_PER_TICK;
     sprite.low.start -= idChange;
     sprite.rise.start -= idChange;
     sprite.fall.start -= idChange;

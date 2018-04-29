@@ -11,7 +11,7 @@
 
 #include "rendering types.hpp"
 #include "rendering system.hpp"
-#include <Simpleton/Unpack/sheet.hpp>
+#include <Simpleton/Sprite/sheet.hpp>
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/Camera 2D/camera.hpp>
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
@@ -25,7 +25,7 @@ public:
   void render(RenderingSystem &, ECS::Registry &, Frame);
   
 private:
-  std::shared_ptr<Unpack::Spritesheet> sheet;
+  std::shared_ptr<Sprite::Sheet> sheet;
   WriterGroup writers;
   Cam2D::Camera camera;
   Cam2D::ZoomToFit zoomToFit;

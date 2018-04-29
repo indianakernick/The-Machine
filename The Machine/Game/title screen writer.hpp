@@ -22,7 +22,7 @@ public:
 
 private:
   TextureID tex;
-  Spritesheet sheet;
+  Sheet sheet;
 };
 
 #endif

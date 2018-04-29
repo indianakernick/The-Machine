@@ -28,10 +28,10 @@ void writePos(
 
 void writeTexCoords(
   const QuadIter quadIter,
-  const Spritesheet &sheet,
-  const SpriteID sprite
+  const Sheet &sheet,
+  const Sprite::ID sprite
 ) {
-  const Unpack::Rect rect = sheet.getSprite(sprite);
+  const Sprite::Rect rect = sheet.getSprite(sprite);
   
   Quad &quad = *quadIter;
   quad[0].texCoord = rect.min;

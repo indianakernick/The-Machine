@@ -10,13 +10,12 @@
 #define rendering_helpers_hpp
 
 #include "rendering types.hpp"
-#include <Simpleton/Unpack/sheet.hpp>
+#include <Simpleton/Sprite/sheet.hpp>
 #include "sprite position component.hpp"
 
-using Unpack::Spritesheet;
-using Unpack::SpriteID;
+using Sprite::Sheet;
 
 void writePos(QuadIter, SpritePosition);
-void writeTexCoords(QuadIter, const Spritesheet &, SpriteID);
+void writeTexCoords(QuadIter, const Sheet &, Sprite::ID);
 
 #endif

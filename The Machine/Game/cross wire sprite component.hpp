@@ -10,13 +10,13 @@
 #define cross_wire_sprite_component_hpp
 
 #include <Simpleton/Data/json.hpp>
-#include <Simpleton/Unpack/types.hpp>
+#include <Simpleton/Sprite/types.hpp>
 
 struct CrossWireSprite {
-  Unpack::SpriteID both;
-  Unpack::SpriteID inverted;
-  Unpack::SpriteID horiOff;
-  Unpack::SpriteID horiOn;
+  Sprite::ID both;
+  Sprite::ID inverted;
+  Sprite::ID horiOff;
+  Sprite::ID horiOn;
   
   static void init(CrossWireSprite &comp, const json &node) {
     Data::get(comp.both, node, "both");

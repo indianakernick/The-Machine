@@ -10,10 +10,10 @@
 #define power_sprite_component_hpp
 
 #include <Simpleton/Data/json.hpp>
-#include <Simpleton/Unpack/types.hpp>
+#include <Simpleton/Sprite/types.hpp>
 
 struct Anim {
-  Unpack::SpriteID start;
+  Sprite::ID start;
   int dir;
 };
 

@@ -12,7 +12,7 @@
 #include "cross wire sprite component.hpp"
 
 namespace {
-  using Anim = Unpack::SpriteID CrossWireSprite::*;
+  using Anim = Sprite::ID CrossWireSprite::*;
   constexpr Anim BOTH = &CrossWireSprite::both;
   constexpr Anim INVERTED = &CrossWireSprite::inverted;
   constexpr Anim HORI_OFF = &CrossWireSprite::horiOff;
@@ -81,7 +81,7 @@ namespace {
 CrossWireSpriteWriter::CrossWireSpriteWriter(
   const TextureID tex,
   std::shared_ptr<ECS::Registry> registry,
-  std::shared_ptr<Spritesheet> sheet
+  std::shared_ptr<Sheet> sheet
 ) : tex(tex),
     registry(registry),
     sheet(sheet) {}
@@ -99,7 +99,7 @@ void CrossWireSpriteWriter::writeQuads(QuadIter quadIter, const Frame frame) con
                         cross.hori.curr;
     const Row row = TABLE[key];
     spritePos.orient = row.orient;
-    const Unpack::SpriteID animFrame = sprite.*(row.anim) + row.start + frame * row.dir;
+    const Sprite::ID animFrame = sprite.*(row.anim) + row.start + frame * row.dir;
     
     writePos(quadIter, spritePos);
     writeTexCoords(quadIter, *sheet, animFrame);

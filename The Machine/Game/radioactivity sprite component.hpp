@@ -10,10 +10,10 @@
 #define radioactivity_sprite_component_hpp
 
 #include <Simpleton/Data/json.hpp>
-#include <Simpleton/Unpack/types.hpp>
+#include <Simpleton/Sprite/types.hpp>
 
 struct RadioactivitySprite {
-  Unpack::SpriteID sprite;
+  Sprite::ID sprite;
   
   static void init(RadioactivitySprite &comp, const json &node) {
     Data::get(comp.sprite, node, "sprite");

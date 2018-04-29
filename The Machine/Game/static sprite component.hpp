@@ -11,13 +11,13 @@
 
 #include "frame type.hpp"
 #include <Simpleton/Data/json.hpp>
-#include <Simpleton/Unpack/types.hpp>
+#include <Simpleton/Sprite/types.hpp>
 
 struct StaticSprite {
   Frame frame = 0;
   Frame repeats = 0;
   Frame ticks;
-  Unpack::SpriteID sprite;
+  Sprite::ID sprite;
   
   static void init(StaticSprite &comp, const json &node) {
     Data::get(comp.sprite, node, "sprite");

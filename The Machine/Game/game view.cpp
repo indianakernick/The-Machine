@@ -20,7 +20,7 @@ void GameView::init(RenderingSystem &rendering, std::shared_ptr<ECS::Registry> r
   
   const TextureID tex = rendering.addTexture("sprites.png");
   const std::string atlasPath = SDL::getResDir() + "sprites.atlas";
-  sheet = std::make_shared<Spritesheet>(Unpack::makeSpritesheet(atlasPath));
+  sheet = std::make_shared<Sheet>(Sprite::makeSheet(atlasPath));
   
   writers.push_back(rendering.addWriter<PowerSpriteWriter>(tex, registry, sheet));
   writers.push_back(rendering.addWriter<StaticSpriteWriter>(tex, registry, sheet));
