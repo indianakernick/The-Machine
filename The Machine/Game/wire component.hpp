@@ -10,13 +10,13 @@
 #define wire_component_hpp
 
 #include <Simpleton/Data/json.hpp>
-#include <Simpleton/Math/dir bits.hpp>
+#include <Simpleton/Grid/dir bits.hpp>
 
 struct Wire {
-  Math::DirBits sides;
+  Grid::DirBits sides;
   
   static void init(Wire &comp, const json &node) {
-    comp.sides = static_cast<Math::DirBits>(node.at("sides").get<Math::DirType>());
+    comp.sides = static_cast<Grid::DirBits>(node.at("sides").get<Grid::DirType>());
   }
 };
 

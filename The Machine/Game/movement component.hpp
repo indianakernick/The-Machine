@@ -9,11 +9,11 @@
 #ifndef movement_component_hpp
 #define movement_component_hpp
 
-#include <Simpleton/Math/dir.hpp>
+#include <Simpleton/Grid/dir.hpp>
 
 struct Movement {
-  Math::Dir desiredDir = Math::Dir::NONE;
-  Math::Dir realDir = Math::Dir::NONE;
+  Grid::Dir desiredDir = Grid::Dir::NONE;
+  Grid::Dir realDir = Grid::Dir::NONE;
 };
 
 #endif

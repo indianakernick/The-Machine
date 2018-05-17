@@ -18,24 +18,24 @@ namespace {
       case GateFun::AND:
         return input.states == input.sides;
       case GateFun::OR:
-        return Math::any(input.states);
+        return Grid::any(input.states);
       case GateFun::XOR:
-        return Math::count(input.states) == 1;
+        return Grid::count(input.states) == 1;
       case GateFun::NOT:
-        if (Math::count(input.sides) == 1) {
-          return Math::none(input.states);
+        if (Grid::count(input.sides) == 1) {
+          return Grid::none(input.states);
         } else {
           throw std::runtime_error("NOT function expects single input");
         }
       case GateFun::NAND:
         return input.states != input.sides;
       case GateFun::NOR:
-        return Math::none(input.states);
+        return Grid::none(input.states);
       case GateFun::XNOR:
-        return Math::count(input.states) != 1;
+        return Grid::count(input.states) != 1;
       case GateFun::IDENTITY:
-        if (Math::count(input.sides) == 1) {
-          return Math::any(input.states);
+        if (Grid::count(input.sides) == 1) {
+          return Grid::any(input.states);
         } else {
           throw std::runtime_error("IDENTITY function expects single input");
         }

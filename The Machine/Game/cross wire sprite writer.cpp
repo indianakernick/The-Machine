@@ -18,15 +18,15 @@ namespace {
   constexpr Anim HORI_OFF = &CrossWireSprite::horiOff;
   constexpr Anim HORI_ON = &CrossWireSprite::horiOn;
   
-  constexpr Math::Dir UP = Math::Dir::UP;
-  constexpr Math::Dir RIGHT = Math::Dir::RIGHT;
+  constexpr Grid::Dir UP = Grid::Dir::UP;
+  constexpr Grid::Dir RIGHT = Grid::Dir::RIGHT;
   
   constexpr Frame BEGIN = 0;
   constexpr Frame END = FRAMES_PER_TICK;
   
   struct Row {
     Anim anim;
-    Math::Dir orient;
+    Grid::Dir orient;
     Frame start;
     int dir;
   };

@@ -10,9 +10,9 @@
 #define dir_to_vec_hpp
 
 #include "position type.hpp"
-#include <Simpleton/Math/dir.hpp>
+#include <Simpleton/Grid/dir.hpp>
 
-using ToVec = Math::ToVec<Coord, Math::Dir::RIGHT, Math::Dir::UP>;
-using ToFloatVec = Math::ToVec<float, ToVec::PLUS_X, ToVec::PLUS_Y>;
+using ToVec = Grid::ToVec<Coord, Grid::Dir::RIGHT, Grid::Dir::UP>;
+using ToFloatVec = Grid::ToVec<float, ToVec::PLUS_X, ToVec::PLUS_Y>;
 
 #endif

@@ -9,14 +9,14 @@
 #ifndef radioactivity_detector_component_hpp
 #define radioactivity_detector_component_hpp
 
-#include <Simpleton/Math/dir.hpp>
+#include <Simpleton/Grid/dir.hpp>
 #include <Simpleton/Data/json.hpp>
 
 struct RadioactivityDetector {
-  Math::Dir side;
+  Grid::Dir side;
   
   static void init(RadioactivityDetector &comp, const json &node) {
-    comp.side = static_cast<Math::Dir>(node.at("side").get<Math::DirType>());
+    comp.side = static_cast<Grid::Dir>(node.at("side").get<Grid::DirType>());
   }
 };
 

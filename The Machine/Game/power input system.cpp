@@ -22,11 +22,11 @@ void powerInputSystem(ECS::Registry &registry, const EntityGrid &grid) {
   for (const ECS::EntityID entity : view) {
     const Pos pos = view.get<Position>(entity).pos;
     PowerInput &input = view.get<PowerInput>(entity);
-    input.states = Math::DirBits::NONE;
+    input.states = Grid::DirBits::NONE;
     
-    for (const Math::Dir dir : Math::DIR_RANGE) {
+    for (const Grid::Dir dir : Grid::DIR_RANGE) {
       // this side must be an input
-      if (!Math::test(input.sides, dir)) {
+      if (!Grid::test(input.sides, dir)) {
         continue;
       }
       
@@ -44,8 +44,8 @@ void powerInputSystem(ECS::Registry &registry, const EntityGrid &grid) {
       
       if (registry.has<PowerOutput>(targetID)) {
         // the target entity must have an output in the opposite direction
-        const Math::DirBits outputSides = registry.get<PowerOutput>(targetID).sides;
-        if (!Math::test(outputSides, Math::opposite(dir))) {
+        const Grid::DirBits outputSides = registry.get<PowerOutput>(targetID).sides;
+        if (!Grid::test(outputSides, Grid::opposite(dir))) {
           continue;
         }
         
@@ -55,11 +55,11 @@ void powerInputSystem(ECS::Registry &registry, const EntityGrid &grid) {
         }
         
         const bool power = registry.get<Power>(targetID).prev;
-        input.states = Math::change(input.states, dir, power);
+        input.states = Grid::change(input.states, dir, power);
       } else if (registry.has<Wire>(targetID)) {
         // the target entity must have a connection in the opposite direction
-        const Math::DirBits wireSides = registry.get<Wire>(targetID).sides;
-        if (!Math::test(wireSides, Math::opposite(dir))) {
+        const Grid::DirBits wireSides = registry.get<Wire>(targetID).sides;
+        if (!Grid::test(wireSides, Grid::opposite(dir))) {
           continue;
         }
         
@@ -69,11 +69,11 @@ void powerInputSystem(ECS::Registry &registry, const EntityGrid &grid) {
         }
         
         const bool power = registry.get<Power>(targetID).prev;
-        input.states = Math::change(input.states, dir, power);
+        input.states = Grid::change(input.states, dir, power);
       } else if (registry.has<CrossWire>(targetID)) {
         const CrossWire cross = registry.get<CrossWire>(targetID);
-        const bool power = (Math::isVert(dir) ? cross.vert : cross.hori).prev;
-        input.states = Math::change(input.states, dir, power);
+        const bool power = (Grid::isVert(dir) ? cross.vert : cross.hori).prev;
+        input.states = Grid::change(input.states, dir, power);
       }
     }
   }

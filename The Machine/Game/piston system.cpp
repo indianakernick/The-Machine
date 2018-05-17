@@ -25,7 +25,7 @@ void pistonSystem(ECS::Registry &registry, const EntityGrid &grid) {
     if (not extended and powered) {
       headView.get<Movement>(entity).desiredDir = piston.dir;
     } else if (extended and not powered) {
-      headView.get<Movement>(entity).desiredDir = Math::opposite(piston.dir);
+      headView.get<Movement>(entity).desiredDir = Grid::opposite(piston.dir);
     }
   }
 }

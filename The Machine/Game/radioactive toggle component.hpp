@@ -9,14 +9,14 @@
 #ifndef radioactive_toggle_component_hpp
 #define radioactive_toggle_component_hpp
 
-#include <Simpleton/Math/dir.hpp>
+#include <Simpleton/Grid/dir.hpp>
 #include <Simpleton/Data/json.hpp>
 
 struct RadioactiveToggle {
-  Math::Dir side;
+  Grid::Dir side;
   
   static void init(RadioactiveToggle &comp, const json &node) {
-    comp.side = static_cast<Math::Dir>(node.at("side").get<Math::DirType>());
+    comp.side = static_cast<Grid::Dir>(node.at("side").get<Grid::DirType>());
   }
 };
 

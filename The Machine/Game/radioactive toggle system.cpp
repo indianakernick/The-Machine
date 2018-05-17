@@ -24,7 +24,7 @@ void radioactiveToggleSystem(ECS::Registry &registry, const EntityGrid &grid) {
     }
     
     const Pos pos = view.get<Position>(entity).pos;
-    const Math::Dir side = view.get<RadioactiveToggle>(entity).side;
+    const Grid::Dir side = view.get<RadioactiveToggle>(entity).side;
     const Pos targetPos = pos + ToVec::conv(side);
     
     if (grid.outOfRange(targetPos)) {

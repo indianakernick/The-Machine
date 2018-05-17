@@ -19,7 +19,7 @@ namespace {
     });
   }
   
-  void setDesiredDir(ECS::Registry &registry, const Math::Dir dir) {
+  void setDesiredDir(ECS::Registry &registry, const Grid::Dir dir) {
     auto view = registry.view<PlayerAction, Movement>();
     view.each([dir] (ECS::EntityID, PlayerAction &, Movement &comp) {
       comp.desiredDir = dir;
@@ -34,7 +34,7 @@ namespace {
 void playerInputResponseSystem(ECS::Registry &registry, const PlayerKeyStates states) {
   setActionState(registry, isEnabled(states.action));
  
-  for (const Math::Dir dir : Math::DIR_RANGE) {
+  for (const Grid::Dir dir : Grid::DIR_RANGE) {
     if (isEnabled(states.dirs[static_cast<size_t>(dir)])) {
       return setDesiredDir(registry, dir);
     }

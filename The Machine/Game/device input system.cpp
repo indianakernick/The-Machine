@@ -15,7 +15,7 @@
 void deviceInputSystem(ECS::Registry &registry) {
   auto view = registry.view<Power, Device, PowerInput>();
   for (const ECS::EntityID entity : view) {
-    const Math::DirBits inputStates = view.get<PowerInput>(entity).states;
-    view.get<Power>(entity).curr = Math::any(inputStates);
+    const Grid::DirBits inputStates = view.get<PowerInput>(entity).states;
+    view.get<Power>(entity).curr = Grid::any(inputStates);
   }
 }

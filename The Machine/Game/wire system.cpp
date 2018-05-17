@@ -21,7 +21,7 @@ namespace {
     ECS::Registry &registry,
     const EntityGrid &grid,
     const Pos pos,
-    const Math::Dir fromPrev // a direction pointing away from the previous wire
+    const Grid::Dir fromPrev // a direction pointing away from the previous wire
   ) {
     // tile must be inside world
     if (grid.outOfRange(pos)) {
@@ -36,7 +36,7 @@ namespace {
     
     if (registry.has<Wire>(entity)) {
       const Wire wire = registry.get<Wire>(entity);
-      if (!Math::test(wire.sides, Math::opposite(fromPrev))) {
+      if (!Grid::test(wire.sides, Grid::opposite(fromPrev))) {
         return;
       }
     
@@ -46,14 +46,14 @@ namespace {
       }
       power.curr = true;
       
-      for (const Math::Dir dir : Math::DIR_RANGE) {
-        if (Math::test(wire.sides, dir)) {
+      for (const Grid::Dir dir : Grid::DIR_RANGE) {
+        if (Grid::test(wire.sides, dir)) {
           propagatePower(registry, grid, pos + ToVec::conv(dir), dir);
         }
       }
     } else if (registry.has<CrossWire>(entity)) {
       CrossWire &cross = registry.get<CrossWire>(entity);
-      if (Math::isVert(fromPrev)) {
+      if (Grid::isVert(fromPrev)) {
         if (cross.vert.curr) {
           return;
         }
@@ -77,10 +77,10 @@ void wireSystem(ECS::Registry &registry, const EntityGrid &grid) {
     }
     
     const Pos pos = outputView.get<Position>(entity).pos;
-    const Math::DirBits outputSides = outputView.get<PowerOutput>(entity).sides;
+    const Grid::DirBits outputSides = outputView.get<PowerOutput>(entity).sides;
     
-    for (const Math::Dir dir : Math::DIR_RANGE) {
-      if (Math::test(outputSides, dir)) {
+    for (const Grid::Dir dir : Grid::DIR_RANGE) {
+      if (Grid::test(outputSides, dir)) {
         propagatePower(registry, grid, pos + ToVec::conv(dir), dir);
       }
     }

@@ -18,7 +18,7 @@ void radioactivityDetectorSystem(ECS::Registry &registry, const EntityGrid &grid
   auto view = registry.view<Power, Position, RadioactivityDetector>();
   for (const ECS::EntityID entity : view) {
     const Pos pos = view.get<Position>(entity).pos;
-    const Math::Dir side = view.get<RadioactivityDetector>(entity).side;
+    const Grid::Dir side = view.get<RadioactivityDetector>(entity).side;
     const Pos targetPos = pos + ToVec::conv(side);
     
     if (grid.outOfRange(targetPos)) {

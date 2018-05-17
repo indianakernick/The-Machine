@@ -11,7 +11,7 @@
 
 #include <Simpleton/ECS/registry.hpp>
 
-// set Movement::desiredDir to Math::Dir::NONE
+// set Movement::desiredDir to Grid::Dir::NONE
 void clearDesiredDirSystem(ECS::Registry &);
 
 #endif

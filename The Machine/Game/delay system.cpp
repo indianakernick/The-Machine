@@ -17,7 +17,7 @@ void delaySystem(ECS::Registry &registry) {
   
   for (const ECS::EntityID entity : view) {
     Delay &delay = view.get<Delay>(entity);
-    const bool input = Math::any(view.get<PowerInput>(entity).states);
+    const bool input = Grid::any(view.get<PowerInput>(entity).states);
     bool output = false;
     
     if (delay.state == Delay::State::LOW) {
