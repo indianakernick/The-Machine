@@ -7,7 +7,7 @@
 //
 
 #include <fstream>
-#include <Simpleton/Utils/type list.hpp>
+#include <Simpleton/Type List/get.hpp>
 
 namespace detail {
   template <typename Comp>
@@ -28,10 +28,10 @@ namespace detail {
   void loadEntity(ECS::Registry &registry, const json &node, const ECS::EntityID entity) {
     const json::object_t &obj = node.get_ref<const json::object_t &>();
     for (auto &pair : obj) {
-      const bool gotComp = Utils::getByName<CompList>(
+      const bool gotComp = List::getByName<CompList>(
         pair.first,
         [&registry, &props = pair.second, entity] (auto t) {
-          init(registry.assign<UTILS_TYPE(t)>(entity), props);
+          init(registry.assign<LIST_TYPE(t)>(entity), props);
         }
       );
       if (!gotComp) {

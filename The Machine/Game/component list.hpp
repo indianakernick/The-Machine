@@ -30,7 +30,7 @@
 #include "player action component.hpp"
 #include "signal channel component.hpp"
 #include "pressure plate component.hpp"
-#include <Simpleton/Utils/type list.hpp>
+#include <Simpleton/Type List/type.hpp>
 #include "signal receiver component.hpp"
 #include "sprite position component.hpp"
 #include "static collision component.hpp"
@@ -41,7 +41,7 @@
 #include "radioactivity sprite component.hpp"
 #include "radioactivity detector component.hpp"
 
-using CompList = Utils::TypeList<
+using CompList = List::Type<
   Exit,
   Gate,
   Wire,
