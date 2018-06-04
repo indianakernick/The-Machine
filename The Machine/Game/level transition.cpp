@@ -41,7 +41,12 @@ bool LevelTransition::isHalfway() const {
 
 void LevelTransition::render(RenderingSystem &rendering) {
   if (running) {
-    rendering.render(writer, {}, frame);
+    static constexpr glm::mat3 I {
+      {1, 0, 0},
+      {0, 1, 0},
+      {0, 0, 1}
+    };
+    rendering.render(writer, I, frame);
     if (frame == DURATION) {
       running = false;
     } else {
