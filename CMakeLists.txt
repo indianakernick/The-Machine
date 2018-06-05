@@ -13,30 +13,6 @@ else()
     set(EXTRA_FLAGS "-s DEMANGLE_SUPPORT=1")
 endif()
 
-set(PRELOADED_FILES " \
-        --preload-file '${RES_PATH}/sprites.atlas@sprites.atlas' \
-        --preload-file '${RES_PATH}/sprites.png@sprites.png' \
-        --preload-file '${RES_PATH}/title\ screen.atlas@title\ screen.atlas' \
-        --preload-file '${RES_PATH}/title\ screen.png@title\ screen.png' \
-        --preload-file '${RES_PATH}/white.png@white.png' \
-        --preload-file '${RES_PATH}/level\ 0.json@level\ 0.json' \
-        --preload-file '${RES_PATH}/level\ 1.json@level\ 1.json' \
-        --preload-file '${RES_PATH}/level\ 2.json@level\ 2.json' \
-        --preload-file '${RES_PATH}/level\ 3.json@level\ 3.json' \
-        --preload-file '${RES_PATH}/level\ 4.json@level\ 4.json' \
-        --preload-file '${RES_PATH}/level\ 5.json@level\ 5.json' \
-        --preload-file '${RES_PATH}/level\ 6.json@level\ 6.json' \
-        --preload-file '${RES_PATH}/level\ 7.json@level\ 7.json' \
-        --preload-file '${RES_PATH}/level\ 8.json@level\ 8.json' \
-        --preload-file '${RES_PATH}/level\ 9.json@level\ 9.json' \
-        --preload-file '${RES_PATH}/level\ 10.json@level\ 10.json' \
-        --preload-file '${RES_PATH}/level\ 11.json@level\ 11.json' \
-        --preload-file '${RES_PATH}/level\ 12.json@level\ 12.json' \
-        --preload-file '${RES_PATH}/level\ 13.json@level\ 13.json' \
-        --preload-file '${RES_PATH}/level\ 14.json@level\ 14.json' \
-        --preload-file '${RES_PATH}/level\ 15.json@level\ 15.json' \
-        --preload-file '${RES_PATH}/level\ 16.json@level\ 16.json' ")
-
 set(LINKER_FLAGS " \
   ${EXTRA_FLAGS} \
   -s USE_WEBGL2=1 \
@@ -45,7 +21,7 @@ set(LINKER_FLAGS " \
   -s DISABLE_EXCEPTION_CATCHING=0 \
   --pre-js '${PROJECT_SOURCE_DIR}/Webpage/init.js' \
   --shell-file '${PROJECT_SOURCE_DIR}/Webpage/index.html' \
-  ${PRELOADED_FILES} \
+  --preload-file '${RES_PATH}@/' \
 ")
 set(CMAKE_CXX_FLAGS " \
   ${EXTRA_FLAGS} \
