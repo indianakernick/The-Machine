@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(The_Machine)
 
 set(CMAKE_CXX_STANDARD 17)
-set(EMSCRIPTEN_CC /usr/local/Cellar/emscripten/1.37.37/libexec/emcc)
+set(EMSCRIPTEN_CC /usr/local/bin/emcc)
 set(CMAKE_CXX_COMPILER ${EMSCRIPTEN_CC})
 set(CMAKE_C_COMPILER ${EMSCRIPTEN_CC})
 set(RES_PATH /Users/indikernick/Library/Developer/Xcode/DerivedData/The_Machine-blavwwftgvhrjubxbfltzclqnxqi/Build/Products/Release/The\ Machine.app/Contents/Resources)

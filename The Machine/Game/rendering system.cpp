@@ -25,7 +25,7 @@ namespace {
   ///Byte size of a quad in a GL_ELEMENT_ARRAY_BUFFER
   constexpr size_t QUAD_ELEM_SIZE = sizeof(ElemType) * QUAD_INDICIES;
   
-  using Attribs = std::tuple<PosType, TexCoordType>;
+  using Attribs = List::Type<PosType, TexCoordType>;
 
   const char CORE_SHADER_VERSION[] = "#version 330 core\n";
   const char ES_SHADER_VERSION[] = "#version 300 es\nprecision mediump float;\n";
