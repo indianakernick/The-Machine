@@ -15,7 +15,7 @@
 void updatePosSystem(ECS::Registry &registry, EntityGrid &grid) {
   const size_t length = grid.length();
   for (size_t i = 0; i != length; ++i) {
-    grid[i].dynamicID = ECS::NULL_ENTITY;
+    grid[i].dynamicID = entt::null;
   }
   
   auto view = registry.view<Movement, Position>();

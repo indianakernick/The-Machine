@@ -18,7 +18,7 @@ bool exitSystem(ECS::Registry &registry, const EntityGrid &grid) {
     const Pos pos = view.get<Position>(entity).pos;
     
     const ECS::EntityID playerID = grid[pos].dynamicID;
-    if (playerID == ECS::NULL_ENTITY) {
+    if (playerID == entt::null) {
       continue;
     }
     

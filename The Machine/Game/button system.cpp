@@ -19,7 +19,7 @@ void buttonSystem(ECS::Registry &registry, const EntityGrid &grid) {
     const Pos pos = view.get<Position>(entity).pos;
     const ECS::EntityID targetID = grid[pos].dynamicID;
     
-    if (targetID == ECS::NULL_ENTITY) {
+    if (targetID == entt::null) {
       continue;
     }
     

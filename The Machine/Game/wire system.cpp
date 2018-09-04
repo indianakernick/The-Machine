@@ -30,7 +30,7 @@ namespace {
     
     // tile must have a static entity
     const ECS::EntityID entity = grid[pos].staticID;
-    if (entity == ECS::NULL_ENTITY) {
+    if (entity == entt::null) {
       return;
     }
     

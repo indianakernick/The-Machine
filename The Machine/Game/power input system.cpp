@@ -38,7 +38,7 @@ void powerInputSystem(ECS::Registry &registry, const EntityGrid &grid) {
       
       // the target tile must contain a static entity
       const ECS::EntityID targetID = grid[targetPos].staticID;
-      if (targetID == ECS::NULL_ENTITY) {
+      if (targetID == entt::null) {
         continue;
       }
       

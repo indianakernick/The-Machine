@@ -15,7 +15,7 @@
 
 namespace {
   ECS::EntityID getDynamic(const EntityGrid &grid, const Pos pos) {
-    return grid.outOfRange(pos) ? ECS::NULL_ENTITY : grid[pos].dynamicID;
+    return grid.outOfRange(pos) ? entt::null : grid[pos].dynamicID;
   }
 
   bool isMovingToPosFromSide(
@@ -25,7 +25,7 @@ namespace {
     const Grid::Dir side
   ) {
     const ECS::EntityID fromID = getDynamic(grid, pos + ToVec::conv(side));
-    if (fromID == ECS::NULL_ENTITY) {
+    if (fromID == entt::null) {
       return false;
     } else {
       return (registry.get<Movement>(fromID).realDir == Grid::opposite(side));
@@ -50,7 +50,7 @@ namespace {
     const Tile targetTile = grid[targetPos];
     
     // static entity in target tile must accept this type of dynamic entity
-    if (targetTile.staticID != ECS::NULL_ENTITY) {
+    if (targetTile.staticID != entt::null) {
       const uint32_t accepts = registry.get<StaticCollision>(targetTile.staticID).accepts;
       if (!(accepts & type)) {
         return false;
@@ -67,7 +67,7 @@ namespace {
     }
     
     // if the target tile has a dynamic entity
-    if (targetTile.dynamicID != ECS::NULL_ENTITY) {
+    if (targetTile.dynamicID != entt::null) {
       // the dynamic entity must allow this entity to push it
       const uint32_t pushedBy = registry.get<DynamicCollision>(targetTile.dynamicID).pushedBy;
       if (!(pushedBy & type)) {
@@ -96,7 +96,7 @@ void moveDirSystem(ECS::Registry &registry, const EntityGrid &grid) {
   for (pos.y = 0; pos.y != size.y; ++pos.y) {
     for (pos.x = 0; pos.x != size.x; ++pos.x) {
       const ECS::EntityID entity = grid[pos].dynamicID;
-      if (entity == ECS::NULL_ENTITY) {
+      if (entity == entt::null) {
         continue;
       }
       const Movement movement = movementView.get(entity);

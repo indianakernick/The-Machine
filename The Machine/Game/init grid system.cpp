@@ -19,7 +19,7 @@ void initGridSystem(ECS::Registry &registry, EntityGrid &grid) {
   for (const ECS::EntityID entity : staticView) {
     const Pos pos = staticView.get<Position>(entity).pos;
     ECS::EntityID &staticID = grid.at(pos).staticID;
-    if (staticID == ECS::NULL_ENTITY) {
+    if (staticID == entt::null) {
       staticID = entity;
     } else {
       throw std::runtime_error("Tried to initialize static entity that was already initialized");
@@ -28,7 +28,7 @@ void initGridSystem(ECS::Registry &registry, EntityGrid &grid) {
   for (const ECS::EntityID entity : dynamicView) {
     const Pos pos = dynamicView.get<Position>(entity).pos;
     ECS::EntityID &dynamicID = grid.at(pos).dynamicID;
-    if (dynamicID == ECS::NULL_ENTITY) {
+    if (dynamicID == entt::null) {
       dynamicID = entity;
     } else {
       throw std::runtime_error("Tried to initialize dynamic entity that was already initialized");

@@ -17,7 +17,7 @@ struct Tile {
   ECS::EntityID dynamicID;
 };
 
-constexpr Tile NULL_TILE = {ECS::NULL_ENTITY, ECS::NULL_ENTITY};
+constexpr Tile NULL_TILE = {entt::null, entt::null};
 
 using Tiles = std::vector<Tile>;
 

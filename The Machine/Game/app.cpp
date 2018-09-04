@@ -15,7 +15,7 @@
 
 bool App::mainloop(const uint64_t deltaNano) {
   PROFILE(App::mainloop);
-  const float deltaSec = deltaNano / 1'000'000'000.0f;
+  const float deltaSec = deltaNano / 1e9f;
     
   const bool ok = input();
   update(deltaSec);

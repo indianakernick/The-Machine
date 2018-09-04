@@ -26,7 +26,7 @@ void radioactivityDetectorSystem(ECS::Registry &registry, const EntityGrid &grid
     }
     
     const ECS::EntityID targetID = grid[targetPos].dynamicID;
-    if (targetID == ECS::NULL_ENTITY) {
+    if (targetID == entt::null) {
       continue;
     }
     
