@@ -20,7 +20,7 @@ void updatePosSystem(ECS::Registry &registry, EntityGrid &grid) {
   
   auto view = registry.view<Movement, Position>();
   for (const ECS::EntityID entity : view) {
-    const Pos dirVec = ToVec::conv(view.get<Movement>(entity).realDir);
+    const Pos dirVec = toVec(view.get<Movement>(entity).realDir);
     Pos &pos = view.get<Position>(entity).pos;
     pos += dirVec;
     grid[pos].dynamicID = entity;

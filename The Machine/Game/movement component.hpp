@@ -12,8 +12,8 @@
 #include <Simpleton/Grid/dir.hpp>
 
 struct Movement {
-  Grid::Dir desiredDir = Grid::Dir::NONE;
-  Grid::Dir realDir = Grid::Dir::NONE;
+  Grid::Dir desiredDir = Grid::Dir::none;
+  Grid::Dir realDir = Grid::Dir::none;
 };
 
 #endif

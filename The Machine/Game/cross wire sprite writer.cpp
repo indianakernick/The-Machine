@@ -18,8 +18,8 @@ namespace {
   constexpr Anim HORI_OFF = &CrossWireSprite::horiOff;
   constexpr Anim HORI_ON = &CrossWireSprite::horiOn;
   
-  constexpr Grid::Dir UP = Grid::Dir::UP;
-  constexpr Grid::Dir RIGHT = Grid::Dir::RIGHT;
+  constexpr Grid::Dir UP = Grid::Dir::up;
+  constexpr Grid::Dir RIGHT = Grid::Dir::right;
   
   constexpr Frame BEGIN = 0;
   constexpr Frame END = FRAMES_PER_TICK;

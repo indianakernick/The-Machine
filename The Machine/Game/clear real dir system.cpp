@@ -13,6 +13,6 @@
 void clearRealDirSystem(ECS::Registry &registry) {
   auto view = registry.view<Movement>();
   for (const ECS::EntityID entity : view) {
-    view.get(entity).realDir = Grid::Dir::NONE;
+    view.get(entity).realDir = Grid::Dir::none;
   }
 }

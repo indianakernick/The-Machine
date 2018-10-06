@@ -12,7 +12,7 @@
 #include "position type.hpp"
 #include <Simpleton/Grid/dir.hpp>
 
-using ToVec = Grid::ToVec<Coord, Grid::Dir::RIGHT, Grid::Dir::UP>;
-using ToFloatVec = Grid::ToVec<float, ToVec::PLUS_X, ToVec::PLUS_Y>;
+constexpr Grid::ToVec<Coord, Grid::Dir::right, Grid::Dir::up> toVec{};
+constexpr Grid::ToVec<float, Grid::Dir::right, Grid::Dir::up> toFloatVec{};
 
 #endif

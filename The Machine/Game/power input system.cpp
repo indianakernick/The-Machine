@@ -22,16 +22,16 @@ void powerInputSystem(ECS::Registry &registry, const EntityGrid &grid) {
   for (const ECS::EntityID entity : view) {
     const Pos pos = view.get<Position>(entity).pos;
     PowerInput &input = view.get<PowerInput>(entity);
-    input.states = Grid::DirBits::NONE;
+    input.states = Grid::DirBits::none;
     
-    for (const Grid::Dir dir : Grid::DIR_RANGE) {
+    for (const Grid::Dir dir : Grid::dir_range) {
       // this side must be an input
       if (!Grid::test(input.sides, dir)) {
         continue;
       }
       
       // the target tile must be within the world
-      const Pos targetPos = pos + ToVec::conv(dir);
+      const Pos targetPos = pos + toVec(dir);
       if (grid.outOfRange(targetPos)) {
         continue;
       }

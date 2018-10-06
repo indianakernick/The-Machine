@@ -15,7 +15,7 @@
 struct SpritePosition {
   glm::vec2 pos = {0.0f, 0.0f};
   float depth;
-  Grid::Dir orient = Grid::Dir::UP;
+  Grid::Dir orient = Grid::Dir::up;
   
   static void init(SpritePosition &comp, const json &node) {
     Data::get(comp.depth, node, "depth");

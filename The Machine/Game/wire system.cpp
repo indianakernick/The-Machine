@@ -46,9 +46,9 @@ namespace {
       }
       power.curr = true;
       
-      for (const Grid::Dir dir : Grid::DIR_RANGE) {
+      for (const Grid::Dir dir : Grid::dir_range) {
         if (Grid::test(wire.sides, dir)) {
-          propagatePower(registry, grid, pos + ToVec::conv(dir), dir);
+          propagatePower(registry, grid, pos + toVec(dir), dir);
         }
       }
     } else if (registry.has<CrossWire>(entity)) {
@@ -64,7 +64,7 @@ namespace {
         }
         cross.hori.curr = true;
       }
-      propagatePower(registry, grid, pos + ToVec::conv(fromPrev), fromPrev);
+      propagatePower(registry, grid, pos + toVec(fromPrev), fromPrev);
     }
   }
 }
@@ -79,9 +79,9 @@ void wireSystem(ECS::Registry &registry, const EntityGrid &grid) {
     const Pos pos = outputView.get<Position>(entity).pos;
     const Grid::DirBits outputSides = outputView.get<PowerOutput>(entity).sides;
     
-    for (const Grid::Dir dir : Grid::DIR_RANGE) {
+    for (const Grid::Dir dir : Grid::dir_range) {
       if (Grid::test(outputSides, dir)) {
-        propagatePower(registry, grid, pos + ToVec::conv(dir), dir);
+        propagatePower(registry, grid, pos + toVec(dir), dir);
       }
     }
   }

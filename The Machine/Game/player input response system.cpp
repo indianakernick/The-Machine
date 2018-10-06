@@ -34,7 +34,7 @@ namespace {
 void playerInputResponseSystem(ECS::Registry &registry, const PlayerKeyStates states) {
   setActionState(registry, isEnabled(states.action));
  
-  for (const Grid::Dir dir : Grid::DIR_RANGE) {
+  for (const Grid::Dir dir : Grid::dir_range) {
     if (isEnabled(states.dirs[static_cast<size_t>(dir)])) {
       return setDesiredDir(registry, dir);
     }

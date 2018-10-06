@@ -13,7 +13,7 @@
 
 namespace {
   constexpr Frame DURATION = 120;
-  constexpr glm::vec3 COLOR = {0.0f, 0.0f, 0.0f};
+  const glm::vec3 COLOR = {0.0f, 0.0f, 0.0f};
 }
 
 void LevelTransition::init(RenderingSystem &rendering) {
@@ -41,7 +41,7 @@ bool LevelTransition::isHalfway() const {
 
 void LevelTransition::render(RenderingSystem &rendering) {
   if (running) {
-    static constexpr glm::mat3 I {
+    static const glm::mat3 I {
       {1, 0, 0},
       {0, 1, 0},
       {0, 0, 1}

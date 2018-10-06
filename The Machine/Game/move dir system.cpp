@@ -24,7 +24,7 @@ namespace {
     const Pos pos,
     const Grid::Dir side
   ) {
-    const ECS::EntityID fromID = getDynamic(grid, pos + ToVec::conv(side));
+    const ECS::EntityID fromID = getDynamic(grid, pos + toVec(side));
     if (fromID == entt::null) {
       return false;
     } else {
@@ -40,7 +40,7 @@ namespace {
     const Grid::Dir dir
   ) {
     const uint32_t type = registry.get<DynamicCollision>(entity).type;
-    const Pos targetPos = pos + ToVec::conv(dir);
+    const Pos targetPos = pos + toVec(dir);
     
     // can't move past the edge of the map
     if (grid.outOfRange(targetPos)) {
@@ -58,11 +58,11 @@ namespace {
     }
     
     // there can't be any dynamic entities moving into the target tile from the left
-    if (isMovingToPosFromSide(registry, grid, targetPos, Grid::Dir::LEFT)) {
+    if (isMovingToPosFromSide(registry, grid, targetPos, Grid::Dir::left)) {
       return false;
     }
     // there can't be any dynamic entities moving into the target tile from below
-    if (isMovingToPosFromSide(registry, grid, targetPos, Grid::Dir::DOWN)) {
+    if (isMovingToPosFromSide(registry, grid, targetPos, Grid::Dir::down)) {
       return false;
     }
     
@@ -100,10 +100,10 @@ void moveDirSystem(ECS::Registry &registry, const EntityGrid &grid) {
         continue;
       }
       const Movement movement = movementView.get(entity);
-      if (movement.desiredDir == Grid::Dir::NONE) {
+      if (movement.desiredDir == Grid::Dir::none) {
         continue;
       }
-      if (movement.realDir != Grid::Dir::NONE) {
+      if (movement.realDir != Grid::Dir::none) {
         continue;
       }
       
