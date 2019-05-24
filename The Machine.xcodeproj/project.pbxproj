@@ -53,6 +53,16 @@
 		455AFF10200212D700739358 /* rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF0C200212D500739358 /* rendering system.cpp */; };
 		455AFF142002132B00739358 /* quad writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF122002132B00739358 /* quad writer.cpp */; };
 		455AFF2F2002E8D300739358 /* static sprite writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 455AFF2D2002E8D300739358 /* static sprite writer.cpp */; };
+		457526D122951B050083E6AB /* 1.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68064201AD172000CF80E /* 1.ogg */; };
+		457526D222951B050083E6AB /* 2.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68067201AD175000CF80E /* 2.ogg */; };
+		457526D322951B050083E6AB /* 3.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68068201AD175000CF80E /* 3.ogg */; };
+		457526D422951B050083E6AB /* 4.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68065201AD174000CF80E /* 4.ogg */; };
+		457526D522951B050083E6AB /* 5.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B6806C201AD177000CF80E /* 5.ogg */; };
+		457526D622951B050083E6AB /* 6.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B6806B201AD177000CF80E /* 6.ogg */; };
+		457526D722951B050083E6AB /* 7.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68066201AD174000CF80E /* 7.ogg */; };
+		457526D822951B050083E6AB /* 8.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68069201AD176000CF80E /* 8.ogg */; };
+		457526D922951B050083E6AB /* 9.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B6806A201AD176000CF80E /* 9.ogg */; };
+		457526DA22951B050083E6AB /* 10.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B6806D201AD178000CF80E /* 10.ogg */; };
 		45B67A14200F21FD000CF80E /* signal channel toggle system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A12200F21FD000CF80E /* signal channel toggle system.cpp */; };
 		45B67A1D200F50DA000CF80E /* level controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A1B200F50DA000CF80E /* level controller.cpp */; };
 		45B67A3C2011876E000CF80E /* transition writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B67A3A2011876E000CF80E /* transition writer.cpp */; };
@@ -69,16 +79,6 @@
 		45B6800E2015A5A7000CF80E /* music.json in Resources */ = {isa = PBXBuildFile; fileRef = 45F62438200DA7B300AEB428 /* music.json */; };
 		45B680192015A5A7000CF80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450759911FFC77E20009B360 /* Assets.xcassets */; };
 		45B680A5201B010A000CF80E /* stb_vorbis.c in Sources */ = {isa = PBXBuildFile; fileRef = 45B680A4201B010A000CF80E /* stb_vorbis.c */; };
-		45B680A7201B18CE000CF80E /* 1.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68064201AD172000CF80E /* 1.ogg */; };
-		45B680A8201B18CE000CF80E /* 2.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68067201AD175000CF80E /* 2.ogg */; };
-		45B680A9201B18CE000CF80E /* 3.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68068201AD175000CF80E /* 3.ogg */; };
-		45B680AA201B18CE000CF80E /* 4.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68065201AD174000CF80E /* 4.ogg */; };
-		45B680AB201B18CE000CF80E /* 5.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B6806C201AD177000CF80E /* 5.ogg */; };
-		45B680AC201B18CE000CF80E /* 6.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B6806B201AD177000CF80E /* 6.ogg */; };
-		45B680AD201B18CE000CF80E /* 7.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68066201AD174000CF80E /* 7.ogg */; };
-		45B680AE201B18CE000CF80E /* 8.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B68069201AD176000CF80E /* 8.ogg */; };
-		45B680AF201B18CE000CF80E /* 9.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B6806A201AD176000CF80E /* 9.ogg */; };
-		45B680B0201B18CE000CF80E /* 10.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 45B6806D201AD178000CF80E /* 10.ogg */; };
 		45F62434200CBBA600AEB428 /* music player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F62432200CBBA600AEB428 /* music player.cpp */; };
 		45F62437200D76BD00AEB428 /* rendering helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F62435200D76BD00AEB428 /* rendering helpers.cpp */; };
 /* End PBXBuildFile section */
@@ -3162,16 +3162,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45B680A7201B18CE000CF80E /* 1.ogg in Resources */,
-				45B680A8201B18CE000CF80E /* 2.ogg in Resources */,
-				45B680A9201B18CE000CF80E /* 3.ogg in Resources */,
-				45B680AA201B18CE000CF80E /* 4.ogg in Resources */,
-				45B680AB201B18CE000CF80E /* 5.ogg in Resources */,
-				45B680AC201B18CE000CF80E /* 6.ogg in Resources */,
-				45B680AD201B18CE000CF80E /* 7.ogg in Resources */,
-				45B680AE201B18CE000CF80E /* 8.ogg in Resources */,
-				45B680AF201B18CE000CF80E /* 9.ogg in Resources */,
-				45B680B0201B18CE000CF80E /* 10.ogg in Resources */,
+				457526D122951B050083E6AB /* 1.ogg in Resources */,
+				457526D222951B050083E6AB /* 2.ogg in Resources */,
+				457526D322951B050083E6AB /* 3.ogg in Resources */,
+				457526D422951B050083E6AB /* 4.ogg in Resources */,
+				457526D522951B050083E6AB /* 5.ogg in Resources */,
+				457526D622951B050083E6AB /* 6.ogg in Resources */,
+				457526D722951B050083E6AB /* 7.ogg in Resources */,
+				457526D822951B050083E6AB /* 8.ogg in Resources */,
+				457526D922951B050083E6AB /* 9.ogg in Resources */,
+				457526DA22951B050083E6AB /* 10.ogg in Resources */,
 				45B680092015A5A7000CF80E /* white.png in Resources */,
 				45B6800A2015A5A7000CF80E /* sprites.atlas in Resources */,
 				45B6800B2015A5A7000CF80E /* sprites.png in Resources */,
@@ -3445,6 +3445,7 @@
 				INFOPLIST_FILE = "The Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-Wall",
@@ -3483,6 +3484,7 @@
 				INFOPLIST_FILE = "The Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-Wall",

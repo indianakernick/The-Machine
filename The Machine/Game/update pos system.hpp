@@ -10,9 +10,9 @@
 #define update_pos_system_hpp
 
 #include "entity grid.hpp"
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 // update Position::pos and EntityGrid according to Movement::realDir
-void updatePosSystem(ECS::Registry &, EntityGrid &);
+void updatePosSystem(entt::registry &, EntityGrid &);
 
 #endif

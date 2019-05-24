@@ -10,9 +10,9 @@
 
 #include "movement component.hpp"
 
-void clearDesiredDirSystem(ECS::Registry &registry) {
+void clearDesiredDirSystem(entt::registry &registry) {
   auto view = registry.view<Movement>();
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     view.get(entity).desiredDir = Grid::Dir::none;
   }
 }

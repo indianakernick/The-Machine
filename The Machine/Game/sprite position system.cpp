@@ -13,9 +13,9 @@
 #include "movement component.hpp"
 #include "sprite position component.hpp"
 
-void spritePositionSystem(ECS::Registry &registry, const Frame frame) {
+void spritePositionSystem(entt::registry &registry, const Frame frame) {
   auto view = registry.view<Position, SpritePosition>();
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     glm::vec2 pos = view.get<Position>(entity).pos;
     
     if (registry.has<Movement>(entity)) {

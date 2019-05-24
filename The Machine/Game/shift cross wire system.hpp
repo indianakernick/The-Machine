@@ -9,10 +9,10 @@
 #ifndef shift_cross_wire_system_hpp
 #define shift_cross_wire_system_hpp
 
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 //Shift the Power components held by the CrossWire component as described in the
 //shiftPowerSystem
-void shiftCrossWireSystem(ECS::Registry &);
+void shiftCrossWireSystem(entt::registry &);
 
 #endif

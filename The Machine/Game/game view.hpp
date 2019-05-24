@@ -12,17 +12,17 @@
 #include "rendering types.hpp"
 #include "rendering system.hpp"
 #include <Simpleton/Sprite/sheet.hpp>
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 #include <Simpleton/Camera 2D/camera.hpp>
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
 
 class GameView {
 public:
-  void init(RenderingSystem &, std::shared_ptr<ECS::Registry>);
+  void init(RenderingSystem &, std::shared_ptr<entt::registry>);
   void quit();
   void onLevelLoad(Pos);
   void updateCam(float, float);
-  void render(RenderingSystem &, ECS::Registry &, Frame);
+  void render(RenderingSystem &, entt::registry &, Frame);
   
 private:
   std::shared_ptr<Sprite::Sheet> sheet;

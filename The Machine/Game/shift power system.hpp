@@ -9,9 +9,9 @@
 #ifndef shift_power_system_hpp
 #define shift_power_system_hpp
 
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 // set Power::prev to Power::curr and set Power::curr to false
-void shiftPowerSystem(ECS::Registry &);
+void shiftPowerSystem(entt::registry &);
 
 #endif

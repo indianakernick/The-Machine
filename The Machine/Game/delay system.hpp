@@ -9,9 +9,9 @@
 #ifndef delay_system_hpp
 #define delay_system_hpp
 
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 //calculate the output of the Delay entity
-void delaySystem(ECS::Registry &);
+void delaySystem(entt::registry &);
 
 #endif

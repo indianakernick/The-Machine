@@ -10,10 +10,10 @@
 #define player_input_response_system_hpp
 
 #include "player key states.hpp"
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 //make the player respond to input by moving and activating entities
 //like switches and buttons
-void playerInputResponseSystem(ECS::Registry &, PlayerKeyStates);
+void playerInputResponseSystem(entt::registry &, PlayerKeyStates);
 
 #endif

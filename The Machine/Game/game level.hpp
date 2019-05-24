@@ -12,7 +12,7 @@
 #include "level manager.hpp"
 #include "component list.hpp"
 #include "level controller.hpp"
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 #include <Simpleton/ECS/progress manager.hpp>
 
 extern "C" union SDL_Event;
@@ -23,13 +23,13 @@ public:
   bool input(const SDL_Event &);
   void advanceLevel();
   bool levelChanged() const;
-  std::experimental::optional<Pos> loadNewLevel(ECS::Registry &);
+  std::optional<Pos> loadNewLevel(entt::registry &);
 
 private:
   LevelManager<CompList> levels;
   ECS::ProgressManager progress;
   LevelController levelControl;
-  std::experimental::optional<ECS::Level> nextLevel;
+  std::optional<ECS::Level> nextLevel;
 };
 
 #endif

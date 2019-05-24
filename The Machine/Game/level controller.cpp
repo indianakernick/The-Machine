@@ -11,7 +11,7 @@
 #include <SDL2/SDL_events.h>
 #include <Simpleton/SDL/events.hpp>
 
-std::experimental::optional<ECS::Level> LevelController::getLevel(
+std::optional<ECS::Level> LevelController::getLevel(
   const SDL_Event &e,
   const ECS::Level current,
   const ECS::Level progress
@@ -67,5 +67,5 @@ std::experimental::optional<ECS::Level> LevelController::getLevel(
     }
   }
   
-  return std::experimental::nullopt;
+  return std::nullopt;
 }

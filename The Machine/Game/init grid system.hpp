@@ -10,9 +10,9 @@
 #define init_grid_system_hpp
 
 #include "entity grid.hpp"
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 // Put all of the entities in to the grid
-void initGridSystem(ECS::Registry &, EntityGrid &);
+void initGridSystem(entt::registry &, EntityGrid &);
 
 #endif

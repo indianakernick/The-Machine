@@ -80,7 +80,7 @@ namespace {
 
 CrossWireSpriteWriter::CrossWireSpriteWriter(
   const TextureID tex,
-  std::shared_ptr<ECS::Registry> registry,
+  std::shared_ptr<entt::registry> registry,
   std::shared_ptr<Sheet> sheet
 ) : tex(tex),
     registry(registry),
@@ -88,7 +88,7 @@ CrossWireSpriteWriter::CrossWireSpriteWriter(
 
 void CrossWireSpriteWriter::writeQuads(QuadIter quadIter, const Frame frame) const {
   const auto view = registry->view<CrossWire, CrossWireSprite, SpritePosition>();
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     const CrossWire cross = view.get<CrossWire>(entity);
     const CrossWireSprite sprite = view.get<CrossWireSprite>(entity);
     SpritePosition spritePos = view.get<SpritePosition>(entity);

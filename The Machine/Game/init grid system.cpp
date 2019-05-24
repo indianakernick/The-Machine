@@ -12,22 +12,22 @@
 #include "static collision component.hpp"
 #include "dynamic collision component.hpp"
 
-void initGridSystem(ECS::Registry &registry, EntityGrid &grid) {
+void initGridSystem(entt::registry &registry, EntityGrid &grid) {
   const auto staticView = registry.view<Position, StaticCollision>();
   const auto dynamicView = registry.view<Position, DynamicCollision>();
   
-  for (const ECS::EntityID entity : staticView) {
+  for (const entt::entity entity : staticView) {
     const Pos pos = staticView.get<Position>(entity).pos;
-    ECS::EntityID &staticID = grid.at(pos).staticID;
+    entt::entity &staticID = grid.at(pos).staticID;
     if (staticID == entt::null) {
       staticID = entity;
     } else {
       throw std::runtime_error("Tried to initialize static entity that was already initialized");
     }
   }
-  for (const ECS::EntityID entity : dynamicView) {
+  for (const entt::entity entity : dynamicView) {
     const Pos pos = dynamicView.get<Position>(entity).pos;
-    ECS::EntityID &dynamicID = grid.at(pos).dynamicID;
+    entt::entity &dynamicID = grid.at(pos).dynamicID;
     if (dynamicID == entt::null) {
       dynamicID = entity;
     } else {

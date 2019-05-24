@@ -15,12 +15,12 @@
 #include "cross wire sprite writer.hpp"
 #include "radioactivity sprite writer.hpp"
 
-void GameView::init(RenderingSystem &rendering, std::shared_ptr<ECS::Registry> registry) {
+void GameView::init(RenderingSystem &rendering, std::shared_ptr<entt::registry> registry) {
   camera.transform.setOrigin(Cam2D::Origin::CENTER);
   
   const TextureID tex = rendering.addTexture("sprites.png");
   const std::string atlasPath = SDL::getResDir() + "sprites.atlas";
-  sheet = std::make_shared<Sheet>(Sprite::makeSheet(atlasPath));
+  sheet = std::make_shared<Sheet>(Sprite::makeSheetFromFile(atlasPath));
   
   writers.push_back(rendering.addWriter<PowerSpriteWriter>(tex, registry, sheet));
   writers.push_back(rendering.addWriter<StaticSpriteWriter>(tex, registry, sheet));
@@ -41,7 +41,7 @@ void GameView::updateCam(const float aspect, const float delta) {
   camera.update({aspect, delta}, zoomToFit);
 }
 
-void GameView::render(RenderingSystem &rendering, ECS::Registry &registry, const Frame frame) {
+void GameView::render(RenderingSystem &rendering, entt::registry &registry, const Frame frame) {
   spritePositionSystem(registry, frame);
   rendering.render(writers, camera.transform.toPixels(), frame);
 }

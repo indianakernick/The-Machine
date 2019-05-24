@@ -10,9 +10,9 @@
 
 #include "power component.hpp"
 
-void shiftPowerSystem(ECS::Registry &registry) {
+void shiftPowerSystem(entt::registry &registry) {
   auto view = registry.view<Power>();
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     Power &power = view.get(entity);
     power.prev = power.curr;
     power.curr = false;

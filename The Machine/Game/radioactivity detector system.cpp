@@ -14,9 +14,9 @@
 #include "radioactivity component.hpp"
 #include "radioactivity detector component.hpp"
 
-void radioactivityDetectorSystem(ECS::Registry &registry, const EntityGrid &grid) {
+void radioactivityDetectorSystem(entt::registry &registry, const EntityGrid &grid) {
   auto view = registry.view<Power, Position, RadioactivityDetector>();
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     const Pos pos = view.get<Position>(entity).pos;
     const Grid::Dir side = view.get<RadioactivityDetector>(entity).side;
     const Pos targetPos = pos + toVec(side);
@@ -25,7 +25,7 @@ void radioactivityDetectorSystem(ECS::Registry &registry, const EntityGrid &grid
       continue;
     }
     
-    const ECS::EntityID targetID = grid[targetPos].dynamicID;
+    const entt::entity targetID = grid[targetPos].dynamicID;
     if (targetID == entt::null) {
       continue;
     }

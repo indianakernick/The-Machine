@@ -14,9 +14,9 @@
 #include "radioactivity component.hpp"
 #include "radioactive toggle component.hpp"
 
-void radioactiveToggleSystem(ECS::Registry &registry, const EntityGrid &grid) {
+void radioactiveToggleSystem(entt::registry &registry, const EntityGrid &grid) {
   auto view = registry.view<Power, Position, RadioactiveToggle>();
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     const Power power = view.get<Power>(entity);
     //enabled on the falling edge
     if (!(power.prev && !power.curr)) {
@@ -31,7 +31,7 @@ void radioactiveToggleSystem(ECS::Registry &registry, const EntityGrid &grid) {
       continue;
     }
     
-    const ECS::EntityID targetID = grid[targetPos].dynamicID;
+    const entt::entity targetID = grid[targetPos].dynamicID;
     if (targetID == entt::null) {
       continue;
     }

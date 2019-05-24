@@ -10,9 +10,9 @@
 #define wire_system_hpp
 
 #include "entity grid.hpp"
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 // propagate power from PowerOutputs to PowerInputs through Wires
-void wireSystem(ECS::Registry &, const EntityGrid &);
+void wireSystem(entt::registry &, const EntityGrid &);
 
 #endif

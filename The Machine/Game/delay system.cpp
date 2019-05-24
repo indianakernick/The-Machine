@@ -12,10 +12,10 @@
 #include "power component.hpp"
 #include "power input component.hpp"
 
-void delaySystem(ECS::Registry &registry) {
+void delaySystem(entt::registry &registry) {
   auto view = registry.view<Delay, Power, PowerInput>();
   
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     Delay &delay = view.get<Delay>(entity);
     const bool input = Grid::any(view.get<PowerInput>(entity).states);
     bool output = false;

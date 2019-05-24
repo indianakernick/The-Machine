@@ -10,11 +10,11 @@
 #define entity_grid_hpp
 
 #include "position type.hpp"
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 struct Tile {
-  ECS::EntityID staticID;
-  ECS::EntityID dynamicID;
+  entt::entity staticID;
+  entt::entity dynamicID;
 };
 
 constexpr Tile NULL_TILE = {entt::null, entt::null};

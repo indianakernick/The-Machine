@@ -10,9 +10,9 @@
 #define power_input_system_hpp
 
 #include "entity grid.hpp"
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 // read power state from input sides and set input state
-void powerInputSystem(ECS::Registry &, const EntityGrid &);
+void powerInputSystem(entt::registry &, const EntityGrid &);
 
 #endif

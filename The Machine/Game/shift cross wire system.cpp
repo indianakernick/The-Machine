@@ -17,9 +17,9 @@ namespace {
   }
 }
 
-void shiftCrossWireSystem(ECS::Registry &registry) {
+void shiftCrossWireSystem(entt::registry &registry) {
   auto view = registry.view<CrossWire>();
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     CrossWire &cross = view.get(entity);
     shift(cross.vert);
     shift(cross.hori);

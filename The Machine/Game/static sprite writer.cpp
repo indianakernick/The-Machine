@@ -12,7 +12,7 @@
 
 StaticSpriteWriter::StaticSpriteWriter(
   const TextureID tex,
-  std::shared_ptr<ECS::Registry> registry,
+  std::shared_ptr<entt::registry> registry,
   std::shared_ptr<Sheet> sheet
 ) : tex(tex),
     registry(registry),
@@ -20,7 +20,7 @@ StaticSpriteWriter::StaticSpriteWriter(
 
 void StaticSpriteWriter::writeQuads(QuadIter quadIter, Frame) const {
   auto view = registry->view<StaticSprite, SpritePosition>();
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     StaticSprite &sprite = view.get<StaticSprite>(entity);
     const Sprite::ID spriteID = sprite.sprite + sprite.frame;
     /*

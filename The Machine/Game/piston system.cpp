@@ -13,12 +13,12 @@
 #include "position component.hpp"
 #include "movement component.hpp"
 
-void pistonSystem(ECS::Registry &registry, const EntityGrid &grid) {
+void pistonSystem(entt::registry &registry, const EntityGrid &grid) {
   auto headView = registry.view<Piston, Position, Movement>();
-  for (const ECS::EntityID entity : headView) {
+  for (const entt::entity entity : headView) {
     const Pos pos = headView.get<Position>(entity).pos;
     const Piston piston = headView.get<Piston>(entity);
-    const ECS::EntityID baseID = grid[piston.basePos].staticID;
+    const entt::entity baseID = grid[piston.basePos].staticID;
     const bool extended = piston.basePos != pos;
     const bool powered = registry.get<Power>(baseID).curr;
     

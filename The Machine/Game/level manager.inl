@@ -25,13 +25,17 @@ namespace detail {
   }
 
   template <typename CompList>
-  void loadEntity(ECS::Registry &registry, const json &node, const ECS::EntityID entity) {
+  void loadEntity(entt::registry &registry, const json &node, const entt::entity entity) {
     const json::object_t &obj = node.get_ref<const json::object_t &>();
     for (auto &pair : obj) {
       const bool gotComp = List::getByName<CompList>(
         pair.first,
         [&registry, &props = pair.second, entity] (auto t) {
-          init(registry.assign<LIST_TYPE(t)>(entity), props);
+          if constexpr (std::is_empty_v<LIST_TYPE(t)>) {
+            registry.assign<LIST_TYPE(t)>(entity);
+          } else {
+            init(registry.assign<LIST_TYPE(t)>(entity), props);
+          }
         }
       );
       if (!gotComp) {
@@ -46,12 +50,12 @@ namespace detail {
 
   template <typename CompList>
   OptionalObject load(
-    ECS::Registry &registry,
+    entt::registry &registry,
     const std::string &path
   ) {
     std::ifstream file(path);
     if (!file.is_open()) {
-      return std::experimental::nullopt;
+      return std::nullopt;
     }
     json root;
     file >> root;
@@ -61,7 +65,7 @@ namespace detail {
     
     const auto &entities = root.at("entities").get_ref<const json::array_t &>();
     for (const json &entityNode : entities) {
-      const ECS::EntityID entity = registry.create();
+      const entt::entity entity = registry.create();
       loadEntity<CompList>(registry, entityNode.at("components"), entity);
     }
     
@@ -71,7 +75,7 @@ namespace detail {
 
 template <typename CompList>
 OptionalObject LevelManager<CompList>::load(
-  ECS::Registry &registry,
+  entt::registry &registry,
   const ECS::Level newLevel
 ) {
   if (currentLevel != ECS::NULL_LEVEL) {

@@ -12,9 +12,9 @@
 #include "device component.hpp"
 #include "power input component.hpp"
 
-void deviceInputSystem(ECS::Registry &registry) {
+void deviceInputSystem(entt::registry &registry) {
   auto view = registry.view<Power, Device, PowerInput>();
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     const Grid::DirBits inputStates = view.get<PowerInput>(entity).states;
     view.get<Power>(entity).curr = Grid::any(inputStates);
   }

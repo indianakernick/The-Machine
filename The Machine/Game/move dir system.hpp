@@ -10,9 +10,9 @@
 #define move_dir_system_hpp
 
 #include "entity grid.hpp"
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 // calculate Movement::realDir from Movement::desiredDir and collisions
-void moveDirSystem(ECS::Registry &, const EntityGrid &);
+void moveDirSystem(entt::registry &, const EntityGrid &);
 
 #endif

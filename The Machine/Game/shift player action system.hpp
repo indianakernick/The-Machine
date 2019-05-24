@@ -9,9 +9,9 @@
 #ifndef shift_player_action_system_hpp
 #define shift_player_action_system_hpp
 
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 // set PlayerAction::prev to PlayerAction::curr
-void shiftPlayerActionSystem(ECS::Registry &);
+void shiftPlayerActionSystem(entt::registry &);
 
 #endif

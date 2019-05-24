@@ -10,17 +10,17 @@
 #define level_manager_hpp
 
 #include <string>
-#include <experimental/optional>
+#include <optional>
 #include <Simpleton/Data/json.hpp>
 #include <Simpleton/ECS/level.hpp>
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
-using OptionalObject = std::experimental::optional<json::object_t>;
+using OptionalObject = std::optional<json::object_t>;
 
 template <typename CompList>
 class LevelManager {
 public:
-  OptionalObject load(ECS::Registry &, ECS::Level);
+  OptionalObject load(entt::registry &, ECS::Level);
   ECS::Level current() const;
   bool loaded() const;
   void setPath(const std::string &);

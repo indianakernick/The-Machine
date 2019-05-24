@@ -9,10 +9,10 @@
 #ifndef signal_receiver_system_hpp
 #define signal_receiver_system_hpp
 
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 // sets the power output of a receiver based on the power input and a
 // transmitter on the same channel
-void signalReceiverSystem(ECS::Registry &);
+void signalReceiverSystem(entt::registry &);
 
 #endif

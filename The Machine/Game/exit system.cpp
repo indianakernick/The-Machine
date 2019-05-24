@@ -12,12 +12,12 @@
 #include "position component.hpp"
 #include "player action component.hpp"
 
-bool exitSystem(ECS::Registry &registry, const EntityGrid &grid) {
+bool exitSystem(entt::registry &registry, const EntityGrid &grid) {
   const auto view = registry.view<Exit, Position>();
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     const Pos pos = view.get<Position>(entity).pos;
     
-    const ECS::EntityID playerID = grid[pos].dynamicID;
+    const entt::entity playerID = grid[pos].dynamicID;
     if (playerID == entt::null) {
       continue;
     }

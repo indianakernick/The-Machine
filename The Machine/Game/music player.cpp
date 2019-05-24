@@ -8,24 +8,25 @@
 
 #include "music player.hpp"
 
-#ifdef EMSCRIPTEN
-
-void MusicPlayer::init() {};
-    void MusicPlayer::quit() {};
-
-    void MusicPlayer::togglePlaying() {};
-
-    void MusicPlayer::nextSong() {};
-    void MusicPlayer::fillAudioBuffer(uint8_t *, int) {};
-
-#else
-
 #include <cassert>
 #include <fstream>
 #include <iostream>
 #include <Simpleton/Data/json.hpp>
+#include <Simpleton/SDL/error.hpp>
 #include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/Utils/profiler.hpp>
+
+#ifdef NO_EMSCRIPTEN
+
+namespace {
+  MusicPlayer *player = nullptr;
+  
+  void finishCallback() {
+    player->nextSong();
+  }
+}
+
+#else
 
 namespace {
   void audioCallback(void *userdata, Uint8 *stream, int len) {
@@ -33,8 +34,21 @@ namespace {
   }
 }
 
+#endif
+
 void MusicPlayer::init() {
   PROFILE(MusicPlayer::init);
+  
+  #ifdef NO_EMSCRIPTEN
+  const int flags = MIX_INIT_OGG;
+  const int actual = Mix_Init(flags);
+  std::cout << "Requested: " << flags << '\n';
+  std::cout << "Actual:    " << actual << '\n';
+  if (flags != actual) {
+    std::cout << "Error: " <<  SDL_GetError() << '\n';
+  }
+  //CHECK_SDL_ERROR(Mix_Init(MIX_INIT_OGG) != MIX_INIT_OGG ? -1 : 0);
+  #endif
   
   loadMusic();
   initRNG();
@@ -46,18 +60,38 @@ void MusicPlayer::init() {
 void MusicPlayer::quit() {
   closeAudio();
   for (const Song &song : songs) {
+    #ifdef NO_EMSCRIPTEN
+    Mix_FreeMusic(song.music);
+    #else
     stb_vorbis_close(song.music);
+    #endif
   }
   songs.clear();
+  
+  #ifdef NO_EMSCRIPTEN
+  Mix_Quit();
+  #endif
 }
 
 void MusicPlayer::togglePlaying() {
+  #ifdef NO_EMSCRIPTEN
+  
+  if (Mix_PausedMusic()) {
+    Mix_ResumeMusic();
+  } else {
+    Mix_PauseMusic();
+  }
+  
+  #else
+  
   const SDL_AudioStatus status = SDL_GetAudioDeviceStatus(audioDevice);
   if (status != SDL_AUDIO_PLAYING) {
     SDL_PauseAudioDevice(audioDevice, 0);
   } else {
     SDL_PauseAudioDevice(audioDevice, 1);
   }
+  
+  #endif
 }
 
 void MusicPlayer::nextSong() {
@@ -67,6 +101,8 @@ void MusicPlayer::nextSong() {
   }
   printSong();
 }
+
+#ifndef NO_EMSCRIPTEN
 
 void MusicPlayer::fillAudioBuffer(uint8_t *const buffer, const int requestedBytes) {
   if (!songs.empty()) {
@@ -90,6 +126,8 @@ void MusicPlayer::fillAudioBuffer(uint8_t *const buffer, const int requestedByte
   }
 }
 
+#endif
+
 void MusicPlayer::loadMusic() {
   const std::string resDir = SDL::getResDir();
   std::ifstream musicFile(resDir + "music.json");
@@ -101,6 +139,13 @@ void MusicPlayer::loadMusic() {
     Data::get(song.name, songNode, "name");
     Data::get(song.artist, songNode, "artist");
     const std::string songFileName = resDir + songNode.at("file").get<std::string>();
+    
+    #ifdef NO_EMSCRIPTEN
+    
+    song.music = CHECK_SDL_NULL(Mix_LoadMUS(songFileName.c_str()));
+    
+    #else
+    
     int error;
     song.music = stb_vorbis_open_filename(songFileName.c_str(), &error, nullptr);
     if (song.music == nullptr) {
@@ -113,6 +158,9 @@ void MusicPlayer::loadMusic() {
         assert(false);
       }
     }
+    
+    #endif
+    
     songs.emplace_back(std::move(song));
   }
 }
@@ -127,6 +175,20 @@ void MusicPlayer::shuffle() {
 }
 
 void MusicPlayer::openAudio() {
+  #ifdef NO_EMSCRIPTEN
+  
+  CHECK_SDL_ERROR(Mix_OpenAudio(
+    44100,
+    MIX_DEFAULT_FORMAT,
+    2,
+    4096
+  ));
+  player = this;
+  Mix_HookMusicFinished(&finishCallback);
+  CHECK_SDL_ERROR(Mix_PlayMusic(songs[0].music, 1));
+
+  #else
+  
   SDL_AudioSpec desired;
   desired.freq = 44100;
   desired.format = AUDIO_F32SYS;
@@ -143,11 +205,21 @@ void MusicPlayer::openAudio() {
   );
   
   SDL_PauseAudioDevice(audioDevice, 0);
+  
+  #endif
 }
 
 void MusicPlayer::closeAudio() {
+  #ifdef NO_EMSCRIPTEN
+  
+  Mix_CloseAudio();
+  
+  #else
+  
   SDL_CloseAudioDevice(audioDevice);
   audioDevice = 0;
+  
+  #endif
 }
 
 void MusicPlayer::printSong() {
@@ -156,5 +228,3 @@ void MusicPlayer::printSong() {
     std::cout << "Currently playing " << song.artist << " - " << song.name << '\n';
   }
 }
-
-#endif

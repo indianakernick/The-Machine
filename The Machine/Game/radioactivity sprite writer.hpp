@@ -11,11 +11,11 @@
 
 #include "quad writer.hpp"
 #include "rendering helpers.hpp"
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 class RadioactivitySpriteWriter final : public QuadWriter {
 public:
-  RadioactivitySpriteWriter(TextureID, std::shared_ptr<ECS::Registry>, std::shared_ptr<Sheet>);
+  RadioactivitySpriteWriter(TextureID, std::shared_ptr<entt::registry>, std::shared_ptr<Sheet>);
 
   void writeQuads(QuadIter, Frame) const override;
   TextureID getTexture() const override;
@@ -23,7 +23,7 @@ public:
 
 private:
   TextureID tex;
-  std::shared_ptr<ECS::Registry> registry;
+  std::shared_ptr<entt::registry> registry;
   std::shared_ptr<Sheet> sheet;
 };
 

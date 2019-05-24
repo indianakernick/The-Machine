@@ -10,8 +10,8 @@
 #define signal_channel_toggle_system_hpp
 
 #include "entity grid.hpp"
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
-void signalChannelToggleSystem(ECS::Registry &, const EntityGrid &);
+void signalChannelToggleSystem(entt::registry &, const EntityGrid &);
 
 #endif

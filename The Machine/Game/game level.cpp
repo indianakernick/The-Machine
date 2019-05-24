@@ -43,12 +43,12 @@ bool GameLevel::levelChanged() const {
   return static_cast<bool>(nextLevel);
 }
 
-std::experimental::optional<Pos> GameLevel::loadNewLevel(ECS::Registry &registry) {
+std::optional<Pos> GameLevel::loadNewLevel(entt::registry &registry) {
   const OptionalObject meta = levels.load(registry, *nextLevel);
-  nextLevel = std::experimental::nullopt;
+  nextLevel = std::nullopt;
   if (meta) {
     return meta->at("size").get<Pos>();
   } else {
-    return std::experimental::nullopt;
+    return std::nullopt;
   }
 }

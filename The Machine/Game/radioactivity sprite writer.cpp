@@ -13,7 +13,7 @@
 
 RadioactivitySpriteWriter::RadioactivitySpriteWriter(
   const TextureID tex,
-  std::shared_ptr<ECS::Registry> registry,
+  std::shared_ptr<entt::registry> registry,
   std::shared_ptr<Sheet> sheet
 ) : tex(tex),
     registry(registry),
@@ -21,7 +21,7 @@ RadioactivitySpriteWriter::RadioactivitySpriteWriter(
 
 void RadioactivitySpriteWriter::writeQuads(QuadIter quadIter, const Frame frame) const {
   const auto view = registry->view<Radioactivity, RadioactivitySprite, SpritePosition>();
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     const Radioactivity activity = view.get<Radioactivity>(entity);
     const RadioactivitySprite sprite = view.get<RadioactivitySprite>(entity);
     const bool animate = activity.curr != activity.prev;

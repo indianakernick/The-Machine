@@ -9,9 +9,9 @@
 #ifndef clear_real_dir_system_hpp
 #define clear_real_dir_system_hpp
 
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 // set Movement::realDir to Grid::Dir::NONE
-void clearRealDirSystem(ECS::Registry &);
+void clearRealDirSystem(entt::registry &);
 
 #endif

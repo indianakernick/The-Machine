@@ -15,7 +15,7 @@
 #include "game logic.hpp"
 #include "game level.hpp"
 #include "level transition.hpp"
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 class GameScreen final : public Screen {
 public:
@@ -29,7 +29,7 @@ public:
   void render(float, float) override;
 
 private:
-  std::shared_ptr<ECS::Registry> registry;
+  std::shared_ptr<entt::registry> registry;
   std::shared_ptr<RenderingSystem> rendering;
   GameLogic logic;
   GameView view;

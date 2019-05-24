@@ -10,9 +10,9 @@
 #define sprite_position_system_hpp
 
 #include "frame type.hpp"
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 // set SpritePosition based on the Movement of the entity
-void spritePositionSystem(ECS::Registry &, Frame);
+void spritePositionSystem(entt::registry &, Frame);
 
 #endif

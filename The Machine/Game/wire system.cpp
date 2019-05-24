@@ -18,7 +18,7 @@
 
 namespace {
   void propagatePower(
-    ECS::Registry &registry,
+    entt::registry &registry,
     const EntityGrid &grid,
     const Pos pos,
     const Grid::Dir fromPrev // a direction pointing away from the previous wire
@@ -29,7 +29,7 @@ namespace {
     }
     
     // tile must have a static entity
-    const ECS::EntityID entity = grid[pos].staticID;
+    const entt::entity entity = grid[pos].staticID;
     if (entity == entt::null) {
       return;
     }
@@ -69,9 +69,9 @@ namespace {
   }
 }
 
-void wireSystem(ECS::Registry &registry, const EntityGrid &grid) {
+void wireSystem(entt::registry &registry, const EntityGrid &grid) {
   const auto outputView = registry.view<Power, Position, PowerOutput>();
-  for (const ECS::EntityID entity : outputView) {
+  for (const entt::entity entity : outputView) {
     if (!outputView.get<Power>(entity).prev) {
       continue;
     }

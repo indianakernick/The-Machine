@@ -12,16 +12,16 @@
 #include "frame type.hpp"
 #include "entity grid.hpp"
 #include "player key states.hpp"
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 extern "C" union SDL_Event;
 
 class GameLogic {
 public:
   bool input(const SDL_Event &);
-  void onLevelLoad(ECS::Registry &, Pos);
-  void update(ECS::Registry &);
-  bool exitLevel(ECS::Registry &);
+  void onLevelLoad(entt::registry &, Pos);
+  void update(entt::registry &);
+  bool exitLevel(entt::registry &);
 
 private:
   EntityGrid grid;

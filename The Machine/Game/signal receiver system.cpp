@@ -13,18 +13,18 @@
 #include "signal receiver component.hpp"
 #include "signal transmitter component.hpp"
 
-void signalReceiverSystem(ECS::Registry &registry) {
+void signalReceiverSystem(entt::registry &registry) {
   const auto transmitters = registry.view<Power, SignalChannel, SignalTransmitter>();
   auto receivers = registry.view<Power, SignalChannel, SignalReceiver>();
   bool channelStates[SignalChannel::NUM_CHANNELS] = {};
   
-  for (const ECS::EntityID entity : transmitters) {
+  for (const entt::entity entity : transmitters) {
     const auto channel = transmitters.get<SignalChannel>(entity).channel;
     const bool state = transmitters.get<Power>(entity).prev;
     channelStates[channel] = channelStates[channel] || state;
   }
   
-  for (const ECS::EntityID entity : receivers) {
+  for (const entt::entity entity : receivers) {
     const auto channel = receivers.get<SignalChannel>(entity).channel;
     receivers.get<Power>(entity).curr = channelStates[channel];
   }

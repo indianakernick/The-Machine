@@ -12,16 +12,16 @@
 #include "player action component.hpp"
 
 namespace {
-  void setActionState(ECS::Registry &registry, const bool enabled) {
+  void setActionState(entt::registry &registry, const bool enabled) {
     auto view = registry.view<PlayerAction>();
-    view.each([enabled] (ECS::EntityID, PlayerAction &comp) {
+    view.each([enabled] (entt::entity, PlayerAction &comp) {
       comp.curr = enabled;
     });
   }
   
-  void setDesiredDir(ECS::Registry &registry, const Grid::Dir dir) {
+  void setDesiredDir(entt::registry &registry, const Grid::Dir dir) {
     auto view = registry.view<PlayerAction, Movement>();
-    view.each([dir] (ECS::EntityID, PlayerAction &, Movement &comp) {
+    view.each([dir] (entt::entity, PlayerAction &, Movement &comp) {
       comp.desiredDir = dir;
     });
   }
@@ -31,7 +31,7 @@ namespace {
   }
 }
 
-void playerInputResponseSystem(ECS::Registry &registry, const PlayerKeyStates states) {
+void playerInputResponseSystem(entt::registry &registry, const PlayerKeyStates states) {
   setActionState(registry, isEnabled(states.action));
  
   for (const Grid::Dir dir : Grid::dir_range) {

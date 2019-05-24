@@ -10,9 +10,9 @@
 #define button_system_hpp
 
 #include "entity grid.hpp"
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 // output power will the player is pressing the action button
-void buttonSystem(ECS::Registry &, const EntityGrid &);
+void buttonSystem(entt::registry &, const EntityGrid &);
 
 #endif

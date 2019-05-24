@@ -43,10 +43,10 @@ namespace {
   }
 }
 
-void gateSystem(ECS::Registry &registry) {
+void gateSystem(entt::registry &registry) {
   auto view = registry.view<Gate, Power, PowerInput>();
   
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     const PowerInput input = view.get<PowerInput>(entity);
     const GateFun gateFun = view.get<Gate>(entity).fun;
     view.get<Power>(entity).curr = calcGateFun(input, gateFun);

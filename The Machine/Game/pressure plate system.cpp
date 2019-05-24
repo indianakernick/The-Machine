@@ -13,12 +13,12 @@
 #include "position component.hpp"
 #include "pressure plate component.hpp"
 
-void pressurePlateSystem(ECS::Registry &registry, const EntityGrid &grid) {
+void pressurePlateSystem(entt::registry &registry, const EntityGrid &grid) {
   auto view = registry.view<Power, Position, PressurePlate>();
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     Power &power = view.get<Power>(entity);
     const Pos pos = view.get<Position>(entity).pos;
-    const ECS::EntityID targetID = grid[pos].dynamicID;
+    const entt::entity targetID = grid[pos].dynamicID;
     
     if (targetID == entt::null) {
       power.curr = false;

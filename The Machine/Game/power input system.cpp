@@ -16,10 +16,10 @@
 #include "power input component.hpp"
 #include "power output component.hpp"
 
-void powerInputSystem(ECS::Registry &registry, const EntityGrid &grid) {
+void powerInputSystem(entt::registry &registry, const EntityGrid &grid) {
   auto view = registry.view<PowerInput, Position>();
   
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     const Pos pos = view.get<Position>(entity).pos;
     PowerInput &input = view.get<PowerInput>(entity);
     input.states = Grid::DirBits::none;
@@ -37,7 +37,7 @@ void powerInputSystem(ECS::Registry &registry, const EntityGrid &grid) {
       }
       
       // the target tile must contain a static entity
-      const ECS::EntityID targetID = grid[targetPos].staticID;
+      const entt::entity targetID = grid[targetPos].staticID;
       if (targetID == entt::null) {
         continue;
       }

@@ -14,17 +14,17 @@
 #include "dynamic collision component.hpp"
 
 namespace {
-  ECS::EntityID getDynamic(const EntityGrid &grid, const Pos pos) {
+  entt::entity getDynamic(const EntityGrid &grid, const Pos pos) {
     return grid.outOfRange(pos) ? entt::null : grid[pos].dynamicID;
   }
 
   bool isMovingToPosFromSide(
-    ECS::Registry &registry,
+    entt::registry &registry,
     const EntityGrid &grid,
     const Pos pos,
     const Grid::Dir side
   ) {
-    const ECS::EntityID fromID = getDynamic(grid, pos + toVec(side));
+    const entt::entity fromID = getDynamic(grid, pos + toVec(side));
     if (fromID == entt::null) {
       return false;
     } else {
@@ -33,9 +33,9 @@ namespace {
   }
   
   bool moveInDir(
-    ECS::Registry &registry,
+    entt::registry &registry,
     const EntityGrid &grid,
-    const ECS::EntityID entity,
+    const entt::entity entity,
     const Pos pos,
     const Grid::Dir dir
   ) {
@@ -88,14 +88,14 @@ namespace {
   }
 }
 
-void moveDirSystem(ECS::Registry &registry, const EntityGrid &grid) {
+void moveDirSystem(entt::registry &registry, const EntityGrid &grid) {
   const auto movementView = registry.view<Movement>();
   const Pos size = grid.size();
   Pos pos;
   
   for (pos.y = 0; pos.y != size.y; ++pos.y) {
     for (pos.x = 0; pos.x != size.x; ++pos.x) {
-      const ECS::EntityID entity = grid[pos].dynamicID;
+      const entt::entity entity = grid[pos].dynamicID;
       if (entity == entt::null) {
         continue;
       }

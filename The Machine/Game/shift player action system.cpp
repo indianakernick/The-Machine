@@ -10,9 +10,9 @@
 
 #include "player action component.hpp"
 
-void shiftPlayerActionSystem(ECS::Registry &registry) {
+void shiftPlayerActionSystem(entt::registry &registry) {
   auto view = registry.view<PlayerAction>();
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     PlayerAction &action = view.get(entity);
     action.prev = action.curr;
   }

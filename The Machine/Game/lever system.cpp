@@ -13,11 +13,11 @@
 #include "position component.hpp"
 #include "player action component.hpp"
 
-void leverSystem(ECS::Registry &registry, const EntityGrid &grid) {
+void leverSystem(entt::registry &registry, const EntityGrid &grid) {
   auto posView = registry.view<Lever, Position>();
-  for (const ECS::EntityID entity : posView) {
+  for (const entt::entity entity : posView) {
     const Pos pos = posView.get<Position>(entity).pos;
-    const ECS::EntityID targetID = grid[pos].dynamicID;
+    const entt::entity targetID = grid[pos].dynamicID;
     
     if (targetID == entt::null) {
       continue;
@@ -36,7 +36,7 @@ void leverSystem(ECS::Registry &registry, const EntityGrid &grid) {
   }
   
   auto powerView = registry.view<Power, Lever>();
-  for (const ECS::EntityID entity : powerView) {
+  for (const entt::entity entity : powerView) {
     powerView.get<Power>(entity).curr = powerView.get<Lever>(entity).enabled;
   }
 }

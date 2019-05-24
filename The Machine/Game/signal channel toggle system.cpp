@@ -31,11 +31,11 @@ namespace {
   }
 }
 
-void signalChannelToggleSystem(ECS::Registry &registry, const EntityGrid &grid) {
+void signalChannelToggleSystem(entt::registry &registry, const EntityGrid &grid) {
   auto view = registry.view<PowerSprite, SignalChannel, Position>();
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     const Pos pos = view.get<Position>(entity).pos;
-    const ECS::EntityID targetID = grid[pos].dynamicID;
+    const entt::entity targetID = grid[pos].dynamicID;
     
     if (targetID == entt::null) {
       continue;

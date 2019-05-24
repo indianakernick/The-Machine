@@ -12,7 +12,7 @@
 
 TitleScreenWriter::TitleScreenWriter(const TextureID tex)
   : tex(tex),
-    sheet(Sprite::makeSheet(SDL::getResDir() + "title screen.atlas")) {}
+    sheet(Sprite::makeSheetFromFile(SDL::getResDir() + "title screen.atlas")) {}
 
 void TitleScreenWriter::writeQuads(
   QuadIter quadIter,

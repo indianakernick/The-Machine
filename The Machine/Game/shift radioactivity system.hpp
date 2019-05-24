@@ -9,9 +9,9 @@
 #ifndef shift_radioactivity_system_hpp
 #define shift_radioactivity_system_hpp
 
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 // set Radioactivity::prev to Radioactivity::curr
-void shiftRadioactivitySystem(ECS::Registry &);
+void shiftRadioactivitySystem(entt::registry &);
 
 #endif

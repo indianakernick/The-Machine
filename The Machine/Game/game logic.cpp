@@ -39,12 +39,12 @@ bool GameLogic::input(const SDL_Event &e) {
   return playerInputSystem(playerInput, e);
 }
 
-void GameLogic::onLevelLoad(ECS::Registry &registry, const Pos levelSize) {
+void GameLogic::onLevelLoad(entt::registry &registry, const Pos levelSize) {
   grid = EntityGrid(levelSize);
   initGridSystem(registry, grid);
 }
 
-void GameLogic::update(ECS::Registry &registry) {
+void GameLogic::update(entt::registry &registry) {
   shiftPowerSystem(registry);
   shiftCrossWireSystem(registry);
   shiftPlayerActionSystem(registry);
@@ -76,6 +76,6 @@ void GameLogic::update(ECS::Registry &registry) {
   clearDesiredDirSystem(registry);
 }
 
-bool GameLogic::exitLevel(ECS::Registry &registry) {
+bool GameLogic::exitLevel(entt::registry &registry) {
   return exitSystem(registry, grid);
 }

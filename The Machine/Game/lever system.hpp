@@ -10,9 +10,9 @@
 #define lever_system_hpp
 
 #include "entity grid.hpp"
-#include <Simpleton/ECS/registry.hpp>
+#include <entt/entity/registry.hpp>
 
 // toggle power output if the player presses the action button
-void leverSystem(ECS::Registry &, const EntityGrid &);
+void leverSystem(entt::registry &, const EntityGrid &);
 
 #endif

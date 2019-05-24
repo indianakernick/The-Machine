@@ -13,11 +13,11 @@
 #include "position component.hpp"
 #include "player action component.hpp"
 
-void buttonSystem(ECS::Registry &registry, const EntityGrid &grid) {
+void buttonSystem(entt::registry &registry, const EntityGrid &grid) {
   auto view = registry.view<Power, Button, Position>();
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     const Pos pos = view.get<Position>(entity).pos;
-    const ECS::EntityID targetID = grid[pos].dynamicID;
+    const entt::entity targetID = grid[pos].dynamicID;
     
     if (targetID == entt::null) {
       continue;

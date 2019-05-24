@@ -13,7 +13,7 @@
 
 PowerSpriteWriter::PowerSpriteWriter(
   const TextureID tex,
-  std::shared_ptr<ECS::Registry> registry,
+  std::shared_ptr<entt::registry> registry,
   std::shared_ptr<Sheet> sheet
 ) : tex(tex),
     registry(registry),
@@ -21,7 +21,7 @@ PowerSpriteWriter::PowerSpriteWriter(
 
 void PowerSpriteWriter::writeQuads(QuadIter quadIter, const Frame frame) const {
   const auto view = registry->view<Power, PowerSprite, SpritePosition>();
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     const Power power = view.get<Power>(entity);
     const PowerSprite sprite = view.get<PowerSprite>(entity);
     

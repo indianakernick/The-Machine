@@ -10,9 +10,9 @@
 
 #include "radioactivity component.hpp"
 
-void shiftRadioactivitySystem(ECS::Registry &registry) {
+void shiftRadioactivitySystem(entt::registry &registry) {
   auto view = registry.view<Radioactivity>();
-  for (const ECS::EntityID entity : view) {
+  for (const entt::entity entity : view) {
     Radioactivity &radioactivity = view.get(entity);
     radioactivity.prev = radioactivity.curr;
   }
