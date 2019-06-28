@@ -20,7 +20,7 @@ namespace detail {
   auto initImpl(Comp &, const json &, int) {}
   
   template <typename Comp>
-  void init(Comp &comp, const json &node) {
+  void init(Comp &&comp, const json &node) {
     initImpl(comp, node, true);
   }
 
@@ -31,11 +31,7 @@ namespace detail {
       const bool gotComp = List::getByName<CompList>(
         pair.first,
         [&registry, &props = pair.second, entity] (auto t) {
-          if constexpr (std::is_empty_v<LIST_TYPE(t)>) {
-            registry.assign<LIST_TYPE(t)>(entity);
-          } else {
-            init(registry.assign<LIST_TYPE(t)>(entity), props);
-          }
+          init(registry.assign<LIST_TYPE(t)>(entity), props);
         }
       );
       if (!gotComp) {
